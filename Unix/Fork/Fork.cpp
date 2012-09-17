@@ -16,18 +16,18 @@ int main() {
     pidRv = ::fork();
     pidRv = ::fork();
 
-	if (pidRv) {
-	    std::cout << "Linux" << std::endl;
-	} else {
-	    std::cout << "GNU"   << std::endl;
-	}
+    if (pidRv) {
+        std::cout << "Linux" << std::endl;
+    } else {
+        std::cout << "GNU"   << std::endl;
+    }
 
-	return 0;
+    return 0;
 }
 //---------------------------------------------------------------------------
 
 #if OUTPUT
-// creates 4 parent and 4 child processes
+// creates 1 parent and 1 child processes per fork()
 
 $ ./Fork
 
