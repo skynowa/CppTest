@@ -58,6 +58,7 @@ bin/
 *.suo
 *.user
 *.sln.docstates
+*.sln
 
 # Build results
 
