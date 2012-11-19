@@ -9,6 +9,10 @@
 #include <iostream>
 #include <assert.h>
 //---------------------------------------------------------------------------
+struct SEmpty {
+
+};
+
 class CEmpty {
 
 };
@@ -32,6 +36,7 @@ class CDerivedVirtual {
 int main(int iArgCount, char **paszArgs)
 {
     std::cout << "sizeof(void *):          " << sizeof(void *)          << std::endl;
+    std::cout << "sizeof(SEmpty):          " << sizeof(SEmpty)          << std::endl;
     std::cout << "sizeof(CEmpty):          " << sizeof(CEmpty)          << std::endl;
     std::cout << "sizeof(CData):           " << sizeof(CData)           << std::endl;
     std::cout << "sizeof(CInterface):      " << sizeof(CInterface)      << std::endl;
@@ -48,6 +53,7 @@ int main(int iArgCount, char **paszArgs)
 
 sizeof(void *):          4
 sizeof(CEmpty):          1
+sizeof(SEmpty):          1  // for C equal 0, C++ equal 1
 sizeof(CData):           1
 sizeof(CInterface):      4
 sizeof(CVirtual:         4
