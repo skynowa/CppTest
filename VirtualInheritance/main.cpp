@@ -1,135 +1,164 @@
-#include <iostream>
-#include <stdio.h>
+ /*
+ * \file  Main.cpp
+ * \brief 
+ */
+
+
+//---------------------------------------------------------------------------
 #include <string>
-#include <vector>
-#include <list>
-#include <map>
-#include <tchar.h>
-
-#include <XLib/xCommon.h>
+#include <iostream>
+#include <assert.h>
 //---------------------------------------------------------------------------
-class CInterface {
+class IInterface 
+{
 	public:
-		              CInterface() { xSTD_COUT(xT(" CInterface()")); };
-		 virtual     ~CInterface() { xSTD_COUT(xT("~CInterface()")); };
+		              IInterface() { std::cout << __FUNCTION__ << std::endl; };
+		 virtual     ~IInterface() { std::cout << __FUNCTION__ << std::endl; };
 
-		 virtual void vFoo() /*= 0*/   { xSTD_COUT(xT(" CInterface::vFoo()")); };
+		 virtual void vFoo() = 0  { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
-class CTestA : public /*virtual*/ CInterface {
+class CA : 
+    public /* virtual */ IInterface
+ {
 	public:
-		              CTestA() { xSTD_COUT(xT(" CTestA()")); };
-		virtual      ~CTestA() { xSTD_COUT(xT("~CTestA()")); };
+		              CA() { std::cout << __FUNCTION__ << std::endl; };
+		virtual      ~CA() { std::cout << __FUNCTION__ << std::endl; };
 
-		virtual void  vFoo()   { xSTD_COUT(xT(" CTestA::vFoo()")); };
+		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
-class CTestB : public /*virtual*/ CInterface {
+class CB : 
+    public /* virtual */ IInterface 
+{
 	public:
-		              CTestB() { xSTD_COUT(xT(" CTestB()")); };
-		virtual      ~CTestB() { xSTD_COUT(xT("~CTestB()")); };
+		              CB() { std::cout << __FUNCTION__ << std::endl; };
+		virtual      ~CB() { std::cout << __FUNCTION__ << std::endl; };
 
-		virtual void  vFoo()   { xSTD_COUT(xT(" CTestB::vFoo()")); };
+		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
-class CTestX : public CTestA, public CTestB {
+class CX : 
+    public CA, 
+    public CB 
+{
 	public:
-		              CTestX() { xSTD_COUT(xT(" CTestX()")); };
-		virtual      ~CTestX() { xSTD_COUT(xT("~CTestX()")); };
+		              CX() { std::cout << __FUNCTION__ << std::endl; };
+		virtual      ~CX() { std::cout << __FUNCTION__ << std::endl; };
 
-	    virtual void  vFoo()   { xSTD_COUT(xT(" CTestX::vFoo()")); };
+	    virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
 
 
 //---------------------------------------------------------------------------
-int _tmain(int argc, TCHAR *argv[]) {
+int main(int iArgCount, char **paszArgs)
+{
 	//-------------------------------------
 	{
-		CTestX X;
-
-		//X.CTestA::vFoo();
-		//X.CTestB::vFoo();
-		X.vFoo();
+		CX x;
 	}
-	xSTD_COUT(xT("-------------------------"));
-	/*
-	CInterface()
-	CTestA()
-	CTestB()
-	CTestX()
-	CTestA::vFoo()
-	CTestB::vFoo()
-	CTestX::vFoo()
-	~CTestX()
-	~CTestB()
-	~CTestA()
-	~CInterface()
-	*/
+
+    #if OUTPUT
+
+        // without virtual inheritance
+        IInterface::IInterface
+        CA::CA
+        IInterface::IInterface
+        CB::CB
+        CX::CX
+        CX::~CX
+        CB::~CB
+        IInterface::~IInterface
+        CA::~CA
+        IInterface::~IInterface
+
+    #endif
+
+    #if OUTPUT
+
+        // with virtual inheritance
+        IInterface::IInterface
+        CA::CA
+        CB::CB
+        CX::CX
+        CX::~CX
+        CB::~CB
+        CA::~CA
+        IInterface::~IInterface
+
+    #endif
+
+    std::cout << "-------------------------" << std::endl;
 
 	//-------------------------------------
-	////{
-	////	CTestA *pI = new CTestA();
-	////	pI->vFoo();
-	////	delete pI;
-	////}
-	////xSTD_COUT(xT("-------------------------"));
-	/*
-	CInterface()
-	CTestA()
-	CTestA::vFoo()
-	~CTestA()
-	~CInterface()
-	*/
+	{
+		CA *pI = new CA();
+		pI->vFoo();
+		delete pI;
+	}
+
+    #if OUTPUT
+        IInterface::IInterface
+        CA::CA
+        CA::vFoo
+        CA::~CA
+        IInterface::~IInterface
+    #endif
+
+	std::cout << "-------------------------" << std::endl;
 
 	//-------------------------------------
-	////{
-	////	CTestB *pI = new CTestB();
-	////	pI->vFoo();
-	////	delete pI;
-	////}
-	////xSTD_COUT(xT("-------------------------"));
-	/*
-	CInterface()
-	CTestB()
-	CTestB::vFoo()
-	~CTestB()
-	~CInterface()
-	*/
+	{
+		CB *pI = new CB();
+		pI->vFoo();
+		delete pI;
+	}
+
+    #if OUTPUT
+        IInterface::IInterface
+        CB::CB
+        CB::vFoo
+        CB::~CB
+        IInterface::~IInterface
+    #endif
+
+	std::cout << "-------------------------" << std::endl;
 
 	//-------------------------------------
-	////{
-	////	CInterface *pI = new CTestA();
-	////	pI->vFoo();
-	////	delete pI;
-	////}
-	////xSTD_COUT(xT("-------------------------"));
-	/*
-	CInterface()
-	CTestA()
-	CTestA::vFoo()
-	~CTestA()
-	~CInterface()
-	*/
+	{
+		IInterface *pI = new CA();
+		pI->vFoo();
+		delete pI;
+	}
+
+    #if OUTPUT
+        IInterface::IInterface
+        CA::CA
+        CA::vFoo
+        CA::~CA
+        IInterface::~IInterface
+    #endif
+
+	std::cout << "-------------------------" << std::endl;
 
 	//-------------------------------------
-	////{
-	////	CInterface *pI = new CTestB();
-	////	pI->vFoo();
-	////	delete pI;
-	////}
-	////xSTD_COUT(xT("-------------------------"));
-	/*
-	CInterface()
-	CTestB()
-	CTestB::vFoo()
-	~CTestB()
-	~CInterface()
-	*/
+	{
+		IInterface *pI = new CB();
+		pI->vFoo();
+		delete pI;
+	}
 
+    #if OUTPUT
+        IInterface::IInterface
+        CB::CB
+        CB::vFoo
+        CB::~CB
+        IInterface::~IInterface
+    #endif
 
-	system("pause");
-	return 0;
+	std::cout << "-------------------------" << std::endl;
+    
+    return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
-

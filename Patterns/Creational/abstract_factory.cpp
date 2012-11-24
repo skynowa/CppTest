@@ -7,48 +7,57 @@ However you want to change what object is created.
 #include <iostream>
 #include <string>
 #include <memory>
-
-class Message
-{
-public:
-	virtual ~Message() { }
-	virtual std::string get_message()=0;
+//---------------------------------------------------------------------------
+class IMessage {
+    public:
+        virtual ~IMessage() { }
+        virtual std::string get_message()=0;
 };
-
-class MessageFactory
-{
-public:
-	virtual ~MessageFactory() { }
-	virtual std::auto_ptr<Message> create_message() const=0;
+//---------------------------------------------------------------------------
+class IMessageFactory {
+    public:
+        virtual ~IMessageFactory() { }
+        virtual std::auto_ptr<IMessage> create_message() const=0;
 };
-
-class HelloWorldMessage : public Message
+//---------------------------------------------------------------------------
+class CHelloWorldMessage : 
+    public IMessage 
 {
-public:
-	std::string get_message()
-	{
-		return "Hello world!";
-	}
+    public:
+        std::string get_message() {
+            return "Hello world!";
+        }
 };
-
-class HelloWorldFactory : public MessageFactory
+//---------------------------------------------------------------------------
+class CHelloWorldFactory : 
+    public IMessageFactory 
 {
-public:
-	std::auto_ptr<Message> create_message() const
-	{
-		return std::auto_ptr<Message>(new HelloWorldMessage());
-	}
+    public:
+        std::auto_ptr<IMessage> create_message() const {
+            return std::auto_ptr<IMessage>(new CHelloWorldMessage());
+        }
 };
-
-void hello_world(const MessageFactory & factory)
+//---------------------------------------------------------------------------
+void 
+hello_world(
+    const IMessageFactory & factory
+)
 {
-	std::auto_ptr<Message> message = factory.create_message();
+	std::auto_ptr<IMessage> message = factory.create_message();
 	std::cout << message->get_message() << std::endl;
 }
-
+//---------------------------------------------------------------------------
 int main()
 {
-	hello_world(HelloWorldFactory());
+	hello_world(CHelloWorldFactory());
+    
 	return 0;
 }
+//---------------------------------------------------------------------------
 
+
+#if OUTPUT
+
+    Hello world!
+    
+#endif
