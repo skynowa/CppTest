@@ -1,61 +1,153 @@
-/****************************************************************************
-*	[...тест...]
-*
-*****************************************************************************/
+ /*
+ * \file  Main.cpp
+ * \brief 
+ */
 
 
-#include <windows.h>
-#include <iostream>
-#include <stdio.h>
+//---------------------------------------------------------------------------
 #include <string>
-#include <vector>
-#include <map>
+#include <iostream>
+#include <assert.h>
+//---------------------------------------------------------------------------
+// ++ i
+int 
+incPre(int &i) {
+	i = i + 1;  // увеличиваем переменную на 1
 
-#include <XLib/Debug/CXAssert.h>
-//---------------------------------------------------------------------------
-BOOL                            g_bRes    = FALSE;
-INT                             g_iRes    = - 1;
-UINT                            g_uiRes   = 0;
-ULONG                           g_ulRes   = 0;
-ULONGLONG                       g_ullRes  = 0UL;
-HANDLE                          g_hRes    = INVALID_HANDLE_VALUE;
-HWND                            g_hwndRes = NULL;
-tstring                         g_sRes;
-std::vector<tstring>            g_vecsRes; 
-std::map<tstring, tstring>      g_mapsRes;
-std::multimap<tstring, tstring> g_mmsRes; 
-//---------------------------------------------------------------------------
-int incPre(int &i) {
-	i = i + 1; //увеличиваем переменную на 1
-	return i;   //возвращаем новое значение
-}
-int incPos(int &i) {
-	int r = i;  //сохраняем исходное значение
-	i = i + 1; //увеличиваем переменную на 1
-	return r;  //возвращаем старое значение
+	return i;   // возвращаем новое значение
 }
 //---------------------------------------------------------------------------
-INT main(int argc, char* argv[]) {
-	int i = 1;
-	int x = 0;
+// i ++
+int 
+incPost(int &i) {
+	int r = i;  // сохраняем исходное значение
+	i = i + 1;  // увеличиваем переменную на 1
 
-	x = ++i; //результат: x = 2, i = 2
-	tcout << std::endl;
+	return r;   // возвращаем старое значение
+}
+//---------------------------------------------------------------------------
+int main(int iArgCount, char **paszArgs)
+{
+    // 1
+    {
+	    int i = 1;
+	    int x = 0;
 
+	    x = ++ i; // result: x = 2, i = 2
+	    std::cout << "x = " << x << ", "
+                  << "i = " << i << std::endl;
 
-	i = 1;
-	x = i++; //результат: x = 1, i = 2
-	tcout << std::endl;
+	    i = 1;
+	    x = i ++; // result: x = 1, i = 2
+	    std::cout << "x = " << x << ", "
+                  << "i = " << i << std::endl;
 
+	    i = 1;
+	    x = ++ i; // result: x = 2, i = 2
+	    std::cout << "x = " << x << ", "
+                  << "i = " << i << std::endl;
 
-	i = 1;
-	x = ++i; //результат: x = 2, i = 2
-	tcout << std::endl;
+        std::cout << std::endl;
 
+    #if OUTPUT
 
+        x = 2, i = 2
+        x = 1, i = 2
+        x = 2, i = 2
 
-    tcout << std::endl << std::endl;
-	//system("pause");
-	return 0;
+    #endif
+    }
+
+    // 2
+    {
+        for (int i = 0; i < 5; ++ i) {
+	        std::cout << "i = " << i ++ << ", "
+                      << "i = " << ++ i << std::endl;
+        }
+
+        std::cout << std::endl;
+
+    #if OUTPUT
+
+        i = 1, i = 2
+        i = 4, i = 5
+
+    #endif
+    }
+
+    // 3
+    {
+        int x = 0;
+
+        for (int i = 0; i < 5; ++ i) {
+            x = i ++;
+            std::cout << "x = " << x << ", ";
+
+            x = ++ i;
+            std::cout << "x = " << x << std::endl;
+        }
+
+        std::cout << std::endl;
+
+    #if OUTPUT
+
+        x = 0, x = 2
+        x = 3, x = 5
+
+    #endif
+    }
+
+    // 4
+    {
+        int x = 0;
+
+    // error C2105: '--' needs l-value
+    #if NOT_COMPILE 
+        -- x ++;
+    #endif
+
+        (-- x) ++;
+
+        std::cout << "x = " << x << std::endl;
+
+        std::cout << std::endl;
+
+    #if OUTPUT
+
+        x = 0;
+
+    #endif
+    }
+
+    // 5
+    {
+        int x = 0;
+        int a = 0;
+        int b = 0;
+
+    // error C2105: '++' needs l-value
+    #if NOT_COMPILE
+        x = a+++++b;
+    #endif
+
+    // error C2105: '++' needs l-value
+    #if NOT_COMPILE
+        x = ((a++)++)+b;
+    #endif
+
+        x = (a++)+(++b);
+
+        std::cout << "x = " << x << std::endl;
+
+        std::cout << std::endl;
+
+    #if OUTPUT
+
+        x = 1;
+
+    #endif
+    }
+
+    return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
