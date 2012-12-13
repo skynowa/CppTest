@@ -18,18 +18,13 @@ trace(const std::string &csPoint) {
 //---------------------------------------------------------------------------
 int main(int iArgCount, char **paszArgs)
 {
-    int i = 0;
-    for (
-        trace("1"); 
-        trace("2"); 
-        trace("3\n")
-    )
-    {
-        ++ i;
-        if (i == 5) break;
-    }
+    int g = 0;
+    for (trace("1"); trace("2"); trace("3")) {
+        std::cout << " [block]" << std::endl;
 
-    // 
+        ++ g;
+        if (5 == g) break;
+    }
 
     return EXIT_SUCCESS;
 }
@@ -37,12 +32,11 @@ int main(int iArgCount, char **paszArgs)
 
 
 #if OUTPUT
-// NOTE:
 
-123
-23
-23
-23
-2
+12 [block]
+32 [block]
+32 [block]
+32 [block]
+32 [block]
 
 #endif
