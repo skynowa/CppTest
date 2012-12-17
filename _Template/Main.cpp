@@ -21,9 +21,7 @@ int main(int iArgCount, char **paszArgs)
 
 
 #if OUTPUT
-// NOTE:
 
-$ ./main
 
 
 #endif
