@@ -10,9 +10,16 @@
 #include <assert.h>
 //---------------------------------------------------------------------------
 void foo() {
-   std::cout << __FUNCTION__ << " - begin" << std::endl;
-   throw 1;
-   std::cout << __FUNCTION__ << " - end"   << std::endl;
+    std::cout << __FUNCTION__ << " - begin" << std::endl;
+
+    throw 1.0;
+
+    // if type of exception differs from 'int', 
+    // for example: double (1.0), unsigned int (1U), etc
+    // than output (unhandled exception): 
+    //     foo - begin
+     
+    std::cout << __FUNCTION__ << " - end"   << std::endl;
 }
 //---------------------------------------------------------------------------
 int main()
@@ -21,7 +28,7 @@ int main()
       foo();
       std::cout << "foo() done" << std::endl;
    } 
-   catch (int &i) {
+   catch (const int &i) {
       std::cout << "catch (int &i) - begin" << std::endl;
       throw;
       std::cout << "catch (int &i) - end"   << std::endl;
