@@ -1,3 +1,4 @@
+//---------------------------------------------------------------------------
 Question       What does the const member function qualifier do?
 Choice 1
      It allows the invocation of a non-const member function for the object pointed to by this.
@@ -10,8 +11,7 @@ Choice 4
 Choice 5
      It allows changes to the state of the object pointed to by this.
 
-
-
+//---------------------------------------------------------------------------
 Sample Code
      class Value { std::string s_val; int i_val; public: Value(std:string s, int i) : s_val(s), i_val(i) { } };
 Question  Referring to the sample code above, which one of the following operators do you need to override in 
@@ -27,7 +27,7 @@ Choice 4
 Choice 5
      operator >
                
-
+//---------------------------------------------------------------------------
 Sample Code
      extern void done(int, int) throw(const char*, RangeErr);
 Question  Referring to the sample code above, which one of the following statements is true regarding the declaration of done?
@@ -42,7 +42,7 @@ Choice 4
 Choice 5
      done guarantees that it only throws integer exceptions.
 
-
+//---------------------------------------------------------------------------
 Sample Code
 class professor {}; 
 class researcher {}; 
@@ -61,8 +61,7 @@ Choice 4
 Choice 5
      ~myprofessor(),~professor(), ~teacher(),~researcher()
 
-
-
+//---------------------------------------------------------------------------
 Sample Code
 #include <iostream> 
 class Airplane 
@@ -94,7 +93,7 @@ Choice 5
 void <<operator<<(std::ostream&, Airplane const&)
 as a stand alone, overloaded operator.
 
-
+//---------------------------------------------------------------------------
 Sample Code
      std::vector<std::string> vs;
 Question  Referring to the container definition above, which one of the following 
@@ -111,7 +110,7 @@ Choice 4
 Choice 5
      std::generate(vs.begin(), 5, "hello");
 
-
+//---------------------------------------------------------------------------
 Scenario
      You have a class whose internal representation is not exposed
 	 to the user and can change transparently.
@@ -127,7 +126,7 @@ Choice 4
 Choice 5
      Polymorphism
 
-
+//---------------------------------------------------------------------------
 Question       
 	Which one of the following is the correct way to declare a pointer to non-static member function 
 	of class A that accepts an int reference and returns void?
@@ -142,7 +141,7 @@ Choice 4
 Choice 5
      void (*A::f)(int&);
 
-
+//---------------------------------------------------------------------------
 Question       Where do you initialize a non-static class member that is a reference?
 Choice 1
      Point of declaration and member initialization list
@@ -156,7 +155,7 @@ Choice 5
      Member initialization list only
 
 
-
+//---------------------------------------------------------------------------
 Sample Code
      template <typename T>
 class Foo
@@ -181,9 +180,7 @@ Choice 4
 Choice 5
      tVar is a variable of an unknown type.
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class Base { }; 
 class Sub1 : public virtual Base { }; 
@@ -205,8 +202,7 @@ Choice 4
 Choice 5
      4
 
-
-
+//---------------------------------------------------------------------------
 Sample Code
 struct B 
 { 
@@ -256,8 +252,7 @@ Choice 4
 Choice 5
      B::Go B::Back B::Go B::Back B::Go
 
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class A 
 { 
@@ -291,8 +286,7 @@ Choice 4
 Choice 5
      The constructor declaration for A is illegal.
 
-
-
+//---------------------------------------------------------------------------
 Statement
 C++ contains numerous algorithm functions that accept function objects as a parameter.
 Question  Referring to the statement above, which one of the following is another name for function objects?
@@ -307,9 +301,7 @@ Choice 4
 Choice 5
      Actions
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class Foo
 {
@@ -328,11 +320,7 @@ Choice 4
 Choice 5
      It prevents the constructor from being called from a non-explicit function.
 
-
-
-
-
-	 
+//---------------------------------------------------------------------------	 
 Scenario
 std::string s("Hello World"); 
 char *c = s.c_str(); 
@@ -350,9 +338,7 @@ Choice 4
 Choice 5
      You cannot assign a literal character to a char* variable.
 
-
-
-
+//---------------------------------------------------------------------------
 Scenario
      You need to define the following function so that it will return true if the sets passed to it have any intersection 
 	 and false otherwise. 
@@ -372,9 +358,7 @@ Choice 4
 Choice 5
      std::search_n()
 
-
-
- 
+//--------------------------------------------------------------------------- 
 Sample Code
 
 class mybase {};
@@ -393,8 +377,7 @@ Choice 4
 Choice 5
      The declaration of derived2 is invalid because either derived or mybase must be virtual.
 
-
-
+//---------------------------------------------------------------------------
 Sample Code
 void f() throw(std::runtime_error) 
 { 
@@ -416,9 +399,7 @@ Choice 5
      std::logic_error
 
 
-
-
-
+//---------------------------------------------------------------------------
 Question       With regard to enumeration types, which one of the following statements is true?
 Choice 1
      Only one identifier in an enum list can have the value zero.
@@ -431,9 +412,7 @@ Choice 4
 Choice 5
      An integer can implicitly be converted to an enumeration type.
 
-
-
-
+//---------------------------------------------------------------------------
 Sample code
 #include <iostream>
 class A
@@ -486,9 +465,7 @@ Choice 5
 A::A()
 B::Foo()
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 #include <string> 
 #include <iostream> 
@@ -506,9 +483,7 @@ Choice 4
 Choice 5
      cin.getline(str);
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class Z 
 { 
@@ -545,9 +520,7 @@ Choice 4
 Choice 5
      It tells the compiler to allocate storage for e in a separate section.
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      template<> class Stack<char> { public: int Push(char); char Pop(); };
 Question  Referring to the sample code above, the template<> signifies that this class is an example of which one of the following?
@@ -562,9 +535,7 @@ Choice 4
 Choice 5
      An empty template declaration
 
-
-
-
+//---------------------------------------------------------------------------
 Question       What happens if a function throws an exception that is NOT listed in the function exception specification list?
 Choice 1
      The exception is passed up the handler chain.
@@ -577,10 +548,7 @@ Choice 4
 Choice 5
      abort() is immediately invoked.
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class A
 {
@@ -609,10 +577,7 @@ Choice 4
 Choice 5
      5
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample code
 template<typename T>
 bool is_int<T>();
@@ -659,10 +624,7 @@ bool is_int<T>()
   return typeof(T) == typeof(int);
 }; 
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      class Base { public: Base(); virtual ~Base(); }; class Derived : protected Base { public: virtual ~Derived(); }; int main() { Base *pb = new Derived; return 0; }
 Question  Referring to the sample code above, which one of the following statements is true?
@@ -677,9 +639,7 @@ Choice 4
 Choice 5
      Derived class cannot have a virtual destructor.
 
-
-
-
+//---------------------------------------------------------------------------
 Question       The number of characters contained in a std::string object can be found using which one of the following functions?
 Choice 1
      std::string::size
@@ -692,9 +652,7 @@ Choice 4
 Choice 5
      std::string::capacity
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      int main()
 {
@@ -725,9 +683,7 @@ Choice 4
 Choice 5
      C-DONE
 
-
-
-
+//---------------------------------------------------------------------------
 Question       Given a variable str of type std::string, which one of the following statements outputs the string backwards?
 Choice 1
      std::copy(str.reverse(), std::unary_function(std::cout));
@@ -741,9 +697,7 @@ Choice 4
 Choice 5
      std::cout << str.reverse();
 
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 class X 
 { 
@@ -772,9 +726,7 @@ Choice 4
 Choice 5
      a = a = b + c;
 
-
-
-
+//---------------------------------------------------------------------------
 Scenario
      A function throws an exception of type std::unexpected.
 Question  Referring to the scenario above, what is a logical cause?
@@ -789,9 +741,7 @@ Choice 4
 Choice 5
      An exception is thrown in which the type is not in the function's exception specification.
 
-
-
-
+//---------------------------------------------------------------------------
 Question       In order to use std::cin and std::cout, which header file do you include in your code?
 Choice 1
      <iostream>
@@ -804,10 +754,7 @@ Choice 4
 Choice 5
      <string.h>
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      namespace N1 { int f(int n) { return n * 2; } } namespace N2 { int f(double n) { return n * 3; } } using N1::f; int i1 = f(1.0); using N2::f; int i2 = f(1.0);
 Question  Referring to the sample code above, which one of the following statements is true?
@@ -822,10 +769,7 @@ Choice 4
 Choice 5
      Given the fact that the same function name f() is brought into scope multiple times, the code does not compile.
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      namespace { static int n; } namespace A { namespace { static int n; } } using namespace A; int main() { n = 5; return 0; }
 Question  Referring to the sample code above, which one of the following statements is true?
@@ -840,10 +784,7 @@ Choice 4
 Choice 5
      Nested namespaces are illegal.
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      #include <iostream>
 
@@ -877,11 +818,7 @@ Choice 4
 Choice 5
      ciillf
 
-
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
 template<class T> class A
 {  
@@ -907,10 +844,7 @@ Choice 4
 Choice 5
      friend template<class B> class A;
 
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      char abc[] = "";
 Question  Which one of the following is true regarding the array abc created by the declaration in the sample above?
@@ -925,11 +859,7 @@ Choice 4
 Choice 5
      There is a syntax error in that the initializer list is empty.
 
-
-
-
-
-
+//---------------------------------------------------------------------------
 Sample Code
      void HandleNoMemory(); int main() { int *p = new int[100]; if(!p) { HandleNoMemory(); } return 0; }
 Question  Referring to the sample code above and assuming the standard C++ new operator is being used, which one of the following statements is true?
@@ -944,6 +874,4 @@ Choice 4
 Choice 5
      An exception of type std::failed_alloc can be thrown.
 
-
-
-
+//---------------------------------------------------------------------------
