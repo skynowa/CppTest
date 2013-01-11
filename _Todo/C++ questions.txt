@@ -118,9 +118,28 @@ void <<operator<<(std::ostream&, Airplane const&)
 as a stand alone, overloaded operator.
 
 //---------------------------------------------------------------------------
+// DONE
 Sample code:
 
-     std::vector<std::string> vs;
+    #include <iostream>
+    #include <vector>
+    #include <algorithm>
+        
+    int main() { 
+       std::vector<std::string> vs;
+       
+       std::fill_n(std::back_inserter(vs), 5, "hello");
+       
+       for (
+          std::vector<std::string>::iterator it = vs.begin(); 
+          it != vs.end(); 
+          ++it) 
+       {
+          std::cout << *it << std::endl;
+       }
+       
+       return 0; 
+    }
      
 Question:  Referring to the container definition above, which one of the following 
 lines of code fills vs with five strings containing the word "hello"?
@@ -129,7 +148,7 @@ Choice 1
      std::fill(vs.begin(), vs.end(), "hello");
 Choice 2
      std::generate_n(std::back_inserter(vs), 5, "hello");
-Choice 3
+Choice 3+
      std::fill_n(std::back_inserter(vs), 5, "hello");
 Choice 4
      vs = std::vector<std::string>("hello");
@@ -214,20 +233,24 @@ Choice 5
      tVar is a variable of an unknown type.
 
 //---------------------------------------------------------------------------
+// DONE
 Sample code:
 
-    class Base { }; 
-    class Sub1 : public virtual Base { }; 
-    class Sub2 : public Base { }; 
+    #include <iostream>
+        
+    class Base {}; 
+    class Sub1  : public virtual Base { }; 
+    class Sub2  : public         Base { }; 
     class Multi : public Sub1, public Sub2 { }; 
-    
+        
     int main() { 
-        Multi m; 
-        return 0; 
+       Multi m; 
+       
+       return 0; 
     }
     
 Question:  Referring to the Sample code above, how many times is the constructor for Base called?
-Choice 1
+Choice 1+
      0
 Choice 2
      1
@@ -239,44 +262,54 @@ Choice 5
      4
 
 //---------------------------------------------------------------------------
+// DONE
 Sample code:
-    struct B 
-    { 
-        void Go() 
-        { 
-            std::cout << "B::Go "; 
-        } 
-        void Back() 
-        { 
-            std::cout << "B::Back "; 
-        } 
+
+    #include <iostream>
+        
+    struct B { 
+       void Go() { 
+          std::cout << "B::Go "; 
+       } 
+       void Back() { 
+          std::cout << "B::Back "; 
+       } 
     }; 
-    struct C : public B 
+
+    struct C : 
+       public B 
     { 
-        void Go() 
-        { 
-            std::cout << "C::Go "; 
-        } 
+       void Go() { 
+          std::cout << "C::Go "; 
+       } 
     }; 
-    struct D : public B 
+
+    struct D : 
+       public B 
     { 
-        void Back() 
-        { 
-            std::cout << "D::Go "; 
-        } 
+       void Back() { 
+          std::cout << "D::Go "; 
+       } 
     }; 
-    
-    B *bd = new D; 
-    B *bc = new C; 
-    D d; 
-    
-    void f() 
-    { 
-        bd->Go(); 
-        bd->Back(); 
-        bc->Go(); 
-        bc->Back(); 
-        d.Go(); 
+
+    B *bd = new D;
+    B *bc = new C;
+    D  d;
+
+    void foo() { 
+       bd->Go();
+       bd->Back();
+       
+       bc->Go();
+       bc->Back();
+       
+       d.Go();
+    }
+        
+    int main() { 
+       foo();
+       
+       return 0; 
     }
     
 Question:  Referring to the Sample code above, what is the displayed output when f() is called?
@@ -288,23 +321,24 @@ Choice 3
      B::Go D::Back C::Go B::Back D::Go
 Choice 4
      D::Go B::Back C::Go B::Back B::Go
-Choice 5
+Choice 5+
      B::Go B::Back B::Go B::Back B::Go
 
 //---------------------------------------------------------------------------
+// DONE
 Sample code:
 
     class A 
     { 
         public: 
-            A() {} 
-            A(A& a) {} 
-            A& operator =(const A& a) { 
+            A () {} 
+            A (A& a) {} 
+            A& operator = (const A &a) { 
                 return (*this); 
             } 
     };
 
-    int main (int argc, char * const argv[]) 
+    int main () 
     {
         const A a1; 
         A a2(a1); 
@@ -315,7 +349,7 @@ Sample code:
 Question:  Given the Sample code shown above, which one of the following statements is true?
 Choice 1
      There is nothing wrong with the code.
-Choice 2
+Choice 2+
      The instantiation of a2 is illegal.
 Choice 3
      Class objects cannot be declared as const.
@@ -327,7 +361,8 @@ Choice 5
 //---------------------------------------------------------------------------
 // DONE
 Statement
-C++ contains numerous algorithm functions that accept function objects as a parameter.
+    C++ contains numerous algorithm functions that accept function objects as a parameter.
+
 Question:  Referring to the statement above, which one of the following is another name for function objects?
 Choice 1+
      Predicates
@@ -461,6 +496,7 @@ Choice 5
      An integer can implicitly be converted to an enumeration type.
 
 //---------------------------------------------------------------------------
+// DONE
 Sample code
 
     #include <iostream>
@@ -822,7 +858,7 @@ Sample code:
             int n; 
     }; 
     
-    int main (int argc, char * const argv[]) 
+    int main () 
     {
         X a, b, c;
 
