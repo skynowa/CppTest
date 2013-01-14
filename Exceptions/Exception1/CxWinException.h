@@ -24,12 +24,12 @@ class CxWinException {
 				 CxWinException(LPCTSTR msg);
 		virtual ~CxWinException();
 
-		LPCTSTR  What()        const;
-		VOID     vMessageBox() const;
+		LPCTSTR  What          () const;
+		VOID     vMessageBox   () const;
 
 	private:
-		DWORD   m_err;
-		LPCTSTR m_msg;
+		DWORD    m_err;
+		LPCTSTR  m_msg;
 };
 //---------------------------------------------------------------------------
 #endif //CxWinExceptionH

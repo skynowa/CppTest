@@ -496,69 +496,6 @@ Choice 5
      An integer can implicitly be converted to an enumeration type.
 
 //---------------------------------------------------------------------------
-// DONE
-Sample code
-
-    #include <iostream>
-    
-    class A {
-        public:
-                        A()   { std::cout << "A::A()\n"; }
-           virtual void Foo() { std::cout << "A::Foo()\n"; }
-    };
-
-    class B : 
-        public A
-    {
-        public:
-                         B()   { std::cout << "B::B()\n"; }
-            virtual void Foo() { std::cout << "B::Foo()\n"; }
-    };
-
-    int main() {
-        try {
-            throw B();
-        }
-        catch (A ex) {
-            std::cout << "catch(A ex)\n";
-            ex.Foo();
-        }
-        catch (B &ex) {
-            std::cout << "catch(B &ex)\n";
-            ex.Foo();
-        }
-
-        return 0;
-    }
-    
-Question:  What is the output of the Sample code above?
-
-Choice 1
-B::B()
-B::Foo()
-
-Choice 2
-A::A()
-B::B()
-A::Foo()
-B::Foo()
-
-Choice 3
-A::A()
-B::B()
-B::Foo()
-
-Choice 4+
-A::A()
-B::B()
-A::Foo()
-
-Choice 5
-B::B()
-A::A()
-B::Foo()
-
-//---------------------------------------------------------------------------
 Sample code:
 
     #include <string> 

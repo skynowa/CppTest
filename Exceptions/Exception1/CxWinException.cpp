@@ -22,34 +22,28 @@
 *****************************************************************************/
 
 //---------------------------------------------------------------------------
-//TODO: - CxWinException (comment)
-CxWinException::CxWinException(LPCTSTR msg) :
-	m_err(::GetLastError()), 
-	m_msg(msg)
+CxWinException::CxWinException(
+    LPCTSTR msg
+) :
+    m_err(::GetLastError()), 
+    m_msg(msg)
 {
-	//code
 }
 //---------------------------------------------------------------------------
-//TODO: - ~CxWinException (comment)
-/*virtual*/
+/* virtual */
 CxWinException::~CxWinException() {
-	//code
+
 }
 //---------------------------------------------------------------------------
-//TODO: - What ()
 LPCTSTR CxWinException::What()  const {
-	/*DEBUG*/
-
 	return m_msg;
 }
 //---------------------------------------------------------------------------
-//TODO: - vMessageBox ()
-VOID CxWinException::vMessageBox() const {
-	/*DEBUG*/
-
-	TCHAR buf1 [512] = _T("");
-	TCHAR buf2 [512] = _T("");
-	TCHAR buf3 [512] = _T("");
+VOID 
+CxWinException::vMessageBox() const {
+	TCHAR buf1 [512] = {};
+	TCHAR buf2 [512] = {};
+	TCHAR buf3 [512] = {};
 
 	::lstrcpy(buf1, m_msg);
 
