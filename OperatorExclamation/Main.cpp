@@ -1,6 +1,6 @@
  /*
  * \file  Main.cpp
- * \brief 
+ * \brief operator !
  */
 
 
@@ -9,7 +9,7 @@
 #include <iostream>
 #include <assert.h>
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main()
 {
     {
         const int a0 = 0;
@@ -35,6 +35,22 @@ int main(int iArgCount, char **paszArgs)
         std::cout << std::endl;
     }
 
+    {
+        const double d00 = 0.0;
+
+        std::cout << " static_cast<bool>(" << d00 << ") = " <<  static_cast<bool>(d00) << std::endl;
+        std::cout << "!static_cast<bool>(" << d00 << ") = " << !static_cast<bool>(d00) << std::endl;
+        std::cout << std::endl;
+    }
+
+    {
+        const double d01 = 0.1;
+
+        std::cout << " static_cast<bool>(" << d01 << ") = " <<  static_cast<bool>(d01) << std::endl;
+        std::cout << "!static_cast<bool>(" << d01 << ") = " << !static_cast<bool>(d01) << std::endl;
+        std::cout << std::endl;
+    }
+
     return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
@@ -51,6 +67,10 @@ int main(int iArgCount, char **paszArgs)
  static_cast<bool>(-20) = 1
 !static_cast<bool>(-20) = 0
 
+ static_cast<bool>(0) = 0
+!static_cast<bool>(0) = 1
 
+ static_cast<bool>(0.1) = 1
+!static_cast<bool>(0.1) = 0
 
 #endif
