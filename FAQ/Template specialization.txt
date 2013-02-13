@@ -1,0 +1,16 @@
+Template specialization
+
+
+// вот пример общей специализации
+template< typename T >
+struct is_integer
+{
+  enum{ value = 0; }
+};
+
+// а вот частичная специализация
+template<>
+struct is_integer< int >
+{
+ enum{ value = 1; }
+};
