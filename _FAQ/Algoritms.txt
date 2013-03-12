@@ -1,0 +1,43 @@
+ћожете ли вы написать пример какого-нибудь алгоритма сортировки?
+
+
+Answer: 
+ѕузырькова€ сортировка, дл€ контейнеров:
+
+    template <typename T >
+    void 
+    bubble_sort(T &a) {
+        for (T::size_type i = 0; a.size() && i < a.size() - 1; ++ i) {
+            for (T::size_type j = i; j + 1 > 0; -- j) {
+                if (a[j] > a[j+1])
+                    std::swap(a[j], a[j+1]);
+            }
+        }
+    }
+
+    std::vector<int> v;
+    v.push_back( 7 );
+    v.push_back( 1000 );
+    v.push_back( 134 );
+    v.push_back( 23 );
+    v.push_back( 1 );
+    bubble_sort( v );
+//------------------------------------------------------------------------------
+ћожете ли вы написать код дл€ переворота строки?
+
+
+Answer: 
+ од переворота строки дл€ контейнеров, не осуществл€ющий прохода по всей строке:
+
+    template <typename T >
+    void 
+    invert_string(T &a) {
+        T::size_type length = a.size();
+        for (T::size_type i = 0; i < (length/2); ++ i) {
+            std::swap(a[i], a[length - i - 1]);
+        }
+    }
+
+    std::string str = "abcdefg";
+    invert_string(str);
+//------------------------------------------------------------------------------
