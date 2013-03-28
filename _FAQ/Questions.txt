@@ -308,7 +308,7 @@ Answer:
     int i(1);
     std::cout << f(++ i, ++ i, ++ i) << std::cout;
 
-Что такое undefined behaviour? 
+Что такое undefined behaviour?
 Приведите примеры, когда программа начинает себя так вести.
 
 
@@ -559,7 +559,7 @@ Answer:
 
 
 Answer:
-Да. 
+Да.
 В классе – только в конструкторе. Если статический константый,
 то вне пределов класса.
 //------------------------------------------------------------------------------
@@ -574,8 +574,8 @@ Answer:
 
 
 Answer:
-Для хранения состояния класса. 
-    
+Для хранения состояния класса.
+
     static int i;
 //------------------------------------------------------------------------------
 Как объявить в классе и проинициализировать статический константный массив?
@@ -613,7 +613,7 @@ Answer:
 Адаптеры
     stack
     queue
-    priority_queue 
+    priority_queue
 Ассоциативные контейнеры и множества
     map
     multimap
@@ -1114,7 +1114,7 @@ Answer:
 
 
 Answer:
-На этапе компиляции – разрешение перегрузки. 
+На этапе компиляции – разрешение перегрузки.
 На этапе выполнения – виртуальные функции.
 //------------------------------------------------------------------------------
 Какие два вида полиморфизма реализованы в С++?
@@ -1954,10 +1954,28 @@ Answer:
 Answer:
 Объект, который рассматривается, как функция. Объект класса с оператором ().
 
-class Functor
-{
-    bool operator()(int x) {return static_cast(x);}
-};
+    #include <iostream>
+
+    class CFunctor
+    {
+    public:
+        std::string
+        operator() (const std::string &s) {
+            return s;
+        }
+    };
+
+    int main() {
+        CFunctor f;
+
+        std::cout << f("string") << std::endl;
+
+        return 0;
+    }
+
+    stdout:
+    string
+
 //------------------------------------------------------------------------------
 Какими способами функтор вызывается?
 
@@ -2339,23 +2357,23 @@ Answer:
 
 
 Answer:
-fprintf
-fscanf
+    fprintf
+    fscanf
 //------------------------------------------------------------------------------
 Перечислите функции ввода/вывода для работы с двоичными файлами.
 
 
 Answer:
-fget
-fput
+    fget
+    fput
 //------------------------------------------------------------------------------
 Какие функции реализованы в библиотеке для обеспечения прямого доступак записям
 двоичного файла? Можно ли их использовать для работы с текстовыми файлами?
 
 
 Answer:
-fseek, fread, fwrite
-Можно.
+    fseek, fread, fwrite
+    Можно.
 //------------------------------------------------------------------------------
 Объясните назначение функции fseek().
 
@@ -2538,8 +2556,9 @@ Answer:
 
 
 Answer:
-ostream dst; istream src;
-dst << src.rdbuf();
+    std::ostream dst;
+    std::istream src;
+    dst << src.rdbuf();
 //------------------------------------------------------------------------------
 Какими операциями выполняется форматированный ввод/вывод в файловые потоки?
 А неформатированный?
@@ -2570,18 +2589,18 @@ stringstream – запрещено
     class A
     {
     public:
-        int getField()      {return i;}
+        int getField()      { return i; }
         int setField(int i) { this->i = i; }
 
-        A(int i) : i(i);
+        A (int i) : i(i);
     private:
         int i;
     };
 
 
 Answer:
-    std::ostream& operator<
-    std::istream& operator>>(std::istream& s, A a) {
+    std::ostream& operator <<
+    std::istream& operator >> (std::istream &s, A a) {
         int i = 0; s >> i; a.setField(i); return s;
     }
 //------------------------------------------------------------------------------
@@ -2937,7 +2956,7 @@ advance() distance()
 
 
 Answer:
-revesre iterators.
+reverse iterators.
 //------------------------------------------------------------------------------
 Объясните, почему итераторы реализованы как вложенные классы в контейнерах.
 
@@ -3070,8 +3089,8 @@ Answer:
 
 
 Answer:
-    закрытое
-    открытое
+    public
+    private
 //------------------------------------------------------------------------------
 когда необходим виртуальный деструктор?
 
@@ -3147,10 +3166,10 @@ Answer:
 
 
 Answer:
-sizeof всех членов + остаток для выравнивания
-(по умолчанию выравнивание 4 байта) + sizeof указателя на vtable
-(если есть виртуальные функции) + указатели на классы предков,
-от которых было сделано виртуальное наследование
+sizeof всех членов +
+остаток для выравнивания(по умолчанию выравнивание 4 байта) +
+sizeof указателя на vtable (если есть виртуальные функции) +
+указатели на классы предков, от которых было сделано виртуальное наследование
 (размер указателя * количество классов)
 
     struct Foo
@@ -3183,23 +3202,24 @@ Answer:
 Т.к. современный компилятор не даст это сделать напрямую,
 то нужно будет использовать промежуточный метод.
 
-    class Base {
+    class Base
+    {
     public:
-        Base()
-        {
+        Base() {
             base_func();
         }
-        void base_func()
-        {
+
+        void base_func() {
             func(); // pure virtual function call exception
         }
+
         virtual void func() = 0;
     };
 
-    class Derived : public Base {
+    class Derived : public Base
+    {
     public:
-        virtual void func()
-        {
+        virtual void func() {
         }
     };
 //------------------------------------------------------------------------------
@@ -3223,8 +3243,7 @@ Answer:
     class Derived2 : private Derived
     {
     public:
-        Derived2()
-        {
+        Derived2() {
             i = 2;  // error C2247: 'Base::i' not accessible because 'Derived'
                     // uses 'private' to inherit from 'Base'
         }
@@ -3276,14 +3295,13 @@ Answer:
         try {
             // Call something
         }
-        catch(const std::exception& )
-        {
+        catch (const std::exception &) {
             // Make/Check something..
             throw; // Пересылаем исключение следующему обработчику
         }
         //...
     }
-    catch (const std::exception& e) {
+    catch (const std::exception &e) {
         std::cout << e.what() << std::endl;
     }
 //------------------------------------------------------------------------------
@@ -3822,13 +3840,14 @@ __interrupt double compute_area(double radius)
 void foo(void)
 {
    unsigned int a = 6;
-   int b = -20;
-   (a+b > 6) ? puts(“> 6?) : puts(“<= 6?);
+   int          b = - 20;
+
+   (a + b > 6) ? puts("> 6") : puts("<= 6");
 }
 
 Этот вопрос проверяет, разбираетесь ли вы в правилах представления целых чисел
 в Си, – области, которую я нахожу очень плохо понимаемой многими разработчиками.
-Ответ состоит в том, что выведется “> 6”. Причина -  в выражениях, включающих
+Ответ состоит в том, что выведется "> 6". Причина -  в выражениях, включающих
 типы со знаком и без  все операнды приводятся к типам без знака.
 Таким образом, -20 становится очень большим положительным целым, и выражение
 оценивается больше, чем 6. Это очень важный момент во встраиваемых  системах,
@@ -3905,8 +3924,8 @@ struct s * p1, p2;
 что, вероятно, вовсе не то, что вы хотели. Второй пример правильно определяет
 р3 и р4 как указатели.
 //------------------------------------------------------------------------------
-Си позволяет некоторые ужасные конструкции. Допустима ли эта конструкция,
-и если да, то что делает этот код?
+Си позволяет некоторые ужасные конструкции.
+Допустима ли эта конструкция, и если да, то что делает этот код?
 
 int a = 5, b = 7, c;
 
@@ -3936,31 +3955,31 @@ c = a++ + b;
     int main()
     {
         std::cout << "void *                  = " << sizeof( void * )                 << std::endl;
-        
+
         std::cout << "bool                    = " << sizeof( bool )                   << std::endl;
-        
+
         std::cout << "signed char             = " << sizeof( signed char )            << std::endl;
         std::cout << "unsigned char           = " << sizeof( unsigned char )          << std::endl;
-        
-        std::cout << "signed short int        = " << sizeof( signed short int )       << std::endl;    
+
+        std::cout << "signed short int        = " << sizeof( signed short int )       << std::endl;
         std::cout << "unsigned short int      = " << sizeof( unsigned short int )     << std::endl;
-         
+
         std::cout << "signed int              = " << sizeof( signed int )             << std::endl;
-        std::cout << "unsigned int            = " << sizeof( unsigned int )           << std::endl;       
-        
+        std::cout << "unsigned int            = " << sizeof( unsigned int )           << std::endl;
+
         std::cout << "signed long int         = " << sizeof( signed long int )        << std::endl;
-        std::cout << "unsigned long int       = " << sizeof( unsigned long int )      << std::endl;       
-        
+        std::cout << "unsigned long int       = " << sizeof( unsigned long int )      << std::endl;
+
         std::cout << "signed long long int    = " << sizeof( signed long long int )   << std::endl;
         std::cout << "unsigned long long int  = " << sizeof( unsigned long long int ) << std::endl;
-        
+
         std::cout << "float                   = " << sizeof( float )                  << std::endl;
         std::cout << "double                  = " << sizeof( double )                 << std::endl;
         std::cout << "long double             = " << sizeof( long double )            << std::endl;
 
         return 0;
     }
-    
+
 
 Answer:
     void *                  = 8
@@ -3977,7 +3996,7 @@ Answer:
     unsigned long long int  = 8
     float                   = 4
     double                  = 8
-    long double             = 16    
+    long double             = 16
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
