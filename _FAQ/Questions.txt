@@ -3998,7 +3998,49 @@ Answer:
     double                  = 8
     long double             = 16
 //------------------------------------------------------------------------------
+Deadlock
 
+A deadlock is a situation in which two or more competing actions
+are each waiting for the other to finish, and thus neither ever does.
+
+Такая ситуация когда два потока ждут друг друга и называется Deadlock
+
+Deadlock — ситуация в многозадачной среде или СУБД, при которой несколько
+процессов находятся в состоянии бесконечного ожидания ресурсов,
+захваченных самими этими процессами.
+
+Maybe a simple bank situation.
+
+    class Account {
+    private:
+        double balance;
+        int    id;
+
+    public:
+        void withdraw(double amount) {
+            balance -= amount;
+        }
+
+        void deposit(double amount) {
+            balance += amount;
+        }
+
+        void transfer(Account from, Account to, double amount) {
+            sync(from);
+            sync(to);
+
+            from.withdraw(amount);
+            to.deposit(amount);
+
+            release(to);
+            release(from);
+        }
+    }
+
+Obviously, should there be two threads which attempt to run transfer(a,b)
+and transfer(b,a) at the same time, then a deadlock is going to occur.
+
+This code is also great for looking at solutions to the deadlock as well.
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
