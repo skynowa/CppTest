@@ -11,45 +11,50 @@ However you want to change what object is created.
 class IMessage {
     public:
         virtual ~IMessage() { }
-        virtual std::string get_message()=0;
+        virtual std::string get() = 0;
 };
 //---------------------------------------------------------------------------
-class IMessageFactory {
-    public:
-        virtual ~IMessageFactory() { }
-        virtual std::auto_ptr<IMessage> create_message() const=0;
-};
-//---------------------------------------------------------------------------
-class CHelloWorldMessage : 
+class CMessageA : 
     public IMessage 
 {
     public:
-        std::string get_message() {
+        virtual std::string get() {
             return "Hello world!";
         }
 };
 //---------------------------------------------------------------------------
-class CHelloWorldFactory : 
+
+//---------------------------------------------------------------------------
+class IMessageFactory {
+    public:
+        virtual ~IMessageFactory() { }
+        virtual std::auto_ptr<IMessage> create_message() const = 0;
+};
+//---------------------------------------------------------------------------
+class CMessageFactoryA : 
     public IMessageFactory 
 {
     public:
-        std::auto_ptr<IMessage> create_message() const {
-            return std::auto_ptr<IMessage>(new CHelloWorldMessage());
+        virtual std::auto_ptr<IMessage> create_message() const {
+            return std::auto_ptr<IMessage>(new CMessageA());
         }
 };
 //---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
 void 
 hello_world(
-    const IMessageFactory & factory
+    const IMessageFactory &factory
 )
 {
 	std::auto_ptr<IMessage> message = factory.create_message();
-	std::cout << message->get_message() << std::endl;
+    
+	std::cout << message->get() << std::endl;
 }
 //---------------------------------------------------------------------------
 int main()
 {
-	hello_world(CHelloWorldFactory());
+	hello_world( CMessageFactoryA() );
     
 	return 0;
 }
