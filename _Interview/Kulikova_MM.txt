@@ -1,0 +1,39 @@
+Senior C++ Developer
+
+40000 грн. За хорошого специалиста готовы платить 4500$Компания:    Куликова М.М., ЧП
+Город:  Киев
+Вид занятости:  полная занятость
+Требования:  опыт работы от 5 лет, высшее образование
+
+Описание вакансии
+
+We are looking for a Senior C++ Developer to participate in development of the company's receiver and management platform PowerManage™. The server is a high-tech solution based on GNU/Linux designed to receive notifications from security panels, relay them to the security offices, notify end-users, configure and upgrade the software of the premises equipment. Thus, an eligible applicant would be proficient at network technologies, inter-process communications, databases, and application development.
+
+ Requirements:
+
+- Desirable education in the relevant field;
+- 5+ years experience in software development;
+- Proficiency in C++ programming;
+- Excellent GNU/Linux knowledge;
+- Experience with high load systems and server programming;
+- Strong experience in multi-threaded and network applications development;
+- Experience with asynchronous I/O approach;
+- Knowledge of BOOST::ASIO, ACE or similar frameworks is required;
+- Familiarity with RPC (CORBA, Thrift, XML-RPC);
+- At least basic knowledge of bash, python;
+- Working experience with RDBMS, strong knowledge of SQL;
+- Familiarity with version control systems;
+- Good command of spoken and written English.
+- Good communications skills. We expect that you are able to express
+
+your ideas clearly.
+
+Company offers:
+
+- Good salary;
+- 8 hours working day (flexible working hours);
+- 24-day paid vacation;
+- Insurance;
+- Lunch costs compensation;
+- Professional environment;
+- Kiev, 10 minutes from metro station Dorogozhychi;
