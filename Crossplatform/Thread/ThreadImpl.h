@@ -4,24 +4,24 @@
 class Thread;
 
 // Abstract core class for Thread
-class ThreadCore
+class ThreadImpl
 {
 public:
     // Provide a platform independent way for a thread core to be created
-    static ThreadCore * createCore();
+    static ThreadImpl * createCore();
 
     // A safe-delete for thread cores. More functionality should be added.
-    static void deleteCore(ThreadCore * core)
+    static void deleteCore(ThreadImpl * core)
     {
         if (core)
             delete core;
     }
     // Constructor and destructor, don’t need to do anything
-    ThreadCore()
+    ThreadImpl()
     {
     }
 
-    virtual ~ThreadCore()
+    virtual ~ThreadImpl()
     {
     }
     // The following functions are all platform dependent in their operations,

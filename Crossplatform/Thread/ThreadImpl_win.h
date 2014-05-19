@@ -1,20 +1,20 @@
-#include <ThreadCore.h>
+#include <ThreadImpl.h>
 
 // Wrapper class for a operating-system thread.
 // Check to make sure that the user wants to compile for win32 systems
-#ifdef USE_WIN32THREADCORE
+#ifdef USE_ThreadImpl_win
 
-#include <ThreadCore.h>
+#include <ThreadImpl.h>
 #include <windows.h>
 
-class Win32ThreadCore : ThreadCore
+class ThreadImpl_win : ThreadImpl
 {
 public:
-    inline Win32ThreadCore()
+    inline ThreadImpl_win()
     {
     }
 
-    inline virtual ~Win32ThreadCore()
+    inline virtual ~ThreadImpl_win()
     {
     }
 
@@ -37,18 +37,18 @@ protected:
 };
 
 // Simple implementations
-ThreadCore * ThreadCore::createCore()
+ThreadImpl * ThreadImpl::createCore()
 {
-    return new Win32ThreadCore;
+    return new ThreadImpl_win;
 }
 
-void ThreadCore::waitFor(Thread * thread)
+void ThreadImpl::waitFor(Thread * thread)
 {
-    Win32ThreadCore * core = (Win32ThreadCore*)thread->core;
+    ThreadImpl_win * core = (ThreadImpl_win*)thread->core;
     WaitForSingleObjectEx(core->threadHandle, INFINITY, TRUE);
 }
 
-void ThreadCore::yield()
+void ThreadImpl::yield()
 {
     SwitchToThread();
 }

@@ -1,20 +1,20 @@
 // Make sure the user wants to compile for a POSIX compliant system
-#ifdef USE_POSIXTHREADCORE
+#ifdef USE_ThreadImpl_posix
 
-#include <ThreadCore.h>
+#include <ThreadImpl.h>
 #include <pthread.h>
 #include <sched.h>
 
 // Posix implementation of the thread core class
-class PosixThreadCore : ThreadCore
+class ThreadImpl_posix : ThreadImpl
 {
 public:
     // empty constructor and destructor
-    PosixThreadCore()
+    ThreadImpl_posix()
     {
     }
 
-    virtual ~PosixThreadCore()
+    virtual ~ThreadImpl_posix()
     {
     }
 
@@ -31,6 +31,7 @@ protected:
     {
         Thread * thread = (Thread*)pthreadParam;
         thread->run();
+
         return 0;
     }
 };
@@ -38,19 +39,19 @@ protected:
 // Simple implementations, but since we do not want a lot of preprocessor
 // statements everywhere, we implement them in this file. Implementing these
 // functions in this file also helps to ensure that no more than one
-// threadcore implementation is linked
-ThreadCore * ThreadCore::createCore()
+// ThreadImpl implementation is linked
+ThreadImpl* ThreadImpl::createCore()
 {
-    return new PosixThreadCore;
+    return new ThreadImpl_posix;
 }
 
-void ThreadCore::waitFor(Thread * thread)
+void ThreadImpl::waitFor(Thread * thread)
 {
-    PosixThreadCore * core = ((PosixThreadCore*)thread)->core;
+    ThreadImpl_posix * core = ((ThreadImpl_posix*)thread)->core;
     pthread_join(core->posixThread, NULL);
 }
 
-void ThreadCore::yield()
+void ThreadImpl::yield()
 {
     sched_yield();
 }

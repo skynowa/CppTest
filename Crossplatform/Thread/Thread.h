@@ -1,31 +1,37 @@
-#include <ThreadCore.h>
+#include <ThreadImpl.h>
 
 class Thread
 {
 public:
     Thread()
+    {
+        core = ThreadImpl::createCore();
+    }
+
     virtual ~Thread()
     {
-        core = ThreadCore::createCore();
+        ThreadImpl::deleteCore(core);
     }
-    {   ThreadCore::deleteCore(core);
-    }
+
     static void waitFor(Thread * thread)
     {
-        ThreadCore::waitFor(thread);
+        ThreadImpl::waitFor(thread);
     }
+
     static void yield()
     {
-        ThreadCore::yield();
+        ThreadImpl::yield();
     }
+
     void start()
     {
         core->start(this);
     }
+
     virtual void run() = 0;
 
 protected:
-    ThreadCore * core;
+    ThreadImpl*  core;
 
-    friend class ThreadCore;
+    friend class ThreadImpl;
 };
