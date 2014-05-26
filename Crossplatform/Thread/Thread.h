@@ -1,5 +1,5 @@
 #include <ThreadImpl.h>
-
+//-------------------------------------------------------------------------------------------------
 class Thread
 {
 public:
@@ -31,7 +31,8 @@ public:
     virtual void run() = 0;
 
 protected:
-    ThreadImpl*  core;
+    ThreadImpl* core;
 
     friend class ThreadImpl;
 };
+//-------------------------------------------------------------------------------------------------
