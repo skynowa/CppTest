@@ -1,38 +1,47 @@
-#include <ThreadImpl.h>
+/**
+ * \file   Thread.h
+ * \brief
+ */
+
+
+#define USE_THREADIMPL_POSIX 1
+#define USE_THREADIMPL_WIN   0
+
+#include <IThreadImpl.h>
 //-------------------------------------------------------------------------------------------------
 class Thread
 {
 public:
     Thread()
     {
-        core = ThreadImpl::createCore();
+        _impl = IThreadImpl::construct();
     }
 
     virtual ~Thread()
     {
-        ThreadImpl::deleteCore(core);
+        IThreadImpl::destruct(_impl);
     }
 
-    static void waitFor(Thread * thread)
+    static void waitFor(Thread* thread)
     {
-        ThreadImpl::waitFor(thread);
+        IThreadImpl::waitFor(thread);
     }
 
     static void yield()
     {
-        ThreadImpl::yield();
+        IThreadImpl::yield();
     }
 
     void start()
     {
-        core->start(this);
+        _impl->start(this);
     }
 
     virtual void run() = 0;
 
 protected:
-    ThreadImpl* core;
+    IThreadImpl* _impl;
 
-    friend class ThreadImpl;
+    friend class IThreadImpl;
 };
 //-------------------------------------------------------------------------------------------------

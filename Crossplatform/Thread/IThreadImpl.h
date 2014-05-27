@@ -1,23 +1,28 @@
+/**
+ * \file   IThreadImpl.h
+ * \brief
+ */
+
+
 #include <Thread.h>
 //-------------------------------------------------------------------------------------------------
 class Thread;
 
-// Abstract core class for Thread
-class ThreadImpl
+class IThreadImpl
 {
 public:
-    static ThreadImpl* createCore();
+    static IThreadImpl* construct();
 
-    static void deleteCore(ThreadImpl * core)
+    static void destruct(IThreadImpl* impl)
     {
-        delete core; core = 0;
+        delete impl; impl = 0;
     }
 
-    ThreadImpl()
+    IThreadImpl()
     {
     }
 
-    virtual ~ThreadImpl()
+    virtual ~IThreadImpl()
     {
     }
 
