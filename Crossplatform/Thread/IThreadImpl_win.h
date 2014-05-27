@@ -4,7 +4,7 @@
  */
 
 
-#include <IThreadImpl.h>
+#include "IThreadImpl.h"
 
 #if USE_THREADIMPL_WIN
 
@@ -57,4 +57,5 @@ IThreadImpl::yield()
     ::SwitchToThread();
 }
 //-------------------------------------------------------------------------------------------------
+
 #endif

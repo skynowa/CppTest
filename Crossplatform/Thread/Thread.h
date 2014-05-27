@@ -7,7 +7,7 @@
 #define USE_THREADIMPL_POSIX 1
 #define USE_THREADIMPL_WIN   0
 
-#include <IThreadImpl.h>
+#include "IThreadImpl.h"
 //-------------------------------------------------------------------------------------------------
 class Thread
 {

@@ -4,7 +4,7 @@
  */
 
 
-#include <IThreadImpl.h>
+#include "IThreadImpl.h"
 
 #if USE_THREADIMPL_POSIX
 
@@ -63,4 +63,5 @@ IThreadImpl::yield()
     ::sched_yield();
 }
 //-------------------------------------------------------------------------------------------------
+
 #endif
