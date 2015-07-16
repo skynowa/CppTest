@@ -1,6 +1,6 @@
  /*
  * \file  Main.cpp
- * \brief 
+ * \brief
  */
 
 
@@ -8,14 +8,19 @@
 #include <string>
 #include <iostream>
 #include <assert.h>
+#include <cstdlib>
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int argCount, char **args)
 {
-    // goto exit;
+    for (size_t i = 0; i < 10; ++ i) {
+        if (i == 5) {
+            // goto finally;
+        }
+    }
 
     std::cout << 1 << std::endl;;
 
-    exit: {
+    finally: {
         std::cout << 2 << std::endl;;
     }
 
@@ -30,7 +35,7 @@ int main(int iArgCount, char **paszArgs)
 2
 
 // with out goto
-1 
+1
 2
 
 #endif
