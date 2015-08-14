@@ -1,72 +1,74 @@
 /*
-Command contains an action that you need to defer for some reason. 
-We split the task into two commands (PrintHello and PrintWorld), 
+Command contains an action that you need to defer for some reason.
+We split the task into two commands (CommandDefence and CommandAttack),
 and queue them up in Commands.
 */
+
 
 #include <vector>
 #include <algorithm>
 #include <iostream>
 
-class Command
+//-------------------------------------------------------------------------------------------------
+class ICommand
 {
 public:
-	virtual ~Command() { }
-	virtual void execute()=0;
+	virtual ~ICommand() { }
+	virtual void execute() = 0;
 };
-
-class PrintHello : public Command
-{
-public:
-	void execute()
-	{
-		std::cout << "Hello ";
-	}
-};
-
-class PrintWorld : public Command
+//-------------------------------------------------------------------------------------------------
+class CommandDefence : public ICommand
 {
 public:
 	void execute()
 	{
-		std::cout << "world!" << std::endl;
+		std::cout << "command_defence;";
 	}
 };
-
+//-------------------------------------------------------------------------------------------------
+class CommandAttack : public ICommand
+{
+public:
+	void execute()
+	{
+		std::cout << "command_attack;" << std::endl;
+	}
+};
+//-------------------------------------------------------------------------------------------------
 class Commands
 {
-	std::vector<Command*> commands;
+	std::vector<ICommand *> _commands;
+
 	struct ExecuteCommand
 	{
-		void operator()(Command * cmd)
+		void operator()(ICommand *command)
 		{
-			cmd->execute();
+			command->execute();
 		}
 	};
+
 public:
-	void add_command(Command & cmd)
+	void addCommand(ICommand &command)
 	{
-		commands.push_back(&cmd);
+		_commands.push_back(&command);
 	}
+
 	void execute()
 	{
-		std::for_each(commands.begin(), commands.end(), ExecuteCommand());
+		std::for_each(_commands.begin(), _commands.end(), ExecuteCommand());
 	}
 };
-
-void hello_world(Commands & commands)
-{
-	commands.execute();
-}
-
+//-------------------------------------------------------------------------------------------------
 int main()
 {
+	CommandDefence command_defence;
+	CommandAttack  command_attack;
+
 	Commands commands;
-	PrintHello hello;
-	PrintWorld world;
-	commands.add_command(hello);
-	commands.add_command(world);
-	hello_world(commands);
+	commands.addCommand(command_defence);
+	commands.addCommand(command_attack);
+	commands.execute();
+
 	return 0;
 }
-
+//-------------------------------------------------------------------------------------------------
