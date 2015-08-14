@@ -21,7 +21,7 @@ class World
 public:
 	World(Output & out) : out(out) { }
 
-	void output(const std::string & str)
+	void output(const std::string &str)
 	{
 		out.output(str + " world!");
 	}
@@ -44,18 +44,13 @@ private:
 	World &world;
 };
 //-------------------------------------------------------------------------------------------------
-void hello_world(Hello & hello)
-{
-	hello.output();
-}
-//-------------------------------------------------------------------------------------------------
 int main()
 {
 	Output output;
-	World world(output);
-	Hello hello(world);
+	World  world(output);
 
-	hello_world(hello);
+	Hello hello(world);
+	hello.output();
 
 	return 0;
 }
