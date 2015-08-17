@@ -13,7 +13,7 @@ class Printer
 public:
 	void print(const std::string &str) const
 	{
-		std::cout << str << std::endl;
+		std::cout << __FUNCTION__ << ": " << str << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ private:
 //-------------------------------------------------------------------------------------------------
 void Message::print(const Mediator &mediator) const
 {
-	mediator.printerPrint("Hello world!");
+	mediator.printerPrint("AAA");
 }
 //-------------------------------------------------------------------------------------------------
 int main()
@@ -60,6 +60,7 @@ int main()
 
 	Mediator mediator(printer, message);
 	mediator.messagePrint();
+	mediator.printerPrint("BBB");
 
 	return 0;
 }
