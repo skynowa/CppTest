@@ -1,61 +1,66 @@
 /*
-Mediator binds different classes together, 
-and the individual classes communicate via the mediator, never directly.  
+Mediator binds different classes together,
+and the individual classes communicate via the mediator, never directly.
 In this example,  Message::print() calls Mediator, not Printer directly.
 */
 
 #include <iostream>
 #include <string>
 
+//-------------------------------------------------------------------------------------------------
 class Printer
 {
 public:
-	void print(const std::string & str) const
+	void print(const std::string &str) const
 	{
 		std::cout << str << std::endl;
 	}
 };
-
+//-------------------------------------------------------------------------------------------------
 class Message
 {
 public:
 	virtual ~Message() { }
-	virtual void print(const class Mediator & mediator) const;
+	virtual void print(const class Mediator &mediator) const;
 };
-
+//-------------------------------------------------------------------------------------------------
 class Mediator
 {
-	const Printer & printer;
-	const Message & message;
 public:
-	Mediator(const Printer & pr, const Message & msg) :
-		printer(pr),
-		message(msg) { }
-	void print() const
+	Mediator(const Printer &p, const Message &m) :
+		printer(p),
+		message(m)
+	{
+	}
+
+	void messagePrint() const
 	{
 		message.print(*this);
 	}
-	void print(const std::string & str) const
+
+	void printerPrint(const std::string &str) const
 	{
 		printer.print(str);
 	}
+
+private:
+	const Printer &printer;
+	const Message &message;
 };
-
-void Message::print(const Mediator & mediator) const
+//-------------------------------------------------------------------------------------------------
+void Message::print(const Mediator &mediator) const
 {
-	mediator.print("Hello world!");
+	mediator.printerPrint("Hello world!");
 }
-
-void hello_world(const Mediator & mediator)
-{
-	mediator.print();
-}
-
+//-------------------------------------------------------------------------------------------------
 int main()
 {
 	Printer printer;
 	Message message;
-	hello_world(Mediator(printer,message));
+
+	Mediator mediator(printer, message);
+	mediator.messagePrint();
+
 	return 0;
 }
-
+//-------------------------------------------------------------------------------------------------
