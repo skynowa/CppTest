@@ -7,10 +7,10 @@ to be used by the base class.
 #include <iostream>
 
 //-------------------------------------------------------------------------------------------------
-class HelloWorld
+class IHelloWorld
 {
 public:
-	virtual ~HelloWorld() { }
+	virtual ~IHelloWorld() { }
 
 	void output()
 	{
@@ -22,7 +22,7 @@ public:
 	virtual void writeEndl() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-class HelloWorld_Impl : public HelloWorld
+class HelloWorld_Impl : public IHelloWorld
 {
 public:
 	virtual void writeString(const std::string &str)
