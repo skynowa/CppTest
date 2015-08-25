@@ -1,46 +1,46 @@
 /*
-Template method provides an implementation in a derived class, 
+Template method provides an implementation in a derived class,
 to be used by the base class.
 */
 
 #include <string>
 #include <iostream>
 
+//-------------------------------------------------------------------------------------------------
 class HelloWorld
 {
 public:
 	virtual ~HelloWorld() { }
+
 	void output()
 	{
-		write_string("Hello world!");
-		write_endl();
+		writeString("Hello world!");
+		writeEndl();
 	};
-	virtual void write_string(const std::string &)=0;
-	virtual void write_endl()=0;
-};
 
-class HelloWorldImpl : public HelloWorld
+	virtual void writeString(const std::string &str) = 0;
+	virtual void writeEndl() = 0;
+};
+//-------------------------------------------------------------------------------------------------
+class HelloWorld_Impl : public HelloWorld
 {
 public:
-	void write_string(const std::string & str)
+	virtual void writeString(const std::string &str)
 	{
 		std::cout << str;
 	}
-	void write_endl() 
-	{ 
-		std::cout << std::endl; 
+
+	virtual void writeEndl()
+	{
+		std::cout << std::endl;
 	}
 };
-
-void hello_world(HelloWorld & hw)
-{
-	hw.output();
-}
-
+//-------------------------------------------------------------------------------------------------
 int main()
 {
-	HelloWorldImpl hw;
-	hello_world(hw);
+	HelloWorld_Impl hw;
+	hw.output();
+
 	return 0;
 }
-
+//-------------------------------------------------------------------------------------------------
