@@ -1,33 +1,46 @@
 /*
-State is like an enum, but we can define different behaviour for each state. 
-We could add another class, 
+State is like an enum, but we can define different behaviour for each state.
+We could add another class,
 Sad, which did something entirely different when asked to talk().
 */
 
+
 #include <iostream>
 
-class Mood
+//-------------------------------------------------------------------------------------------------
+class IMood
 {
 public:
-	virtual ~Mood() { }
-	virtual void talk()=0;
+	virtual ~IMood() { }
+	virtual void talk() = 0;
 };
-
-class Happy : public Mood
+//-------------------------------------------------------------------------------------------------
+class Happy : public IMood
 {
 public:
-	void talk() { std::cout << "Hello world!" << std::endl; }
+	void talk()
+	{
+		std::cout << "Happy mood!" << std::endl;
+	}
 };
-
-void hello_world(Mood & mood)
+//-------------------------------------------------------------------------------------------------
+class Sad : public IMood
 {
-	mood.talk();
-}
-
+public:
+	void talk()
+	{
+		std::cout << "Sad mood!" << std::endl;
+	}
+};
+//-------------------------------------------------------------------------------------------------
 int main()
 {
-	Happy mood;
-	hello_world(mood);
+	Happy happy_mood;
+	happy_mood.talk();
+
+	Sad sad_mood;
+	sad_mood.talk();
+
 	return 0;
 }
-
+//-------------------------------------------------------------------------------------------------
