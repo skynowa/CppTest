@@ -21,17 +21,18 @@ struct Item
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
 {
-    std::list<Item> items = { {0}, {1}, {2}, {3}, {4} };
+    std::list<Item> items { {1}, {2}, {3}, {4}, {5} };
 
-    for (std::list<Item>::iterator it = items.begin(); it != items.end(); ++ it) {
-        Item item {777};
-
-        items.insert(it, item);
+    for (auto it = items.begin(); it != items.end(); ++ it) {
+        if (it->id == 3) {
+            Item item {777};
+            items.insert(++ it, item);
+        }
     }
 
     std::cout << "items:";
-    for (std::list<Item>::iterator it = items.begin(); it != items.end(); ++ it) {
-        std::cout << ' ' << it->id;
+    for (auto &it : items) {
+        std::cout << ' ' << it.id;
     }
     std::cout << '\n';
 
