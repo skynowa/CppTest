@@ -70,7 +70,7 @@ class SegmentationFault :
 {
 public:
     static
-    int signalNumber() const
+    int signalNumber()
     {
         return SIGSEGV;
     }
@@ -88,7 +88,7 @@ class FloatingPoint :
 {
 public:
     static
-    int signalNumber() const
+    int signalNumber()
     {
         return SIGFPE;
     }
@@ -155,8 +155,8 @@ public:
 //-------------------------------------------------------------------------------------------------
 int main(int argc, char* argv[])
 {
-    SignalTranslator<SegmentationFault>      g_objSegmentationFaultTranslator;
-    SignalTranslator<FloatingPoint> g_objFloatingPointTranslator;
+    SignalTranslator<SegmentationFault>  segmentationFaultTranslator;
+    SignalTranslator<FloatingPoint>      floatingPointTranslator;
 
     // Before defining any global variable, we define a dummy instance
     // of ExceptionHandler object to make sure that
