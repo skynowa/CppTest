@@ -22,7 +22,7 @@ public:
     StackTrace()
     {
         void*  array[25];
-        int    size   = ::backtrace(array, 25);
+        int    size    = ::backtrace(array, 25);
         char** symbols = ::backtrace_symbols(array, size);
 
         // std::cout << "\n::::: "  << __FUNCTION__ << "::::: " << std::endl;
@@ -52,7 +52,7 @@ private:
     public:
         SingleToTranslator()
         {
-            signal(T::signalNumber(), signalHandler);
+            ::signal(T::signalNumber(), signalHandler);
         }
 
         static
@@ -119,7 +119,7 @@ private:
         static
         void handler()
         {
-            // Exception from construction/destruction of global variables
+            // Exception from construction / destruction of global variables
             try {
                 // re-throw
                 throw;
