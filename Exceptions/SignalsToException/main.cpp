@@ -7,6 +7,7 @@
 #include <execinfo.h>
 #include <signal.h>
 #include <exception>
+#include <stdexcept>
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -58,7 +59,8 @@ private:
         static
         void signalHandler(int)
         {
-            throw T();
+            throw std::runtime_error("Hello, world!");
+            //throw T();
         }
     };
 };
@@ -125,10 +127,13 @@ private:
                 throw;
             }
             catch (const SegmentationFault &ex) {
-                std::cout << "SegmentationFault Exception: " << ex.whatEx() << std::endl;
+                std::cout << "::: SegmentationFault exception: " << ex.whatEx() << "::: " << std::endl;
             }
             catch (const FloatingPoint &ex) {
-                std::cout << "FloatingPoint Exception: " << ex.what() << std::endl;
+                std::cout << "::: FloatingPoint exception: " << ex.whatEx() << "::: " << std::endl;
+            }
+            catch (const std::exception &ex) {
+                std::cout << "::: std::exception: " << ex.what() << "::: " << std::endl;
             }
             catch (...) {
                 std::cout << "Unknown Exception" << std::endl;
@@ -148,15 +153,15 @@ class A
 public:
     A()
     {
-        // int i = 0, j = 1 / i;
-        *(int *)0 = 0;
+        int i = 0, j = 1 / i;
+        // *(int *)0 = 0;
     }
 };
 //-------------------------------------------------------------------------------------------------
 int main(int argc, char* argv[])
 {
-    SignalTranslator<SegmentationFault>  segmentationFaultTranslator;
-    SignalTranslator<FloatingPoint>      floatingPointTranslator;
+    // SignalTranslator<SegmentationFault>  segmentationFaultTranslator;
+    // SignalTranslator<FloatingPoint>      floatingPointTranslator;
 
     // Before defining any global variable, we define a dummy instance
     // of ExceptionHandler object to make sure that
