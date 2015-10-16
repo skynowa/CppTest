@@ -104,14 +104,14 @@ class ExceptionHandler
 public:
      ExceptionHandler()
      {
-        static SingleTonHandler s_objHandler;
+        static SingleToHandler handler;
      }
 
 private:
-    class SingleTonHandler
+    class SingleToHandler
     {
     public:
-        SingleTonHandler()
+        SingleToHandler()
         {
             std::set_terminate(handler);
         }
@@ -160,10 +160,10 @@ int main(int argc, char* argv[])
 
     // Before defining any global variable, we define a dummy instance
     // of ExceptionHandler object to make sure that
-    // ExceptionHandler::SingleTonHandler::SingleTonHandler() is invoked
-    ExceptionHandler g_objExceptionHandler;
+    // ExceptionHandler::SingleToHandler::SingleToHandler() is invoked
+    ExceptionHandler exceptionHandler;
 
-    A g_a;
+    A a;
 
     return 0;
 }
