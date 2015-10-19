@@ -136,7 +136,7 @@ private:
                 std::cout << "::: std::exception: " << ex.what() << "::: " << std::endl;
             }
             catch (...) {
-                std::cout << "Unknown Exception" << std::endl;
+                std::cout << "::: Unknown Exception ::: " << std::endl;
             }
 
             // if this is a thread performing some core activity
