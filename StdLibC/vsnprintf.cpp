@@ -17,12 +17,14 @@
 int
 bufferSize(const char *format, ...)
 {
-    va_list args;
-    va_start(args, format);
-    int result = vsnprintf(NULL, 0, format, args);
-    va_end(args);
+	int iRv = 0;
 
-    return result + 1; // safe byte for \0
+	va_list args;
+	va_start(args, format);
+	iRv = ::vsnprintf(NULL, 0, format, args);
+	va_end(args);
+
+	return iRv + 1; // safe byte for \0
 }
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
