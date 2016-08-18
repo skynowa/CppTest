@@ -1,10 +1,6 @@
 /**
- * More info?
- * a.dotreppe@aspyct.org
- * http://aspyct.org
- * @aspyct (twitter)
- *
- * Hope it helps :)
+ * \file  signal.cpp
+ * \brief http://aspyct.org, a.dotreppe@aspyct.org
  */
 
 
@@ -19,7 +15,8 @@ void handle_signal(int signal);
 void handle_sigalrm(int signal);
 void do_sleep(int seconds);
 //-------------------------------------------------------------------------------------------------
-/* Usage example
+/**
+ * Usage example
  *
  * First, compile and run this program:
  *     $ gcc signal.c
@@ -67,41 +64,45 @@ int main()
         perror("Error: cannot handle SIGINT"); // Should not happen
     }
 
-    for (;;) {
+    for ( ; ; ) {
         printf("\nSleeping for ~3 seconds\n");
         do_sleep(3); // Later to be replaced with a SIGALRM
     }
+
+    return 0;
 }
 //-------------------------------------------------------------------------------------------------
-void handle_signal(int signal)
+void handle_signal(const int a_signal)
 {
-    const char *signal_name;
-    sigset_t pending;
+    const char *signal_name = NULL;
+    sigset_t    pending;
 
-    // Find out which signal we're handling
-    switch (signal) {
-        case SIGHUP:
-            signal_name = "SIGHUP";
-            break;
-        case SIGUSR1:
-            signal_name = "SIGUSR1";
-            break;
-        case SIGINT:
-            printf("Caught SIGINT, exiting now\n");
-            exit(0);
-        default:
-            fprintf(stderr, "Caught wrong signal: %d\n", signal);
-            return;
+    // Find out which a_signal we're handling
+    switch (a_signal) {
+    case SIGHUP:
+        signal_name = "SIGHUP";
+        break;
+    case SIGUSR1:
+        signal_name = "SIGUSR1";
+        break;
+    case SIGINT:
+        printf("Caught SIGINT, exiting now\n");
+        exit(0);
+        break;
+    default:
+        fprintf(stderr, "Caught wrong signal: %d\n", a_signal);
+        return;
+        break;
     }
 
-    /*
+    /**
      * Please note that printf et al. are NOT safe to use in signal handlers.
      * Look for async safe functions.
      */
     printf("Caught %s, sleeping for ~3 seconds\n"
            "Try sending another SIGHUP / SIGINT / SIGALRM "
            "(or more) meanwhile\n", signal_name);
-    /*
+    /**
      * Indeed, all signals are blocked during this handler
      * But, at least on OSX, if you send 2 other SIGHUP,
      * only one will be delivered: signals are not queued
@@ -124,22 +125,22 @@ void handle_signal(int signal)
     printf("Done handling %s\n\n", signal_name);
 }
 //-------------------------------------------------------------------------------------------------
-void handle_sigalrm(int signal)
+void handle_sigalrm(const int a_signal)
 {
-    if (signal != SIGALRM) {
-        fprintf(stderr, "Caught wrong signal: %d\n", signal);
+    if (a_signal != SIGALRM) {
+        fprintf(stderr, "Caught wrong signal: %d\n", a_signal);
     }
 
     printf("Got sigalrm, do_sleep() will end\n");
 }
 //-------------------------------------------------------------------------------------------------
-void do_sleep(int seconds)
+void do_sleep(const int a_seconds)
 {
     struct sigaction sa;
-    sigset_t mask;
+    sigset_t         mask;
 
     sa.sa_handler = &handle_sigalrm; // Intercept and ignore SIGALRM
-    sa.sa_flags = SA_RESETHAND; // Remove the handler after first signal
+    sa.sa_flags   = SA_RESETHAND;    // Remove the handler after first signal
     sigfillset(&sa.sa_mask);
     sigaction(SIGALRM, &sa, NULL);
 
@@ -150,7 +151,7 @@ void do_sleep(int seconds)
     sigdelset(&mask, SIGALRM);
 
     // Wait with this mask
-    alarm(seconds);
+    alarm(a_seconds);
     sigsuspend(&mask);
 
     printf("sigsuspend() returned\n");
