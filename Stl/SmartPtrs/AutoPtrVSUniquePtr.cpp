@@ -114,6 +114,7 @@ vec[2].get(): {0x5586b76d3c30, 12}
  *
  * - The const std::auto_ptr Idiom
  * - std::auto_ptr and Exception Safety
+ * - std::auto_ptr - can't be stored arrays
  *
  * - std::unique_ptr - can be stored in containers
  * - std::unique_ptr - can be stored arrays
