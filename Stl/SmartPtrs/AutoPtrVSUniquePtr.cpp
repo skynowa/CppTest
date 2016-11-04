@@ -113,7 +113,10 @@ vec[2].get(): {0x5586b76d3c30, 12}
  * FAQ
  *
  * - std::unique_ptr - can be stored in containers
+ * - std::unique_ptr - can be stored arrays
  * - unique_ptr can handle arrays correctly (it will call delete[], while auto_ptr will attempt to call delete
+ * - Объект этого класса теряет права владения ресурсом при копировании (присваивании,
+ *   использовании в конструкторе копий, передаче в функцию по значению)
  * - права владения ресурсов уходят в y_ptr и x_ptr начинает указывать на null pointer
  *   (сделает элемент вектора невалидным)
  * - В отличии от auto_ptr, unique_ptr запрещает копирование
