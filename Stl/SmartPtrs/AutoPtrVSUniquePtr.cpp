@@ -50,10 +50,11 @@ int main(int argsNum, char **args)
 
 std::auto_ptr
 a.get(): {0, 0}
-b.get(): {0x563233ce9c30, 10}
+b.get(): {0x55e445c75c30, 10}
 
 std::unique_ptr
 a.get(): {0, 0}
+b.get(): {0x55e445c75c30, 10}
 
 #endif
 
