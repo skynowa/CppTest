@@ -14,5 +14,6 @@ Core/EmptyStructSizeOf
 .git/hooks/update.sample
 gitignore_binaries.sh
 #   Note: Dirs and files ignoring by GIT
+Pointers/FunctionPtr
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse

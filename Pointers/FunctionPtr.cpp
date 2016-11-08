@@ -9,51 +9,52 @@
 #include <iostream>
 #include <assert.h>
 //---------------------------------------------------------------------------
-int (*g_piFunc)(const std::string &csVal) = NULL;
+int (*funcPtr)(const std::string &value) = NULL;
 
-int 
-iFunc(const std::string &csVal) {
-   std::cout << csVal << std::endl;
-   return 0;  
+int iFunc(const std::string &a_value)
+{
+   std::cout << a_value << std::endl;
+   return 0;
 }
 //---------------------------------------------------------------------------
 class A;
 
-int (A::*g_piClassFunc)(const std::string &csVal) = NULL;
+int (A::*classFuncPtr)(const std::string &value) = NULL;
 
-class A {
-    public:
-        int 
-        iClassFunc(const std::string &csVal) {
-           std::cout << csVal << std::endl;
-           return 0;  
-        }
+class A
+{
+public:
+    int iClassFunc(const std::string &a_value)
+    {
+       std::cout << a_value << std::endl;
+       return 0;
+    }
 };
 //---------------------------------------------------------------------------
 int main(int iArgCount, char **paszArgs)
 {
     // function pointer
     {
-        g_piFunc = &iFunc;
+        ::funcPtr = &iFunc;
 
         (*iFunc)("Test!!");
-        iFunc("Test!!");   
-  
-        (*g_piFunc)("Test!!");
-        g_piFunc("Test!!");  
+        iFunc("Test!!");
+
+        (*::funcPtr)("Test!!");
+        ::funcPtr("Test!!");
     }
 
     // class member pointer
     {
         //A objA;
 
-        g_piClassFunc = &A::iClassFunc;
+        ::classFuncPtr = &A::iClassFunc;
 
         //(*iFunc)("Test!!");
-        //iFunc("Test!!");   
-  
+        //iFunc("Test!!");
+
         //(A::*g_piClassFunc)("Test!!");
-        //A::g_piClassFunc("Test!!");  
+        //A::g_piClassFunc("Test!!");
     }
 
     return EXIT_SUCCESS;
