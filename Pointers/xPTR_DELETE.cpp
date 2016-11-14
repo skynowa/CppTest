@@ -1,71 +1,55 @@
-/****************************************************************************
-* Class name:  Test
-* Description: 
-* File name:   Test.h
-* Compilers:   Visual C++ 2010 
-* String type: Ansi, Unicode
-* Libraries:   WinAPI, Stl, XLib
-* Author:      Alca
-* E-mail:      dr.web.agent@gmail.com
-* Created:     01.12.2010 11:39:05
-* Version:     1.0.0.0 Debug
-*
-*****************************************************************************/
+/**
+ * \file  main.cpp
+ * \brief
+ */
 
 
-#include <XLib/xCommon.h>
-
+#include "../StdTest.h"
+#include <memory>
 #include <string>
-#include <stdio.h>
-#include <sstream>
 #include <iostream>
-#include <stdlib.h>
-#include <algorithm>
-#include <iterator>
-#include <utility>
-#include <ctime>
 //---------------------------------------------------------------------------
-template<class T>
-inline void deletePtr_with_ref(T*& a_ptr) {
-    delete a_ptr;
-    a_ptr = 0;
-}
-//---------------------------------------------------------------------------
-template<class T>
-inline void deletePtr_without_ref(T* a_ptr) {
-    delete a_ptr;
-    a_ptr = 0;
-}
-//---------------------------------------------------------------------------
-void func() {
+class Ptr
+{
+public:
+	template<class T>
+	static void
+	deleteByRef(T* &a_ptr)
 	{
-		int *ptr = new int; //ptr указывает на выделенную под int память
-		deletePtr_with_ref(ptr); //после этого память выделенная под int освобождена, и ptr нулевой
-		xASSERT(NULL == ptr);
+		delete a_ptr;
+		a_ptr = NULL;
+	}
 
-		if (ptr) {
-			*ptr = 42; //WIN управление сюда никогда не передаётся
-		}
+	template<class T>
+	static void
+	deleteByValue(T* a_ptr)
+	{
+		delete a_ptr;
+		a_ptr = NULL;
+	}
+};
+//---------------------------------------------------------------------------
+void func()
+{
+	{
+		int *ptr = new int;
+		Ptr::deleteByRef(ptr);
+		_xTEST(ptr == NULL);
 	}
 
 	{
-		int *ptr = new int; //ptr указывает на выделенную под int память
-		xASSERT(NULL != ptr);
+		int *ptr = new int;
 
-		deletePtr_without_ref(ptr); //после этого память выделенная под int освобождена, но ptr продолжает указывать на этот участок памяти
-		xASSERT(NULL != ptr);
-
-		if (ptr) {
-			*ptr = 42; //FAIL ты обращаешься к памяти которая не выделена
-		}
+		Ptr::deleteByValue(ptr);
+		_xTEST(ptr != NULL);
 	}
 
 }
 //---------------------------------------------------------------------------
-INT _tmain(INT iArgc, TCHAR *pszArgv[]) {
+int main(int argsNum, char **args)
+{
 	func();
 
-	system("pause");
 	return 0;
 }
 //---------------------------------------------------------------------------

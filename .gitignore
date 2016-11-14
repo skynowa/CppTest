@@ -15,5 +15,6 @@ Core/EmptyStructSizeOf
 gitignore_binaries.sh
 #   Note: Dirs and files ignoring by GIT
 Pointers/FunctionPtr
+Pointers/xPTR_DELETE
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse
