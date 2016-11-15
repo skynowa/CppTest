@@ -43,7 +43,6 @@ void func()
 		Ptr::deleteByValue(ptr);
 		_xTEST(ptr != NULL);
 	}
-
 }
 //---------------------------------------------------------------------------
 int main(int argsNum, char **args)
