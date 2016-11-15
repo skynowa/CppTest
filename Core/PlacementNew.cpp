@@ -16,24 +16,53 @@ public:
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
 {
-	const std::size_t n = 50;
+   /**
+    * FAQ
+    *
+    * Placement new allows you to construct an object on memory that's already allocated
+    */
 
-	A* placementMemory = static_cast<A*>(operator new[] (n * sizeof(A)));
-	for (std::size_t i = 0; i < n; ++ i) {
-		// здесь память для объекта не выделяется, но инициализируется
-		new (placementMemory + i) A(rand());
-	}
-
-	// деинициализация памяти
+	// sample 1
 	{
+		const std::size_t n = 50;
+
+		A* placementBuff = static_cast<A*>(operator new[] (n * sizeof(A)));
 		for (std::size_t i = 0; i < n; ++ i) {
-			placementMemory[i].~A();
+			// здесь память для объекта не выделяется, но инициализируется
+			new (placementBuff + i) A(rand());
 		}
 
-		operator delete[] (placementMemory);
+		// деинициализация памяти
+		{
+			for (std::size_t i = 0; i < n; ++ i) {
+				placementBuff[i].~A();
+			}
+
+			operator delete[] (placementBuff);
+		}
 	}
 
-    // std::cout << "" << std::endl;
+	// sample 2
+	{
+		typedef char T;
+		const std::size_t n = 50;
+
+		// allocate memory
+		T* placementBuff = new T[n * sizeof(T)];
+
+		// construct in allocated storage ("place")
+		T* ptr = new(placementBuff) T;
+
+		// test
+		strcpy(ptr, "ABCDEF");
+		std::cout << _xTRACE_VAR(ptr) << std::endl;
+
+		// destruct
+		ptr->~T();
+
+		// deallocate memory
+		delete [] placementBuff;
+	}
 
     return 0;
 }
