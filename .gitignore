@@ -1,6 +1,7 @@
 ################################################################################
 #
 
+Core/Casts
 Core/EmptyStructSizeOf
 Core/PlacementNew
 #   File: .gitignore
