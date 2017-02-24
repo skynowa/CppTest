@@ -1,9 +1,11 @@
 ################################################################################
 #
 
+Class/CallMethod
 Core/Casts
 Core/EmptyStructSizeOf
 Core/PlacementNew
+Enum/For
 #   File: .gitignore
 .git/hooks/applypatch-msg.sample
 .git/hooks/commit-msg.sample
