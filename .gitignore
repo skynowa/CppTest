@@ -20,6 +20,7 @@ gitignore_binaries.sh
 #   Note: Dirs and files ignoring by GIT
 Pointers/FunctionPtr
 Pointers/xPTR_DELETE
+StdLibC/strptime
 Stl/BoolMap
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse
