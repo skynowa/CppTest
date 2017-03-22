@@ -1,0 +1,49 @@
+COMODO is a software development company headquartered in the USA, well-known as leading global provider of Identity and Trust Assurance services on the Internet, with over 200,000 customers worldwide.
+Project description:
+CCS (COMODO Client Security) offers great virus protection with the added benefit of a fully configurable anti-spam system.
+Featuring on-access and on-demand virus scanners, CCS also uses cloud based behavior analysis of unknown files to provide unrivaled protection against zero-day malware. The powerful AV engine is complemented by a highly configurable mail gateway to filter spam and block email-borne threats.
+Responsibilities:
+Decomposition of high level tasks
+Design and implementation of new functionality for a product
+Support previous versions of a product
+Close cooperation with QA engineers
+Preparing formal documentation regarding product components
+Requirements:
+Strong knowledge of OOO Design and Windows API
+Strong experience in C++ (5+ years)
+Experience (3+ years) in commercial development using MS Visual C++ and Windows Development Environment
+Experience in multi-threading programming
+Strong experience in STL
+Knowledge of sorting and searching algorithms
+Will be a BIG plus:
+Experience in Windows/Linux/Android NDK system programming
+Knowledge of PE and COFF file format
+Knowledge of architecture executable files packer (UPX, ASPack, etc.) and archiver (7Z, Zip, Rar, etc.)
+Knowledge of x86 Architecture and Assembler language
+Knowledge of principles of operation of the machine emulator and virtualization (Qemu, Bochs, etc.)
+Will be a plus:
+Experience in C++11, Boost, etc.
+Experience in Cmake, QMake, etc.
+Experience in Python, LUA, etc.
+Experience in debugging tools
+Experience writing unit test
+Why join COMODO:
+Competitive salaries.
+We know for sure that there are no such cookies in the world that can substitute the good paycheck:), so we provide competitive salaries according to the level of your skills.
+Interesting projects.
+Being a product company, we can ensure that you will be working on a challenging and interesting project (architecture-wise and functionality-wise). This way you will grow your expertise and develop a lot of new professional skills. All our projects are long-term.
+Flexible working schedule.
+We have flexible 8-hours working day, so you can work in your most productive time.
+Comfortable working environment.
+Our offices are conveniently located and have separate comfortable rooms for each team.
+Kitchen with coffee machine, fridge, microwave, hot & cold water dispenser.
+Tea, milk are always available!
+Friendly team of professionals.
+One of our top priorities is creating welcoming atmosphere throughout the company. We promptly address individual needs of our employees and constantly grow team spirit during corporate events.
+Benefits that we offer:
+fully paid sick leaves and vacation days (20 working days per year).
+compensation of the tax payments.
+English classes (during the working hours).
+English speaking club with native speaker.
+recreation area equipped with pin-pong table and other amenities.
+incentives for the creative ideas.
