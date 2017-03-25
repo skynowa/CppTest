@@ -1,0 +1,53 @@
+TODO IV
+
+
+k3141006@yandex.ru
+(093) 090-45-13
+
+# admin
+screen
+man
+telnet 127.0.0.1 12345
+fgrep
+
+
+# dev tools
+
+# sys calls
+strace [binary_path]
+strace -p [pid]
+
+ltrace -p [pid]
+gda -p [pid]
+
+# list opened descriptors
+lsof -p [pid]
+
+
+# C++
+mask
+
+
+# SQL
+https://vk.com/feed?w=wall-54530371_106217
+
+
+# IPC & MT
+pthread_spin_*
+std::future
+
+
+
+
+https://www.youtube.com/watch?v=LL8wkskDlbs
+
+
+https://www.youtube.com/watch?v=DlVn9uh20Ec
+https://vk.com/video-101965347_456241607?list=deb84762db579b4fcb
+https://vk.com/videos-101965347?section=all&z=video-101965347_456241617%2Fclub101965347%2Calbum-101965347%2Fpl_-101965347
+https://www.youtube.com/watch?v=OFv5Oxk0ltU
+https://vk.com/videos-101965347?section=album_748
+https://www.youtube.com/watch?v=Qn6mu9l6Xj8
+https://vk.com/videos-101965347?section=album_764
+https://www.youtube.com/watch?v=R6IvGlFhAdM
+https://www.youtube.com/watch?v=ijJ4wuBg1NQ
