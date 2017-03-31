@@ -10,7 +10,7 @@
 #include <iostream>
 #include <cstdlib>
 //-------------------------------------------------------------------------------------------------
-bool isStop = false;
+sig_atomic_t isStop = false;
 //-------------------------------------------------------------------------------------------------
 void
 handler(
@@ -25,11 +25,13 @@ handler(
 class A
 {
 public:
-	A() {
+	A()
+	{
 		std::cout << __FUNCTION__ << std::endl;
 	}
 
-	~A() {
+	~A()
+	{
 		std::cout << __FUNCTION__ << std::endl;
 	}
 };
