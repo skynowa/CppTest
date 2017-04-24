@@ -22,5 +22,6 @@ Pointers/FunctionPtr
 Pointers/xPTR_DELETE
 StdLibC/strptime
 Stl/BoolMap
+Stl/replace_if
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse
