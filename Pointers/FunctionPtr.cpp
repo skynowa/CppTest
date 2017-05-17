@@ -1,13 +1,13 @@
  /*
  * \file  Main.cpp
  * \brief pointer to function
+ *
+ * https://isocpp.org/wiki/faq/pointers-to-members
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include "../StdTest.h"
+
 //---------------------------------------------------------------------------
 int (*funcPtr)(const std::string &value) = NULL;
 
@@ -46,15 +46,15 @@ int main(int iArgCount, char **paszArgs)
 
     // class member pointer
     {
-        //A objA;
+        A objA;
 
         ::classFuncPtr = &A::iClassFunc;
 
-        //(*iFunc)("Test!!");
-        //iFunc("Test!!");
+        (*iFunc)("Test!!");
+        iFunc("Test!!");
 
-        //(A::*g_piClassFunc)("Test!!");
-        //A::g_piClassFunc("Test!!");
+        // (A::*classFuncPtr)("Test!!");
+        // A::g_piClassFunc("Test!!");
     }
 
     return EXIT_SUCCESS;
@@ -64,6 +64,9 @@ int main(int iArgCount, char **paszArgs)
 
 #if OUTPUT
 
-
+Test!!
+Test!!
+Test!!
+Test!!
 
 #endif
