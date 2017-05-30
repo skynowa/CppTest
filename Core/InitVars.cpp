@@ -21,7 +21,7 @@ struct Point
 int main(int argsNum, char **args)
 {
 	{
-		Point p = {};
+		Point p {};
 		p.print();
 	}
 
