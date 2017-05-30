@@ -21,6 +21,11 @@ struct Point
 int main(int argsNum, char **args)
 {
 	{
+		Point p;
+		p.print();
+	}
+
+	{
 		Point p {};
 		p.print();
 	}
@@ -37,7 +42,8 @@ int main(int argsNum, char **args)
 
 #if OUTPUT
 
+x: <UB>,  y: <UB>
 x: <NUL>; y: 0
-x: ~;      y: 40
+x: ~;     y: 40
 
 #endif
