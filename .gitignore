@@ -4,6 +4,7 @@
 Class/CallMethod
 Core/Casts
 Core/EmptyStructSizeOf
+Core/InitVars
 Core/PlacementNew
 Enum/For
 #   File: .gitignore
@@ -17,6 +18,7 @@ Enum/For
 .git/hooks/pre-rebase.sample
 .git/hooks/update.sample
 gitignore_binaries.sh
+Network/IpString
 #   Note: Dirs and files ignoring by GIT
 Pointers/FunctionPtr
 Pointers/xPTR_DELETE

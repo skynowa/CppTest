@@ -24,7 +24,7 @@ int (A::*classFuncPtr)(const std::string &value) = NULL;
 class A
 {
 public:
-    int iClassFunc(const std::string &a_value)
+    int classFunc(const std::string &a_value)
     {
        std::cout << a_value << std::endl;
        return 0;
@@ -48,13 +48,13 @@ int main(int iArgCount, char **paszArgs)
     {
         A objA;
 
-        ::classFuncPtr = &A::iClassFunc;
+        ::classFuncPtr = &A::classFunc;
 
         (*iFunc)("Test!!");
         iFunc("Test!!");
 
         // (A::*classFuncPtr)("Test!!");
-        // A::g_piClassFunc("Test!!");
+        // A::g_classFunc("Test!!");
     }
 
     return EXIT_SUCCESS;
