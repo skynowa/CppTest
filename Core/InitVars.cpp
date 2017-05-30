@@ -37,7 +37,7 @@ int main(int argsNum, char **args)
 
 #if OUTPUT
 
-x: <NULL>; y: 0
+x: <NUL>; y: 0
 x: ~;      y: 40
 
 #endif
