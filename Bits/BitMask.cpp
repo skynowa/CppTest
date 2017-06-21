@@ -5,8 +5,9 @@
 
  /*
     logical OR: a || b
-    logical NOT: !a
     logical AND: a && b
+    logical NOT: !a
+
     bitwise OR: a | v
     bitwise NOT: ~a
     bitwise AND:  a & b
@@ -15,11 +16,10 @@
  */
 
 //---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include "../StdTest.h"
 //---------------------------------------------------------------------------
-enum EValues {
+enum EValues
+{
     VALUE_0 = 0,
     VALUE_1 = 1 << 0,
     VALUE_2 = 1 << 1,
@@ -29,17 +29,15 @@ enum EValues {
     VALUE_6 = 1 << 5
 };
 //---------------------------------------------------------------------------
-int main()
+int main(int argsNum, char **args)
 {
-
-
-    std::cout << "EValues::VALUE_0: " << EValues::VALUE_0 << std::endl;
-    std::cout << "EValues::VALUE_1: " << EValues::VALUE_1 << std::endl;
-    std::cout << "EValues::VALUE_2: " << EValues::VALUE_2 << std::endl;
-    std::cout << "EValues::VALUE_3: " << EValues::VALUE_3 << std::endl;
-    std::cout << "EValues::VALUE_4: " << EValues::VALUE_4 << std::endl;
-    std::cout << "EValues::VALUE_5: " << EValues::VALUE_5 << std::endl;
-    std::cout << "EValues::VALUE_6: " << EValues::VALUE_6 << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_0) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_1) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_2) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_3) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_4) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_5) << std::endl;
+    std::cout << STD_TRACE_VAR(EValues::VALUE_6) << std::endl;
 
     return EXIT_SUCCESS;
 }

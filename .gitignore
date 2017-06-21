@@ -1,6 +1,7 @@
 ################################################################################
 #
 
+Bits/BitMask
 Class/CallMethod
 Core/Casts
 Core/EmptyStructSizeOf
