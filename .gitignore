@@ -4,13 +4,16 @@
 Bits/BitMask
 Bits/bitset
 Bits/BuffToint
+Char/Escape
 Class/CallMethod
 Core/Casts
 Core/EmptyStructSizeOf
 Core/InitVars
 Core/PlacementNew
+Core/ValueInitialization
 Enum/For
 #   File: .gitignore
+Functor/FunctorTarget
 .git/hooks/applypatch-msg.sample
 .git/hooks/commit-msg.sample
 .git/hooks/post-update.sample
