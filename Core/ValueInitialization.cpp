@@ -71,6 +71,8 @@ int main(int argsNum, char **args)
 
 	{
 	#if 0
+		// error: could not convert ‘{0}’ from ‘<brace-enclosed initializer list>’ to ‘Data1’
+
 		Data1 data = {0};
 		print<Data1>(data, "= {0}");
 	#endif
@@ -83,13 +85,16 @@ int main(int argsNum, char **args)
 
 	{
 	#if 0
+		// error: no matching function for call to ‘Data1::Data1(<brace-enclosed initializer list>)’
+
 		Data1 data {0};
 		print<Data1>(data, "{0}");
 	#endif
 	}
 
-	// [Finished with exit code -11]
 #if 0
+	// [Finished with exit code -11]
+
 	{
 		Data1 data; std::memset(&data, 0, sizeof(data));
 		print<Data1>(data, "std::memset(0)");
