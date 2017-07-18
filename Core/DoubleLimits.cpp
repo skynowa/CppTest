@@ -26,7 +26,10 @@ int main(int argsNum, char **args)
 
 #if OUTPUT
 
-
+std::numeric_limits<float>::max(): 3.40282e+38
+std::numeric_limits<float>::min(): 1.17549e-38
+std::numeric_limits<float>::infinity(): inf
+dRv: 2.03736e+09
 
 #endif
 
