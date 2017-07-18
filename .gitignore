@@ -25,6 +25,7 @@ Functor/FunctorTarget
 .git/hooks/update.sample
 gitignore_binaries.sh
 Network/IpString
+Network/mount
 #   Note: Dirs and files ignoring by GIT
 Pointers/FunctionPtr
 Pointers/xPTR_DELETE
