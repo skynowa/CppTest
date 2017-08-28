@@ -56,6 +56,28 @@ struct Data2
 	{
 	}
 };
+
+struct SubData3
+{
+	int i {};
+
+	explicit SubData3(const int a_i) :
+		i(a_i)
+	{
+		std::cout
+			<< STD_TRACE_VAR(__FUNCTION__) << ", "<< STD_TRACE_VAR(i) << std::endl;
+	}
+};
+
+struct Data3
+{
+	SubData3 subData3 {3};
+
+	Data3() :
+		subData3(5)
+	{
+	}
+};
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
 {
@@ -109,6 +131,12 @@ int main(int argsNum, char **args)
 	{
 		Data2 data;
 		print<Data2>(data, "member {}");
+	}
+
+	{
+		std::cout << "Twice construct" << std::endl;
+
+		Data3 data;
 	}
 
 	return 0;

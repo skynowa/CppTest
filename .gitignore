@@ -7,6 +7,7 @@ Bits/BuffToint
 Char/Escape
 Class/CallMethod
 Core/Casts
+Core/DoubleLimits
 Core/EmptyStructSizeOf
 Core/InitVars
 Core/PlacementNew
@@ -32,5 +33,6 @@ Pointers/xPTR_DELETE
 StdLibC/strptime
 Stl/BoolMap
 Stl/replace_if
+Stl/set_difference
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse
