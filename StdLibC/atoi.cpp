@@ -1,10 +1,12 @@
  /*
  * \file  main.cpp
- * \brief 
+ * \brief
  */
 
 
 //---------------------------------------------------------------------------
+#include "../StdTest.h"
+
 #include <iostream>
 #include <stdlib.h>
 #include <assert.h>
@@ -13,14 +15,19 @@ int main(int iArgCount, char **paszArgs)
 {
     std::string s;
 
-    int a = ::atoi(s.c_str());
-    std::cout << a << std::endl;  
+    int a = ::atoi( s.c_str() );
+    std::cout << STD_TRACE_VAR(a) << std::endl;
 
     int b = ::atoi("");
-    std::cout << b << std::endl;
+    std::cout << STD_TRACE_VAR(b) << std::endl;
 
-    int c = ::atoi(NULL);
-    std::cout << c << std::endl;
+    int c = ::atoi("NULL");
+    std::cout << STD_TRACE_VAR(c) << std::endl;
+
+#if 1
+    int d = ::atoi(NULL);
+    std::cout << d << std::endl;
+#endif
 
     return EXIT_SUCCESS;
 }
@@ -29,8 +36,9 @@ int main(int iArgCount, char **paszArgs)
 
 #if OUTPUT
 
-0
-0
+a: 0
+b: 0
+c: 0
 Segmentation fault
 
 #endif

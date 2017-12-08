@@ -30,8 +30,11 @@ Network/mount
 #   Note: Dirs and files ignoring by GIT
 Pointers/FunctionPtr
 Pointers/xPTR_DELETE
+StdLibC/atoi
 StdLibC/strptime
 Stl/BoolMap
+Stl/map/operator[]
+Stl/map/operator_access
 Stl/replace_if
 Stl/set_difference
 Stl/SmartPtrs/AutoPtrVSUniquePtr
