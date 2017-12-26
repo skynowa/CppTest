@@ -286,4 +286,5 @@ Stl/set_difference
 Stl/SmartPtrs/AutoPtrVSUniquePtr
 Stl/StringReverse
 Stl/utility/forward
+Unix/Linux/demo_inotify
 Unix/Linux/inotify
