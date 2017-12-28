@@ -1,155 +1,120 @@
 /**
- * \file  main.cpp
- * \brief
+ * inotify.cpp
+ *
+ * Demonstrate the use of the inotify API.
+ *
+ * Usage: demo_inotify pathname...
+ *
+ * The program monitors each of the files specified on the command line for all
+ * possible file events.
+ *
+ * This program is Linux-specific. The inotify API is available in Linux 2.6.13
+ * and later.
  */
 
 
 #include "../../StdTest.h"
 
-#include <unistd.h>
-#include <cstdio>
-#include <cstdlib>
-#include <cerrno>
-#include <sys/types.h>
 #include <sys/inotify.h>
 
-#define EVENT_SIZE  ( sizeof (struct inotify_event) )
-#define BUF_LEN     ( 1024 * ( EVENT_SIZE + 16 ) )
+#include <limits.h>
+#include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <errno.h>
+
+#include <iostream>
+#include <string>
+#include <vector>
 //-------------------------------------------------------------------------------------------------
-int main( int argc, char **argv )
+// Display information from inotify_event structure
+static void
+displayInotifyEvent(struct inotify_event *i)
 {
+	printf("    wd =%2d; ", i->wd);
+	if (i->cookie > 0) {
+		printf("cookie =%4d; ", i->cookie);
+	}
 
-    char buffer[BUF_LEN];
+	printf("mask = ");
 
-    int fd = ::inotify_init();
-    STD_TEST(fd > 0);
+	if (i->mask & IN_ACCESS)        printf("IN_ACCESS ");
+	if (i->mask & IN_ATTRIB)        printf("IN_ATTRIB ");
+	if (i->mask & IN_CLOSE_NOWRITE) printf("IN_CLOSE_NOWRITE ");
+	if (i->mask & IN_CLOSE_WRITE)   printf("IN_CLOSE_WRITE ");
+	if (i->mask & IN_CREATE)        printf("IN_CREATE ");
+	if (i->mask & IN_DELETE)        printf("IN_DELETE ");
+	if (i->mask & IN_DELETE_SELF)   printf("IN_DELETE_SELF ");
+	if (i->mask & IN_IGNORED)       printf("IN_IGNORED ");
+	if (i->mask & IN_ISDIR)         printf("IN_ISDIR ");
+	if (i->mask & IN_MODIFY)        printf("IN_MODIFY ");
+	if (i->mask & IN_MOVE_SELF)     printf("IN_MOVE_SELF ");
+	if (i->mask & IN_MOVED_FROM)    printf("IN_MOVED_FROM ");
+	if (i->mask & IN_MOVED_TO)      printf("IN_MOVED_TO ");
+	if (i->mask & IN_OPEN)          printf("IN_OPEN ");
+	if (i->mask & IN_Q_OVERFLOW)    printf("IN_Q_OVERFLOW ");
+	if (i->mask & IN_UNMOUNT)       printf("IN_UNMOUNT ");
 
-    int wd = ::inotify_add_watch(fd, "./test.txt", IN_ALL_EVENTS);
-    STD_TEST(wd > 0);
+	printf("\n");
 
-    int length = ::read(fd, buffer, BUF_LEN);
-    STD_TEST(length >= 0)
-    std::cout << STD_TRACE_VAR(length) << std::endl;
-
-    int i = 0;
-
-    while ( i < length ) {
-        struct inotify_event *event = ( struct inotify_event * ) &buffer[ i ];
-        if ( event->len ) {
-        #if 0
-            if ( event->mask & IN_CREATE ) {
-                if ( event->mask & IN_ISDIR ) {
-                    printf( "The directory %s was created.\n", event->name );
-                }
-                else {
-                    printf( "The file %s was created.\n", event->name );
-                }
-            }
-            else if ( event->mask & IN_DELETE ) {
-                if ( event->mask & IN_ISDIR ) {
-                    printf( "The directory %s was deleted.\n", event->name );
-                }
-                else {
-                    printf( "The file %s was deleted.\n", event->name );
-                }
-            }
-            else if ( event->mask & IN_MODIFY ) {
-                if ( event->mask & IN_ISDIR ) {
-                    printf( "The directory %s was modified.\n", event->name );
-                }
-                else {
-                    printf( "The file %s was modified.\n", event->name );
-                }
-            }
-        #endif
-            if ( event->mask & IN_ACCESS ) {
-                std::cout << STD_TRACE_VAR(IN_ACCESS) << std::endl;
-            }
-            if ( event->mask & IN_ATTRIB ) {
-                std::cout << STD_TRACE_VAR(IN_ATTRIB) << std::endl;
-            }
-            if ( event->mask & IN_CLOSE_WRITE ) {
-                std::cout << STD_TRACE_VAR(IN_CLOSE_WRITE) << std::endl;
-            }
-            if ( event->mask & IN_CLOSE_NOWRITE ) {
-                std::cout << STD_TRACE_VAR(IN_CLOSE_NOWRITE) << std::endl;
-            }
-            if ( event->mask & IN_CLOSE ) {
-                std::cout << STD_TRACE_VAR(IN_CLOSE) << std::endl;
-            }
-            if ( event->mask & IN_OPEN ) {
-                std::cout << STD_TRACE_VAR(IN_OPEN) << std::endl;
-            }
-            if ( event->mask & IN_MOVED_FROM ) {
-                std::cout << STD_TRACE_VAR(IN_MOVED_FROM) << std::endl;
-            }
-            if ( event->mask & IN_MOVED_TO ) {
-                std::cout << STD_TRACE_VAR(IN_MOVED_TO) << std::endl;
-            }
-            if ( event->mask & IN_MOVE ) {
-                std::cout << STD_TRACE_VAR(IN_MOVE) << std::endl;
-            }
-            if ( event->mask & IN_CREATE ) {
-                std::cout << STD_TRACE_VAR(IN_CREATE) << std::endl;
-            }
-            if ( event->mask & IN_DELETE ) {
-                std::cout << STD_TRACE_VAR(IN_DELETE) << std::endl;
-            }
-            if ( event->mask & IN_DELETE_SELF ) {
-                std::cout << STD_TRACE_VAR(IN_DELETE_SELF) << std::endl;
-            }
-            if ( event->mask & IN_MOVE_SELF ) {
-                std::cout << STD_TRACE_VAR(IN_MOVE_SELF) << std::endl;
-            }
-            if ( event->mask & IN_UNMOUNT ) {
-                std::cout << STD_TRACE_VAR(IN_UNMOUNT) << std::endl;
-            }
-            if ( event->mask & IN_Q_OVERFLOW ) {
-                std::cout << STD_TRACE_VAR(IN_Q_OVERFLOW) << std::endl;
-            }
-            if ( event->mask & IN_IGNORED ) {
-                std::cout << STD_TRACE_VAR(IN_IGNORED) << std::endl;
-            }
-            if ( event->mask & IN_CLOSE ) {
-                std::cout << STD_TRACE_VAR(IN_CLOSE) << std::endl;
-            }
-            if ( event->mask & IN_MOVE ) {
-                std::cout << STD_TRACE_VAR(IN_MOVE) << std::endl;
-            }
-            if ( event->mask & IN_ONLYDIR ) {
-                std::cout << STD_TRACE_VAR(IN_ONLYDIR) << std::endl;
-            }
-            if ( event->mask & IN_DONT_FOLLOW ) {
-                std::cout << STD_TRACE_VAR(IN_DONT_FOLLOW) << std::endl;
-            }
-            if ( event->mask & IN_EXCL_UNLINK ) {
-                std::cout << STD_TRACE_VAR(IN_EXCL_UNLINK) << std::endl;
-            }
-            if ( event->mask & IN_MASK_ADD ) {
-                std::cout << STD_TRACE_VAR(IN_MASK_ADD) << std::endl;
-            }
-            if ( event->mask & IN_ISDIR ) {
-                std::cout << STD_TRACE_VAR(IN_ISDIR) << std::endl;
-            }
-            if ( event->mask & IN_ONESHOT ) {
-                std::cout << STD_TRACE_VAR(IN_ONESHOT) << std::endl;
-            }
-            else {
-                std::cout << "Unknown event" << std::endl;
-            }
-        }
-
-        i += EVENT_SIZE + event->len;
-    }
-
-    ::inotify_rm_watch( fd, wd );
-    ::close( fd );
+	if (i->len > 0)
+		printf("        name = %s\n", i->name);
 }
 //-------------------------------------------------------------------------------------------------
+int main(int argc, char *argv[])
+{
+	if (argc < 2 || strcmp(argv[1], "--help") == 0) {
+		printf("%s pathname...\n", argv[0]);
+	}
 
+	#define EVENT_SIZE (sizeof(struct inotify_event))
+	#define BUF_LEN    ((EVENT_SIZE + NAME_MAX + 1) * 10)
 
-#if OUTPUT
+	int iRv = 0;
 
+	// Create inotify instance
+	int inotifyFd = ::inotify_init();
+	STD_TEST(inotifyFd != -1);
 
+	// For each command-line argument, add a watch for all events
+	std::vector<int> watchFds;
 
-#endif
+	for (int j = 1; j < argc; j++) {
+		int watchFd = ::inotify_add_watch(inotifyFd, argv[j], IN_ALL_EVENTS);
+		STD_TEST(watchFd != - 1);
+
+		printf("Watching %s using wd %d\n", argv[j], watchFd);
+
+		watchFds.push_back(watchFd);
+	}
+
+	// Read events forever
+	for ( ; ; )  {
+		char buf[BUF_LEN];
+
+		ssize_t numRead = ::read(inotifyFd, buf, BUF_LEN);
+		STD_TEST(numRead > 0);
+
+		printf("Read %ld bytes from inotify fd\n", (long) numRead);
+
+		// Process all of the events in buffer returned by read()
+		for (char *p = buf; p < buf + numRead; ) {
+			struct inotify_event *event = (struct inotify_event *) p;
+			::displayInotifyEvent(event);
+
+			p += EVENT_SIZE + event->len;
+		}
+	}
+
+	for (size_t i = 0; i < watchFds.size(); ++ i) {
+		iRv = ::inotify_rm_watch(inotifyFd, watchFds[i]);
+		STD_TEST(iRv != -1)
+	}
+
+    iRv = ::close(inotifyFd);
+    STD_TEST(iRv != -1)
+
+    return EXIT_SUCCESS;
+}
+//-------------------------------------------------------------------------------------------------
