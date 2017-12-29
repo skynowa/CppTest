@@ -5,9 +5,9 @@
 
 
 #include <list>
-#include <algorithm>
+#include <numeric>
 #include <string>
-#include "../StdTest.h"
+#include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
@@ -23,7 +23,7 @@ int main(int argsNum, char **args)
 			return std::to_string(std::stod(a_it_1) + std::stod(a_it_2));
 		});
 
-    std::cout << _xTRACE_VAR(sRv) << std::endl;
+    std::cout << STD_TRACE_VAR(sRv) << std::endl;
 
     return 0;
 }

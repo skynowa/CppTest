@@ -1,7 +1,6 @@
 // Check to make sure that the user wants a Posix compatible implementation
 #ifdef USE_POSIXFILEROUTER
 
-#include <FileRouter.h>
 #include <sys/stat.h>
 
 // check to see if a file (path) is a directory

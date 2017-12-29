@@ -1,47 +1,45 @@
-#include <windows.h>
-#include <tchar.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
 #include <vector>
 #include <assert.h>
 //---------------------------------------------------------------------------
-BOOL bLogAppend(LPCTSTR pcszFilePath, LPCTSTR pcszText) {
+bool
+bLogAppend(const char *pcszFilePath, const char *pcszText)
+{
 	assert(NULL != pcszFilePath);
 	assert(NULL != pcszText);
 
-	_tsetlocale(LC_ALL, _T(""));
+	setlocale(LC_ALL, "");
 
-	FILE *pFile = _tfopen(pcszFilePath, _T("a"));
+	FILE *pFile = fopen(pcszFilePath, "a");
 	assert(NULL != pFile);
 
-	_ftprintf(pFile, _T("%s"), pcszText);
+	fprintf(pFile, "%s", pcszText);
 
-	fclose(pFile);	
+	fclose(pFile);
 	pFile = NULL;
 
-	return TRUE;
+	return true;
 }
 //---------------------------------------------------------------------------
-INT _tmain(INT argc, TCHAR *argv[]) {
-	BOOL bRes = FALSE;
-
-	bRes = bLogAppend(_T("C:\\Test.log"), _T("Операция успешно завершена.\n"));
-
+int main(int argc, char *argv[])
+{
+	bool bRes = bLogAppend("./Test.log", "???? ???? ?????\n");
 
 	return 0;
 }
 //---------------------------------------------------------------------------
 
 /*
-Без установки текущей локали (VC++ 2008):
-???????? ??????? ????????? 
+?? ????????? ??? (VC++ 2008):
+???????? ??????? ?????????
 
 
-С установкой текущей локали (VC++ 2008):
-Операция успешно завершена.
+?????? ???? ??? (VC++ 2008):
+???? ???? ?????
 
 
-С установкой текущей локали (CG++ 2010):
-ЋЇҐа жЁп гбЇҐи­® § ўҐаиҐ­ .
+?????? ???? ??? (CG++ 2010):
+?????????и­® ????????.
 */

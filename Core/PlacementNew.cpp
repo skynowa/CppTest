@@ -4,7 +4,7 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 #include <new>
 //-------------------------------------------------------------------------------------------------
 class A
@@ -55,7 +55,7 @@ int main(int argsNum, char **args)
 
 		// test
 		strcpy(ptr, "ABCDEF");
-		std::cout << _xTRACE_VAR(ptr) << std::endl;
+		std::cout << STD_TRACE_VAR(ptr) << std::endl;
 
 		// destruct
 		ptr->~T();

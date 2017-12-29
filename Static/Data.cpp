@@ -1,4 +1,3 @@
-#include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -9,7 +8,8 @@ static char g_sBuff_1[10] = {0};
 static char g_sBuff_2[10];
 
 
-void vTest() {
+void vTest()
+{
     static char szBuff_1[10 + 1] = {0};
     static char szBuff_2[10 + 1];
 

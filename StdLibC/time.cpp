@@ -1,8 +1,8 @@
-#include <windows.h>
 #include <iostream>
 
 #include <stdio.h>
 #include <time.h>
+#include <cstring>
 
 
 
@@ -27,7 +27,7 @@ void logEntry(const char *message) {
 
 	strftime(timeString, timeStringLength, timeStringFormat, curTime);
 	std::cout << timeString << '\t' << message << '\n';
-	
+
 	////flush(logFile);
 }
 //---------------------------------------------------------------------------
@@ -39,14 +39,14 @@ void MsecToTimeStr(int iMsec) {
 
     char buf1[64]; memset(buf1, 0, sizeof(buf1));
     sprintf(buf1, "%u:%.2u:%.2u:%.3u", HOUR(iMsec), MIN(iMsec), SEC(iMsec), MSEC(iMsec));
-    
+
     std::cout << buf1 << '\t' << "message" << '\n';
 
 
 	//-----------------------------------------
 	char buf[64];
-    UINT h, m, s, ms;
-    UINT t = iMsec;
+    unsigned int h, m, s, ms;
+    unsigned int t = iMsec;
 
     /* 1 000 ms = 1 sec       *
      * 60 000 ms = 1 min      *
@@ -58,15 +58,15 @@ void MsecToTimeStr(int iMsec) {
     ms = t % 1000;
 
     sprintf(buf, "%u:%.2u:%.2u:%.3u", h, m, s, ms);
-    
+
     std::cout << buf << '\t' << "message" << '\n';
 }
 //---------------------------------------------------------------------------
 int main(int argc, char* argv[]) {
 	//logEntry("Test string");
 	MsecToTimeStr(13437658);
-	
-	
+
+
 	system("pause");
 	return 0;
 }

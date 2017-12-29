@@ -1,49 +1,48 @@
 // Chars.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <xLib/Common/xCommon.h>
+#include <StdTest.h>
 
-tString 
+std::string
 sGetString(const size_t cuiLength) {
-    const bool letters = TRUE; 
-    const bool numbers = TRUE; 
-    const bool symbols = TRUE;
+    const bool letters = true;
+    const bool numbers = true;
+    const bool symbols = true;
 
-    tString sRes;
+    std::string sRes;
     // the shortest way to do this is to create a string, containing
     // all possible values. Then, simply add a random value from that string
     // to our return value
-    tString allPossible; // this will contain all necessary characters
+    std::string allPossible; // this will contain all necessary characters
 
-    if (letters == true) { 
+    if (letters == true) {
         for (int i = 65; i <= 90; i++) {
-            allPossible += static_cast<TCHAR>(i);
-            allPossible += static_cast<TCHAR>(i+32); // add a lower case letter, too!
+            allPossible += static_cast<char>(i);
+            allPossible += static_cast<char>(i+32); // add a lower case letter, too!
         }
-    } 
-    
-    if (numbers == true) { 
+    }
+
+    if (numbers == true) {
         for (int i = 48; i <= 57; i++) {
-            allPossible += static_cast<TCHAR>(i);
+            allPossible += static_cast<char>(i);
         }
-    } 
-    
+    }
+
     if (symbols == true) { // if you want symbols, we'll add symbols (note, their ASCII values are scattered)
         for (int i = 33; i <= 47; i++) {
-            allPossible += static_cast<TCHAR>(i);
-        } 
-        
+            allPossible += static_cast<char>(i);
+        }
+
         for (int i = 58; i <= 64; i++) {
-            allPossible += static_cast<TCHAR>(i);
-        } 
-        
+            allPossible += static_cast<char>(i);
+        }
+
         for (int i = 91; i <= 96; i++) {
-            allPossible += static_cast<TCHAR>(i);
-        } 
-        
+            allPossible += static_cast<char>(i);
+        }
+
         for (int i = 123; i <= 126; i++) {
-            allPossible += static_cast<TCHAR>(i);
+            allPossible += static_cast<char>(i);
         }
     }
 
@@ -52,17 +51,13 @@ sGetString(const size_t cuiLength) {
     for (size_t i = 0; i < cuiLength; i++) {
         sRes += allPossible[rand() % numberOfPossibilities];
     }
- 
+
     //std::random_shuffle(sRes.begin(), sRes.end());
 
     return sRes;
 }
 
-INT
-_tmain(
-    INT    argc,
-    TCHAR *argv[]
-)
+int main(int argc, char *argv[])
 {
     //const std::string sBucketA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

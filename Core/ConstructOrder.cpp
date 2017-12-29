@@ -4,29 +4,29 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 
 
 //-------------------------------------------------------------------------------------------------
 class Base1
 {
 public:
-	Base1()	 { _xTRACE_FUNC; }
-	~Base1() { _xTRACE_FUNC; }
+	Base1()	 { STD_TRACE_FUNC; }
+	~Base1() { STD_TRACE_FUNC; }
 };
 //-------------------------------------------------------------------------------------------------
 class Base2
 {
 public:
-	Base2()	 { _xTRACE_FUNC; }
-	~Base2() { _xTRACE_FUNC; }
+	Base2()	 { STD_TRACE_FUNC; }
+	~Base2() { STD_TRACE_FUNC; }
 };
 //-------------------------------------------------------------------------------------------------
 class Field
 {
 public:
-	Field()	 { _xTRACE_FUNC; }
-	~Field() { _xTRACE_FUNC; }
+	Field()	 { STD_TRACE_FUNC; }
+	~Field() { STD_TRACE_FUNC; }
 };
 //-------------------------------------------------------------------------------------------------
 class A :
@@ -36,8 +36,8 @@ class A :
 public:
 	Field f1, f2, f3;
 
-	A()	 { _xTRACE_FUNC; }
-	~A() { _xTRACE_FUNC; }
+	A()	 { STD_TRACE_FUNC; }
+	~A() { STD_TRACE_FUNC; }
 };
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)

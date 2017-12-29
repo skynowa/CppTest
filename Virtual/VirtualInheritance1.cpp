@@ -1,6 +1,6 @@
  /*
  * \file  Main.cpp
- * \brief 
+ * \brief
  */
 
 
@@ -9,16 +9,16 @@
 #include <iostream>
 #include <assert.h>
 //---------------------------------------------------------------------------
-class IInterface 
+class IInterface
 {
 	public:
 		              IInterface() { std::cout << __FUNCTION__ << std::endl; };
 		 virtual     ~IInterface() { std::cout << __FUNCTION__ << std::endl; };
 
-		 virtual void vFoo() = 0  { std::cout << __FUNCTION__ << std::endl; };
+		 virtual void vFoo() = 0;
 };
 //---------------------------------------------------------------------------
-class CA : 
+class CA :
     public /* virtual */ IInterface
  {
 	public:
@@ -28,8 +28,8 @@ class CA :
 		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
-class CB : 
-    public /* virtual */ IInterface 
+class CB :
+    public /* virtual */ IInterface
 {
 	public:
 		              CB() { std::cout << __FUNCTION__ << std::endl; };
@@ -38,9 +38,9 @@ class CB :
 		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //---------------------------------------------------------------------------
-class CX : 
-    public CA, 
-    public CB 
+class CX :
+    public CA,
+    public CB
 {
 	public:
 		              CX() { std::cout << __FUNCTION__ << std::endl; };
@@ -158,7 +158,7 @@ int main(int iArgCount, char **paszArgs)
     #endif
 
 	std::cout << "-------------------------" << std::endl;
-    
+
     return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------

@@ -1,4 +1,3 @@
-#include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -14,15 +13,15 @@ using namespace std;
 //---------------------------------------------------------------------------
 class CTest {
 	public:
-		INT _m_iIndex;
+		int _m_iIndex;
 
-		CTest(INT iIndex) :
+		CTest(int iIndex) :
 			_m_iIndex(iIndex)
 		{
-			cout << "CTest(): "  << _m_iIndex << endl; 
+			cout << "CTest(): "  << _m_iIndex << endl;
 	    };
 	   ~CTest() {
-		    cout << "~CTest(): " << _m_iIndex <<endl; 
+		    cout << "~CTest(): " << _m_iIndex <<endl;
 		};
 };
 //---------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 /****************************************************************************
 * Class name:  bind
-* Description: 
+* Description:
 * File name:   bind.h
-* Compilers:   Visual C++ 2010 
+* Compilers:   Visual C++ 2010
 * String type: Ansi, Unicode
 * Libraries:   WinAPI, Stl, XLib
 * Author:      Alca
@@ -32,7 +32,7 @@ class CPlayer {
 //---------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------
-INT _tmain(INT iArgc, TCHAR *pszArgv[]) {
+INT main(INT iArgc, TCHAR *pszArgv[]) {
 	CButton playButton;
 	CButton stopButton;
 	CPlayer thePlayer;
@@ -44,10 +44,10 @@ INT _tmain(INT iArgc, TCHAR *pszArgv[]) {
 
 	//click
 	playButton.vOnClick();
-	stopButton.vOnClick();  
+	stopButton.vOnClick();
 
 	xSTD_COUT(xT("\n"));
 	system("pause");
-	return 0; 
+	return 0;
 }
 //---------------------------------------------------------------------------

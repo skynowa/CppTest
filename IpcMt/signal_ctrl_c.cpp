@@ -4,7 +4,7 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 
 #include <signal.h>
 #include <iostream>

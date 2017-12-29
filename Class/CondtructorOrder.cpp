@@ -4,7 +4,6 @@
 #include <vector>
 #include <list>
 #include <map>
-#include <tchar.h>
 //---------------------------------------------------------------------------
 class CTestA {
 	char szArray[256];
@@ -69,8 +68,8 @@ class CStaticClass {
 	public:
 		int m_iA;
 
-		CStaticClass() : 
-			m_iA(10) 
+		CStaticClass() :
+			m_iA(10)
 		{
 			std::cout << "CStaticClass: construct" << std::endl;
 		};
@@ -98,7 +97,7 @@ class CEnumClass {
 			b = 2000,
 			c = 10000,
 			d = 20000,
-			e = 30000	
+			e = 30000
 		};
 
 		ETest m_ETest;
@@ -107,21 +106,21 @@ class CEnumClass {
 		~CEnumClass() {;};
 };
 //---------------------------------------------------------------------------
-int _tmain(int argc, TCHAR *argv[]) {
+int main(int argc, char *argv[]) {
 	//-------------------------------------
-	//порядок вызова конструкторов, деструкторов
+	//??????? ??????? ??????
 	{
 		CWork objW;
 	}
 
 	//-------------------------------------
-	//размер пустого объекта
+	//??? ????????
 	CEmpty objEmptyClass;
 	std::cout << "objEmptyClass size: "  << sizeof(objEmptyClass) << std::endl;
 
 	SEmpty objEmptyStruct;
 	std::cout << "objEmptyStruct size: " << sizeof(objEmptyStruct) << std::endl;
-	
+
 	//-------------------------------------
 	//throw
 	if (true) {
@@ -130,7 +129,7 @@ int _tmain(int argc, TCHAR *argv[]) {
 	}
 
 	//-------------------------------------
-	//конструирование статического члена класса 
+	//?????????????? ??? ???
 	{
 		CStaticClassTest stTest;
 

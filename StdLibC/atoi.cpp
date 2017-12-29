@@ -5,7 +5,7 @@
 
 
 //---------------------------------------------------------------------------
-#include "../StdTest.h"
+#include <StdTest.h>
 
 #include <iostream>
 #include <stdlib.h>

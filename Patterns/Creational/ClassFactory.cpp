@@ -1,4 +1,3 @@
-#include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -13,16 +12,16 @@ class ICar {
 // ConcreteProductA1
 class Ford : public ICar {
 	public:
-		virtual void printName() { 
-			std::cout << "Ford" << std::endl; 
+		virtual void printName() {
+			std::cout << "Ford" << std::endl;
 		}
 };
 //---------------------------------------------------------------------------
 // ConcreteProductA2
 class Toyota : public ICar {
 	public:
-		virtual void printName() { 
-			std::cout << "Toyota" << std::endl; 
+		virtual void printName() {
+			std::cout << "Toyota" << std::endl;
 		}
 };
 //---------------------------------------------------------------------------
@@ -39,16 +38,16 @@ class IEngine {
 // ConcreteProductB1
 class FordEngine : public IEngine {
 	public:
-		virtual void printPower() { 
-			std::cout << "Ford Engine 4.4" << std::endl; 
+		virtual void printPower() {
+			std::cout << "Ford Engine 4.4" << std::endl;
 		}
 };
 //---------------------------------------------------------------------------
 // ConcreteProductB2
 class ToyotaEngine : public IEngine {
 	public:
-		virtual void printPower() { 
-			std::cout << "Toyota Engine 3.2" << std::endl; 
+		virtual void printPower() {
+			std::cout << "Toyota Engine 3.2" << std::endl;
 		}
 };
 //---------------------------------------------------------------------------
@@ -99,7 +98,7 @@ void use(ICarFactory* f) {
 	delete myCar;
 	delete myEngine;
 }
-//--------------------------------------------------------------------------- 
+//---------------------------------------------------------------------------
 int main() {
 	ToyotaFactory toyotaFactory;
 	FordFactory	  fordFactory;

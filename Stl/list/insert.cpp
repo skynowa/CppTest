@@ -11,19 +11,16 @@
 #include <vector>
 
 //-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
-
-    struct Item
-    {
-        size_t id;
-    };
+struct Item
+{
+    size_t id;
+};
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **args)
 {
     std::list<Item> items;
     {
-        for (int i = 1; i <= 5; ++ i) {
+        for (size_t i = 1; i <= 5; ++ i) {
             Item item = {i};    // 1 2 3 4 5
 
             items.push_back(item);

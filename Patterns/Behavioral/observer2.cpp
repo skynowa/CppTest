@@ -3,8 +3,6 @@
  * Implemented by Blueprint Technologies, Inc.
  */
 
-#ifndef _observer_h
-#define _observer_h
 
 #include <iostream>
 #include <vector>
@@ -103,4 +101,10 @@ class ConcreteSubject: public Subject
 {
 };
 
-#endif
+
+int main()
+{
+	return 0;
+}
+
+

@@ -1,17 +1,17 @@
 #ifndef CVarH
 #define CVarH
- 
-#include <XLib/xCommon.h>
+
+#include <StdTest.h>
 //---------------------------------------------------------------------------
 class CVar {
 	public:
 		CVar() {
-			xSTD_COUT_FUNC_MSG(xT("\a"));	
+			STD_TRACE_FUNC;
 		};
 
 		~CVar() {
-			xSTD_COUT_FUNC_MSG(xT("\a"));	
-		};	
+			STD_TRACE_FUNC;
+		};
 };
 //---------------------------------------------------------------------------
 #endif //CVarH

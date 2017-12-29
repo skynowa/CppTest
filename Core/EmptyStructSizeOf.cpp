@@ -4,7 +4,7 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
 struct A_1byte
@@ -40,12 +40,12 @@ class F_16byte
 int main(int argsNum, char **args)
 {
 	std::cout
-		<< _xTRACE_VAR(sizeof(A_1byte))  << "\n"
-		<< _xTRACE_VAR(sizeof(B_1byte))  << "\n"
-		<< _xTRACE_VAR(sizeof(C_0byte))  << "\n"
-		<< _xTRACE_VAR(sizeof(D_8byte))  << "\n"
-		<< _xTRACE_VAR(sizeof(E_4byte))  << "\n"
-		<< _xTRACE_VAR(sizeof(F_16byte)) << "\n"
+		<< STD_TRACE_VAR(sizeof(A_1byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(B_1byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(C_0byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(D_8byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(E_4byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(F_16byte)) << "\n"
 		<< std::endl;
 
 	return 0;

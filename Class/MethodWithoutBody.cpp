@@ -19,9 +19,9 @@ int main(int argsNum, char **args)
 {
     A a;
 
-    cout << "Begin" << endl;
+    std::cout << "Begin" << std::endl;
     // a.foo();
-    cout << "End" << endl;
+    std::cout << "End" << std::endl;
 
     return 0;
 }

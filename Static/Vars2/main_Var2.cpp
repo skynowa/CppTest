@@ -1,8 +1,8 @@
 /****************************************************************************
 * Class name:  Test
-* Description: 
+* Description:
 * File name:   Test.h
-* Compilers:   Visual C++ 2010 
+* Compilers:   Visual C++ 2010
 * String type: Ansi, Unicode
 * Libraries:   WinAPI, Stl, XLib
 * Author:      Alca
@@ -13,19 +13,18 @@
 *****************************************************************************/
 
 
-#include <XLib/xCommon.h>
+#include <StdTest.h>
 
-#include "header.h"
+#include "CxVars.h"
 #include "module.h"
 
 //---------------------------------------------------------------------------
-INT _tmain(INT iArgc, TCHAR *pszArgv[]) {
+int main(int iArgc, char *pszArgv[]) {
 	{
 		some_func();
-		Test test; 
+		CxVars::m_Var;
 	}
 
-	system("pause");
 	return 0;
 }
 //---------------------------------------------------------------------------

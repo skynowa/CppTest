@@ -3,9 +3,9 @@
 //         Author: Kevin Harris
 //  Last Modified: 09/25/04
 //    Description: While random1 is typical of random number generations,
-//                 the function random2() returns a random number which is 
-//                 is chosen by shuffling the elements of a vector which 
-//                 only contains values that exist between the specified 
+//                 the function random2() returns a random number which is
+//                 is chosen by shuffling the elements of a vector which
+//                 only contains values that exist between the specified
 //                 range.
 //-----------------------------------------------------------------------------
 
@@ -26,16 +26,16 @@ int random2( int nMin, int nMax );
 
 //-----------------------------------------------------------------------------
 // Name: main()
-// Desc: 
+// Desc:
 //-----------------------------------------------------------------------------
-void main()
+int main(int argc, char *argv[])
 {
     int i = 0;
 
-    // Seed the random-number generator with the current time 
+    // Seed the random-number generator with the current time
     // so that the numbers will be different every time we run.
     srand( (unsigned)time( NULL ) );
-   
+
     cout << "Using Random1 whith typical modulus ranging" << endl << endl;
 
 	for( i = 0; i < 10; i++ )

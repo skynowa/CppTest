@@ -6,7 +6,7 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 
 //---------------------------------------------------------------------------
 int (*funcPtr)(const std::string &value) = NULL;

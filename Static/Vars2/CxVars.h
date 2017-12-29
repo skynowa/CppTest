@@ -1,7 +1,6 @@
 #ifndef header_h
 #define header_h
- 
-#include <XLib/xCommon.h>
+
 #include "CVar.h"
 //---------------------------------------------------------------------------
 class CxVars {
@@ -10,7 +9,9 @@ class CxVars {
 
 	private:
 		CxVars() {};
-		~CxVars() {};	
+		~CxVars() {};
 };
 //---------------------------------------------------------------------------
+#include "CxVars.inl"
+
 #endif //header_h

@@ -1,60 +1,59 @@
+#include <StdTest.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
 #include <vector>
 #include <list>
 #include <map>
-#include <tchar.h>
-
-#include <XLib/xCommon.h>
 //---------------------------------------------------------------------------
 class A {
 	public:
-		             A   () { xSTD_COUT(__FUNCTION__) }
-		            ~A   () { xSTD_COUT(__FUNCTION__) }
+		             A   () { STD_TRACE_FUNC; }
+		            ~A   () { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { xSTD_COUT(__FUNCTION__) }
+		virtual void vFoo() { STD_TRACE_FUNC; }
 };
 //---------------------------------------------------------------------------
 class B : public A {
 	public:
-					 B()    { xSTD_COUT(__FUNCTION__) }
-					~B()    { xSTD_COUT(__FUNCTION__) }
+					 B()    { STD_TRACE_FUNC; }
+					~B()    { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { xSTD_COUT(__FUNCTION__) }
+		virtual void vFoo() { STD_TRACE_FUNC; }
 };
 //---------------------------------------------------------------------------
 class C : public A {
 	public:
-		             C()   { xSTD_COUT(__FUNCTION__) }
-		            ~C()   { xSTD_COUT(__FUNCTION__) }
+		             C()   { STD_TRACE_FUNC; }
+		            ~C()   { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { xSTD_COUT(__FUNCTION__) }
+		virtual void vFoo() { STD_TRACE_FUNC; }
 
 };
 //---------------------------------------------------------------------------
-int _tmain(int argc, TCHAR *argv[]) {
+int main(int argc, char *argv[])
+{
 	//-------------------------------------
 	//
 	{
 		A *a = new A();
 		a->vFoo();
-		xSTD_COUT("----------");
+		std:: cout << "----------" << std::endl;
 
 		A *b = new B();
 		b->vFoo();
-		xSTD_COUT("----------");
+		std:: cout << "----------" << std::endl;
 
 		A *c = new C();
 		c->vFoo();
-		xSTD_COUT("----------");
+		std:: cout << "----------" << std::endl;
 
-		xDELETE_PTR(c);
-		xSTD_COUT("----------");
-		xDELETE_PTR(b);
-		xSTD_COUT("----------");
-		xDELETE_PTR(a);
-		xSTD_COUT("----------");
+		delete c;
+		std:: cout << "----------" << std::endl;
+		delete b;
+		std:: cout << "----------" << std::endl;
+		delete a;
+		std:: cout << "----------" << std::endl;
 
 		/*
 		A::A
@@ -77,9 +76,6 @@ int _tmain(int argc, TCHAR *argv[]) {
 		*/
 	}
 
-
-
-	system("pause");
 	return 0;
 }
 //---------------------------------------------------------------------------

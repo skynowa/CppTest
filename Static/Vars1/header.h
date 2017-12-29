@@ -1,22 +1,22 @@
 #ifndef header_h
 #define header_h
- 
-#include <XLib/xCommon.h>
 
+#include <iostream>
+#include <StdTest.h>
 
 struct Test
 {
     struct Init {
         Init()
         {
-			xSTD_COUT_FUNC_MSG(xT("\a")); 
+            STD_TRACE_FUNC
         }
         ~Init()
         {
-			xSTD_COUT_FUNC_MSG(xT("\a")); 
+            STD_TRACE_FUNC
         }
     };
- 
+
     Test()
     {
         static const Init m_Obj;

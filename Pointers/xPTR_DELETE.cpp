@@ -4,7 +4,7 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 #include <memory>
 #include <string>
 #include <iostream>
@@ -34,14 +34,14 @@ void func()
 	{
 		int *ptr = new int;
 		Ptr::deleteByRef(ptr);
-		_xTEST(ptr == NULL);
+		STD_TEST(ptr == NULL);
 	}
 
 	{
 		int *ptr = new int;
 
 		Ptr::deleteByValue(ptr);
-		_xTEST(ptr != NULL);
+		STD_TEST(ptr != NULL);
 	}
 }
 //---------------------------------------------------------------------------

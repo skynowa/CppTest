@@ -1,4 +1,3 @@
-#include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -16,10 +15,10 @@ class Y: public X {
 		char getType(){return 'Y';}
 };
 //---------------------------------------------------------------------------
-int main(int argc, CHAR* argv[]) {
+int main(int argc, char* argv[]) {
 	X *x = new X();
 	X *y = new Y();
-	
+
 	std::cout << x->getType() << "    " << y->getType() << "\n";
 
 	delete x;

@@ -7,9 +7,9 @@
 #include <iostream>
 #include <windows.h>
 //---------------------------------------------------------------------------
-enum EHandleValue { 
-    hvNull, 
-    hvInvalid 
+enum EHandleValue {
+    hvNull,
+    hvInvalid
 };
 
 template<EHandleValue hvTag>
@@ -17,16 +17,16 @@ HANDLE CxHandleFailValueGet();
 
 
 template<>
-HANDLE 
-CxHandleFailValueGet<hvNull>() { 
-    return NULL; 
+HANDLE
+CxHandleFailValueGet<hvNull>() {
+    return NULL;
 }
 
 template<>
-HANDLE 
-CxHandleFailValueGet<hvInvalid>() { 
-    return INVALID_HANDLE_VALUE; 
-} 
+HANDLE
+CxHandleFailValueGet<hvInvalid>() {
+    return INVALID_HANDLE_VALUE;
+}
 
 
 template<EHandleValue hvTag>
@@ -48,10 +48,10 @@ class CxHandleT {
 //---------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------
-int _tmain(int argc, _TCHAR* argv[]) {
+int main(int argc, _TCHAR* argv[]) {
     {
-	    CxHandleT<hvNull>    hHandle1; 
-	    CxHandleT<hvInvalid> hHandle2; 
+	    CxHandleT<hvNull>    hHandle1;
+	    CxHandleT<hvInvalid> hHandle2;
     }
 
     system("pause");
