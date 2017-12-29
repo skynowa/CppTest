@@ -65,7 +65,8 @@ displayInotifyEvent(struct inotify_event *i)
 int main(int argc, char *argv[])
 {
 	if (argc < 2 || strcmp(argv[1], "--help") == 0) {
-		printf("%s pathname...\n", argv[0]);
+		printf("Usage: %s [PATH_NAME]\n", argv[0]);
+		return EXIT_SUCCESS;
 	}
 
 	#define EVENT_SIZE (sizeof(struct inotify_event))
