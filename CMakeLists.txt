@@ -18,8 +18,14 @@ set(CMAKE_REQUIRED_QUIET        ON)
 
 set(CMAKE_CXX_STANDARD          11)
 #--------------------------------------------------------------------------------------------------
+# Boost
+find_package(Boost COMPONENTS program_options filesystem system)
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+endif()
+#--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
 set(LIBRARIES ${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} pthread rt m z)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/*.cpp)
