@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 	}
 
     iRv = ::close(inotifyFd);
-    STD_TEST(iRv != -1)
+    STD_TEST(iRv != -1);
 
     return EXIT_SUCCESS;
 }
