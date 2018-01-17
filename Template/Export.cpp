@@ -1,17 +1,22 @@
 /**
- * \file  main.cpp
+ * \file  Export.cpp
  * \brief
  */
 
 
-#include <StdTest.h>
+#include "Export.h"
 
+//-------------------------------------------------------------------------------------------------
+template<typename T>
+T
+func(const T a_value)
+{
+    return a_value;
+}
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-
-
-    // std::cout << "" << std::endl;
+    std::cout << STD_TRACE_VAR(func(111)) << std::endl;
 
     return 0;
 }
