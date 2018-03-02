@@ -31,14 +31,16 @@ foo(int i, double d, void *ptr)
 	std::cout << STD_TRACE_VAR4(__FUNCTION__, i, d, ptr) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
-template<class... Rest>
+template<typename ...ArgsT>
 void
-foo(const char *format, Rest... rest)
+foo(const char *format, const ArgsT &...args)
 {
-	std::cout << STD_TRACE_VAR(format) << std::endl;
+	constexpr std::size_t argsSize = sizeof...(ArgsT);
+
+	std::cout << STD_TRACE_VAR2(format, argsSize) << ": ";
 
 	// Unpack the arguments for further treatment
-    foo(rest...);
+    foo(args...);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
