@@ -7,11 +7,6 @@
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
-namespace std
-{
-using ustring_t = basic_string<unsigned char>;
-}
-//-------------------------------------------------------------------------------------------------
 class StdStream
 {
 public:
@@ -23,17 +18,19 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------------------------
-std::ostream &
-operator << (std::ostream &a_os, const std::ustring_t &a_value)
+using ustring_t = std::basic_string<unsigned char>;
+
+inline std::ostream &
+operator << (std::ostream &a_os, const ::ustring_t &a_value)
 {
 	StdStream::format(a_os, a_value);
+
 	return a_os;
 }
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::ustring_t s(10, 'g');
+	::ustring_t s(10, 'g');
 
     std::cout << STD_TRACE_VAR(s) << std::endl;
 
