@@ -10,7 +10,7 @@
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::list<std::string> amounts;
 	amounts.push_back("0.1");

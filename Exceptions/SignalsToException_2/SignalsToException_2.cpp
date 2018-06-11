@@ -14,7 +14,7 @@ using namespace std;
 
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	int iret;
 

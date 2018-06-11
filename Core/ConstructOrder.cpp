@@ -40,7 +40,7 @@ public:
 	~A() { STD_TRACE_FUNC; }
 };
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	A a;
 

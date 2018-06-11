@@ -16,7 +16,7 @@
 
 void printVars(const char *format, ...);
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     printVars("fcsi", 32.4f, 'a', "Test string", 4);
 

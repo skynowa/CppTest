@@ -37,7 +37,7 @@ class F_16byte
 	E_4byte value2;
 };
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::cout
 		<< STD_TRACE_VAR(sizeof(A_1byte))  << "\n"

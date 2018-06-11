@@ -19,7 +19,7 @@ struct Item
     size_t id;
 };
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     std::list<Item> items { {1}, {2}, {3}, {4}, {5} };
 

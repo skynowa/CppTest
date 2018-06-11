@@ -13,7 +13,7 @@
 #define TRACE_VAR(v) \
     #v ": " << (v)
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     double v1 = 420.8400001;
     double v2 = 420.84;

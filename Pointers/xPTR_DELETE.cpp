@@ -45,7 +45,7 @@ void func()
 	}
 }
 //---------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	func();
 

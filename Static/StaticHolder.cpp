@@ -20,7 +20,7 @@ int StaticHolder<valueT>::value = valueT;
 
 typedef StaticHolder<3> IntStaticHolder;
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     IntStaticHolder holder;
 

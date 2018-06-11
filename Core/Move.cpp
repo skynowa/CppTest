@@ -34,7 +34,7 @@ public:
 };
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::vector<File> files;
 	files.push_back(File("data1.txt"));

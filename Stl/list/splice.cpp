@@ -13,7 +13,7 @@
 #define TRACE_VAR(v) \
     #v ": " << (v)
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::list<int> a {1, 2, 3, 4, 5, 6, 7, 8};
 	std::list<int> b {5, 6, 7, 8};

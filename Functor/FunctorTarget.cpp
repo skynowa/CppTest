@@ -20,7 +20,7 @@ void functor(const string &value)
     cout << __FUNCTION__ << " " << value << endl;
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     // std::function<int(int,int)> foo1 = my_plus;
     // std::function<int(int,int)> foo2;

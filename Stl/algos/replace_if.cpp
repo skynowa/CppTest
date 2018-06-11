@@ -14,7 +14,7 @@ functor(const char a_it)
 	return !std::isalnum( static_cast<int>(a_it) );
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::string value = "Su tton (London,UK)";
 

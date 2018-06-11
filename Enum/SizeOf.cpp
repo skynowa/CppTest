@@ -12,7 +12,7 @@
 #define TRACE_VAR(v) \
     #v ": " << (v)
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     class A
     {

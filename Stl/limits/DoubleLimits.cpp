@@ -9,7 +9,7 @@
 #include <limits>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::min()) << std::endl;
 	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::max()) << std::endl;

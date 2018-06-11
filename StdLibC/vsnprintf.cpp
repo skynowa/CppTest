@@ -27,7 +27,7 @@ bufferSize(const char *format, ...)
 	return iRv + 1; // safe byte for \0
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	int iRv = bufferSize("Width trick: %*d", 5, 10);
 

@@ -7,7 +7,7 @@
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	const std::string dateFormats[]
 	{

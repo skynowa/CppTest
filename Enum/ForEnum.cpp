@@ -23,7 +23,7 @@ void log(const Type e)
 	std::cout << e << ",";
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	// all
 	for (const auto e : All) {

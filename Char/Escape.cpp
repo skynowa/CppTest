@@ -7,7 +7,7 @@
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::string s1 = "aaa'bbb'ccc";
 	std::string s2 = "aaa\'bbb\'ccc";

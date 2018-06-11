@@ -8,7 +8,7 @@
 #include <map>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	std::map<std::string, bool> m;
 	m["A"] = true;

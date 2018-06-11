@@ -9,7 +9,7 @@
 #include <cmath>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	// to int
 	const std::string ip     = "92.60.182.205";

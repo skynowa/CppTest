@@ -56,7 +56,7 @@ Test::test() const
     f2.get();
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     try {
         Test t;

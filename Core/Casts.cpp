@@ -7,7 +7,7 @@
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     int try_avail = 78.4;
 

@@ -20,7 +20,7 @@ fn(T&& x)
     overloaded (std::forward<T>(x));  // rvalue if argument is rvalue
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     int a;
 

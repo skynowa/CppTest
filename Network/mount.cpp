@@ -15,7 +15,7 @@
 using namespace std;
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
   string host = "192.168.12.200";
   string src = "\\\\homes";

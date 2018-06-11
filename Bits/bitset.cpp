@@ -8,7 +8,7 @@
 #include <bitset>
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
 	{
 		std::bitset<4> b(std::string("1010"));

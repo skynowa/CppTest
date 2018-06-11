@@ -38,7 +38,7 @@ public:
 Global Global_variable; // dtor of this object *will* be called
 
 //-------------------------------------------------------------------------------------------------
-int main(int argsNum, char **args)
+int main(int, char **)
 {
     Local local_variable; // !!! dtor of this object will *not* be called !!!
 
