@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <assert.h>
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     std::string s;
 

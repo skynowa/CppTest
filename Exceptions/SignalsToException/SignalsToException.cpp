@@ -158,7 +158,7 @@ public:
     }
 };
 //-------------------------------------------------------------------------------------------------
-int main(int argc, char* argv[])
+int main(int, char **)
 {
     // SignalTranslator<SegmentationFault>  segmentationFaultTranslator;
     // SignalTranslator<FloatingPoint>      floatingPointTranslator;

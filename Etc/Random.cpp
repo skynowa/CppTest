@@ -28,7 +28,7 @@ int random2( int nMin, int nMax );
 // Name: main()
 // Desc:
 //-----------------------------------------------------------------------------
-int main(int argc, char *argv[])
+int main(int, char **)
 {
     int i = 0;
 

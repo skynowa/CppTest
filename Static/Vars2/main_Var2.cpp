@@ -19,7 +19,7 @@
 #include "module.h"
 
 //---------------------------------------------------------------------------
-int main(int iArgc, char *pszArgv[]) {
+int main(int, char **) {
 	{
 		some_func();
 		CxVars::m_Var;

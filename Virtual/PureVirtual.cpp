@@ -30,7 +30,7 @@ class B:
         }
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     A *a = new B();
     a->bar();

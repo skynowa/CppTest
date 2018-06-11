@@ -42,7 +42,7 @@ public:
     }
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     std::list<int> cont;
 

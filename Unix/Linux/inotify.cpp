@@ -62,7 +62,7 @@ displayInotifyEvent(struct inotify_event *i)
 		printf("        name = %s\n", i->name);
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	if (argc < 2 || strcmp(argv[1], "--help") == 0) {
 		printf("Usage: %s [PATH_NAME]\n", argv[0]);

@@ -32,7 +32,7 @@ void A::show()
               << "s = " << s << std::endl;
 }
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     A a1;
     A a2 = a1;

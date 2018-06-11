@@ -55,7 +55,7 @@ public:
     Z() { std::cout << __FUNCTION__ << std::endl; }
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     {
         Z z;

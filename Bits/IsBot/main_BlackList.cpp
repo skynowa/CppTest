@@ -56,7 +56,7 @@ bIsBot(const char *pcszRemoteIp) {
 }
 //----------------------------------------------------------------------------------------------------
 //DONE: main
-int main(int iArgc, char *pszArgv[])
+int main(int, char **)
 {
     int bRes = - 1;
 

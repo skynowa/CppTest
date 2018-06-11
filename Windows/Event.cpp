@@ -114,7 +114,7 @@ threadC(void *param) {
 	return 0U;
 }
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
 	g_evEvent = ::CreateEvent(NULL, g_cbManualReset, g_cbIsSignaled, NULL);
     assert(NULL != g_evEvent);

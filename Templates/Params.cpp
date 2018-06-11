@@ -70,7 +70,7 @@ class C {
 
 #endif
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     // template <typename T> class A
     {

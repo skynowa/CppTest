@@ -10,7 +10,7 @@
 #include <string>
 #include <iostream>
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     std::string s;
 

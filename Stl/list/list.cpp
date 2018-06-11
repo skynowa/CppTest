@@ -27,7 +27,7 @@ class CTest {
 //---------------------------------------------------------------------------
 #endif	//CTestH
 //---------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
+int main(int, char **) {
 	//CTest *pT1 = new CTest(1);
 	//CTest *pT2 = new CTest(2);
 	//CTest *pT3 = new CTest(3);

@@ -26,7 +26,7 @@ class CTest_CFile {
         } 
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     CTest_CFile t;
 

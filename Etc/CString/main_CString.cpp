@@ -10,7 +10,7 @@
 #include <assert.h>
 #include "CString.h"
 //----------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
 /*******************************************************************************
 *    public, constructors

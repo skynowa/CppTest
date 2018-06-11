@@ -9,7 +9,7 @@
 #include <iostream>
 #include <assert.h>
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     const size_t cuiBuffSize = 5;
 

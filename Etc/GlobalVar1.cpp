@@ -12,7 +12,7 @@
 //---------------------------------------------------------------------------
 std::string s = "string_global";
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     std::string s = "string_local";
 

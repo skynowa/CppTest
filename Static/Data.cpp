@@ -17,7 +17,7 @@ void vTest()
     std::cout << "szBuff_2: " << szBuff_2 << std::endl;
 }
 //---------------------------------------------------------------------------
-int main(int argc, char *argv[]) {
+int main(int, char **) {
     static char _szBuff_1[10 + 1] = {0};
     static char _szBuff_2[10 + 1];
 

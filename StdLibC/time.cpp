@@ -62,7 +62,7 @@ void MsecToTimeStr(int iMsec) {
     std::cout << buf << '\t' << "message" << '\n';
 }
 //---------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
+int main(int, char **) {
 	//logEntry("Test string");
 	MsecToTimeStr(13437658);
 

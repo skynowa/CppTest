@@ -17,7 +17,7 @@ std::string Num2String(unsigned long Integral ) {
 	return str;
 }
 //---------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
+int main(int, char **) {
 	std::string sStr = Num2String(320000);
 	std::cout << "Num2String(320000):	" << sStr  << std::endl;
 

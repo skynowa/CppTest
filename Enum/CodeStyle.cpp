@@ -38,7 +38,7 @@ foo2(AClass::EOpenMode mode) {
     std::cout << "mode: " << mode << std::endl;
 }
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     {
         std::cout << NOpenMode::Read1 << std::endl;

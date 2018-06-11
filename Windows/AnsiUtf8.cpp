@@ -4,7 +4,7 @@
 ////#include <string>
 ////#include <vector>
 //////---------------------------------------------------------------------------
-////int main(int argc, char* argv[]) {
+////int main(int, char **) {
 ////	system("pause");
 ////	return 0;
 ////}
@@ -42,8 +42,8 @@ std::string chcp(const std::string &str, UINT codePageSrc, UINT codePageDst) {
 	return wstostr(strtows(str, codePageSrc), codePageDst);
 }
 //---------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
-	std::string strAcpSrc = "ANSI строка";
+int main(int, char **) {
+	std::string strAcpSrc = "ANSI пїЅпїЅпїЅпїЅпїЅпїЅ";
 	std::string strUtf = chcp(strAcpSrc, CP_ACP, CP_UTF8);
 	std::string strAcp = chcp(strUtf, CP_UTF8, CP_ACP);
 

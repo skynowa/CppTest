@@ -23,7 +23,7 @@ bLogAppend(const char *pcszFilePath, const char *pcszText)
 	return true;
 }
 //---------------------------------------------------------------------------
-int main(int argc, char *argv[])
+int main(int, char **)
 {
 	bool bRes = bLogAppend("./Test.log", "???? ???? ?????\n");
 

@@ -95,7 +95,7 @@ sCommandLine(
     return sRv;
 }
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     DWORD dwPid  = 2088;
 

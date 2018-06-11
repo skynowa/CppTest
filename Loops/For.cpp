@@ -16,7 +16,7 @@ trace(const std::string &csPoint) {
     return true;
 }
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     int g = 0;
     for (trace("1"); trace("2"); trace("3")) {

@@ -57,7 +57,7 @@ sGetString(const size_t cuiLength) {
     return sRes;
 }
 
-int main(int argc, char *argv[])
+int main(int, char **)
 {
     //const std::string sBucketA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

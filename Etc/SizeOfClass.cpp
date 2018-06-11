@@ -33,7 +33,7 @@ class CDerivedVirtual {
     virtual void foo() { ; }
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     std::cout << "sizeof(void *):          " << sizeof(void *)          << std::endl;
     std::cout << "sizeof(SEmpty):          " << sizeof(SEmpty)          << std::endl;

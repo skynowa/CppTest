@@ -31,7 +31,7 @@ public:
     }
 };
 //---------------------------------------------------------------------------
-int main(int iArgCount, char **paszArgs)
+int main(int, char **)
 {
     // function pointer
     {

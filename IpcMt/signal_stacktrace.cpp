@@ -358,10 +358,8 @@ void illegal_instruction();
 void cause_calamity();
 
 
-int main(int argc, char * argv[])
+int main(int, char **argv)
 {
-  (void)argc;
-
   /* store off program path so we can use it later */
   icky_global_program_name = argv[0];
 

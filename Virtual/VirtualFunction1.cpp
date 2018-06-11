@@ -15,7 +15,7 @@ class Y: public X {
 		char getType(){return 'Y';}
 };
 //---------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
+int main(int, char **) {
 	X *x = new X();
 	X *y = new Y();
 
