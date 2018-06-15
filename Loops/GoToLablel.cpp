@@ -21,8 +21,10 @@ int main(int argCount, char **args)
     std::cout << 1 << std::endl;;
 
     finally: {
-        std::cout << 2 << std::endl;;
+        std::cout << 2 << std::endl;
     }
+
+    std::cout << 3 << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -33,9 +35,11 @@ int main(int argCount, char **args)
 
 // with goto
 2
+3
 
 // with out goto
 1
 2
+3
 
 #endif
