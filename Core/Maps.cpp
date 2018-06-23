@@ -1,6 +1,6 @@
 /**
  * \file  main.cpp
- * \brief
+ * \brief http://thispointer.com/map-vs-unordered_map-when-to-choose-one-over-another/
  */
 
 
@@ -11,6 +11,13 @@
 void
 testMap()
 {
+   /**
+    * std::map
+    *
+    * Internally store elements in a balanced BST.
+    * Therefore, elements will be stored in sorted order of keys.
+    */
+
 	std::cout << "\n" << __FUNCTION__ << std::endl;
 
     std::map<int, int> values;
@@ -27,6 +34,13 @@ testMap()
 void
 testUnorderedMap()
 {
+   /**
+    * std::unordered_map
+    *
+    * Store elements using hash table.
+    * Therefore, elements will not be stored in any sorted order. They will be stored in arbitrary order .
+    */
+
 	std::cout << "\n" << __FUNCTION__ << std::endl;
 
     std::unordered_map<int, int> values;
