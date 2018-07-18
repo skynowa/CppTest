@@ -50,7 +50,7 @@ int main(int, char **)
 	// std::vector
 	{
 		std::vector<std::string> cont;
-		cont.reserve(::loops + ::str.size());
+		// cont.reserve(::loops);
 
 		::containerPushBack(cont);
 	}
