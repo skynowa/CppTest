@@ -32,24 +32,23 @@
 
 #include <iostream>
 #include <event2/event.h>
-#include <event2/event_compat.h>
 
 //-------------------------------------------------------------------------------------------------
 void
-log_cb(int severity, const char *msg)
+onLog(int severity, const char *msg)
 {
 	std::cout << "Log: [" << severity << "]: " << msg << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
-fatal_cb(int err)
+onFatal(int err)
 {
 	std::cout << "Error: " << err << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 // Функция обратного вызова, в которой выполняется прерывание цикла ожидания
 void
-main_loop_call_back(evutil_socket_t fd, short ev_flag, void *arg)
+onEvent(evutil_socket_t fd, short ev_flag, void *arg)
 {
 #if 0
 	struct event_base *base = arg;
@@ -131,9 +130,9 @@ main_loop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2
 	void event_free( struct event *event );
 #endif
 
-	event *watch_ev1 = event_new(base, watch_fd1, (EV_TIMEOUT|EV_READ|EV_PERSIST), main_loop_call_back,
+	event *watch_ev1 = ::event_new(base, watch_fd1, (EV_TIMEOUT|EV_READ|EV_PERSIST), onEvent,
 				                 (char *)"тип события: чтение" /* base */);
-	event *watch_ev2 = event_new(base, watch_fd2, (EV_WRITE|EV_PERSIST), main_loop_call_back,
+	event *watch_ev2 = ::event_new(base, watch_fd2, (EV_WRITE|EV_PERSIST), onEvent,
 				                 (char *)"тип события: запись" /* base */);
 
 #if 0
@@ -181,7 +180,7 @@ int main(int argc, char const *argv[])
 		// Запретить блокировки для данного набора событий (предположим, что программа однопоточная)
 		::event_config_set_flag(config, EVENT_BASE_FLAG_NOLOCK);
 
-		base = event_base_new_with_config(config);
+		base = ::event_base_new_with_config(config);
 
 		::event_config_free(config);
 		config = nullptr;
@@ -194,8 +193,8 @@ int main(int argc, char const *argv[])
 
 	/// const struct timeval *event_base_init_common_timeout(struct event_base *base, const struct timeval *duration);
 
-	::event_set_log_callback(log_cb);
-	::event_set_fatal_callback(fatal_cb);
+	::event_set_log_callback(onLog);
+	::event_set_fatal_callback(onFatal);
 	::event_enable_debug_logging(EVENT_DBG_ALL);
 	/// void event_base_dump_events(struct event_base *, FILE *);
 
