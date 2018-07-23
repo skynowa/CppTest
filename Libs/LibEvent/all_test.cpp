@@ -27,6 +27,7 @@
  *
  * https://www.ibm.com/developerworks/ru/library/l-Libevent1/index.html
  * http://www.wangafu.net/~nickm/libevent-book/Ref2_eventbase.html
+ * https://github.com/eddieh/libevent-echo-server/blob/master/echo-server.c
  * https://youtu.be/08lbmD-wDfI
  */
 
