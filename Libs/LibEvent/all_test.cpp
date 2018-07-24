@@ -148,6 +148,9 @@ main_loop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2
 	int event_base_dispatch( struct event_base *base );
 #endif
 	::event_base_dispatch( base );
+
+	::event_free(watch_ev1);
+	::event_free(watch_ev2);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int argc, char const *argv[])
