@@ -91,7 +91,7 @@ main_loop_force_exit(event_base *base)
 //-------------------------------------------------------------------------------------------------
 // Предположим, что вызывающая функция создала два сокета и определила их, как неблокируемые
 void
-main_loop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
+baseLoop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
 {
    /**
 	* Создание нового события, генерируемого при выполнении операции чтения
@@ -225,7 +225,7 @@ int main(int argc, char const *argv[])
 	/// int event_base_update_cache_time(struct event_base *base);
 
 
-	::main_loop(base, watch_fd1, watch_fd1);
+	::baseLoop(base, watch_fd1, watch_fd1);
 
 	::event_base_free(base);
 	::libevent_global_shutdown();
