@@ -36,23 +36,32 @@
 
 //-------------------------------------------------------------------------------------------------
 void
-onLog(int severity, const char *msg)
+onLog(
+	int         a_severity,
+	const char *a_msg
+)
 {
-	std::cout << "Log: [" << severity << "]: " << msg << std::endl;
+	std::cout << "Log: [" << a_severity << "]: " << a_msg << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
-onFatal(int err)
+onFatal(
+	int a_error
+)
 {
-	std::cout << "Error: " << err << std::endl;
+	std::cout << "Error: " << a_error << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 // Функция обратного вызова, в которой выполняется прерывание цикла ожидания
 void
-onEvent(evutil_socket_t fd, short ev_flag, void *arg)
+onEvent(
+	evutil_socket_t a_fd,
+	short           a_ev_flag,
+	void           *a_arg
+)
 {
 #if 0
-	struct event_base *base = arg;
+	struct event_base *base = a_arg;
 
 	::event_base_loopbreak(base);
 	::event_base_loopexit(base);
@@ -62,19 +71,21 @@ onEvent(evutil_socket_t fd, short ev_flag, void *arg)
 	int event_base_got_break(struct event_base *);
 
 #else
-	const char *data = static_cast<const char *>(arg);
+	const char *data = static_cast<const char *>(a_arg);
 
-	printf("Сокет %d - активные события: %s%s%s%s; %s\n", (int)fd,
-			(ev_flag & EV_TIMEOUT) ? " таймаут" : "",
-			(ev_flag & EV_READ)    ? " чтение"  : "",
-			(ev_flag & EV_WRITE)   ? " запись"  : "",
-			(ev_flag & EV_SIGNAL)  ? " сигнал"  : "", data );
+	printf("Сокет %d - активные события: %s%s%s%s; %s\n", (int)a_fd,
+			(a_ev_flag & EV_TIMEOUT) ? " таймаут" : "",
+			(a_ev_flag & EV_READ)    ? " чтение"  : "",
+			(a_ev_flag & EV_WRITE)   ? " запись"  : "",
+			(a_ev_flag & EV_SIGNAL)  ? " сигнал"  : "", data );
 #endif
 }
 //-------------------------------------------------------------------------------------------------
 // Принудительное завершение цикла обработки событий по истечении заданного интервала времени
 void
-baseLoopExit(event_base *base)
+baseLoopExit(
+	event_base *a_base
+)
 {
 	struct timeval seconds;
 	seconds.tv_sec  = 3;	// секунды
@@ -82,8 +93,8 @@ baseLoopExit(event_base *base)
 
 	for (int i = 0; i < 5; ++ i) {
 		// Планирование выхода из цикла через 3 секунды
-		::event_base_loopexit(base, &seconds);
-		::event_base_dispatch(base);
+		::event_base_loopexit(a_base, &seconds);
+		::event_base_dispatch(a_base);
 
 		::printf("%d-й запуск цикла...\n", i + 1);
 	}
@@ -91,7 +102,11 @@ baseLoopExit(event_base *base)
 //-------------------------------------------------------------------------------------------------
 // Предположим, что вызывающая функция создала два сокета и определила их, как неблокируемые
 void
-baseLoop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
+baseLoop(
+	event_base      *a_base,
+	evutil_socket_t  a_watch_fd1,
+	evutil_socket_t  a_watch_fd2
+)
 {
    /**
 	* Создание нового события, генерируемого при выполнении операции чтения
@@ -100,7 +115,7 @@ baseLoop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
 	* немедленный выход из цикла ожидания данного события и завершение работы программы.
 	*/
 
-	if (watch_fd1 == 0 && watch_fd2 == 0) {
+	if (a_watch_fd1 == 0 && a_watch_fd2 == 0) {
 		std::cout << "Invalid handle. Exit" << std::endl;
 		return;
 	}
@@ -131,9 +146,9 @@ baseLoop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
 	void event_free( struct event *event );
 #endif
 
-	event *watch_ev1 = ::event_new(base, watch_fd1, (EV_TIMEOUT|EV_READ|EV_PERSIST), onEvent,
+	event *watch_ev1 = ::event_new(a_base, a_watch_fd1, (EV_TIMEOUT|EV_READ|EV_PERSIST), onEvent,
 				                 (char *)"тип события: чтение" /* base */);
-	event *watch_ev2 = ::event_new(base, watch_fd2, (EV_WRITE|EV_PERSIST), onEvent,
+	event *watch_ev2 = ::event_new(a_base, a_watch_fd2, (EV_WRITE|EV_PERSIST), onEvent,
 				                 (char *)"тип события: запись" /* base */);
 
 #if 0
@@ -147,7 +162,7 @@ baseLoop(event_base *base, evutil_socket_t watch_fd1, evutil_socket_t watch_fd2)
 	int event_base_loop( struct event_base *base, int flags );
 	int event_base_dispatch( struct event_base *base );
 #endif
-	::event_base_dispatch( base );
+	::event_base_dispatch(a_base);
 
 	::event_free(watch_ev1);
 	::event_free(watch_ev2);
