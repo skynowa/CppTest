@@ -146,10 +146,10 @@ baseLoop(
 	void event_free( struct event *event );
 #endif
 
-	event *watch_ev1 = ::event_new(a_base, a_watch_fd1, (EV_TIMEOUT|EV_READ|EV_PERSIST), onEvent,
-				                 (char *)"тип события: чтение" /* base */);
-	event *watch_ev2 = ::event_new(a_base, a_watch_fd2, (EV_WRITE|EV_PERSIST), onEvent,
-				                 (char *)"тип события: запись" /* base */);
+	event *watch_ev1 = ::event_new(a_base, a_watch_fd1, EV_TIMEOUT | EV_READ | EV_PERSIST, onEvent,
+		(char *)"тип события: чтение" /* base */);
+	event *watch_ev2 = ::event_new(a_base, a_watch_fd2, EV_WRITE | EV_PERSIST, onEvent,
+		(char *)"тип события: запись" /* base */);
 
 #if 0
 	int event_assign(struct event *, struct event_base *, evutil_socket_t, short, event_callback_fn, void *);
