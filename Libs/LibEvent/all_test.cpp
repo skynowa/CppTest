@@ -64,7 +64,7 @@ onEvent(evutil_socket_t fd, short ev_flag, void *arg)
 #else
 	const char *data = static_cast<const char *>(arg);
 
-	printf( "Сокет %d - активные события: %s%s%s%s; %s\n", (int)fd,
+	printf("Сокет %d - активные события: %s%s%s%s; %s\n", (int)fd,
 			(ev_flag & EV_TIMEOUT) ? " таймаут" : "",
 			(ev_flag & EV_READ)    ? " чтение"  : "",
 			(ev_flag & EV_WRITE)   ? " запись"  : "",
@@ -74,7 +74,7 @@ onEvent(evutil_socket_t fd, short ev_flag, void *arg)
 //-------------------------------------------------------------------------------------------------
 // Принудительное завершение цикла обработки событий по истечении заданного интервала времени
 void
-main_loop_force_exit(event_base *base)
+baseLoopExit(event_base *base)
 {
 	struct timeval seconds;
 	seconds.tv_sec  = 3;	// секунды
@@ -85,7 +85,7 @@ main_loop_force_exit(event_base *base)
 		::event_base_loopexit(base, &seconds);
 		::event_base_dispatch(base);
 
-		::printf( "%d-й запуск цикла...\n", i + 1);
+		::printf("%d-й запуск цикла...\n", i + 1);
 	}
 }
 //-------------------------------------------------------------------------------------------------
