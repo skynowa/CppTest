@@ -56,7 +56,7 @@ onFatal(
 void
 onEvent(
 	evutil_socket_t a_fd,
-	short           a_evFlag,
+	short           a_ev_flag,
 	void           *a_arg
 )
 {
@@ -74,10 +74,10 @@ onEvent(
 	const char *data = static_cast<const char *>(a_arg);
 
 	printf("Сокет %d - активные события: %s%s%s%s; %s\n", (int)a_fd,
-			(a_evFlag & EV_TIMEOUT) ? " таймаут" : "",
-			(a_evFlag & EV_READ)    ? " чтение"  : "",
-			(a_evFlag & EV_WRITE)   ? " запись"  : "",
-			(a_evFlag & EV_SIGNAL)  ? " сигнал"  : "", data );
+			(a_ev_flag & EV_TIMEOUT) ? " таймаут" : "",
+			(a_ev_flag & EV_READ)    ? " чтение"  : "",
+			(a_ev_flag & EV_WRITE)   ? " запись"  : "",
+			(a_ev_flag & EV_SIGNAL)  ? " сигнал"  : "", data );
 #endif
 }
 //-------------------------------------------------------------------------------------------------
@@ -104,8 +104,8 @@ baseLoopExit(
 void
 baseLoop(
 	event_base      *a_base,
-	evutil_socket_t  a_watchFd1,
-	evutil_socket_t  a_watchFd2
+	evutil_socket_t  a_watch_fd1,
+	evutil_socket_t  a_watch_fd2
 )
 {
    /**
@@ -115,7 +115,7 @@ baseLoop(
 	* немедленный выход из цикла ожидания данного события и завершение работы программы.
 	*/
 
-	if (a_watchFd1 == 0 && a_watchFd2 == 0) {
+	if (a_watch_fd1 == 0 && a_watch_fd2 == 0) {
 		std::cout << "Invalid handle. Exit" << std::endl;
 		return;
 	}
@@ -146,9 +146,9 @@ baseLoop(
 	void event_free( struct event *event );
 #endif
 
-	event *watch_ev1 = ::event_new(a_base, a_watchFd1, EV_TIMEOUT | EV_READ | EV_PERSIST, onEvent,
+	event *watch_ev1 = ::event_new(a_base, a_watch_fd1, EV_TIMEOUT | EV_READ | EV_PERSIST, onEvent,
 		(char *)"тип события: чтение" /* base */);
-	event *watch_ev2 = ::event_new(a_base, a_watchFd2, EV_WRITE | EV_PERSIST, onEvent,
+	event *watch_ev2 = ::event_new(a_base, a_watch_fd2, EV_WRITE | EV_PERSIST, onEvent,
 		(char *)"тип события: запись" /* base */);
 
 #if 0
@@ -170,8 +170,8 @@ baseLoop(
 //-------------------------------------------------------------------------------------------------
 int main(int argc, char const *argv[])
 {
-	evutil_socket_t watchFd1 {};
-	evutil_socket_t watchFd2 {};
+	evutil_socket_t watch_fd1 {};
+	evutil_socket_t watch_fd2 {};
 
 #if 0
 	int event_reinit(struct event_base *base);
@@ -240,7 +240,7 @@ int main(int argc, char const *argv[])
 	/// int event_base_update_cache_time(struct event_base *base);
 
 
-	::baseLoop(base, watchFd1, watchFd1);
+	::baseLoop(base, watch_fd1, watch_fd1);
 
 	::event_base_free(base);
 	::libevent_global_shutdown();
