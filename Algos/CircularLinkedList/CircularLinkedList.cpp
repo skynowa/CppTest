@@ -45,5 +45,12 @@ Node* CircularLinkedList :: createNode(int x)
 
 void CircularLinkedList :: insertAtEnd()
 {
-	
+
 }
+
+int main(int argc, char const *argv[])
+{
+	/* code */
+	return 0;
+}
+

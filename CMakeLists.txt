@@ -16,7 +16,7 @@ set(CMAKE_VERBOSE_MAKEFILE      OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_REQUIRED_QUIET        ON)
 
-set(CMAKE_CXX_STANDARD          11)
+set(CMAKE_CXX_STANDARD          14)
 #--------------------------------------------------------------------------------------------------
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
