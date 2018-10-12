@@ -51,8 +51,8 @@ getTypeName_2(T)
         type = "std::string";
     }
 
-    if (std::is_same<T, std::map<double, std::string>>::value) {
-        type = "std::map<double, std::string>";
+    if (std::is_same<T, std::map<int, std::string>>::value) {
+        type = "std::map<int, std::string>";
     }
 
     return type;
@@ -91,6 +91,9 @@ getTypeName_3(std::map<T1, T2> &a_value)
 {
     auto &it_first = *a_value.begin();
 
+    std::cout << STD_TRACE_VAR( typeid(it_first.first).name() ) << std::endl;
+    std::cout << STD_TRACE_VAR( typeid(it_first.second).name() ) << std::endl;
+
 	static std::string s(std::string("map<") + getTypeName_3(it_first.first) + ", " + getTypeName_3(it_first.second) + ">");
 
 	return s.c_str();
@@ -103,31 +106,31 @@ int main(int, char **)
 {
     // getTypeName_1
     {
-        std::cout << "getTypeName_1:" << std::endl;
+        std::cout << "\n::: getTypeName_1 :::" << std::endl;
 
         std::cout
-            << STD_TRACE_VAR(::getTypeName_1<int>())   << std::endl
-            << STD_TRACE_VAR(::getTypeName_1<float>()) << std::endl
-            << STD_TRACE_VAR(::getTypeName_1<Foo>())   << std::endl
-            << STD_TRACE_VAR(::getTypeName_1<Bar>())   << std::endl;
+            << STD_TRACE_VAR(::getTypeName_1<int>())   << "\n"
+            << STD_TRACE_VAR(::getTypeName_1<float>()) << "\n"
+            << STD_TRACE_VAR(::getTypeName_1<Foo>())   << "\n"
+            << STD_TRACE_VAR(::getTypeName_1<Bar>())   << "\n" << std::endl;
     }
 
     // getTypeName_2
     {
-        std::cout << "getTypeName_2:" << std::endl;
+        std::cout << "\n::: getTypeName_2 :::" << std::endl;
 
         std::map<int, std::string> m;
-        std::cout << getTypeName_2(m) << std::endl << std::endl;
+        std::cout << getTypeName_2(m) << "\n" << std::endl;
     }
 
     // getTypeName_3
     {
-        std::cout << "getTypeName_3:" << std::endl;
+        std::cout << "\n::: getTypeName_3 :::" << std::endl;
 
         std::map<double, bool> m;
         m[7.7] = false;
 
-        std::cout << getTypeName_3(m) << std::endl << std::endl;
+        std::cout << getTypeName_3(m) << "\n" << std::endl;
     }
 
     return 0;
