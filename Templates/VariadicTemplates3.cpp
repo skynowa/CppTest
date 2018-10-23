@@ -20,7 +20,7 @@ toString(const Param & ... a_param)
 		return ss.str();
 	};
 
-	return { toString_impl(a_param)... };
+	return std::vector<std::string>{ toString_impl(a_param)... };
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

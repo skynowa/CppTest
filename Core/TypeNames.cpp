@@ -77,7 +77,7 @@ template<> const char* getTypeName_3(unsigned long &)  { return "unsigned long";
 template<> const char* getTypeName_3(float &)          { return "float"; }
 template<> const char* getTypeName_3(double &)         { return "double"; }
 template<> const char* getTypeName_3(long double &)    { return "long double"; }
-template<> const char* getTypeName_3(std::string &)    { return "String"; }
+template<> const char* getTypeName_3(std::string &)    { return "std::string"; }
 template<> const char* getTypeName_3(char &)           { return "char"; }
 template<> const char* getTypeName_3(signed char &)    { return "signed char"; }
 template<> const char* getTypeName_3(unsigned char &)  { return "unsigned char"; }
@@ -89,12 +89,12 @@ template<typename T1, typename T2>
 const char *
 getTypeName_3(std::map<T1, T2> &a_value)
 {
-    auto &it_first = *a_value.begin();
+    auto &it = *a_value.begin();
 
-    std::cout << STD_TRACE_VAR( typeid(it_first.first).name() ) << std::endl;
-    std::cout << STD_TRACE_VAR( typeid(it_first.second).name() ) << std::endl;
+    std::cout << STD_TRACE_VAR( getTypeName_3(it.first) ) << std::endl;
+    std::cout << STD_TRACE_VAR( getTypeName_3(it.second) ) << std::endl;
 
-	static std::string s(std::string("map<") + getTypeName_3(it_first.first) + ", " + getTypeName_3(it_first.second) + ">");
+	static std::string s(std::string("map<") + getTypeName_3(it.first) + ", " + getTypeName_3(it.second) + ">");
 
 	return s.c_str();
 }
