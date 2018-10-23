@@ -4,27 +4,28 @@
  */
 
 
-#include "../StdTest.h"
+#include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
+// Called at last
 // Function that accepts no parameter.
 // It is to break the recursion chain of vardiac template function
 void
-log(const char *format)
+log(const char *a_format)
 {
-	std::cout << "I am empty function and I am called at last.\n" << std::endl;
+	std::cout << STD_TRACE_VAR(__FUNCTION__) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 // Variadic Template Function that accepts variable number of arguments of any type
 template<typename T, typename ...Args>
 void
-log(const char *format, const T &a_value, Args... a_args)
+log(const char *a_format, const T &a_value, Args... a_args)
 {
 	// Print the First Element
-	std::cout << STD_TRACE_VAR2(format, a_value) << std::endl;
+	std::cout << STD_TRACE_VAR2(__FUNCTION__, a_value) << std::endl;
 
 	// Forward the remaining arguments
-	log(format, a_args...);
+	log(a_format, a_args...);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
