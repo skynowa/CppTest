@@ -4,8 +4,8 @@
  */
 
 
-#include "../StdTest.h"
-#include "../Stl.h"
+#include <StdTest.h>
+#include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -21,8 +21,8 @@ int main(int, char **)
 			return a_it1 < a_it2;
 		});
 
-	for (auto it : mylist) {
-		s1td::cout << ',' << *it;
+	for (auto &it : mylist) {
+		std::cout << ',' << it;
 	}
 
     return 0;
