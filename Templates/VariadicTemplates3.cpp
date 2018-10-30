@@ -8,9 +8,9 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
-template<typename ... Param>
+template<typename ... Params>
 std::vector<std::string>
-toString(const Param & ... a_param)
+toString(const Params & ... a_params)
 {
 	const auto toString_impl = [](const auto &t) -> std::string
 	{
@@ -20,7 +20,7 @@ toString(const Param & ... a_param)
 		return ss.str();
 	};
 
-	return std::vector<std::string>{ toString_impl(a_param)... };
+	return std::vector<std::string>{ toString_impl(a_params)... };
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

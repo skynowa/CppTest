@@ -19,16 +19,20 @@ printfV(const char* a_format)
 	}
 }
 //-------------------------------------------------------------------------------------------------
-template<typename T, typename... Args>
+template<typename T, typename... Params>
 void
-printfV(const char* a_format, const T& a_value, const Args&... args)
+printfV(
+	const char   *a_format,
+	const T      &a_value,
+	const Params &... a_params
+)
 {
 	while (*a_format) {
 		if (*a_format == '%' && *++a_format != '%') {
 			// ignore the character that follows the '%': we already know the type!
 			std::cout << STD_TRACE_VAR(a_value) << std::endl;
 
-			return printfV(++ a_format, args...);
+			return printfV(++ a_format, a_params...);
 		}
 
 		std::cout << *a_format++;

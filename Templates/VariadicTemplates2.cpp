@@ -13,19 +13,23 @@
 void
 log(const char *a_format)
 {
-	std::cout << STD_TRACE_VAR(__FUNCTION__) << std::endl;
+	std::cout << "[" << __FUNCTION__ << "]: no params" << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 // Variadic Template Function that accepts variable number of arguments of any type
-template<typename T, typename ...Args>
+template<typename T, typename ... Params>
 void
-log(const char *a_format, const T &a_value, Args... a_args)
+log(
+	const char   *a_format,
+	const T      &a_value,
+	const Params & ... a_params
+)
 {
 	// Print the First Element
-	std::cout << STD_TRACE_VAR2(__FUNCTION__, a_value) << std::endl;
+	std::cout << "[" << __FUNCTION__ << "]: " << a_value << std::endl;
 
 	// Forward the remaining arguments
-	log(a_format, a_args...);
+	log(a_format, a_params...);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -39,6 +43,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+__FUNCTION__: log, a_value: 2
+__FUNCTION__: log, a_value: 3.4
+__FUNCTION__: log, a_value: aaa
+__FUNCTION__: log
 
 #endif
