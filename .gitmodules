@@ -1,0 +1,3 @@
+[submodule "StdTest"]
+	path = StdTest
+	url = git@bitbucket.org:skynowa/stdtest.git
