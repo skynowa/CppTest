@@ -4,9 +4,8 @@
  */
 
 
-#include "../../StdTest.h"
-#include "../../Stl.h"
-#include <strings.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 //-------------------------------------------------------------------------------------------------

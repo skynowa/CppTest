@@ -4,9 +4,8 @@
  */
 
 
-#include "../../StdTest.h"
-#include <utility>
-#include <iostream>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 // function with lvalue and rvalue reference overloads:
 void overloaded (const int& x) {std::cout << "[lvalue]";}

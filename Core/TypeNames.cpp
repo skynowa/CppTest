@@ -4,9 +4,8 @@
  */
 
 
-#include "../StdTest.h"
-#include "../Stl.h"
-
+#include <StdTest.h>
+#include <Stl.h>
 
 /**************************************************************************************************
 * getTypeName_1

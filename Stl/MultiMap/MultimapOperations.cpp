@@ -1,13 +1,13 @@
 #include <iostream>
 #include <map>
 #include <iterator>
- 
+
 using namespace std;
- 
+
 int main()
 {
     multimap <int, int> gquiz1;        // empty multimap container
- 
+
     // insert elements in random order
     gquiz1.insert(pair <int, int> (1, 40));
     gquiz1.insert(pair <int, int> (2, 30));
@@ -16,7 +16,7 @@ int main()
     gquiz1.insert(pair <int, int> (5, 50));
     gquiz1.insert(pair <int, int> (6, 50));
     gquiz1.insert(pair <int, int> (6, 10));
- 
+
     // printing multimap gquiz1
     multimap <int, int> :: iterator itr;
     cout << "\nThe multimap gquiz1 is : \n";
@@ -27,10 +27,10 @@ int main()
               <<  '\t' << itr->second << '\n';
     }
     cout << endl;
- 
+
     // assigning the elements from gquiz1 to gquiz2
     multimap <int, int> gquiz2(gquiz1.begin(),gquiz1.end());
- 
+
     // print all elements of the multimap gquiz2
     cout << "\nThe multimap gquiz2 after assign from gquiz1 is : \n";
     cout << "\tKEY\tELEMENT\n";
@@ -40,7 +40,7 @@ int main()
              << '\t' << itr->second << '\n';
     }
     cout << endl;
- 
+
     // remove all elements up to element with value 30 in gquiz2
     cout << "\ngquiz2 after removal of elements less than key=3 : \n";
     cout << "\tKEY\tELEMENT\n";
@@ -50,7 +50,7 @@ int main()
         cout << '\t' << itr->first
              << '\t' << itr->second << '\n';
     }
- 
+
     // remove all elements with key = 4
     int num;
     num = gquiz2.erase(4);
@@ -62,9 +62,9 @@ int main()
         cout << '\t' << itr->first
              << '\t' << itr->second << '\n';
     }
- 
+
     cout << endl;
- 
+
     //lower bound and upper bound for multimap gquiz1 key = 5
     cout << "gquiz1.lower_bound(5) : " << "\tKEY = ";
     cout << gquiz1.lower_bound(5)->first << '\t';
@@ -73,7 +73,7 @@ int main()
     cout << "gquiz1.upper_bound(5) : " << "\tKEY = ";
     cout << gquiz1.upper_bound(5)->first << '\t';
     cout << "\tELEMENT = " << gquiz1.upper_bound(5)->second << endl;
- 
+
     return 0;
- 
+
 }

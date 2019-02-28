@@ -2,8 +2,8 @@
 #include <thread>
 #include <algorithm>
 
-#include "../../StdTest.h"
-#include "../../Stl.h"
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 

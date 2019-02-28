@@ -4,8 +4,8 @@
  */
 
 
-#include "../../StdTest.h"
-#include <map>
+#include <StdTest.h>
+#include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

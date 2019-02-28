@@ -4,12 +4,8 @@
  */
 
 
-#include "../../StdTest.h"
-
-#include <iostream>
-#include <string>
-#include <map>
-#include <unordered_map>
+#include <StdTest.h>
+#include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
 template<template<class...> class T>

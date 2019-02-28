@@ -7,6 +7,8 @@
 #include <StdTest.h>
 #include <Stl.h>
 
+#if 0
+
 //-------------------------------------------------------------------------------------------------
 struct color_def
 {
@@ -70,16 +72,16 @@ void f(Enum e)
 {
 	/// std::cout << e << std::endl;
 }
+#endif // 0
 
 int main(int, char **)
 {
-	using color = safe_enum<color_def, unsigned char>;
-	std::for_each(color::begin(), color::end(), &f<color>);
+	/// using color = safe_enum<color_def, unsigned char>;
+	/// std::for_each(color::begin(), color::end(), &f<color>);
 
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
-
 
 #if OUTPUT
 

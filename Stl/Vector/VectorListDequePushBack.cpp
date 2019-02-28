@@ -4,8 +4,9 @@
  */
 
 
-#include "../../StdTest.h"
-#include "../../Stl.h"
+#include <StdTest.h>
+#include <Stl.h>
+
 //-------------------------------------------------------------------------------------------------
 const std::size_t loops {10000000};
 const std::string str   {"qwerty"};
