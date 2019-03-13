@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -86,7 +87,7 @@ int main(int, char **)
 	f = []() { cout << "lambda" << endl; };
 	f();
 
-    // std::cout << STD_TRACE_VAR("") << std::endl;
+    // std::cout << TRACE_VAR("") << std::endl;
 
     return 0;
 }

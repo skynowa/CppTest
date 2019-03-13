@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <thread>
 #include <vector>
@@ -20,7 +21,7 @@ void f(const int n)
              ;
         }
 
-        std::cout << "Output from thread " << STD_TRACE_VAR(n) << std::endl;
+        std::cout << "Output from thread " << TRACE_VAR(n) << std::endl;
         std::cout << "----------" << std::endl;
 
         lock.clear(std::memory_order_release);

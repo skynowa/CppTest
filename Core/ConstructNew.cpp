@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -30,18 +31,18 @@ int main(int, char **)
 {
 	{
 		A a;
-	    std::cout << STD_TRACE_VAR(a.d) << std::endl;
+	    std::cout << TRACE_VAR(a.d) << std::endl;
 	}
 
 	{
 		A *a = new A;
-	    std::cout << STD_TRACE_VAR(a->d) << std::endl;
+	    std::cout << TRACE_VAR(a->d) << std::endl;
 		delete a;
 	}
 
 	{
 		A *a = new A();
-	    std::cout << STD_TRACE_VAR(a->d) << std::endl;
+	    std::cout << TRACE_VAR(a->d) << std::endl;
 		delete a;
 	}
 

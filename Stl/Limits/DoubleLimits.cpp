@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 #include <limits>
@@ -11,13 +12,13 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::min()) << std::endl;
-	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::max()) << std::endl;
-	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::infinity()) << std::endl;
+	std::cout << TRACE_VAR(std::numeric_limits<float>::min()) << std::endl;
+	std::cout << TRACE_VAR(std::numeric_limits<float>::max()) << std::endl;
+	std::cout << TRACE_VAR(std::numeric_limits<float>::infinity()) << std::endl;
 
 	float dRv = strtod("2037362412.80", nullptr);
 
-    std::cout << STD_TRACE_VAR(dRv) << std::endl;
+    std::cout << TRACE_VAR(dRv) << std::endl;
 
     return 0;
 }

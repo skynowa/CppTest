@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <string>
 #include <iostream>
@@ -24,7 +25,7 @@ int main(int, char **)
 {
     IntStaticHolder holder;
 
-    std::cout << STD_TRACE_VAR(holder.value) << std::endl;
+    std::cout << TRACE_VAR(holder.value) << std::endl;
 
     return 0;
 }

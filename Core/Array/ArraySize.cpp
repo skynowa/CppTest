@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
@@ -13,7 +14,7 @@ int main(int, char **)
 
 	size_t buff[buffSize] {0, 1, 2, 3, 4};
 
-    std::cout << STD_TRACE_VAR(buff[4]) << std::endl;
+    std::cout << TRACE_VAR(buff[4]) << std::endl;
 
     return 0;
 }

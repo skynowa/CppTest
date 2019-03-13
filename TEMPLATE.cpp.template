@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -12,7 +13,7 @@ int main(int, char **)
 {
 
 
-    // std::cout << STD_TRACE_VAR("") << std::endl;
+    // std::cout << TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -4,10 +4,11 @@
  */
 
 
+#include <StdStream.h>
+#include <StdTest.h>
 #include <list>
 #include <numeric>
 #include <string>
-#include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -23,7 +24,7 @@ int main(int, char **)
 			return std::to_string(std::stod(a_it_1) + std::stod(a_it_2));
 		});
 
-    std::cout << STD_TRACE_VAR(sRv) << std::endl;
+    std::cout << TRACE_VAR(sRv) << std::endl;
 
     return 0;
 }

@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -13,7 +14,7 @@ int main(int, char **)
 	long val = 12;
 	auto rv = val % 0;
 
-    std::cout << STD_TRACE_VAR(rv) << std::endl;
+    std::cout << TRACE_VAR(rv) << std::endl;
 
     return 0;
 }

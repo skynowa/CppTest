@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 #include <sys/types.h>
@@ -47,7 +48,7 @@ int main(int, char **)
 	printf("	Group write permission     MASKED\n");
 	printf("	Group execute permission   MASKED\n");
 
-	// std::cout << STD_TRACE_VAR("") << std::endl;
+	// std::cout << TRACE_VAR("") << std::endl;
 
     return 0;
 }

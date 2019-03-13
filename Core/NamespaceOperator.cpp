@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -40,7 +41,7 @@ public:
 
 	void print()
 	{
-		std::cout << STD_TRACE_VAR(_d) << std::endl;
+		std::cout << TRACE_VAR(_d) << std::endl;
 	}
 
 private:

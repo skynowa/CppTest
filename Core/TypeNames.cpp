@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -90,8 +91,8 @@ getTypeName_3(std::map<T1, T2> &a_value)
 {
     auto &it = *a_value.begin();
 
-    std::cout << STD_TRACE_VAR( getTypeName_3(it.first) ) << std::endl;
-    std::cout << STD_TRACE_VAR( getTypeName_3(it.second) ) << std::endl;
+    std::cout << TRACE_VAR( getTypeName_3(it.first) ) << std::endl;
+    std::cout << TRACE_VAR( getTypeName_3(it.second) ) << std::endl;
 
 	static std::string s(std::string("map<") + getTypeName_3(it.first) + ", " + getTypeName_3(it.second) + ">");
 
@@ -108,10 +109,10 @@ int main(int, char **)
         std::cout << "\n::: getTypeName_1 :::" << std::endl;
 
         std::cout
-            << STD_TRACE_VAR(::getTypeName_1<int>())   << "\n"
-            << STD_TRACE_VAR(::getTypeName_1<float>()) << "\n"
-            << STD_TRACE_VAR(::getTypeName_1<Foo>())   << "\n"
-            << STD_TRACE_VAR(::getTypeName_1<Bar>())   << "\n" << std::endl;
+            << TRACE_VAR(::getTypeName_1<int>())   << "\n"
+            << TRACE_VAR(::getTypeName_1<float>()) << "\n"
+            << TRACE_VAR(::getTypeName_1<Foo>())   << "\n"
+            << TRACE_VAR(::getTypeName_1<Bar>())   << "\n" << std::endl;
     }
 
     // getTypeName_2

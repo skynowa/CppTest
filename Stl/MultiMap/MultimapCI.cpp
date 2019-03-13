@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -48,7 +49,7 @@ int main()
 		std::cout << "Total values for key '" << targetC << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetC) != values.end());
-		cout << STD_TRACE_VAR2(targetC, bRv) << endl << endl;
+		cout << TRACE_VAR2(targetC, bRv) << endl << endl;
 	}
 
 	// Total Elements in the range 'd'
@@ -59,7 +60,7 @@ int main()
 		std::cout << "Total values for key '" << targetD << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetD) != values.end());
-		cout << STD_TRACE_VAR2(targetD, bRv) << endl << endl;
+		cout << TRACE_VAR2(targetD, bRv) << endl << endl;
 	}
 
 	for (auto &it : values) {

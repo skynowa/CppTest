@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -98,7 +99,7 @@ struct EnumWrapper
 		StringView p        = __PRETTY_FUNCTION__;
 		StringView enumType = typeName<Enum>();
 
-		// std::cout << STD_TRACE_VAR(p) << std::endl;
+		// std::cout << TRACE_VAR(p) << std::endl;
 
 		return StringView(p.data() + 86 + enumType.size(), p.size() - 86 - enumType.size() - 1 - 14);
 	#elif defined(__clang__)
@@ -138,7 +139,7 @@ int main(int, char **)
 	// std::cout << ">" << typeName<Color>() << "<"  << std::endl;
 	std::cout << ">" << enumName<Color, Color::Red>() << "<"  << std::endl;
 
-    // std::cout << STD_TRACE_VAR("") << std::endl;
+    // std::cout << TRACE_VAR("") << std::endl;
 
     return 0;
 }

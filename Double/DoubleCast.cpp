@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
@@ -13,14 +14,14 @@ int main(int, char **)
 	    double     d = -0.15;
 	    signed int i = static_cast<signed int>(d);
 
-	    std::cout << STD_TRACE_VAR2(d, i) << std::endl;
+	    std::cout << TRACE_VAR2(d, i) << std::endl;
     }
 
     {
 	    double     d = 0.25;
 	    signed int i = static_cast<signed int>(d);
 
-	    std::cout << STD_TRACE_VAR2(d, i) << std::endl;
+	    std::cout << TRACE_VAR2(d, i) << std::endl;
 	}
 
     return 0;

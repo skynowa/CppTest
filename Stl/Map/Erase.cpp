@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -18,13 +19,13 @@ int main(int, char **)
 	m['c'] = 30;
 
 	uiRv = m.erase('a');
-	std::cout << "a: " << STD_TRACE_VAR(uiRv) << std::endl;
+	std::cout << "a: " << TRACE_VAR(uiRv) << std::endl;
 
 	uiRv = m.erase('a');
-	std::cout << "a: " << STD_TRACE_VAR(uiRv) << std::endl;
+	std::cout << "a: " << TRACE_VAR(uiRv) << std::endl;
 
 	uiRv = m.erase('x');
-	std::cout << "x: " << STD_TRACE_VAR(uiRv) << std::endl;
+	std::cout << "x: " << TRACE_VAR(uiRv) << std::endl;
 
 	for (std::map<char,int>::iterator it=m.begin(); it!=m.end(); ++it)
 		std::cout << it->first << " => " << it->second << '\n';

@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 
@@ -30,7 +31,7 @@ printfV(
 	while (*a_format) {
 		if (*a_format == '%' && *++a_format != '%') {
 			// ignore the character that follows the '%': we already know the type!
-			std::cout << STD_TRACE_VAR(a_value) << std::endl;
+			std::cout << TRACE_VAR(a_value) << std::endl;
 
 			return printfV(++ a_format, a_params...);
 		}
@@ -45,7 +46,7 @@ int main(int, char **)
 {
 	printfV("-%d-%s-%f\n", 1, "s", 0.5);
 
-    // std::cout << STD_TRACE_VAR("") << std::endl;
+    // std::cout << TRACE_VAR("") << std::endl;
 
     return 0;
 }

@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 
 //-------------------------------------------------------------------------------------------------
@@ -28,7 +29,7 @@ int main(int, char **)
 		std::cout
 			<< itDateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << "\n"
 			<< (bool)(pszRv)        << "\n"
-			<< STD_TRACE_PTR(pszRv) << "\n" << std::endl;
+			<< TRACE_PTR(pszRv) << "\n" << std::endl;
 	}
 
     return 0;

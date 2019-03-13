@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -43,7 +44,7 @@ containerPushBack(
 		assert(false && "Unknown type");
 	}
 
-	std::cout << ": " << STD_TRACE_VAR(elapsedMSec) << std::endl;
+	std::cout << ": " << TRACE_VAR(elapsedMSec) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

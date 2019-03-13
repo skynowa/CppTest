@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <memory>
 #include <vector>
@@ -22,8 +23,8 @@ int main(int, char **)
 		// implicitly transfers ownership
 		b = a;
 
-		std::cout << STD_TRACE_PTR(a.get()) << std::endl;
-		std::cout << STD_TRACE_PTR(b.get()) << std::endl;
+		std::cout << TRACE_PTR(a.get()) << std::endl;
+		std::cout << TRACE_PTR(b.get()) << std::endl;
 		std::cout << std::endl;
 	}
 
@@ -37,8 +38,8 @@ int main(int, char **)
 		// ownership must be transferred explicitly
 		b = std::move(a);
 
-		std::cout << STD_TRACE_PTR(a.get()) << std::endl;
-		std::cout << STD_TRACE_PTR(b.get()) << std::endl;
+		std::cout << TRACE_PTR(a.get()) << std::endl;
+		std::cout << TRACE_PTR(b.get()) << std::endl;
 		std::cout << std::endl;
 	}
 
@@ -53,9 +54,9 @@ int main(int, char **)
 
 		std::auto_ptr<int> tmp = vec[1];
 
-		std::cout << STD_TRACE_PTR(vec[0].get()) << std::endl;
-		std::cout << STD_TRACE_PTR(vec[1].get()) << std::endl;
-		std::cout << STD_TRACE_PTR(vec[2].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[0].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[1].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[2].get()) << std::endl;
 		std::cout << std::endl;
 	}
 
@@ -75,9 +76,9 @@ int main(int, char **)
 		std::unique_ptr<int> tmp = std::move(vec[1]);
 	#endif
 
-		std::cout << STD_TRACE_PTR(vec[0].get()) << std::endl;
-		std::cout << STD_TRACE_PTR(vec[1].get()) << std::endl;
-		std::cout << STD_TRACE_PTR(vec[2].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[0].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[1].get()) << std::endl;
+		std::cout << TRACE_PTR(vec[2].get()) << std::endl;
 		std::cout << std::endl;
 	}
 

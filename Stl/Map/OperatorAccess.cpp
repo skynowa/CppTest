@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -12,8 +13,8 @@ int main(int, char **)
 {
 	std::map<std::string, std::string> m;
 
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
+    std::cout << TRACE_VAR(m["test"].empty()) << std::endl;
+    std::cout << TRACE_VAR(m["test"].empty()) << std::endl;
 
     return 0;
 }

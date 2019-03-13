@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
@@ -28,7 +29,7 @@ int main(int, char **)
 	const std::vector<std::string> vec = ::toString("hello", 1, 5.3, "bob");
 
     for (auto &it : vec) {
-		std::cout << STD_TRACE_VAR(it) << std::endl;
+		std::cout << TRACE_VAR(it) << std::endl;
 	}
 
     return 0;

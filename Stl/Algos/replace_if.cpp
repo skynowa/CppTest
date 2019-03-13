@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <algorithm>
 #include <cctype>
@@ -20,7 +21,7 @@ int main(int, char **)
 
 	value.erase(std::remove_if(value.begin(), value.end(), functor), value.end());
 
-	std::cout << STD_TRACE_VAR(value) << std::endl;
+	std::cout << TRACE_VAR(value) << std::endl;
 
 	return 0;
 }

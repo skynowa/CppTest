@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <new>
 //-------------------------------------------------------------------------------------------------
@@ -55,7 +56,7 @@ int main(int, char **)
 
 		// test
 		strcpy(ptr, "ABCDEF");
-		std::cout << STD_TRACE_VAR(ptr) << std::endl;
+		std::cout << TRACE_VAR(ptr) << std::endl;
 
 		// destruct
 		ptr->~T();

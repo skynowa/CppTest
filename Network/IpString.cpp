@@ -4,6 +4,7 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <arpa/inet.h>
 #include <cmath>
@@ -15,7 +16,7 @@ int main(int, char **)
 	const std::string ip     = "92.60.182.205";
 	const uint32_t    ip_int = ::inet_network(ip.c_str());
 
-	std::cout << STD_TRACE_VAR(ip_int) << std::endl;
+	std::cout << TRACE_VAR(ip_int) << std::endl;
 
 	// to string
 	struct in_addr ip_addr;
@@ -23,7 +24,7 @@ int main(int, char **)
 
 	std::string ip_str = inet_ntoa(ip_addr);
 
-	std::cout << STD_TRACE_VAR(ip_str) << std::endl;
+	std::cout << TRACE_VAR(ip_str) << std::endl;
 
 	return 0;
 }
