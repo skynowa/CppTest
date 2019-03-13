@@ -1,3 +1,6 @@
 [submodule "StdTest"]
 	path = StdTest
 	url = git@bitbucket.org:skynowa/stdtest.git
+[submodule "StdStream"]
+	path = StdStream
+	url = git@bitbucket.org:skynowa/stdstream.git
