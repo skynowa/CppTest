@@ -20,7 +20,7 @@ struct Data
 class A
 {
 public:
-	Data *d;
+	Data *d {};
 
 	A()
 	{
