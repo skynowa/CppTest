@@ -15,17 +15,23 @@
 template <typename T = float>
 struct MyContainer
 {
-	T val;
+	MyContainer() :
+		_val()
+	{
+	}
 
-	MyContainer() : val() {}
-	MyContainer(T val) : val(val) {}
-	// ...
+	MyContainer(T val) :
+		_val(val)
+	{
+	}
+
+	T _val;
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	MyContainer c1 {1}; // OK MyContainer<int>
-	MyContainer c2; // OK MyContainer<float>
+	MyContainer c1{1};	// OK MyContainer<int>
+	MyContainer c2;		// OK MyContainer<float>
 
     // std::cout << TRACE_VAR("") << std::endl;
 
