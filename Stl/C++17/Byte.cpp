@@ -28,7 +28,8 @@ int main(int, char **)
 
 	int j = std::to_integer<int>(c); // 0
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    std::cout << TRACE_VAR(i) << std::endl;
+    std::cout << TRACE_VAR(j) << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -15,14 +15,14 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+template <auto... seq>
+struct my_integer_sequence
+{
+	// Implementation here ...
+};
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	template <auto... seq>
-	struct my_integer_sequence
-	{
-		// Implementation here ...
-	};
-
 	// Explicitly pass type `int` as template argument.
 	auto seq = std::integer_sequence<int, 0, 1, 2>();
 

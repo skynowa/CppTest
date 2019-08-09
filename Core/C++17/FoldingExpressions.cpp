@@ -16,29 +16,30 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+template<typename... Args>
+bool logicalAnd(Args... args)
+{
+	// Binary folding.
+	return (true && ... && args);
+}
+//-------------------------------------------------------------------------------------------------
+template<typename... Args>
+auto sum(Args... args)
+{
+	// Unary folding.
+	return (... + args);
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
-		template<typename... Args>
-		bool logicalAnd(Args... args)
-		{
-			// Binary folding.
-			return (true && ... && args);
-		}
-
-		bool b = true;
+		bool  b  = true;
 		bool& b2 = b;
+
 		logicalAnd(b, b2, true); // == true
 	}
 
 	{
-		template<typename... Args>
-		auto sum(Args... args)
-		{
-			// Unary folding.
-			return (... + args);
-		}
-
 		sum(1.0, 2.0f, 3); // == 6.0
 	}
 

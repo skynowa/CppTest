@@ -13,18 +13,18 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+std::optional<std::string>
+create(bool b)
+{
+	if (b) {
+		return "Godzilla";
+	} else {
+		return {};
+	}
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::optional<std::string>
-	create(bool b)
-	{
-		if (b) {
-			return "Godzilla";
-		} else {
-			return {};
-		}
-	}
-
 	create(false).value_or("empty"); // == "empty"
 	create(true).value(); // == "Godzilla"
 

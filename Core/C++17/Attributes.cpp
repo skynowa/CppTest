@@ -11,11 +11,15 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+// Will warn if return of foo() is ignored
+[[nodiscard]] int
+foo()
+{
+	return 7;
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	// Will warn if return of foo() is ignored
-	[[nodiscard]] int foo();
-
 	int a {1};
 	switch (a) {
 	// Indicates that falling through on case 1 is intentional

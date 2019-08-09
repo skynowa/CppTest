@@ -12,23 +12,27 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+template <typename Callable>
+class Proxy
+{
+public:
+	Proxy(Callable c): c(c)
+	{
+	}
+
+	template <class... Args>
+	decltype(auto) operator()(Args&&... args)
+	{
+		// ...
+		return std::invoke(c, std::forward<Args>(args)...);
+	}
+
+private:
+	Callable c;
+};
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	template <typename Callable>
-	class Proxy
-	{
-	public:
-		Proxy(Callable c): c(c) {}
-		template <class... Args>
-		decltype(auto) operator()(Args&&... args)
-		{
-			// ...
-			return std::invoke(c, std::forward<Args>(args)...);
-		}
-	private:
-		Callable c;
-	};
-
 	auto add = [](int x, int y)
 	{
 		return x + y;

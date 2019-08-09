@@ -1,8 +1,8 @@
 /**
  * \file  main.cpp
- * \brief Direct List Initialization of Enums
+ * \brief Nested namespaces
  *
- * Enums can now be initialized using braced syntax.
+ * Using the namespace resolution operator to create nested namespace definitions.
  */
 
 
@@ -11,17 +11,29 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+namespace A
+{
+namespace B
+{
+namespace C
+{
+
+int i;
+
+}
+}
+}
+
+// vs.
+namespace A::B::C
+{
+
+int j;
+
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	enum Byte : unsigned char
-	{
-	};
-
-	Byte b {0}; // OK
-	Byte c {-1}; // ERROR
-	Byte d = Byte{1}; // OK
-	Byte e = Byte{256}; // ERROR
-
     // std::cout << TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;

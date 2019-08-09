@@ -12,10 +12,32 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+class Gadget
+{
+public:
+	int status()
+	{
+		return 0;
+	}
+
+	void zip()
+	{
+	}
+
+	std::string message()
+	{
+		return "[msg]";
+	}
+};
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	// if
 	{
+		std::mutex  mx;
+		std::vector<int> v;
+		const int   val {10};
+
 		{
 			std::lock_guard<std::mutex> lk(mx);
 			if (v.empty()) v.push_back(val);
@@ -29,23 +51,25 @@ int main(int, char **)
 
 	// switch
 	{
-		Foo gadget(args);
+		Gadget gadget;
+
+
 		switch (auto s = gadget.status()) {
-		case OK:
+		case 1:
 			gadget.zip();
 			break;
-		case Bad:
-			throw BadFoo(s.message());
+		case 0:
+			std::cout << TRACE_VAR(s) << std::endl;
 			break;
 		}
 
 		// vs.
-		switch (Foo gadget(args); auto s = gadget.status()) {
-		case OK:
+		switch (Gadget gadget; auto s = gadget.status()) {
+		case 1:
 			gadget.zip();
 			break;
-		case Bad:
-			throw BadFoo(s.message());
+		case 0:
+			std::cout << TRACE_VAR(s) << std::endl;
 			break;
 		}
 	}

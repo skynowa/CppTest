@@ -14,20 +14,22 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+using Coordinate = std::pair<int, int>;
+
+Coordinate origin()
+{
+	return Coordinate {7, 13};
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	using Coordinate = std::pair<int, int>;
+	const auto &[ x, y ] = origin();
 
-	Coordinate origin()
-	{
-		return Coordinate{0, 0};
-	}
+	// x: == 0
+	// y: == 0
 
-	const auto [ x, y ] = origin();
-	x; // == 0
-	y; // == 0
-
-    // std::cout << TRACE_VAR("") << std::endl;
+    std::cout << TRACE_VAR(x) << std::endl;
+    std::cout << TRACE_VAR(y) << std::endl;
 
     return EXIT_SUCCESS;
 }

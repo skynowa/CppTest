@@ -16,7 +16,7 @@ set(CMAKE_VERBOSE_MAKEFILE      OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_REQUIRED_QUIET        ON)
 
-set(CMAKE_CXX_STANDARD          14)
+set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
@@ -28,7 +28,7 @@ include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
 include_directories(${CMAKE_SOURCE_DIR}/StdTest)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
-set(LIBRARIES ${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} pthread rt m z)
+set(LIBRARIES ${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} stdc++fs pthread rt m z)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/*.cpp)
 

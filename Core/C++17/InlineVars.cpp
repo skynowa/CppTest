@@ -12,14 +12,17 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+// Disassembly example using compiler explorer.
+struct S
+{
+	int x;
+};
+//-------------------------------------------------------------------------------------------------
+inline S x1 = S{321};	// mov esi, dword ptr [x1]
+						// x1: .long 321
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	// Disassembly example using compiler explorer.
-	struct S { int x; };
-
-	inline S x1 = S{321};	// mov esi, dword ptr [x1]
-							// x1: .long 321
-
 	S x2 = S{123};	// mov eax, dword ptr [.L_ZZ4mainE2x2]
 					// mov dword ptr [rbp - 8], eax
 					// .L_ZZ4mainE2x2: .long 123

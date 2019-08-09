@@ -12,17 +12,18 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+template <typename T = float>
+struct MyContainer
+{
+	T val;
+
+	MyContainer() : val() {}
+	MyContainer(T val) : val(val) {}
+	// ...
+};
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	template <typename T = float>
-	struct MyContainer
-	{
-		T val;
-		MyContainer() : val() {}
-		MyContainer(T val) : val(val) {}
-		// ...
-	};
-
 	MyContainer c1 {1}; // OK MyContainer<int>
 	MyContainer c2; // OK MyContainer<float>
 

@@ -27,10 +27,12 @@ int main(int, char **)
 	std::string str {"   trim me"};
 	std::string_view v {str};
 	v.remove_prefix(std::min(v.find_first_not_of(" "), v.size()));
-	str; //  == "   trim me"
-	v; // == "trim me"
 
-    // std::cout << TRACE_VAR("") << std::endl;
+	// str; "   trim me"
+	// v;   "trim me"
+
+    std::cout << TRACE_VAR(str) << std::endl;
+    std::cout << TRACE_VAR(v) << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -15,13 +15,11 @@ int main(int, char **)
 {
 	std::any x {5};
 
-	x.has_value() // == true
+	std::cout << TRACE_VAR(x.has_value()) << std::endl; // == true
 
-	std::any_cast<int>(x) // == 5
-	std::any_cast<int&>(x) = 10;
-	std::any_cast<int>(x) // == 10
-
-    // std::cout << TRACE_VAR("") << std::endl;
+	std::cout << TRACE_VAR(std::any_cast<int>(x))  << std::endl; // == 5
+	std::cout << TRACE_VAR(std::any_cast<int&>(x)) << std::endl; // == 10;
+	std::cout << TRACE_VAR(std::any_cast<int>(x))  << std::endl; // == 10
 
     return EXIT_SUCCESS;
 }

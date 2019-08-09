@@ -11,18 +11,19 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
+template <typename T>
+constexpr bool
+isIntegral()
+{
+	if constexpr (std::is_integral<T>::value) {
+		return true;
+	} else {
+		return false;
+	}
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	template <typename T>
-	constexpr bool isIntegral()
-	{
-		if constexpr (std::is_integral<T>::value) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
 	static_assert(isIntegral<int>() == true);
 	static_assert(isIntegral<char>() == true);
 	static_assert(isIntegral<double>() == false);

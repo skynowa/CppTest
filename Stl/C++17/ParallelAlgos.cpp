@@ -15,6 +15,7 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+#if 0
 	std::vector<int> longVector;
 
 	// Find element using parallel execution policy
@@ -24,6 +25,7 @@ int main(int, char **)
 	auto result2 = std::sort(std::execution::seq, std::begin(longVector), std::end(longVector));
 
     // std::cout << TRACE_VAR("") << std::endl;
+#endif
 
     return EXIT_SUCCESS;
 }

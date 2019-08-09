@@ -13,25 +13,38 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	auto identity = [](int n) constexpr { return n; };
-	static_assert(identity(123) == 123);
-
-	constexpr auto add = [](int x, int y)
 	{
-		auto L = [=] { return x; };
-		auto R = [=] { return y; };
+		auto identity = [](int n) constexpr
+		{
+			return n;
+		};
 
-		return [=] { return L() + R(); };
-	};
-
-	static_assert(add(1, 2)() == 3);
-
-	constexpr int addOne(int n)
-	{
-		return [n] { return n + 1; }();
+		static_assert(identity(123) == 123);
 	}
 
-	static_assert(addOne(1) == 2);
+	{
+		constexpr auto add = [](int x, int y)
+		{
+			auto L = [=] { return x; };
+			auto R = [=] { return y; };
+
+			return [=] { return L() + R(); };
+		};
+
+		static_assert(add(1, 2)() == 3);
+	}
+
+	{
+		struct S
+		{
+			constexpr int addOne(int n)
+			{
+				return [n] { return n + 1; }();
+			};
+		};
+
+		static_assert(S().addOne(1) == 2);
+	}
 
     // std::cout << TRACE_VAR("") << std::endl;
 
