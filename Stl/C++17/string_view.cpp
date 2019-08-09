@@ -1,8 +1,9 @@
 /**
  * \file  main.cpp
  * \brief std::string_view
-
-A non-owning reference to a string. Useful for providing an abstraction on top of strings (e.g. for parsing).
+ *
+ * A non-owning reference to a string. Useful for providing an abstraction on top of strings
+ * (e.g. for parsing).
  */
 
 
@@ -15,12 +16,13 @@ int main(int, char **)
 {
 	// Regular strings.
 	std::string_view cppstr {"foo"};
+
 	// Wide strings.
 	std::wstring_view wcstr_v {L"baz"};
+
 	// Character arrays.
 	char array[3] = {'b', 'a', 'r'};
 	std::string_view array_v(array, std::size(array));
-
 
 	std::string str {"   trim me"};
 	std::string_view v {str};

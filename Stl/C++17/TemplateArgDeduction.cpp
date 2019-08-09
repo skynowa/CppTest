@@ -2,7 +2,8 @@
  * \file  main.cpp
  * \brief Template argument deduction for class templates
  *
- * Automatic template argument deduction much like how it's done for functions, but now including class constructors
+ * Automatic template argument deduction much like how it's done for functions,
+ * but now including class constructors
  */
 
 
@@ -14,12 +15,14 @@
 int main(int, char **)
 {
 	template <typename T = float>
-	struct MyContainer {
-	T val;
-	MyContainer() : val() {}
-	MyContainer(T val) : val(val) {}
-	// ...
+	struct MyContainer
+	{
+		T val;
+		MyContainer() : val() {}
+		MyContainer(T val) : val(val) {}
+		// ...
 	};
+
 	MyContainer c1 {1}; // OK MyContainer<int>
 	MyContainer c2; // OK MyContainer<float>
 

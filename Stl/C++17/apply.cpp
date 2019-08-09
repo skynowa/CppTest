@@ -1,8 +1,8 @@
 /**
  * \file  main.cpp
  * \brief std::apply
-
-Invoke a Callable object with a tuple of arguments.
+ *
+ * Invoke a Callable object with a tuple of arguments.
  */
 
 
@@ -13,9 +13,11 @@ Invoke a Callable object with a tuple of arguments.
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	auto add = [](int x, int y) {
-	return x + y;
+	auto add = [](int x, int y)
+	{
+		return x + y;
 	};
+
 	std::apply(add, std::make_tuple(1, 2)); // == 3
 
     // std::cout << TRACE_VAR("") << std::endl;

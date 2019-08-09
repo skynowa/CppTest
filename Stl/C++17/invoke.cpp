@@ -1,8 +1,9 @@
 /**
  * \file  main.cpp
  * \brief std::invoke
-
- Invoke a Callable object with parameters. Examples of Callable objects are std::function or std::bind where an object can be called similarly to a regular function.
+ *
+ * Invoke a Callable object with parameters. Examples of Callable objects are std::function or
+ * std::bind where an object can be called similarly to a regular function.
  */
 
 
@@ -14,19 +15,25 @@
 int main(int, char **)
 {
 	template <typename Callable>
-	class Proxy {
-		Callable c;
+	class Proxy
+	{
 	public:
 		Proxy(Callable c): c(c) {}
 		template <class... Args>
-		decltype(auto) operator()(Args&&... args) {
+		decltype(auto) operator()(Args&&... args)
+		{
 			// ...
 			return std::invoke(c, std::forward<Args>(args)...);
 		}
+	private:
+		Callable c;
 	};
-	auto add = [](int x, int y) {
-	return x + y;
+
+	auto add = [](int x, int y)
+	{
+		return x + y;
 	};
+
 	Proxy<decltype(add)> p {add};
 	p(1, 2); // == 3
 

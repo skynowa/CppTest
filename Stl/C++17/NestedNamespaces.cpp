@@ -1,8 +1,8 @@
 /**
  * \file  main.cpp
  * \brief Nested namespaces
-
-Using the namespace resolution operator to create nested namespace definitions.
+ *
+ * Using the namespace resolution operator to create nested namespace definitions.
  */
 
 
@@ -14,15 +14,16 @@ Using the namespace resolution operator to create nested namespace definitions.
 int main(int, char **)
 {
 	namespace A {
-	namespace B {
-		namespace C {
-		int i;
+		namespace B {
+			namespace C {
+				int i;
+			}
 		}
 	}
-	}
+
 	// vs.
 	namespace A::B::C {
-	int i;
+		int i;
 	}
 
     // std::cout << TRACE_VAR("") << std::endl;

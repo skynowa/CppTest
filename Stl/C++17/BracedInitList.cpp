@@ -2,7 +2,8 @@
  * \file  main.cpp
  * \brief New rules for auto deduction from braced-init-list
  *
- * Changes to auto deduction when used with the uniform initialization syntax. Previously, auto x {3}; deduces a std::initializer_list<int>, which now deduces to int.
+ * Changes to auto deduction when used with the uniform initialization syntax.
+ * Previously, auto x {3}; deduces a std::initializer_list<int>, which now deduces to int.
  */
 
 
