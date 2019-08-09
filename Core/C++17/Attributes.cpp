@@ -21,6 +21,7 @@ foo()
 int main(int, char **)
 {
 	int a {1};
+
 	switch (a) {
 	// Indicates that falling through on case 1 is intentional
 	case 1: [[fallthrough]]

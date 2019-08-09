@@ -1,6 +1,6 @@
 /**
  * \file  main.cpp
- * \brief Folding expressions
+ * \brief Fold expressions
 
  * A fold expression performs a fold of a template parameter pack over a binary operator.
  *
@@ -17,33 +17,35 @@
 
 //-------------------------------------------------------------------------------------------------
 template<typename... Args>
-bool logicalAnd(Args... args)
+bool
+logicalAnd(Args... args)
 {
-	// Binary folding.
+	// Binary folding
 	return (true && ... && args);
 }
 //-------------------------------------------------------------------------------------------------
 template<typename... Args>
-auto sum(Args... args)
+auto
+sum(Args... args)
 {
-	// Unary folding.
-	return (... + args);
+	// Unary folding
+	return (args + ... + 100);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
 		bool  b  = true;
-		bool& b2 = b;
+		bool &b2 = b;
 
-		logicalAnd(b, b2, true); // == true
+		auto aRv = logicalAnd(b, b2, true); // == true
+		std::cout << TRACE_VAR(aRv) << std::endl;
 	}
 
 	{
-		sum(1.0, 2.0f, 3); // == 6.0
+		auto aRv = sum(1.0, 2.0f, 3); // == 6.0
+		std::cout << TRACE_VAR(aRv) << std::endl;
 	}
-
-    // std::cout << TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -52,6 +54,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+aRv: 1
+aRv: 109 (6+100)
 
 #endif

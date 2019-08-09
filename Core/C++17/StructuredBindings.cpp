@@ -23,13 +23,25 @@ Coordinate origin()
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	const auto &[ x, y ] = origin();
+	{
+		const auto &[ x, y ] = origin();
 
-	// x: == 0
-	// y: == 0
+		// x: == 0
+		// y: == 0
 
-    std::cout << TRACE_VAR(x) << std::endl;
-    std::cout << TRACE_VAR(y) << std::endl;
+	    std::cout << TRACE_VAR(x) << std::endl;
+	    std::cout << TRACE_VAR(y) << std::endl;
+
+		std::cout << std::endl;
+	}
+
+	{
+		std::map<int, char> myMap {{1, 'a'}, {2, 'b'}};
+
+		for (const auto &[key, value] : myMap) {
+			std::cout << TRACE_VAR2(key, value) << std::endl;
+		}
+	}
 
     return EXIT_SUCCESS;
 }
@@ -38,6 +50,11 @@ int main(int, char **)
 
 #if OUTPUT
 
+x: 7
+y: 13
+
+key: 1, value: a
+key: 2, value: b
 
 
 #endif
