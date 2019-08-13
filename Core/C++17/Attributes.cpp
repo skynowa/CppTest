@@ -2,7 +2,7 @@
  * \file  main.cpp
  * \brief New standard attributes
  *
- * C++17 introduces three new attributes: [[fallthrough]], [[nodiscard]] and [[maybe_unused]]
+ * C++17 introduces three new attributes: [[fallthrough]], [[nodiscard]], [[maybe_unused]]
  */
 
 
@@ -31,8 +31,6 @@ int main(int, char **)
 		assert(b > 0);
 		break;
 	}
-
-    // std::cout << TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }
