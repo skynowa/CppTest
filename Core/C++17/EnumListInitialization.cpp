@@ -17,12 +17,10 @@ int main(int, char **)
 	{
 	};
 
-	Byte b {0}; // OK
-	/// Byte c {-1}; // ERROR
-	Byte d = Byte{1}; // OK
-	///Byte e = Byte{256}; // ERROR
-
-    // std::cout << TRACE_VAR("") << std::endl;
+	Byte b {0};             // OK
+	/// Byte c {-1};        // ERROR
+	Byte d = Byte{1};       // OK
+	/// Byte e = Byte{256}; // ERROR
 
     return EXIT_SUCCESS;
 }
