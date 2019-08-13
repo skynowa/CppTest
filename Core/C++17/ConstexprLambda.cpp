@@ -46,8 +46,6 @@ int main(int, char **)
 		static_assert(S().addOne(1) == 2);
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
-
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
