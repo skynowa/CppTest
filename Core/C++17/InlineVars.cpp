@@ -18,16 +18,19 @@ struct S
 	int x;
 };
 //-------------------------------------------------------------------------------------------------
-inline S x1 = S{321};	// mov esi, dword ptr [x1]
-						// x1: .long 321
+// mov esi, dword ptr [x1]
+// x1: .long 321
+inline S x1 = S{321};
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	S x2 = S{123};	// mov eax, dword ptr [.L_ZZ4mainE2x2]
-					// mov dword ptr [rbp - 8], eax
-					// .L_ZZ4mainE2x2: .long 123
+	// mov eax, dword ptr [.L_ZZ4mainE2x2]
+	// mov dword ptr [rbp - 8], eax
+	// .L_ZZ4mainE2x2: .long 123
+	S x2 = S{123};
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    std::cout << TRACE_VAR(x1.x) << std::endl;
+    std::cout << TRACE_VAR(x2.x) << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -36,6 +39,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+x1.x: 321
+x2.x: 123
 
 #endif
