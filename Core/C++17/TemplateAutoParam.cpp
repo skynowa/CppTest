@@ -16,20 +16,29 @@
 
 //-------------------------------------------------------------------------------------------------
 template <auto... seq>
-struct my_integer_sequence
+struct IntegerSequence
 {
 	// Implementation here ...
+
+	static constexpr std::size_t size()
+	{
+		return 3;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	// Explicitly pass type `int` as template argument.
-	auto seq = std::integer_sequence<int, 0, 1, 2>();
+	{
+		auto seq = std::integer_sequence<int, 0, 1, 2>();
+    	std::cout << TRACE_VAR(seq.size()) << std::endl;
+	}
 
 	// Type is deduced to be `int`.
-	auto seq2 = my_integer_sequence<0, 1, 2>();
-
-    // std::cout << TRACE_VAR("") << std::endl;
+	{
+		auto seq = IntegerSequence<0, 1, 2, 7>();
+    	std::cout << TRACE_VAR(seq.size()) << std::endl;
+	}
 
     return EXIT_SUCCESS;
 }
@@ -38,6 +47,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+seq.size(): 3
+seq.size(): 3
 
 #endif

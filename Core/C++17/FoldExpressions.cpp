@@ -16,27 +16,27 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
-template<typename... Args>
+template<typename... ArgsT>
 bool
-logicalAnd(Args... args)
+logicalAnd(ArgsT... args)
 {
 	// Binary folding
 	return (true && ... && args);
 }
 //-------------------------------------------------------------------------------------------------
-template<typename... Args>
+template<typename... ArgsT>
 auto
-sum(Args... args)
+sum(ArgsT... args)
 {
 	// Unary folding
-	return (args + ... + 100);
+	return (args + ... + 100.1);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
-		bool  b  = true;
-		bool &b2 = b;
+		bool  b  {true};
+		bool &b2 {b};
 
 		auto aRv = logicalAnd(b, b2, true); // == true
 		std::cout << TRACE_VAR(aRv) << std::endl;
@@ -54,7 +54,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-aRv: 1
-aRv: 109 (6+100)
+aRv: 1     (true)
+aRv: 106.1 (6+100.1)
 
 #endif
