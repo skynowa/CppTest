@@ -14,31 +14,25 @@
 #include <Stl.h>
 
 //-------------------------------------------------------------------------------------------------
-using Coordinate = std::pair<int, int>;
+using Coordinate = std::pair<int, float>;
 
 Coordinate origin()
 {
-	return Coordinate {7, 13};
+	return Coordinate {7, 13.5};
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
-		const auto &[ x, y ] = origin();
+		const auto &[x, y] = origin();
 
-		// x: == 0
-		// y: == 0
-
-	    std::cout << TRACE_VAR(x) << std::endl;
-	    std::cout << TRACE_VAR(y) << std::endl;
-
-		std::cout << std::endl;
+	    std::cout << TRACE_VAR2(x, y) << "\n" << std::endl;
 	}
 
 	{
-		std::map<int, char> myMap {{1, 'a'}, {2, 'b'}};
+		std::map<int, char> m {{1, 'a'}, {2, 'b'}};
 
-		for (const auto &[key, value] : myMap) {
+		for (const auto &[key, value] : m) {
 			std::cout << TRACE_VAR2(key, value) << std::endl;
 		}
 	}
@@ -50,11 +44,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-x: 7
-y: 13
+x: 7, y: 13.5
 
 key: 1, value: a
 key: 2, value: b
-
 
 #endif
