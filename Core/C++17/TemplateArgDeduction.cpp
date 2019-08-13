@@ -10,30 +10,35 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 template <typename T = float>
-struct MyContainer
+struct Container
 {
-	MyContainer() :
-		_val()
+	const T _val{};
+
+	Container() :
+		_val{}
 	{
+		printType();
 	}
 
-	MyContainer(T val) :
-		_val(val)
+	Container(T val) :
+		_val{val}
 	{
+		printType();
 	}
 
-	T _val;
+	void printType() const
+	{
+		std::cout << "_val type: " << typeid(_val).name() << std::endl;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	MyContainer c1{1};	// OK MyContainer<int>
-	MyContainer c2;		// OK MyContainer<float>
-
-    // std::cout << TRACE_VAR("") << std::endl;
+	Container c;		// Container<float>
+	Container c1{1};	// Container<int>
+	Container c2{1UL};	// Container<unsigned long>
 
     return EXIT_SUCCESS;
 }
@@ -42,6 +47,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+_val type: f
+_val type: i
+_val type: m
 
 #endif
