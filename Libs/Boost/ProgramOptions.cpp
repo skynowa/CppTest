@@ -30,7 +30,11 @@ int main(int argc, const char *argv[])
 			("help,h", "Help screen")
 			("pi",     po::value<float>()->implicit_value(3.14f), "Pi")
 			("age",    po::value<int>(&age), "Age")
-			("phone",  po::value<std::vector<std::string>>()->multitoken()->zero_tokens()->composing(), "Phone")
+			("phone",  po::value<std::vector<std::string>>()
+							->multitoken()
+							->zero_tokens()
+							->composing(),
+							"Phone")
 			("unreg",  "Unrecognized options");
 
 		po::command_line_parser parser{argc, argv};
