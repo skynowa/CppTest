@@ -19,11 +19,14 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 
 # CMakeLib - CMAKE_MODULE_PATH
-set(CMAKE_DATA_DIR_DEFAULT "/usr/share/cmake-${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}/Modules")
-set(CMAKE_MODULE_PATH      "${CMAKE_DATA_DIR_DEFAULT}/CMakeLib;${CMAKE_MODULE_PATH}")
+# set(CMAKE_DATA_DIR_DEFAULT "/usr/share/cmake-${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}/Modules")
+# set(CMAKE_MODULE_PATH      "${CMAKE_DATA_DIR_DEFAULT}/CMakeLib;${CMAKE_MODULE_PATH}")
 # message(STATUS "CMAKE_DATA_DIR_DEFAULT: ${CMAKE_DATA_DIR_DEFAULT}" )
+
 #--------------------------------------------------------------------------------------------------
 # Modules
+find_package(GlobalVariables)
+include(${CMAKE_DATA_DIR_DEFAULT}/CMakeLib/FindCMakeLib.cmake)
 
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
