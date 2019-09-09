@@ -17,24 +17,41 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_REQUIRED_QUIET        ON)
 
 set(CMAKE_CXX_STANDARD          17)
+
+# CMakeLib - CMAKE_MODULE_PATH
+set(CMAKE_MAJOR_MINOR_VERSION "${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}")
+set(CMAKE_DATA_DIR_DEFAULT    "/usr/share/cmake-${CMAKE_MAJOR_MINOR_VERSION}/Modules")
+set(CMAKE_MODULE_PATH         "${CMAKE_DATA_DIR_DEFAULT}/CMakeLib;${CMAKE_MODULE_PATH}")
+# message(STATUS "CMAKE_DATA_DIR_DEFAULT: ${CMAKE_DATA_DIR_DEFAULT}" )
 #--------------------------------------------------------------------------------------------------
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
 if (Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
+
+find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
+find_package(Pcre++ QUIET REQUIRED)
+find_package(Event2 QUIET REQUIRED)
+find_package(Ssh2 QUIET REQUIRED)
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
 include_directories(${CMAKE_SOURCE_DIR}/StdTest)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
-set(LIBRARIES ${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} stdc++fs pthread rt m z)
+
+set(LIBRARIES
+	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
+	${PCRE_PP_LIBRARIES} ${EVENT2_LIBRARIES} ${SSH2_LIBRARIES}
+	${Boost_PROGRAM_OPTIONS_LIBRARY}
+)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/*.cpp)
 
 foreach(IT_SOURCE ${SOURCES})
 	# ignores
-	if(WIN32)
+	if (WIN32)
 		# TODO: ignores
 	else()
 		if ("${IT_SOURCE}" MATCHES "Windows/" OR
@@ -45,7 +62,7 @@ foreach(IT_SOURCE ${SOURCES})
 		endif()
 	endif()
 
-	if ("${IT_SOURCE}" MATCHES "Libs/")
+	if ("${IT_SOURCE}" MATCHES "Libs/Qt/")
 		message(STATUS "Skip: ${IT_SOURCE}" )
 		continue()
 	endif()

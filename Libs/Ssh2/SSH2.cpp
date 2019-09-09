@@ -1,34 +1,39 @@
-//============================================================================
-// Name        : libssh2.cpp
-// Author      : nick
-// Version     :
-// Copyright   : Your copyright notice
-// Description : http://www.staroceans.org/practice/libssh2.cpp
-//============================================================================
+/**
+ * \file  SSH2.cpp
+ * \brief lib SSH2
+ *
+ * http://www.staroceans.org/practice/libssh2.cpp
+ */
+
+
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 #include <cstdio>
 #include <string>
 #include "libssh2.h"
-# include <sys/socket.h>
-# include <netinet/in.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <iostream>
 
 using namespace std;
-
+//-------------------------------------------------------------------------------------------------
 class MySSH2
 {
 private:
-	int m_sock;
-	LIBSSH2_SESSION *m_session;
-	LIBSSH2_CHANNEL *m_channel;
-	char m_err[1025];
+	int m_sock {};
+	LIBSSH2_SESSION *m_session {};
+	LIBSSH2_CHANNEL *m_channel {};
+	char m_err[1025] {};
 	string m_strIp;
 	string m_strUser;
 	string m_strPasswd;
-	bool bInitialized;
+	bool bInitialized {};
+
 public:
 	int waitsocket(int socket_fd, LIBSSH2_SESSION *session)
 	{
@@ -198,6 +203,7 @@ public:
 			m_session = NULL;
 		}
 	}
+
 	void uninit_channel()
 	{
 		if (m_channel)
@@ -240,6 +246,8 @@ public:
 				waitsocket(m_sock, m_session);
 			}
 		}
+
+		const bool libssh2_channel_read_stderr {true};
 		if (libssh2_channel_read_stderr)
 		{
 			char *exitsignal=(char *)"none";
@@ -302,19 +310,18 @@ public:
 		memset(m_err, 0, sizeof(m_err));
 	}
 };
-
-
-
+//-------------------------------------------------------------------------------------------------
 int test1()
 {
 	MySSH2 ssh("192.168.1.169", "nick", "xxxxx");
 	//MySSH2 ssh("127.0.0.1", "nick", "xxxxx");
 	ssh.exec("ls -asl");
+
 	return 0;
 }
-
-
-static int waitsocket(int socket_fd, LIBSSH2_SESSION *session)
+//-------------------------------------------------------------------------------------------------
+static int
+waitsocket(int socket_fd, LIBSSH2_SESSION *session)
 {
     struct timeval timeout;
     int rc;
@@ -343,7 +350,7 @@ static int waitsocket(int socket_fd, LIBSSH2_SESSION *session)
 
     return rc;
 }
-
+//-------------------------------------------------------------------------------------------------
 #include <cstdlib>
 #define NICK_KNOWN_HOST
 
@@ -426,6 +433,7 @@ int test2(int argc, char** argv)
 		fprintf(stderr, "Failure establishing SSH session: %d\n", rc);
 		return -1;
 	}
+
 #ifdef NICK_KNOWN_HOST
 	nh = libssh2_knownhost_init(session);
 	if(!nh) {
@@ -474,6 +482,7 @@ int test2(int argc, char** argv)
 	}
 	libssh2_knownhost_free(nh);
 #endif
+
 	if ( strlen(password) != 0 ) {
 		/* We could authenticate via password */
 		while ((rc = libssh2_userauth_password(session, username, password)) ==
@@ -595,9 +604,10 @@ shutdown:
 	return 0;
 
 }
-
-int main(int argc, char** argv)
+//-------------------------------------------------------------------------------------------------
+int main(int, char**)
 {
 	return test1();
-	//return test2(argc, argv);
+	// return test2(argc, argv);
 }
+//-------------------------------------------------------------------------------------------------

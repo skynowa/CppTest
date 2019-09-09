@@ -1,53 +1,47 @@
-/****************************************************************************
-* Class name:  bind
-* Description:
-* File name:   bind.h
-* Compilers:   Visual C++ 2010
-* String type: Ansi, Unicode
-* Libraries:   WinAPI, Stl, XLib
-* Author:      Alca
-* E-mail:      dr.web.agent@gmail.com
-* Created:     01.12.2010 11:40:32
-* Version:     1.0.0.0 Debug
-*
-*****************************************************************************/
+/**
+ * \file  bind.cpp
+ * \brief Boost.Bind
+ *
+ * COMMENTS
+ */
 
 
-#include <XLib/xCommon.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
 
-
-//---------------------------------------------------------------------------
-class CButton {
-   public:
-       boost::function<VOID()> vOnClick;
+//-------------------------------------------------------------------------------------------------
+class CButton
+{
+public:
+    boost::function<void()> vOnClick {};
 };
-//---------------------------------------------------------------------------
-class CPlayer {
-   public:
-       VOID vPlay() { xSTD_COUT_FUNC; };
-       VOID vStop() { xSTD_COUT_FUNC; };
+//-------------------------------------------------------------------------------------------------
+class CPlayer
+{
+public:
+	void vPlay() { STD_TRACE_FUNC; };
+	void vStop() { STD_TRACE_FUNC; };
 };
-//---------------------------------------------------------------------------
-
-//---------------------------------------------------------------------------
-INT main(INT iArgc, TCHAR *pszArgv[]) {
+//-------------------------------------------------------------------------------------------------
+int main(int , char **)
+{
 	CButton playButton;
 	CButton stopButton;
 	CPlayer thePlayer;
 
-	//connect
+	// connect
 	playButton.vOnClick = boost::bind(&CPlayer::vPlay, &thePlayer);
-	////stopButton.vOnClick = boost::bind(&CPlayer::vStop, &thePlayer);
+	/// stopButton.vOnClick = boost::bind(&CPlayer::vStop, &thePlayer);
 	stopButton.vOnClick = boost::bind(&CPlayer::vPlay, &thePlayer);
 
-	//click
+	// click
 	playButton.vOnClick();
 	stopButton.vOnClick();
 
-	xSTD_COUT(xT("\n"));
-	system("pause");
 	return 0;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------

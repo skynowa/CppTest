@@ -40,7 +40,7 @@
 
 
 /* you need to include the pcre++ header file */
-#include "../libpcre++/pcre++.h"
+#include <pcre++.h>
 #include <iostream>
 
 using namespace std;
