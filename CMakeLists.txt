@@ -20,7 +20,7 @@ set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
-if(Boost_FOUND)
+if (Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
 #--------------------------------------------------------------------------------------------------
