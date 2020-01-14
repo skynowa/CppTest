@@ -4,8 +4,9 @@
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-#include <vector>
+#include <Stl.h>
 
 class File
 {
@@ -53,4 +54,3 @@ int main(int, char **)
 
 
 #endif
-
