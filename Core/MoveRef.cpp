@@ -11,6 +11,8 @@
 //-------------------------------------------------------------------------------------------------
 struct A
 {
+    std::string value;
+
     A() :
         value() {std::cout << "A()" << std::endl;}
     A(const std::string &a_value):
@@ -25,13 +27,11 @@ struct A
     // A & operator = (A &&) {std::cout << "A & operator = (A &&)" << std::endl;}
 
     ~A() {std::cout << "~A()" << std::endl;}
-
-    std::string value;
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    A a1("STRING");
+    const A a1("STRING");
     // const A a2("2");
     // const A a3("3");
     // std::cout << "initialize" << std::endl;
@@ -46,14 +46,14 @@ int main(int, char **)
     // v.push_back(a3);
 
     // std::cout << "std::vector: " << v[0].value << std::endl;
-    std::cout << "\n***** Start *****" << std::endl;
+    std::cout << "\n***** Test *****" << std::endl;
 
     for (auto &&it : v) {
         auto test = move(it.value);
 
         // std::cout << test.value << std::endl;
         // std::cout << it.value << std::endl;
-        std::cout << v.at(0).value << (v.at(0).value.empty() ? "<moved>" : v.at(0).value) << std::endl;
+        std::cout << it.value << (it.value.empty() ? "<moved>" : it.value) << std::endl;
     }
 
     std::cout << TRACE_VAR(a1.value) << std::endl;
