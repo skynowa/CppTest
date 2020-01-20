@@ -7,33 +7,42 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
+//-------------------------------------------------------------------------------------------------
 class File
 {
-    FILE* handle;
 public:
-    File(const char* filename) {
-        if ( !(handle = fopen(filename, "r")) )
+    File(const char* filename)
+    {
+        if ( !(_handle = fopen(filename, "r")) ) {
             throw std::runtime_error("blah blah blah");
-    }
-    ~File() { if (handle) fclose(handle); }
-
-    File(File&& that) {
-        handle = that.handle;
-        that.handle = nullptr;
+        }
     }
 
-    File& operator=(File&& that) {
-        std::swap(handle, that.handle);
+    File(File&& that)
+    {
+        _handle      = that._handle;
+        that._handle = nullptr;
+    }
+
+    File& operator = (File&& that)
+    {
+        std::swap(_handle, that._handle);
         return *this;
     }
 
-    File(const File&) = delete; //запретить копирование
-    void operator=(const File&) = delete; //запретить присваивание
+    File(const File&) = delete;
+    void operator = (const File&) = delete;
 
-    // ...
+    ~File()
+    {
+        if (_handle) {
+            fclose(_handle);
+        }
+    }
+
+private:
+    FILE *_handle {};
 };
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
