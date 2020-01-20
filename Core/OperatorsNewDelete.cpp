@@ -13,21 +13,21 @@
 void *
 operator new(std::size_t n)
 {
-  std::cout << __FUNCTION__ << ": [Allocating " << n << " bytes]\n";
-  return malloc(n);
+    std::cout << __FUNCTION__ << ": [Allocating " << n << " bytes]\n";
+    return malloc(n);
 }
 //-------------------------------------------------------------------------------------------------
 void
 operator delete(void* p)
 {
-	std::cout << __FUNCTION__ << std::endl;
-	free(p);
+    std::cout << __FUNCTION__ << std::endl;
+    free(p);
 }
 //-------------------------------------------------------------------------------------------------
 std::string
 buildLongString()
 {
-  return "This string is so long it can't possibly be inline (SSO)";
+    return "This string is so long it can't possibly be inline (SSO)";
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
