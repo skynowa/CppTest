@@ -7,4 +7,4 @@
 
 ## [C++17](Core/C++17)
 
-* [x] [Attributes](Core/C++17/Attributes.cpp)
+* [Attributes](Core/C++17/Attributes.cpp)
