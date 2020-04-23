@@ -1,35 +1,48 @@
-[[nodiscard]]
+/**
+ * \file  main.cpp
+ * \brief [[nodiscard]]
+ *
+ * This attribute is used to indicate that the return value of the function should not be ignored:
+ * [[nodiscard]] can be also applied to data types or enumerations to mark all functions that
+ * return this type as [[nodiscard]]:
+ */
 
-This attribute is used to indicate that the return value of the function should not be ignored:
 
-// C++17
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//-------------------------------------------------------------------------------------------------
 [[nodiscard]] int Sum(int a, int b)
 {
-  return a + b;
+    return a + b;
 }
 
-int main()
-{
-  Sum(5, 6); // Compiler/analyzer warning will be issued
-  return 0;
-}
-[[nodiscard]] can be also applied to data types or enumerations to mark all functions that return this type as [[nodiscard]]:
-
-// C++17
 struct [[nodiscard]] NoDiscardType
 {
-  char a;
-  int b;
+    char a;
+    int b;
 };
 
 NoDiscardType Func()
 {
-  return {'a', 42};
+    return {'a', 42};
 }
-
-int main()
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
-  Func(); // Compiler/analyzer warning will be issued
+    Sum(5, 6); // Compiler/analyzer warning will be issued
 
-  return 0;
+    Func(); // Compiler/analyzer warning will be issued
+
+    // std::cout << TRACE_VAR("") << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+
+
+#endif
