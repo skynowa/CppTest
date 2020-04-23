@@ -47,8 +47,6 @@ int main(int, char **)
     iRv = std::atexit(atexit_handler); // handler will be called
     STD_TEST_RET(iRv == 0, EXIT_FAILURE);
 
-    std::cout << "test\n";
-
     std::exit(EXIT_FAILURE);
 
     std::cout << "After std::exit()" << std::endl;
