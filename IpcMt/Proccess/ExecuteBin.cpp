@@ -90,54 +90,23 @@ spc_popen(
 	STD_TEST_RET(iRv != -1, false);
 
 	iRv = ::pipe(pipeStdOut);
-	if (iRv == -1) {
-		::close(pipeStdIn[1]);
-		::close(pipeStdIn[0]);
-
-		return false;
-	}
+	STD_TEST_RET(iRv != -1, false);
 
 	// StdOut
 	p.fdRead = ::fdopen(pipeStdOut[0], "r");
-	if (p.fdRead == nullptr) {
-		::close(pipeStdOut[1]);
-		::close(pipeStdOut[0]);
-
-		::close(pipeStdIn[1]);
-		::close(pipeStdIn[0]);
-
-		return false;
-	}
+	STD_TEST_RET(p.fdRead != nullptr, false);
 
 	// StdIn
 	p.fdWrite = ::fdopen(pipeStdIn[1], "w");
-	if (p.fdWrite == nullptr) {
-		fclose(p.fdRead);
-
-		::close(pipeStdOut[1]);
-
-		::close(pipeStdIn[1]);
-		::close(pipeStdIn[0]);
-
-		return false;
-	}
+	STD_TEST_RET(p.fdWrite != nullptr, false);
 
 	// fork
 	p.pidChild = ::spc_fork();
-	if (p.pidChild == -1) {
-		fclose(p.fdWrite);
-		fclose(p.fdRead);
-
-		::close(pipeStdOut[1]);
-		::close(pipeStdIn[0]);
-
-		return false;
-	}
+	STD_TEST_RET(iRv != -1, false);
 
 	// child process
 	if (p.pidChild == 0) {
 		::close(pipeStdOut[0]);
-		::close(pipeStdIn[1]);
 
 		if (pipeStdIn[0] != 0) {
 			::dup2(pipeStdIn[0], 0);
