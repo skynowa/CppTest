@@ -18,15 +18,15 @@
 //-------------------------------------------------------------------------------------------------
 struct SPC_PIPE
 {
-	FILE  *read_fd {};
-	FILE  *write_fd {};
-	pid_t  child_pid {};
+	FILE  *fdRead {};
+	FILE  *fdWrite {};
+	pid_t  pidChild {};
 
 	void clear()
 	{
-		read_fd   = 0;
-		write_fd  = 0;
-		child_pid = -1;
+		fdRead   = 0;
+		fdWrite  = 0;
+		pidChild = -1;
 	};
 };
 //-------------------------------------------------------------------------------------------------
@@ -67,8 +67,8 @@ spc_fork()
 //-------------------------------------------------------------------------------------------------
 /**
  * If spc_popen( ) is successful, the SPC_PIPE object it returns contains two FILE objects:
- * read_fd can be used to read data written by the new program to its stdout file descriptor.
- * write_fd can be used to write data to the new program for reading from its stdin file descriptor.
+ * fdRead can be used to read data written by the new program to its stdout file descriptor.
+ * fdWrite can be used to write data to the new program for reading from its stdin file descriptor.
  * Unlike popen( ), which in its most portable form is unidirectional, spc_popen( ) is bidirectional
  */
 bool
@@ -87,9 +87,7 @@ spc_popen(
 	int pipeStdOut[2] {};
 
 	iRv = ::pipe(pipeStdIn);
-	if (iRv == -1) {
-		return false;
-	}
+	STD_TEST_RET(iRv != -1, false);
 
 	iRv = ::pipe(pipeStdOut);
 	if (iRv == -1) {
@@ -99,8 +97,8 @@ spc_popen(
 		return false;
 	}
 
-	p.read_fd = ::fdopen(pipeStdOut[0], "r");
-	if (p.read_fd == nullptr) {
+	p.fdRead = ::fdopen(pipeStdOut[0], "r");
+	if (p.fdRead == nullptr) {
 		::close(pipeStdOut[1]);
 		::close(pipeStdOut[0]);
 
@@ -110,9 +108,9 @@ spc_popen(
 		return false;
 	}
 
-	p.write_fd = ::fdopen(pipeStdIn[1], "w");
-	if (p.write_fd == nullptr) {
-		fclose(p.read_fd);
+	p.fdWrite = ::fdopen(pipeStdIn[1], "w");
+	if (p.fdWrite == nullptr) {
+		fclose(p.fdRead);
 
 		::close(pipeStdOut[1]);
 
@@ -122,10 +120,10 @@ spc_popen(
 		return false;
 	}
 
-	p.child_pid = ::spc_fork();
-	if (p.child_pid == -1) {
-		fclose(p.write_fd);
-		fclose(p.read_fd);
+	p.pidChild = ::spc_fork();
+	if (p.pidChild == -1) {
+		fclose(p.fdWrite);
+		fclose(p.fdRead);
 
 		::close(pipeStdOut[1]);
 		::close(pipeStdIn[0]);
@@ -134,7 +132,7 @@ spc_popen(
 	}
 
 	// this is the child process
-	if (p.child_pid == 0) {
+	if (p.pidChild == 0) {
 		::close(pipeStdOut[0]);
 		::close(pipeStdIn[1]);
 
@@ -166,19 +164,19 @@ spc_pclose(
 	int   status {};
 	pid_t pid {};
 
-	if (p.child_pid != -1) {
+	if (p.pidChild != -1) {
 		do {
-			pid = ::waitpid(p.child_pid, &status, 0);
+			pid = ::waitpid(p.pidChild, &status, 0);
 		}
 		while (pid == -1 &&errno == EINTR);
 	}
 
-	if (p.read_fd != nullptr) {
-		::fclose(p.read_fd);
+	if (p.fdRead != nullptr) {
+		::fclose(p.fdRead);
 	}
 
-	if (p.write_fd != nullptr) {
-		::fclose(p.write_fd);
+	if (p.fdWrite != nullptr) {
+		::fclose(p.fdWrite);
 	}
 
 	if (pid != -1 && WIFEXITED(status)) {
