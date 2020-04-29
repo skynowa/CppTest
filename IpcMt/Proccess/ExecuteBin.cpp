@@ -73,39 +73,42 @@ spc_fork()
  */
 bool
 spc_popen(
-	SPC_PIPE   &p,		///< [in,out]
+	SPC_PIPE   &out_p,	///< [in,out]
 	const char *path,
 	char *const argv[],
 	char *const envp[]
 )
 {
-	p.clear();
+	out_p.clear();
 
 	int iRv {};
 
+	// StdIn
 	int pipeStdIn[2] {};
-	int pipeStdOut[2] {};
+	{
+		iRv = ::pipe(pipeStdIn);
+		STD_TEST_RET(iRv != -1, false);
 
-	iRv = ::pipe(pipeStdIn);
-	STD_TEST_RET(iRv != -1, false);
-
-	iRv = ::pipe(pipeStdOut);
-	STD_TEST_RET(iRv != -1, false);
+		out_p.fdWrite = ::fdopen(pipeStdIn[1], "w");
+		STD_TEST_RET(out_p.fdWrite != nullptr, false);
+	}
 
 	// StdOut
-	p.fdRead = ::fdopen(pipeStdOut[0], "r");
-	STD_TEST_RET(p.fdRead != nullptr, false);
+	int pipeStdOut[2] {};
+	{
+		iRv = ::pipe(pipeStdOut);
+		STD_TEST_RET(iRv != -1, false);
 
-	// StdIn
-	p.fdWrite = ::fdopen(pipeStdIn[1], "w");
-	STD_TEST_RET(p.fdWrite != nullptr, false);
+		out_p.fdRead = ::fdopen(pipeStdOut[0], "r");
+		STD_TEST_RET(out_p.fdRead != nullptr, false);
+	}
 
 	// fork
-	p.pidChild = ::spc_fork();
+	out_p.pidChild = ::spc_fork();
 	STD_TEST_RET(iRv != -1, false);
 
 	// child process
-	if (p.pidChild == 0) {
+	if (out_p.pidChild == 0) {
 		::close(pipeStdOut[0]);
 
 		if (pipeStdIn[0] != 0) {
@@ -118,7 +121,9 @@ spc_popen(
 			::close(pipeStdOut[1]);
 		}
 
+		// execute
 		::execve(path, argv, envp);
+
 		::exit(127);
 	}
 
@@ -130,25 +135,25 @@ spc_popen(
 //-------------------------------------------------------------------------------------------------
 int
 spc_pclose(
-	SPC_PIPE &p
+	SPC_PIPE &out_p
 )
 {
 	int   status {};
 	pid_t pid {};
 
-	if (p.pidChild != -1) {
+	if (out_p.pidChild != -1) {
 		do {
-			pid = ::waitpid(p.pidChild, &status, 0);
+			pid = ::waitpid(out_p.pidChild, &status, 0);
 		}
 		while (pid == -1 &&errno == EINTR);
 	}
 
-	if (p.fdRead != nullptr) {
-		::fclose(p.fdRead);
+	if (out_p.fdRead != nullptr) {
+		::fclose(out_p.fdRead);
 	}
 
-	if (p.fdWrite != nullptr) {
-		::fclose(p.fdWrite);
+	if (out_p.fdWrite != nullptr) {
+		::fclose(out_p.fdWrite);
 	}
 
 	if (pid != -1 && WIFEXITED(status)) {
