@@ -90,18 +90,18 @@ spc_popen(
 	}
 
 	if (::pipe(stdout_pipe) == -1) {
-		close(stdin_pipe[1]);
-		close(stdin_pipe[0]);
+		::close(stdin_pipe[1]);
+		::close(stdin_pipe[0]);
 		free(p);
 
 		return 0;
 	}
 
 	if (!(p->read_fd = ::fdopen(stdout_pipe[0], "r"))) {
-		close(stdout_pipe[1]);
-		close(stdout_pipe[0]);
-		close(stdin_pipe[1]);
-		close(stdin_pipe[0]);
+		::close(stdout_pipe[1]);
+		::close(stdout_pipe[0]);
+		::close(stdin_pipe[1]);
+		::close(stdin_pipe[0]);
 		free(p);
 
 		return 0;
@@ -109,9 +109,9 @@ spc_popen(
 
 	if (!(p->write_fd = ::fdopen(stdin_pipe[1], "w"))) {
 		fclose(p->read_fd);
-		close(stdout_pipe[1]);
-		close(stdin_pipe[1]);
-		close(stdin_pipe[0]);
+		::close(stdout_pipe[1]);
+		::close(stdin_pipe[1]);
+		::close(stdin_pipe[0]);
 		free(p);
 
 		return 0;
@@ -120,8 +120,8 @@ spc_popen(
 	if ((p->child_pid = ::spc_fork()) == -1) {
 		fclose(p->write_fd);
 		fclose(p->read_fd);
-		close(stdout_pipe[1]);
-		close(stdin_pipe[0]);
+		::close(stdout_pipe[1]);
+		::close(stdin_pipe[0]);
 		free(p);
 
 		return 0;
@@ -129,25 +129,25 @@ spc_popen(
 
 	if (!p->child_pid) {
 		/* this is the child process */
-		close(stdout_pipe[0]);
-		close(stdin_pipe[1]);
+		::close(stdout_pipe[0]);
+		::close(stdin_pipe[1]);
 
 		if (stdin_pipe[0] != 0) {
-			dup2(stdin_pipe[0], 0);
-			close(stdin_pipe[0]);
+			::dup2(stdin_pipe[0], 0);
+			::close(stdin_pipe[0]);
 		}
 
 		if (stdout_pipe[1] != 1) {
-			dup2(stdout_pipe[1], 1);
-			close(stdout_pipe[1]);
+			::dup2(stdout_pipe[1], 1);
+			::close(stdout_pipe[1]);
 		}
 
-		execve(path, argv, envp);
-		exit(127);
+		::execve(path, argv, envp);
+		::exit(127);
 	}
 
-	close(stdout_pipe[1]);
-	close(stdin_pipe[0]);
+	::close(stdout_pipe[1]);
+	::close(stdin_pipe[0]);
 
 	return p;
 }
