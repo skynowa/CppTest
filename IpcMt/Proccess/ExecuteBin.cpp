@@ -97,6 +97,7 @@ spc_popen(
 		return false;
 	}
 
+	// StdOut
 	p.fdRead = ::fdopen(pipeStdOut[0], "r");
 	if (p.fdRead == nullptr) {
 		::close(pipeStdOut[1]);
@@ -108,6 +109,7 @@ spc_popen(
 		return false;
 	}
 
+	// StdIn
 	p.fdWrite = ::fdopen(pipeStdIn[1], "w");
 	if (p.fdWrite == nullptr) {
 		fclose(p.fdRead);
@@ -120,6 +122,7 @@ spc_popen(
 		return false;
 	}
 
+	// fork
 	p.pidChild = ::spc_fork();
 	if (p.pidChild == -1) {
 		fclose(p.fdWrite);
@@ -131,7 +134,7 @@ spc_popen(
 		return false;
 	}
 
-	// this is the child process
+	// child process
 	if (p.pidChild == 0) {
 		::close(pipeStdOut[0]);
 		::close(pipeStdIn[1]);
