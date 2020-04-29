@@ -18,9 +18,16 @@
 //-------------------------------------------------------------------------------------------------
 struct SPC_PIPE
 {
-	FILE  *read_fd;
-	FILE  *write_fd;
-	pid_t  child_pid;
+	FILE  *read_fd {};
+	FILE  *write_fd {};
+	pid_t  child_pid {};
+
+	void clear()
+	{
+		read_fd   = 0;
+		write_fd  = 0;
+		child_pid = -1;
+	};
 };
 //-------------------------------------------------------------------------------------------------
 /**
@@ -34,22 +41,22 @@ struct SPC_PIPE
  * In other words, the new process is most often the worker process.
  */
 pid_t
-spc_fork(void) {
-	pid_t childpid;
-
-	if ((childpid = ::fork()) == -1) {
+spc_fork()
+{
+	pid_t pidChild = ::fork();
+	if (pidChild == -1) {
 		return -1;
 	}
 
-	/* Reseed PRNGs in both the parent and the child */
-	/* See Chapter 11 for examples */
+	// Reseed PRNGs in both the parent and the child
+	// See Chapter 11 for examples
 
-	/* If this is the parent process, there's nothing more to do */
-	if (childpid != 0) {
-		return childpid;
+	// If this is the parent process, there's nothing more to do
+	if (pidChild != 0) {
+		return pidChild;
 	}
 
-	/* This is the child process */
+	// This is the child process
 #if 0
 	spc_sanitize_files();   /* Close all open files.  See Recipe 1.1 */
 	spc_drop_privileges(1); /* Permanently drop privileges.  See Recipe 1.3 */
@@ -64,118 +71,115 @@ spc_fork(void) {
  * write_fd can be used to write data to the new program for reading from its stdin file descriptor.
  * Unlike popen( ), which in its most portable form is unidirectional, spc_popen( ) is bidirectional
  */
-SPC_PIPE *
+bool
 spc_popen(
+	SPC_PIPE   &p,		///< [in,out]
 	const char *path,
 	char *const argv[],
 	char *const envp[]
 )
 {
-	SPC_PIPE *p {};
-	int       stdin_pipe[2] {};
-	int       stdout_pipe[2] {};
+	p.clear();
 
-	if (!(p = (SPC_PIPE *)malloc(sizeof(SPC_PIPE)))) {
-		return 0;
+	int iRv {};
+
+	int pipeStdIn[2] {};
+	int pipeStdOut[2] {};
+
+	iRv = ::pipe(pipeStdIn);
+	if (iRv == -1) {
+		return false;
 	}
 
-	p->read_fd   = 0;
-	p->write_fd  = 0;
-	p->child_pid = -1;
+	iRv = ::pipe(pipeStdOut);
+	if (iRv == -1) {
+		::close(pipeStdIn[1]);
+		::close(pipeStdIn[0]);
 
-	if (::pipe(stdin_pipe) == -1) {
-		free(p);
-
-		return 0;
+		return false;
 	}
 
-	if (::pipe(stdout_pipe) == -1) {
-		::close(stdin_pipe[1]);
-		::close(stdin_pipe[0]);
-		free(p);
+	p.read_fd = ::fdopen(pipeStdOut[0], "r");
+	if (p.read_fd == nullptr) {
+		::close(pipeStdOut[1]);
+		::close(pipeStdOut[0]);
 
-		return 0;
+		::close(pipeStdIn[1]);
+		::close(pipeStdIn[0]);
+
+		return false;
 	}
 
-	if (!(p->read_fd = ::fdopen(stdout_pipe[0], "r"))) {
-		::close(stdout_pipe[1]);
-		::close(stdout_pipe[0]);
-		::close(stdin_pipe[1]);
-		::close(stdin_pipe[0]);
-		free(p);
+	p.write_fd = ::fdopen(pipeStdIn[1], "w");
+	if (p.write_fd == nullptr) {
+		fclose(p.read_fd);
 
-		return 0;
+		::close(pipeStdOut[1]);
+
+		::close(pipeStdIn[1]);
+		::close(pipeStdIn[0]);
+
+		return false;
 	}
 
-	if (!(p->write_fd = ::fdopen(stdin_pipe[1], "w"))) {
-		fclose(p->read_fd);
-		::close(stdout_pipe[1]);
-		::close(stdin_pipe[1]);
-		::close(stdin_pipe[0]);
-		free(p);
+	p.child_pid = ::spc_fork();
+	if (p.child_pid == -1) {
+		fclose(p.write_fd);
+		fclose(p.read_fd);
 
-		return 0;
+		::close(pipeStdOut[1]);
+		::close(pipeStdIn[0]);
+
+		return false;
 	}
 
-	if ((p->child_pid = ::spc_fork()) == -1) {
-		fclose(p->write_fd);
-		fclose(p->read_fd);
-		::close(stdout_pipe[1]);
-		::close(stdin_pipe[0]);
-		free(p);
+	// this is the child process
+	if (p.child_pid == 0) {
+		::close(pipeStdOut[0]);
+		::close(pipeStdIn[1]);
 
-		return 0;
-	}
-
-	if (!p->child_pid) {
-		/* this is the child process */
-		::close(stdout_pipe[0]);
-		::close(stdin_pipe[1]);
-
-		if (stdin_pipe[0] != 0) {
-			::dup2(stdin_pipe[0], 0);
-			::close(stdin_pipe[0]);
+		if (pipeStdIn[0] != 0) {
+			::dup2(pipeStdIn[0], 0);
+			::close(pipeStdIn[0]);
 		}
 
-		if (stdout_pipe[1] != 1) {
-			::dup2(stdout_pipe[1], 1);
-			::close(stdout_pipe[1]);
+		if (pipeStdOut[1] != 1) {
+			::dup2(pipeStdOut[1], 1);
+			::close(pipeStdOut[1]);
 		}
 
 		::execve(path, argv, envp);
 		::exit(127);
 	}
 
-	::close(stdout_pipe[1]);
-	::close(stdin_pipe[0]);
+	::close(pipeStdOut[1]);
+	::close(pipeStdIn[0]);
 
-	return p;
+	return true;
 }
 //-------------------------------------------------------------------------------------------------
 int
 spc_pclose(
-	SPC_PIPE *p
+	SPC_PIPE &p
 )
 {
 	int   status {};
 	pid_t pid {};
 
-	if (p->child_pid != -1) {
+	if (p.child_pid != -1) {
 		do {
-			pid = ::waitpid(p->child_pid, &status, 0);
+			pid = ::waitpid(p.child_pid, &status, 0);
 		}
 		while (pid == -1 &&errno == EINTR);
 	}
 
-	if (p->read_fd) {
-		::fclose(p->read_fd);
+	if (p.read_fd != nullptr) {
+		::fclose(p.read_fd);
 	}
 
-	if (p->write_fd) {
-		::fclose(p->write_fd);
+	if (p.write_fd != nullptr) {
+		::fclose(p.write_fd);
 	}
-
-	::free(p);
 
 	if (pid != -1 && WIFEXITED(status)) {
 		return WEXITSTATUS(status);
@@ -186,16 +190,24 @@ spc_pclose(
 //-------------------------------------------------------------------------------------------------
 int main(int, char *const argv[], char *const envp[])
 {
-	const std::string path = "/usr/bin/git";
-	std::cout << TRACE_VAR(path) << std::endl;
+	bool bRv {};
+	int  iRv {};
 
-	SPC_PIPE *p = ::spc_popen(path.c_str(), argv, envp);
-	(int)::spc_pclose(p);
+	SPC_PIPE p;
+
+	const std::string path = "/usr/bin/git";
+
+	bRv = ::spc_popen(p, path.c_str(), argv, envp);
+	iRv = ::spc_pclose(p);
+
+	std::cout << TRACE_VAR3(path, bRv, iRv) << std::endl;
 
 	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 #if OUTPUT
+
+path: /usr/bin/git, bRv: 1, iRv: 1
 
 #endif
