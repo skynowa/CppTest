@@ -83,13 +83,13 @@ spc_popen(
 	p->write_fd  = 0;
 	p->child_pid = -1;
 
-	if (pipe(stdin_pipe) == -1) {
+	if (::pipe(stdin_pipe) == -1) {
 		free(p);
 
 		return 0;
 	}
 
-	if (pipe(stdout_pipe) == -1) {
+	if (::pipe(stdout_pipe) == -1) {
 		close(stdin_pipe[1]);
 		close(stdin_pipe[0]);
 		free(p);
@@ -189,8 +189,8 @@ int main(int, char *const argv[], char *const envp[])
 	const std::string path = "/usr/bin/git";
 	std::cout << TRACE_VAR(path) << std::endl;
 
-	SPC_PIPE *pipe = ::spc_popen(path.c_str(), argv, envp);
-	(int)::spc_pclose(pipe);
+	SPC_PIPE *p = ::spc_popen(path.c_str(), argv, envp);
+	(int)::spc_pclose(p);
 
 	return EXIT_SUCCESS;
 }
