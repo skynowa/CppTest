@@ -2,7 +2,7 @@
  * \file  main.cpp
  * \brief Catch stderr and stdout from external program
  *
- * COMMENTS
+ * http://www.cplusplus.com/forum/unices/82836/
  */
 
 #include <StdStream.h>
@@ -35,7 +35,7 @@ int main(int, char **argv)
 	int pipeErr[2] {};
 	::pipe(pipeErr);
 
-	int pid = ::fork();
+	const int pid = ::fork();
 	if (pid == ProcessStatus::ChildOk) {
 		std::cout << "Child: " << TRACE_VAR(pid) << std::endl;
 
@@ -89,10 +89,10 @@ int main(int, char **argv)
 
 #if OUTPUT
 
-Parent: pid: 14069
+Parent: pid: 21470
 Child: pid: 0
 Parent: readed
 Parent: waited, status: 0
-Finished: pid: 14069
+Finished: pid: 21470
 
 #endif
