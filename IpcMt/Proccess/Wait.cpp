@@ -19,25 +19,30 @@ int main(int, char **)
 	time_t t {};
 	int    status {};
 
-	if ((pid = fork()) < 0) {
-		perror("fork() error");
+	pid = ::fork();
+	if (pid < 0) {
+		// ChildError
+		::perror("fork() error");
 	}
 	else if (pid == 0) {
-		sleep(5);
-		exit(1);
+		// ChildOk
+		::sleep(3);
+		::exit(123);
 	}
 	else {
+		// ParentOk
 		do {
-			if ((pid = waitpid(pid, &status, WNOHANG)) == -1) {
-				perror("wait() error");
+			pid = ::waitpid(pid, &status, WNOHANG);
+			if      (pid == -1) {
+				::perror("wait() error");
 			}
 			else if (pid == 0) {
 				time(&t);
 				printf("child is still running at %s", ctime(&t));
-				sleep(1);
+				::sleep(1);
 			}
 			else {
-				if (WIFEXITED(status))
+				if ( WIFEXITED(status) )
 					printf("child exited with status of %d (%d)\n", WEXITSTATUS(status), status);
 				else
 					puts("child did not exit successfully");
@@ -54,11 +59,10 @@ int main(int, char **)
 
 #if OUTPUT
 
-child is still running at Sat May  9 01:26:34 2020
-child is still running at Sat May  9 01:26:35 2020
-child is still running at Sat May  9 01:26:36 2020
-child is still running at Sat May  9 01:26:37 2020
-child is still running at Sat May  9 01:26:38 2020
-child exited with status of 1 (256)
+child is still running at Sat May  9 01:33:23 2020
+child is still running at Sat May  9 01:33:24 2020
+child is still running at Sat May  9 01:33:25 2020
+child is still running at Sat May  9 01:33:26 2020
+child exited with status of 123 (31488)
 
 #endif
