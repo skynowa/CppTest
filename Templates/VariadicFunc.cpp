@@ -11,25 +11,25 @@
 void
 foo()
 {
-	std::cout << TRACE_VAR(__FUNCTION__) << std::endl;
+	std::cout << "[n/a]" << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
 foo(int i)
 {
-	std::cout << TRACE_VAR2(__FUNCTION__, i) << std::endl;
+	std::cout << TRACE_VAR(i) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
 foo(int i, const char *c)
 {
-	std::cout << TRACE_VAR3(__FUNCTION__, i, c) << std::endl;
+	std::cout << TRACE_VAR2(i, c) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
 foo(int i, double d, void *ptr)
 {
-	std::cout << TRACE_VAR4(__FUNCTION__, i, d, ptr) << std::endl;
+	std::cout << TRACE_VAR3(i, d, ptr) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
@@ -58,9 +58,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-format: format0, argsSize: 0: __FUNCTION__: foo
-format: format1, argsSize: 1: __FUNCTION__: foo, i: 1
-format: format2, argsSize: 2: __FUNCTION__: foo, i: 2, c: bbb
-format: format3, argsSize: 3: __FUNCTION__: foo, i: 3, d: 3, ptr: 0
+format: format0, argsSize: 0: [n/a]
+format: format1, argsSize: 1: i: 1
+format: format2, argsSize: 2: i: 2, c: bbb
+format: format3, argsSize: 3: i: 3, d: 3, ptr: 0
 
 #endif
