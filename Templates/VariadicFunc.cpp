@@ -6,6 +6,7 @@
 
 #include <StdStream.h>
 #include <StdTest.h>
+#include <any>
 
 //-------------------------------------------------------------------------------------------------
 void
@@ -51,23 +52,52 @@ template<typename ...ArgsT>
 void
 formatStr17(const char *fmt, const ArgsT &...args)
 {
+	(void)fmt;
+
+#if 0
 	std::cout << __FUNCTION__ << ": ";
 
     ((std::cout << fmt << ", " << args << ", "), ...);
+
+#elif 1
+	const std::vector<std::any> &a = {args ...};
+
+	for (const auto &it : a) {
+		if ( !it.has_value() ) {
+			std::cout << "no value\n";
+			continue;
+		}
+
+		try {
+			if (it.type() == typeid(std::string)) std::cout << std::any_cast<std::string>(it);
+			if (it.type() == typeid(int))         std::cout << std::any_cast<int>(it);
+			if (it.type() == typeid(double))      std::cout << std::any_cast<double>(it);
+			if (it.type() == typeid(char))        std::cout << std::any_cast<char>(it);
+		}
+		catch (const std::bad_any_cast& e) {
+			std::cout << "what: " << e.what() << '\n';
+		}
+
+		std::cout << ", ";
+	}
+	std::cout << std::endl;
+#else
+	(std::cout << fmt << ", " << ... << args) << std::endl;
+#endif
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-#if 1
+#if 0
 	formatStr14("fmt0");
 	formatStr14("fmt1", 100);
 	formatStr14("fmt2", 200, "bbb");
-	formatStr14("fmt3", 300, 300.0, 'a');
+	formatStr14("fmt3", 300, 400.25, 'a');
 #else
-	formatStr17("fmt0");					std::cout << std::endl;
-	formatStr17("fmt1", 100);				std::cout << std::endl;
-	formatStr17("fmt2", 200, "bbb");		std::cout << std::endl;
-	formatStr17("fmt3", 300, 300.0, 'a');	std::cout << std::endl;
+	// formatStr17("fmt0");					// std::cout << std::endl;
+	// formatStr17("fmt1", 100);				// std::cout << std::endl;
+	// formatStr17("fmt2", 200, "bbb");		// std::cout << std::endl;
+	formatStr17("fmt3", 300, 400.25, 'a');	// std::cout << std::endl;
 #endif
 
     return 0;
