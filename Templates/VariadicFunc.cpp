@@ -9,47 +9,50 @@
 
 //-------------------------------------------------------------------------------------------------
 void
-foo()
+format()
 {
-	std::cout << "[n/a]" << std::endl;
+	std::cout << "[format0]: " << "[n/a]" << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
-foo(int i)
+format(int i)
 {
-	std::cout << TRACE_VAR(i) << std::endl;
+	std::cout << "[format1]: " << TRACE_VAR(i) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
-foo(int i, const char *c)
+format(int i, const char *c)
 {
-	std::cout << TRACE_VAR2(i, c) << std::endl;
+	std::cout << "[format2]: " << TRACE_VAR2(i, c) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
-foo(int i, double d, void *ptr)
+format(int i, double d, void *ptr)
 {
-	std::cout << TRACE_VAR3(i, d, ptr) << std::endl;
+	std::cout << "[format3]: " << TRACE_VAR3(i, d, ptr) << std::endl;
 }
+//-------------------------------------------------------------------------------------------------
+
+
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
-foo(const char *format, const ArgsT &...args)
+format(const char *fmt, const ArgsT &...args)
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
-	std::cout << TRACE_VAR2(format, argsSize) << ": ";
+	std::cout << "[format...]: " << TRACE_VAR2(fmt, argsSize) << ": ";
 
 	// Unpack the arguments for further treatment
-    foo(args...);
+    format(args...);
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	foo("format0");
-	foo("format1", 1);
-	foo("format2", 2, "bbb");
-	foo("format3", 3, 3.0, nullptr);
+	format("fmt0");
+	format("fmt1", 1);
+	format("fmt2", 2, "bbb");
+	format("fmt3", 3, 3.0, nullptr);
 
     return 0;
 }
