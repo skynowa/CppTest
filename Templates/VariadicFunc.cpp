@@ -54,12 +54,13 @@ formatStr17(const char *fmt, const ArgsT &...args)
 {
 	(void)fmt;
 
-#if 0
-	std::cout << __FUNCTION__ << ": ";
+#if 1
+	std::stringstream ss;
+    ((ss << args << ", "), ...);
 
-    ((std::cout << fmt << ", " << args << ", "), ...);
+	std::cout << __FUNCTION__ << ": "  << fmt << ", " << ss.str();
 
-#elif 1
+#elif 0
 	const std::vector<std::any> &a = {args ...};
 
 	for (const auto &it : a) {
@@ -80,10 +81,10 @@ formatStr17(const char *fmt, const ArgsT &...args)
 
 		std::cout << ", ";
 	}
-	std::cout << std::endl;
 #else
 	(std::cout << fmt << ", " << ... << args) << std::endl;
 #endif
+	std::cout << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -94,10 +95,10 @@ int main(int, char **)
 	formatStr14("fmt2", 200, "bbb");
 	formatStr14("fmt3", 300, 400.25, 'a');
 #else
-	// formatStr17("fmt0");					// std::cout << std::endl;
-	// formatStr17("fmt1", 100);				// std::cout << std::endl;
-	// formatStr17("fmt2", 200, "bbb");		// std::cout << std::endl;
-	formatStr17("fmt3", 300, 400.25, 'a');	// std::cout << std::endl;
+	// formatStr17("fmt0");
+	// formatStr17("fmt1", 100);
+	// formatStr17("fmt2", 200, "bbb");
+	formatStr17("fmt3", 300, 400.25, 'a');
 #endif
 
     return 0;
