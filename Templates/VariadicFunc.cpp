@@ -50,9 +50,9 @@ formatStr17_v2(
         // arguments. if args... is empty, there will be no call to
         // print_all(os).
         formatStr17_v2(fmt, args...);
-    }
-
-	std::cout << "*" << std::endl;
+    } else {
+		std::cout << "*" << std::endl;
+	}
 }
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
@@ -121,8 +121,8 @@ int main(int, char **)
 	// formatStr17("fmt3", 300, 400.25, 'a');
 
 	// formatStr17_v2("fmt0");
-	formatStr17_v2("fmt1", 100);
-	formatStr17_v2("fmt2", 200, "bbb");
+	// formatStr17_v2("fmt1", 100);
+	// formatStr17_v2("fmt2", 200, "bbb");
 	formatStr17_v2("fmt3", 300, 400.25, 'a');
 #endif
 
