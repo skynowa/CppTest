@@ -27,9 +27,9 @@ format(int i, const char *c)
 }
 //-------------------------------------------------------------------------------------------------
 void
-format(int i, double d, void *ptr)
+format(int i, double d, char ch)
 {
-	std::cout << "[format3]: " << TRACE_VAR3(i, d, ptr) << std::endl;
+	std::cout << "[format3]: " << TRACE_VAR3(i, d, ch) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -41,7 +41,7 @@ formatStr14(const char *fmt, const ArgsT &...args)
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
-	std::cout << "[formatStr...]: " << TRACE_VAR2(fmt, argsSize) << ": ";
+	std::cout << __FUNCTION__ << ": " << TRACE_VAR2(fmt, argsSize) << ": ";
 
 	// Unpack the arguments for further treatment
     format(args...);
@@ -58,7 +58,7 @@ formatStr17(const char *fmt, const ArgsT &...args)
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-#if 0
+#if 1
 	formatStr14("fmt0");
 	formatStr14("fmt1", 100);
 	formatStr14("fmt2", 200, "bbb");
@@ -77,9 +77,14 @@ int main(int, char **)
 
 #if OUTPUT
 
-[formatStr...]: fmt: fmt0, argsSize: 0: [format0]: [n/a]
-[formatStr...]: fmt: fmt1, argsSize: 1: [format1]: i: 1
-[formatStr...]: fmt: fmt2, argsSize: 2: [format2]: i: 2, c: bbb
-[formatStr...]: fmt: fmt3, argsSize: 3: [format3]: i: 3, d: 3, ptr: 0
+formatStr14: fmt: fmt0, argsSize: 0: [format0]: [n/a]
+formatStr14: fmt: fmt1, argsSize: 1: [format1]: i: 100
+formatStr14: fmt: fmt2, argsSize: 2: [format2]: i: 200, c: bbb
+formatStr14: fmt: fmt3, argsSize: 3: [format3]: i: 300, d: 300, ch: a
+
+formatStr17:
+formatStr17: fmt1, 100,
+formatStr17: fmt2, 200, fmt2, bbb,
+formatStr17: fmt3, 300, fmt3, 300, fmt3, a,
 
 #endif
