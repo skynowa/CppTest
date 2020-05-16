@@ -37,7 +37,7 @@ format(int i, double d, void *ptr)
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
-formatStr(const char *fmt, const ArgsT &...args)
+formatStr14(const char *fmt, const ArgsT &...args)
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
@@ -46,13 +46,29 @@ formatStr(const char *fmt, const ArgsT &...args)
 	// Unpack the arguments for further treatment
     format(args...);
 }
+
+template<typename ...ArgsT>
+void
+formatStr17(const char *fmt, const ArgsT &...args)
+{
+	std::cout << __FUNCTION__ << ": ";
+
+    ((std::cout << fmt << ", " << args << ", "), ...);
+}
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	formatStr("fmt0");
-	formatStr("fmt1", 1);
-	formatStr("fmt2", 2, "bbb");
-	formatStr("fmt3", 3, 3.0, nullptr);
+#if 0
+	formatStr14("fmt0");
+	formatStr14("fmt1", 100);
+	formatStr14("fmt2", 200, "bbb");
+	formatStr14("fmt3", 300, 300.0, 'a');
+#else
+	formatStr17("fmt0");					std::cout << std::endl;
+	formatStr17("fmt1", 100);				std::cout << std::endl;
+	formatStr17("fmt2", 200, "bbb");		std::cout << std::endl;
+	formatStr17("fmt3", 300, 300.0, 'a');	std::cout << std::endl;
+#endif
 
     return 0;
 }
