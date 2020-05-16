@@ -37,11 +37,11 @@ format(int i, double d, void *ptr)
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
-format(const char *fmt, const ArgsT &...args)
+formatStr(const char *fmt, const ArgsT &...args)
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
-	std::cout << "[format...]: " << TRACE_VAR2(fmt, argsSize) << ": ";
+	std::cout << "[formatStr...]: " << TRACE_VAR2(fmt, argsSize) << ": ";
 
 	// Unpack the arguments for further treatment
     format(args...);
@@ -49,10 +49,10 @@ format(const char *fmt, const ArgsT &...args)
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	format("fmt0");
-	format("fmt1", 1);
-	format("fmt2", 2, "bbb");
-	format("fmt3", 3, 3.0, nullptr);
+	formatStr("fmt0");
+	formatStr("fmt1", 1);
+	formatStr("fmt2", 2, "bbb");
+	formatStr("fmt3", 3, 3.0, nullptr);
 
     return 0;
 }
