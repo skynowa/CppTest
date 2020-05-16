@@ -61,9 +61,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-format: format0, argsSize: 0: [n/a]
-format: format1, argsSize: 1: i: 1
-format: format2, argsSize: 2: i: 2, c: bbb
-format: format3, argsSize: 3: i: 3, d: 3, ptr: 0
+[formatStr...]: fmt: fmt0, argsSize: 0: [format0]: [n/a]
+[formatStr...]: fmt: fmt1, argsSize: 1: [format1]: i: 1
+[formatStr...]: fmt: fmt2, argsSize: 2: [format2]: i: 2, c: bbb
+[formatStr...]: fmt: fmt3, argsSize: 3: [format3]: i: 3, d: 3, ptr: 0
 
 #endif
