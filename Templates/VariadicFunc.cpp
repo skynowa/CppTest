@@ -34,7 +34,26 @@ format(int i, double d, char ch)
 }
 //-------------------------------------------------------------------------------------------------
 
+//-------------------------------------------------------------------------------------------------
+template <class T, class ...ArgsT>
+void
+formatStr17_v2(
+	const char  *fmt,
+	const T     &first,
+	const ArgsT &...args
+)
+{
+    std::cout << fmt << ": " << first << ", ";
 
+    if constexpr (sizeof...(args) > 0) {
+        // this line will only be instantiated if there are further
+        // arguments. if args... is empty, there will be no call to
+        // print_all(os).
+        formatStr17_v2(fmt, args...);
+    }
+
+	std::cout << "*" << std::endl;
+}
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
@@ -54,12 +73,13 @@ formatStr17(const char *fmt, const ArgsT &...args)
 {
 	(void)fmt;
 
-#if 1
+#if 0
 	std::stringstream ss;
     ((ss << args << ", "), ...);
 
 	std::cout << __FUNCTION__ << ": "  << fmt << ", " << ss.str();
-
+#elif 1
+	//
 #elif 0
 	const std::vector<std::any> &a = {args ...};
 
@@ -98,7 +118,12 @@ int main(int, char **)
 	// formatStr17("fmt0");
 	// formatStr17("fmt1", 100);
 	// formatStr17("fmt2", 200, "bbb");
-	formatStr17("fmt3", 300, 400.25, 'a');
+	// formatStr17("fmt3", 300, 400.25, 'a');
+
+	// formatStr17_v2("fmt0");
+	formatStr17_v2("fmt1", 100);
+	formatStr17_v2("fmt2", 200, "bbb");
+	formatStr17_v2("fmt3", 300, 400.25, 'a');
 #endif
 
     return 0;
