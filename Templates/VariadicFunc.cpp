@@ -47,8 +47,7 @@ formatStr17_v2(
 
     if constexpr (sizeof...(args) > 0) {
         // this line will only be instantiated if there are further
-        // arguments. if args... is empty, there will be no call to
-        // print_all(os).
+        // arguments. if args... is empty, there will be no call to print_all(os)
         formatStr17_v2(fmt, args...);
     } else {
 		std::cout << "*" << std::endl;
