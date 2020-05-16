@@ -39,11 +39,11 @@ template <class T, class ...ArgsT>
 void
 formatStr17_v2(
 	const char  *fmt,
-	const T     &first,
+	const T     &arg1,
 	const ArgsT &...args
 )
 {
-    std::cout << fmt << ": " << first << ", ";
+    std::cout << fmt << ": " << arg1 << ", ";
 
     if constexpr (sizeof...(args) > 0) {
         // this line will only be instantiated if there are further
