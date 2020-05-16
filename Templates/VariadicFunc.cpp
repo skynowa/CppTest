@@ -58,7 +58,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+format: format0, argsSize: 0: __FUNCTION__: foo
+format: format1, argsSize: 1: __FUNCTION__: foo, i: 1
+format: format2, argsSize: 2: __FUNCTION__: foo, i: 2, c: bbb
+format: format3, argsSize: 3: __FUNCTION__: foo, i: 3, d: 3, ptr: 0
 
 #endif
-
