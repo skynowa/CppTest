@@ -59,9 +59,9 @@ formatStr17(const char *fmt, const ArgsT &...args)
     ((ss << args << ", "), ...);
 
 	std::cout << __FUNCTION__ << ": "  << fmt << ", " << ss.str();
-#elif 1
-	//
 #elif 0
+	(std::cout << fmt << ", " << ... << args) << std::endl;
+#else
 	const std::vector<std::any> &a = {args ...};
 
 	for (const auto &it : a) {
@@ -82,9 +82,8 @@ formatStr17(const char *fmt, const ArgsT &...args)
 
 		std::cout << ", ";
 	}
-#else
-	(std::cout << fmt << ", " << ... << args) << std::endl;
 #endif
+
 	std::cout << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
