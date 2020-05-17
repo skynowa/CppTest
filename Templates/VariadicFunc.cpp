@@ -120,8 +120,6 @@ formatStr17_v3(
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
-	std::string sRv;
-
 	auto func = [] (
 		const std::string &fmt,
 		auto               arg,
@@ -130,14 +128,13 @@ formatStr17_v3(
 		std::string       *out_rv	///< [out]
 	) -> void
 	{
-		++ index;
-
 		const std::size_t pos = fmt.find(_specifier(), posPrev);
 		if (pos == std::string::npos) {
 			return;
 		}
 
-		*out_rv += fmt.substr(posPrev, pos - posPrev);
+		++ index;
+
 
 		static std::stringstream ss;
 		{
@@ -148,15 +145,16 @@ formatStr17_v3(
 			ss << arg;
 		}
 
+		// [out]
+		*out_rv += fmt.substr(posPrev, pos - posPrev);
 		*out_rv += ss.str();
 
 		posPrev = pos + _specifier().size();
-
-		// std::cout << TRACE_VAR4(fmt, index, posPrev, arg) << "\n";
 	};
 
 	std::size_t index   {};
 	std::size_t posPrev {};
+	std::string sRv;
 
     ( func(fmt, std::forward<ArgsT>(args), index, posPrev, &sRv), ...);
 
@@ -185,8 +183,8 @@ int main(int, char **)
 
 	// formatStr17_v2("fmt3", 300, 400.25, 'a');
 
-	std::string sRv = formatStr17_v3("_{}_{}_{}_{}_{}_{}", "str", 4, 5, 6, "a");
-	STD_TEST(sRv == "_str_4_5_6_a");
+	std::string sRv = formatStr17_v3("_{}_{}_{}_{}_{}", "str", 4, 5, 6, "a");
+	STD_TEST_DO(sRv == "_str_4_5_6_a", std::cout << TRACE_VAR(sRv) << "\n";);
 #endif
 
     return 0;
