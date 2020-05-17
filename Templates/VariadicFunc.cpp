@@ -121,20 +121,19 @@ formatStr17_v3(
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
 	auto func = [] (
-		const std::string &fmt,
-		auto               arg,
-		size_t            &index,	///< [out]
-		std::size_t       &posPrev,	///< [out]
-		std::string       *out_rv	///< [out]
+		const std::string_view &a_fmt,		///<
+		auto                    a_arg,		///<
+		std::string            *out_rv,		///< [out]
+		std::size_t            &out_index,	///< [out]
+		std::size_t            &out_posPrev	///< [out]
 	) -> void
 	{
-		const std::size_t pos = fmt.find(_specifier(), posPrev);
+		const std::size_t pos = a_fmt.find(_specifier(), out_posPrev);
 		if (pos == std::string::npos) {
 			return;
 		}
 
-		++ index;
-
+		++ out_index;
 
 		static std::stringstream ss;
 		{
@@ -142,24 +141,24 @@ formatStr17_v3(
 			ss.str( emptyString );
 			ss.clear();
 
-			ss << arg;
+			ss << a_arg;
 		}
 
 		// [out]
-		*out_rv += fmt.substr(posPrev, pos - posPrev);
+		*out_rv += a_fmt.substr(out_posPrev, pos - out_posPrev);
 		*out_rv += ss.str();
 
-		posPrev = pos + _specifier().size();
+		out_posPrev = pos + _specifier().size();
 	};
 
+	std::string sRv;
 	std::size_t index   {};
 	std::size_t posPrev {};
-	std::string sRv;
 
-    ( func(fmt, std::forward<ArgsT>(args), index, posPrev, &sRv), ...);
+    ( func(fmt, std::forward<ArgsT>(args), &sRv, index, posPrev), ...);
 
-	std::cout << TRACE_VAR2(argsSize, index) << "\n";
-	STD_TEST(argsSize == index);
+	STD_TEST_DO(argsSize == index,
+		std::cout << "Invalid params: " << TRACE_VAR2(argsSize, index) << std::endl;);
 
 	return sRv;
 }
