@@ -106,6 +106,61 @@ formatStr17_v2(
 	}
 }
 //-------------------------------------------------------------------------------------------------
+std::string _specifier()
+{
+	return "{}";
+}
+//-------------------------------------------------------------------------------------------------
+template<typename... T>
+std::string
+formatStr17_v3(
+	const std::string &fmt,
+	T                 &&...args
+)
+{
+	std::string sRv;
+
+	auto func = [] (
+		const std::string &fmt,
+		const size_t       index,
+		auto               arg,
+		std::size_t       &posPrev,	///< [out]
+		std::string       *out_rv
+	) -> void
+	{
+		(void)index;
+
+		const std::size_t pos = fmt.find(_specifier(), posPrev);
+		if (pos == std::string::npos) {
+			return;
+		}
+
+		*out_rv += fmt.substr(posPrev, pos - posPrev);
+
+		static std::stringstream ss;
+		{
+			static const std::string emptyString;
+			ss.str( emptyString );
+			ss.clear();
+
+			ss << arg;
+		}
+
+		*out_rv += ss.str();
+
+		posPrev = pos + _specifier().size();
+
+		// std::cout << TRACE_VAR4(fmt, index, posPrev, arg) << "\n";
+	};
+
+	std::size_t index   {};
+	std::size_t posPrev {};
+
+    ( func(fmt, index ++, std::forward<T>(args), posPrev, &sRv), ...);
+
+	return sRv;
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 #if 0
@@ -123,7 +178,10 @@ int main(int, char **)
 	// formatStr17_v2("fmt1", 100);
 	// formatStr17_v2("fmt2", 200, "bbb");
 
-	formatStr17_v2("fmt3", 300, 400.25, 'a');
+	// formatStr17_v2("fmt3", 300, 400.25, 'a');
+
+	std::string sRv = formatStr17_v3("_{}_{}_{}_{}_{}_", "str", 4, 5, 6, "a");
+	STD_TEST(sRv == "_str_4_5_6_a");
 #endif
 
     return 0;
@@ -142,5 +200,7 @@ formatStr17:
 formatStr17: fmt1, 100,
 formatStr17: fmt2, 200, fmt2, bbb,
 formatStr17: fmt3, 300, fmt3, 300, fmt3, a,
+
+fmt3: 300, fmt3: 400.25, fmt3: a, *
 
 #endif
