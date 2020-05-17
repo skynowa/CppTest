@@ -106,21 +106,17 @@ formatStr17_v2(
 	}
 }
 //-------------------------------------------------------------------------------------------------
-std::string _specifier()
-{
-	return "{}";
-}
-//-------------------------------------------------------------------------------------------------
-template<typename... ArgsT>
+template<typename StreamT, typename ...ArgsT>
 std::string
 formatStr17_v3(
-	const std::string &fmt,
-	ArgsT             &&...args
+	const std::string_view &fmt,
+	ArgsT                  &&...args
 )
 {
-	constexpr std::size_t argsSize = sizeof...(ArgsT);
+	constexpr std::size_t      argsSize  {sizeof...(ArgsT)};
+	constexpr std::string_view specifier {"{}"};
 
-	auto func = [] (
+	auto func = [&] (
 		const std::string_view &a_fmt,		///<
 		auto                    a_arg,		///<
 		std::string            *out_rv,		///< [out]
@@ -128,14 +124,14 @@ formatStr17_v3(
 		std::size_t            &out_posPrev	///< [out]
 	) -> void
 	{
-		const std::size_t pos = a_fmt.find(_specifier(), out_posPrev);
+		const std::size_t pos = a_fmt.find(specifier, out_posPrev);
 		if (pos == std::string::npos) {
 			return;
 		}
 
 		++ out_index;
 
-		static std::stringstream ss;
+		static StreamT ss;
 		{
 			static const std::string emptyString;
 			ss.str( emptyString );
@@ -148,7 +144,7 @@ formatStr17_v3(
 		*out_rv += a_fmt.substr(out_posPrev, pos - out_posPrev);
 		*out_rv += ss.str();
 
-		out_posPrev = pos + _specifier().size();
+		out_posPrev = pos + specifier.size();
 	};
 
 	std::string sRv;
@@ -158,7 +154,7 @@ formatStr17_v3(
     ( func(fmt, std::forward<ArgsT>(args), &sRv, index, posPrev), ...);
 
 	STD_TEST_DO(argsSize == index,
-		std::cout << "Invalid params: " << TRACE_VAR2(argsSize, index) << std::endl;);
+		std::cout << "Invalid params: " << TRACE_VAR2(argsSize, index) << std::endl);
 
 	return sRv;
 }
@@ -182,7 +178,7 @@ int main(int, char **)
 
 	// formatStr17_v2("fmt3", 300, 400.25, 'a');
 
-	std::string sRv = formatStr17_v3("_{}_{}_{}_{}_{}", "str", 4, 5, 6, "a");
+	std::string sRv = formatStr17_v3<std::stringstream>("_{}_{}_{}_{}_{}", "str", 4, 5, 6, "a");
 	STD_TEST_DO(sRv == "_str_4_5_6_a", std::cout << TRACE_VAR(sRv) << "\n";);
 #endif
 
