@@ -34,25 +34,7 @@ format(int i, double d, char ch)
 }
 //-------------------------------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------------------------------
-template <class T, class ...ArgsT>
-void
-formatStr17_v2(
-	const char  *fmt,
-	const T     &arg1,
-	const ArgsT &...args
-)
-{
-    std::cout << fmt << ": " << arg1 << ", ";
 
-    if constexpr (sizeof...(args) > 0) {
-        // this line will only be instantiated if there are further
-        // arguments. if args... is empty, there will be no call to print_all(os)
-        formatStr17_v2(fmt, args...);
-    } else {
-		std::cout << "*" << std::endl;
-	}
-}
 //-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
@@ -65,7 +47,7 @@ formatStr14(const char *fmt, const ArgsT &...args)
 	// Unpack the arguments for further treatment
     format(args...);
 }
-
+//-------------------------------------------------------------------------------------------------
 template<typename ...ArgsT>
 void
 formatStr17(const char *fmt, const ArgsT &...args)
@@ -106,6 +88,25 @@ formatStr17(const char *fmt, const ArgsT &...args)
 	std::cout << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
+template <class T, class ...ArgsT>
+void
+formatStr17_v2(
+	const char  *fmt,
+	const T     &arg1,
+	const ArgsT &...args
+)
+{
+    std::cout << fmt << ": " << arg1 << ", ";
+
+    if constexpr (sizeof...(args) > 0) {
+        // this line will only be instantiated if there are further
+        // arguments. if args... is empty, there will be no call to print_all(os)
+        formatStr17_v2(fmt, args...);
+    } else {
+		std::cout << "*" << std::endl;
+	}
+}
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 #if 0
@@ -122,6 +123,7 @@ int main(int, char **)
 	// formatStr17_v2("fmt0");
 	// formatStr17_v2("fmt1", 100);
 	// formatStr17_v2("fmt2", 200, "bbb");
+
 	formatStr17_v2("fmt3", 300, 400.25, 'a');
 #endif
 
