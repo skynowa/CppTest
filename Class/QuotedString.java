@@ -1,12 +1,15 @@
 /**
-Notice the benefits I gained:
-The object is lazy — it doesn’t perform any calculations if not needed.
-It is easy to test.
-It is small, so it is easy to maintain in the future.
-It is easy to use in collections. You can wrap multiple items in a collection with the object, but in the end use just a few of them. This way you will not perform heavy calculations on the entire collection if not needed.
-It is immutable.
-It is cheap to create. Java is designed to create new objects.
-*/
+ * Notice the benefits I gained:
+ *
+ * - The object is lazy — it doesn’t perform any calculations if not needed.
+ * - It is easy to test.
+ * - It is small, so it is easy to maintain in the future.
+ * - It is easy to use in collections. You can wrap multiple items in a collection with the object,
+ *    but in the end use just a few of them. This way you will not perform heavy calculations
+ *    on the entire collection if not needed.
+ * - It is immutable.
+ * - It is cheap to create. Java is designed to create new objects.
+ */
 
 /**
  * Put quotes around the given String if necessary.
