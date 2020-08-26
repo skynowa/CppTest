@@ -57,8 +57,11 @@ class QuotedString
                 throw new IllegalArgumentException("Can't handle single and double quotes in same argument");
             }
 
-            return buf.append(SINGLE_QUOTE).append(cleanedArgument).append(
-                SINGLE_QUOTE).toString();
+            return buf
+                .append(SINGLE_QUOTE)
+                .append(cleanedArgument)
+                .append(SINGLE_QUOTE)
+                .toString();
         }
 		else if (cleanedArgument.contains(SINGLE_QUOTE) ||
                  cleanedArgument.contains(" "))
