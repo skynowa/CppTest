@@ -17,7 +17,6 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # Modules
-find_package(GlobalVariables)
 find_package(CMakeLib)
 
 # Boost
