@@ -9,7 +9,6 @@
 PROJECT_NAME=$(basename ${PWD})
 DIR_PROJECT="../${PROJECT_NAME}"
 DIR_BUILD="../${PROJECT_NAME}_eclipse"
-ECLIPSE_VERSION="4.17" # 2020-09
 
 # prepare
 mkdir -p $DIR_BUILD
