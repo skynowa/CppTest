@@ -8,36 +8,38 @@ However you want to change what object is created.
 #include <string>
 #include <memory>
 //-------------------------------------------------------------------------------------------------
-class IMessage {
-    public:
-        virtual ~IMessage() { }
-        virtual std::string get() = 0;
+class IMessage
+{
+public:
+    virtual ~IMessage() = default;
+    virtual std::string get() = 0;
 };
 //-------------------------------------------------------------------------------------------------
 class CMessageA :
     public IMessage
 {
-    public:
-        virtual std::string get() {
-            return "Hello world!";
-        }
+public:
+    virtual std::string get()
+    {
+        return "Hello world!";
+    }
 };
 //-------------------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------------------------------------------
-class IMessageFactory {
-    public:
-        virtual ~IMessageFactory() { }
-        virtual std::auto_ptr<IMessage> create_message() const = 0;
+class IMessageFactory
+{
+public:
+    virtual ~IMessageFactory() = default;
+    virtual std::auto_ptr<IMessage> create_message() const = 0;
 };
 //-------------------------------------------------------------------------------------------------
 class CMessageFactoryA :
     public IMessageFactory
 {
-    public:
-        virtual std::auto_ptr<IMessage> create_message() const {
-            return std::auto_ptr<IMessage>(new CMessageA());
-        }
+public:
+    virtual std::auto_ptr<IMessage> create_message() const
+    {
+        return std::auto_ptr<IMessage>(new CMessageA());
+    }
 };
 //-------------------------------------------------------------------------------------------------
 

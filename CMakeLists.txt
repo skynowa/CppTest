@@ -17,7 +17,8 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # Modules
-find_package(CMakeLib)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_ROOT}/Modules/CMakeLib")
+message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
 
 # Boost
 find_package(Boost COMPONENTS program_options filesystem system)
@@ -38,7 +39,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
 
 set(LIBRARIES
 	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
-	${PCRE_PP_LIBRARIES} ${EVENT2_LIBRARIES} ${SSH2_LIBRARIES}
+	${cmPCRE_PP_LIBRARIES} ${cmEVENT2_LIBRARIES} ${cmSSH2_LIBRARIES}
 	${Boost_PROGRAM_OPTIONS_LIBRARY}
 )
 #--------------------------------------------------------------------------------------------------
