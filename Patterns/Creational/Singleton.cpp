@@ -10,13 +10,15 @@ Singleton is hard to write unit tests with.
 //-------------------------------------------------------------------------------------------------
 class HelloWorld
 {
-	HelloWorld() { }
+	HelloWorld() = default;
 	HelloWorld(const HelloWorld&);
+
 public:
 	void output()
 	{
 		std::cout << "Hello world!" << std::endl;
 	}
+
 	static HelloWorld & get()
 	{
 		static HelloWorld singleton;
@@ -24,7 +26,8 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------------------------
-void hello_world()
+void
+hello_world()
 {
 	HelloWorld::get().output();
 }

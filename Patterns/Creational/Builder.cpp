@@ -10,6 +10,7 @@ class Message
 {
 public:
 	std::string greeting, recipient;
+
 	void send()
 	{
 		std::cout << greeting << " " << recipient << "!" << std::endl;
@@ -19,11 +20,12 @@ public:
 class Builder
 {
 public:
-	virtual ~Builder() { }
+	virtual ~Builder() = default;
 	virtual void build(Message & msg) const=0;
 };
 //-------------------------------------------------------------------------------------------------
-class Hello : public Builder
+class Hello :
+	public Builder
 {
 public:
 	void build(Message & msg) const
@@ -32,7 +34,8 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------------------------
-class World : public Builder
+class World :
+	public Builder
 {
 public:
 	void build(Message & msg) const
@@ -41,7 +44,11 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------------------------
-void hello_world(const Builder & stage1, const Builder & stage2)
+void
+hello_world(
+	const Builder & stage1,
+	const Builder & stage2
+)
 {
 	Message msg;
 	stage1.build(msg);
@@ -52,6 +59,7 @@ void hello_world(const Builder & stage1, const Builder & stage2)
 int main()
 {
 	hello_world(Hello(), World());
+
 	return 0;
 }
 //-------------------------------------------------------------------------------------------------

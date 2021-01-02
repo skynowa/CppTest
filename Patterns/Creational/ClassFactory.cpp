@@ -4,51 +4,70 @@
 #include <vector>
 //-------------------------------------------------------------------------------------------------
 // AbstractProductA
-class ICar {
-	public:
-		virtual void printName() = 0;
+class ICar
+{
+public:
+             ICar() = default;
+	virtual ~ICar() = default;
+
+	virtual void printName() = 0;
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteProductA1
-class Ford : public ICar {
-	public:
-		virtual void printName() {
-			std::cout << "Ford" << std::endl;
-		}
+class Ford :
+	public ICar
+{
+public:
+	virtual void printName()
+	{
+		std::cout << "Ford" << std::endl;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteProductA2
-class Toyota : public ICar {
-	public:
-		virtual void printName() {
-			std::cout << "Toyota" << std::endl;
-		}
+class Toyota :
+	public ICar
+{
+public:
+	virtual void printName()
+	{
+		std::cout << "Toyota" << std::endl;
+	}
 };
 //-------------------------------------------------------------------------------------------------
-
 
 
 //-------------------------------------------------------------------------------------------------
 // AbstractProductB
-class IEngine {
-	public:
-		virtual void printPower() = 0;
+class IEngine
+{
+public:
+             IEngine() = default;
+	virtual ~IEngine() = default;
+
+	virtual void printPower() = 0;
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteProductB1
-class FordEngine : public IEngine {
-	public:
-		virtual void printPower() {
-			std::cout << "Ford Engine 4.4" << std::endl;
-		}
+class FordEngine :
+	public IEngine
+{
+public:
+	virtual void printPower()
+	{
+		std::cout << "Ford Engine 4.4" << std::endl;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteProductB2
-class ToyotaEngine : public IEngine {
-	public:
-		virtual void printPower() {
-			std::cout << "Toyota Engine 3.2" << std::endl;
-		}
+class ToyotaEngine :
+	public IEngine
+{
+public:
+	virtual void printPower()
+	{
+		std::cout << "Toyota Engine 3.2" << std::endl;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 
@@ -56,41 +75,54 @@ class ToyotaEngine : public IEngine {
 
 //-------------------------------------------------------------------------------------------------
 // AbstractFactory
-class ICarFactory {
-	public:
-		virtual ICar*     createCar()    = 0;
-		virtual IEngine*  createEngine() = 0;
+class ICarFactory
+{
+public:
+	virtual ICar*     createCar()    = 0;
+	virtual IEngine*  createEngine() = 0;
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteFactory1
-class FordFactory : public ICarFactory {
-	public:
-		// from ICarFactory
-		virtual ICar* createCar() {
-			return new Ford();
-		}
+class FordFactory :
+	public ICarFactory
+{
+public:
+	// from ICarFactory
+	virtual ICar* createCar()
+	{
+		return new Ford();
+	}
 
-		virtual IEngine* createEngine()	{
-			return new FordEngine();
-		}
+	virtual IEngine* createEngine()
+	{
+		return new FordEngine();
+	}
 };
 //-------------------------------------------------------------------------------------------------
 // ConcreteFactory2
-class ToyotaFactory : public ICarFactory {
-	public:
-		// from ICarFactory
-		virtual ICar* createCar() {
-			return new Toyota();
-		}
+class ToyotaFactory :
+	public ICarFactory
+{
+public:
+	// from ICarFactory
+	virtual ICar* createCar()
+	{
+		return new Toyota();
+	}
 
-		virtual IEngine* createEngine()	{
-			return new ToyotaEngine();
-		}
+	virtual IEngine* createEngine()
+	{
+		return new ToyotaEngine();
+	}
 };
 //-------------------------------------------------------------------------------------------------
-void use(ICarFactory* f) {
-	ICar*     myCar     =  f->createCar();
-	IEngine*  myEngine  =  f->createEngine();
+void
+use(
+	ICarFactory *f
+)
+{
+	ICar    *myCar    = f->createCar();
+	IEngine *myEngine = f->createEngine();
 
 	myCar->printName();
 	myEngine->printPower();
@@ -99,7 +131,8 @@ void use(ICarFactory* f) {
 	delete myEngine;
 }
 //-------------------------------------------------------------------------------------------------
-int main() {
+int main()
+{
 	ToyotaFactory toyotaFactory;
 	FordFactory	  fordFactory;
 

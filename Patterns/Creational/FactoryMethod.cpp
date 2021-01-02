@@ -7,26 +7,33 @@ for use in a base class.
 #include <iostream>
 #include <string>
 //-------------------------------------------------------------------------------------------------
-class IGreeter {
-    public:
-        virtual ~IGreeter() { }
-        virtual std::string get_message()=0;
-        void greet() {
-            std::cout << get_message() << std::endl;
-        }
+class IGreeter
+{
+public:
+    virtual ~IGreeter() = default;
+
+    virtual std::string get_message() = 0;
+    void greet()
+    {
+        std::cout << get_message() << std::endl;
+    }
 };
 //-------------------------------------------------------------------------------------------------
 class CHelloWorld :
     public IGreeter
 {
-    public:
-        std::string get_message(){
-            return "Hello world!";
-        }
+public:
+    std::string get_message()
+    {
+        return "Hello world!";
+    }
 };
 //-------------------------------------------------------------------------------------------------
 void
-hello_world(IGreeter & greeter) {
+hello_world(
+    IGreeter & greeter
+)
+{
 	greeter.greet();
 }
 //-------------------------------------------------------------------------------------------------
