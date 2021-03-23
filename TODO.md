@@ -51,3 +51,4 @@ gda -p [pid]
 # list opened descriptors
 lsof -p [pid]
 ```
+
