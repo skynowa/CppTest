@@ -1,3 +1,0 @@
-# StdStream
-
-std::ostream printers
