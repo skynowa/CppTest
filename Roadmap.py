@@ -33,9 +33,13 @@ def tree(dir_path: Path, prefix: str=''):
 
 
 def list_files(startpath):
+	exclude = set(['.git', 'Windows', 'Desktop'])
+
 	for root, dirs, files in os.walk(startpath):
+		dirs[:] = [d for d in dirs if d not in exclude]
+
 		level = root.replace(startpath, '').count(os.sep)
-		if (level <= 0):
+		if (level == 0):
 			continue
 
 		indent    = ' ' * 3 * (level - 1)
