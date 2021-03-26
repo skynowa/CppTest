@@ -52,7 +52,8 @@ def dirProcess(level, dirPath, files):
 		else:
 			doneFilesPct = 0
 
-		print('{}  <summary>{}/ ({}%)</summary>'.format(indent, os.path.basename(dirPath), doneFilesPct))
+		print('{}  <summary>{}/ ({}% from {})</summary>'.format(
+			indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 	# files
 	print('\n')
