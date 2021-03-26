@@ -2,8 +2,6 @@
 
 <div style="background-color:grey">
 
-level: 0
-level: 1
 * <details>
   <summary>Static/</summary>
 
@@ -15,7 +13,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Vars1/</summary>
 
@@ -29,7 +26,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Vars2/</summary>
 
@@ -45,7 +41,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Char/</summary>
 
@@ -57,7 +52,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Core/</summary>
 
@@ -86,7 +80,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>C++17/</summary>
 
@@ -111,7 +104,6 @@ level: 2
      </details>
 
 
-level: 3
       * <details>
         <summary>Attributes/</summary>
 
@@ -126,7 +118,6 @@ level: 3
         </details>
 
 
-level: 2
    * <details>
      <summary>Array/</summary>
 
@@ -137,7 +128,6 @@ level: 2
      </details>
 
 
-level: 3
       * <details>
         <summary>ArrayToFunction/</summary>
 
@@ -150,7 +140,6 @@ level: 3
         </details>
 
 
-level: 2
    * <details>
      <summary>C++14/</summary>
 
@@ -161,7 +150,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>C++11/</summary>
 
@@ -172,7 +160,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Algos/</summary>
 
@@ -183,7 +170,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>DoublyLinkedList/</summary>
 
@@ -196,7 +182,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>CircularLinkedList/</summary>
 
@@ -207,7 +192,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>LinkedList/</summary>
 
@@ -224,7 +208,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Operators/</summary>
 
@@ -243,7 +226,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Stl/</summary>
 
@@ -255,7 +237,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Limits/</summary>
 
@@ -267,7 +248,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>List/</summary>
 
@@ -289,7 +269,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Map/</summary>
 
@@ -311,7 +290,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Set/</summary>
 
@@ -329,7 +307,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Algos/</summary>
 
@@ -345,7 +322,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>C++17/</summary>
 
@@ -365,7 +341,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>MultiMap/</summary>
 
@@ -378,7 +353,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Utility/</summary>
 
@@ -389,7 +363,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Functional/</summary>
 
@@ -400,7 +373,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>C++14/</summary>
 
@@ -411,7 +383,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>String/</summary>
 
@@ -424,7 +395,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>SmartPtrs/</summary>
 
@@ -436,7 +406,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>ForwardList/</summary>
 
@@ -449,7 +418,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>IOStream/</summary>
 
@@ -460,7 +428,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Vector/</summary>
 
@@ -481,7 +448,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>C++11/</summary>
 
@@ -492,7 +458,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Deque/</summary>
 
@@ -504,7 +469,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>UnorderedMap/</summary>
 
@@ -517,7 +481,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Cast/</summary>
 
@@ -530,7 +493,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Class/</summary>
 
@@ -553,7 +515,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Union/</summary>
 
@@ -564,7 +525,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Hierarchy/</summary>
 
@@ -577,7 +537,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Functor/</summary>
 
@@ -595,7 +554,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Lambda/</summary>
 
@@ -614,7 +572,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>SQL/</summary>
 
@@ -625,7 +582,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Etc/</summary>
 
@@ -643,7 +599,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Patterns/</summary>
 
@@ -653,7 +608,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Structural/</summary>
 
@@ -671,7 +625,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Creational/</summary>
 
@@ -687,7 +640,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Behavioral/</summary>
 
@@ -712,7 +664,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Network/</summary>
 
@@ -725,7 +676,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Double/</summary>
 
@@ -739,7 +689,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>!Todo/</summary>
 
@@ -751,7 +700,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Enum/</summary>
 
@@ -765,7 +713,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>EnumIO/</summary>
 
@@ -777,7 +724,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>FAQ/</summary>
 
@@ -788,7 +734,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>StdTest/</summary>
 
@@ -801,7 +746,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>String/</summary>
 
@@ -819,7 +763,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>CString/</summary>
 
@@ -832,7 +775,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Loops/</summary>
 
@@ -847,7 +789,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Bits/</summary>
 
@@ -861,7 +802,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>IsBot/</summary>
 
@@ -875,7 +815,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Libs/</summary>
 
@@ -885,7 +824,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Boost/</summary>
 
@@ -898,7 +836,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>LibEvent/</summary>
 
@@ -915,7 +852,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Ssh2/</summary>
 
@@ -926,7 +862,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Qt/</summary>
 
@@ -937,7 +872,6 @@ level: 2
      </details>
 
 
-level: 3
       * <details>
         <summary>QSharedMemory/</summary>
 
@@ -950,7 +884,6 @@ level: 3
         </details>
 
 
-level: 2
    * <details>
      <summary>LibUv/</summary>
 
@@ -961,7 +894,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Pcre/</summary>
 
@@ -972,7 +904,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>XLib/</summary>
 
@@ -982,7 +913,6 @@ level: 2
      </details>
 
 
-level: 3
       * <details>
         <summary>GlobalHotKey/</summary>
 
@@ -995,7 +925,6 @@ level: 3
         </details>
 
 
-level: 1
 * <details>
   <summary>Exceptions/</summary>
 
@@ -1008,7 +937,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>WinException/</summary>
 
@@ -1021,7 +949,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>SignalsToException_2/</summary>
 
@@ -1034,7 +961,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>SignalsToException/</summary>
 
@@ -1045,7 +971,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>StdStream/</summary>
 
@@ -1061,7 +986,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Pointers/</summary>
 
@@ -1075,7 +999,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Templates/</summary>
 
@@ -1099,7 +1022,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>StdLibC/</summary>
 
@@ -1115,7 +1037,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Process/</summary>
 
@@ -1127,7 +1048,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Virtual/</summary>
 
@@ -1143,7 +1063,6 @@ level: 1
   </details>
 
 
-level: 1
 * <details>
   <summary>Unix/</summary>
 
@@ -1155,7 +1074,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>Linux/</summary>
 
@@ -1166,7 +1084,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>IpcMt/</summary>
 
@@ -1184,7 +1101,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>RaceCondition/</summary>
 
@@ -1196,7 +1112,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Proccess/</summary>
 
@@ -1209,7 +1124,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Mutex/</summary>
 
@@ -1222,7 +1136,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>PassingArgumentsToThreads/</summary>
 
@@ -1235,7 +1148,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>EventHandling/</summary>
 
@@ -1248,7 +1160,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>JoinDetach/</summary>
 
@@ -1259,7 +1170,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Thread/</summary>
 
@@ -1273,7 +1183,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>C++11/</summary>
 
@@ -1284,7 +1193,6 @@ level: 2
      </details>
 
 
-level: 1
 * <details>
   <summary>Crossplatform/</summary>
 
@@ -1294,7 +1202,6 @@ level: 1
   </details>
 
 
-level: 2
    * <details>
      <summary>File/</summary>
 
@@ -1308,7 +1215,6 @@ level: 2
      </details>
 
 
-level: 2
    * <details>
      <summary>Thread/</summary>
 
