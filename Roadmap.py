@@ -43,8 +43,16 @@ def dirProcess(level, dirPath, files):
 	if (isRootSubDir):
 		print('{}  <summary><b>{}/</b></summary>'.format(indent, os.path.basename(dirPath)))
 	else:
-		print('{}  <summary>{}/ ({})</summary>'.format(indent, os.path.basename(dirPath), len(files)))
+		# doneFilesPct
+		allfilesNum  = len(files)
+		doneFilesNum = 1
 
+		if (allfilesNum) :
+			doneFilesPct = int((doneFilesNum * 100) / allfilesNum)
+		else:
+			doneFilesPct = 0
+
+		print('{}  <summary>{}/ ({}%)</summary>'.format(indent, os.path.basename(dirPath), doneFilesPct))
 
 	# files
 	print('\n')
