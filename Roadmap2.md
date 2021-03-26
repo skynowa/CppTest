@@ -91,7 +91,6 @@
       * EnumListInitialization.cpp
       * StructuredBindingsRef.cpp
       * ConstexprIf.cpp
-      * FAQ.md
       * BracedInitList.cpp
       * ConstexprLambda.cpp
       * FoldExpressions.cpp
@@ -109,7 +108,6 @@
 
 
         * maybe_unused.cpp
-        * FAQ.md
         * Sample1.cpp
         * fallthrough.cpp
         * nodiscard.cpp
@@ -144,7 +142,6 @@
      <summary>C++14/</summary>
 
 
-      * .gitkeep
 
 
      </details>
@@ -154,7 +151,6 @@
      <summary>C++11/</summary>
 
 
-      * .gitkeep
 
 
      </details>
@@ -227,10 +223,129 @@
 
 
 * <details>
+  <summary>Windows/</summary>
+
+
+    * CxHandle.cpp
+    * getuid.cpp
+    * Batery.cpp
+    * OsBit.txt
+    * AnsiUtf8.cpp
+    * Event.cpp
+    * GetTokenInformation.cpp
+    * CommandLine.cpp
+    * MemoryUsage.cpp
+    * OsBit.cpp
+    * WaitForSingleObject.cpp
+
+
+  </details>
+
+
+   * <details>
+     <summary>RegDLL/</summary>
+
+
+
+
+     </details>
+
+
+      * <details>
+        <summary>RDLLMFC/</summary>
+
+
+        * StdAfx.cpp
+        * RDLLMFC.cpp
+        * RDLLMFC.h
+        * Resource.h
+        * DLLCode.h
+        * DLLCode.cpp
+        * StdAfx.h
+
+
+        </details>
+
+
+         * <details>
+           <summary>res/</summary>
+
+
+
+
+           </details>
+
+
+      * <details>
+        <summary>DLLClient1/</summary>
+
+
+        * DLLCode.h
+        * DLLCode.cpp
+
+
+        </details>
+
+
+      * <details>
+        <summary>DLLClient2/</summary>
+
+
+        * DLLCode.h
+        * DLLClient2.cpp
+
+
+        </details>
+
+
+      * <details>
+        <summary>W32DLL/</summary>
+
+
+        * StdAfx.cpp
+        * DLLCode.h
+        * DLLCode.cpp
+        * W32DLL.cpp
+        * StdAfx.h
+
+
+        </details>
+
+
+      * <details>
+        <summary>MFCAp/</summary>
+
+
+        * StdAfx.cpp
+        * MainFrm.cpp
+        * Resource.h
+        * MFCApView.h
+        * MFCApDoc.h
+        * DLLCode.h
+        * MFCApView.cpp
+        * MFCAp.h
+        * MFCAp.cpp
+        * MFCApDoc.cpp
+        * MainFrm.h
+        * StdAfx.h
+
+
+        </details>
+
+
+         * <details>
+           <summary>res/</summary>
+
+
+
+
+           </details>
+
+
+* <details>
   <summary>Stl/</summary>
 
 
-    * StlFeatures.png
     * StlFeatures.txt
 
 
@@ -377,7 +492,6 @@
      <summary>C++14/</summary>
 
 
-      * .gitkeep
 
 
      </details>
@@ -452,7 +566,6 @@
      <summary>C++11/</summary>
 
 
-      * .gitkeep
 
 
      </details>
@@ -507,7 +620,6 @@
     * CallMethod.cpp
     * InitOrder.cpp
     * CpoyConstructor2.cpp
-    * QuotedString.java
     * FriendClass.cpp
     * CondtructorOrder.cpp
 
@@ -531,7 +643,6 @@
 
       * Hierarchy.cpp
       * Proxy.cpp
-      * pic.png
 
 
      </details>
@@ -739,7 +850,6 @@
 
 
     * StdTest.inl
-    * README.md
     * StdTest.h
 
 
@@ -806,10 +916,7 @@
      <summary>IsBot/</summary>
 
 
-      * __Black_list.lst
-      * Black_list.lst
       * main_BlackList.cpp
-      * __Black_list_test.lst
 
 
      </details>
@@ -842,11 +949,6 @@
 
       * all_test.cpp
       * FAQ.txt
-      * time-test.c
-      * time-test.sh
-      * signal-test.c
-      * all_test_build.sh
-      * signal-test-build.sh
 
 
      </details>
@@ -888,7 +990,6 @@
      <summary>LibUv/</summary>
 
 
-      * FAQ.txt
 
 
      </details>
@@ -898,7 +999,6 @@
      <summary>Pcre/</summary>
 
 
-      * pcrepp.cpp.off
 
 
      </details>
@@ -917,9 +1017,6 @@
         <summary>GlobalHotKey/</summary>
 
 
-        * xgrabkey.c
-        * build.sh
-        * xgrabkey_2.c
 
 
         </details>
@@ -977,10 +1074,8 @@
 
     * StdStream.h
     * StdStream_Test.cpp
-    * README.md
     * StdStream.inl
     * CMakeLists.txt
-    * .gitignore
 
 
   </details>
@@ -1007,7 +1102,6 @@
     * VariadicFunc.cpp
     * AverageOfValuesInObjects.cpp
     * MaximumOfTwoObjects.cpp
-    * FAQ.md
     * Templates_and_Classes.txt
     * VariadicTemplates3.cpp
     * AverageOfAnArray.cpp
@@ -1064,6 +1158,438 @@
 
 
 * <details>
+  <summary>.git/</summary>
+
+
+
+
+  </details>
+
+
+   * <details>
+     <summary>objects/</summary>
+
+
+
+
+     </details>
+
+
+      * <details>
+        <summary>d9/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>2f/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>7a/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>7c/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>d4/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>b4/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>a4/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>54/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>1a/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>60/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>db/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>4f/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>f6/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>47/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>cf/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>59/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>6f/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>fe/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>d2/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>67/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>c4/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>03/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>dc/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>9e/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>34/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>pack/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>d5/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>a2/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>5f/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>info/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>68/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>53/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>72/</summary>
+
+
+
+
+        </details>
+
+
+   * <details>
+     <summary>logs/</summary>
+
+
+
+
+     </details>
+
+
+      * <details>
+        <summary>refs/</summary>
+
+
+
+
+        </details>
+
+
+         * <details>
+           <summary>remotes/</summary>
+
+
+
+
+           </details>
+
+
+            * <details>
+              <summary>origin/</summary>
+
+
+
+
+              </details>
+
+
+         * <details>
+           <summary>heads/</summary>
+
+
+
+
+           </details>
+
+
+   * <details>
+     <summary>hooks/</summary>
+
+
+
+
+     </details>
+
+
+   * <details>
+     <summary>branches/</summary>
+
+
+
+
+     </details>
+
+
+   * <details>
+     <summary>refs/</summary>
+
+
+
+
+     </details>
+
+
+      * <details>
+        <summary>remotes/</summary>
+
+
+
+
+        </details>
+
+
+         * <details>
+           <summary>origin/</summary>
+
+
+
+
+           </details>
+
+
+      * <details>
+        <summary>heads/</summary>
+
+
+
+
+        </details>
+
+
+      * <details>
+        <summary>tags/</summary>
+
+
+
+
+        </details>
+
+
+   * <details>
+     <summary>info/</summary>
+
+
+
+
+     </details>
+
+
+* <details>
   <summary>Unix/</summary>
 
 
@@ -1092,7 +1618,6 @@
     * psiginfo.cpp
     * signal_ctrl_c.cpp
     * ThreadHarwareConcurrency.cpp
-    * Inter Process Communication.md
     * condition_variable.cpp
     * signal.cpp
     * IpcMethods.txt
