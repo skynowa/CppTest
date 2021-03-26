@@ -45,23 +45,19 @@ def tree(dir_path: Path, prefix: str=''):
 
 ####################################################################################################
 def list_files(startpath):
-	dirsExcludes  = ['.git', 'StdStream', 'StdTest']
-	filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm',]
+	filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm', '*.js']
+	dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 	# glob patterns -> regular expressions
-	dirsExcludes  = r'|'.join([fnmatch.translate(x) for x in dirsExcludes]) or r'$.'
 	filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
 	for root, dirs, files in os.walk(startpath):
 		# exclude dirs
-		dirs[:] = [os.path.join(root, d) for d in dirs]
-		dirs[:] = [d for d in dirs if not re.match(dirsExcludes, d)]
+		dirs[:] = [d for d in dirs if d not in dirsExcludes]
 
 		# exclude/include files
 		files = [os.path.join(root, f) for f in files]
-		# files = [f for f in files if not re.match(filesIncludes, f)]
 		files = [f for f in files if re.match(filesIncludes, f)]
-
 
 		level = root.replace(startpath, '').count(os.sep)
 		if (level == 0):
@@ -77,7 +73,7 @@ def list_files(startpath):
 		# files
 		print('\n')
 		for f in files:
-			print('{}* {}'.format(subindent, Path(f).name))
+			print('{}* `{}`'.format(subindent, Path(f).name))
 		print('\n')
 
 		print('{}  </details>'.format(indent))
