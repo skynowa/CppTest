@@ -26,15 +26,20 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirProcess(level, dirPath, files):
+def dirProcess(level, isRootSubDir, dirPath, files):
 	indent    = ' ' * 3 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
-	print('dirPath: {}'.format(dirPath))
+	# print('dirPath: {}'.format(dirPath))
 
 	# dir
 	print('{}* <details>'.format(indent))
-	print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(dirPath)))
+
+	if (isRootSubDir):
+		print('{}  <summary><b>{}/</b></summary>'.format(indent, os.path.basename(dirPath)))
+	else:
+		print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(dirPath)))
+
 
 	# files
 	print('\n')
@@ -55,6 +60,8 @@ def rootDirProcess():
 	# glob patterns -> regular expressions
 	filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
+	isRootSubDir = False
+
 	for dirPath, dirs, files in os.walk(rootPath):
 		# exclude dirs
 		dirs[:] = [d for d in dirs if d not in dirsExcludes]
@@ -68,7 +75,12 @@ def rootDirProcess():
 			continue
 		# print('level: {}'.format(level))
 
-		dirProcess(level, dirPath, files)
+		if (level == 1):
+			isRootSubDir = True
+		else:
+			isRootSubDir = False
+
+		dirProcess(level, isRootSubDir, dirPath, files)
 	# for
 
 ####################################################################################################
@@ -81,7 +93,7 @@ def main():
 
 	print('# C++ Roadmap')
 	print('')
-	print('<div style="background-color:grey">')
+	print('<div style="background-color:black">')
 	print('')
 
 	rootDirProcess()
