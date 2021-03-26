@@ -43,16 +43,17 @@ def dirLevel1(level, root, files):
 	print('{}  </details>'.format(indent))
 	print('\n')
 
-
 ####################################################################################################
-def list_files(startpath):
+def rootDirProcess():
+	rootPath = str(Path.cwd());
+
 	filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm', '*.js']
 	dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 	# glob patterns -> regular expressions
 	filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
-	for root, dirs, files in os.walk(startpath):
+	for root, dirs, files in os.walk(rootPath):
 		# exclude dirs
 		dirs[:] = [d for d in dirs if d not in dirsExcludes]
 
@@ -60,26 +61,32 @@ def list_files(startpath):
 		files = [os.path.join(root, f) for f in files]
 		files = [f for f in files if re.match(filesIncludes, f)]
 
-		level = root.replace(startpath, '').count(os.sep)
+		level = root.replace(rootPath, '').count(os.sep)
 		if (level == 0):
 			continue
 		# print('level: {}'.format(level))
 
 		dirLevel1(level, root, files)
 	# for
+
 ####################################################################################################
-# <style>
-# r { color: Red }
-# o { color: Orange }
-# g { color: Green }
-# </style>
+def main():
+	# <style>
+	# r { color: Red }
+	# o { color: Orange }
+	# g { color: Green }
+	# </style>
 
-print('# C++ Roadmap')
-print('')
-print('<div style="background-color:grey">')
-print('')
+	print('# C++ Roadmap')
+	print('')
+	print('<div style="background-color:grey">')
+	print('')
 
-list_files(str(Path.cwd()))
+	rootDirProcess()
 
-print('</div>')
+	print('</div>')
+
+####################################################################################################
+if __name__ == "__main__":
+    main()
 ####################################################################################################
