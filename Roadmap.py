@@ -4,6 +4,7 @@
 # TODO
 #
 # - progress bar for each dir
+# - Ok icon
 # - ignores
 # -
 ####################################################################################################
@@ -11,14 +12,13 @@
 
 import os
 from pathlib import Path
-
+####################################################################################################
 # prefix components:
 space =  '    '
 branch = '│   '
 # pointers:
 tee =    '├── '
 last =   '└── '
-
 
 def tree(dir_path: Path, prefix: str=''):
 	"""A recursive generator, given a directory Path object
@@ -39,7 +39,7 @@ def tree(dir_path: Path, prefix: str=''):
 # for line in tree(Path.cwd()):
 #     print(line)
 
-
+####################################################################################################
 def list_files(startpath):
 	exclude = set(['.git', 'Windows', 'Desktop'])
 
@@ -65,7 +65,7 @@ def list_files(startpath):
 		print('{}  </details>'.format(indent))
 		print('\n')
 	# for
-
+####################################################################################################
 # <style>
 # r { color: Red }
 # o { color: Orange }
@@ -80,3 +80,4 @@ print('')
 list_files(str(Path.cwd()))
 
 print('</div>')
+####################################################################################################
