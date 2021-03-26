@@ -4,7 +4,7 @@
 # TODO
 #
 # - progress bar for each dir
-# -
+# - ignores
 # -
 ####################################################################################################
 
@@ -64,6 +64,7 @@ def list_files(startpath):
 
 		print('{}  </details>'.format(indent))
 		print('\n')
+	# for
 
 # <style>
 # r { color: Red }
