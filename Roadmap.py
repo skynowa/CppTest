@@ -26,8 +26,22 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirLevel1(startpath):
-	#
+def dirLevel1(level, root, files):
+	indent    = ' ' * 3 * (level - 1)
+	subindent = ' ' * 2 * (level + 1)
+
+	# dir
+	print('{}* <details>'.format(indent))
+	print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(root)))
+
+	# files
+	print('\n')
+	for f in files:
+		print('{}* `{}`'.format(subindent, Path(f).name))
+	print('\n')
+
+	print('{}  </details>'.format(indent))
+	print('\n')
 
 
 ####################################################################################################
@@ -51,21 +65,7 @@ def list_files(startpath):
 			continue
 		# print('level: {}'.format(level))
 
-		indent    = ' ' * 3 * (level - 1)
-		subindent = ' ' * 2 * (level + 1)
-
-		# dir
-		print('{}* <details>'.format(indent))
-		print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(root)))
-
-		# files
-		print('\n')
-		for f in files:
-			print('{}* `{}`'.format(subindent, Path(f).name))
-		print('\n')
-
-		print('{}  </details>'.format(indent))
-		print('\n')
+		dirLevel1(level, root, files)
 	# for
 ####################################################################################################
 # <style>
