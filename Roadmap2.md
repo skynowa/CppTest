@@ -14,7 +14,7 @@
 
 
    * <details>
-     <summary>Vars1/</summary>
+     <summary>Vars1/ (4)</summary>
 
 
       * `module.h`
@@ -27,7 +27,7 @@
 
 
    * <details>
-     <summary>Vars2/</summary>
+     <summary>Vars2/ (6)</summary>
 
 
       * `CxVars.inl`
@@ -81,7 +81,7 @@
 
 
    * <details>
-     <summary>C++17/</summary>
+     <summary>C++17/ (14)</summary>
 
 
       * `TemplateAutoParam.cpp`
@@ -104,7 +104,7 @@
 
 
       * <details>
-        <summary>Attributes/</summary>
+        <summary>Attributes/ (4)</summary>
 
 
         * `maybe_unused.cpp`
@@ -117,7 +117,7 @@
 
 
    * <details>
-     <summary>Array/</summary>
+     <summary>Array/ (1)</summary>
 
 
       * `ArraySize.cpp`
@@ -127,7 +127,7 @@
 
 
       * <details>
-        <summary>ArrayToFunction/</summary>
+        <summary>ArrayToFunction/ (3)</summary>
 
 
         * `ArrayToFunction3.cpp`
@@ -139,7 +139,7 @@
 
 
    * <details>
-     <summary>C++14/</summary>
+     <summary>C++14/ (0)</summary>
 
 
 
@@ -148,7 +148,7 @@
 
 
    * <details>
-     <summary>C++11/</summary>
+     <summary>C++11/ (0)</summary>
 
 
 
@@ -167,7 +167,7 @@
 
 
    * <details>
-     <summary>DoublyLinkedList/</summary>
+     <summary>DoublyLinkedList/ (3)</summary>
 
 
       * `DoubleLinkedListDeletion.cpp`
@@ -179,7 +179,7 @@
 
 
    * <details>
-     <summary>CircularLinkedList/</summary>
+     <summary>CircularLinkedList/ (1)</summary>
 
 
       * `CircularLinkedList.cpp`
@@ -189,7 +189,7 @@
 
 
    * <details>
-     <summary>LinkedList/</summary>
+     <summary>LinkedList/ (7)</summary>
 
 
       * `LinkedListInsertion.cpp`
@@ -243,7 +243,7 @@
 
 
    * <details>
-     <summary>RegDLL/</summary>
+     <summary>RegDLL/ (0)</summary>
 
 
 
@@ -252,7 +252,7 @@
 
 
       * <details>
-        <summary>RDLLMFC/</summary>
+        <summary>RDLLMFC/ (7)</summary>
 
 
         * `StdAfx.cpp`
@@ -268,7 +268,7 @@
 
 
       * <details>
-        <summary>DLLClient1/</summary>
+        <summary>DLLClient1/ (2)</summary>
 
 
         * `DLLCode.h`
@@ -279,7 +279,7 @@
 
 
       * <details>
-        <summary>DLLClient2/</summary>
+        <summary>DLLClient2/ (2)</summary>
 
 
         * `DLLCode.h`
@@ -290,7 +290,7 @@
 
 
       * <details>
-        <summary>W32DLL/</summary>
+        <summary>W32DLL/ (5)</summary>
 
 
         * `StdAfx.cpp`
@@ -304,7 +304,7 @@
 
 
       * <details>
-        <summary>MFCAp/</summary>
+        <summary>MFCAp/ (12)</summary>
 
 
         * `StdAfx.cpp`
@@ -335,7 +335,7 @@
 
 
    * <details>
-     <summary>Limits/</summary>
+     <summary>Limits/ (2)</summary>
 
 
       * `NumericLimits.cpp`
@@ -346,7 +346,7 @@
 
 
    * <details>
-     <summary>List/</summary>
+     <summary>List/ (12)</summary>
 
 
       * `splice.cpp`
@@ -367,7 +367,7 @@
 
 
    * <details>
-     <summary>Map/</summary>
+     <summary>Map/ (12)</summary>
 
 
       * `Maps.cpp`
@@ -388,7 +388,7 @@
 
 
    * <details>
-     <summary>Set/</summary>
+     <summary>Set/ (8)</summary>
 
 
       * `SetInsertionUsingIteratorRange.cpp`
@@ -405,7 +405,7 @@
 
 
    * <details>
-     <summary>Algos/</summary>
+     <summary>Algos/ (6)</summary>
 
 
       * `difference.cpp`
@@ -420,7 +420,7 @@
 
 
    * <details>
-     <summary>C++17/</summary>
+     <summary>C++17/ (10)</summary>
 
 
       * `Any.cpp`
@@ -439,7 +439,7 @@
 
 
    * <details>
-     <summary>MultiMap/</summary>
+     <summary>MultiMap/ (3)</summary>
 
 
       * `MultimapOperations.cpp`
@@ -451,7 +451,7 @@
 
 
    * <details>
-     <summary>Utility/</summary>
+     <summary>Utility/ (1)</summary>
 
 
       * `forward.cpp`
@@ -461,7 +461,7 @@
 
 
    * <details>
-     <summary>Functional/</summary>
+     <summary>Functional/ (1)</summary>
 
 
       * `ref.cpp`
@@ -471,7 +471,7 @@
 
 
    * <details>
-     <summary>C++14/</summary>
+     <summary>C++14/ (0)</summary>
 
 
 
@@ -480,7 +480,7 @@
 
 
    * <details>
-     <summary>String/</summary>
+     <summary>String/ (3)</summary>
 
 
       * `reverse.cpp`
@@ -492,7 +492,7 @@
 
 
    * <details>
-     <summary>SmartPtrs/</summary>
+     <summary>SmartPtrs/ (2)</summary>
 
 
       * `AutoPtrVSUniquePtr.cpp`
@@ -503,7 +503,7 @@
 
 
    * <details>
-     <summary>ForwardList/</summary>
+     <summary>ForwardList/ (3)</summary>
 
 
       * `ForwardListOperation2.cpp`
@@ -515,7 +515,7 @@
 
 
    * <details>
-     <summary>IOStream/</summary>
+     <summary>IOStream/ (1)</summary>
 
 
       * `OperatorOutput.cpp`
@@ -525,7 +525,7 @@
 
 
    * <details>
-     <summary>Vector/</summary>
+     <summary>Vector/ (11)</summary>
 
 
       * `RandomNumberInitializationInVector.cpp`
@@ -545,7 +545,7 @@
 
 
    * <details>
-     <summary>C++11/</summary>
+     <summary>C++11/ (0)</summary>
 
 
 
@@ -554,7 +554,7 @@
 
 
    * <details>
-     <summary>Deque/</summary>
+     <summary>Deque/ (2)</summary>
 
 
       * `DequeImplementation.cpp`
@@ -565,7 +565,7 @@
 
 
    * <details>
-     <summary>UnorderedMap/</summary>
+     <summary>UnorderedMap/ (3)</summary>
 
 
       * `UnorderedMapInitialization.cpp`
@@ -610,7 +610,7 @@
 
 
    * <details>
-     <summary>Union/</summary>
+     <summary>Union/ (1)</summary>
 
 
       * `Union.cpp`
@@ -620,7 +620,7 @@
 
 
    * <details>
-     <summary>Hierarchy/</summary>
+     <summary>Hierarchy/ (2)</summary>
 
 
       * `Hierarchy.cpp`
@@ -648,7 +648,7 @@
 
 
    * <details>
-     <summary>Lambda/</summary>
+     <summary>Lambda/ (9)</summary>
 
 
       * `LambdaMemberVariableCapture.cpp`
@@ -702,7 +702,7 @@
 
 
    * <details>
-     <summary>Structural/</summary>
+     <summary>Structural/ (8)</summary>
 
 
       * `adapter.cpp`
@@ -719,7 +719,7 @@
 
 
    * <details>
-     <summary>Creational/</summary>
+     <summary>Creational/ (6)</summary>
 
 
       * `ClassFactory.cpp`
@@ -734,7 +734,7 @@
 
 
    * <details>
-     <summary>Behavioral/</summary>
+     <summary>Behavioral/ (15)</summary>
 
 
       * `memento.cpp`
@@ -807,7 +807,7 @@
 
 
    * <details>
-     <summary>EnumIO/</summary>
+     <summary>EnumIO/ (2)</summary>
 
 
       * `EnumIO.h`
@@ -845,7 +845,7 @@
 
 
    * <details>
-     <summary>CString/</summary>
+     <summary>CString/ (3)</summary>
 
 
       * `main_CString.cpp`
@@ -884,7 +884,7 @@
 
 
    * <details>
-     <summary>IsBot/</summary>
+     <summary>IsBot/ (1)</summary>
 
 
       * `main_BlackList.cpp`
@@ -903,7 +903,7 @@
 
 
    * <details>
-     <summary>Boost/</summary>
+     <summary>Boost/ (3)</summary>
 
 
       * `ScopeArray.cpp`
@@ -915,7 +915,7 @@
 
 
    * <details>
-     <summary>LibEvent/</summary>
+     <summary>LibEvent/ (2)</summary>
 
 
       * `all_test.cpp`
@@ -926,7 +926,7 @@
 
 
    * <details>
-     <summary>Ssh2/</summary>
+     <summary>Ssh2/ (1)</summary>
 
 
       * `SSH2.cpp`
@@ -936,7 +936,7 @@
 
 
    * <details>
-     <summary>Qt/</summary>
+     <summary>Qt/ (1)</summary>
 
 
       * `HttpUpload.cpp`
@@ -946,7 +946,7 @@
 
 
       * <details>
-        <summary>QSharedMemory/</summary>
+        <summary>QSharedMemory/ (3)</summary>
 
 
         * `main_MainDialog.cpp`
@@ -958,7 +958,7 @@
 
 
    * <details>
-     <summary>LibUv/</summary>
+     <summary>LibUv/ (0)</summary>
 
 
 
@@ -967,7 +967,7 @@
 
 
    * <details>
-     <summary>Pcre/</summary>
+     <summary>Pcre/ (0)</summary>
 
 
 
@@ -976,7 +976,7 @@
 
 
    * <details>
-     <summary>XLib/</summary>
+     <summary>XLib/ (0)</summary>
 
 
 
@@ -985,7 +985,7 @@
 
 
       * <details>
-        <summary>GlobalHotKey/</summary>
+        <summary>GlobalHotKey/ (0)</summary>
 
 
 
@@ -1006,7 +1006,7 @@
 
 
    * <details>
-     <summary>WinException/</summary>
+     <summary>WinException/ (3)</summary>
 
 
       * `CxWinException.cpp`
@@ -1018,7 +1018,7 @@
 
 
    * <details>
-     <summary>SignalsToException_2/</summary>
+     <summary>SignalsToException_2/ (3)</summary>
 
 
       * `SignalHandler.h`
@@ -1030,7 +1030,7 @@
 
 
    * <details>
-     <summary>SignalsToException/</summary>
+     <summary>SignalsToException/ (1)</summary>
 
 
       * `SignalsToException.cpp`
@@ -1090,7 +1090,7 @@
 
 
    * <details>
-     <summary>Process/</summary>
+     <summary>Process/ (2)</summary>
 
 
       * `ExitFunctions.cpp`
@@ -1127,7 +1127,7 @@
 
 
    * <details>
-     <summary>Linux/</summary>
+     <summary>Linux/ (1)</summary>
 
 
       * `inotify.cpp`
@@ -1153,7 +1153,7 @@
 
 
    * <details>
-     <summary>RaceCondition/</summary>
+     <summary>RaceCondition/ (2)</summary>
 
 
       * `RaceConditionExample.cpp`
@@ -1164,7 +1164,7 @@
 
 
    * <details>
-     <summary>Proccess/</summary>
+     <summary>Proccess/ (3)</summary>
 
 
       * `Wait.cpp`
@@ -1176,7 +1176,7 @@
 
 
    * <details>
-     <summary>Mutex/</summary>
+     <summary>Mutex/ (3)</summary>
 
 
       * `MutexLockUnlock.cpp`
@@ -1188,7 +1188,7 @@
 
 
    * <details>
-     <summary>PassingArgumentsToThreads/</summary>
+     <summary>PassingArgumentsToThreads/ (3)</summary>
 
 
       * `PassingPointersTThread.cpp`
@@ -1200,7 +1200,7 @@
 
 
    * <details>
-     <summary>EventHandling/</summary>
+     <summary>EventHandling/ (3)</summary>
 
 
       * `ConditionalVariableBasics.cpp`
@@ -1212,7 +1212,7 @@
 
 
    * <details>
-     <summary>JoinDetach/</summary>
+     <summary>JoinDetach/ (1)</summary>
 
 
       * `JoiningThreads.cpp`
@@ -1222,7 +1222,7 @@
 
 
    * <details>
-     <summary>Thread/</summary>
+     <summary>Thread/ (4)</summary>
 
 
       * `ThreadCreationUsingLambdaFunction.cpp`
@@ -1235,7 +1235,7 @@
 
 
    * <details>
-     <summary>C++11/</summary>
+     <summary>C++11/ (1)</summary>
 
 
       * `atomic_flag.cpp`
@@ -1254,7 +1254,7 @@
 
 
    * <details>
-     <summary>File/</summary>
+     <summary>File/ (4)</summary>
 
 
       * `FileRouter.inl`
@@ -1267,7 +1267,7 @@
 
 
    * <details>
-     <summary>Thread/</summary>
+     <summary>Thread/ (5)</summary>
 
 
       * `IThreadImpl_win.h`

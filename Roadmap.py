@@ -26,7 +26,12 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirProcess(level, isRootSubDir, dirPath, files):
+def dirProcess(level, dirPath, files):
+	if (level == 1):
+		isRootSubDir = True
+	else:
+		isRootSubDir = False
+
 	indent    = ' ' * 3 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
@@ -38,7 +43,7 @@ def dirProcess(level, isRootSubDir, dirPath, files):
 	if (isRootSubDir):
 		print('{}  <summary><b>{}/</b></summary>'.format(indent, os.path.basename(dirPath)))
 	else:
-		print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(dirPath)))
+		print('{}  <summary>{}/ ({})</summary>'.format(indent, os.path.basename(dirPath), len(files)))
 
 
 	# files
@@ -75,12 +80,7 @@ def rootDirProcess():
 			continue
 		# print('level: {}'.format(level))
 
-		if (level == 1):
-			isRootSubDir = True
-		else:
-			isRootSubDir = False
-
-		dirProcess(level, isRootSubDir, dirPath, files)
+		dirProcess(level, dirPath, files)
 	# for
 
 ####################################################################################################
