@@ -47,16 +47,18 @@ def list_files(startpath):
 		dirs[:] = [d for d in dirs if d not in exclude]
 
 		level = root.replace(startpath, '').count(os.sep)
+		# print('level: {}'.format(level))
 		if (level == 0):
 			continue
 
 		indent    = ' ' * 3 * (level - 1)
 		subindent = ' ' * 2 * (level + 1)
 
-		# print('\n')
+		# dir
 		print('{}* <details>'.format(indent))
 		print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(root)))
 
+		# files
 		print('\n')
 		for f in files:
 			print('{}* {}'.format(subindent, f))
