@@ -26,7 +26,7 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirLevel1(level, root, files):
+def dirProcess(level, root, files):
 	indent    = ' ' * 3 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
@@ -66,7 +66,7 @@ def rootDirProcess():
 			continue
 		# print('level: {}'.format(level))
 
-		dirLevel1(level, root, files)
+		dirProcess(level, root, files)
 	# for
 
 ####################################################################################################
