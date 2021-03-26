@@ -2,6 +2,7 @@
 
 <div style="background-color:grey">
 
+root: /home/skynowa/Projects/CppTest/Static
 * <details>
   <summary>Static/</summary>
 
@@ -13,6 +14,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Static/Vars1
    * <details>
      <summary>Vars1/</summary>
 
@@ -26,6 +28,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Static/Vars2
    * <details>
      <summary>Vars2/</summary>
 
@@ -41,6 +44,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Char
 * <details>
   <summary>Char/</summary>
 
@@ -52,6 +56,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core
 * <details>
   <summary>Core/</summary>
 
@@ -80,6 +85,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/C++17
    * <details>
      <summary>C++17/</summary>
 
@@ -103,6 +109,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/C++17/Attributes
       * <details>
         <summary>Attributes/</summary>
 
@@ -116,6 +123,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/Array
    * <details>
      <summary>Array/</summary>
 
@@ -126,6 +134,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/Array/ArrayToFunction
       * <details>
         <summary>ArrayToFunction/</summary>
 
@@ -138,6 +147,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/C++14
    * <details>
      <summary>C++14/</summary>
 
@@ -147,6 +157,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Core/C++11
    * <details>
      <summary>C++11/</summary>
 
@@ -156,6 +167,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Algos
 * <details>
   <summary>Algos/</summary>
 
@@ -166,6 +178,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Algos/DoublyLinkedList
    * <details>
      <summary>DoublyLinkedList/</summary>
 
@@ -178,6 +191,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Algos/CircularLinkedList
    * <details>
      <summary>CircularLinkedList/</summary>
 
@@ -188,6 +202,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Algos/LinkedList
    * <details>
      <summary>LinkedList/</summary>
 
@@ -204,6 +219,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Operators
 * <details>
   <summary>Operators/</summary>
 
@@ -222,6 +238,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows
 * <details>
   <summary>Windows/</summary>
 
@@ -242,6 +259,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL
    * <details>
      <summary>RegDLL/</summary>
 
@@ -251,6 +269,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL/RDLLMFC
       * <details>
         <summary>RDLLMFC/</summary>
 
@@ -267,6 +286,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL/DLLClient1
       * <details>
         <summary>DLLClient1/</summary>
 
@@ -278,6 +298,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL/DLLClient2
       * <details>
         <summary>DLLClient2/</summary>
 
@@ -289,6 +310,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL/W32DLL
       * <details>
         <summary>W32DLL/</summary>
 
@@ -303,6 +325,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Windows/RegDLL/MFCAp
       * <details>
         <summary>MFCAp/</summary>
 
@@ -324,6 +347,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl
 * <details>
   <summary>Stl/</summary>
 
@@ -334,6 +358,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Limits
    * <details>
      <summary>Limits/</summary>
 
@@ -345,6 +370,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/List
    * <details>
      <summary>List/</summary>
 
@@ -366,6 +392,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Map
    * <details>
      <summary>Map/</summary>
 
@@ -387,6 +414,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Set
    * <details>
      <summary>Set/</summary>
 
@@ -404,6 +432,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Algos
    * <details>
      <summary>Algos/</summary>
 
@@ -419,6 +448,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/C++17
    * <details>
      <summary>C++17/</summary>
 
@@ -438,6 +468,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/MultiMap
    * <details>
      <summary>MultiMap/</summary>
 
@@ -450,6 +481,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Utility
    * <details>
      <summary>Utility/</summary>
 
@@ -460,6 +492,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Functional
    * <details>
      <summary>Functional/</summary>
 
@@ -470,6 +503,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/C++14
    * <details>
      <summary>C++14/</summary>
 
@@ -479,6 +513,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/String
    * <details>
      <summary>String/</summary>
 
@@ -491,6 +526,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/SmartPtrs
    * <details>
      <summary>SmartPtrs/</summary>
 
@@ -502,6 +538,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/ForwardList
    * <details>
      <summary>ForwardList/</summary>
 
@@ -514,6 +551,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/IOStream
    * <details>
      <summary>IOStream/</summary>
 
@@ -524,6 +562,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Vector
    * <details>
      <summary>Vector/</summary>
 
@@ -544,6 +583,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/C++11
    * <details>
      <summary>C++11/</summary>
 
@@ -553,6 +593,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/Deque
    * <details>
      <summary>Deque/</summary>
 
@@ -564,6 +605,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Stl/UnorderedMap
    * <details>
      <summary>UnorderedMap/</summary>
 
@@ -576,6 +618,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Cast
 * <details>
   <summary>Cast/</summary>
 
@@ -588,6 +631,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Class
 * <details>
   <summary>Class/</summary>
 
@@ -609,6 +653,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Class/Union
    * <details>
      <summary>Union/</summary>
 
@@ -619,6 +664,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Class/Hierarchy
    * <details>
      <summary>Hierarchy/</summary>
 
@@ -630,6 +676,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Functor
 * <details>
   <summary>Functor/</summary>
 
@@ -647,6 +694,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Functor/Lambda
    * <details>
      <summary>Lambda/</summary>
 
@@ -665,6 +713,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/SQL
 * <details>
   <summary>SQL/</summary>
 
@@ -675,6 +724,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Etc
 * <details>
   <summary>Etc/</summary>
 
@@ -692,6 +742,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Patterns
 * <details>
   <summary>Patterns/</summary>
 
@@ -701,6 +752,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Patterns/Structural
    * <details>
      <summary>Structural/</summary>
 
@@ -718,6 +770,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Patterns/Creational
    * <details>
      <summary>Creational/</summary>
 
@@ -733,6 +786,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Patterns/Behavioral
    * <details>
      <summary>Behavioral/</summary>
 
@@ -757,6 +811,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Network
 * <details>
   <summary>Network/</summary>
 
@@ -769,6 +824,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Double
 * <details>
   <summary>Double/</summary>
 
@@ -782,6 +838,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/!Todo
 * <details>
   <summary>!Todo/</summary>
 
@@ -793,6 +850,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Enum
 * <details>
   <summary>Enum/</summary>
 
@@ -806,6 +864,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Enum/EnumIO
    * <details>
      <summary>EnumIO/</summary>
 
@@ -817,6 +876,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/FAQ
 * <details>
   <summary>FAQ/</summary>
 
@@ -827,6 +887,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/String
 * <details>
   <summary>String/</summary>
 
@@ -844,6 +905,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/String/CString
    * <details>
      <summary>CString/</summary>
 
@@ -856,6 +918,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Loops
 * <details>
   <summary>Loops/</summary>
 
@@ -870,6 +933,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Bits
 * <details>
   <summary>Bits/</summary>
 
@@ -883,6 +947,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Bits/IsBot
    * <details>
      <summary>IsBot/</summary>
 
@@ -893,6 +958,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs
 * <details>
   <summary>Libs/</summary>
 
@@ -902,6 +968,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/Boost
    * <details>
      <summary>Boost/</summary>
 
@@ -914,6 +981,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/LibEvent
    * <details>
      <summary>LibEvent/</summary>
 
@@ -925,6 +993,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/Ssh2
    * <details>
      <summary>Ssh2/</summary>
 
@@ -935,6 +1004,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/Qt
    * <details>
      <summary>Qt/</summary>
 
@@ -945,6 +1015,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/Qt/QSharedMemory
       * <details>
         <summary>QSharedMemory/</summary>
 
@@ -957,6 +1028,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/LibUv
    * <details>
      <summary>LibUv/</summary>
 
@@ -966,6 +1038,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/Pcre
    * <details>
      <summary>Pcre/</summary>
 
@@ -975,6 +1048,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/XLib
    * <details>
      <summary>XLib/</summary>
 
@@ -984,6 +1058,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Libs/XLib/GlobalHotKey
       * <details>
         <summary>GlobalHotKey/</summary>
 
@@ -993,6 +1068,7 @@
         </details>
 
 
+root: /home/skynowa/Projects/CppTest/Exceptions
 * <details>
   <summary>Exceptions/</summary>
 
@@ -1005,6 +1081,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Exceptions/WinException
    * <details>
      <summary>WinException/</summary>
 
@@ -1017,6 +1094,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Exceptions/SignalsToException_2
    * <details>
      <summary>SignalsToException_2/</summary>
 
@@ -1029,6 +1107,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Exceptions/SignalsToException
    * <details>
      <summary>SignalsToException/</summary>
 
@@ -1039,6 +1118,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Pointers
 * <details>
   <summary>Pointers/</summary>
 
@@ -1052,6 +1132,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Templates
 * <details>
   <summary>Templates/</summary>
 
@@ -1074,6 +1155,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/StdLibC
 * <details>
   <summary>StdLibC/</summary>
 
@@ -1089,6 +1171,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/StdLibC/Process
    * <details>
      <summary>Process/</summary>
 
@@ -1100,6 +1183,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Virtual
 * <details>
   <summary>Virtual/</summary>
 
@@ -1115,6 +1199,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Unix
 * <details>
   <summary>Unix/</summary>
 
@@ -1126,6 +1211,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Unix/Linux
    * <details>
      <summary>Linux/</summary>
 
@@ -1136,6 +1222,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt
 * <details>
   <summary>IpcMt/</summary>
 
@@ -1152,6 +1239,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/RaceCondition
    * <details>
      <summary>RaceCondition/</summary>
 
@@ -1163,6 +1251,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/Proccess
    * <details>
      <summary>Proccess/</summary>
 
@@ -1175,6 +1264,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/Mutex
    * <details>
      <summary>Mutex/</summary>
 
@@ -1187,6 +1277,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/PassingArgumentsToThreads
    * <details>
      <summary>PassingArgumentsToThreads/</summary>
 
@@ -1199,6 +1290,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/EventHandling
    * <details>
      <summary>EventHandling/</summary>
 
@@ -1211,6 +1303,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/JoinDetach
    * <details>
      <summary>JoinDetach/</summary>
 
@@ -1221,6 +1314,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/Thread
    * <details>
      <summary>Thread/</summary>
 
@@ -1234,6 +1328,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/IpcMt/C++11
    * <details>
      <summary>C++11/</summary>
 
@@ -1244,6 +1339,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Crossplatform
 * <details>
   <summary>Crossplatform/</summary>
 
@@ -1253,6 +1349,7 @@
   </details>
 
 
+root: /home/skynowa/Projects/CppTest/Crossplatform/File
    * <details>
      <summary>File/</summary>
 
@@ -1266,6 +1363,7 @@
      </details>
 
 
+root: /home/skynowa/Projects/CppTest/Crossplatform/Thread
    * <details>
      <summary>Thread/</summary>
 

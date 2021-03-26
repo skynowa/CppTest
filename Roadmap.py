@@ -26,13 +26,15 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirProcess(level, root, files):
+def dirProcess(level, dirPath, files):
 	indent    = ' ' * 3 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
+	print('dirPath: {}'.format(dirPath))
+
 	# dir
 	print('{}* <details>'.format(indent))
-	print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(root)))
+	print('{}  <summary>{}/</summary>'.format(indent, os.path.basename(dirPath)))
 
 	# files
 	print('\n')
@@ -53,20 +55,20 @@ def rootDirProcess():
 	# glob patterns -> regular expressions
 	filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
-	for root, dirs, files in os.walk(rootPath):
+	for dirPath, dirs, files in os.walk(rootPath):
 		# exclude dirs
 		dirs[:] = [d for d in dirs if d not in dirsExcludes]
 
 		# exclude/include files
-		files = [os.path.join(root, f) for f in files]
+		files = [os.path.join(dirPath, f) for f in files]
 		files = [f for f in files if re.match(filesIncludes, f)]
 
-		level = root.replace(rootPath, '').count(os.sep)
+		level = dirPath.replace(rootPath, '').count(os.sep)
 		if (level == 0):
 			continue
 		# print('level: {}'.format(level))
 
-		dirProcess(level, root, files)
+		dirProcess(level, dirPath, files)
 	# for
 
 ####################################################################################################
