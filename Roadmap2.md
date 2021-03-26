@@ -1,4 +1,7 @@
 # C++ Roadmap
+
+<div style="background-color:grey">
+
 * <details>
   <summary>Static/</summary>
 
@@ -1226,3 +1229,4 @@
      </details>
 
 
+</div>

@@ -64,6 +64,10 @@ def list_files(startpath):
 # </style>
 
 print('# C++ Roadmap')
-# print('<div style="background-color:grey">')
+print('')
+print('<div style="background-color:grey">')
+print('')
+
 list_files(str(Path.cwd()))
-# print('</div>')
+
+print('</div>')
