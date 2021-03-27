@@ -26,7 +26,7 @@ from pathlib import Path
 # last =   '└── '
 
 ####################################################################################################
-def dirProcess(level, dirPath, files):
+def dirProcess(level, dirPath, dirs, files):
 	if (level == 1):
 		isRootSubDir = True
 	else:
@@ -56,6 +56,12 @@ def dirProcess(level, dirPath, files):
 		print('{}  <summary>{}/ ({}% of {})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
+	# dirs
+	print('\n')
+	for d in dirs:
+		print('{}* `::: {} :::`'.format(subindent, Path(d).name))
+	print('\n')
+
 	# files
 	print('\n')
 	for f in files:
@@ -78,6 +84,8 @@ def rootDirProcess():
 	isRootSubDir = False
 
 	for dirPath, dirs, files in os.walk(rootPath):
+		# print('dirPath: {}'.format(dirPath))
+
 		# exclude dirs
 		dirs[:] = [d for d in dirs if d not in dirsExcludes]
 
@@ -90,7 +98,7 @@ def rootDirProcess():
 			continue
 		# print('level: {}'.format(level))
 
-		dirProcess(level, dirPath, files)
+		dirProcess(level, dirPath, dirs, files)
 	# for
 
 ####################################################################################################
