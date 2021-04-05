@@ -1,13 +1,8 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  W32DLL.cpp
+ * \brief Defines the entry point for the DLL application
  */
 
-
-// W32DLL.cpp : Defines the entry point for the DLL application.
-//
 
 #include "stdafx.h"
 
