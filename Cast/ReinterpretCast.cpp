@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  ReinterpretCast.cpp
  * \brief
  */
 
@@ -10,16 +10,17 @@
 #include <vector>
 
 //---------------------------------------------------------------------------
-void func(unsigned char []) {
+void
+func(unsigned char [])
+{
 	std::cout << "void func(unsigned char []) << \n";
 }
 //---------------------------------------------------------------------------
-int main(void) {
+int main(void)
+{
 	char* ptr = 0;
 	func(reinterpret_cast<unsigned char*>(ptr));
 
-
-	system("pause");
 	return 0;
 }
 //---------------------------------------------------------------------------
