@@ -139,7 +139,7 @@
   </details>
 
   * <details>
-    <summary>Array/ (<b>100%</b> of 4)</summary>
+    <summary>Array/ (<b>75%</b> of 4)</summary>
 
       * `ArraySize.cpp`
 
