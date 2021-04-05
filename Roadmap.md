@@ -907,7 +907,7 @@
   </details>
 
 * <details close>
-  <summary><b>Windows/</b> [█░░░░░░░░] 18% 39</summary>
+  <summary><b>Windows/</b> [██░░░░░░░] 23% 39</summary>
 
     * ❌ CxHandle.cpp
     * ❌ getuid.cpp
@@ -924,7 +924,7 @@
   </details>
 
   * <details close>
-    <summary>RegDLL/ (<b>25%</b> of 28)</summary>
+    <summary>RegDLL/ (<b>32%</b> of 28)</summary>
 
 
     </details>
@@ -964,7 +964,7 @@
       </details>
 
     * <details close>
-      <summary>RDLLMFC/ (<b>14%</b> of 7)</summary>
+      <summary>RDLLMFC/ (<b>29%</b> of 7)</summary>
 
         * ❌ StdAfx.cpp
         * ❌ RDLLMFC.cpp
@@ -972,17 +972,17 @@
         * ✅ `Resource.h`
         * ❌ DLLCode.h
         * ❌ DLLCode.cpp
-        * ❌ StdAfx.h
+        * ✅ `StdAfx.h`
 
       </details>
 
     * <details close>
-      <summary>W32DLL/ (<b>80%</b> of 5)</summary>
+      <summary>W32DLL/ (<b>100%</b> of 5)</summary>
 
         * ✅ `StdAfx.cpp`
         * ✅ `DLLCode.h`
         * ✅ `DLLCode.cpp`
-        * ❌ W32DLL.cpp
+        * ✅ `W32DLL.cpp`
         * ✅ `StdAfx.h`
 
       </details>

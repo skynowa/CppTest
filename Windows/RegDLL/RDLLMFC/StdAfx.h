@@ -1,15 +1,11 @@
 /**
- * \file
+ * \file  StdAfx.h
  * \brief
  *
- * \todo
+ * include file for standard system include files,
+ * or project specific include files that are used frequently, but are changed infrequently
  */
 
-
-// stdafx.h : include file for standard system include files,
-//  or project specific include files that are used frequently, but
-//      are changed infrequently
-//
 
 #if !defined(AFX_STDAFX_H__ECE40F4B_88BA_4CB6_8F22_F84000860A6C__INCLUDED_)
 #define AFX_STDAFX_H__ECE40F4B_88BA_4CB6_8F22_F84000860A6C__INCLUDED_
