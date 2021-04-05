@@ -114,16 +114,16 @@ def dirProcess(level, dirPath, dirs, files):
 	# dir
 	print('{}* <details>'.format(indent))
 
+	info = tree[dirPath]
+	# print('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
+
+	allfilesNum  = info[0]
+	doneFilesPct = info[3]
+
 	if (isRootSubDir):
-		print('{}  <summary><b>{}/</b></summary>'
-			.format(indent, os.path.basename(dirPath)))
+		print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
+			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 	else:
-		info = tree[dirPath]
-		# print('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
-
-		allfilesNum  = info[0]
-		doneFilesPct = info[3]
-
 		print('{}  <summary>{}/ (<b>{}%</b> of {})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
@@ -140,6 +140,8 @@ def dirProcess(level, dirPath, dirs, files):
 
 		if ( isFileTodo(file) ):
 			fileName = '<span style="color:red">{}</span>'.format(fileName)
+		else:
+			fileName = '`{}`'.format(fileName)
 
 		print('{}* {}'.format(subindent, fileName))
 	print('')
