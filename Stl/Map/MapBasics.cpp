@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <string>
 #include <map>
@@ -8,7 +16,7 @@ using namespace std;
 int main()
 {
 	map<string, int> mapOfWords;
-	
+
 	mapOfWords.insert(make_pair("earth", 1));
 	mapOfWords.insert(make_pair("moon", 2));
 	mapOfWords["sun"] = 3;

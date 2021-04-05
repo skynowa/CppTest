@@ -1,6 +1,8 @@
 ﻿ /*
  * \file  CString.cpp
  * \brief simple string class
+ *
+ * \todo
  */
 
 

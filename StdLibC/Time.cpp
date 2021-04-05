@@ -1,10 +1,16 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 #include <stdio.h>
 #include <time.h>
 #include <cstring>
-
-
 
 typedef signed char int8;
 typedef signed short int16;

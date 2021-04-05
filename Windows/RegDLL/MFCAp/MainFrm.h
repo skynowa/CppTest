@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 // MainFrm.h : interface of the CMainFrame class
 //
 /////////////////////////////////////////////////////////////////////////////
@@ -11,7 +19,7 @@
 
 class CMainFrame : public CFrameWnd
 {
-	
+
 protected: // create from serialization only
 	CMainFrame();
 	DECLARE_DYNCREATE(CMainFrame)

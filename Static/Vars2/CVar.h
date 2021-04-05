@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #ifndef CVarH
 #define CVarH
 

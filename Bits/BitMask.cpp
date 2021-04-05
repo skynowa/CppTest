@@ -1,6 +1,8 @@
- /*
+/**
  * \file  main.cpp
  * \brief bit mask
+ *
+ * \todo
  */
 
  /*

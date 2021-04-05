@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 A Prototype is an object which is cloneable, i.e. you can create a copy,
 even though you don't know what you are creating a copy of.

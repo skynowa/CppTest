@@ -1,6 +1,8 @@
 /**
  * \file  main.cpp
  * \brief https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Type_Safe_Enum
+ *
+ * \todo
  */
 
 

@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 # Inter Process Communication
 
 Inter Process Communication (IPC) is a mechanism that involves communication of one process with another process. This usually occurs only in one system.
@@ -23,11 +31,11 @@ Following are some important terms that we need to know before proceeding furthe
 
 ## Process Information
 
-What is a process? 
+What is a process?
 
 ​	A process is a program in execution.
 
-What is a program? 
+What is a program?
 
 ​	A program is a file containing the information of a process and how to build it during run time. When you start execution of the program, it is loaded into RAM and starts executing.
 
@@ -83,30 +91,30 @@ On compilation and execution of the above program, following will be the output.
 ```c
 UID         PID   PPID  C STIME TTY          TIME CMD
 root          1      0  0  2017 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
-mysql       101      1  0  2017 ?        00:06:06 /usr/libexec/mysqld 
-                                         --basedir = /usr 
-                                         --datadir = /var/lib/mysql 
-                                         --plugin-dir = /usr/lib64/mysql/plugin 
-                                         --user = mysql 
-                                         --log-error = /var/log/mariadb/mariadb.log 
-                                         --pid-file = /run/mariadb/mariadb.pid 
+mysql       101      1  0  2017 ?        00:06:06 /usr/libexec/mysqld
+                                         --basedir = /usr
+                                         --datadir = /var/lib/mysql
+                                         --plugin-dir = /usr/lib64/mysql/plugin
+                                         --user = mysql
+                                         --log-error = /var/log/mariadb/mariadb.log
+                                         --pid-file = /run/mariadb/mariadb.pid
                                          --socket = /var/lib/mysql/mysql.sock
-2868535   96284      0  0 05:23 ?        00:00:00 bash -c download() { 
-                                         flag = "false" hsize = 1 
-                                         echo -e "GET /$2 HTTP/1.1\nHost: 
-                                         $1\nConnection: close\n\n" | 
-                                         openssl s_client -timeout -quiet 
-                                         -verify_quiet -connect $1:443 2> 
+2868535   96284      0  0 05:23 ?        00:00:00 bash -c download() {
+                                         flag = "false" hsize = 1
+                                         echo -e "GET /$2 HTTP/1.1\nHost:
+                                         $1\nConnection: close\n\n" |
+                                         openssl s_client -timeout -quiet
+                                         -verify_quiet -connect $1:443 2>
                                          /dev/null | tee out | while read line do
-                                         if [[ "$flag" == "false" ]]     
-                                         then 
+                                         if [[ "$flag" == "false" ]]
+                                         then
                                          hsize = $((hsize+$(echo $line | wc -c)))
                                          fi
-                                         if [[ "${line:1:1}" == "" ]]     
+                                         if [[ "${line:1:1}" == "" ]]
                                          then flag = "true"
-                                         fi 
-                                         echo $hsize > 
-                                         size done tail -c +$(cat size) out > 
+                                         fi
+                                         echo $hsize >
+                                         size done tail -c +$(cat size) out >
                                          $2 rm size out }
                                          ( download my.mixtape.moe mhawum 2>
                                          /dev/null chmod +x mhawum 2>
@@ -114,11 +122,11 @@ mysql       101      1  0  2017 ?        00:06:06 /usr/libexec/mysqld
                                          /dev/null 2>
                                          /dev/null )&
 2868535   96910  96284 99 05:23 ?        00:47:26 ./mhawum
-6118874  104116      0  3 05:25 ?        00:00:00 sh -c cd /home/cg/root/6118874; 
+6118874  104116      0  3 05:25 ?        00:00:00 sh -c cd /home/cg/root/6118874;
                                          timeout 10s javac Puppy.java
 6118874  104122 104116  0 05:25 ?        00:00:00 timeout 10s javac Puppy.java
 6118874  104123 104122 23 05:25 ?        00:00:00 javac Puppy.java
-3787205  104169      0  0 05:25 ?        00:00:00 sh -c cd /home/cg/root/3787205; 
+3787205  104169      0  0 05:25 ?        00:00:00 sh -c cd /home/cg/root/3787205;
                                          timeout 10s main
 3787205  104175 104169  0 05:25 ?        00:00:00 timeout 10s main
 3787205  104176 104175  0 05:25 ?        00:00:00 main
@@ -249,10 +257,10 @@ $ gcc segment_size5.c -o segment_size5
 ```c
 babukrishnam size segment_size1 segment_size2 segment_size3 segment_size4 segment_size5
    text  data  bss  dec  hex  filename
-   878   252    8   1138 472  segment_size1 
-   878   252   12   1142 476  segment_size2 
-   878   256   12   1146 47a  segment_size3 
-   878   260   12   1150 47e  segment_size4 
+   878   252    8   1138 472  segment_size1
+   878   252   12   1142 476  segment_size2
+   878   256   12   1146 47a  segment_size3
+   878   260   12   1150 47e  segment_size4
    878   260   16   1154 482  segment_size5
 ```
 ## Process Creation & Termination
@@ -339,8 +347,8 @@ int main() {
       mypid = getpid();
       myppid = getppid();
       printf("Process id is %d and PPID is %d\n", mypid, myppid);
-   } 
-   else { // Parent process 
+   }
+   else { // Parent process
       sleep(2);
       printf("This is parent process\n");
       mypid = getpid();
@@ -448,7 +456,7 @@ Let us consider an example program, where the parent process does not wait for t
 int main() {
    int pid;
    pid = fork();
-   
+
    // Child process
    if (pid == 0) {
       system("ps -ef");
@@ -495,7 +503,7 @@ int main() {
    int pid;
    int status;
    pid = fork();
-   
+
    // Child process
    if (pid == 0) {
       system("ps -ef");

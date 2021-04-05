@@ -40,7 +40,7 @@ def nested_defaultdict(default_factory, depth=1):
 
 tree = nested_defaultdict(list, 10)
 
-filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm', '*.js']
+filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm', '*.js', '*.java']
 dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 # glob patterns -> regular expressions
@@ -50,7 +50,7 @@ filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 def isFileTodo(a_filePath):
 	isTodo = True
 
-	todoLabel = 'note  [todo]'
+	todoLabel = '\\todo'
 
 	try:
 		f = open(a_filePath, "r")

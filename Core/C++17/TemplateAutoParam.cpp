@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Declaring non-type template parameters with auto
  *
+ * \todo
+ *
  * Following the deduction rules of auto, while respecting the non-type template parameter
  * list of allowable types[*], template arguments can be deduced from the types of its arguments:
  *

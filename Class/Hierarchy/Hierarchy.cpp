@@ -1,6 +1,8 @@
  /*
  * \file  main.cpp
  * \brief class hierarchy
+ *
+ * \todo
  */
 
 
@@ -47,7 +49,7 @@ public:
 
 
 //---------------------------------------------------------------------------
-class Z : 
+class Z :
     public A3,
     public B3
 {

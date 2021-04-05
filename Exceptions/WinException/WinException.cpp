@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <windows.h>
 #include <iostream>
 #include <stdio.h>
@@ -9,7 +17,7 @@
 int main() {
 	try	{
         throw CxWinException(_T("i == 0"));
-	} 
+	}
     catch (const CxWinException &e) {
 		e.vMessageBox();
 

@@ -1,6 +1,13 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Observer is used to watch events on another object.  
-Here, the  Writer class keeps an eye on the MessageBoard class, 
+Observer is used to watch events on another object.
+Here, the  Writer class keeps an eye on the MessageBoard class,
 and writes the message each time MessageBoard::post() is called.
 */
 
@@ -48,4 +55,3 @@ int main()
 	hello_world(message_board);
 	return 0;
 }
-

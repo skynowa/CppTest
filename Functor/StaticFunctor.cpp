@@ -1,6 +1,8 @@
 /**
  * \file  main.cpp
  * \brief filecomment
+ *
+ * \todo
  */
 
 
@@ -36,7 +38,7 @@ public:
         std::cout << __FUNCTION__ << std::endl;
     }
 
-    static void 
+    static void
     exec(int i) {
         std::cout << __FUNCTION__ << std::endl;
     }

@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -16,7 +18,7 @@ int main(int, char **)
         sFileName.push_back('x');
         sFileName.push_back('\0');
         sFileName.push_back('y');
-        
+
         std::string sExceptedChars = "/\0";
 
         // assert(2 == sExceptedChars.size()); - raise!!!
@@ -50,7 +52,7 @@ int main(int, char **)
             std::cout << "Not found" << std::endl;
         } else {
             std::cout << "Found" << std::endl;
-        }    
+        }
 
         #if OUTPUT
             Found
@@ -70,7 +72,7 @@ int main(int, char **)
             std::cout << "Not found" << std::endl;
         } else {
             std::cout << "Found" << std::endl;
-        }    
+        }
 
         #if OUTPUT
             Not found
@@ -90,11 +92,11 @@ int main(int, char **)
             std::cout << "Not found" << std::endl;
         } else {
             std::cout << "Found" << std::endl;
-        }   
-        
+        }
+
         #if OUTPUT
             Found
-        #endif         
+        #endif
     }
 
     return EXIT_SUCCESS;

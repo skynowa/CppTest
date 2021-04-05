@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -21,14 +23,14 @@ typedef NTSTATUS (NTAPI *_NtQueryInformationProcess) (
     PDWORD ReturnLength
 );
 
-PVOID 
+PVOID
 _GetPebAddress(const HANDLE &ProcessHandle)
 {
     PVOID   pvRv    = NULL;
     HMODULE hModule = ::GetModuleHandleA("ntdll.dll");
     assert(NULL != hModule);
 
-    _NtQueryInformationProcess 
+    _NtQueryInformationProcess
     NtQueryInformationProcess = (_NtQueryInformationProcess)::GetProcAddress(hModule, "NtQueryInformationProcess");
     assert(NULL != NtQueryInformationProcess);
 
@@ -49,12 +51,12 @@ _GetPebAddress(const HANDLE &ProcessHandle)
 std::string
 sCommandLine(
     const DWORD &a_ciPid
-) 
+)
 {
     std::string sRv;
     BOOL        blRv = FALSE;
     HANDLE      processHandle;
-    
+
     processHandle = ::OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, a_ciPid);
     assert(NULL != processHandle);
 
@@ -75,15 +77,15 @@ sCommandLine(
     {
         WCHAR *pCommandLineContents = (WCHAR *)::malloc(usCommandLine.Length);
 
-        // read the command line 
+        // read the command line
         blRv = ::ReadProcessMemory(processHandle, usCommandLine.Buffer, pCommandLineContents, usCommandLine.Length, NULL);
         assert(FALSE != blRv);
 
         // length specifier is in characters, but commandLine.Length is in bytes a WCHAR is 2 bytes
         //printf("%.*S\n", usCommandLine.Length / 2, pCommandLineContents);
 
-        std::wstring wsRv; 
-        
+        std::wstring wsRv;
+
         wsRv.assign(pCommandLineContents, usCommandLine.Length / 2);
         sRv.assign(wsRv.begin(), wsRv.end());
 

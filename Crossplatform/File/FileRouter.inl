@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 // Check to make sure that the user wants a Posix compatible implementation
 #ifdef USE_POSIXFILEROUTER
 
@@ -23,4 +31,3 @@ FileRouter::exists(const std::string & path)
 }
 
 #endif
-

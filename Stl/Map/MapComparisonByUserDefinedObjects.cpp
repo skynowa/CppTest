@@ -1,7 +1,15 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <map>
 #include <string>
- 
+
 class User
 {
 	std::string m_id;
@@ -25,15 +33,15 @@ public:
 			return true;
 	}
 };
- 
+
 void example_1()
 {
 	std::map<User, int> m_UserInfoMap;
- 
+
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.X", "3"), 100));
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.X", "1"), 120));
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.Z", "2"), 300));
- 
+
 	std::map<User, int>::iterator it = m_UserInfoMap.begin();
 	for (; it != m_UserInfoMap.end(); it++)
 	{
@@ -47,15 +55,15 @@ struct UserNameComparator
 		return (left.getName() > right.getName());
 	}
 };
- 
+
 void example_2()
 {
 	std::map<User, int, UserNameComparator> m_UserInfoMap;
- 
+
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.X", "3"), 100));
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.X", "1"), 120));
 	m_UserInfoMap.insert(std::make_pair<User, int>(User("Mr.Z", "2"), 300));
- 
+
 	std::map<User, int, UserNameComparator>::iterator it =
 			m_UserInfoMap.begin();
 	for (; it != m_UserInfoMap.end(); it++)

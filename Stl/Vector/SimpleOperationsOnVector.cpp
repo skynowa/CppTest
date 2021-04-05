@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <vector>
 
@@ -45,6 +53,6 @@ int main()
 	cout <<"Size of the vector = " <<  v.size() << endl;
 
 	//To clean the vector, use v.clear()
-	
+
 	return 0;
 }

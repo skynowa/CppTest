@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 TCP vs UDP отличия (http://pyatilistnik.org/chem-otlichaetsya-protokol-tcp-ot-udp/)
 
 

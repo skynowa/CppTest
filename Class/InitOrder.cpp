@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <stdio.h>
 #include <string>
@@ -78,7 +86,7 @@ int main(int, char **) {
 
 	SEmpty objEmptyStruct;
 	std::cout << "objEmptyStruct size: " << sizeof(objEmptyStruct) << std::endl;
-	
+
 
 	system("pause");
 	return 0;

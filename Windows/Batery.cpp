@@ -1,17 +1,25 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <windows.h>
 #include <iostream>
- 
+
 #define UNKNOWN         0xFFFFFFFF
- 
+
 using namespace std;
- 
+
 int main() {
         SYSTEM_POWER_STATUS status;
- 
+
         GetSystemPowerStatus( &status );
         int life = status.BatteryLifePercent;
         int secs = status.BatteryLifeTime;
- 
+
         cout << life << "%   ->   ";
         switch (status.BatteryFlag) {
                case 1: cout << "High";
@@ -27,11 +35,11 @@ int main() {
                case 256: cout << "Unknown status";
                     break;
         }
- 
+
         if (secs = UNKNOWN) {
                 cout << endl << "Amount of time remaining is unkown";
         }
         else cout << endl << secs << " seconds remaining";
-        
+
         Sleep( 2000 );
-} 
+}

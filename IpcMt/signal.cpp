@@ -1,6 +1,8 @@
 /**
  * \file  signal.cpp
  * \brief http://aspyct.org, a.dotreppe@aspyct.org
+ *
+ * \todo
  */
 
 
@@ -163,4 +165,3 @@ void do_sleep(const int a_seconds)
 
 
 #endif
-

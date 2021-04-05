@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <map>
 
@@ -18,7 +26,7 @@ int main()
 	mmapOfPos.insert(pair<char, int>('t', 9));
 
 	//Iterating over the multimap using iterator
-	
+
 	for (multimap<char, int>::iterator it = mmapOfPos.begin(); it != mmapOfPos.end(); it++)
 		cout << it->first << " :: " << it->second << endl;
 

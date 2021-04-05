@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -13,28 +21,28 @@ class LinkedList
 public:
     LinkedList() : head(NULL)
     {}
-    
+
     //getter for head
     Node* getHead();
-    
+
     //create a node
     Node* createNode(int x);
-    
+
     //Print the LinkedList
     void display();
 
     //Print Nth Node from the end
     void printNthNodeFromEnd(int n);
-    
+
     //Insert at the beginning
     void insertAtBeginning();
-    
+
     //Insert at the end
     void insertAtEnd();
-    
+
     //Insert at a given position
     void insertAtPosition();
-    
+
     //Delete a Node at a given position
     void deleteAtPosition();
 
@@ -49,7 +57,7 @@ Node* LinkedList :: createNode(int x)
 {
     struct Node* temp;
     temp = new(struct Node);
-    
+
     if (temp == NULL)
     {
         cout << "Memory unavailable " << endl;
@@ -68,10 +76,10 @@ void LinkedList :: insertAtBeginning()
     int value;
     cout << "Enter the value to be inserted:  ";
     cin >> value;
-    
+
     struct Node* temp;
     temp = createNode(value);
-    
+
     if (head == NULL)
     {
         head = temp;
@@ -81,7 +89,7 @@ void LinkedList :: insertAtBeginning()
         temp->next = head;
         head = temp;
     }
-    
+
     cout << "\n Element is inserted at the beginning." << endl;
 }
 
@@ -93,19 +101,19 @@ void LinkedList :: insertAtEnd()
     struct Node *temp, *begin;
     //struct Node* begin;
     temp = createNode(value);
-    
+
     if (head == NULL)
     {
         head = temp;
         return;
     }
-    
+
     begin = head;
     while (begin->next != NULL)
     {
         begin = begin->next;
     }
-    
+
     begin->next = temp;
     return;
 }
@@ -115,20 +123,20 @@ void LinkedList :: insertAtPosition()
     int value, pos, counter = 0;
     cout << "Enter the value to be inserted : " << endl;
     cin >> value;
-    
+
     struct Node *temp, *begin, *prev;
     temp = createNode(value);
-    
+
     cout << "Enter the position you want to add the node" << endl;
     cin >> pos;
-    
+
     begin = head;
     while(begin != NULL)
     {
         counter += 1;
         begin = begin->next;
     }
-    
+
     if (pos == 1)
     {
         if (head == NULL)
@@ -169,13 +177,13 @@ void LinkedList :: deleteAtPosition()
         cout << "Linked List is Empty" << endl;
         return;
     }
-    
+
     cout << "Enter the position of the value to be deleted" << endl;
     cin >> pos;
-    
+
     struct Node *current, *prev;
     current = head;
-    
+
     if (pos == 1)
     {
         head = current->next;
@@ -189,7 +197,7 @@ void LinkedList :: deleteAtPosition()
             current = current->next;
             counter++;
         }
-        
+
         if (pos > 0 && pos <= counter)
         {
             current = head;
@@ -198,7 +206,7 @@ void LinkedList :: deleteAtPosition()
                 prev = current;
                 current =current->next;
             }
-            
+
             prev->next = current->next;
             free(current);
             return;
@@ -207,7 +215,7 @@ void LinkedList :: deleteAtPosition()
         {
             cout << "Position out of range" << endl;
         }
-        
+
     }
 }
 
@@ -240,7 +248,7 @@ void LinkedList :: display()
     Node* temp = new Node;
     temp = head;
     cout << "Displaying the linked list : " << ' ';
-    
+
     while (temp != NULL)
     {
         cout << temp->data << " ";
@@ -252,15 +260,15 @@ void LinkedList :: display()
 int main()
 {
     LinkedList l1;
-    
+
     l1.insertAtBeginning();
     l1.insertAtBeginning();
     l1.insertAtBeginning();
     l1.insertAtEnd();
     l1.insertAtPosition();
     l1.display();
-    
+
     l1.printNthNodeFromEnd(2);
-    
+
     return 0;
 }

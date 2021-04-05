@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Nested namespaces
  *
+ * \todo
+ *
  * Using the namespace resolution operator to create nested namespace definitions.
  */
 

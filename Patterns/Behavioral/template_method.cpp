@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Template method provides an implementation in a derived class,
 to be used by the base class.

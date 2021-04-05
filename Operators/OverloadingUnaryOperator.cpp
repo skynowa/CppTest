@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -8,10 +16,10 @@ private:
     int m_cents;
 public:
     Cents(int cents) { m_cents = cents; }
-    
+
     // Overload -Cents as a member function
     Cents operator-() const;
- 
+
     int getCents() const { return m_cents; }
 };
 

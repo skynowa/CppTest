@@ -1,6 +1,13 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Decorator adds or overrides functionality of a class.  
-Unlike normal inheritance, decorator overrides behaviour 
+Decorator adds or overrides functionality of a class.
+Unlike normal inheritance, decorator overrides behaviour
 of a derived class, not a base class.
 */
 
@@ -46,4 +53,3 @@ int main()
 	hello_world(Exclamation(hw));
 	return 0;
 }
-

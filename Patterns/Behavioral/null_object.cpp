@@ -1,6 +1,14 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /*
-Null object creates a special object to mean nothing/null/absent/default.  
-It means that the default behaviour can be implementer in the null object 
+Null object creates a special object to mean nothing/null/absent/default.
+It means that the default behaviour can be implementer in the null object
 instead of making an explicit check for null, or using NULL pointers.
 */
 
@@ -37,4 +45,3 @@ int main()
 	hello_world(World());
 	return 0;
 }
-

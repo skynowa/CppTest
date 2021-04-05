@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <thread>
 #include <functional>
@@ -26,12 +34,12 @@ public:
         // Notify the condition variable
         m_condVar.notify_one();
     }
-    
+
     bool isDataLoaded()
     {
         return m_bDataLoaded;
     }
-    
+
     void mainTask()
     {
         std::cout<<"Do Some Handshaking"<<std::endl;

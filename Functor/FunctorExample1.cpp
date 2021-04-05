@@ -1,5 +1,13 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
- 
+
 class Encryptor {
     bool m_isIncremental;
     int m_count;
@@ -22,29 +30,29 @@ public:
                     data[i] = data[i] - m_count;
         return data;
     }
- 
+
 };
- 
+
 std::string buildCompleteMessage(std::string rawData,
         Encryptor encyptorFuncObj) {
     // Add some header and footer to data to make it complete message
     rawData = "[HEADER]" + rawData + "[FooTER]";
- 
+
     // Call the callBack provided i.e. function pointer to encrypt the
     rawData = encyptorFuncObj(rawData);
- 
+
     return rawData;
 }
- 
+
 int main() {
     std::string msg = buildCompleteMessage("SampleString", Encryptor(true, 1));
     std::cout << msg << std::endl;
- 
+
     msg = buildCompleteMessage("SampleString", Encryptor(true, 2));
     std::cout << msg << std::endl;
- 
+
     msg = buildCompleteMessage("SampleString", Encryptor(false, 1));
     std::cout << msg << std::endl;
- 
+
     return 0;
 }

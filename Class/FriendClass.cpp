@@ -1,6 +1,8 @@
  /*
  * \file  Main.cpp
  * \brief friend class
+ *
+ * \todo
  */
 
 
@@ -12,8 +14,8 @@
 class CFile {
     private:
         friend class CTest_CFile;
-     
-        static bool _isExists() { 
+
+        static bool _isExists() {
             std::cout << __FUNCTION__ << std::endl;
             return false;
         }
@@ -21,9 +23,9 @@ class CFile {
 //--------------------------------------------------------------------------------
 class CTest_CFile {
     public:
-        bool test() { 
-            return CFile::_isExists(); 
-        } 
+        bool test() {
+            return CFile::_isExists();
+        }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)

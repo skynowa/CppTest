@@ -1,4 +1,12 @@
 /**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
+/**
  * Compile: gcc xgrabkey.c `pkg-config --cflags --libs x11`
  *
  * https://gist.github.com/jouyouyun/669726de58df8d333666

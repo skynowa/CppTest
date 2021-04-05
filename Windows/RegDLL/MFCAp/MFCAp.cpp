@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 // MFCAp.cpp : Defines the class behaviors for the application.
 //
 
@@ -151,4 +159,3 @@ void CMFCApApp::OnAppAbout()
 
 /////////////////////////////////////////////////////////////////////////////
 // CMFCApApp message handlers
-

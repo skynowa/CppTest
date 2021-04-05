@@ -1,16 +1,9 @@
-/****************************************************************************
-* Class name:  Test
-* Description:
-* File name:   Test.h
-* Compilers:   Visual C++ 2010
-* String type: Ansi, Unicode
-* Libraries:   WinAPI, Stl, XLib
-* Author:      Alca
-* E-mail:      dr.web.agent@gmail.com
-* Created:     01.12.2010 11:39:05
-* Version:     1.0.0.0 Debug
-*
-*****************************************************************************/
+/**
+ * \file  main_BlackList.cpp
+ * \brief
+ *
+ * \todo
+ */
 
 
 #include <StdTest.h>

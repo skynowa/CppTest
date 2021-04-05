@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 //-----------------------------------------------------------------------------
 //           Name: cpp_random_number.cpp
 //         Author: Kevin Harris
@@ -80,4 +87,3 @@ int random2( int nMin, int nMax )
 
 	return( vi[nIndex] );
 }
-

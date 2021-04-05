@@ -1,5 +1,12 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Facade hides a lot of complex behaviour behind a simple, single interface.  
+Facade hides a lot of complex behaviour behind a simple, single interface.
 It puts a shop-front on an otherwise complex set of classes.
 */
 
@@ -46,4 +53,3 @@ int main()
 	hello_world(hw);
 	return 0;
 }
-

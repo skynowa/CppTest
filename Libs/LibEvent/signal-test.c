@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /*
  * Compile with:
  * cc -I/usr/local/include -o signal-test \
@@ -69,4 +77,3 @@ main(int argc, char **argv)
 
 	return (0);
 }
-

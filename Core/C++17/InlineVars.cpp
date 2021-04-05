@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Inline variables
  *
+ * \todo
+ *
  * The inline specifier can be applied to variables as well as to functions.
  * A variable declared inline has the same semantics as a function declared inline.
  */

@@ -1,8 +1,16 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
- 
+
 class OddCounter
 {
 	// tracks the count of odd numbers encountered
@@ -22,19 +30,19 @@ public:
 		});
 	}
 };
- 
- 
+
+
 int main(int argc, char **argv)
 {
 	std::vector<int> vec = {12,3,2,1,8,9,0,2,3,9,7};
- 
+
 	OddCounter counterObj;
- 
+
 	//Passing the vector to OddCounter object
 	counterObj.update(vec);
- 
+
 	int count = counterObj.getCount();
- 
+
 	std::cout<<"Counter = "<<count<<std::endl;
 	return 0;
 }

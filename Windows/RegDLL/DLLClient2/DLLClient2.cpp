@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /*****************************************************************************************
    File name: DLLClient2.cpp
 *****************************************************************************************/
@@ -6,7 +14,7 @@
 #include <conio.h>      // Header file containing getch() prototype
 #include <windows.h>
 
-using namespace std; 
+using namespace std;
 
 int main()
 {
@@ -19,7 +27,7 @@ int main()
   BOOL    bRes;               // BOOL to check if dll was successfully unloaded
 
   // returns a handle to the dll, otherwise NULL
-  hMod = LoadLibrary("W32DLL.dll"); 
+  hMod = LoadLibrary("W32DLL.dll");
 
   // returns the address of the dll function, otherwise NULL
   pfun1 = (MYFUN1) GetProcAddress(hMod, "DLLfun1");
@@ -30,7 +38,7 @@ int main()
 
   // (Dll function address) (function parameters)
   int a = (pfun2) (30);
- 
+
   cout << "\nDLL function DLLfun2 return: " << a << endl;
   cout << "Press any key to continue" << endl;
   getch();
@@ -51,8 +59,8 @@ int main()
   getch();
 
 
-  // returns nonzero if sucussful 
-  bRes = FreeLibrary(hMod); 
+  // returns nonzero if sucussful
+  bRes = FreeLibrary(hMod);
 
   return 0;
 }

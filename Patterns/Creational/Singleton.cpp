@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Singleton ensures that there is one, and only one instance of a class.
 Like global variables, everybody has access to that instance.

@@ -1,8 +1,17 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /* Written by Nick Welch <mack@incise.org>, 2005.
  *
  * http://incise.org/xlib-key-passing.html
  * https://stackoverflow.com/questions/36764217/ubuntu-hotkeys-with-x11-xlib-x-error-badaccess
  */
+
 
 #include <stdio.h>
 #include <iostream>

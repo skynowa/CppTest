@@ -1,6 +1,8 @@
  /*
  * \file  main.cpp
  * \brief copy constructor 2
+ *
+ * \todo
  */
 
 
@@ -51,4 +53,3 @@ i = -1 s = string
 i = -1 s = string
 
 #endif
-

@@ -2,6 +2,8 @@
  * \file  Main.cpp
  * \brief pointer to function
  *
+ * \todo
+ *
  * https://isocpp.org/wiki/faq/pointers-to-members
  */
 

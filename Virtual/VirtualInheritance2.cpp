@@ -1,13 +1,15 @@
- /*
- * \file  Main.cpp
+/**
+ * \file
  * \brief virtual inheritance
+ *
+ * \todo
  */
- 
+
  /*
-    ��� ����� ���� � ��� 3 ����������� ����������� ������ � (B1..B3) 
+    ��� ����� ���� � ��� 3 ����������� ����������� ������ � (B1..B3)
     � ����� � �������� � ����:
 
-        class C : 
+        class C :
             public virtual B1, public virtual B2, public virtual B3
 
     ������� ����� ����� �?
@@ -35,7 +37,7 @@ class B1 :
     public:
         B1 () {
             std::cout << __FUNCTION__ << std::endl;
-        }  
+        }
 };
 
 class B2 :
@@ -44,7 +46,7 @@ class B2 :
     public:
         B2 () {
             std::cout << __FUNCTION__ << std::endl;
-        }  
+        }
 };
 
 class B3 :
@@ -53,18 +55,18 @@ class B3 :
     public:
         B3 () {
             std::cout << __FUNCTION__ << std::endl;
-        }  
+        }
 };
 //---------------------------------------------------------------------------
-class C : 
-    public virtual B1, 
-    public virtual B2, 
+class C :
+    public virtual B1,
+    public virtual B2,
     public virtual B3
 {
     public:
         C () {
             std::cout << __FUNCTION__ << std::endl;
-        } 
+        }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)

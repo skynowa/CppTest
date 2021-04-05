@@ -1,31 +1,26 @@
-/****************************************************************************
-* Class name:  CxWinException
-* Description: 
-* File name:   CxWinException.cpp
-* Compilers:   Visual C++ 2010 
-* String type: Ansi, Unicode
-* Libraries:   WinAPI, Stl, XLib
-* Author:      Alca
-* E-mail:      dr.web.agent@gmail.com
-* Created:     10.08.2010 9:50:30
-* Version:     1.0.0.0 Debug
-*
-*****************************************************************************/
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 
 
 #include "CxWinException.h"
 
 
 /****************************************************************************
-*    Public methods                                                          
-*                                                                            
+*    Public methods
+*
 *****************************************************************************/
 
 //---------------------------------------------------------------------------
 CxWinException::CxWinException(
     LPCTSTR msg
 ) :
-    m_err(::GetLastError()), 
+    m_err(::GetLastError()),
     m_msg(msg)
 {
 }
@@ -39,7 +34,7 @@ LPCTSTR CxWinException::What()  const {
 	return m_msg;
 }
 //---------------------------------------------------------------------------
-VOID 
+VOID
 CxWinException::vMessageBox() const {
 	TCHAR buf1 [512] = {};
 	TCHAR buf2 [512] = {};

@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Mediator binds different classes together,
 and the individual classes communicate via the mediator, never directly.

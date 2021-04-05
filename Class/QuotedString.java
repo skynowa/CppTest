@@ -1,4 +1,11 @@
 /**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+/**
  * Notice the benefits I gained:
  *
  * - The object is lazy — it doesn’t perform any calculations if not needed.

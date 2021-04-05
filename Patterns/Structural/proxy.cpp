@@ -1,7 +1,14 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Proxy allows one object to stand for something else.  
-So whilst you think you are dealing with one object, 
-you are actually dealing with something else.  
+Proxy allows one object to stand for something else.
+So whilst you think you are dealing with one object,
+you are actually dealing with something else.
 In this example, CoutProxy stands for std::cout.
 */
 
@@ -27,4 +34,3 @@ int main()
 	hello_world(CoutProxy());
 	return 0;
 }
-

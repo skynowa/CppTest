@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -6,7 +14,7 @@ using namespace std;
 void reverseStr(string &str)
 {
     int n = str.length();
- 
+
     // Swap character starting from two
     // corners
     for (int i=0; i<n/2; i++)

@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -13,19 +20,19 @@ class LinkedList
 public:
     LinkedList() : head(NULL)
     {}
-    
+
     //getter for head
     Node* getHead();
-    
+
     //create a node
     Node* createNode(int x);
-    
+
     //Print the LinkedList
     void display();
-    
+
     //Insert at the end
     void insertAtEnd();
-    
+
 };
 
 Node* LinkedList :: getHead()
@@ -37,7 +44,7 @@ Node* LinkedList :: createNode(int x)
 {
     struct Node* temp;
     temp = new(struct Node);
-    
+
     if (temp == NULL)
     {
         cout << "Memory unavailable " << endl;
@@ -59,19 +66,19 @@ void LinkedList :: insertAtEnd()
     struct Node *temp, *begin;
     //struct Node* begin;
     temp = createNode(value);
-    
+
     if (head == NULL)
     {
         head = temp;
         return;
     }
-    
+
     begin = head;
     while (begin->next != NULL)
     {
         begin = begin->next;
     }
-    
+
     begin->next = temp;
     return;
 }
@@ -81,7 +88,7 @@ void LinkedList :: display()
     Node* temp = new Node;
     temp = head;
     cout << "Displaying the linked list : " << ' ';
-    
+
     while (temp != NULL)
     {
         cout << temp->data << " ";
@@ -115,7 +122,7 @@ Node* SortedMerge(Node *head1, Node *head2)
 int main()
 {
     LinkedList l1;
-    
+
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.insertAtEnd();
@@ -124,14 +131,14 @@ int main()
     l1.display();
 
     LinkedList l2;
-    
+
     l2.insertAtEnd();
     l2.insertAtEnd();
     l2.insertAtEnd();
     l2.insertAtEnd();
     l2.insertAtEnd();
     l2.display();
-    
+
     Node *result = SortedMerge(l1.getHead(), l2.getHead());
 
     cout << "The Sorted Megred Linked List is :" << endl;

@@ -1,3 +1,11 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <windows.h>
 #include <iostream>
 #include <stdio.h>
@@ -5,10 +13,10 @@
 #include <vector>
 HWND GetConsoleHwnd(void)
 {
-#define MY_BUFSIZE 1024 
-	HWND hwndFound;         
-	char pszNewWindowTitle[MY_BUFSIZE]; 
-	char pszOldWindowTitle[MY_BUFSIZE]; 
+#define MY_BUFSIZE 1024
+	HWND hwndFound;
+	char pszNewWindowTitle[MY_BUFSIZE];
+	char pszOldWindowTitle[MY_BUFSIZE];
 	GetConsoleTitle(pszOldWindowTitle, MY_BUFSIZE);
 	wsprintf(pszNewWindowTitle,"%d/%d",
 		GetTickCount(),
@@ -17,7 +25,7 @@ HWND GetConsoleHwnd(void)
 	hwndFound=FindWindow(NULL, pszNewWindowTitle);
 	SetConsoleTitle(pszOldWindowTitle);
 	return(hwndFound);
-} 
+}
 int main(int, char **) {
 	char src[80];
 	char dest[80];
@@ -44,20 +52,20 @@ int main(int, char **) {
 	printf("%s\t%ld Kb\n",dest, stat.dwTotalVirtual/Div);
 	strcpy(src,"����������� ������ ��������");CharToOem(src,dest);
 	printf("%s\t%ld Kb\n\n",dest, stat.dwAvailVirtual/Div);
-	printf ("%ld%%",stat.dwMemoryLoad); 
+	printf ("%ld%%",stat.dwMemoryLoad);
 	SetConsoleTextAttribute ( hStdout,  BACKGROUND_BLUE |14 );
 	do
-	{  
+	{
 		::Sleep(40);
-		::GlobalMemoryStatus (&stat); 
+		::GlobalMemoryStatus (&stat);
 		strcpy(src,"������ ������������ ");CharToOem(src,dest);
 
-		printf ("\r\t  %ld%% %s",stat.dwMemoryLoad,dest);  
+		printf ("\r\t  %ld%% %s",stat.dwMemoryLoad,dest);
 		if (stat.dwMemoryLoad == old) {
-		
+
 		} else {
 			strcpy(src,"��������e���");CharToOem(src,dest);
-			sprintf (src,"%ld%% %s",stat.dwMemoryLoad,dest);  
+			sprintf (src,"%ld%% %s",stat.dwMemoryLoad,dest);
 			SetConsoleTitle(src);
 		}
 		old=stat.dwMemoryLoad;

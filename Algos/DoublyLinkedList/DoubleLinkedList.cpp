@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -14,16 +22,16 @@ class DoubleLinkedList
 public:
     DoubleLinkedList() : head(NULL)
     {}
-    
+
     //getter for head
     Node* getHead();
-    
+
     //create a node
     Node* createNode(int x);
 
     //insert at the end
     void insertAtEnd();
-    
+
     //Print the LinkedList
     void display();
 };
@@ -37,7 +45,7 @@ Node* DoubleLinkedList :: createNode(int x)
 {
 	struct Node* temp;
     temp = new(struct Node);
-    
+
     if (temp == NULL)
     {
         cout << "Memory unavailable " << endl;
@@ -82,7 +90,7 @@ void DoubleLinkedList :: display()
     Node* temp = new Node;
     temp = head;
     cout << "Displaying the linked list : " << ' ';
-    
+
     while (temp != NULL)
     {
         cout << temp->data << " ";
@@ -94,12 +102,12 @@ void DoubleLinkedList :: display()
 int main()
 {
     DoubleLinkedList l1;
-    
+
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.insertAtEnd();
-    
+
     l1.display();
-    
+
     return 0;
 }

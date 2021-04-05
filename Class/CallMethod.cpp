@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Вызов нестатического метода класса без создания экземпляра в C++
  *
+ * \todo
+ *
  * http://www.quizful.net/interview/cpp/non-static-method-call-cpp
  */
 
@@ -43,4 +45,3 @@ int main(int, char **)
 foo
 
 #endif
-

@@ -1,3 +1,11 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \todo
+ */
+
+
 //---------------------------------------------------------------------------
 // DONE
 Question:       What does the const member function qualifier do?
@@ -15,18 +23,18 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-     class Value { 
-            std::string s_val; 
+     class Value {
+            std::string s_val;
             int         i_val;
-            
-        public: 
-            Value(std:string s, int i) : 
-                s_val(s), i_val(i) 
-            { 
-            } 
+
+        public:
+            Value(std:string s, int i) :
+                s_val(s), i_val(i)
+            {
+            }
      };
-     
-Question:  Referring to the Sample code above, which one of the following operators do you need to override in 
+
+Question:  Referring to the Sample code above, which one of the following operators do you need to override in
 order to be able to use the container "std::set<Value>"?
 Choice 1
      operator <
@@ -38,12 +46,12 @@ Choice 4
      operator !=
 Choice 5
      operator >
-               
+
 //---------------------------------------------------------------------------
 Sample code:
 
      extern void done(int, int) throw(const char*, RangeErr);
-     
+
 Question:  Referring to the Sample code above, which one of the following statements is true regarding the declaration of done?
 Choice 1
      done is an extern void; therefore, it does not throw exceptions.
@@ -59,15 +67,15 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    class professor {}; 
-    class researcher {}; 
-    class teacher : 
-        public professor {}; 
-    class myprofessor : 
-        public teacher, 
+    class professor {};
+    class researcher {};
+    class teacher :
+        public professor {};
+    class myprofessor :
+        public teacher,
         public virtual researcher {};
 
-Question:  Referring to the Sample code above, when an object of class myprofessor goes out of scope, what is 
+Question:  Referring to the Sample code above, when an object of class myprofessor goes out of scope, what is
 the correct order of destructor invocation?
 Choice 1
      ~teacher(),~researcher(),~myprofessor(),~professor()
@@ -83,18 +91,18 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    #include <iostream> 
-    
-    class Airplane { 
-        /*....*/ 
+    #include <iostream>
+
+    class Airplane {
+        /*....*/
     };
-    
-    void do_stuff_and_output(Airplane &a){ 
-        /* ... */ 
-        std::cout << a << '\n'; // output the Airplane object a 
+
+    void do_stuff_and_output(Airplane &a){
+        /* ... */
+        std::cout << a << '\n'; // output the Airplane object a
     }
 
-Question:  Referring the Sample code above, which one of the following operators needs to be defined so that 
+Question:  Referring the Sample code above, which one of the following operators needs to be defined so that
 the airplane object can be output as shown?
 Choice 1
      Define:
@@ -124,24 +132,24 @@ Sample code:
     #include <iostream>
     #include <vector>
     #include <algorithm>
-        
-    int main() { 
+
+    int main() {
        std::vector<std::string> vs;
-       
+
        std::fill_n(std::back_inserter(vs), 5, "hello");
-       
+
        for (
-          std::vector<std::string>::iterator it = vs.begin(); 
-          it != vs.end(); 
-          ++it) 
+          std::vector<std::string>::iterator it = vs.begin();
+          it != vs.end();
+          ++it)
        {
           std::cout << *it << std::endl;
        }
-       
-       return 0; 
+
+       return 0;
     }
-     
-Question:  Referring to the container definition above, which one of the following 
+
+Question:  Referring to the container definition above, which one of the following
 lines of code fills vs with five strings containing the word "hello"?
 
 Choice 1
@@ -173,8 +181,8 @@ Choice 5
 
 //---------------------------------------------------------------------------
 // DONE
-Question:       
-	Which one of the following is the correct way to declare a pointer to non-static member function 
+Question:
+	Which one of the following is the correct way to declare a pointer to non-static member function
 	of class A that accepts an int reference and returns void?
 Choice 1
      void (A::f)(int&);
@@ -208,18 +216,18 @@ Sample code:
     template <typename T>
     class Foo {
            T tVar;
-           
+
         public:
            Foo(T t) : tVar(t) { }
     };
 
-    class FooDerived : 
-        public Foo<std::string> 
-    { 
+    class FooDerived :
+        public Foo<std::string>
+    {
     };
 
     FooDerived fd;
-    
+
 Question:  What is preventing the above code from being legal C++?
 Choice 1
      FooDerived uses the non-C++ type std::string.
@@ -237,18 +245,18 @@ Choice 5
 Sample code:
 
     #include <iostream>
-        
-    class Base {}; 
-    class Sub1  : public virtual Base { }; 
-    class Sub2  : public         Base { }; 
-    class Multi : public Sub1, public Sub2 { }; 
-        
-    int main() { 
-       Multi m; 
-       
-       return 0; 
+
+    class Base {};
+    class Sub1  : public virtual Base { };
+    class Sub2  : public         Base { };
+    class Multi : public Sub1, public Sub2 { };
+
+    int main() {
+       Multi m;
+
+       return 0;
     }
-    
+
 Question:  Referring to the Sample code above, how many times is the constructor for Base called?
 Choice 1+
      0
@@ -266,52 +274,52 @@ Choice 5
 Sample code:
 
     #include <iostream>
-        
-    struct B { 
-       void Go() { 
-          std::cout << "B::Go "; 
-       } 
-       void Back() { 
-          std::cout << "B::Back "; 
-       } 
-    }; 
 
-    struct C : 
-       public B 
-    { 
-       void Go() { 
-          std::cout << "C::Go "; 
-       } 
-    }; 
+    struct B {
+       void Go() {
+          std::cout << "B::Go ";
+       }
+       void Back() {
+          std::cout << "B::Back ";
+       }
+    };
 
-    struct D : 
-       public B 
-    { 
-       void Back() { 
-          std::cout << "D::Go "; 
-       } 
-    }; 
+    struct C :
+       public B
+    {
+       void Go() {
+          std::cout << "C::Go ";
+       }
+    };
+
+    struct D :
+       public B
+    {
+       void Back() {
+          std::cout << "D::Go ";
+       }
+    };
 
     B *bd = new D;
     B *bc = new C;
     D  d;
 
-    void foo() { 
+    void foo() {
        bd->Go();
        bd->Back();
-       
+
        bc->Go();
        bc->Back();
-       
+
        d.Go();
     }
-        
-    int main() { 
+
+    int main() {
        foo();
-       
-       return 0; 
+
+       return 0;
     }
-    
+
 Question:  Referring to the Sample code above, what is the displayed output when f() is called?
 Choice 1
      B::Go D::Back C::Go B::Back B::Go
@@ -328,24 +336,24 @@ Choice 5+
 // DONE
 Sample code:
 
-    class A 
-    { 
-        public: 
-            A () {} 
-            A (A& a) {} 
-            A& operator = (const A &a) { 
-                return (*this); 
-            } 
+    class A
+    {
+        public:
+            A () {}
+            A (A& a) {}
+            A& operator = (const A &a) {
+                return (*this);
+            }
     };
 
-    int main () 
+    int main ()
     {
-        const A a1; 
-        A a2(a1); 
-        
+        const A a1;
+        A a2(a1);
+
         return 0;
     }
-    
+
 Question:  Given the Sample code shown above, which one of the following statements is true?
 Choice 1
      There is nothing wrong with the code.
@@ -383,7 +391,7 @@ Sample code:
         public:
            explicit Foo(int i);
     };
-    
+
 Question:  In the Sample code above, what is the purpose of explicit keyword?
 Choice 1
      It is a syntax error.
@@ -396,12 +404,12 @@ Choice 4
 Choice 5
      It prevents the constructor from being called from a non-explicit function.
 
-//---------------------------------------------------------------------------	 
+//---------------------------------------------------------------------------
 // DONE
 Scenario:
 
-    std::string s("Hello World"); 
-    char *c = s.c_str(); 
+    std::string s("Hello World");
+    char *c = s.c_str();
     float f = strlen(c);
 
 Question:  Referring to the scenario above, what causes the error?
@@ -415,14 +423,14 @@ Choice 4
      c is not a pointer to const.
 Choice 5
      You cannot assign a literal character to a char* variable.
-     
+
 Answer: Choice 4
     source.cpp:7:23: error: invalid conversion from 'const char*' to 'char*' [-fpermissive]
 
 //---------------------------------------------------------------------------
 Scenario:
-     You need to define the following function so that it will return true if the sets passed to it have any intersection 
-	 and false otherwise. 
+     You need to define the following function so that it will return true if the sets passed to it have any intersection
+	 and false otherwise.
 
 template<class T>
 bool hasIntersection(std::vector<T>& set1, std::vector<T>& set2);
@@ -439,11 +447,11 @@ Choice 4
 Choice 5
      std::search_n()
 
-//--------------------------------------------------------------------------- 
+//---------------------------------------------------------------------------
 Sample code:
 
     class mybase {};
-    class derived1 { }; 
+    class derived1 { };
     class derived2 : public mybase, derived1{};
 
 Question:  Referring to the Sample code above, which one of the following statements is true regarding derived2?
@@ -461,11 +469,11 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    void f() throw(std::runtime_error) { 
-        /* imagine some code here */ 
-        
+    void f() throw(std::runtime_error) {
+        /* imagine some code here */
+
         if (/* some error condition */) {
-            throw (some_exception); 
+            throw (some_exception);
         }
     }
 
@@ -498,12 +506,12 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    #include <string> 
-    #include <iostream> 
-    
-    using namespace std; 
+    #include <string>
+    #include <iostream>
+
+    using namespace std;
     std::string str;
-    
+
 Question:  Referring to the Sample code above, which one of the following statements do you use in order to read a std::string, of any length, from the standard input stream?
 
 Choice 1
@@ -521,26 +529,26 @@ Choice 5
 // DONE
 Sample code:
 
-    class Z { 
-        public: 
-            Z(): e(0), i(0) 
-            {} 
-            int Enter() const { 
-                ++e; 
-                return (i); 
-            } 
-            int Leave() const {
-                --e; 
-                return (i); 
+    class Z {
+        public:
+            Z(): e(0), i(0)
+            {}
+            int Enter() const {
+                ++e;
+                return (i);
             }
-            void Wait() { 
-                while (e > 0); 
-            } 
-        private: 
-            int         i; 
-            mutable int e; 
+            int Leave() const {
+                --e;
+                return (i);
+            }
+            void Wait() {
+                while (e > 0);
+            }
+        private:
+            int         i;
+            mutable int e;
     };
-    
+
 Question:  Referring to the Sample code above, why is the member variable e declared as mutable?
 Choice 1
      It tells the compiler to allow modification to e in const member functions.
@@ -556,13 +564,13 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-     template<> 
-     class Stack<char> { 
-        public: 
-            int  Push(char); 
-            char Pop (); 
+     template<>
+     class Stack<char> {
+        public:
+            int  Push(char);
+            char Pop ();
      };
-     
+
 Question:  Referring to the Sample code above, the template<> signifies that this class is an example of which one of the following?
 Choice 1
      Default template initialization
@@ -593,7 +601,7 @@ Choice 5
 Sample code:
 
     #include <iostream>
-    
+
     class A {
         int i;
 
@@ -671,31 +679,31 @@ Choice 5+
     template<typename T>
     bool is_int<T>() {
         return ( typeof(T) == typeof(int) );
-    }; 
+    };
 
 //---------------------------------------------------------------------------
 // DONE
 Sample code:
 
-    class Base { 
-        public: 
-                     Base() {} 
-            virtual ~Base() {} 
-    }; 
-    
-    class Derived : 
-        protected Base 
-    { 
-        public: 
-            virtual ~Derived() {} 
-    }; 
+    class Base {
+        public:
+                     Base() {}
+            virtual ~Base() {}
+    };
 
-    int main() { 
-        Base *pb = new Derived; 
+    class Derived :
+        protected Base
+    {
+        public:
+            virtual ~Derived() {}
+    };
 
-        return 0; 
+    int main() {
+        Base *pb = new Derived;
+
+        return 0;
     }
-     
+
 Question:  Referring to the Sample code: above, which one of the following statements is true?
 Choice 1+
      A pointer to a Base class cannot point to an instance of a Derived class.
@@ -730,10 +738,10 @@ Sample code:
         std::range_error -> std::runtime_error -> std::exception
         std::logic_error                       -> std::exception
     */
-    
+
     #include <stdexcept>
     #include <iostream>
-    
+
     int main()
     {
         try {
@@ -748,9 +756,9 @@ Sample code:
         catch (...) {
             std::cout << "C";
         }
-        
+
         std::cout << "-DONE" << std::endl;
-        
+
         return 0;
     }
 
@@ -785,17 +793,17 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    class X { 
-        public: 
-                  X& operator=(const X& rhs); 
-            const X& operator+(const X& rhs) const; 
-            const X& operator+(int m); 
-            
-        private: 
-            int n; 
-    }; 
-    
-    int main () 
+    class X {
+        public:
+                  X& operator=(const X& rhs);
+            const X& operator+(const X& rhs) const;
+            const X& operator+(int m);
+
+        private:
+            int n;
+    };
+
+    int main ()
     {
         X a, b, c;
 
@@ -817,7 +825,7 @@ Choice 5
 //---------------------------------------------------------------------------
 Scenario:
      A function throws an exception of type std::unexpected.
-     
+
 Question:  Referring to the scenario above, what is a logical cause?
 Choice 1
      An exception thrown is not yet caught and the destructor for an object throws an exception during the stack unwinding.
@@ -850,28 +858,28 @@ Sample code:
 
     #include <iostream>
 
-    namespace N1 { 
+    namespace N1 {
        int f(int n) {
           return n * 2;
-       } 
-    } 
+       }
+    }
 
-    namespace N2 { 
-       int f(double n) { 
+    namespace N2 {
+       int f(double n) {
           return n * 3;
-       } 
-    } 
+       }
+    }
 
     int main()
     {
-       using N1::f; 
+       using N1::f;
        int i1 = f(1.0);
        std::cout << i1 << std::endl;
-       
+
        using N2::f;
        int i2 = f(1.0);
        std::cout << i2 << std::endl;
-       
+
        return 0;
     }
 
@@ -893,27 +901,27 @@ Sample code:
 
     #include <iostream>
 
-    namespace { 
-       static int n; 
-    } 
+    namespace {
+       static int n;
+    }
 
-    namespace A { 
-       namespace { 
-          static int n; 
-       } 
-    } 
+    namespace A {
+       namespace {
+          static int n;
+       }
+    }
 
-    using namespace A;  
+    using namespace A;
 
     int main()
     {
-       n = 5; 
+       n = 5;
 
        std::cout << n << std::endl;
-       
+
        return 0;
     }
-     
+
 Question:  Referring to the Sample code: above, which one of the following statements is true?
 Choice 1
      There is nothing wrong with the Sample code:.
@@ -948,7 +956,7 @@ Sample code:
         Foo f4(0x01);
         Foo f5(0x0001L);
         Foo f6(1.0f);
-        
+
         return 0;
     }
 
@@ -967,13 +975,13 @@ Choice 5
 //---------------------------------------------------------------------------
 Sample code:
 
-    template<class T> 
-    class A {  
+    template<class T>
+    class A {
         public:
         A(){}
     };
 
-    template<class T> 
+    template<class T>
     class B {
         public:
             B() {};
@@ -984,7 +992,7 @@ Question:  Referring to the Sample code: shown above, which one of the following
 Choice 1
      template friend class A<T>;
 Choice 2
-     friend class A<T>;                                   	
+     friend class A<T>;
 Choice 3
      template<> friend class A;
 Choice 4
@@ -1001,12 +1009,12 @@ Sample code:
     int main()
     {
        char abc[] = "";
-       
+
        std::cout << "[" << abc[0] << "]" << std::endl;
-       
+
        return 0;
     }
-     
+
 Question:  Which one of the following is true regarding the array abc created by the declaration in the sample above?
 Choice 1
      abc contains 0 elements.
@@ -1024,20 +1032,20 @@ Choice 5
 Sample code:
 
     #include <iostream>
-    
+
     void HandleNoMemory() {
         std::cout << __FUNCTION__ << std::endl;
-    } 
-
-    int main() { 
-        int *p = new int[100]; 
-        if (!p) { 
-            HandleNoMemory(); 
-        } 
-
-        return 0; 
     }
-     
+
+    int main() {
+        int *p = new int[100];
+        if (!p) {
+            HandleNoMemory();
+        }
+
+        return 0;
+    }
+
 Question:  Referring to the Sample code: above and assuming the standard C++ new operator is being used, which one of the following statements is true?
 Choice 1+
      HandleNoMemory() is never called.

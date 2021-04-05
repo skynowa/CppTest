@@ -1,6 +1,9 @@
  /*
  * \file  Main.cpp
- * \brief 
+ * \brief
+ *
+ * \todo
+ *
  */
 
 
@@ -28,12 +31,12 @@ class AClass {
         AClass() {}
 };
 //---------------------------------------------------------------------------
-void 
+void
 foo1(NOpenMode::EType mode) {
     std::cout << "mode: " << mode << std::endl;
 }
 //---------------------------------------------------------------------------
-void 
+void
 foo2(AClass::EOpenMode mode) {
     std::cout << "mode: " << mode << std::endl;
 }

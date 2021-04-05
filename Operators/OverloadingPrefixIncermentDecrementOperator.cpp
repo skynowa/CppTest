@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -15,7 +23,7 @@ public:
 	friend ostream& operator<< (ostream &out, const Digits &d);
 };
 
-// Note that we return *this. The overloaded increment and decrement operators return the current implicit object 
+// Note that we return *this. The overloaded increment and decrement operators return the current implicit object
 // so multiple operators can be “chained” together.
 
 Digits& Digits::operator++()

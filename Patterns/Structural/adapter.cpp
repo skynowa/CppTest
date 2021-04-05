@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Convert one class so that it appears to be another class.
 */
@@ -60,4 +67,3 @@ int main()
 	hello_world(SquarePegAdapter(peg));
 	return 0;
 }
-

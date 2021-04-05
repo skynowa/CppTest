@@ -2,7 +2,7 @@
  * \file  bind.cpp
  * \brief Boost.Bind
  *
- * COMMENTS
+ * \todo
  */
 
 

@@ -1,6 +1,13 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Bridge allows two implementations to vary independently. 
-In this case, the implementations of message and recipient are independent, 
+Bridge allows two implementations to vary independently.
+In this case, the implementations of message and recipient are independent,
 but combine to output "Hello world!"
 */
 
@@ -51,4 +58,3 @@ int main()
 	hello_world(hello, world);
 	return 0;
 }
-

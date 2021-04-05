@@ -1,7 +1,15 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /*****************************************************************************************
    File name: DLLCode.cpp
 
-   The header file, DLLCode.h, prototypes all of the DLL interface objects 
+   The header file, DLLCode.h, prototypes all of the DLL interface objects
 *****************************************************************************************/
 #include "StdAfx.h"
 #include "DLLCode.h"
@@ -33,4 +41,3 @@ void DrawEllipse ( CRect rect, CDC *pDC )
 
 	pDC->Ellipse(&rect);
 };
-

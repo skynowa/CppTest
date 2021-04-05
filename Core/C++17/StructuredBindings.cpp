@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Structured bindings
  *
+ * \todo
+ *
  * A proposal for de-structuring initialization, that would allow writing auto [ x, y, z ] = expr;
  * where the type of expr was a tuple-like object, whose elements would be bound
  * to the variables x, y, and z (which this construct declares). Tuple-like objects

@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 // MFCApView.cpp : implementation of the CMFCApView class
 //
 

@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 // MFCApView.h : interface of the CMFCApView class
 //
 /////////////////////////////////////////////////////////////////////////////

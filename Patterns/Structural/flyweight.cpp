@@ -1,5 +1,12 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Flyweight creates objects as they are needed, because keeping them around is unnecessary. 
+Flyweight creates objects as they are needed, because keeping them around is unnecessary.
 Here the Character class is a flyweight that is only used for the duration of the inner loop.
 */
 
@@ -33,4 +40,3 @@ int main()
 	hello_world("Hello world!\n");
 	return 0;
 }
-

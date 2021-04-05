@@ -1,19 +1,27 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include<iostream>
 #include<set>
 #include<string>
- 
+
 class Message
 {
 public:
 	std::string m_MsgContent;
 	std::string m_sentBy;
 	std::string m_recivedBy;
- 
+
 	Message(std::string sentBy, std::string recBy, std::string msg) :
 		m_MsgContent(msg), m_sentBy(sentBy), m_recivedBy(recBy)
 	{}
 	friend std::ostream& operator<<(std::ostream& os, const Message& obj);
- 
+
 };
 
 std::ostream& operator<<(std::ostream& os, const Message& obj)

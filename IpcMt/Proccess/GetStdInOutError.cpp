@@ -2,6 +2,8 @@
  * \file  main.cpp
  * \brief Catch stderr and stdout from external program
  *
+ * \todo
+ *
  * http://www.cplusplus.com/forum/unices/82836/
  */
 

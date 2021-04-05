@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -9,7 +17,7 @@ public:
 	Cents(int cents) : m_cents(cents)
 	{}
 
-	int getCents() const 
+	int getCents() const
 	{
 		return m_cents;
 	}
@@ -29,7 +37,7 @@ public:
 		// we can access m_cents directly because this is a friend function
 		return Cents(c1.m_cents + value);
 	}
-	 
+
 	friend Cents operator+ (int value, const Cents &c1)
 	{
 		// we can access m_cents directly because this is a friend function

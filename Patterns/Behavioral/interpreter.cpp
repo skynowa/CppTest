@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Interpreter processes commands and performs actions based on its input.
 Here we create a simple command language consisting of single characters.

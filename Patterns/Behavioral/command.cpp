@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Command contains an action that you need to defer for some reason.
 We split the task into two commands (CommandDefence and CommandAttack),

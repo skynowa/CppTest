@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <thread>
 
@@ -12,13 +20,13 @@ void function1()
 
 int main()
 {
- 
+
     thread t1(function1);
-    
+
     for (int i = 0; i < 10 ; i++)
         cout <<"From Main : " << i << endl;
-        
+
     t1.join();
-        
+
     return 0;
 }

@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -15,7 +23,7 @@ public:
 
 };
 
-//If you try to return std::ostream by value, you’ll get a compiler error. 
+//If you try to return std::ostream by value, you’ll get a compiler error.
 //This happens because std::ostream specifically disallows being copied.
 ostream& operator<< (ostream &out, const Point &point)
 {

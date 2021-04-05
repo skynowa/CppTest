@@ -1,4 +1,12 @@
 /**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
+/**
  * FAQ
  *
  * - select(2), kqueue(2), poll(2), epoll(4) и /dev/poll

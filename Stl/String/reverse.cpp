@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -13,9 +15,9 @@
 int main()
 {
    char str[] = "abcde";
-   
+
    std::reverse(&str[0], &str[5]);
-   
+
    std::cout << str << std::endl;
 
     return EXIT_SUCCESS;

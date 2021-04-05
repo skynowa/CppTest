@@ -1,7 +1,9 @@
 /**
  * \file  MainDialog.cpp
  * \brief
-
+ *
+ * \todo
+ *
  * Well, I hope you can do something with my messy example. I didn't consider waiting for threads
  * termination, memory freeing and server separated thread for sending messages (in case client
  * reads data too long time), just the main problem: waiting for shared memory without active

@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Strategy is an algorithm that you pass into a function or class that uses the strategy.
 The idea is that you can provide a different strategy to achieve something different.

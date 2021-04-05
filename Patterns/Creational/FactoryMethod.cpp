@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Factory method creates some object (in this case a string) in a derived class,
 for use in a base class.

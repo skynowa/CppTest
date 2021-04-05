@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -11,22 +13,22 @@
 //---------------------------------------------------------------------------
 class A {
     public:
-        void bar() { 
-            foo(); 
+        void bar() {
+            foo();
         }
 
     private: /* or public */
-        virtual void foo() { 
-            std::cout << __FUNCTION__ << std::endl; 
+        virtual void foo() {
+            std::cout << __FUNCTION__ << std::endl;
         }
 };
 //---------------------------------------------------------------------------
-class B: 
-    public A 
+class B:
+    public A
 {
     private: /* or public */
-        virtual void foo() { 
-            std::cout << __FUNCTION__ << std::endl; 
+        virtual void foo() {
+            std::cout << __FUNCTION__ << std::endl;
         }
 };
 //---------------------------------------------------------------------------

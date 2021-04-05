@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -13,6 +20,6 @@ int main() {
 
 	str.pop_back();
 	cout <<"The string after pop back operation is: " << str << endl;
-	
+
 	return 0;
 }

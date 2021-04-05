@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <algorithm>
 
@@ -28,7 +36,7 @@ int main()
 	cout << "mul = " << mul << endl;
 
 	for_each(arr, arr + sizeof(arr) / sizeof(int), [](int x) {
- 
+
         // No access to mul inside this lambda function because
         // all outer scope elements are not visible here.
         //cout << mul << " ";

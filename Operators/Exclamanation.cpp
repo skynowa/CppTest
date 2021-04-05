@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief operator !
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -18,7 +20,7 @@ int main()
         std::cout << "!static_cast<bool>(" << a0 << ") = " << !static_cast<bool>(a0)  << std::endl;
         std::cout << std::endl;
     }
-    
+
     {
         const int b10 = 10;
 
@@ -26,7 +28,7 @@ int main()
         std::cout << "!static_cast<bool>(" << b10 << ") = " << !static_cast<bool>(b10) << std::endl;
         std::cout << std::endl;
     }
-    
+
     {
         const int c_20 = -20;
 

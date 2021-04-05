@@ -1,4 +1,13 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
+
 using namespace std;
 class operation
 {
@@ -18,31 +27,31 @@ inline void operation :: get()
     cout << "Enter second value:";
     cin >> b;
 }
- 
+
 inline void operation :: sum()
 {
     add = a+b;
     cout << "Addition of two numbers: " << a+b << "\n";
 }
- 
+
 inline void operation :: difference()
 {
     sub = a-b;
     cout << "Difference of two numbers: " << a-b << "\n";
 }
- 
+
 inline void operation :: product()
 {
     mul = a*b;
     cout << "Product of two numbers: " << a*b << "\n";
 }
- 
+
 inline void operation ::division()
 {
     div=a/b;
     cout<<"Division of two numbers: "<<a/b<<"\n" ;
 }
- 
+
 int main()
 {
     cout << "Program using inline function\n";

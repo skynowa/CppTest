@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -53,6 +61,6 @@ int main()
 {
     Cents array[] = { Cents(5), Cents(10), Cents(15), Cents(14) };
     cout << average(array, 4) << endl;
- 
+
     return 0;
 }

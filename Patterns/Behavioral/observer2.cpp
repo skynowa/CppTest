@@ -1,6 +1,8 @@
 /**
  * observer.h
  * Implemented by Blueprint Technologies, Inc.
+ *
+ * \todo
  */
 
 
@@ -106,5 +108,3 @@ int main()
 {
 	return 0;
 }
-
-

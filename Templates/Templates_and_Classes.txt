@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 You can't have a virtual function template in a class — this would be meaningless —
 but a virtual function in a class template is fine.
 

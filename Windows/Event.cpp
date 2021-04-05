@@ -1,11 +1,12 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \todo
  */
 
 
 //---------------------------------------------------------------------------
-
 #include <string>
 #include <iostream>
 #include <assert.h>
@@ -68,9 +69,9 @@
     */
 #endif
 
-HANDLE     g_evEvent       = NULL; 
+HANDLE     g_evEvent       = NULL;
 //---------------------------------------------------------------------------
-unsigned int __stdcall 
+unsigned int __stdcall
 threadA(void *param) {
     std::cout << "Thread A: start" << std::endl;
 
@@ -82,7 +83,7 @@ threadA(void *param) {
 	return 0U;
 }
 //---------------------------------------------------------------------------
-unsigned int __stdcall 
+unsigned int __stdcall
 threadB(void *param) {
 	::WaitForSingleObject(g_evEvent, INFINITE);
     std::cout << "Thread B: start" << std::endl;
@@ -98,7 +99,7 @@ threadB(void *param) {
 	return 0U;
 }
 //---------------------------------------------------------------------------
-unsigned int __stdcall 
+unsigned int __stdcall
 threadC(void *param) {
 	::WaitForSingleObject(g_evEvent, INFINITE);
     std::cout << "Thread C: start" << std::endl;

@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
 Composite combines several classes into a single class.
 */
@@ -29,7 +36,7 @@ public:
 		recipient(recipient) { }
 	void greet() const
 	{
-		std::cout << greeting.get_greeting() << " " 
+		std::cout << greeting.get_greeting() << " "
 			<< recipient.get_recipient() << "!" << std::endl;
 	}
 };

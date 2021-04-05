@@ -1,9 +1,16 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 /*
-Visitor provides a call-back for every item in a collection.  
+Visitor provides a call-back for every item in a collection.
 This allows the implementation of the collection to hidden.
 
-visitor1.cpp is the simplest type of visitor using templates.  
-The std::for_each template function that takes any kind of type.  
+visitor1.cpp is the simplest type of visitor using templates.
+The std::for_each template function that takes any kind of type.
 visitor2.cpp uses the more traditional inheritance-based polymorphism.
 */
 
@@ -32,4 +39,3 @@ int main()
 	hello_world(print_char);
 	return 0;
 }
-

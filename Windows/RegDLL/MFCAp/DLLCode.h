@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 /*****************************************************************************************
    File name: DLLCode.h
 
@@ -8,7 +16,7 @@
    a DLL, otherwise it import the DLL objects into an application which uses the DLL. If
    we define DLLDIR_EX (a preprocessor identifier), then the preprocessor define macro
    DLLDIR (a mnemonic for DLL, import/export, Direction) becomes an export instruction,
-   otherwise its an import instruction by default. 
+   otherwise its an import instruction by default.
 *****************************************************************************************/
 
 #ifdef DLLDIR_EX
@@ -17,8 +25,8 @@
    #define DLLDIR  __declspec(dllimport)
 #endif
 
-// This prevent the C++ compiler from using decorated (modified) names for the functions 
-extern "C" { 
+// This prevent the C++ compiler from using decorated (modified) names for the functions
+extern "C" {
        // Function DLLfun1, defined in the W32DLL DLL, writes to a console, not a window,
 	   // so, it is not appropriate to call it from a MFC Client.
        int  DLLDIR DLLfun2(int);

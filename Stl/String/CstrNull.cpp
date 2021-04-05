@@ -1,6 +1,8 @@
 /**
  * \file  CstrNull.cpp
  * \brief c_str() of empty std::string
+ *
+ * \todo
  */
 
 

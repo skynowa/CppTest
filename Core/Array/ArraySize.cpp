@@ -2,7 +2,7 @@
  * \file  main.cpp
  * \brief
  *
- * \note  [todo]
+ * \todo
  */
 
 

@@ -1,3 +1,12 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
+
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -22,13 +31,13 @@ void function1()
 
 int main()
 {
- 
+
     thread t1(function1);
-    
+
     for (int i = 0; i < 10 ; i++)
         shared_print("From Main", i);
-        
+
     t1.join();
-        
+
     return 0;
 }

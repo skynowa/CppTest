@@ -1,8 +1,16 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 #include <list>
 #include <string>
 #include <algorithm>
- 
+
 /*
  * Generic function to find if an element of any type exists in list
  */
@@ -15,35 +23,35 @@ bool contains(std::list<T> & listOfElements, const T & element)
 	// does not exists in list
 	return it != listOfElements.end();
 }
- 
+
 int main()
 {
 	std::list<std::string> listOfStrs =
 	{ "is", "of", "the", "Hi", "Hello", "from" };
- 
+
 	/* Use the same generic function with list of Strings */
- 
+
     // Check if an element exists in list
 	bool result = contains(listOfStrs, std::string("is"));
 	std::cout << result << std::endl;
- 
+
 	// Check if an element exists in list
 	result = contains(listOfStrs, std::string("day"));
- 
+
 	std::cout << result << std::endl;
- 
+
 	/* Use the same generic function with list of int */
- 
+
 	// List of ints
 	std::list<int> listOfNum =
 	{ 1, 2, 3, 4, 6, 7, 8 };
- 
+
 	// Check if an element exists in list
 	result = contains(listOfNum, 3);
 	std::cout << result << std::endl;
- 
+
 	// Check if an element exists in list
 	result = contains(listOfNum, 3);
 	std::cout << result << std::endl;
- 
+
 }

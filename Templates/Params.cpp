@@ -1,6 +1,8 @@
- /*
- * \file  Main.cpp
- * \brief 
+/**
+ * \file
+ * \brief
+ *
+ * \todo
  */
 
 
@@ -13,7 +15,7 @@ template <typename T>
 class A {
     public:
         explicit A (const T &t) {
-            _m_t = t;    
+            _m_t = t;
         }
 
         void     vPrint() {
@@ -29,12 +31,12 @@ class B {
     public:
         explicit B (const T &t) {
             _m_t = t;
-            _m_iValue = iValue;    
+            _m_iValue = iValue;
         }
 
         void     vPrint() {
-            std::cout << "_m_t: "      << _m_t 
-                      << "_m_iValue: " << _m_iValue 
+            std::cout << "_m_t: "      << _m_t
+                      << "_m_iValue: " << _m_iValue
                       << std::endl;
         }
 
@@ -54,12 +56,12 @@ class C {
             // std::cout << __FUNCTION__ << std::endl;
 
             _m_t = t;
-            _m_dValue = dValue;    
+            _m_dValue = dValue;
         }
 
         void     vPrint() {
-            std::cout << "_m_t: "    << _m_t 
-                      << "_m_dValue" << _m_dValue 
+            std::cout << "_m_t: "    << _m_t
+                      << "_m_dValue" << _m_dValue
                       << std::endl;
         }
 

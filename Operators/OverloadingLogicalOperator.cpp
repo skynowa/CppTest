@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 //The comparison operators are all binary operators that do not modify their left operands,
 //we will make our overloaded comparison operators friend functions.
 
@@ -52,10 +60,10 @@ int main()
 
     if (nickle < dime)
         std::cout << "a dime is greater than a nickle.\n";
-    
+
     if (nickle <= dime)
         std::cout << "a dime is greater than or equal to a nickle.\n";
- 
- 
+
+
     return 0;
 }

@@ -1,3 +1,10 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
 template <typename Container>
 class readonly_container_facade {
 public:

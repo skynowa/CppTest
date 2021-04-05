@@ -1,4 +1,11 @@
-// WaitForSingleObject Sample.cpp 
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \todo
+ */
+
+// WaitForSingleObject Sample.cpp
 
 #include <windows.h>
 #include <iostream>
@@ -17,7 +24,7 @@ DWORD WINAPI SampleThread(LPVOID iValue) {
 		cout << i << endl;
 	}
 	SetEvent(hEvent);
-		
+
 	return 0;
 }
 

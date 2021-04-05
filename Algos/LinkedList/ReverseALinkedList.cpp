@@ -1,3 +1,11 @@
+/**
+ * \file
+ * \brief
+ *
+ * \todo
+ */
+
+
 #include <iostream>
 
 using namespace std;
@@ -13,22 +21,22 @@ class LinkedList
 public:
     LinkedList() : head(NULL)
     {}
-    
+
     //getter for head
     Node* getHead();
-    
+
     //create a node
     Node* createNode(int x);
-    
+
     //Print the LinkedList
     void display();
-    
+
     //Insert at the end
     void insertAtEnd();
 
     //Reverse a Linked List
     void reverseLinkedList();
-    
+
 };
 
 Node* LinkedList :: getHead()
@@ -40,7 +48,7 @@ Node* LinkedList :: createNode(int x)
 {
     struct Node* temp;
     temp = new(struct Node);
-    
+
     if (temp == NULL)
     {
         cout << "Memory unavailable " << endl;
@@ -62,19 +70,19 @@ void LinkedList :: insertAtEnd()
     struct Node *temp, *begin;
     //struct Node* begin;
     temp = createNode(value);
-    
+
     if (head == NULL)
     {
         head = temp;
         return;
     }
-    
+
     begin = head;
     while (begin->next != NULL)
     {
         begin = begin->next;
     }
-    
+
     begin->next = temp;
     return;
 }
@@ -101,7 +109,7 @@ void LinkedList :: display()
     Node* temp = new Node;
     temp = head;
     cout << "Displaying the linked list : " << ' ';
-    
+
     while (temp != NULL)
     {
         cout << temp->data << " ";
@@ -113,17 +121,17 @@ void LinkedList :: display()
 int main()
 {
     LinkedList l1;
-    
+
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.insertAtEnd();
     l1.display();
-    
+
     l1.reverseLinkedList();
     cout << "The reversed Linked List is : ";
     l1.display();
-    
+
     return 0;
 }
