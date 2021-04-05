@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 ####################################################################################################
+# FAQ
+#
+# https://theasciicode.com.ar/
+#
 # TODO
 #
 # - progress bar for each dir
@@ -33,6 +37,7 @@ def nested_defaultdict(default_factory, depth=1):
 ## prefix components:
 # space =  '    '
 # branch = '│   '
+
 
 ## pointers:
 # tee =    '├── '
