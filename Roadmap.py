@@ -130,11 +130,7 @@ def dirProcess(level, dirPath, dirs, files):
 		print('{}  <summary>{}/ (<b>{}%</b> of {})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-	# dirs
-	# print('')
-	# for d in dirs:
-		# print('{}* `::: {} :::`'.format(subindent, Path(d).name))
-	# print('')
+	# dirs - n/a
 
 	# files
 	print('')
@@ -142,8 +138,8 @@ def dirProcess(level, dirPath, dirs, files):
 		fileName = Path(file).name
 
 		if ( isFileTodo(file) ):
-			# fileName = '<span style="color:red">{}</span>'.format(fileName)
 			fileName = '❌ {}'.format(fileName)
+			# fileName = '<span style="color:red">{}</span>'.format(fileName)
 		else:
 			fileName = '✅ `{}`'.format(fileName)
 
