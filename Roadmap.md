@@ -5,153 +5,153 @@
 * <details open>
   <summary><b>!Todo/</b> (<b>0%</b> of 2)</summary>
 
-    * ![#f03c15](RSDN.txt)
-    * ![#f03c15](C++ questions.txt)
+    * <span style="color:red">RSDN.txt</span>
+    * <span style="color:red">C++ questions.txt</span>
 
   </details>
 
 * <details open>
   <summary><b>Algos/</b> (<b>0%</b> of 12)</summary>
 
-    * ![#f03c15](Algoritms.txt)
+    * <span style="color:red">Algoritms.txt</span>
 
   </details>
 
   * <details open>
     <summary>CircularLinkedList/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](CircularLinkedList.cpp)
+      * <span style="color:red">CircularLinkedList.cpp</span>
 
     </details>
 
   * <details open>
     <summary>DoublyLinkedList/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](DoubleLinkedListDeletion.cpp)
-      * ![#f03c15](DoubleLinkedListInsertion.cpp)
-      * ![#f03c15](DoubleLinkedList.cpp)
+      * <span style="color:red">DoubleLinkedListDeletion.cpp</span>
+      * <span style="color:red">DoubleLinkedListInsertion.cpp</span>
+      * <span style="color:red">DoubleLinkedList.cpp</span>
 
     </details>
 
   * <details open>
     <summary>LinkedList/ (<b>0%</b> of 7)</summary>
 
-      * ![#f03c15](LinkedListInsertion.cpp)
-      * ![#f03c15](DetectLoopInLinkedList.cpp)
-      * ![#f03c15](SortedMergeOfTwoLinkedList.cpp)
-      * ![#f03c15](ReverseALinkedList.cpp)
-      * ![#f03c15](LinkedListDeletion.cpp)
-      * ![#f03c15](PrintNthNodeFromTheEndOfLinkedList.cpp)
-      * ![#f03c15](LinkedListSearchForANode.cpp)
+      * <span style="color:red">LinkedListInsertion.cpp</span>
+      * <span style="color:red">DetectLoopInLinkedList.cpp</span>
+      * <span style="color:red">SortedMergeOfTwoLinkedList.cpp</span>
+      * <span style="color:red">ReverseALinkedList.cpp</span>
+      * <span style="color:red">LinkedListDeletion.cpp</span>
+      * <span style="color:red">PrintNthNodeFromTheEndOfLinkedList.cpp</span>
+      * <span style="color:red">LinkedListSearchForANode.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Bits/</b> (<b>0%</b> of 5)</summary>
 
-    * ![#f03c15](BitMask2.cpp)
-    * ![#f03c15](BitMask.cpp)
-    * ![#f03c15](bitset.cpp)
-    * ![#f03c15](BuffToint.cpp)
+    * <span style="color:red">BitMask2.cpp</span>
+    * <span style="color:red">BitMask.cpp</span>
+    * <span style="color:red">bitset.cpp</span>
+    * <span style="color:red">BuffToint.cpp</span>
 
   </details>
 
   * <details open>
     <summary>IsBot/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](main_BlackList.cpp)
+      * <span style="color:red">main_BlackList.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Cast/</b> (<b>0%</b> of 3)</summary>
 
-    * ![#f03c15](ReinterpretCast.cpp)
-    * ![#f03c15](Casts.cpp)
-    * ![#f03c15](BoolCast.cpp)
+    * <span style="color:red">ReinterpretCast.cpp</span>
+    * <span style="color:red">Casts.cpp</span>
+    * <span style="color:red">BoolCast.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Char/</b> (<b>0%</b> of 2)</summary>
 
-    * ![#f03c15](IntToChar.cpp)
-    * ![#f03c15](Escape.cpp)
+    * <span style="color:red">IntToChar.cpp</span>
+    * <span style="color:red">Escape.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Class/</b> (<b>0%</b> of 16)</summary>
 
-    * ![#f03c15](MethodWithoutBody.cpp)
-    * ![#f03c15](InitConstructor.cpp)
-    * ![#f03c15](InheritanceFunctions.cpp)
-    * ![#f03c15](ConstructOrder.cpp)
-    * ![#f03c15](CopyConstructor1.cpp)
-    * ![#f03c15](EmptyStructSizeOf.cpp)
-    * ![#f03c15](SizeOfClass.cpp)
-    * ![#f03c15](CallMethod.cpp)
-    * ![#f03c15](InitOrder.cpp)
-    * ![#f03c15](CpoyConstructor2.cpp)
-    * ![#f03c15](QuotedString.java)
-    * ![#f03c15](FriendClass.cpp)
-    * ![#f03c15](CondtructorOrder.cpp)
+    * <span style="color:red">MethodWithoutBody.cpp</span>
+    * <span style="color:red">InitConstructor.cpp</span>
+    * <span style="color:red">InheritanceFunctions.cpp</span>
+    * <span style="color:red">ConstructOrder.cpp</span>
+    * <span style="color:red">CopyConstructor1.cpp</span>
+    * <span style="color:red">EmptyStructSizeOf.cpp</span>
+    * <span style="color:red">SizeOfClass.cpp</span>
+    * <span style="color:red">CallMethod.cpp</span>
+    * <span style="color:red">InitOrder.cpp</span>
+    * <span style="color:red">CpoyConstructor2.cpp</span>
+    * <span style="color:red">QuotedString.java</span>
+    * <span style="color:red">FriendClass.cpp</span>
+    * <span style="color:red">CondtructorOrder.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Hierarchy/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](Hierarchy.cpp)
-      * ![#f03c15](Proxy.cpp)
+      * <span style="color:red">Hierarchy.cpp</span>
+      * <span style="color:red">Proxy.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Union/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](Union.cpp)
+      * <span style="color:red">Union.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Core/</b> (<b>0%</b> of 41)</summary>
 
-    * ![#f03c15](LvalueRvalue.cpp)
-    * ![#f03c15](Explicit.cpp)
-    * ![#f03c15](GoTo.cpp)
-    * ![#f03c15](ReturnBool.cpp)
-    * ![#f03c15](NamespaceOperator.cpp)
-    * ![#f03c15](MoveRef.cpp)
-    * ![#f03c15](ConstructNew.cpp)
-    * ![#f03c15](OperatorsNewDelete.cpp)
-    * ![#f03c15](PlacementNew.cpp)
-    * ![#f03c15](InitMembers.cpp)
-    * ![#f03c15](VariableArguments.cpp)
-    * ![#f03c15](InlineFunction.cpp)
-    * ![#f03c15](TypeNames.cpp)
-    * ![#f03c15](Move.cpp)
-    * ![#f03c15](ZeroDivision.cpp)
-    * ![#f03c15](ValueInitialization.cpp)
-    * ![#f03c15](TypeSizes.cpp)
-    * ![#f03c15](SwitchString.cpp)
-    * ![#f03c15](InitVars.cpp)
+    * <span style="color:red">LvalueRvalue.cpp</span>
+    * <span style="color:red">Explicit.cpp</span>
+    * <span style="color:red">GoTo.cpp</span>
+    * <span style="color:red">ReturnBool.cpp</span>
+    * <span style="color:red">NamespaceOperator.cpp</span>
+    * <span style="color:red">MoveRef.cpp</span>
+    * <span style="color:red">ConstructNew.cpp</span>
+    * <span style="color:red">OperatorsNewDelete.cpp</span>
+    * <span style="color:red">PlacementNew.cpp</span>
+    * <span style="color:red">InitMembers.cpp</span>
+    * <span style="color:red">VariableArguments.cpp</span>
+    * <span style="color:red">InlineFunction.cpp</span>
+    * <span style="color:red">TypeNames.cpp</span>
+    * <span style="color:red">Move.cpp</span>
+    * <span style="color:red">ZeroDivision.cpp</span>
+    * <span style="color:red">ValueInitialization.cpp</span>
+    * <span style="color:red">TypeSizes.cpp</span>
+    * <span style="color:red">SwitchString.cpp</span>
+    * <span style="color:red">InitVars.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Array/ (<b>0%</b> of 4)</summary>
 
-      * ![#f03c15](ArraySize.cpp)
+      * <span style="color:red">ArraySize.cpp</span>
 
     </details>
 
     * <details open>
       <summary>ArrayToFunction/ (<b>0%</b> of 3)</summary>
 
-        * ![#f03c15](ArrayToFunction3.cpp)
-        * ![#f03c15](ArrayToFunction1.cpp)
-        * ![#f03c15](ArrayToFunction2.cpp)
+        * <span style="color:red">ArrayToFunction3.cpp</span>
+        * <span style="color:red">ArrayToFunction1.cpp</span>
+        * <span style="color:red">ArrayToFunction2.cpp</span>
 
       </details>
 
@@ -170,30 +170,30 @@
   * <details open>
     <summary>C++17/ (<b>0%</b> of 18)</summary>
 
-      * ![#f03c15](TemplateAutoParam.cpp)
-      * ![#f03c15](StructuredBindings.cpp)
-      * ![#f03c15](NestedNamespaces.cpp)
-      * ![#f03c15](LambdaThisByValue.cpp)
-      * ![#f03c15](EnumListInitialization.cpp)
-      * ![#f03c15](StructuredBindingsRef.cpp)
-      * ![#f03c15](ConstexprIf.cpp)
-      * ![#f03c15](BracedInitList.cpp)
-      * ![#f03c15](ConstexprLambda.cpp)
-      * ![#f03c15](FoldExpressions.cpp)
-      * ![#f03c15](InlineVars.cpp)
-      * ![#f03c15](TemplateArgDeduction.cpp)
-      * ![#f03c15](SelectionVarInitializer.cpp)
-      * ![#f03c15](Utf8CharLiterals.cpp)
+      * <span style="color:red">TemplateAutoParam.cpp</span>
+      * <span style="color:red">StructuredBindings.cpp</span>
+      * <span style="color:red">NestedNamespaces.cpp</span>
+      * <span style="color:red">LambdaThisByValue.cpp</span>
+      * <span style="color:red">EnumListInitialization.cpp</span>
+      * <span style="color:red">StructuredBindingsRef.cpp</span>
+      * <span style="color:red">ConstexprIf.cpp</span>
+      * <span style="color:red">BracedInitList.cpp</span>
+      * <span style="color:red">ConstexprLambda.cpp</span>
+      * <span style="color:red">FoldExpressions.cpp</span>
+      * <span style="color:red">InlineVars.cpp</span>
+      * <span style="color:red">TemplateArgDeduction.cpp</span>
+      * <span style="color:red">SelectionVarInitializer.cpp</span>
+      * <span style="color:red">Utf8CharLiterals.cpp</span>
 
     </details>
 
     * <details open>
       <summary>Attributes/ (<b>0%</b> of 4)</summary>
 
-        * ![#f03c15](maybe_unused.cpp)
-        * ![#f03c15](Sample1.cpp)
-        * ![#f03c15](fallthrough.cpp)
-        * ![#f03c15](nodiscard.cpp)
+        * <span style="color:red">maybe_unused.cpp</span>
+        * <span style="color:red">Sample1.cpp</span>
+        * <span style="color:red">fallthrough.cpp</span>
+        * <span style="color:red">nodiscard.cpp</span>
 
       </details>
 
@@ -206,214 +206,214 @@
   * <details open>
     <summary>File/ (<b>0%</b> of 4)</summary>
 
-      * ![#f03c15](FileRouter.inl)
-      * ![#f03c15](File_old.h)
-      * ![#f03c15](FileRouter.h)
-      * ![#f03c15](File.h)
+      * <span style="color:red">FileRouter.inl</span>
+      * <span style="color:red">File_old.h</span>
+      * <span style="color:red">FileRouter.h</span>
+      * <span style="color:red">File.h</span>
 
     </details>
 
   * <details open>
     <summary>Thread/ (<b>0%</b> of 5)</summary>
 
-      * ![#f03c15](IThreadImpl_win.h)
-      * ![#f03c15](Thread.h)
-      * ![#f03c15](Thread_old.h)
-      * ![#f03c15](IThreadImpl_posix.h)
-      * ![#f03c15](IThreadImpl.h)
+      * <span style="color:red">IThreadImpl_win.h</span>
+      * <span style="color:red">Thread.h</span>
+      * <span style="color:red">Thread_old.h</span>
+      * <span style="color:red">IThreadImpl_posix.h</span>
+      * <span style="color:red">IThreadImpl.h</span>
 
     </details>
 
 * <details open>
   <summary><b>Double/</b> (<b>0%</b> of 4)</summary>
 
-    * ![#f03c15](IntDoubleCompare.cpp)
-    * ![#f03c15](DoubleCast.cpp)
-    * ![#f03c15](DoubleCompare.cpp)
-    * ![#f03c15](IsGreater.cpp)
+    * <span style="color:red">IntDoubleCompare.cpp</span>
+    * <span style="color:red">DoubleCast.cpp</span>
+    * <span style="color:red">DoubleCompare.cpp</span>
+    * <span style="color:red">IsGreater.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Enum/</b> (<b>0%</b> of 6)</summary>
 
-    * ![#f03c15](SafeEnum.cpp)
-    * ![#f03c15](SizeOf.cpp)
-    * ![#f03c15](ForEnum.cpp)
-    * ![#f03c15](CodeStyle.cpp)
+    * <span style="color:red">SafeEnum.cpp</span>
+    * <span style="color:red">SizeOf.cpp</span>
+    * <span style="color:red">ForEnum.cpp</span>
+    * <span style="color:red">CodeStyle.cpp</span>
 
   </details>
 
   * <details open>
     <summary>EnumIO/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](EnumIO.h)
-      * ![#f03c15](EnumIO_test.cpp)
+      * <span style="color:red">EnumIO.h</span>
+      * <span style="color:red">EnumIO_test.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Etc/</b> (<b>0%</b> of 8)</summary>
 
-    * ![#f03c15](VarVisibility.cpp)
-    * ![#f03c15](Random.cpp)
-    * ![#f03c15](GlobalVar2.cpp)
-    * ![#f03c15](DecIncInt.cpp)
-    * ![#f03c15](GlobalVar1.cpp)
-    * ![#f03c15](UnicodeAnsi.cpp)
-    * ![#f03c15](SizeofUnicodes.cpp)
-    * ![#f03c15](FunctionDefinition.cpp)
+    * <span style="color:red">VarVisibility.cpp</span>
+    * <span style="color:red">Random.cpp</span>
+    * <span style="color:red">GlobalVar2.cpp</span>
+    * <span style="color:red">DecIncInt.cpp</span>
+    * <span style="color:red">GlobalVar1.cpp</span>
+    * <span style="color:red">UnicodeAnsi.cpp</span>
+    * <span style="color:red">SizeofUnicodes.cpp</span>
+    * <span style="color:red">FunctionDefinition.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Exceptions/</b> (<b>0%</b> of 10)</summary>
 
-    * ![#f03c15](Try.cpp)
-    * ![#f03c15](Exception2.cpp)
-    * ![#f03c15](Exception3.cpp)
+    * <span style="color:red">Try.cpp</span>
+    * <span style="color:red">Exception2.cpp</span>
+    * <span style="color:red">Exception3.cpp</span>
 
   </details>
 
   * <details open>
     <summary>SignalsToException/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](SignalsToException.cpp)
+      * <span style="color:red">SignalsToException.cpp</span>
 
     </details>
 
   * <details open>
     <summary>SignalsToException_2/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](SignalHandler.h)
-      * ![#f03c15](SignalHandler.inl)
-      * ![#f03c15](SignalsToException_2.cpp)
+      * <span style="color:red">SignalHandler.h</span>
+      * <span style="color:red">SignalHandler.inl</span>
+      * <span style="color:red">SignalsToException_2.cpp</span>
 
     </details>
 
   * <details open>
     <summary>WinException/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](CxWinException.cpp)
-      * ![#f03c15](WinException.cpp)
-      * ![#f03c15](CxWinException.h)
+      * <span style="color:red">CxWinException.cpp</span>
+      * <span style="color:red">WinException.cpp</span>
+      * <span style="color:red">CxWinException.h</span>
 
     </details>
 
 * <details open>
   <summary><b>FAQ/</b> (<b>0%</b> of 1)</summary>
 
-    * ![#f03c15](FAQ.txt)
+    * <span style="color:red">FAQ.txt</span>
 
   </details>
 
 * <details open>
   <summary><b>Functor/</b> (<b>0%</b> of 17)</summary>
 
-    * ![#f03c15](FunctorExample4.cpp)
-    * ![#f03c15](FunctorExample1.cpp)
-    * ![#f03c15](FunctorExample2.cpp)
-    * ![#f03c15](NativeFunction.cpp)
-    * ![#f03c15](Functor.cpp)
-    * ![#f03c15](FunctorTarget.cpp)
-    * ![#f03c15](FunctorExample3.cpp)
-    * ![#f03c15](StaticFunctor.cpp)
+    * <span style="color:red">FunctorExample4.cpp</span>
+    * <span style="color:red">FunctorExample1.cpp</span>
+    * <span style="color:red">FunctorExample2.cpp</span>
+    * <span style="color:red">NativeFunction.cpp</span>
+    * <span style="color:red">Functor.cpp</span>
+    * <span style="color:red">FunctorTarget.cpp</span>
+    * <span style="color:red">FunctorExample3.cpp</span>
+    * <span style="color:red">StaticFunctor.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Lambda/ (<b>0%</b> of 9)</summary>
 
-      * ![#f03c15](LambdaMemberVariableCapture.cpp)
-      * ![#f03c15](LambdaScopes.cpp)
-      * ![#f03c15](LambdaScopeFaultScenario.cpp)
-      * ![#f03c15](LambaExamples.cpp)
-      * ![#f03c15](LambdaPtrsSizes.cpp)
-      * ![#f03c15](LambdaScopesByValue.cpp)
-      * ![#f03c15](LambdaScopesByReference.cpp)
-      * ![#f03c15](GccLambdaLeaky.cpp)
-      * ![#f03c15](LambdaBasic.cpp)
+      * <span style="color:red">LambdaMemberVariableCapture.cpp</span>
+      * <span style="color:red">LambdaScopes.cpp</span>
+      * <span style="color:red">LambdaScopeFaultScenario.cpp</span>
+      * <span style="color:red">LambaExamples.cpp</span>
+      * <span style="color:red">LambdaPtrsSizes.cpp</span>
+      * <span style="color:red">LambdaScopesByValue.cpp</span>
+      * <span style="color:red">LambdaScopesByReference.cpp</span>
+      * <span style="color:red">GccLambdaLeaky.cpp</span>
+      * <span style="color:red">LambdaBasic.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>IpcMt/</b> (<b>0%</b> of 27)</summary>
 
-    * ![#f03c15](signal_stacktrace.cpp)
-    * ![#f03c15](psiginfo.cpp)
-    * ![#f03c15](signal_ctrl_c.cpp)
-    * ![#f03c15](ThreadHarwareConcurrency.cpp)
-    * ![#f03c15](condition_variable.cpp)
-    * ![#f03c15](signal.cpp)
-    * ![#f03c15](IpcMethods.txt)
+    * <span style="color:red">signal_stacktrace.cpp</span>
+    * <span style="color:red">psiginfo.cpp</span>
+    * <span style="color:red">signal_ctrl_c.cpp</span>
+    * <span style="color:red">ThreadHarwareConcurrency.cpp</span>
+    * <span style="color:red">condition_variable.cpp</span>
+    * <span style="color:red">signal.cpp</span>
+    * <span style="color:red">IpcMethods.txt</span>
 
   </details>
 
   * <details open>
     <summary>C++11/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](atomic_flag.cpp)
+      * <span style="color:red">atomic_flag.cpp</span>
 
     </details>
 
   * <details open>
     <summary>EventHandling/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](ConditionalVariableBasics.cpp)
-      * ![#f03c15](BasicXMLEventHandlingUsingConditionalVariable.cpp)
-      * ![#f03c15](BasicXMLEventHandling.cpp)
+      * <span style="color:red">ConditionalVariableBasics.cpp</span>
+      * <span style="color:red">BasicXMLEventHandlingUsingConditionalVariable.cpp</span>
+      * <span style="color:red">BasicXMLEventHandling.cpp</span>
 
     </details>
 
   * <details open>
     <summary>JoinDetach/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](JoiningThreads.cpp)
+      * <span style="color:red">JoiningThreads.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Mutex/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](MutexLockUnlock.cpp)
-      * ![#f03c15](MutexLockUnlock2.cpp)
-      * ![#f03c15](MutexLockGuard.cpp)
+      * <span style="color:red">MutexLockUnlock.cpp</span>
+      * <span style="color:red">MutexLockUnlock2.cpp</span>
+      * <span style="color:red">MutexLockGuard.cpp</span>
 
     </details>
 
   * <details open>
     <summary>PassingArgumentsToThreads/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](PassingPointersTThread.cpp)
-      * ![#f03c15](PassingReferencesToThread.cpp)
-      * ![#f03c15](PassingSimpleArgumentsToThread.cpp)
+      * <span style="color:red">PassingPointersTThread.cpp</span>
+      * <span style="color:red">PassingReferencesToThread.cpp</span>
+      * <span style="color:red">PassingSimpleArgumentsToThread.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Proccess/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](Wait.cpp)
-      * ![#f03c15](ExecuteBin.cpp)
-      * ![#f03c15](GetStdInOutError.cpp)
+      * <span style="color:red">Wait.cpp</span>
+      * <span style="color:red">ExecuteBin.cpp</span>
+      * <span style="color:red">GetStdInOutError.cpp</span>
 
     </details>
 
   * <details open>
     <summary>RaceCondition/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](RaceConditionExample.cpp)
-      * ![#f03c15](RaceConditionExample2.cpp)
+      * <span style="color:red">RaceConditionExample.cpp</span>
+      * <span style="color:red">RaceConditionExample2.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Thread/ (<b>0%</b> of 4)</summary>
 
-      * ![#f03c15](ThreadCreationUsingLambdaFunction.cpp)
-      * ![#f03c15](ThreadCreationUsingFunctionPointer.cpp)
-      * ![#f03c15](DifferentiatingBetweenThread.cpp)
-      * ![#f03c15](ThreadCreationUsingFunctionObjects.cpp)
+      * <span style="color:red">ThreadCreationUsingLambdaFunction.cpp</span>
+      * <span style="color:red">ThreadCreationUsingFunctionPointer.cpp</span>
+      * <span style="color:red">DifferentiatingBetweenThread.cpp</span>
+      * <span style="color:red">ThreadCreationUsingFunctionObjects.cpp</span>
 
     </details>
 
@@ -426,17 +426,17 @@
   * <details open>
     <summary>Boost/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](ScopeArray.cpp)
-      * ![#f03c15](ProgramOptions.cpp)
-      * ![#f03c15](Bind.cpp)
+      * <span style="color:red">ScopeArray.cpp</span>
+      * <span style="color:red">ProgramOptions.cpp</span>
+      * <span style="color:red">Bind.cpp</span>
 
     </details>
 
   * <details open>
     <summary>LibEvent/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](all_test.cpp)
-      * ![#f03c15](FAQ.txt)
+      * <span style="color:red">all_test.cpp</span>
+      * <span style="color:red">FAQ.txt</span>
 
     </details>
 
@@ -455,23 +455,23 @@
   * <details open>
     <summary>Qt/ (<b>0%</b> of 4)</summary>
 
-      * ![#f03c15](HttpUpload.cpp)
+      * <span style="color:red">HttpUpload.cpp</span>
 
     </details>
 
     * <details open>
       <summary>QSharedMemory/ (<b>0%</b> of 3)</summary>
 
-        * ![#f03c15](main_MainDialog.cpp)
-        * ![#f03c15](MainDialog.cpp)
-        * ![#f03c15](MainDialog.h)
+        * <span style="color:red">main_MainDialog.cpp</span>
+        * <span style="color:red">MainDialog.cpp</span>
+        * <span style="color:red">MainDialog.h</span>
 
       </details>
 
   * <details open>
     <summary>Ssh2/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](SSH2.cpp)
+      * <span style="color:red">SSH2.cpp</span>
 
     </details>
 
@@ -490,35 +490,35 @@
 * <details open>
   <summary><b>Loops/</b> (<b>0%</b> of 5)</summary>
 
-    * ![#f03c15](ForBreak.cpp)
-    * ![#f03c15](SwitchCase.cpp)
-    * ![#f03c15](For.cpp)
-    * ![#f03c15](GoToLablel.cpp)
-    * ![#f03c15](ForVoid.cpp)
+    * <span style="color:red">ForBreak.cpp</span>
+    * <span style="color:red">SwitchCase.cpp</span>
+    * <span style="color:red">For.cpp</span>
+    * <span style="color:red">GoToLablel.cpp</span>
+    * <span style="color:red">ForVoid.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Network/</b> (<b>0%</b> of 3)</summary>
 
-    * ![#f03c15](IpString.cpp)
-    * ![#f03c15](TcpUdpDiffs.txt)
-    * ![#f03c15](Mount.cpp)
+    * <span style="color:red">IpString.cpp</span>
+    * <span style="color:red">TcpUdpDiffs.txt</span>
+    * <span style="color:red">Mount.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Operators/</b> (<b>0%</b> of 9)</summary>
 
-    * ![#f03c15](OverloadingPrefixIncermentDecrementOperator.cpp)
-    * ![#f03c15](Exclamanation.cpp)
-    * ![#f03c15](OverloadingLogicalOperator.cpp)
-    * ![#f03c15](OperatorIn.cpp)
-    * ![#f03c15](OverloadingArithmeticOperator.cpp)
-    * ![#f03c15](OverloadingInputOutputOperator.cpp)
-    * ![#f03c15](OverloadingPostfixIncermentDecrementOperator.cpp)
-    * ![#f03c15](OverloadingUnaryOperator.cpp)
-    * ![#f03c15](OverloadingArithmeticOperatorUsingMemberFunction.cpp)
+    * <span style="color:red">OverloadingPrefixIncermentDecrementOperator.cpp</span>
+    * <span style="color:red">Exclamanation.cpp</span>
+    * <span style="color:red">OverloadingLogicalOperator.cpp</span>
+    * <span style="color:red">OperatorIn.cpp</span>
+    * <span style="color:red">OverloadingArithmeticOperator.cpp</span>
+    * <span style="color:red">OverloadingInputOutputOperator.cpp</span>
+    * <span style="color:red">OverloadingPostfixIncermentDecrementOperator.cpp</span>
+    * <span style="color:red">OverloadingUnaryOperator.cpp</span>
+    * <span style="color:red">OverloadingArithmeticOperatorUsingMemberFunction.cpp</span>
 
   </details>
 
@@ -531,133 +531,133 @@
   * <details open>
     <summary>Behavioral/ (<b>0%</b> of 15)</summary>
 
-      * ![#f03c15](memento.cpp)
-      * ![#f03c15](iterator.cpp)
-      * ![#f03c15](strategy.cpp)
-      * ![#f03c15](visitor2.cpp)
-      * ![#f03c15](observer.cpp)
-      * ![#f03c15](visitor1.cpp)
-      * ![#f03c15](interpreter.cpp)
-      * ![#f03c15](template_method.cpp)
-      * ![#f03c15](chain_of_responsibility.cpp)
-      * ![#f03c15](command.cpp)
-      * ![#f03c15](state.cpp)
-      * ![#f03c15](mediator.cpp)
-      * ![#f03c15](null_object.cpp)
-      * ![#f03c15](iterator_with_operators.cpp)
-      * ![#f03c15](observer2.cpp)
+      * <span style="color:red">memento.cpp</span>
+      * <span style="color:red">iterator.cpp</span>
+      * <span style="color:red">strategy.cpp</span>
+      * <span style="color:red">visitor2.cpp</span>
+      * <span style="color:red">observer.cpp</span>
+      * <span style="color:red">visitor1.cpp</span>
+      * <span style="color:red">interpreter.cpp</span>
+      * <span style="color:red">template_method.cpp</span>
+      * <span style="color:red">chain_of_responsibility.cpp</span>
+      * <span style="color:red">command.cpp</span>
+      * <span style="color:red">state.cpp</span>
+      * <span style="color:red">mediator.cpp</span>
+      * <span style="color:red">null_object.cpp</span>
+      * <span style="color:red">iterator_with_operators.cpp</span>
+      * <span style="color:red">observer2.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Creational/ (<b>0%</b> of 6)</summary>
 
-      * ![#f03c15](ClassFactory.cpp)
-      * ![#f03c15](Singleton.cpp)
-      * ![#f03c15](Builder.cpp)
-      * ![#f03c15](FactoryMethod.cpp)
-      * ![#f03c15](AbstractFactory.cpp)
-      * ![#f03c15](Prototype.cpp)
+      * <span style="color:red">ClassFactory.cpp</span>
+      * <span style="color:red">Singleton.cpp</span>
+      * <span style="color:red">Builder.cpp</span>
+      * <span style="color:red">FactoryMethod.cpp</span>
+      * <span style="color:red">AbstractFactory.cpp</span>
+      * <span style="color:red">Prototype.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Structural/ (<b>0%</b> of 8)</summary>
 
-      * ![#f03c15](adapter.cpp)
-      * ![#f03c15](ContainerFacade.h)
-      * ![#f03c15](proxy.cpp)
-      * ![#f03c15](bridge.cpp)
-      * ![#f03c15](facade.cpp)
-      * ![#f03c15](decorator.cpp)
-      * ![#f03c15](composite.cpp)
-      * ![#f03c15](flyweight.cpp)
+      * <span style="color:red">adapter.cpp</span>
+      * <span style="color:red">ContainerFacade.h</span>
+      * <span style="color:red">proxy.cpp</span>
+      * <span style="color:red">bridge.cpp</span>
+      * <span style="color:red">facade.cpp</span>
+      * <span style="color:red">decorator.cpp</span>
+      * <span style="color:red">composite.cpp</span>
+      * <span style="color:red">flyweight.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Pointers/</b> (<b>0%</b> of 4)</summary>
 
-    * ![#f03c15](xPTR_DELETE.cpp)
-    * ![#f03c15](CatchPtr.hpp)
-    * ![#f03c15](FunctionPtr.cpp)
-    * ![#f03c15](AutoPtr.h)
+    * <span style="color:red">xPTR_DELETE.cpp</span>
+    * <span style="color:red">CatchPtr.hpp</span>
+    * <span style="color:red">FunctionPtr.cpp</span>
+    * <span style="color:red">AutoPtr.h</span>
 
   </details>
 
 * <details open>
   <summary><b>SQL/</b> (<b>0%</b> of 1)</summary>
 
-    * ![#f03c15](test.sql)
+    * <span style="color:red">test.sql</span>
 
   </details>
 
 * <details open>
   <summary><b>Static/</b> (<b>0%</b> of 12)</summary>
 
-    * ![#f03c15](StaticHolder.cpp)
-    * ![#f03c15](Data.cpp)
+    * <span style="color:red">StaticHolder.cpp</span>
+    * <span style="color:red">Data.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Vars1/ (<b>0%</b> of 4)</summary>
 
-      * ![#f03c15](module.h)
-      * ![#f03c15](main_Var1.cpp)
-      * ![#f03c15](header.h)
-      * ![#f03c15](module.inl)
+      * <span style="color:red">module.h</span>
+      * <span style="color:red">main_Var1.cpp</span>
+      * <span style="color:red">header.h</span>
+      * <span style="color:red">module.inl</span>
 
     </details>
 
   * <details open>
     <summary>Vars2/ (<b>0%</b> of 6)</summary>
 
-      * ![#f03c15](CxVars.inl)
-      * ![#f03c15](module.h)
-      * ![#f03c15](CVar.h)
-      * ![#f03c15](CxVars.h)
-      * ![#f03c15](main_Var2.cpp)
-      * ![#f03c15](module.inl)
+      * <span style="color:red">CxVars.inl</span>
+      * <span style="color:red">module.h</span>
+      * <span style="color:red">CVar.h</span>
+      * <span style="color:red">CxVars.h</span>
+      * <span style="color:red">main_Var2.cpp</span>
+      * <span style="color:red">module.inl</span>
 
     </details>
 
 * <details open>
   <summary><b>StdLibC/</b> (<b>0%</b> of 8)</summary>
 
-    * ![#f03c15](Time.cpp)
-    * ![#f03c15](Atoi.cpp)
-    * ![#f03c15](Printf.cpp)
-    * ![#f03c15](Strptime.cpp)
-    * ![#f03c15](BuffZero.cpp)
-    * ![#f03c15](VSnprintf.cpp)
+    * <span style="color:red">Time.cpp</span>
+    * <span style="color:red">Atoi.cpp</span>
+    * <span style="color:red">Printf.cpp</span>
+    * <span style="color:red">Strptime.cpp</span>
+    * <span style="color:red">BuffZero.cpp</span>
+    * <span style="color:red">VSnprintf.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Process/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](ExitFunctions.cpp)
-      * ![#f03c15](Exit.cpp)
+      * <span style="color:red">ExitFunctions.cpp</span>
+      * <span style="color:red">Exit.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Stl/</b> (<b>0%</b> of 81)</summary>
 
-    * ![#f03c15](StlFeatures.txt)
+    * <span style="color:red">StlFeatures.txt</span>
 
   </details>
 
   * <details open>
     <summary>Algos/ (<b>0%</b> of 6)</summary>
 
-      * ![#f03c15](difference.cpp)
-      * ![#f03c15](accumulate.cpp)
-      * ![#f03c15](sort.txt)
-      * ![#f03c15](replace_if.cpp)
-      * ![#f03c15](transform.cpp)
-      * ![#f03c15](set_symmetric_difference.cpp)
+      * <span style="color:red">difference.cpp</span>
+      * <span style="color:red">accumulate.cpp</span>
+      * <span style="color:red">sort.txt</span>
+      * <span style="color:red">replace_if.cpp</span>
+      * <span style="color:red">transform.cpp</span>
+      * <span style="color:red">set_symmetric_difference.cpp</span>
 
     </details>
 
@@ -676,250 +676,250 @@
   * <details open>
     <summary>C++17/ (<b>0%</b> of 10)</summary>
 
-      * ![#f03c15](Any.cpp)
-      * ![#f03c15](StringView2.cpp)
-      * ![#f03c15](Invoke.cpp)
-      * ![#f03c15](Variant.cpp)
-      * ![#f03c15](ParallelAlgos.cpp)
-      * ![#f03c15](Apply.cpp)
-      * ![#f03c15](Optional.cpp)
-      * ![#f03c15](Fs.cpp)
-      * ![#f03c15](Byte.cpp)
-      * ![#f03c15](MapSetSplicing.cpp)
+      * <span style="color:red">Any.cpp</span>
+      * <span style="color:red">StringView2.cpp</span>
+      * <span style="color:red">Invoke.cpp</span>
+      * <span style="color:red">Variant.cpp</span>
+      * <span style="color:red">ParallelAlgos.cpp</span>
+      * <span style="color:red">Apply.cpp</span>
+      * <span style="color:red">Optional.cpp</span>
+      * <span style="color:red">Fs.cpp</span>
+      * <span style="color:red">Byte.cpp</span>
+      * <span style="color:red">MapSetSplicing.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Deque/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](DequeImplementation.cpp)
-      * ![#f03c15](DequeOperations.cpp)
+      * <span style="color:red">DequeImplementation.cpp</span>
+      * <span style="color:red">DequeOperations.cpp</span>
 
     </details>
 
   * <details open>
     <summary>ForwardList/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](ForwardListOperation2.cpp)
-      * ![#f03c15](ForwardListOperation1.cpp)
-      * ![#f03c15](ForwardListAssign.cpp)
+      * <span style="color:red">ForwardListOperation2.cpp</span>
+      * <span style="color:red">ForwardListOperation1.cpp</span>
+      * <span style="color:red">ForwardListAssign.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Functional/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](ref.cpp)
+      * <span style="color:red">ref.cpp</span>
 
     </details>
 
   * <details open>
     <summary>IOStream/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](OperatorOutput.cpp)
+      * <span style="color:red">OperatorOutput.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Limits/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](NumericLimits.cpp)
-      * ![#f03c15](DoubleLimits.cpp)
+      * <span style="color:red">NumericLimits.cpp</span>
+      * <span style="color:red">DoubleLimits.cpp</span>
 
     </details>
 
   * <details open>
     <summary>List/ (<b>0%</b> of 12)</summary>
 
-      * ![#f03c15](splice.cpp)
-      * ![#f03c15](ListErase.cpp)
-      * ![#f03c15](insertInLoop.cpp)
-      * ![#f03c15](ListSearchUsingGenerate.cpp)
-      * ![#f03c15](ListRemove.cpp)
-      * ![#f03c15](ListOperations.cpp)
-      * ![#f03c15](insert.cpp)
-      * ![#f03c15](ListRemoveIf.cpp)
-      * ![#f03c15](ListSort.cpp)
-      * ![#f03c15](ListConditionalEraseWhileIteration.cpp)
-      * ![#f03c15](ListSearchUsingFind.cpp)
-      * ![#f03c15](list.cpp)
+      * <span style="color:red">splice.cpp</span>
+      * <span style="color:red">ListErase.cpp</span>
+      * <span style="color:red">insertInLoop.cpp</span>
+      * <span style="color:red">ListSearchUsingGenerate.cpp</span>
+      * <span style="color:red">ListRemove.cpp</span>
+      * <span style="color:red">ListOperations.cpp</span>
+      * <span style="color:red">insert.cpp</span>
+      * <span style="color:red">ListRemoveIf.cpp</span>
+      * <span style="color:red">ListSort.cpp</span>
+      * <span style="color:red">ListConditionalEraseWhileIteration.cpp</span>
+      * <span style="color:red">ListSearchUsingFind.cpp</span>
+      * <span style="color:red">list.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Map/ (<b>0%</b> of 12)</summary>
 
-      * ![#f03c15](Maps.cpp)
-      * ![#f03c15](OperatorAccess.cpp)
-      * ![#f03c15](MapReversePrint.cpp)
-      * ![#f03c15](MapComparison.cpp)
-      * ![#f03c15](MapOperatorAccessElement.cpp)
-      * ![#f03c15](MapDeletionByIteratorRange.cpp)
-      * ![#f03c15](MapComparisonByUserDefinedObjects.cpp)
-      * ![#f03c15](Erase.cpp)
-      * ![#f03c15](MapInsertion.cpp)
-      * ![#f03c15](MapUnorderedMap.cpp)
-      * ![#f03c15](MapBasics.cpp)
-      * ![#f03c15](Bool.cpp)
+      * <span style="color:red">Maps.cpp</span>
+      * <span style="color:red">OperatorAccess.cpp</span>
+      * <span style="color:red">MapReversePrint.cpp</span>
+      * <span style="color:red">MapComparison.cpp</span>
+      * <span style="color:red">MapOperatorAccessElement.cpp</span>
+      * <span style="color:red">MapDeletionByIteratorRange.cpp</span>
+      * <span style="color:red">MapComparisonByUserDefinedObjects.cpp</span>
+      * <span style="color:red">Erase.cpp</span>
+      * <span style="color:red">MapInsertion.cpp</span>
+      * <span style="color:red">MapUnorderedMap.cpp</span>
+      * <span style="color:red">MapBasics.cpp</span>
+      * <span style="color:red">Bool.cpp</span>
 
     </details>
 
   * <details open>
     <summary>MultiMap/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](MultimapOperations.cpp)
-      * ![#f03c15](MultimapCI.cpp)
-      * ![#f03c15](MultimapBasics.cpp)
+      * <span style="color:red">MultimapOperations.cpp</span>
+      * <span style="color:red">MultimapCI.cpp</span>
+      * <span style="color:red">MultimapBasics.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Set/ (<b>0%</b> of 8)</summary>
 
-      * ![#f03c15](SetInsertionUsingIteratorRange.cpp)
-      * ![#f03c15](set_insert.cpp)
-      * ![#f03c15](SetsWithUserDefinedClassesUsingComparator.cpp)
-      * ![#f03c15](SetsBasics.cpp)
-      * ![#f03c15](SearchInASet.cpp)
-      * ![#f03c15](SetErase.cpp)
-      * ![#f03c15](VerifyAndInsertInSet.cpp)
-      * ![#f03c15](SetsWithUserDefinedClasses.cpp)
+      * <span style="color:red">SetInsertionUsingIteratorRange.cpp</span>
+      * <span style="color:red">set_insert.cpp</span>
+      * <span style="color:red">SetsWithUserDefinedClassesUsingComparator.cpp</span>
+      * <span style="color:red">SetsBasics.cpp</span>
+      * <span style="color:red">SearchInASet.cpp</span>
+      * <span style="color:red">SetErase.cpp</span>
+      * <span style="color:red">VerifyAndInsertInSet.cpp</span>
+      * <span style="color:red">SetsWithUserDefinedClasses.cpp</span>
 
     </details>
 
   * <details open>
     <summary>SmartPtrs/ (<b>0%</b> of 2)</summary>
 
-      * ![#f03c15](AutoPtrVSUniquePtr.cpp)
-      * ![#f03c15](smart-pointers-in-cpp11.html)
+      * <span style="color:red">AutoPtrVSUniquePtr.cpp</span>
+      * <span style="color:red">smart-pointers-in-cpp11.html</span>
 
     </details>
 
   * <details open>
     <summary>String/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](reverse.cpp)
-      * ![#f03c15](CstrNull.cpp)
-      * ![#f03c15](stringWithNull.cpp)
+      * <span style="color:red">reverse.cpp</span>
+      * <span style="color:red">CstrNull.cpp</span>
+      * <span style="color:red">stringWithNull.cpp</span>
 
     </details>
 
   * <details open>
     <summary>UnorderedMap/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](UnorderedMapInitialization.cpp)
-      * ![#f03c15](UnorderedMapInsertion.cpp)
-      * ![#f03c15](UnorderedMapBasics.cpp)
+      * <span style="color:red">UnorderedMapInitialization.cpp</span>
+      * <span style="color:red">UnorderedMapInsertion.cpp</span>
+      * <span style="color:red">UnorderedMapBasics.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Utility/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](forward.cpp)
+      * <span style="color:red">forward.cpp</span>
 
     </details>
 
   * <details open>
     <summary>Vector/ (<b>0%</b> of 11)</summary>
 
-      * ![#f03c15](RandomNumberInitializationInVector.cpp)
-      * ![#f03c15](RemoveAllOccurrencesOfAnElementFromVector.cpp)
-      * ![#f03c15](VectorOperations1.cpp)
-      * ![#f03c15](slice.cpp)
-      * ![#f03c15](VectorInitialization.cpp)
-      * ![#f03c15](VectorOperations3.cpp)
-      * ![#f03c15](SimpleOperationsOnVector.cpp)
-      * ![#f03c15](VectorEraseRemove.cpp)
-      * ![#f03c15](VectorListDequePushBack.cpp)
-      * ![#f03c15](VectorOperations2.cpp)
-      * ![#f03c15](RemoveAllOccurrencesOfAnElementFromVector2.cpp)
+      * <span style="color:red">RandomNumberInitializationInVector.cpp</span>
+      * <span style="color:red">RemoveAllOccurrencesOfAnElementFromVector.cpp</span>
+      * <span style="color:red">VectorOperations1.cpp</span>
+      * <span style="color:red">slice.cpp</span>
+      * <span style="color:red">VectorInitialization.cpp</span>
+      * <span style="color:red">VectorOperations3.cpp</span>
+      * <span style="color:red">SimpleOperationsOnVector.cpp</span>
+      * <span style="color:red">VectorEraseRemove.cpp</span>
+      * <span style="color:red">VectorListDequePushBack.cpp</span>
+      * <span style="color:red">VectorOperations2.cpp</span>
+      * <span style="color:red">RemoveAllOccurrencesOfAnElementFromVector2.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>String/</b> (<b>0%</b> of 11)</summary>
 
-    * ![#f03c15](StringView.cpp)
-    * ![#f03c15](OtherUsefulFunction.cpp)
-    * ![#f03c15](CapacityFunction.cpp)
-    * ![#f03c15](InitializationWays.cpp)
-    * ![#f03c15](InputFunction.cpp)
-    * ![#f03c15](IteratorFunction.cpp)
-    * ![#f03c15](Reverse.cpp)
-    * ![#f03c15](ManipulatingFunction.cpp)
+    * <span style="color:red">StringView.cpp</span>
+    * <span style="color:red">OtherUsefulFunction.cpp</span>
+    * <span style="color:red">CapacityFunction.cpp</span>
+    * <span style="color:red">InitializationWays.cpp</span>
+    * <span style="color:red">InputFunction.cpp</span>
+    * <span style="color:red">IteratorFunction.cpp</span>
+    * <span style="color:red">Reverse.cpp</span>
+    * <span style="color:red">ManipulatingFunction.cpp</span>
 
   </details>
 
   * <details open>
     <summary>CString/ (<b>0%</b> of 3)</summary>
 
-      * ![#f03c15](main_CString.cpp)
-      * ![#f03c15](CString.inl)
-      * ![#f03c15](CString.h)
+      * <span style="color:red">main_CString.cpp</span>
+      * <span style="color:red">CString.inl</span>
+      * <span style="color:red">CString.h</span>
 
     </details>
 
 * <details open>
   <summary><b>Templates/</b> (<b>8%</b> of 13)</summary>
 
-    * ![#f03c15](MaximumOfTwoValues.cpp)
-    * ![#f03c15](VariadicFunc.cpp)
-    * ![#f03c15](AverageOfValuesInObjects.cpp)
-    * ![#f03c15](MaximumOfTwoObjects.cpp)
-    * ![#f03c15](Templates_and_Classes.txt)
-    * ![#f03c15](VariadicTemplates3.cpp)
-    * ![#f03c15](AverageOfAnArray.cpp)
-    * ![#f03c15](Export.cpp)
-    * ![#f03c15](VariadicTemplates2.cpp)
-    * ![#f03c15](ClassTemplate.cpp)
-    * ![#f03c15](VariadicTemplates.cpp)
+    * <span style="color:red">MaximumOfTwoValues.cpp</span>
+    * <span style="color:red">VariadicFunc.cpp</span>
+    * <span style="color:red">AverageOfValuesInObjects.cpp</span>
+    * <span style="color:red">MaximumOfTwoObjects.cpp</span>
+    * <span style="color:red">Templates_and_Classes.txt</span>
+    * <span style="color:red">VariadicTemplates3.cpp</span>
+    * <span style="color:red">AverageOfAnArray.cpp</span>
+    * <span style="color:red">Export.cpp</span>
+    * <span style="color:red">VariadicTemplates2.cpp</span>
+    * <span style="color:red">ClassTemplate.cpp</span>
+    * <span style="color:red">VariadicTemplates.cpp</span>
     * `Export.h`
-    * ![#f03c15](Params.cpp)
+    * <span style="color:red">Params.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Unix/</b> (<b>0%</b> of 3)</summary>
 
-    * ![#f03c15](umask.cpp)
-    * ![#f03c15](Fork.cpp)
+    * <span style="color:red">umask.cpp</span>
+    * <span style="color:red">Fork.cpp</span>
 
   </details>
 
   * <details open>
     <summary>Linux/ (<b>0%</b> of 1)</summary>
 
-      * ![#f03c15](inotify.cpp)
+      * <span style="color:red">inotify.cpp</span>
 
     </details>
 
 * <details open>
   <summary><b>Virtual/</b> (<b>0%</b> of 6)</summary>
 
-    * ![#f03c15](VirtualInheritance1.cpp)
-    * ![#f03c15](VirtualDestructor.txt)
-    * ![#f03c15](VirtualFunction1.cpp)
-    * ![#f03c15](VirtualInheritance2.cpp)
-    * ![#f03c15](VirtualFunction2.cpp)
-    * ![#f03c15](PureVirtual.cpp)
+    * <span style="color:red">VirtualInheritance1.cpp</span>
+    * <span style="color:red">VirtualDestructor.txt</span>
+    * <span style="color:red">VirtualFunction1.cpp</span>
+    * <span style="color:red">VirtualInheritance2.cpp</span>
+    * <span style="color:red">VirtualFunction2.cpp</span>
+    * <span style="color:red">PureVirtual.cpp</span>
 
   </details>
 
 * <details open>
   <summary><b>Windows/</b> (<b>13%</b> of 39)</summary>
 
-    * ![#f03c15](CxHandle.cpp)
-    * ![#f03c15](getuid.cpp)
-    * ![#f03c15](Batery.cpp)
-    * ![#f03c15](OsBit.txt)
-    * ![#f03c15](AnsiUtf8.cpp)
-    * ![#f03c15](Event.cpp)
-    * ![#f03c15](GetTokenInformation.cpp)
-    * ![#f03c15](CommandLine.cpp)
-    * ![#f03c15](MemoryUsage.cpp)
-    * ![#f03c15](OsBit.cpp)
-    * ![#f03c15](WaitForSingleObject.cpp)
+    * <span style="color:red">CxHandle.cpp</span>
+    * <span style="color:red">getuid.cpp</span>
+    * <span style="color:red">Batery.cpp</span>
+    * <span style="color:red">OsBit.txt</span>
+    * <span style="color:red">AnsiUtf8.cpp</span>
+    * <span style="color:red">Event.cpp</span>
+    * <span style="color:red">GetTokenInformation.cpp</span>
+    * <span style="color:red">CommandLine.cpp</span>
+    * <span style="color:red">MemoryUsage.cpp</span>
+    * <span style="color:red">OsBit.cpp</span>
+    * <span style="color:red">WaitForSingleObject.cpp</span>
 
   </details>
 
@@ -932,16 +932,16 @@
     * <details open>
       <summary>DLLClient1/ (<b>0%</b> of 2)</summary>
 
-        * ![#f03c15](DLLCode.h)
-        * ![#f03c15](DLLCode.cpp)
+        * <span style="color:red">DLLCode.h</span>
+        * <span style="color:red">DLLCode.cpp</span>
 
       </details>
 
     * <details open>
       <summary>DLLClient2/ (<b>0%</b> of 2)</summary>
 
-        * ![#f03c15](DLLCode.h)
-        * ![#f03c15](DLLClient2.cpp)
+        * <span style="color:red">DLLCode.h</span>
+        * <span style="color:red">DLLClient2.cpp</span>
 
       </details>
 
@@ -949,16 +949,16 @@
       <summary>MFCAp/ (<b>17%</b> of 12)</summary>
 
         * `StdAfx.cpp`
-        * ![#f03c15](MainFrm.cpp)
-        * ![#f03c15](Resource.h)
-        * ![#f03c15](MFCApView.h)
-        * ![#f03c15](MFCApDoc.h)
-        * ![#f03c15](DLLCode.h)
-        * ![#f03c15](MFCApView.cpp)
-        * ![#f03c15](MFCAp.h)
-        * ![#f03c15](MFCAp.cpp)
-        * ![#f03c15](MFCApDoc.cpp)
-        * ![#f03c15](MainFrm.h)
+        * <span style="color:red">MainFrm.cpp</span>
+        * <span style="color:red">Resource.h</span>
+        * <span style="color:red">MFCApView.h</span>
+        * <span style="color:red">MFCApDoc.h</span>
+        * <span style="color:red">DLLCode.h</span>
+        * <span style="color:red">MFCApView.cpp</span>
+        * <span style="color:red">MFCAp.h</span>
+        * <span style="color:red">MFCAp.cpp</span>
+        * <span style="color:red">MFCApDoc.cpp</span>
+        * <span style="color:red">MainFrm.h</span>
         * `StdAfx.h`
 
       </details>
@@ -966,13 +966,13 @@
     * <details open>
       <summary>RDLLMFC/ (<b>15%</b> of 7)</summary>
 
-        * ![#f03c15](StdAfx.cpp)
-        * ![#f03c15](RDLLMFC.cpp)
-        * ![#f03c15](RDLLMFC.h)
+        * <span style="color:red">StdAfx.cpp</span>
+        * <span style="color:red">RDLLMFC.cpp</span>
+        * <span style="color:red">RDLLMFC.h</span>
         * `Resource.h`
-        * ![#f03c15](DLLCode.h)
-        * ![#f03c15](DLLCode.cpp)
-        * ![#f03c15](StdAfx.h)
+        * <span style="color:red">DLLCode.h</span>
+        * <span style="color:red">DLLCode.cpp</span>
+        * <span style="color:red">StdAfx.h</span>
 
       </details>
 
@@ -980,9 +980,9 @@
       <summary>W32DLL/ (<b>40%</b> of 5)</summary>
 
         * `StdAfx.cpp`
-        * ![#f03c15](DLLCode.h)
-        * ![#f03c15](DLLCode.cpp)
-        * ![#f03c15](W32DLL.cpp)
+        * <span style="color:red">DLLCode.h</span>
+        * <span style="color:red">DLLCode.cpp</span>
+        * <span style="color:red">W32DLL.cpp</span>
         * `StdAfx.h`
 
       </details>
