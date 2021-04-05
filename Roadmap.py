@@ -121,11 +121,11 @@ def dirProcess(level, dirPath, dirs, files):
 	doneFilesPct = info[3]
 
 	if (isRootSubDir):
-		# print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
-		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+		print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
+			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-		print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
-			.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
+		# print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
+		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 	else:
 		print('{}  <summary>{}/ (<b>{}%</b> of {})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
