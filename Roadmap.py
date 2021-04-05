@@ -46,7 +46,22 @@ dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 # glob patterns -> regular expressions
 filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
-todoLabel = 'note  [todo]'
+####################################################################################################
+def isFileTodo(a_filePath):
+	isTodo = True
+
+	todoLabel = 'note  [todo]'
+
+	try:
+		f = open(a_filePath, "r")
+		fileContent = f.read()
+
+		isTodo = (fileContent.find(todoLabel) != -1)
+	except:
+		print("Error: {}\n".format(a_filePath))
+
+	return isTodo
+
 ####################################################################################################
 def _dirInfo(a_currentDirPath):
 	allFiles  = 0
@@ -67,19 +82,10 @@ def _dirInfo(a_currentDirPath):
 		for file in files:
 			allFiles += 1
 
-			fileContent = ''
-
-			try:
-				f = open(file, "r")
-				fileContent = f.read()
-			except:
-				print("Error: {}\n".format(file))
-
-			isTodo = fileContent.find(todoLabel)
-			if (isTodo == -1) :
-				doneFiles += 1
-			else:
+			if ( isFileTodo(file) ) :
 				todoFiles += 1
+			else:
+				doneFiles += 1
 		# for
 	# for
 
