@@ -64,11 +64,11 @@
     </details>
 
 * <details close>
-  <summary><b>Cast/</b> [░░░░░░░░░░] 0% (3)</summary>
+  <summary><b>Cast/</b> [██████████] 100% (3)</summary>
 
-    * ❌ ReinterpretCast.cpp
-    * ❌ Casts.cpp
-    * ❌ BoolCast.cpp
+    * ✅ `ReinterpretCast.cpp`
+    * ✅ `Casts.cpp`
+    * ✅ `BoolCast.cpp`
 
   </details>
 
