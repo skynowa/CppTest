@@ -112,7 +112,7 @@ def dirProcess(level, dirPath, dirs, files):
 	# print('dirPath: {}'.format(dirPath))
 
 	# dir
-	print('{}* <details open>'.format(indent))
+	print('{}* <details close>'.format(indent))
 
 	info = tree[dirPath]
 	# print('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))

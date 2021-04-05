@@ -2,7 +2,7 @@
 
 <div style="background-color:black">
 
-* <details open>
+* <details close>
   <summary><b>!Todo/</b> (<b>0%</b> of 2)</summary>
 
     * <span style="color:red">RSDN.txt</span>
@@ -10,21 +10,21 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Algos/</b> (<b>0%</b> of 12)</summary>
 
     * <span style="color:red">Algoritms.txt</span>
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>CircularLinkedList/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">CircularLinkedList.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>DoublyLinkedList/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">DoubleLinkedListDeletion.cpp</span>
@@ -33,7 +33,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>LinkedList/ (<b>0%</b> of 7)</summary>
 
       * <span style="color:red">LinkedListInsertion.cpp</span>
@@ -46,7 +46,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Bits/</b> (<b>0%</b> of 5)</summary>
 
     * <span style="color:red">BitMask2.cpp</span>
@@ -56,14 +56,14 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>IsBot/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">main_BlackList.cpp</span>
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Cast/</b> (<b>0%</b> of 3)</summary>
 
     * <span style="color:red">ReinterpretCast.cpp</span>
@@ -72,7 +72,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Char/</b> (<b>0%</b> of 2)</summary>
 
     * <span style="color:red">IntToChar.cpp</span>
@@ -80,7 +80,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Class/</b> (<b>0%</b> of 16)</summary>
 
     * <span style="color:red">MethodWithoutBody.cpp</span>
@@ -99,7 +99,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Hierarchy/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">Hierarchy.cpp</span>
@@ -107,14 +107,14 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Union/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">Union.cpp</span>
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Core/</b> (<b>0%</b> of 41)</summary>
 
     * <span style="color:red">LvalueRvalue.cpp</span>
@@ -139,14 +139,14 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Array/ (<b>0%</b> of 4)</summary>
 
       * <span style="color:red">ArraySize.cpp</span>
 
     </details>
 
-    * <details open>
+    * <details close>
       <summary>ArrayToFunction/ (<b>0%</b> of 3)</summary>
 
         * <span style="color:red">ArrayToFunction3.cpp</span>
@@ -155,19 +155,19 @@
 
       </details>
 
-  * <details open>
+  * <details close>
     <summary>C++11/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>C++14/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>C++17/ (<b>0%</b> of 18)</summary>
 
       * <span style="color:red">TemplateAutoParam.cpp</span>
@@ -187,7 +187,7 @@
 
     </details>
 
-    * <details open>
+    * <details close>
       <summary>Attributes/ (<b>0%</b> of 4)</summary>
 
         * <span style="color:red">maybe_unused.cpp</span>
@@ -197,13 +197,13 @@
 
       </details>
 
-* <details open>
+* <details close>
   <summary><b>Crossplatform/</b> (<b>0%</b> of 9)</summary>
 
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>File/ (<b>0%</b> of 4)</summary>
 
       * <span style="color:red">FileRouter.inl</span>
@@ -213,7 +213,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Thread/ (<b>0%</b> of 5)</summary>
 
       * <span style="color:red">IThreadImpl_win.h</span>
@@ -224,7 +224,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Double/</b> (<b>0%</b> of 4)</summary>
 
     * <span style="color:red">IntDoubleCompare.cpp</span>
@@ -234,7 +234,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Enum/</b> (<b>0%</b> of 6)</summary>
 
     * <span style="color:red">SafeEnum.cpp</span>
@@ -244,7 +244,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>EnumIO/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">EnumIO.h</span>
@@ -252,7 +252,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Etc/</b> (<b>0%</b> of 8)</summary>
 
     * <span style="color:red">VarVisibility.cpp</span>
@@ -266,7 +266,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Exceptions/</b> (<b>0%</b> of 10)</summary>
 
     * <span style="color:red">Try.cpp</span>
@@ -275,14 +275,14 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>SignalsToException/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">SignalsToException.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>SignalsToException_2/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">SignalHandler.h</span>
@@ -291,7 +291,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>WinException/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">CxWinException.cpp</span>
@@ -300,14 +300,14 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>FAQ/</b> (<b>0%</b> of 1)</summary>
 
     * <span style="color:red">FAQ.txt</span>
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Functor/</b> (<b>0%</b> of 17)</summary>
 
     * <span style="color:red">FunctorExample4.cpp</span>
@@ -321,7 +321,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Lambda/ (<b>0%</b> of 9)</summary>
 
       * <span style="color:red">LambdaMemberVariableCapture.cpp</span>
@@ -336,7 +336,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>IpcMt/</b> (<b>0%</b> of 27)</summary>
 
     * <span style="color:red">signal_stacktrace.cpp</span>
@@ -349,14 +349,14 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>C++11/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">atomic_flag.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>EventHandling/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">ConditionalVariableBasics.cpp</span>
@@ -365,14 +365,14 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>JoinDetach/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">JoiningThreads.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Mutex/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">MutexLockUnlock.cpp</span>
@@ -381,7 +381,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>PassingArgumentsToThreads/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">PassingPointersTThread.cpp</span>
@@ -390,7 +390,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Proccess/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">Wait.cpp</span>
@@ -399,7 +399,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>RaceCondition/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">RaceConditionExample.cpp</span>
@@ -407,7 +407,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Thread/ (<b>0%</b> of 4)</summary>
 
       * <span style="color:red">ThreadCreationUsingLambdaFunction.cpp</span>
@@ -417,13 +417,13 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Libs/</b> (<b>0%</b> of 10)</summary>
 
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Boost/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">ScopeArray.cpp</span>
@@ -432,7 +432,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>LibEvent/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">all_test.cpp</span>
@@ -440,26 +440,26 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>LibUv/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Pcre/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Qt/ (<b>0%</b> of 4)</summary>
 
       * <span style="color:red">HttpUpload.cpp</span>
 
     </details>
 
-    * <details open>
+    * <details close>
       <summary>QSharedMemory/ (<b>0%</b> of 3)</summary>
 
         * <span style="color:red">main_MainDialog.cpp</span>
@@ -468,26 +468,26 @@
 
       </details>
 
-  * <details open>
+  * <details close>
     <summary>Ssh2/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">SSH2.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>XLib/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-    * <details open>
+    * <details close>
       <summary>GlobalHotKey/ (<b>0.0%</b> of 0)</summary>
 
 
       </details>
 
-* <details open>
+* <details close>
   <summary><b>Loops/</b> (<b>0%</b> of 5)</summary>
 
     * <span style="color:red">ForBreak.cpp</span>
@@ -498,7 +498,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Network/</b> (<b>0%</b> of 3)</summary>
 
     * <span style="color:red">IpString.cpp</span>
@@ -507,7 +507,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Operators/</b> (<b>0%</b> of 9)</summary>
 
     * <span style="color:red">OverloadingPrefixIncermentDecrementOperator.cpp</span>
@@ -522,13 +522,13 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Patterns/</b> (<b>0%</b> of 29)</summary>
 
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Behavioral/ (<b>0%</b> of 15)</summary>
 
       * <span style="color:red">memento.cpp</span>
@@ -549,7 +549,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Creational/ (<b>0%</b> of 6)</summary>
 
       * <span style="color:red">ClassFactory.cpp</span>
@@ -561,7 +561,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Structural/ (<b>0%</b> of 8)</summary>
 
       * <span style="color:red">adapter.cpp</span>
@@ -575,7 +575,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Pointers/</b> (<b>0%</b> of 4)</summary>
 
     * <span style="color:red">xPTR_DELETE.cpp</span>
@@ -585,14 +585,14 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>SQL/</b> (<b>0%</b> of 1)</summary>
 
     * <span style="color:red">test.sql</span>
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Static/</b> (<b>0%</b> of 12)</summary>
 
     * <span style="color:red">StaticHolder.cpp</span>
@@ -600,7 +600,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Vars1/ (<b>0%</b> of 4)</summary>
 
       * <span style="color:red">module.h</span>
@@ -610,7 +610,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Vars2/ (<b>0%</b> of 6)</summary>
 
       * <span style="color:red">CxVars.inl</span>
@@ -622,7 +622,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>StdLibC/</b> (<b>0%</b> of 8)</summary>
 
     * <span style="color:red">Time.cpp</span>
@@ -634,7 +634,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Process/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">ExitFunctions.cpp</span>
@@ -642,14 +642,14 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Stl/</b> (<b>0%</b> of 81)</summary>
 
     * <span style="color:red">StlFeatures.txt</span>
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Algos/ (<b>0%</b> of 6)</summary>
 
       * <span style="color:red">difference.cpp</span>
@@ -661,19 +661,19 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>C++11/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>C++14/ (<b>0.0%</b> of 0)</summary>
 
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>C++17/ (<b>0%</b> of 10)</summary>
 
       * <span style="color:red">Any.cpp</span>
@@ -689,7 +689,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Deque/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">DequeImplementation.cpp</span>
@@ -697,7 +697,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>ForwardList/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">ForwardListOperation2.cpp</span>
@@ -706,21 +706,21 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Functional/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">ref.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>IOStream/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">OperatorOutput.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Limits/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">NumericLimits.cpp</span>
@@ -728,7 +728,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>List/ (<b>0%</b> of 12)</summary>
 
       * <span style="color:red">splice.cpp</span>
@@ -746,7 +746,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Map/ (<b>0%</b> of 12)</summary>
 
       * <span style="color:red">Maps.cpp</span>
@@ -764,7 +764,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>MultiMap/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">MultimapOperations.cpp</span>
@@ -773,7 +773,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Set/ (<b>0%</b> of 8)</summary>
 
       * <span style="color:red">SetInsertionUsingIteratorRange.cpp</span>
@@ -787,7 +787,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>SmartPtrs/ (<b>0%</b> of 2)</summary>
 
       * <span style="color:red">AutoPtrVSUniquePtr.cpp</span>
@@ -795,7 +795,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>String/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">reverse.cpp</span>
@@ -804,7 +804,7 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>UnorderedMap/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">UnorderedMapInitialization.cpp</span>
@@ -813,14 +813,14 @@
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Utility/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">forward.cpp</span>
 
     </details>
 
-  * <details open>
+  * <details close>
     <summary>Vector/ (<b>0%</b> of 11)</summary>
 
       * <span style="color:red">RandomNumberInitializationInVector.cpp</span>
@@ -837,7 +837,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>String/</b> (<b>0%</b> of 11)</summary>
 
     * <span style="color:red">StringView.cpp</span>
@@ -851,7 +851,7 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>CString/ (<b>0%</b> of 3)</summary>
 
       * <span style="color:red">main_CString.cpp</span>
@@ -860,7 +860,7 @@
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Templates/</b> (<b>8%</b> of 13)</summary>
 
     * <span style="color:red">MaximumOfTwoValues.cpp</span>
@@ -879,7 +879,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Unix/</b> (<b>0%</b> of 3)</summary>
 
     * <span style="color:red">umask.cpp</span>
@@ -887,14 +887,14 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>Linux/ (<b>0%</b> of 1)</summary>
 
       * <span style="color:red">inotify.cpp</span>
 
     </details>
 
-* <details open>
+* <details close>
   <summary><b>Virtual/</b> (<b>0%</b> of 6)</summary>
 
     * <span style="color:red">VirtualInheritance1.cpp</span>
@@ -906,7 +906,7 @@
 
   </details>
 
-* <details open>
+* <details close>
   <summary><b>Windows/</b> (<b>13%</b> of 39)</summary>
 
     * <span style="color:red">CxHandle.cpp</span>
@@ -923,13 +923,13 @@
 
   </details>
 
-  * <details open>
+  * <details close>
     <summary>RegDLL/ (<b>18%</b> of 28)</summary>
 
 
     </details>
 
-    * <details open>
+    * <details close>
       <summary>DLLClient1/ (<b>0%</b> of 2)</summary>
 
         * <span style="color:red">DLLCode.h</span>
@@ -937,7 +937,7 @@
 
       </details>
 
-    * <details open>
+    * <details close>
       <summary>DLLClient2/ (<b>0%</b> of 2)</summary>
 
         * <span style="color:red">DLLCode.h</span>
@@ -945,7 +945,7 @@
 
       </details>
 
-    * <details open>
+    * <details close>
       <summary>MFCAp/ (<b>17%</b> of 12)</summary>
 
         * `StdAfx.cpp`
@@ -963,7 +963,7 @@
 
       </details>
 
-    * <details open>
+    * <details close>
       <summary>RDLLMFC/ (<b>15%</b> of 7)</summary>
 
         * <span style="color:red">StdAfx.cpp</span>
@@ -976,7 +976,7 @@
 
       </details>
 
-    * <details open>
+    * <details close>
       <summary>W32DLL/ (<b>40%</b> of 5)</summary>
 
         * `StdAfx.cpp`
