@@ -111,8 +111,8 @@ def progressBar(a_doneFilesPct, a_allfilesNum):
 
 	doneFilesPct = round(a_doneFilesPct)
 
-	valueToDos = valueToDo * int((100 - doneFilesPct) / 10)
-	valueDones = valueDone * int(doneFilesPct / 10)
+	valueToDos = valueToDo * int((100 - doneFilesPct) / 10) * 2
+	valueDones = valueDone * int(doneFilesPct / 10) * 2
 
 	return '[{}{}] {}% ({})'.format(valueDones, valueToDos, doneFilesPct, a_allfilesNum)
 
