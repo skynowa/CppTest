@@ -113,7 +113,7 @@ def progressBar(a_doneFilesPct, a_allfilesNum):
 	valueToDos = valueToDo * int((100 - doneFilesPct) / 10)
 	valueDones = valueDone * int(doneFilesPct / 10)
 
-	return '[{}{}] {}% {}'.format(valueDones, valueToDos, doneFilesPct, a_allfilesNum)
+	return '[{}{}] <b>{}%</b> ({})'.format(valueDones, valueToDos, doneFilesPct, a_allfilesNum)
 
 
 def dirProcess(level, dirPath, dirs, files):
@@ -149,7 +149,7 @@ def dirProcess(level, dirPath, dirs, files):
 		# print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 	else:
-		print('{}  <summary>{}/ (<b>{}%</b> of {})</summary>'
+		print('{}  <summary>{}/ <b>{}%</b> ({})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 	# dirs - n/a
