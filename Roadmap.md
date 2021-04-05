@@ -3,15 +3,16 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>!Todo/</b> ![0%](https://progress-bar.dev/0)</summary>
+  <summary><b>!Todo/</b></summary>
 
     * ❌ RSDN.txt
     * ❌ C++ questions.txt
 
   </details>
 
+  ![10%](https://progress-bar.dev/10)
 * <details close>
-  <summary><b>Algos/</b> ![0%](https://progress-bar.dev/0)</summary>
+  <summary><b>Algos/</b></summary>
 
     * ❌ Algoritms.txt
 
