@@ -643,7 +643,7 @@
     </details>
 
 * <details close>
-  <summary><b>Stl/</b> [░░░░░░░░░░] 0% (81)</summary>
+  <summary><b>Stl/</b> [░░░░░░░░░] 1% (81)</summary>
 
     * ❌ StlFeatures.txt
 
@@ -821,12 +821,12 @@
     </details>
 
   * <details close>
-    <summary>Vector/ 0% (11)</summary>
+    <summary>Vector/ 9% (11)</summary>
 
       * ❌ RandomNumberInitializationInVector.cpp
       * ❌ RemoveAllOccurrencesOfAnElementFromVector.cpp
       * ❌ VectorOperations1.cpp
-      * ❌ slice.cpp
+      * ✅ `slice.cpp`
       * ❌ VectorInitialization.cpp
       * ❌ VectorOperations3.cpp
       * ❌ SimpleOperationsOnVector.cpp

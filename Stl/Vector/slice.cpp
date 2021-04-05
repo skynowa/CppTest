@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  slice.cpp
  * \brief
- *
- * \todo
  */
 
 
