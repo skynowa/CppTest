@@ -139,9 +139,10 @@ def dirProcess(level, dirPath, dirs, files):
 		fileName = Path(file).name
 
 		if ( isFileTodo(file) ):
-			fileName = '<span style="color:red">{}</span>'.format(fileName)
+			# fileName = '<span style="color:red">{}</span>'.format(fileName)
+			fileName = '❌ {}'.format(fileName)
 		else:
-			fileName = '`{}`'.format(fileName)
+			fileName = '✅ `{}`'.format(fileName)
 
 		print('{}* {}'.format(subindent, fileName))
 	print('')
