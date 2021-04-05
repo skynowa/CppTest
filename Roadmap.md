@@ -11,7 +11,7 @@
   </details>
 
 * <details close>
-  <summary><b>Algos/</b> [■■■■■■■■■■] 78% (12)</summary>
+  <summary><b>Algos/</b> [████████░░] 78% (12)</summary>
 
     * ❌ Algoritms.txt
 
