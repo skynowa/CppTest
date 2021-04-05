@@ -139,7 +139,7 @@ def dirProcess(level, dirPath, dirs, files):
 		fileName = Path(file).name
 
 		if ( isFileTodo(file) ):
-			fileName = '<span style="color:red">{}</span>'.format(fileName)
+			fileName = '![#f03c15]({})'.format(fileName)
 		else:
 			fileName = '`{}`'.format(fileName)
 
