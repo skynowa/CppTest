@@ -135,8 +135,13 @@ def dirProcess(level, dirPath, dirs, files):
 
 	# files
 	print('')
-	for f in files:
-		print('{}* `{}`'.format(subindent, Path(f).name))
+	for file in files:
+		fileName = Path(file).name
+
+		if ( isFileTodo(file) ):
+			fileName = '<span style="color:red">{}</span>'.format(fileName)
+
+		print('{}* {}'.format(subindent, fileName))
 	print('')
 
 	print('{}  </details>'.format(indent))
