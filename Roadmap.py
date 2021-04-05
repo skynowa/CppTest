@@ -96,12 +96,26 @@ def _dirInfo(a_currentDirPath):
 
 	filesPct = 0.0
 	if (allFiles != 0.0) :
-		filesPct = math.ceil(doneFiles * 100.0 / allFiles)
+		filesPct = round(doneFiles * 100.0 / allFiles)
 
 	# [out]
 	tree[a_currentDirPath] = (allFiles, doneFiles, todoFiles, filesPct)
 
 ####################################################################################################
+def progressBar(a_doneFilesPct, a_allfilesNum):
+	# [████████░░] 78% (12)
+
+	valueDone = '█'
+	valueToDo = '░'
+
+	doneFilesPct = round(a_doneFilesPct)
+
+	valueToDos = valueToDo * int((100 - doneFilesPct) / 10)
+	valueDones = valueDone * int(doneFilesPct / 10)
+
+	return '[{}{}] {}% {}'.format(valueDones, valueToDos, doneFilesPct, a_allfilesNum)
+
+
 def dirProcess(level, dirPath, dirs, files):
 	if (level == 0):
 		return
@@ -126,8 +140,11 @@ def dirProcess(level, dirPath, dirs, files):
 	doneFilesPct = info[3]
 
 	if (isRootSubDir):
-		print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
-			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+		# print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
+		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+
+		print('{}  <summary><b>{}/</b> {}</summary>'
+			.format(indent, os.path.basename(dirPath), progressBar(doneFilesPct, allfilesNum)))
 
 		# print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))

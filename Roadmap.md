@@ -3,7 +3,7 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>!Todo/</b> (<b>0%</b> of 2)</summary>
+  <summary><b>!Todo/</b> [░░░░░░░░░░] 0% 2</summary>
 
     * ❌ RSDN.txt
     * ❌ C++ questions.txt
@@ -11,7 +11,7 @@
   </details>
 
 * <details close>
-  <summary><b>Algos/</b> [████████░░] 78% (12)</summary>
+  <summary><b>Algos/</b> [░░░░░░░░░░] 0% 12</summary>
 
     * ❌ Algoritms.txt
 
@@ -47,7 +47,7 @@
     </details>
 
 * <details close>
-  <summary><b>Bits/</b> (<b>20%</b> of 5)</summary>
+  <summary><b>Bits/</b> [██░░░░░░░░] 20% 5</summary>
 
     * ❌ BitMask2.cpp
     * ❌ BitMask.cpp
@@ -64,7 +64,7 @@
     </details>
 
 * <details close>
-  <summary><b>Cast/</b> (<b>0%</b> of 3)</summary>
+  <summary><b>Cast/</b> [░░░░░░░░░░] 0% 3</summary>
 
     * ❌ ReinterpretCast.cpp
     * ❌ Casts.cpp
@@ -73,7 +73,7 @@
   </details>
 
 * <details close>
-  <summary><b>Char/</b> (<b>0%</b> of 2)</summary>
+  <summary><b>Char/</b> [░░░░░░░░░░] 0% 2</summary>
 
     * ❌ IntToChar.cpp
     * ❌ Escape.cpp
@@ -81,7 +81,7 @@
   </details>
 
 * <details close>
-  <summary><b>Class/</b> (<b>0%</b> of 16)</summary>
+  <summary><b>Class/</b> [░░░░░░░░░░] 0% 16</summary>
 
     * ❌ MethodWithoutBody.cpp
     * ❌ InitConstructor.cpp
@@ -115,7 +115,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core/</b> (<b>0%</b> of 41)</summary>
+  <summary><b>Core/</b> [░░░░░░░░░░] 0% 41</summary>
 
     * ❌ LvalueRvalue.cpp
     * ❌ Explicit.cpp
@@ -198,7 +198,7 @@
       </details>
 
 * <details close>
-  <summary><b>Crossplatform/</b> (<b>0%</b> of 9)</summary>
+  <summary><b>Crossplatform/</b> [░░░░░░░░░░] 0% 9</summary>
 
 
   </details>
@@ -225,7 +225,7 @@
     </details>
 
 * <details close>
-  <summary><b>Double/</b> (<b>0%</b> of 4)</summary>
+  <summary><b>Double/</b> [░░░░░░░░░░] 0% 4</summary>
 
     * ❌ IntDoubleCompare.cpp
     * ❌ DoubleCast.cpp
@@ -235,7 +235,7 @@
   </details>
 
 * <details close>
-  <summary><b>Enum/</b> (<b>0%</b> of 6)</summary>
+  <summary><b>Enum/</b> [░░░░░░░░░░] 0% 6</summary>
 
     * ❌ SafeEnum.cpp
     * ❌ SizeOf.cpp
@@ -253,7 +253,7 @@
     </details>
 
 * <details close>
-  <summary><b>Etc/</b> (<b>0%</b> of 8)</summary>
+  <summary><b>Etc/</b> [░░░░░░░░░░] 0% 8</summary>
 
     * ❌ VarVisibility.cpp
     * ❌ Random.cpp
@@ -267,7 +267,7 @@
   </details>
 
 * <details close>
-  <summary><b>Exceptions/</b> (<b>0%</b> of 10)</summary>
+  <summary><b>Exceptions/</b> [░░░░░░░░░░] 0% 10</summary>
 
     * ❌ Try.cpp
     * ❌ Exception2.cpp
@@ -301,14 +301,14 @@
     </details>
 
 * <details close>
-  <summary><b>FAQ/</b> (<b>0%</b> of 1)</summary>
+  <summary><b>FAQ/</b> [░░░░░░░░░░] 0% 1</summary>
 
     * ❌ FAQ.txt
 
   </details>
 
 * <details close>
-  <summary><b>Functor/</b> (<b>0%</b> of 17)</summary>
+  <summary><b>Functor/</b> [░░░░░░░░░░] 0% 17</summary>
 
     * ❌ FunctorExample4.cpp
     * ❌ FunctorExample1.cpp
@@ -337,7 +337,7 @@
     </details>
 
 * <details close>
-  <summary><b>IpcMt/</b> (<b>0%</b> of 27)</summary>
+  <summary><b>IpcMt/</b> [░░░░░░░░░░] 0% 27</summary>
 
     * ❌ signal_stacktrace.cpp
     * ❌ psiginfo.cpp
@@ -418,7 +418,7 @@
     </details>
 
 * <details close>
-  <summary><b>Libs/</b> (<b>0%</b> of 10)</summary>
+  <summary><b>Libs/</b> [░░░░░░░░░░] 0% 10</summary>
 
 
   </details>
@@ -488,7 +488,7 @@
       </details>
 
 * <details close>
-  <summary><b>Loops/</b> (<b>0%</b> of 5)</summary>
+  <summary><b>Loops/</b> [░░░░░░░░░░] 0% 5</summary>
 
     * ❌ ForBreak.cpp
     * ❌ SwitchCase.cpp
@@ -499,7 +499,7 @@
   </details>
 
 * <details close>
-  <summary><b>Network/</b> (<b>0%</b> of 3)</summary>
+  <summary><b>Network/</b> [░░░░░░░░░░] 0% 3</summary>
 
     * ❌ IpString.cpp
     * ❌ TcpUdpDiffs.txt
@@ -508,7 +508,7 @@
   </details>
 
 * <details close>
-  <summary><b>Operators/</b> (<b>0%</b> of 9)</summary>
+  <summary><b>Operators/</b> [░░░░░░░░░░] 0% 9</summary>
 
     * ❌ OverloadingPrefixIncermentDecrementOperator.cpp
     * ❌ Exclamanation.cpp
@@ -523,7 +523,7 @@
   </details>
 
 * <details close>
-  <summary><b>Patterns/</b> (<b>0%</b> of 29)</summary>
+  <summary><b>Patterns/</b> [░░░░░░░░░░] 0% 29</summary>
 
 
   </details>
@@ -576,7 +576,7 @@
     </details>
 
 * <details close>
-  <summary><b>Pointers/</b> (<b>0%</b> of 4)</summary>
+  <summary><b>Pointers/</b> [░░░░░░░░░░] 0% 4</summary>
 
     * ❌ xPTR_DELETE.cpp
     * ❌ CatchPtr.hpp
@@ -586,14 +586,14 @@
   </details>
 
 * <details close>
-  <summary><b>SQL/</b> (<b>0%</b> of 1)</summary>
+  <summary><b>SQL/</b> [░░░░░░░░░░] 0% 1</summary>
 
     * ❌ test.sql
 
   </details>
 
 * <details close>
-  <summary><b>Static/</b> (<b>0%</b> of 12)</summary>
+  <summary><b>Static/</b> [░░░░░░░░░░] 0% 12</summary>
 
     * ❌ StaticHolder.cpp
     * ❌ Data.cpp
@@ -623,7 +623,7 @@
     </details>
 
 * <details close>
-  <summary><b>StdLibC/</b> (<b>0%</b> of 8)</summary>
+  <summary><b>StdLibC/</b> [░░░░░░░░░░] 0% 8</summary>
 
     * ❌ Time.cpp
     * ❌ Atoi.cpp
@@ -643,7 +643,7 @@
     </details>
 
 * <details close>
-  <summary><b>Stl/</b> (<b>0%</b> of 81)</summary>
+  <summary><b>Stl/</b> [░░░░░░░░░░] 0% 81</summary>
 
     * ❌ StlFeatures.txt
 
@@ -838,7 +838,7 @@
     </details>
 
 * <details close>
-  <summary><b>String/</b> (<b>0%</b> of 11)</summary>
+  <summary><b>String/</b> [░░░░░░░░░░] 0% 11</summary>
 
     * ❌ StringView.cpp
     * ❌ OtherUsefulFunction.cpp
@@ -861,7 +861,7 @@
     </details>
 
 * <details close>
-  <summary><b>Templates/</b> (<b>8%</b> of 13)</summary>
+  <summary><b>Templates/</b> [░░░░░░░░░] 8% 13</summary>
 
     * ❌ MaximumOfTwoValues.cpp
     * ❌ VariadicFunc.cpp
@@ -880,7 +880,7 @@
   </details>
 
 * <details close>
-  <summary><b>Unix/</b> (<b>0%</b> of 3)</summary>
+  <summary><b>Unix/</b> [░░░░░░░░░░] 0% 3</summary>
 
     * ❌ umask.cpp
     * ❌ Fork.cpp
@@ -895,7 +895,7 @@
     </details>
 
 * <details close>
-  <summary><b>Virtual/</b> (<b>0%</b> of 6)</summary>
+  <summary><b>Virtual/</b> [░░░░░░░░░░] 0% 6</summary>
 
     * ❌ VirtualInheritance1.cpp
     * ❌ VirtualDestructor.txt
@@ -907,7 +907,7 @@
   </details>
 
 * <details close>
-  <summary><b>Windows/</b> (<b>13%</b> of 39)</summary>
+  <summary><b>Windows/</b> [█░░░░░░░░] 18% 39</summary>
 
     * ❌ CxHandle.cpp
     * ❌ getuid.cpp
@@ -924,7 +924,7 @@
   </details>
 
   * <details close>
-    <summary>RegDLL/ (<b>18%</b> of 28)</summary>
+    <summary>RegDLL/ (<b>25%</b> of 28)</summary>
 
 
     </details>
@@ -964,7 +964,7 @@
       </details>
 
     * <details close>
-      <summary>RDLLMFC/ (<b>15%</b> of 7)</summary>
+      <summary>RDLLMFC/ (<b>14%</b> of 7)</summary>
 
         * ❌ StdAfx.cpp
         * ❌ RDLLMFC.cpp
@@ -977,11 +977,11 @@
       </details>
 
     * <details close>
-      <summary>W32DLL/ (<b>40%</b> of 5)</summary>
+      <summary>W32DLL/ (<b>80%</b> of 5)</summary>
 
         * ✅ `StdAfx.cpp`
-        * ❌ DLLCode.h
-        * ❌ DLLCode.cpp
+        * ✅ `DLLCode.h`
+        * ✅ `DLLCode.cpp`
         * ❌ W32DLL.cpp
         * ✅ `StdAfx.h`
 

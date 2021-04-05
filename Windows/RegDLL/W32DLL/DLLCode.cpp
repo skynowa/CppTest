@@ -1,16 +1,9 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  DLLCode.cpp
+ * \brief prototypes all of the DLL interface objects
  */
 
 
-/*********************************************************************************
-   File name: DLLCode.cpp
-
-   The header file, DLLCode.h, prototypes all of the DLL interface objects
-**********************************************************************************/
 #include "Stdafx.h"
 #include "DLLCode.h"
 #include <iostream>
