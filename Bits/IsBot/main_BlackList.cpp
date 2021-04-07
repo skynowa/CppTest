@@ -1,6 +1,8 @@
 /**
  * \file  main_BlackList.cpp
  * \brief
+ *
+ * \todo
  */
 
 
@@ -14,8 +16,8 @@ template<class T, size_t N>
 constexpr size_t arraySize(T (&)[N]) { return N; }
 
 //uiBlackList - list of black IPs
-const size_t cuiBlackList[][2] = {
-    //#include "__Black_list.lst"
+const size_t cuiBlackList[][2] =
+{
     #include "Black_list.lst"
 };
 const size_t cuiBlackListSize = arraySize(cuiBlackList);
@@ -33,11 +35,9 @@ bIsBot(const char *pcszRemoteIp)
     printf("cuiBlackListSize: %ld", cuiBlackListSize);
 
     const size_t cuiRemoteIp = ntohl(inet_addr(pcszRemoteIp));
-
     STD_TEST(- 1 != cuiRemoteIp);
 
-    size_t i;
-    for (i = 0 ; i < cuiBlackListSize; ++ i) {
+    for (size_t i = 0 ; i < cuiBlackListSize; ++ i) {
         int bRes = ( cuiBlackList[i][0] == (cuiRemoteIp & cuiBlackList[i][1]) );
         STD_TEST(0 == bRes);
 
@@ -91,10 +91,6 @@ int main(int, char **)
 //        }*/
 
         bRes = bIsBot(cszRemoteIp/*cgl_Env->remote_addr*/);
-
-
-    //--------------------------------------------------
-    //TODO: ????? ?? ??? (REMOTE_ADDR) ???????? in.cgi ??? ? ? ????? ????? ????????????    //      ?? ??? ? ????? ?????????? ?trader_id ???????? ?????????8
 
 	return 0;
 }
