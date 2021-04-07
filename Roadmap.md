@@ -3,9 +3,10 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>Algos/</b> [░░░░░░░░░░] 0% (12)</summary>
+  <summary><b>Algos/</b> [█░░░░░░░░░] 8% (13)</summary>
 
-    * ❌ Algoritms.txt
+    * ❌ BubbleSort.cpp
+    * ✅ `InvertString.cpp`
 
   </details>
 
@@ -988,7 +989,7 @@
   <summary><b>_Todo/</b> [░░░░░░░░░░] 0% (3)</summary>
 
     * ❌ CppQuestions.md
-    * ❌ CppInterview400.md
+    * ❌ CppInterview400_dou.ua.md
     * ❌ RSDN.md
 
   </details>
