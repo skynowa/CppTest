@@ -414,7 +414,7 @@
     </details>
 
 * <details close>
-  <summary><b>Libs/</b> [░░░░░░░░░░] 0% (11)</summary>
+  <summary><b>Libs/</b> [░░░░░░░░░░] 0% (15)</summary>
 
 
   </details>
@@ -429,10 +429,12 @@
     </details>
 
   * <details close>
-    <summary>LibEvent/ 0% (2)</summary>
+    <summary>LibEvent/ 0% (4)</summary>
 
       * ❌ all_test.cpp
       * ❌ FAQ.txt
+      * ❌ time-test.c
+      * ❌ signal-test.c
 
     </details>
 
@@ -473,14 +475,16 @@
     </details>
 
   * <details close>
-    <summary>XLib/ 0.0% (0)</summary>
+    <summary>XLib/ 0% (2)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>GlobalHotKey/ 0.0% (0)</summary>
+      <summary>GlobalHotKey/ 0% (2)</summary>
 
+        * ❌ xgrabkey.c
+        * ❌ xgrabkey_2.c
 
       </details>
 
