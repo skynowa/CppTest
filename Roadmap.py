@@ -46,7 +46,10 @@ def nested_defaultdict(default_factory, depth=1):
 
 tree = nested_defaultdict(list, 10)
 
-filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.md', '*.htm',
+filesIncludes = [
+	'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c',
+	'*.sql',
+	'*.txt', '*.md', '*.htm','*.html',
 	'*.js', '*.java']
 dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
