@@ -110,12 +110,12 @@ def progressBar(a_doneFilesPct, a_allfilesNum):
 	valueDone = '█'
 	valueToDo = '░'
 
-	valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0) * 2
-	valueDones = valueDone * round(a_doneFilesPct / 10.0) * 2
+	valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0)
+	valueDones = valueDone * round(a_doneFilesPct / 10.0)
 
 	return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
-
+####################################################################################################
 def dirProcess(level, dirPath, dirs, files):
 	if (level == 0):
 		return
