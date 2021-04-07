@@ -107,7 +107,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core/</b> [░░░░░░░░░░] 0% (41)</summary>
+  <summary><b>Core/</b> [░░░░░░░░░░] 0% (43)</summary>
 
     * ❌ LvalueRvalue.cpp
     * ❌ Explicit.cpp
@@ -160,7 +160,7 @@
     </details>
 
   * <details close>
-    <summary>C++17/ 0% (18)</summary>
+    <summary>C++17/ 0% (20)</summary>
 
       * ❌ TemplateAutoParam.cpp
       * ❌ StructuredBindings.cpp
@@ -169,6 +169,7 @@
       * ❌ EnumListInitialization.cpp
       * ❌ StructuredBindingsRef.cpp
       * ❌ ConstexprIf.cpp
+      * ❌ FAQ.md
       * ❌ BracedInitList.cpp
       * ❌ ConstexprLambda.cpp
       * ❌ FoldExpressions.cpp
@@ -180,9 +181,10 @@
     </details>
 
     * <details close>
-      <summary>Attributes/ 0% (4)</summary>
+      <summary>Attributes/ 0% (5)</summary>
 
         * ❌ maybe_unused.cpp
+        * ❌ FAQ.md
         * ❌ Sample1.cpp
         * ❌ fallthrough.cpp
         * ❌ nodiscard.cpp
@@ -329,11 +331,12 @@
     </details>
 
 * <details close>
-  <summary><b>IpcMt/</b> [░░░░░░░░░░] 0% (27)</summary>
+  <summary><b>IpcMt/</b> [░░░░░░░░░░] 0% (28)</summary>
 
     * ❌ signal_stacktrace.cpp
     * ❌ psiginfo.cpp
     * ❌ signal_ctrl_c.cpp
+    * ❌ FAQ.md
     * ❌ ThreadHarwareConcurrency.cpp
     * ❌ condition_variable.cpp
     * ❌ signal.cpp
@@ -410,7 +413,7 @@
     </details>
 
 * <details close>
-  <summary><b>Libs/</b> [░░░░░░░░░░] 0% (10)</summary>
+  <summary><b>Libs/</b> [░░░░░░░░░░] 0% (11)</summary>
 
 
   </details>
@@ -433,8 +436,9 @@
     </details>
 
   * <details close>
-    <summary>LibUv/ 0.0% (0)</summary>
+    <summary>LibUv/ 0% (1)</summary>
 
+      * ❌ FAQ.md
 
     </details>
 
@@ -853,12 +857,13 @@
     </details>
 
 * <details close>
-  <summary><b>Templates/</b> [█░░░░░░░░░] 8% (13)</summary>
+  <summary><b>Templates/</b> [█░░░░░░░░░] 14% (14)</summary>
 
     * ❌ MaximumOfTwoValues.cpp
     * ❌ VariadicFunc.cpp
     * ❌ AverageOfValuesInObjects.cpp
     * ❌ MaximumOfTwoObjects.cpp
+    * ✅ `FAQ.md`
     * ❌ Templates_and_Classes.txt
     * ❌ VariadicTemplates3.cpp
     * ❌ AverageOfAnArray.cpp
@@ -980,8 +985,12 @@
       </details>
 
 * <details close>
-  <summary><b>_Todo/</b> [░░░░░░░░░░] 0.0% (0)</summary>
+  <summary><b>_Todo/</b> [██░░░░░░░░] 25% (4)</summary>
 
+    * ❌ CppQuestions.md
+    * ✅ `Roadmap.md`
+    * ❌ CppInterview400.md
+    * ❌ RSDN.md
 
   </details>
 

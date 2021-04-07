@@ -46,7 +46,7 @@ def nested_defaultdict(default_factory, depth=1):
 
 tree = nested_defaultdict(list, 10)
 
-filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.htm', '*.js', '*.java']
+filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.md', '*.htm', '*.js', '*.java']
 dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 # glob patterns -> regular expressions
