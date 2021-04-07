@@ -47,7 +47,7 @@ def nested_defaultdict(default_factory, depth=1):
 tree = nested_defaultdict(list, 10)
 
 filesIncludes = [
-	'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c',
+	'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c', '*.cpp.off',
 	'*.sql',
 	'*.txt', '*.md', '*.htm','*.html',
 	'*.js', '*.java']
