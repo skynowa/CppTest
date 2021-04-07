@@ -985,10 +985,9 @@
       </details>
 
 * <details close>
-  <summary><b>_Todo/</b> [██░░░░░░░░] 25% (4)</summary>
+  <summary><b>_Todo/</b> [░░░░░░░░░░] 0% (3)</summary>
 
     * ❌ CppQuestions.md
-    * ✅ `Roadmap.md`
     * ❌ CppInterview400.md
     * ❌ RSDN.md
 
