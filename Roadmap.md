@@ -3,14 +3,6 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>!Todo/</b> [░░░░░░░░░░] 0% (2)</summary>
-
-    * ❌ RSDN.txt
-    * ❌ C++ questions.txt
-
-  </details>
-
-* <details close>
   <summary><b>Algos/</b> [░░░░░░░░░░] 0% (12)</summary>
 
     * ❌ Algoritms.txt
@@ -986,5 +978,11 @@
         * ✅ `StdAfx.h`
 
       </details>
+
+* <details close>
+  <summary><b>_Todo/</b> [░░░░░░░░░░] 0.0% (0)</summary>
+
+
+  </details>
 
 </div>
