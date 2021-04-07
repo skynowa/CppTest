@@ -2,7 +2,7 @@
  * \file  Main.cpp
  * \brief pointer to function
  *
- * \todo
+ * \todo "std::func_ptr"
  *
  * https://isocpp.org/wiki/faq/pointers-to-members
  */

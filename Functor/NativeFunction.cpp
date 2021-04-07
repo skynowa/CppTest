@@ -1,5 +1,5 @@
 /**
- * \file  main.cpp
+ * \file  NativeFunction.cpp
  * \brief
  *
  * \todo

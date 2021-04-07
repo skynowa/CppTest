@@ -40,7 +40,7 @@
     </details>
 
 * <details close>
-  <summary><b>Bits/</b> [██░░░░░░░░] 20% (5)</summary>
+  <summary><b>Bits/</b> [░░░░░░░░░░] 0% (5)</summary>
 
     * ❌ BitMask2.cpp
     * ❌ BitMask.cpp
@@ -50,9 +50,9 @@
   </details>
 
   * <details close>
-    <summary>IsBot/ 100% (1)</summary>
+    <summary>IsBot/ 0% (1)</summary>
 
-      * ✅ `main_BlackList.cpp`
+      * ❌ main_BlackList.cpp
 
     </details>
 
@@ -573,9 +573,9 @@
     </details>
 
 * <details close>
-  <summary><b>Pointers/</b> [░░░░░░░░░░] 0% (4)</summary>
+  <summary><b>Pointers/</b> [██░░░░░░░░] 25% (4)</summary>
 
-    * ❌ xPTR_DELETE.cpp
+    * ✅ `xPTR_DELETE.cpp`
     * ❌ CatchPtr.hpp
     * ❌ FunctionPtr.cpp
     * ❌ AutoPtr.h
