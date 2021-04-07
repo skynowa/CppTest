@@ -2,7 +2,7 @@
  * \file  InvertString.cpp
  * \brief
  *
- * COMMENTS
+ * \todo
  */
 
 
