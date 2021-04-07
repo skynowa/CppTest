@@ -4,11 +4,12 @@
  */
 
 
-#include <iostream>
-#include <vector>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
-
+//-------------------------------------------------------------------------------------------------
 template<typename T>
 vector<T>
 slice(
@@ -22,17 +23,18 @@ slice(
 
 	return {first, last};
 }
-
+//-------------------------------------------------------------------------------------------------
 int main()
 {
 	const vector<int> vec {7,6,2,4,1,9,10,15,17};
 
-	vector<int> subVec = slice(vec, 3, 6);
+	vector<int> subVec = ::slice(vec, 3, 6);
 
-	cout << xSTD_TRACE(subVec) <<endl;
+	cout << TRACE_VAR(subVec) <<endl;
 
 	return 0;
 }
+//-------------------------------------------------------------------------------------------------
 
 #if 0
 

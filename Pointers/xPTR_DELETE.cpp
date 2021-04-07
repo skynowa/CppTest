@@ -1,8 +1,6 @@
 /**
  * \file
  * \brief
- *
- * \todo
  */
 
 #include <StdTest.h>
