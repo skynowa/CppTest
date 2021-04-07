@@ -156,7 +156,7 @@ def dirProcess(level, dirPath, dirs, files):
 	# files
 	print('')
 	for file in files:
-		fileName = Path(file).name
+		fileName = '[{}]({})'.format(Path(file).name, dirPath + '/' + Path(file).name)
 
 		if ( isFileTodo(file) ):
 			fileName = '❌ {}'.format(fileName)
