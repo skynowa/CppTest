@@ -120,11 +120,6 @@ def dirProcess(level, dirPath, dirs, files):
 	if (level == 0):
 		return
 
-	if (level == 1):
-		isRootSubDir = True
-	else:
-		isRootSubDir = False
-
 	indent    = ' ' * 2 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
@@ -139,7 +134,8 @@ def dirProcess(level, dirPath, dirs, files):
 	allfilesNum  = info[0]
 	doneFilesPct = info[3]
 
-	if (isRootSubDir):
+	# root dir
+	if (level == 1):
 		# print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
