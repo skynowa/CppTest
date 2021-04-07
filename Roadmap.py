@@ -46,7 +46,8 @@ def nested_defaultdict(default_factory, depth=1):
 
 tree = nested_defaultdict(list, 10)
 
-filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.md', '*.htm', '*.js', '*.java']
+filesIncludes = ['*.h', '*.inl', '*.hpp', '*.cpp', '*.sql', '*.txt', '*.html', '*.md', '*.htm',
+	'*.js', '*.java']
 dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 # glob patterns -> regular expressions
@@ -109,8 +110,8 @@ def progressBar(a_doneFilesPct, a_allfilesNum):
 	valueDone = '█'
 	valueToDo = '░'
 
-	valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0)
-	valueDones = valueDone * round(a_doneFilesPct / 10.0)
+	valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0) * 2
+	valueDones = valueDone * round(a_doneFilesPct / 10.0) * 2
 
 	return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
