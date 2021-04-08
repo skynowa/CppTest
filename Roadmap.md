@@ -66,15 +66,17 @@
   </details>
 
 * <details close>
-  <summary><b>Char/</b> [░░░░░░░░░░] 0% (2)</summary>
+  <summary><b>Char/</b> [░░░░░░░░░░] 0% (4)</summary>
 
     * ❌ IntToChar.cpp
     * ❌ Escape.cpp
+    * ❌ UnicodeAnsi.cpp
+    * ❌ SizeofUnicodes.cpp
 
   </details>
 
 * <details close>
-  <summary><b>Class/</b> [░░░░░░░░░░] 0% (16)</summary>
+  <summary><b>Class/</b> [░░░░░░░░░░] 0% (17)</summary>
 
     * ❌ MethodWithoutBody.cpp
     * ❌ InitConstructor.cpp
@@ -85,6 +87,7 @@
     * ❌ SizeOfClass.cpp
     * ❌ CallMethod.cpp
     * ❌ InitOrder.cpp
+    * ❌ FunctionDefinition.cpp
     * ❌ CpoyConstructor2.cpp
     * ❌ QuotedString.java
     * ❌ FriendClass.cpp
@@ -246,20 +249,6 @@
       * ❌ EnumIO_test.cpp
 
     </details>
-
-* <details close>
-  <summary><b>Etc/</b> [░░░░░░░░░░] 0% (8)</summary>
-
-    * ❌ VarVisibility.cpp
-    * ❌ Random.cpp
-    * ❌ GlobalVar2.cpp
-    * ❌ DecIncInt.cpp
-    * ❌ GlobalVar1.cpp
-    * ❌ UnicodeAnsi.cpp
-    * ❌ SizeofUnicodes.cpp
-    * ❌ FunctionDefinition.cpp
-
-  </details>
 
 * <details close>
   <summary><b>Exceptions/</b> [░░░░░░░░░░] 0% (10)</summary>
@@ -510,9 +499,10 @@
   </details>
 
 * <details close>
-  <summary><b>Operators/</b> [░░░░░░░░░░] 0% (9)</summary>
+  <summary><b>Operators/</b> [░░░░░░░░░░] 0% (10)</summary>
 
     * ❌ OverloadingPrefixIncermentDecrementOperator.cpp
+    * ❌ DecIncInt.cpp
     * ❌ Exclamanation.cpp
     * ❌ OverloadingLogicalOperator.cpp
     * ❌ OperatorIn.cpp
@@ -584,6 +574,13 @@
     * ❌ CatchPtr.hpp
     * ❌ FunctionPtr.cpp
     * ❌ AutoPtr.h
+
+  </details>
+
+* <details close>
+  <summary><b>Random/</b> [░░░░░░░░░░] 0% (1)</summary>
+
+    * ❌ Random.cpp
 
   </details>
 
@@ -896,6 +893,15 @@
       * ❌ inotify.cpp
 
     </details>
+
+* <details close>
+  <summary><b>Vars/</b> [░░░░░░░░░░] 0% (3)</summary>
+
+    * ❌ VarVisibility.cpp
+    * ❌ GlobalVar2.cpp
+    * ❌ GlobalVar1.cpp
+
+  </details>
 
 * <details close>
   <summary><b>Virtual/</b> [░░░░░░░░░░] 0% (6)</summary>
