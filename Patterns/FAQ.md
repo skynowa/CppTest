@@ -1,0 +1,5 @@
+# FAQ
+
+\todo
+
+https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns#Factory
