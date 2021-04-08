@@ -8,10 +8,10 @@
 #
 # TODO
 #
-# - progress bar for each dir
-# - Ok icon
-# - ignores
-# - draw "brances"
+# + Progress bar for each dir
+# + Done/Todo icons
+# + Ignores dirs/files
+# - Draw "brances"
 #
 ################################################################################################
 
