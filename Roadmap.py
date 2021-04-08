@@ -139,6 +139,11 @@ class RoadmapGen:
 		if (level == 0):
 			return
 
+		iconCurrent    = ''
+		iconToDo       = '❌'
+		iconDone       = '✅'
+		iconInProgress = '⌛'
+
 		indent    = ' ' * 2 * (level - 1)
 		subindent = ' ' * 2 * (level + 1)
 
@@ -153,6 +158,13 @@ class RoadmapGen:
 		allfilesNum  = info[0]
 		doneFilesPct = info[3]
 
+		if   (doneFilesPct == 100):
+			iconCurrent = iconDone
+		elif (doneFilesPct == 0):
+			iconCurrent = iconToDo
+		else:
+			iconCurrent = iconInProgress
+
 		# root dir
 		if (level == 1):
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
@@ -164,8 +176,8 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
-			self._writeLine('{}  <summary>{} {}% ({})</summary>'
-				.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+			self._writeLine('{}  <summary>{}{} {}% ({})</summary>'
+				.format(indent, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		# dirs - n/a
 
@@ -175,10 +187,10 @@ class RoadmapGen:
 			fileName = Path(file).name
 
 			if ( self._isFileTodo(file) ):
-				fileName = '❌ {}'.format(fileName)
+				fileName = '{} {}'.format(iconToDo, fileName)
 				# fileName = '<span style="color:red">{}</span>'.format(fileName)
 			else:
-				fileName = '✅ `{}`'.format(fileName)
+				fileName = '{} `{}`'.format(iconDone, fileName)
 
 			self._writeLine('{}* {}'.format(subindent, fileName))
 		self._writeLine('')
