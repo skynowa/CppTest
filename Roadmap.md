@@ -285,9 +285,12 @@
     </details>
 
 * <details close>
-  <summary><b>FAQ/</b> [░░░░░░░░░░] 0% (1)</summary>
+  <summary><b>FAQ/</b> [░░░░░░░░░░] 0% (4)</summary>
 
+    * ❌ CppQuestions.md
     * ❌ FAQ.txt
+    * ❌ CppInterview400_dou.ua.md
+    * ❌ RSDN.md
 
   </details>
 
@@ -995,14 +998,5 @@
         * ✅ `StdAfx.h`
 
       </details>
-
-* <details close>
-  <summary><b>_Todo/</b> [░░░░░░░░░░] 0% (3)</summary>
-
-    * ❌ CppQuestions.md
-    * ❌ CppInterview400_dou.ua.md
-    * ❌ RSDN.md
-
-  </details>
 
 </div>
