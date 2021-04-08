@@ -1,19 +1,18 @@
 /**
- * \file
+ * \file  ReturnBool.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 bool
 isValid()
 {
 	// std::cout << "\nfunc: " << __FUNCTION__ << std::endl;
+
+    // return true;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -27,6 +26,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-145
+145 // random value
 
 #endif
