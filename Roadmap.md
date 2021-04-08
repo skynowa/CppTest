@@ -3,7 +3,7 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>Algorithms/</b> [░░░░░░░░░░] 0% (13)</summary>
+  <summary><b>Algos/</b> [░░░░░░░░░░] 0% (13)</summary>
 
     * ❌ BubbleSort.cpp
     * ❌ InvertString.cpp
