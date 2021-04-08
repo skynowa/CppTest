@@ -177,8 +177,8 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
-			self._writeLine('{}  <summary>{} {} {}% ({})</summary>'
-				.format(indent, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+			self._writeLine('{}  <summary>{}{} {} {}% ({})</summary>'
+				.format(indent, iconDir, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		# dirs - n/a
 
