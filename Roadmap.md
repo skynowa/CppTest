@@ -656,11 +656,11 @@
       </details>
 
 * <details close>
-  <summary><b>Network</b> [███░░░░░░░] 33% (3)</summary>
+  <summary><b>Network</b> [██████████] 100% (3)</summary>
 
     * ✅ `IpString.cpp`
-    * ❌ TcpUdpDiffs.txt
-    * ❌ Mount.cpp
+    * ✅ `TcpUdpDiffs.md`
+    * ✅ `Mount.cpp`
 
   </details>
 
