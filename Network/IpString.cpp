@@ -1,8 +1,6 @@
 /**
  * \file
  * \brief
- *
- * \todo
  */
 
 
@@ -14,19 +12,27 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	// to int
-	const std::string ip     = "92.60.182.205";
-	const uint32_t    ip_int = ::inet_network(ip.c_str());
+	const std::string ip = "92.60.182.205";
 
-	std::cout << TRACE_VAR(ip_int) << std::endl;
+	// to int
+	uint32_t ip_int {};
+	{
+		ip_int = ::inet_network( ip.c_str() );
+		xSTD_TEST(ip_int == 1547482829);
+
+		std::cout << TRACE_VAR(ip_int) << std::endl;
+	}
 
 	// to string
-	struct in_addr ip_addr;
-	ip_addr.s_addr = ::htonl(ip_int);
+	{
+		struct in_addr ip_addr {};
+		ip_addr.s_addr = ::htonl(ip_int);
 
-	std::string ip_str = inet_ntoa(ip_addr);
+		std::string ip_str = inet_ntoa(ip_addr);
+		xSTD_TEST(ip_str == ip);
 
-	std::cout << TRACE_VAR(ip_str) << std::endl;
+		std::cout << TRACE_VAR(ip_str) << std::endl;
+	}
 
 	return 0;
 }
