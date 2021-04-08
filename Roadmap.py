@@ -178,7 +178,7 @@ class RoadmapGen:
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
 			self._writeLine('{}  <summary>{} {} {}% ({})</summary>'
-				.format(indent, iconDir, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+				.format(indent, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		# dirs - n/a
 

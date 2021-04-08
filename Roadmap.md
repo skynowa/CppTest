@@ -11,14 +11,14 @@
   </details>
 
   * <details close>
-    <summary>📁 CircularLinkedList 0% (1)</summary>
+    <summary>❌ CircularLinkedList 0% (1)</summary>
 
       * ❌ CircularLinkedList.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 DoublyLinkedList 0% (3)</summary>
+    <summary>❌ DoublyLinkedList 0% (3)</summary>
 
       * ❌ DoubleLinkedListDeletion.cpp
       * ❌ DoubleLinkedListInsertion.cpp
@@ -27,7 +27,7 @@
     </details>
 
   * <details close>
-    <summary>📁 LinkedList 0% (7)</summary>
+    <summary>❌ LinkedList 0% (7)</summary>
 
       * ❌ LinkedListInsertion.cpp
       * ❌ DetectLoopInLinkedList.cpp
@@ -52,7 +52,7 @@
   </details>
 
   * <details close>
-    <summary>📁 Process 100% (2)</summary>
+    <summary>✅ Process 100% (2)</summary>
 
       * ✅ `ExitFunctions.cpp`
       * ✅ `Exit.cpp`
@@ -70,14 +70,14 @@
   </details>
 
   * <details close>
-    <summary>📁 Array 100% (4)</summary>
+    <summary>✅ Array 100% (4)</summary>
 
       * ✅ `ArraySize.cpp`
 
     </details>
 
     * <details close>
-      <summary>📁 ArrayToFunction 100% (3)</summary>
+      <summary>✅ ArrayToFunction 100% (3)</summary>
 
         * ✅ `ArrayToFunction3.cpp`
         * ✅ `ArrayToFunction1.cpp`
@@ -86,7 +86,7 @@
       </details>
 
   * <details close>
-    <summary>📁 Bits 0% (5)</summary>
+    <summary>❌ Bits 0% (5)</summary>
 
       * ❌ BitMask2.cpp
       * ❌ BitMask.cpp
@@ -96,26 +96,26 @@
     </details>
 
     * <details close>
-      <summary>📁 IsBot 0% (1)</summary>
+      <summary>❌ IsBot 0% (1)</summary>
 
         * ❌ main_BlackList.cpp
 
       </details>
 
   * <details close>
-    <summary>📁 C++11 0.0% (0)</summary>
+    <summary>❌ C++11 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 C++14 0.0% (0)</summary>
+    <summary>❌ C++14 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 C++17 0% (20)</summary>
+    <summary>❌ C++17 0% (20)</summary>
 
       * ❌ TemplateAutoParam.cpp
       * ❌ StructuredBindings.cpp
@@ -136,7 +136,7 @@
     </details>
 
     * <details close>
-      <summary>📁 Attributes 0% (5)</summary>
+      <summary>❌ Attributes 0% (5)</summary>
 
         * ❌ maybe_unused.cpp
         * ❌ FAQ.md
@@ -147,7 +147,7 @@
       </details>
 
   * <details close>
-    <summary>📁 Cast 100% (3)</summary>
+    <summary>✅ Cast 100% (3)</summary>
 
       * ✅ `ReinterpretCast.cpp`
       * ✅ `Casts.cpp`
@@ -156,7 +156,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Char 0% (4)</summary>
+    <summary>❌ Char 0% (4)</summary>
 
       * ❌ IntToChar.cpp
       * ❌ Escape.cpp
@@ -166,7 +166,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Class 0% (17)</summary>
+    <summary>❌ Class 0% (17)</summary>
 
       * ❌ MethodWithoutBody.cpp
       * ❌ InitConstructor.cpp
@@ -186,7 +186,7 @@
     </details>
 
     * <details close>
-      <summary>📁 Hierarchy 0% (2)</summary>
+      <summary>❌ Hierarchy 0% (2)</summary>
 
         * ❌ Hierarchy.cpp
         * ❌ Proxy.cpp
@@ -194,21 +194,21 @@
       </details>
 
     * <details close>
-      <summary>📁 Union 0% (1)</summary>
+      <summary>❌ Union 0% (1)</summary>
 
         * ❌ Union.cpp
 
       </details>
 
   * <details close>
-    <summary>📁 CtorsDtor 0% (1)</summary>
+    <summary>❌ CtorsDtor 0% (1)</summary>
 
       * ❌ ConstructNew.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 Double 0% (4)</summary>
+    <summary>❌ Double 0% (4)</summary>
 
       * ❌ IntDoubleCompare.cpp
       * ❌ DoubleCast.cpp
@@ -218,7 +218,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Enum 0% (6)</summary>
+    <summary>❌ Enum 0% (6)</summary>
 
       * ❌ SafeEnum.cpp
       * ❌ SizeOf.cpp
@@ -228,7 +228,7 @@
     </details>
 
     * <details close>
-      <summary>📁 EnumIO 0% (2)</summary>
+      <summary>❌ EnumIO 0% (2)</summary>
 
         * ❌ EnumIO.h
         * ❌ EnumIO_test.cpp
@@ -236,7 +236,7 @@
       </details>
 
   * <details close>
-    <summary>📁 Exceptions 0% (10)</summary>
+    <summary>❌ Exceptions 0% (10)</summary>
 
       * ❌ Try.cpp
       * ❌ Exception2.cpp
@@ -245,14 +245,14 @@
     </details>
 
     * <details close>
-      <summary>📁 SignalsToException 0% (1)</summary>
+      <summary>❌ SignalsToException 0% (1)</summary>
 
         * ❌ SignalsToException.cpp
 
       </details>
 
     * <details close>
-      <summary>📁 SignalsToException_2 0% (3)</summary>
+      <summary>❌ SignalsToException_2 0% (3)</summary>
 
         * ❌ SignalHandler.h
         * ❌ SignalHandler.inl
@@ -261,7 +261,7 @@
       </details>
 
     * <details close>
-      <summary>📁 WinException 0% (3)</summary>
+      <summary>❌ WinException 0% (3)</summary>
 
         * ❌ CxWinException.cpp
         * ❌ WinException.cpp
@@ -270,14 +270,14 @@
       </details>
 
   * <details close>
-    <summary>📁 Functor 0% (19)</summary>
+    <summary>❌ Functor 0% (19)</summary>
 
       * ❌ VariableArguments.cpp
 
     </details>
 
     * <details close>
-      <summary>📁 Function 0% (2)</summary>
+      <summary>❌ Function 0% (2)</summary>
 
         * ❌ NativeFunction.cpp
         * ❌ InlineFunction.cpp
@@ -285,7 +285,7 @@
       </details>
 
     * <details close>
-      <summary>📁 Functor 0% (7)</summary>
+      <summary>❌ Functor 0% (7)</summary>
 
         * ❌ FunctorExample4.cpp
         * ❌ FunctorExample1.cpp
@@ -298,7 +298,7 @@
       </details>
 
     * <details close>
-      <summary>📁 Lambda 0% (9)</summary>
+      <summary>❌ Lambda 0% (9)</summary>
 
         * ❌ LambdaMemberVariableCapture.cpp
         * ❌ LambdaScopes.cpp
@@ -313,7 +313,7 @@
       </details>
 
   * <details close>
-    <summary>📁 Loops 0% (5)</summary>
+    <summary>❌ Loops 0% (5)</summary>
 
       * ❌ ForBreak.cpp
       * ❌ SwitchCase.cpp
@@ -324,7 +324,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Move 0% (2)</summary>
+    <summary>❌ Move 0% (2)</summary>
 
       * ❌ MoveRef.cpp
       * ❌ Move.cpp
@@ -332,7 +332,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Operators 0% (14)</summary>
+    <summary>❌ Operators 0% (14)</summary>
 
       * ❌ OverloadingPrefixIncermentDecrementOperator.cpp
       * ❌ NamespaceOperator.cpp
@@ -352,7 +352,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Pointers 25% (4)</summary>
+    <summary>⌛ Pointers 25% (4)</summary>
 
       * ✅ `xPTR_DELETE.cpp`
       * ❌ CatchPtr.hpp
@@ -362,14 +362,14 @@
     </details>
 
   * <details close>
-    <summary>📁 Random 0% (1)</summary>
+    <summary>❌ Random 0% (1)</summary>
 
       * ❌ Random.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 Static 0% (12)</summary>
+    <summary>❌ Static 0% (12)</summary>
 
       * ❌ StaticHolder.cpp
       * ❌ Data.cpp
@@ -377,7 +377,7 @@
     </details>
 
     * <details close>
-      <summary>📁 Vars1 0% (4)</summary>
+      <summary>❌ Vars1 0% (4)</summary>
 
         * ❌ module.h
         * ❌ main_Var1.cpp
@@ -387,7 +387,7 @@
       </details>
 
     * <details close>
-      <summary>📁 Vars2 0% (6)</summary>
+      <summary>❌ Vars2 0% (6)</summary>
 
         * ❌ CxVars.inl
         * ❌ module.h
@@ -399,7 +399,7 @@
       </details>
 
   * <details close>
-    <summary>📁 String 0% (11)</summary>
+    <summary>❌ String 0% (11)</summary>
 
       * ❌ StringView.cpp
       * ❌ OtherUsefulFunction.cpp
@@ -413,7 +413,7 @@
     </details>
 
     * <details close>
-      <summary>📁 CString 0% (3)</summary>
+      <summary>❌ CString 0% (3)</summary>
 
         * ❌ main_CString.cpp
         * ❌ CString.inl
@@ -422,7 +422,7 @@
       </details>
 
   * <details close>
-    <summary>📁 Types 0% (2)</summary>
+    <summary>❌ Types 0% (2)</summary>
 
       * ❌ TypeNames.cpp
       * ❌ TypeSizes.cpp
@@ -430,7 +430,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Vars 0% (7)</summary>
+    <summary>❌ Vars 0% (7)</summary>
 
       * ❌ VarVisibility.cpp
       * ❌ LvalueRvalue.cpp
@@ -443,7 +443,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Virtual 0% (6)</summary>
+    <summary>❌ Virtual 0% (6)</summary>
 
       * ❌ VirtualInheritance1.cpp
       * ❌ VirtualDestructor.txt
@@ -461,7 +461,7 @@
   </details>
 
   * <details close>
-    <summary>📁 File 0% (4)</summary>
+    <summary>❌ File 0% (4)</summary>
 
       * ❌ FileRouter.inl
       * ❌ File_old.h
@@ -471,7 +471,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Thread 0% (5)</summary>
+    <summary>❌ Thread 0% (5)</summary>
 
       * ❌ IThreadImpl_win.h
       * ❌ Thread.h
@@ -512,14 +512,14 @@
   </details>
 
   * <details close>
-    <summary>📁 C++11 0% (1)</summary>
+    <summary>❌ C++11 0% (1)</summary>
 
       * ❌ atomic_flag.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 EventHandling 0% (3)</summary>
+    <summary>❌ EventHandling 0% (3)</summary>
 
       * ❌ ConditionalVariableBasics.cpp
       * ❌ BasicXMLEventHandlingUsingConditionalVariable.cpp
@@ -528,14 +528,14 @@
     </details>
 
   * <details close>
-    <summary>📁 JoinDetach 0% (1)</summary>
+    <summary>❌ JoinDetach 0% (1)</summary>
 
       * ❌ JoiningThreads.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 Mutex 0% (3)</summary>
+    <summary>❌ Mutex 0% (3)</summary>
 
       * ❌ MutexLockUnlock.cpp
       * ❌ MutexLockUnlock2.cpp
@@ -544,7 +544,7 @@
     </details>
 
   * <details close>
-    <summary>📁 PassingArgumentsToThreads 0% (3)</summary>
+    <summary>❌ PassingArgumentsToThreads 0% (3)</summary>
 
       * ❌ PassingPointersTThread.cpp
       * ❌ PassingReferencesToThread.cpp
@@ -553,7 +553,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Proccess 0% (3)</summary>
+    <summary>❌ Proccess 0% (3)</summary>
 
       * ❌ Wait.cpp
       * ❌ ExecuteBin.cpp
@@ -562,7 +562,7 @@
     </details>
 
   * <details close>
-    <summary>📁 RaceCondition 0% (2)</summary>
+    <summary>❌ RaceCondition 0% (2)</summary>
 
       * ❌ RaceConditionExample.cpp
       * ❌ RaceConditionExample2.cpp
@@ -570,7 +570,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Thread 0% (4)</summary>
+    <summary>❌ Thread 0% (4)</summary>
 
       * ❌ ThreadCreationUsingLambdaFunction.cpp
       * ❌ ThreadCreationUsingFunctionPointer.cpp
@@ -586,7 +586,7 @@
   </details>
 
   * <details close>
-    <summary>📁 Boost 0% (3)</summary>
+    <summary>❌ Boost 0% (3)</summary>
 
       * ❌ ScopeArray.cpp
       * ❌ ProgramOptions.cpp
@@ -595,7 +595,7 @@
     </details>
 
   * <details close>
-    <summary>📁 LibEvent 0% (4)</summary>
+    <summary>❌ LibEvent 0% (4)</summary>
 
       * ❌ all_test.cpp
       * ❌ FAQ.txt
@@ -605,28 +605,28 @@
     </details>
 
   * <details close>
-    <summary>📁 LibUv 0% (1)</summary>
+    <summary>❌ LibUv 0% (1)</summary>
 
       * ❌ FAQ.md
 
     </details>
 
   * <details close>
-    <summary>📁 Pcre 0% (1)</summary>
+    <summary>❌ Pcre 0% (1)</summary>
 
       * ❌ pcrepp.cpp.off
 
     </details>
 
   * <details close>
-    <summary>📁 Qt 0% (4)</summary>
+    <summary>❌ Qt 0% (4)</summary>
 
       * ❌ HttpUpload.cpp
 
     </details>
 
     * <details close>
-      <summary>📁 QSharedMemory 0% (3)</summary>
+      <summary>❌ QSharedMemory 0% (3)</summary>
 
         * ❌ main_MainDialog.cpp
         * ❌ MainDialog.cpp
@@ -635,20 +635,20 @@
       </details>
 
   * <details close>
-    <summary>📁 Ssh2 0% (1)</summary>
+    <summary>❌ Ssh2 0% (1)</summary>
 
       * ❌ SSH2.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 XLib 0% (2)</summary>
+    <summary>❌ XLib 0% (2)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 GlobalHotKey 0% (2)</summary>
+      <summary>❌ GlobalHotKey 0% (2)</summary>
 
         * ❌ xgrabkey.c
         * ❌ xgrabkey_2.c
@@ -678,7 +678,7 @@
   </details>
 
   * <details close>
-    <summary>📁 Behavioral 0% (15)</summary>
+    <summary>❌ Behavioral 0% (15)</summary>
 
       * ❌ memento.cpp
       * ❌ iterator.cpp
@@ -699,7 +699,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Creational 0% (6)</summary>
+    <summary>❌ Creational 0% (6)</summary>
 
       * ❌ ClassFactory.cpp
       * ❌ Singleton.cpp
@@ -711,7 +711,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Structural 0% (8)</summary>
+    <summary>❌ Structural 0% (8)</summary>
 
       * ❌ adapter.cpp
       * ❌ ContainerFacade.h
@@ -751,7 +751,7 @@
   </details>
 
   * <details close>
-    <summary>📁 Algos 0% (6)</summary>
+    <summary>❌ Algos 0% (6)</summary>
 
       * ❌ difference.cpp
       * ❌ accumulate.cpp
@@ -763,19 +763,19 @@
     </details>
 
   * <details close>
-    <summary>📁 C++11 0.0% (0)</summary>
+    <summary>❌ C++11 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 C++14 0.0% (0)</summary>
+    <summary>❌ C++14 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 C++17 0% (10)</summary>
+    <summary>❌ C++17 0% (10)</summary>
 
       * ❌ Any.cpp
       * ❌ StringView2.cpp
@@ -791,7 +791,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Deque 0% (2)</summary>
+    <summary>❌ Deque 0% (2)</summary>
 
       * ❌ DequeImplementation.cpp
       * ❌ DequeOperations.cpp
@@ -799,7 +799,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ForwardList 0% (3)</summary>
+    <summary>❌ ForwardList 0% (3)</summary>
 
       * ❌ ForwardListOperation2.cpp
       * ❌ ForwardListOperation1.cpp
@@ -808,21 +808,21 @@
     </details>
 
   * <details close>
-    <summary>📁 Functional 0% (1)</summary>
+    <summary>❌ Functional 0% (1)</summary>
 
       * ❌ ref.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 IOStream 0% (1)</summary>
+    <summary>❌ IOStream 0% (1)</summary>
 
       * ❌ OperatorOutput.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 Limits 0% (2)</summary>
+    <summary>❌ Limits 0% (2)</summary>
 
       * ❌ NumericLimits.cpp
       * ❌ DoubleLimits.cpp
@@ -830,7 +830,7 @@
     </details>
 
   * <details close>
-    <summary>📁 List 0% (12)</summary>
+    <summary>❌ List 0% (12)</summary>
 
       * ❌ splice.cpp
       * ❌ ListErase.cpp
@@ -848,7 +848,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Map 0% (12)</summary>
+    <summary>❌ Map 0% (12)</summary>
 
       * ❌ Maps.cpp
       * ❌ OperatorAccess.cpp
@@ -866,7 +866,7 @@
     </details>
 
   * <details close>
-    <summary>📁 MultiMap 0% (3)</summary>
+    <summary>❌ MultiMap 0% (3)</summary>
 
       * ❌ MultimapOperations.cpp
       * ❌ MultimapCI.cpp
@@ -875,7 +875,7 @@
     </details>
 
   * <details close>
-    <summary>📁 Set 0% (8)</summary>
+    <summary>❌ Set 0% (8)</summary>
 
       * ❌ SetInsertionUsingIteratorRange.cpp
       * ❌ set_insert.cpp
@@ -889,7 +889,7 @@
     </details>
 
   * <details close>
-    <summary>📁 SmartPtrs 0% (2)</summary>
+    <summary>❌ SmartPtrs 0% (2)</summary>
 
       * ❌ AutoPtrVSUniquePtr.cpp
       * ❌ smart-pointers-in-cpp11.html
@@ -897,7 +897,7 @@
     </details>
 
   * <details close>
-    <summary>📁 String 0% (3)</summary>
+    <summary>❌ String 0% (3)</summary>
 
       * ❌ reverse.cpp
       * ❌ CstrNull.cpp
@@ -906,7 +906,7 @@
     </details>
 
   * <details close>
-    <summary>📁 UnorderedMap 0% (3)</summary>
+    <summary>❌ UnorderedMap 0% (3)</summary>
 
       * ❌ UnorderedMapInitialization.cpp
       * ❌ UnorderedMapInsertion.cpp
@@ -915,14 +915,14 @@
     </details>
 
   * <details close>
-    <summary>📁 Utility 0% (1)</summary>
+    <summary>❌ Utility 0% (1)</summary>
 
       * ❌ forward.cpp
 
     </details>
 
   * <details close>
-    <summary>📁 Vector 9% (11)</summary>
+    <summary>⌛ Vector 9% (11)</summary>
 
       * ❌ RandomNumberInitializationInVector.cpp
       * ❌ RemoveAllOccurrencesOfAnElementFromVector.cpp
@@ -967,7 +967,7 @@
   </details>
 
   * <details close>
-    <summary>📁 Linux 0% (1)</summary>
+    <summary>❌ Linux 0% (1)</summary>
 
       * ❌ inotify.cpp
 
@@ -991,13 +991,13 @@
   </details>
 
   * <details close>
-    <summary>📁 RegDLL 32% (28)</summary>
+    <summary>⌛ RegDLL 32% (28)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 DLLClient1 0% (2)</summary>
+      <summary>❌ DLLClient1 0% (2)</summary>
 
         * ❌ DLLCode.h
         * ❌ DLLCode.cpp
@@ -1005,7 +1005,7 @@
       </details>
 
     * <details close>
-      <summary>📁 DLLClient2 0% (2)</summary>
+      <summary>❌ DLLClient2 0% (2)</summary>
 
         * ❌ DLLCode.h
         * ❌ DLLClient2.cpp
@@ -1013,7 +1013,7 @@
       </details>
 
     * <details close>
-      <summary>📁 MFCAp 17% (12)</summary>
+      <summary>⌛ MFCAp 17% (12)</summary>
 
         * ✅ `StdAfx.cpp`
         * ❌ MainFrm.cpp
@@ -1031,7 +1031,7 @@
       </details>
 
     * <details close>
-      <summary>📁 RDLLMFC 29% (7)</summary>
+      <summary>⌛ RDLLMFC 29% (7)</summary>
 
         * ❌ StdAfx.cpp
         * ❌ RDLLMFC.cpp
@@ -1044,7 +1044,7 @@
       </details>
 
     * <details close>
-      <summary>📁 W32DLL 100% (5)</summary>
+      <summary>✅ W32DLL 100% (5)</summary>
 
         * ✅ `StdAfx.cpp`
         * ✅ `DLLCode.h`
