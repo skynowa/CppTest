@@ -42,6 +42,7 @@ class RoadmapGen:
 	filesIncludes = []
 
 	################################################################################################
+	# ctr
 	def __init__(self):
 		self.file = open("./Roadmap.md", "w")
 		self.tree = self._nestedDictDefault(list, 10)
@@ -55,6 +56,7 @@ class RoadmapGen:
 		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
 
 	################################################################################################
+	# Construct dic
 	def _nestedDictDefault(self, default_factory, depth = 1):
 		result = partial(defaultdict, default_factory)
 
@@ -63,10 +65,12 @@ class RoadmapGen:
 
 		return result()
 	################################################################################################
+	# Write line to file
 	def _writeLine(self, a_line):
 		self.file.write(a_line + '\n')
 
 	################################################################################################
+	# Check file for 'todo' labels
 	def _isFileTodo(self, a_filePath):
 		isTodo = True
 
@@ -83,6 +87,7 @@ class RoadmapGen:
 		return isTodo
 
 	################################################################################################
+	# Collect dirs info
 	def _dirInfo(self, a_currentDirPath):
 		allFiles  = 0
 		doneFiles = 0
@@ -117,9 +122,8 @@ class RoadmapGen:
 		self.tree[a_currentDirPath] = (allFiles, doneFiles, todoFiles, filesPct)
 
 	################################################################################################
+	# [████████░░] 78% (12)
 	def _progressBar(self, a_doneFilesPct, a_allfilesNum):
-		# [████████░░] 78% (12)
-
 		valueDone = '█'
 		valueToDo = '░'
 
