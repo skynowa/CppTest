@@ -1,9 +1,8 @@
 /**
- * \file  main.cpp
+ * \file  VSnprintf.cpp
  * \brief vsnprintf, detect buffer
- *
- * \todo
  */
+
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -11,15 +10,17 @@
 #include <string>
 #include <iostream>
 #include <assert.h>
-
 //-------------------------------------------------------------------------------------------------
 #define TRACE_VAR(v) \
     #v ": " << (v)
 //-------------------------------------------------------------------------------------------------
 int
-bufferSize(const char *format, ...)
+bufferSize(
+	const char *format,
+	...
+)
 {
-	int iRv = 0;
+	int iRv {};
 
 	va_list args;
 	va_start(args, format);
@@ -32,7 +33,6 @@ bufferSize(const char *format, ...)
 int main(int, char **)
 {
 	int iRv = bufferSize("Width trick: %*d", 5, 10);
-
 	std::cout << TRACE_VAR(iRv) << std::endl;
 
 	return 0;

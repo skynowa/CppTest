@@ -3,7 +3,7 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>⌛ Algos</b> [░░░░░░░░░░] 0% (13)</summary>
+  <summary><b>Algos</b> [░░░░░░░░░░] 0% (13)</summary>
 
     * ❌ BubbleSort.cpp
     * ❌ InvertString.cpp
@@ -40,22 +40,22 @@
     </details>
 
 * <details close>
-  <summary><b>C</b> [░░░░░░░░░░] 0% (8)</summary>
+  <summary><b>C</b> [████████░░] 75% (8)</summary>
 
-    * ❌ Time.cpp
-    * ❌ Atoi.cpp
+    * ✅ `Time.cpp`
+    * ✅ `Atoi.cpp`
     * ❌ Printf.cpp
-    * ❌ Strptime.cpp
+    * ✅ `Strptime.cpp`
     * ❌ BuffZero.cpp
-    * ❌ VSnprintf.cpp
+    * ✅ `VSnprintf.cpp`
 
   </details>
 
   * <details close>
-    <summary>Process 0% (2)</summary>
+    <summary>Process 100% (2)</summary>
 
-      * ❌ ExitFunctions.cpp
-      * ❌ Exit.cpp
+      * ✅ `ExitFunctions.cpp`
+      * ✅ `Exit.cpp`
 
     </details>
 

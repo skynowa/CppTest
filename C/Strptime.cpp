@@ -1,14 +1,11 @@
 /**
- * \file
+ * \file  Strptime.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -20,8 +17,8 @@ int main(int, char **)
 		"%H:%M:%S"
 	};
 
-	for (auto &itDateFormat : dateFormats) {
-		struct tm dt;
+	for (const auto &itDateFormat : dateFormats) {
+		struct tm dt {};
 		char *pszRv = strptime("3 pm", itDateFormat.c_str(), &dt);
 		if (pszRv == nullptr) {
 			std::cout << "pszRv: nullptr" << std::endl;
@@ -30,7 +27,7 @@ int main(int, char **)
 
 		std::cout
 			<< itDateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << "\n"
-			<< (bool)(pszRv)        << "\n"
+			<< (bool)(pszRv)    << "\n"
 			<< TRACE_PTR(pszRv) << "\n" << std::endl;
 	}
 
