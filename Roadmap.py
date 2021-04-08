@@ -29,13 +29,12 @@ from itertools   import repeat
 ####################################################################################################
 class RoadmapGen:
 	## prefix components:
-	# space =  '    '
+	# space  = '    '
 	# branch = '│   '
+	# tee    = '├── '
+	# last   = '└── '
 
-	## pointers:
-	# tee =    '├── '
-	# last =   '└── '
-
+	mdPath        = ''
 	file          = ''
 	tree          = partial(defaultdict, list)
 
@@ -45,8 +44,9 @@ class RoadmapGen:
 	################################################################################################
 	# ctr
 	def __init__(self):
-		self.file = open("./Roadmap.md", "w")
-		self.tree = self._nestedDictDefault(list, 10)
+		self.mdPath = os.path.dirname(os.path.realpath(__file__)) + '/Roadmap.md';
+		self.file   = open(self.mdPath, 'w')
+		self.tree   = self._nestedDictDefault(list, 10)
 
 		self.dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 		self.filesIncludes = [
@@ -157,13 +157,13 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-			self._writeLine('{}  <summary><b>{}/</b> {}</summary>'
+			self._writeLine('{}  <summary><b>{}</b> {}</summary>'
 				.format(indent, os.path.basename(dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
-			self._writeLine('{}  <summary>{}/ {}% ({})</summary>'
+			self._writeLine('{}  <summary>{} {}% ({})</summary>'
 				.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		# dirs - n/a
