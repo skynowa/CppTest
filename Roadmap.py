@@ -34,6 +34,13 @@ def _nestedDictDefault(default_factory, depth=1):
 
     return result()
 ####################################################################################################
+def _writeLine(a_line):
+	file = open("./Roadmap.md", "a")
+	file.write(a_line)
+	file.write("\n")
+	file.close()
+
+####################################################################################################
 ## prefix components:
 # space =  '    '
 # branch = '│   '
@@ -66,7 +73,7 @@ def _isFileTodo(a_filePath):
 
 		isTodo = (fileContent.find(todoLabel) != -1)
 	except:
-		print("Error: {}\n".format(a_filePath))
+		_writeLine("Error: {}\n".format(a_filePath))
 
 	return isTodo
 
@@ -124,35 +131,35 @@ def _dirProcess(level, dirPath, dirs, files):
 	indent    = ' ' * 2 * (level - 1)
 	subindent = ' ' * 2 * (level + 1)
 
-	# print('dirPath: {}'.format(dirPath))
+	# _writeLine('dirPath: {}'.format(dirPath))
 
 	# dir
-	print('{}* <details close>'.format(indent))
+	_writeLine('{}* <details close>'.format(indent))
 
 	info = tree[dirPath]
-	# print('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
+	# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
 
 	allfilesNum  = info[0]
 	doneFilesPct = info[3]
 
 	# root dir
 	if (level == 1):
-		# print('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
+		# _writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-		print('{}  <summary><b>{}/</b> {}</summary>'
+		_writeLine('{}  <summary><b>{}/</b> {}</summary>'
 			.format(indent, os.path.basename(dirPath), _progressBar(doneFilesPct, allfilesNum)))
 
-		# print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
+		# _writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 	else:
-		print('{}  <summary>{}/ {}% ({})</summary>'
+		_writeLine('{}  <summary>{}/ {}% ({})</summary>'
 			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 	# dirs - n/a
 
 	# files
-	print('')
+	_writeLine('')
 	for file in files:
 		fileName = Path(file).name
 
@@ -162,11 +169,11 @@ def _dirProcess(level, dirPath, dirs, files):
 		else:
 			fileName = '✅ `{}`'.format(fileName)
 
-		print('{}* {}'.format(subindent, fileName))
-	print('')
+		_writeLine('{}* {}'.format(subindent, fileName))
+	_writeLine('')
 
-	print('{}  </details>'.format(indent))
-	print('')
+	_writeLine('{}  </details>'.format(indent))
+	_writeLine('')
 
 ####################################################################################################
 def rootDirProcess():
@@ -196,14 +203,14 @@ def main():
 	# g { color: Green }
 	# </style>
 
-	print('# C++ Roadmap')
-	print('')
-	print('<div style="background-color:black">')
-	print('')
+	_writeLine('# C++ Roadmap')
+	_writeLine('')
+	_writeLine('<div style="background-color:black">')
+	_writeLine('')
 
 	rootDirProcess()
 
-	print('</div>')
+	_writeLine('</div>')
 
 ####################################################################################################
 if __name__ == "__main__":
