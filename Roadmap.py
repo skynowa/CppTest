@@ -27,7 +27,7 @@ from collections import defaultdict
 from functools   import partial
 from itertools   import repeat
 ####################################################################################################
-def nested_defaultdict(default_factory, depth=1):
+def _nestedDictDefault(default_factory, depth=1):
     result = partial(defaultdict, default_factory)
 
     for _ in repeat(None, depth - 1):
@@ -39,12 +39,11 @@ def nested_defaultdict(default_factory, depth=1):
 # space =  '    '
 # branch = '│   '
 
-
 ## pointers:
 # tee =    '├── '
 # last =   '└── '
 
-tree = nested_defaultdict(list, 10)
+tree = _nestedDictDefault(list, 10)
 
 filesIncludes = [
 	'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c', '*.cpp.off',
@@ -107,7 +106,7 @@ def _dirInfo(a_currentDirPath):
 	tree[a_currentDirPath] = (allFiles, doneFiles, todoFiles, filesPct)
 
 ####################################################################################################
-def progressBar(a_doneFilesPct, a_allfilesNum):
+def _progressBar(a_doneFilesPct, a_allfilesNum):
 	# [████████░░] 78% (12)
 
 	valueDone = '█'
@@ -119,7 +118,7 @@ def progressBar(a_doneFilesPct, a_allfilesNum):
 	return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 ####################################################################################################
-def dirProcess(level, dirPath, dirs, files):
+def _dirProcess(level, dirPath, dirs, files):
 	if (level == 0):
 		return
 
@@ -143,7 +142,7 @@ def dirProcess(level, dirPath, dirs, files):
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		print('{}  <summary><b>{}/</b> {}</summary>'
-			.format(indent, os.path.basename(dirPath), progressBar(doneFilesPct, allfilesNum)))
+			.format(indent, os.path.basename(dirPath), _progressBar(doneFilesPct, allfilesNum)))
 
 		# print('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
@@ -187,7 +186,7 @@ def rootDirProcess():
 
 		_dirInfo(currentDirPath)
 
-		dirProcess(level, currentDirPath, dirs, files)
+		_dirProcess(level, currentDirPath, dirs, files)
 	# for
 
 ####################################################################################################
