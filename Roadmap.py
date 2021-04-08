@@ -35,10 +35,7 @@ def _nestedDictDefault(default_factory, depth=1):
     return result()
 ####################################################################################################
 def _writeLine(a_line):
-	file = open("./Roadmap.md", "a")
-	file.write(a_line)
-	file.write("\n")
-	file.close()
+	file.write(a_line + '\n')
 
 ####################################################################################################
 ## prefix components:
@@ -49,6 +46,7 @@ def _writeLine(a_line):
 # tee =    '├── '
 # last =   '└── '
 
+file = open("./Roadmap.md", "w")
 tree = _nestedDictDefault(list, 10)
 
 filesIncludes = [
