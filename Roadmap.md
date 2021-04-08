@@ -3,7 +3,7 @@
 <div style="background-color:black">
 
 * <details close>
-  <summary><b>Algos/</b> [░░░░░░░░░░] 0% (13)</summary>
+  <summary><b>Algorithms/</b> [░░░░░░░░░░] 0% (13)</summary>
 
     * ❌ BubbleSort.cpp
     * ❌ InvertString.cpp
@@ -40,98 +40,32 @@
     </details>
 
 * <details close>
-  <summary><b>Bits/</b> [░░░░░░░░░░] 0% (5)</summary>
+  <summary><b>C/</b> [░░░░░░░░░░] 0% (8)</summary>
 
-    * ❌ BitMask2.cpp
-    * ❌ BitMask.cpp
-    * ❌ bitset.cpp
-    * ❌ BuffToint.cpp
-
-  </details>
-
-  * <details close>
-    <summary>IsBot/ 0% (1)</summary>
-
-      * ❌ main_BlackList.cpp
-
-    </details>
-
-* <details close>
-  <summary><b>Cast/</b> [██████████] 100% (3)</summary>
-
-    * ✅ `ReinterpretCast.cpp`
-    * ✅ `Casts.cpp`
-    * ✅ `BoolCast.cpp`
-
-  </details>
-
-* <details close>
-  <summary><b>Char/</b> [░░░░░░░░░░] 0% (4)</summary>
-
-    * ❌ IntToChar.cpp
-    * ❌ Escape.cpp
-    * ❌ UnicodeAnsi.cpp
-    * ❌ SizeofUnicodes.cpp
-
-  </details>
-
-* <details close>
-  <summary><b>Class/</b> [░░░░░░░░░░] 0% (17)</summary>
-
-    * ❌ MethodWithoutBody.cpp
-    * ❌ InitConstructor.cpp
-    * ❌ InheritanceFunctions.cpp
-    * ❌ ConstructOrder.cpp
-    * ❌ CopyConstructor1.cpp
-    * ❌ EmptyStructSizeOf.cpp
-    * ❌ SizeOfClass.cpp
-    * ❌ CallMethod.cpp
-    * ❌ InitOrder.cpp
-    * ❌ FunctionDefinition.cpp
-    * ❌ CpoyConstructor2.cpp
-    * ❌ QuotedString.java
-    * ❌ FriendClass.cpp
-    * ❌ CondtructorOrder.cpp
+    * ❌ Time.cpp
+    * ❌ Atoi.cpp
+    * ❌ Printf.cpp
+    * ❌ Strptime.cpp
+    * ❌ BuffZero.cpp
+    * ❌ VSnprintf.cpp
 
   </details>
 
   * <details close>
-    <summary>Hierarchy/ 0% (2)</summary>
+    <summary>Process/ 0% (2)</summary>
 
-      * ❌ Hierarchy.cpp
-      * ❌ Proxy.cpp
-
-    </details>
-
-  * <details close>
-    <summary>Union/ 0% (1)</summary>
-
-      * ❌ Union.cpp
+      * ❌ ExitFunctions.cpp
+      * ❌ Exit.cpp
 
     </details>
 
 * <details close>
-  <summary><b>Core/</b> [░░░░░░░░░░] 0% (43)</summary>
+  <summary><b>Core/</b> [░░░░░░░░░░] 2% (161)</summary>
 
-    * ❌ LvalueRvalue.cpp
     * ❌ Explicit.cpp
     * ❌ GoTo.cpp
     * ❌ ReturnBool.cpp
-    * ❌ NamespaceOperator.cpp
-    * ❌ MoveRef.cpp
-    * ❌ ConstructNew.cpp
-    * ❌ OperatorsNewDelete.cpp
-    * ❌ PlacementNew.cpp
-    * ❌ InitMembers.cpp
-    * ❌ VariableArguments.cpp
-    * ❌ InlineFunction.cpp
-    * ❌ TypeNames.cpp
-    * ❌ Move.cpp
-    * ❌ ZeroDivision.cpp
-    * ❌ ValueInitialization.cpp
-    * ❌ TypeSizes.cpp
     * ❌ SwitchString.cpp
-    * ❌ InitVars.cpp
 
   </details>
 
@@ -148,6 +82,23 @@
         * ❌ ArrayToFunction3.cpp
         * ❌ ArrayToFunction1.cpp
         * ❌ ArrayToFunction2.cpp
+
+      </details>
+
+  * <details close>
+    <summary>Bits/ 0% (5)</summary>
+
+      * ❌ BitMask2.cpp
+      * ❌ BitMask.cpp
+      * ❌ bitset.cpp
+      * ❌ BuffToint.cpp
+
+    </details>
+
+    * <details close>
+      <summary>IsBot/ 0% (1)</summary>
+
+        * ❌ main_BlackList.cpp
 
       </details>
 
@@ -195,6 +146,314 @@
 
       </details>
 
+  * <details close>
+    <summary>Cast/ 100% (3)</summary>
+
+      * ✅ `ReinterpretCast.cpp`
+      * ✅ `Casts.cpp`
+      * ✅ `BoolCast.cpp`
+
+    </details>
+
+  * <details close>
+    <summary>Char/ 0% (4)</summary>
+
+      * ❌ IntToChar.cpp
+      * ❌ Escape.cpp
+      * ❌ UnicodeAnsi.cpp
+      * ❌ SizeofUnicodes.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Class/ 0% (17)</summary>
+
+      * ❌ MethodWithoutBody.cpp
+      * ❌ InitConstructor.cpp
+      * ❌ InheritanceFunctions.cpp
+      * ❌ ConstructOrder.cpp
+      * ❌ CopyConstructor1.cpp
+      * ❌ EmptyStructSizeOf.cpp
+      * ❌ SizeOfClass.cpp
+      * ❌ CallMethod.cpp
+      * ❌ InitOrder.cpp
+      * ❌ FunctionDefinition.cpp
+      * ❌ CpoyConstructor2.cpp
+      * ❌ QuotedString.java
+      * ❌ FriendClass.cpp
+      * ❌ CondtructorOrder.cpp
+
+    </details>
+
+    * <details close>
+      <summary>Hierarchy/ 0% (2)</summary>
+
+        * ❌ Hierarchy.cpp
+        * ❌ Proxy.cpp
+
+      </details>
+
+    * <details close>
+      <summary>Union/ 0% (1)</summary>
+
+        * ❌ Union.cpp
+
+      </details>
+
+  * <details close>
+    <summary>CtorsDtor/ 0% (1)</summary>
+
+      * ❌ ConstructNew.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Double/ 0% (4)</summary>
+
+      * ❌ IntDoubleCompare.cpp
+      * ❌ DoubleCast.cpp
+      * ❌ DoubleCompare.cpp
+      * ❌ IsGreater.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Enum/ 0% (6)</summary>
+
+      * ❌ SafeEnum.cpp
+      * ❌ SizeOf.cpp
+      * ❌ ForEnum.cpp
+      * ❌ CodeStyle.cpp
+
+    </details>
+
+    * <details close>
+      <summary>EnumIO/ 0% (2)</summary>
+
+        * ❌ EnumIO.h
+        * ❌ EnumIO_test.cpp
+
+      </details>
+
+  * <details close>
+    <summary>Exceptions/ 0% (10)</summary>
+
+      * ❌ Try.cpp
+      * ❌ Exception2.cpp
+      * ❌ Exception3.cpp
+
+    </details>
+
+    * <details close>
+      <summary>SignalsToException/ 0% (1)</summary>
+
+        * ❌ SignalsToException.cpp
+
+      </details>
+
+    * <details close>
+      <summary>SignalsToException_2/ 0% (3)</summary>
+
+        * ❌ SignalHandler.h
+        * ❌ SignalHandler.inl
+        * ❌ SignalsToException_2.cpp
+
+      </details>
+
+    * <details close>
+      <summary>WinException/ 0% (3)</summary>
+
+        * ❌ CxWinException.cpp
+        * ❌ WinException.cpp
+        * ❌ CxWinException.h
+
+      </details>
+
+  * <details close>
+    <summary>Functor/ 0% (19)</summary>
+
+      * ❌ VariableArguments.cpp
+
+    </details>
+
+    * <details close>
+      <summary>Function/ 0% (2)</summary>
+
+        * ❌ NativeFunction.cpp
+        * ❌ InlineFunction.cpp
+
+      </details>
+
+    * <details close>
+      <summary>Functor/ 0% (7)</summary>
+
+        * ❌ FunctorExample4.cpp
+        * ❌ FunctorExample1.cpp
+        * ❌ FunctorExample2.cpp
+        * ❌ Functor.cpp
+        * ❌ FunctorTarget.cpp
+        * ❌ FunctorExample3.cpp
+        * ❌ StaticFunctor.cpp
+
+      </details>
+
+    * <details close>
+      <summary>Lambda/ 0% (9)</summary>
+
+        * ❌ LambdaMemberVariableCapture.cpp
+        * ❌ LambdaScopes.cpp
+        * ❌ LambdaScopeFaultScenario.cpp
+        * ❌ LambaExamples.cpp
+        * ❌ LambdaPtrsSizes.cpp
+        * ❌ LambdaScopesByValue.cpp
+        * ❌ LambdaScopesByReference.cpp
+        * ❌ GccLambdaLeaky.cpp
+        * ❌ LambdaBasic.cpp
+
+      </details>
+
+  * <details close>
+    <summary>Loops/ 0% (5)</summary>
+
+      * ❌ ForBreak.cpp
+      * ❌ SwitchCase.cpp
+      * ❌ For.cpp
+      * ❌ GoToLablel.cpp
+      * ❌ ForVoid.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Move/ 0% (2)</summary>
+
+      * ❌ MoveRef.cpp
+      * ❌ Move.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Operators/ 0% (14)</summary>
+
+      * ❌ OverloadingPrefixIncermentDecrementOperator.cpp
+      * ❌ NamespaceOperator.cpp
+      * ❌ DecIncInt.cpp
+      * ❌ OperatorsNewDelete.cpp
+      * ❌ Exclamanation.cpp
+      * ❌ PlacementNew.cpp
+      * ❌ OverloadingLogicalOperator.cpp
+      * ❌ OperatorIn.cpp
+      * ❌ OverloadingArithmeticOperator.cpp
+      * ❌ OverloadingInputOutputOperator.cpp
+      * ❌ OverloadingPostfixIncermentDecrementOperator.cpp
+      * ❌ OverloadingUnaryOperator.cpp
+      * ❌ ZeroDivision.cpp
+      * ❌ OverloadingArithmeticOperatorUsingMemberFunction.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Pointers/ 25% (4)</summary>
+
+      * ✅ `xPTR_DELETE.cpp`
+      * ❌ CatchPtr.hpp
+      * ❌ FunctionPtr.cpp
+      * ❌ AutoPtr.h
+
+    </details>
+
+  * <details close>
+    <summary>Random/ 0% (1)</summary>
+
+      * ❌ Random.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Static/ 0% (12)</summary>
+
+      * ❌ StaticHolder.cpp
+      * ❌ Data.cpp
+
+    </details>
+
+    * <details close>
+      <summary>Vars1/ 0% (4)</summary>
+
+        * ❌ module.h
+        * ❌ main_Var1.cpp
+        * ❌ header.h
+        * ❌ module.inl
+
+      </details>
+
+    * <details close>
+      <summary>Vars2/ 0% (6)</summary>
+
+        * ❌ CxVars.inl
+        * ❌ module.h
+        * ❌ CVar.h
+        * ❌ CxVars.h
+        * ❌ main_Var2.cpp
+        * ❌ module.inl
+
+      </details>
+
+  * <details close>
+    <summary>String/ 0% (11)</summary>
+
+      * ❌ StringView.cpp
+      * ❌ OtherUsefulFunction.cpp
+      * ❌ CapacityFunction.cpp
+      * ❌ InitializationWays.cpp
+      * ❌ InputFunction.cpp
+      * ❌ IteratorFunction.cpp
+      * ❌ Reverse.cpp
+      * ❌ ManipulatingFunction.cpp
+
+    </details>
+
+    * <details close>
+      <summary>CString/ 0% (3)</summary>
+
+        * ❌ main_CString.cpp
+        * ❌ CString.inl
+        * ❌ CString.h
+
+      </details>
+
+  * <details close>
+    <summary>Types/ 0% (2)</summary>
+
+      * ❌ TypeNames.cpp
+      * ❌ TypeSizes.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Vars/ 0% (7)</summary>
+
+      * ❌ VarVisibility.cpp
+      * ❌ LvalueRvalue.cpp
+      * ❌ GlobalVar2.cpp
+      * ❌ GlobalVar1.cpp
+      * ❌ InitMembers.cpp
+      * ❌ ValueInitialization.cpp
+      * ❌ InitVars.cpp
+
+    </details>
+
+  * <details close>
+    <summary>Virtual/ 0% (6)</summary>
+
+      * ❌ VirtualInheritance1.cpp
+      * ❌ VirtualDestructor.txt
+      * ❌ VirtualFunction1.cpp
+      * ❌ VirtualInheritance2.cpp
+      * ❌ VirtualFunction2.cpp
+      * ❌ PureVirtual.cpp
+
+    </details>
+
 * <details close>
   <summary><b>Crossplatform/</b> [░░░░░░░░░░] 0% (9)</summary>
 
@@ -223,66 +482,10 @@
     </details>
 
 * <details close>
-  <summary><b>Double/</b> [░░░░░░░░░░] 0% (4)</summary>
+  <summary><b>DevOps/</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
-    * ❌ IntDoubleCompare.cpp
-    * ❌ DoubleCast.cpp
-    * ❌ DoubleCompare.cpp
-    * ❌ IsGreater.cpp
 
   </details>
-
-* <details close>
-  <summary><b>Enum/</b> [░░░░░░░░░░] 0% (6)</summary>
-
-    * ❌ SafeEnum.cpp
-    * ❌ SizeOf.cpp
-    * ❌ ForEnum.cpp
-    * ❌ CodeStyle.cpp
-
-  </details>
-
-  * <details close>
-    <summary>EnumIO/ 0% (2)</summary>
-
-      * ❌ EnumIO.h
-      * ❌ EnumIO_test.cpp
-
-    </details>
-
-* <details close>
-  <summary><b>Exceptions/</b> [░░░░░░░░░░] 0% (10)</summary>
-
-    * ❌ Try.cpp
-    * ❌ Exception2.cpp
-    * ❌ Exception3.cpp
-
-  </details>
-
-  * <details close>
-    <summary>SignalsToException/ 0% (1)</summary>
-
-      * ❌ SignalsToException.cpp
-
-    </details>
-
-  * <details close>
-    <summary>SignalsToException_2/ 0% (3)</summary>
-
-      * ❌ SignalHandler.h
-      * ❌ SignalHandler.inl
-      * ❌ SignalsToException_2.cpp
-
-    </details>
-
-  * <details close>
-    <summary>WinException/ 0% (3)</summary>
-
-      * ❌ CxWinException.cpp
-      * ❌ WinException.cpp
-      * ❌ CxWinException.h
-
-    </details>
 
 * <details close>
   <summary><b>FAQ/</b> [░░░░░░░░░░] 0% (4)</summary>
@@ -293,35 +496,6 @@
     * ❌ RSDN.md
 
   </details>
-
-* <details close>
-  <summary><b>Functor/</b> [░░░░░░░░░░] 0% (17)</summary>
-
-    * ❌ FunctorExample4.cpp
-    * ❌ FunctorExample1.cpp
-    * ❌ FunctorExample2.cpp
-    * ❌ NativeFunction.cpp
-    * ❌ Functor.cpp
-    * ❌ FunctorTarget.cpp
-    * ❌ FunctorExample3.cpp
-    * ❌ StaticFunctor.cpp
-
-  </details>
-
-  * <details close>
-    <summary>Lambda/ 0% (9)</summary>
-
-      * ❌ LambdaMemberVariableCapture.cpp
-      * ❌ LambdaScopes.cpp
-      * ❌ LambdaScopeFaultScenario.cpp
-      * ❌ LambaExamples.cpp
-      * ❌ LambdaPtrsSizes.cpp
-      * ❌ LambdaScopesByValue.cpp
-      * ❌ LambdaScopesByReference.cpp
-      * ❌ GccLambdaLeaky.cpp
-      * ❌ LambdaBasic.cpp
-
-    </details>
 
 * <details close>
   <summary><b>IpcMt/</b> [░░░░░░░░░░] 0% (28)</summary>
@@ -482,17 +656,6 @@
       </details>
 
 * <details close>
-  <summary><b>Loops/</b> [░░░░░░░░░░] 0% (5)</summary>
-
-    * ❌ ForBreak.cpp
-    * ❌ SwitchCase.cpp
-    * ❌ For.cpp
-    * ❌ GoToLablel.cpp
-    * ❌ ForVoid.cpp
-
-  </details>
-
-* <details close>
   <summary><b>Network/</b> [░░░░░░░░░░] 0% (3)</summary>
 
     * ❌ IpString.cpp
@@ -502,24 +665,15 @@
   </details>
 
 * <details close>
-  <summary><b>Operators/</b> [░░░░░░░░░░] 0% (10)</summary>
+  <summary><b>OOD/</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
-    * ❌ OverloadingPrefixIncermentDecrementOperator.cpp
-    * ❌ DecIncInt.cpp
-    * ❌ Exclamanation.cpp
-    * ❌ OverloadingLogicalOperator.cpp
-    * ❌ OperatorIn.cpp
-    * ❌ OverloadingArithmeticOperator.cpp
-    * ❌ OverloadingInputOutputOperator.cpp
-    * ❌ OverloadingPostfixIncermentDecrementOperator.cpp
-    * ❌ OverloadingUnaryOperator.cpp
-    * ❌ OverloadingArithmeticOperatorUsingMemberFunction.cpp
 
   </details>
 
 * <details close>
-  <summary><b>Patterns/</b> [░░░░░░░░░░] 0% (29)</summary>
+  <summary><b>Patterns/</b> [░░░░░░░░░░] 0% (30)</summary>
 
+    * ❌ FAQ.md
 
   </details>
 
@@ -571,19 +725,14 @@
     </details>
 
 * <details close>
-  <summary><b>Pointers/</b> [██░░░░░░░░] 25% (4)</summary>
+  <summary><b>PreproccessCompile/</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
-    * ✅ `xPTR_DELETE.cpp`
-    * ❌ CatchPtr.hpp
-    * ❌ FunctionPtr.cpp
-    * ❌ AutoPtr.h
 
   </details>
 
 * <details close>
-  <summary><b>Random/</b> [░░░░░░░░░░] 0% (1)</summary>
+  <summary><b>SCM_CI_CD/</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
-    * ❌ Random.cpp
 
   </details>
 
@@ -593,56 +742,6 @@
     * ❌ test.sql
 
   </details>
-
-* <details close>
-  <summary><b>Static/</b> [░░░░░░░░░░] 0% (12)</summary>
-
-    * ❌ StaticHolder.cpp
-    * ❌ Data.cpp
-
-  </details>
-
-  * <details close>
-    <summary>Vars1/ 0% (4)</summary>
-
-      * ❌ module.h
-      * ❌ main_Var1.cpp
-      * ❌ header.h
-      * ❌ module.inl
-
-    </details>
-
-  * <details close>
-    <summary>Vars2/ 0% (6)</summary>
-
-      * ❌ CxVars.inl
-      * ❌ module.h
-      * ❌ CVar.h
-      * ❌ CxVars.h
-      * ❌ main_Var2.cpp
-      * ❌ module.inl
-
-    </details>
-
-* <details close>
-  <summary><b>StdLibC/</b> [░░░░░░░░░░] 0% (8)</summary>
-
-    * ❌ Time.cpp
-    * ❌ Atoi.cpp
-    * ❌ Printf.cpp
-    * ❌ Strptime.cpp
-    * ❌ BuffZero.cpp
-    * ❌ VSnprintf.cpp
-
-  </details>
-
-  * <details close>
-    <summary>Process/ 0% (2)</summary>
-
-      * ❌ ExitFunctions.cpp
-      * ❌ Exit.cpp
-
-    </details>
 
 * <details close>
   <summary><b>Stl/</b> [░░░░░░░░░░] 1% (81)</summary>
@@ -840,29 +939,6 @@
     </details>
 
 * <details close>
-  <summary><b>String/</b> [░░░░░░░░░░] 0% (11)</summary>
-
-    * ❌ StringView.cpp
-    * ❌ OtherUsefulFunction.cpp
-    * ❌ CapacityFunction.cpp
-    * ❌ InitializationWays.cpp
-    * ❌ InputFunction.cpp
-    * ❌ IteratorFunction.cpp
-    * ❌ Reverse.cpp
-    * ❌ ManipulatingFunction.cpp
-
-  </details>
-
-  * <details close>
-    <summary>CString/ 0% (3)</summary>
-
-      * ❌ main_CString.cpp
-      * ❌ CString.inl
-      * ❌ CString.h
-
-    </details>
-
-* <details close>
   <summary><b>Templates/</b> [█░░░░░░░░░] 14% (14)</summary>
 
     * ❌ MaximumOfTwoValues.cpp
@@ -896,27 +972,6 @@
       * ❌ inotify.cpp
 
     </details>
-
-* <details close>
-  <summary><b>Vars/</b> [░░░░░░░░░░] 0% (3)</summary>
-
-    * ❌ VarVisibility.cpp
-    * ❌ GlobalVar2.cpp
-    * ❌ GlobalVar1.cpp
-
-  </details>
-
-* <details close>
-  <summary><b>Virtual/</b> [░░░░░░░░░░] 0% (6)</summary>
-
-    * ❌ VirtualInheritance1.cpp
-    * ❌ VirtualDestructor.txt
-    * ❌ VirtualFunction1.cpp
-    * ❌ VirtualInheritance2.cpp
-    * ❌ VirtualFunction2.cpp
-    * ❌ PureVirtual.cpp
-
-  </details>
 
 * <details close>
   <summary><b>Windows/</b> [██░░░░░░░░] 23% (39)</summary>
