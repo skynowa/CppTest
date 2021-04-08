@@ -20,7 +20,6 @@ import os
 import os.path
 import fnmatch
 import re
-import math
 
 from pathlib     import Path
 from collections import defaultdict
