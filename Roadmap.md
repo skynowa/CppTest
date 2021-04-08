@@ -40,13 +40,13 @@
     </details>
 
 * <details close>
-  <summary><b>C</b> [█████████░] 88% (8)</summary>
+  <summary><b>C</b> [██████████] 100% (8)</summary>
 
     * ✅ `Time.cpp`
     * ✅ `Atoi.cpp`
     * ✅ `Printf.cpp`
     * ✅ `Strptime.cpp`
-    * ❌ BuffZero.cpp
+    * ✅ `BuffZero.cpp`
     * ✅ `VSnprintf.cpp`
 
   </details>
