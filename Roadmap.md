@@ -60,7 +60,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [░░░░░░░░░░] 5% (161)</summary>
+  <summary><b>Core</b> [█░░░░░░░░░] 6% (161)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
@@ -70,9 +70,9 @@
   </details>
 
   * <details close>
-    <summary>Array 0% (4)</summary>
+    <summary>Array 25% (4)</summary>
 
-      * ❌ ArraySize.cpp
+      * ✅ `ArraySize.cpp`
 
     </details>
 
