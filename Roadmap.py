@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-####################################################################################################
+################################################################################################
 # FAQ
 #
 # https://theasciicode.com.ar/
@@ -13,7 +13,7 @@
 # - ignores
 # - draw "brances"
 #
-####################################################################################################
+################################################################################################
 
 
 import os
@@ -26,191 +26,199 @@ from collections import defaultdict
 from functools   import partial
 from itertools   import repeat
 ####################################################################################################
-## prefix components:
-# space =  '    '
-# branch = '│   '
+class RoadmapGen:
+	## prefix components:
+	# space =  '    '
+	# branch = '│   '
 
-## pointers:
-# tee =    '├── '
-# last =   '└── '
+	## pointers:
+	# tee =    '├── '
+	# last =   '└── '
 
-file = open("./Roadmap.md", "w")
-tree = _nestedDictDefault(list, 10)
+	file          = ''
+	tree          = partial(defaultdict, list)
 
-filesIncludes = [
-	'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c', '*.cpp.off',
-	'*.sql',
-	'*.txt', '*.md', '*.htm','*.html',
-	'*.js', '*.java']
-dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
+	dirsExcludes  = []
+	filesIncludes = []
 
-# glob patterns -> regular expressions
-filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
+	################################################################################################
+	def __init__(self):
+		self.file = open("./Roadmap.md", "w")
+		self.tree = self._nestedDictDefault(list, 10)
 
-####################################################################################################
-def _nestedDictDefault(default_factory, depth=1):
-    result = partial(defaultdict, default_factory)
+		self.dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
+		self.filesIncludes = [
+			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c', '*.cpp.off',
+			'*.sql',
+			'*.txt', '*.md', '*.htm','*.html',
+			'*.js', '*.java']
+		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
 
-    for _ in repeat(None, depth - 1):
-        result = partial(defaultdict, result)
+	################################################################################################
+	def _nestedDictDefault(self, default_factory, depth = 1):
+		result = partial(defaultdict, default_factory)
 
-    return result()
-####################################################################################################
-def _writeLine(a_line):
-	file.write(a_line + '\n')
+		for _ in repeat(None, depth - 1):
+			result = partial(defaultdict, result)
 
-####################################################################################################
-def _isFileTodo(a_filePath):
-	isTodo = True
+		return result()
+	################################################################################################
+	def _writeLine(self, a_line):
+		self.file.write(a_line + '\n')
 
-	todoLabel = '\\todo'
+	################################################################################################
+	def _isFileTodo(self, a_filePath):
+		isTodo = True
 
-	try:
-		f = open(a_filePath, "r")
-		fileContent = f.read()
+		todoLabel = '\\todo'
 
-		isTodo = (fileContent.find(todoLabel) != -1)
-	except:
-		_writeLine("Error: {}\n".format(a_filePath))
+		try:
+			f = open(a_filePath, "r")
+			fileContent = f.read()
 
-	return isTodo
+			isTodo = (fileContent.find(todoLabel) != -1)
+		except:
+			self._writeLine("Error: {}\n".format(a_filePath))
 
-####################################################################################################
-def _dirInfo(a_currentDirPath):
-	allFiles  = 0
-	doneFiles = 0
-	todoFiles = 0
-	filesPct  = 0
+		return isTodo
 
-	for currentDirPath, dirs, files in os.walk(a_currentDirPath):
-		# exclude dirs
-		dirs[:] = [d for d in dirs if d not in dirsExcludes]
-		dirs.sort(reverse=False)
+	################################################################################################
+	def _dirInfo(self, a_currentDirPath):
+		allFiles  = 0
+		doneFiles = 0
+		todoFiles = 0
+		filesPct  = 0
 
-		# exclude/include files
-		files = [os.path.join(currentDirPath, f) for f in files]
-		files = [f for f in files if re.match(filesIncludes, f)]
+		for currentDirPath, dirs, files in os.walk(a_currentDirPath):
+			# exclude dirs
+			dirs[:] = [d for d in dirs if d not in self.dirsExcludes]
+			dirs.sort(reverse=False)
 
-		# Read files - find todoLabel
-		for file in files:
-			allFiles += 1
+			# exclude/include files
+			files = [os.path.join(currentDirPath, f) for f in files]
+			files = [f for f in files if re.match(self.filesIncludes, f)]
 
-			if ( _isFileTodo(file) ) :
-				todoFiles += 1
-			else:
-				doneFiles += 1
+			# Read files - find todoLabel
+			for file in files:
+				allFiles += 1
+
+				if ( self._isFileTodo(file) ) :
+					todoFiles += 1
+				else:
+					doneFiles += 1
+			# for
 		# for
-	# for
 
-	filesPct = 0.0
-	if (allFiles != 0.0) :
-		filesPct = round(doneFiles * 100.0 / allFiles)
+		filesPct = 0.0
+		if (allFiles != 0.0) :
+			filesPct = round(doneFiles * 100.0 / allFiles)
 
-	# [out]
-	tree[a_currentDirPath] = (allFiles, doneFiles, todoFiles, filesPct)
+		# [out]
+		self.tree[a_currentDirPath] = (allFiles, doneFiles, todoFiles, filesPct)
 
-####################################################################################################
-def _progressBar(a_doneFilesPct, a_allfilesNum):
-	# [████████░░] 78% (12)
+	################################################################################################
+	def _progressBar(self, a_doneFilesPct, a_allfilesNum):
+		# [████████░░] 78% (12)
 
-	valueDone = '█'
-	valueToDo = '░'
+		valueDone = '█'
+		valueToDo = '░'
 
-	valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0)
-	valueDones = valueDone * round(a_doneFilesPct / 10.0)
+		valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0)
+		valueDones = valueDone * round(a_doneFilesPct / 10.0)
 
-	return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
+		return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
-####################################################################################################
-def _dirProcess(level, dirPath, dirs, files):
-	if (level == 0):
-		return
+	################################################################################################
+	def _dirProcess(self, level, dirPath, dirs, files):
+		if (level == 0):
+			return
 
-	indent    = ' ' * 2 * (level - 1)
-	subindent = ' ' * 2 * (level + 1)
+		indent    = ' ' * 2 * (level - 1)
+		subindent = ' ' * 2 * (level + 1)
 
-	# _writeLine('dirPath: {}'.format(dirPath))
+		# _writeLine('dirPath: {}'.format(dirPath))
 
-	# dir
-	_writeLine('{}* <details close>'.format(indent))
+		# dir
+		self._writeLine('{}* <details close>'.format(indent))
 
-	info = tree[dirPath]
-	# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
+		info = self.tree[dirPath]
+		# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
 
-	allfilesNum  = info[0]
-	doneFilesPct = info[3]
+		allfilesNum  = info[0]
+		doneFilesPct = info[3]
 
-	# root dir
-	if (level == 1):
-		# _writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
-		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+		# root dir
+		if (level == 1):
+			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
+			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-		_writeLine('{}  <summary><b>{}/</b> {}</summary>'
-			.format(indent, os.path.basename(dirPath), _progressBar(doneFilesPct, allfilesNum)))
+			self._writeLine('{}  <summary><b>{}/</b> {}</summary>'
+				.format(indent, os.path.basename(dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 
-		# _writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
-		# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
-	else:
-		_writeLine('{}  <summary>{}/ {}% ({})</summary>'
-			.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
-
-	# dirs - n/a
-
-	# files
-	_writeLine('')
-	for file in files:
-		fileName = Path(file).name
-
-		if ( _isFileTodo(file) ):
-			fileName = '❌ {}'.format(fileName)
-			# fileName = '<span style="color:red">{}</span>'.format(fileName)
+			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
+			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
-			fileName = '✅ `{}`'.format(fileName)
+			self._writeLine('{}  <summary>{}/ {}% ({})</summary>'
+				.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-		_writeLine('{}* {}'.format(subindent, fileName))
-	_writeLine('')
+		# dirs - n/a
 
-	_writeLine('{}  </details>'.format(indent))
-	_writeLine('')
+		# files
+		self._writeLine('')
+		for file in files:
+			fileName = Path(file).name
 
-####################################################################################################
-def rootDirProcess():
-	rootPath = str(Path.cwd());
+			if ( self._isFileTodo(file) ):
+				fileName = '❌ {}'.format(fileName)
+				# fileName = '<span style="color:red">{}</span>'.format(fileName)
+			else:
+				fileName = '✅ `{}`'.format(fileName)
 
-	for currentDirPath, dirs, files in os.walk(rootPath):
-		# exclude dirs
-		dirs[:] = [d for d in dirs if d not in dirsExcludes]
-		dirs.sort(reverse=False)
+			self._writeLine('{}* {}'.format(subindent, fileName))
+		self._writeLine('')
 
-		# exclude/include files
-		files = [os.path.join(currentDirPath, f) for f in files]
-		files = [f for f in files if re.match(filesIncludes, f)]
+		self._writeLine('{}  </details>'.format(indent))
+		self._writeLine('')
 
-		level = currentDirPath.replace(rootPath, '').count(os.sep)
+	################################################################################################
+	def rootDirProcess(self):
+		rootPath = str(Path.cwd());
 
-		_dirInfo(currentDirPath)
+		for currentDirPath, dirs, files in os.walk(rootPath):
+			# exclude dirs
+			dirs[:] = [d for d in dirs if d not in self.dirsExcludes]
+			dirs.sort(reverse=False)
 
-		_dirProcess(level, currentDirPath, dirs, files)
-	# for
+			# exclude/include files
+			files = [os.path.join(currentDirPath, f) for f in files]
+			files = [f for f in files if re.match(self.filesIncludes, f)]
 
-####################################################################################################
+			level = currentDirPath.replace(rootPath, '').count(os.sep)
+
+			self._dirInfo(currentDirPath)
+			self._dirProcess(level, currentDirPath, dirs, files)
+		# for
+
+################################################################################################
 def main():
+	gen = RoadmapGen()
+
 	# <style>
 	# r { color: Red }
 	# o { color: Orange }
 	# g { color: Green }
 	# </style>
 
-	_writeLine('# C++ Roadmap')
-	_writeLine('')
-	_writeLine('<div style="background-color:black">')
-	_writeLine('')
+	gen._writeLine('# C++ Roadmap')
+	gen._writeLine('')
+	gen._writeLine('<div style="background-color:black">')
+	gen._writeLine('')
 
-	rootDirProcess()
+	gen.rootDirProcess()
 
-	_writeLine('</div>')
+	gen._writeLine('</div>')
 
-####################################################################################################
+################################################################################################
 if __name__ == "__main__":
     main()
-####################################################################################################
+################################################################################################
