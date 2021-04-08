@@ -60,12 +60,12 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [░░░░░░░░░░] 4% (161)</summary>
+  <summary><b>Core</b> [░░░░░░░░░░] 5% (161)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
     * ✅ `ReturnBool.cpp`
-    * ❌ SwitchString.cpp
+    * ✅ `SwitchString.cpp`
 
   </details>
 

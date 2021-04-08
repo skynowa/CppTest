@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  SwitchString.cpp
  * \brief https://github.com/rioki/rex/blob/master/strex.h#L71
- *
- * \todo
  */
 
 
