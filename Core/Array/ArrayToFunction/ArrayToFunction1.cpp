@@ -1,23 +1,29 @@
 /**
- * \file
+ * \file  ArrayToFunction1.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-
+//-------------------------------------------------------------------------------------------------
 typedef int aiIntArray[3][4];
-aiIntArray a = {
+
+aiIntArray a
+{
    {4,  6,  8,  10},
    {14, 16, 18, 20},
    {24, 26, 28, 30}
 };
-
-void show(const aiIntArray &a, int m, int n) {
+//-------------------------------------------------------------------------------------------------
+void
+show(
+    const aiIntArray &a,
+    int   m,
+    int   n
+)
+{
     for (int i = 0; i < m; ++ i) {
         for (int j = 0; j < n; ++ j) {
             int x = *(*(a + i) + j);
@@ -28,9 +34,11 @@ void show(const aiIntArray &a, int m, int n) {
         std::cout << std::endl;
     }
 }
-
-int main () {
+//-------------------------------------------------------------------------------------------------
+int main ()
+{
     show(a, 3, 4);
 
     return 0;
 }
+//-------------------------------------------------------------------------------------------------

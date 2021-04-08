@@ -60,7 +60,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [█░░░░░░░░░] 6% (161)</summary>
+  <summary><b>Core</b> [█░░░░░░░░░] 7% (161)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
@@ -70,18 +70,18 @@
   </details>
 
   * <details close>
-    <summary>Array 25% (4)</summary>
+    <summary>Array 100% (4)</summary>
 
       * ✅ `ArraySize.cpp`
 
     </details>
 
     * <details close>
-      <summary>ArrayToFunction 0% (3)</summary>
+      <summary>ArrayToFunction 100% (3)</summary>
 
-        * ❌ ArrayToFunction3.cpp
-        * ❌ ArrayToFunction1.cpp
-        * ❌ ArrayToFunction2.cpp
+        * ✅ `ArrayToFunction3.cpp`
+        * ✅ `ArrayToFunction1.cpp`
+        * ✅ `ArrayToFunction2.cpp`
 
       </details>
 
