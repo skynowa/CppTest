@@ -1,8 +1,6 @@
 /**
  * \file  GoTo.cpp
  * \brief Go to idiom
- *
- * \todo
  */
 
 

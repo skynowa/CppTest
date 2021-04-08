@@ -1,8 +1,6 @@
 /**
  * \file  Explicit.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -12,17 +10,26 @@
 //-------------------------------------------------------------------------------------------------
 struct A
 {
-	operator bool() const { return true; }
+	operator bool() const
+	{
+		return true;
+	}
 };
 
 struct B
 {
-	explicit operator bool() const { return true; }
+	explicit operator bool() const
+	{
+		return true;
+	}
 };
 
 struct C
 {
-	explicit operator bool() const { return true; }
+	explicit operator bool() const
+	{
+		return true;
+	}
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -31,7 +38,7 @@ int main(int, char **)
 	std::cout << TRACE_VAR(a) << std::endl;
 
 	B b;
-	//std::cout << TRACE_VAR(b) << std::endl;
+	// std::cout << TRACE_VAR(b) << std::endl;
 
 	C c;
 	std::cout << TRACE_VAR(static_cast<bool>(c)) << std::endl;
