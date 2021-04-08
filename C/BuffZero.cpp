@@ -55,7 +55,7 @@ int main(int, char **)
     }
 
     {
-        char *pszBuff = new char[cuiBuffSize]();
+        char *pszBuff = new char[cuiBuffSize]{};
 
         for (size_t i = 0; i < cuiBuffSize; ++ i) {
             std::cout << "["<< pszBuff[0] << "]" << std::endl;
