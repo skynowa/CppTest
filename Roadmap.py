@@ -143,6 +143,7 @@ class RoadmapGen:
 		iconToDo       = '❌'
 		iconDone       = '✅'
 		iconInProgress = '⌛'
+		iconDir        = '📁'
 
 		indent    = ' ' * 2 * (level - 1)
 		subindent = ' ' * 2 * (level + 1)
@@ -176,8 +177,8 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
-			self._writeLine('{}  <summary>{}{} {}% ({})</summary>'
-				.format(indent, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+			self._writeLine('{}  <summary>{} {} {}% ({})</summary>'
+				.format(indent, iconDir, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
 		# dirs - n/a
 
