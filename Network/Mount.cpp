@@ -1,8 +1,6 @@
 /**
  * \file  Mount.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -19,31 +17,33 @@ using namespace std;
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-  string host = "192.168.12.200";
-  string src = "\\\\homes";
-  string dst = "~/tmp/jail";
-  string fstype = "cifs";
+    int iRv {};
 
-  string all_string = "unc=" + src + ",ip=" + host + ",username=skynowa,password=1978abccbA";
+    const string host   = "192.168.12.200";
+    const string src    = "\\\\homes";
+    const string dst    = "~/tmp/jail";
+    const string fstype = "cifs";
 
-  printf("src: %s\n", src.c_str());
+    string all_string = "unc=" + src + ",ip=" + host + ",username=skynowa,password=1978abccbA";
+    printf("src: %s\n", src.c_str());
 
-  if( -1 == mount(src.c_str(), dst.c_str(), fstype.c_str(), MS_MGC_VAL | MS_SILENT , all_string.c_str()))
-  {
-      printf("mount failed with error: %s\n",strerror(errno));
-  }
-  else
-      printf("mount success!\n");
+    iRv = mount(src.c_str(), dst.c_str(), fstype.c_str(), MS_MGC_VAL | MS_SILENT , all_string.c_str());
+    if (iRv == -1) {
+        printf("mount failed with error: %s\n",strerror(errno));
+        return 1;
+    }
 
-  if( umount2(dst.c_str(), MNT_FORCE) < 0 )
-  {
-      printf("unmount failed with error: %s\n",strerror(errno));
-  }
-  else
-      printf("unmount success!\n");
+    printf("mount success!\n");
 
+    iRv = umount2(dst.c_str(), MNT_FORCE);
+    if (iRv  < 0) {
+        printf("unmount failed with error: %s\n",strerror(errno));
+        return 1;
+    }
 
-  return 0;
+    printf("unmount success!\n");
+
+    return 0;
 }
 //-------------------------------------------------------------------------------------------------
 
