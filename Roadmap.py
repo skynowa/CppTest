@@ -11,7 +11,8 @@
 # + Progress bar for each dir
 # + Done/Todo icons
 # + Ignores dirs/files
-# - Draw "brances"
+# ? Draw "brances"
+# - Clickable files
 #
 ################################################################################################
 
