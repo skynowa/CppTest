@@ -26,18 +26,6 @@ from collections import defaultdict
 from functools   import partial
 from itertools   import repeat
 ####################################################################################################
-def _nestedDictDefault(default_factory, depth=1):
-    result = partial(defaultdict, default_factory)
-
-    for _ in repeat(None, depth - 1):
-        result = partial(defaultdict, result)
-
-    return result()
-####################################################################################################
-def _writeLine(a_line):
-	file.write(a_line + '\n')
-
-####################################################################################################
 ## prefix components:
 # space =  '    '
 # branch = '│   '
@@ -58,6 +46,18 @@ dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 
 # glob patterns -> regular expressions
 filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
+
+####################################################################################################
+def _nestedDictDefault(default_factory, depth=1):
+    result = partial(defaultdict, default_factory)
+
+    for _ in repeat(None, depth - 1):
+        result = partial(defaultdict, result)
+
+    return result()
+####################################################################################################
+def _writeLine(a_line):
+	file.write(a_line + '\n')
 
 ####################################################################################################
 def _isFileTodo(a_filePath):
