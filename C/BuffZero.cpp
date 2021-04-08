@@ -1,5 +1,5 @@
 ﻿/**
- * \file
+ * \file  BuffZero.cpp
  * \brief
  *
  * \todo
@@ -15,7 +15,7 @@ int main(int, char **)
     const size_t cuiBuffSize = 5;
 
    {
-        char szBuff[cuiBuffSize] = {0};
+        char szBuff[cuiBuffSize] {};
 
         for (size_t i = 0; i < cuiBuffSize; ++ i) {
             std::cout << "["<< szBuff[0] << "]" << std::endl;

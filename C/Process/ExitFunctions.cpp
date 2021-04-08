@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  ExitFunctions.cpp
  * \brief
- *
- * \todo
  */
 
 
