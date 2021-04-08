@@ -51,7 +51,7 @@ class RoadmapGen:
 
 		self.dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 		self.filesIncludes = [
-			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cc', '*.c', '*.cpp.off',
+			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cxx', '*.cc', '*.c', '*.cpp.off',
 			'*.sql',
 			'*.txt', '*.md', '*.htm','*.html',
 			'*.js', '*.java']
