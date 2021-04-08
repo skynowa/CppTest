@@ -60,11 +60,11 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [░░░░░░░░░░] 2% (161)</summary>
+  <summary><b>Core</b> [░░░░░░░░░░] 3% (161)</summary>
 
     * ❌ Explicit.cpp
     * ❌ GoTo.cpp
-    * ❌ ReturnBool.cpp
+    * ✅ `ReturnBool.cpp`
     * ❌ SwitchString.cpp
 
   </details>

@@ -1,6 +1,6 @@
 /**
- * \file
- * \brief
+ * \file  GoTo.cpp
+ * \brief Go to idiom
  *
  * \todo
  */
@@ -38,19 +38,19 @@ runWidget()
 
     Widget a;
     if ( !a.show() ) {
-		error = "a_error";
-		goto exit;
+		error = "a-error";
+		goto lbl_exit;
     }
 
     Widget b;
     if ( !b.show() ) {
-		error = "b_error";
-		goto exit;
+		error = "b-error";
+		goto lbl_exit;
     }
 
     // ...
 
-exit:
+lbl_exit:
 	if ( a.isValid() ) {
 		a.cleanup();
 	}
