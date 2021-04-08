@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  IpString.cpp
  * \brief
  */
 
@@ -18,7 +18,7 @@ int main(int, char **)
 	uint32_t ip_int {};
 	{
 		ip_int = ::inet_network( ip.c_str() );
-		xSTD_TEST(ip_int == 1547482829);
+		STD_TEST(ip_int == 1547482829);
 
 		std::cout << TRACE_VAR(ip_int) << std::endl;
 	}
@@ -29,7 +29,7 @@ int main(int, char **)
 		ip_addr.s_addr = ::htonl(ip_int);
 
 		std::string ip_str = inet_ntoa(ip_addr);
-		xSTD_TEST(ip_str == ip);
+		STD_TEST(ip_str == ip);
 
 		std::cout << TRACE_VAR(ip_str) << std::endl;
 	}

@@ -656,9 +656,9 @@
       </details>
 
 * <details close>
-  <summary><b>Network</b> [░░░░░░░░░░] 0% (3)</summary>
+  <summary><b>Network</b> [███░░░░░░░] 33% (3)</summary>
 
-    * ❌ IpString.cpp
+    * ✅ `IpString.cpp`
     * ❌ TcpUdpDiffs.txt
     * ❌ Mount.cpp
 
