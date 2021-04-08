@@ -56,7 +56,7 @@ dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 filesIncludes = r'|'.join([fnmatch.translate(x) for x in filesIncludes])
 
 ####################################################################################################
-def isFileTodo(a_filePath):
+def _isFileTodo(a_filePath):
 	isTodo = True
 
 	todoLabel = '\\todo'
@@ -91,7 +91,7 @@ def _dirInfo(a_currentDirPath):
 		for file in files:
 			allFiles += 1
 
-			if ( isFileTodo(file) ) :
+			if ( _isFileTodo(file) ) :
 				todoFiles += 1
 			else:
 				doneFiles += 1
@@ -157,7 +157,7 @@ def _dirProcess(level, dirPath, dirs, files):
 	for file in files:
 		fileName = Path(file).name
 
-		if ( isFileTodo(file) ):
+		if ( _isFileTodo(file) ):
 			fileName = '❌ {}'.format(fileName)
 			# fileName = '<span style="color:red">{}</span>'.format(fileName)
 		else:
