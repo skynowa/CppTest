@@ -181,7 +181,19 @@ class RoadmapGen:
 		self._writeLine('')
 
 	################################################################################################
-	def rootDirProcess(self):
+	# root dir - process
+	def run(self):
+		# <style>
+		# r { color: Red }
+		# o { color: Orange }
+		# g { color: Green }
+		# </style>
+
+		self._writeLine('# C++ Roadmap')
+		self._writeLine('')
+		self._writeLine('<div style="background-color:black">')
+		self._writeLine('')
+
 		rootPath = str(Path.cwd());
 
 		for currentDirPath, dirs, files in os.walk(rootPath):
@@ -199,24 +211,12 @@ class RoadmapGen:
 			self._dirProcess(level, currentDirPath, dirs, files)
 		# for
 
+		self._writeLine('</div>')
+
 ################################################################################################
 def main():
 	gen = RoadmapGen()
-
-	# <style>
-	# r { color: Red }
-	# o { color: Orange }
-	# g { color: Green }
-	# </style>
-
-	gen._writeLine('# C++ Roadmap')
-	gen._writeLine('')
-	gen._writeLine('<div style="background-color:black">')
-	gen._writeLine('')
-
-	gen.rootDirProcess()
-
-	gen._writeLine('</div>')
+	gen.run()
 
 ################################################################################################
 if __name__ == "__main__":
