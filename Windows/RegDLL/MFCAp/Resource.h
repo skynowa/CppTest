@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  Resource.h
  * \brief
- *
- * \todo
  */
 
 

@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  MFCApDoc.h
  * \brief
- *
- * \todo
  */
 
 

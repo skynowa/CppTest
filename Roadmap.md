@@ -974,7 +974,7 @@
     </details>
 
 * <details close>
-  <summary><b>Windows</b> [██░░░░░░░░] 23% (39)</summary>
+  <summary><b>Windows</b> [██████░░░░] 64% (39)</summary>
 
     * ❌ CxHandle.cpp
     * ❌ getuid.cpp
@@ -991,53 +991,53 @@
   </details>
 
   * <details close>
-    <summary>📁⌛ RegDLL 32% (28)</summary>
+    <summary>📁⌛ RegDLL 89% (28)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁❌ DLLClient1 0% (2)</summary>
+      <summary>📁✅ DLLClient1 100% (2)</summary>
 
-        * ❌ DLLCode.h
-        * ❌ DLLCode.cpp
-
-      </details>
-
-    * <details close>
-      <summary>📁❌ DLLClient2 0% (2)</summary>
-
-        * ❌ DLLCode.h
-        * ❌ DLLClient2.cpp
+        * ✅ `DLLCode.h`
+        * ✅ `DLLCode.cpp`
 
       </details>
 
     * <details close>
-      <summary>📁⌛ MFCAp 17% (12)</summary>
+      <summary>📁✅ DLLClient2 100% (2)</summary>
+
+        * ✅ `DLLCode.h`
+        * ✅ `DLLClient2.cpp`
+
+      </details>
+
+    * <details close>
+      <summary>📁⌛ MFCAp 92% (12)</summary>
 
         * ✅ `StdAfx.cpp`
-        * ❌ MainFrm.cpp
-        * ❌ Resource.h
-        * ❌ MFCApView.h
-        * ❌ MFCApDoc.h
-        * ❌ DLLCode.h
-        * ❌ MFCApView.cpp
+        * ✅ `MainFrm.cpp`
+        * ✅ `Resource.h`
+        * ✅ `MFCApView.h`
+        * ✅ `MFCApDoc.h`
+        * ✅ `DLLCode.h`
+        * ✅ `MFCApView.cpp`
         * ❌ MFCAp.h
-        * ❌ MFCAp.cpp
-        * ❌ MFCApDoc.cpp
-        * ❌ MainFrm.h
+        * ✅ `MFCAp.cpp`
+        * ✅ `MFCApDoc.cpp`
+        * ✅ `MainFrm.h`
         * ✅ `StdAfx.h`
 
       </details>
 
     * <details close>
-      <summary>📁⌛ RDLLMFC 29% (7)</summary>
+      <summary>📁⌛ RDLLMFC 71% (7)</summary>
 
         * ❌ StdAfx.cpp
-        * ❌ RDLLMFC.cpp
-        * ❌ RDLLMFC.h
+        * ✅ `RDLLMFC.cpp`
+        * ✅ `RDLLMFC.h`
         * ✅ `Resource.h`
-        * ❌ DLLCode.h
+        * ✅ `DLLCode.h`
         * ❌ DLLCode.cpp
         * ✅ `StdAfx.h`
 

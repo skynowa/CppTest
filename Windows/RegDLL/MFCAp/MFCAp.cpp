@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  MFCAp.cpp
  * \brief
- *
- * \todo
  */
 
 

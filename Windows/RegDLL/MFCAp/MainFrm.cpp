@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  MainFrm.cpp
  * \brief
- *
- * \todo
  */
 
 
