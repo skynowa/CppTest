@@ -1,8 +1,6 @@
 /**
  * \file  StdAfx.cpp
  * \brief
- *
- * \todo
  */
 
 
