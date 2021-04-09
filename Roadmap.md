@@ -498,7 +498,7 @@
   </details>
 
 * <details close>
-  <summary><b>IpcMt</b> [░░░░░░░░░░] 0% (28)</summary>
+  <summary><b>IpcMt</b> [░░░░░░░░░░] 0% (30)</summary>
 
     * ❌ signal_stacktrace.cpp
     * ❌ psiginfo.cpp
@@ -576,6 +576,14 @@
       * ❌ ThreadCreationUsingFunctionPointer.cpp
       * ❌ DifferentiatingBetweenThread.cpp
       * ❌ ThreadCreationUsingFunctionObjects.cpp
+
+    </details>
+
+  * <details close>
+    <summary>📁❌ Windows 0% (2)</summary>
+
+      * ❌ Event.cpp
+      * ❌ WaitForSingleObject.cpp
 
     </details>
 
@@ -974,19 +982,17 @@
     </details>
 
 * <details close>
-  <summary><b>Windows</b> [█████████░] 92% (39)</summary>
+  <summary><b>Windows</b> [██████████] 100% (37)</summary>
 
     * ✅ `GetUid.cpp`
     * ✅ `CxHandle.cpp`
     * ✅ `Battery.cpp`
     * ✅ `AnsiUtf8.cpp`
-    * ❌ Event.cpp
     * ✅ `GetTokenInformation.cpp`
     * ✅ `OsBit.md`
     * ✅ `CommandLine.cpp`
     * ✅ `MemoryUsage.cpp`
-    * ❌ OsBit.cpp
-    * ❌ WaitForSingleObject.cpp
+    * ✅ `OsBit.cpp`
 
   </details>
 
