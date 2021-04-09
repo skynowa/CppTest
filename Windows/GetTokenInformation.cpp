@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  GetTokenInformation.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -10,8 +8,8 @@
 #include <Windows.h>
 #include <Iads.h>
 #include <AdsHlp.h>
-
-int _tmain(int argc, _TCHAR* argv[])
+//-------------------------------------------------------------------------------------------------
+int main(int argc, _TCHAR* argv[])
 {
     DWORD i, dwSize;
     HANDLE hToken;
@@ -20,7 +18,7 @@ int _tmain(int argc, _TCHAR* argv[])
     HRESULT hr;
 
     hr = CoInitialize(NULL);
-    if(SUCCEEDED(hr))
+    if (SUCCEEDED(hr))
     {
         // Open a handle to the access token for the calling process.
         if (OpenProcessToken (GetCurrentProcess(), TOKEN_QUERY, &hToken))
@@ -36,6 +34,7 @@ int _tmain(int argc, _TCHAR* argv[])
                     pUserInfo = NULL;
                 }
             }
+
             dwSize = 0;
             GetTokenInformation (hToken, TokenGroups, NULL, dwSize, &dwSize);
             if (pGroupInfo = (PTOKEN_GROUPS) GlobalAlloc (GPTR, dwSize))
@@ -66,13 +65,17 @@ int _tmain(int argc, _TCHAR* argv[])
                 }
                 GlobalFree (pGroupInfo);
             }
+
             if (pUserInfo != NULL)
                 GlobalFree (pUserInfo);
 
-            //Close the access token handle
+            // Close the access token handle
             CloseHandle (hToken);
         }
     }
+
     CoUninitialize();
+
     return 0;
 }
+//-------------------------------------------------------------------------------------------------

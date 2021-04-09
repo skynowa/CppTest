@@ -1,18 +1,18 @@
 /**
- * \file  main.cpp
+ * \file  Event.cpp
  * \brief
  *
  * \todo
  */
 
 
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 #include <string>
 #include <iostream>
 #include <assert.h>
 #include <windows.h>
 #include <process.h>
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 #if MSDN
     ::SetEvent   - set signaled state
     ::ResetEvent - set nonsignaled state
@@ -69,10 +69,11 @@
     */
 #endif
 
-HANDLE     g_evEvent       = NULL;
-//---------------------------------------------------------------------------
+HANDLE g_evEvent {};
+//-------------------------------------------------------------------------------------------------
 unsigned int __stdcall
-threadA(void *param) {
+threadA(void *param)
+{
     std::cout << "Thread A: start" << std::endl;
 
 	BOOL blRv = ::SetEvent(g_evEvent);
@@ -82,13 +83,14 @@ threadA(void *param) {
 
 	return 0U;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 unsigned int __stdcall
-threadB(void *param) {
+threadB(void *param)
+{
 	::WaitForSingleObject(g_evEvent, INFINITE);
     std::cout << "Thread B: start" << std::endl;
 
-    if (TRUE == g_cbManualReset) {
+    if (g_cbManualReset == TRUE) {
         BOOL blRv = ::ResetEvent(g_evEvent);
         assert(FALSE != blRv);
         std::cout << "Thread B: ResetEvent" << std::endl;
@@ -98,13 +100,14 @@ threadB(void *param) {
 
 	return 0U;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 unsigned int __stdcall
-threadC(void *param) {
+threadC(void *param)
+{
 	::WaitForSingleObject(g_evEvent, INFINITE);
     std::cout << "Thread C: start" << std::endl;
 
-    if (TRUE == g_cbManualReset) {
+    if (g_cbManualReset == TRUE) {
         BOOL blRv = ::ResetEvent(g_evEvent);
         assert(FALSE != blRv);
         std::cout << "Thread C: ResetEvent" << std::endl;
@@ -114,15 +117,15 @@ threadC(void *param) {
 
 	return 0U;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	g_evEvent = ::CreateEvent(NULL, g_cbManualReset, g_cbIsSignaled, NULL);
-    assert(NULL != g_evEvent);
+	g_evEvent = ::CreateEvent(nullptr, g_cbManualReset, g_cbIsSignaled, nullptr);
+    assert(g_evEvent != nullptr);
 
-	HANDLE handleA = (HANDLE)::_beginthreadex(NULL, 0U, &threadA, NULL, 0U, NULL);
-	HANDLE handleB = (HANDLE)::_beginthreadex(NULL, 0U, &threadB, NULL, 0U, NULL);
-    //HANDLE handleC = (HANDLE)::_beginthreadex(NULL, 0U, &threadC, NULL, 0U, NULL);
+	HANDLE handleA = (HANDLE)::_beginthreadex(nullptr, 0U, &threadA, nullptr, 0U, nullptr);
+	HANDLE handleB = (HANDLE)::_beginthreadex(nullptr, 0U, &threadB, nullptr, 0U, nullptr);
+    //HANDLE handleC = (HANDLE)::_beginthreadex(nullptr, 0U, &threadC, nullptr, 0U, nullptr);
 
 	::WaitForSingleObject(handleA, INFINITE);
 	::WaitForSingleObject(handleB, INFINITE);
@@ -139,7 +142,7 @@ int main(int, char **)
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT

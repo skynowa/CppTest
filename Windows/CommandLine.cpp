@@ -1,12 +1,10 @@
 /**
- * \file
+ * \file  CommandLine.cpp
  * \brief
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 #include <string>
 #include <iostream>
 #include <assert.h>
@@ -14,15 +12,16 @@
 #include <windows.h>
 #include <Winternl.h>
 #include <memory>
-//---------------------------------------------------------------------------
-typedef NTSTATUS (NTAPI *_NtQueryInformationProcess) (
+//-------------------------------------------------------------------------------------------------
+typedef NTSTATUS (NTAPI *_NtQueryInformationProcess)
+(
     HANDLE ProcessHandle,
     DWORD  ProcessInformationClass,
     PVOID  ProcessInformation,
     DWORD  ProcessInformationLength,
     PDWORD ReturnLength
 );
-
+//-------------------------------------------------------------------------------------------------
 PVOID
 _GetPebAddress(const HANDLE &ProcessHandle)
 {
@@ -35,7 +34,6 @@ _GetPebAddress(const HANDLE &ProcessHandle)
     assert(NULL != NtQueryInformationProcess);
 
     PROCESS_BASIC_INFORMATION pbi;
-
     PROCESSINFOCLASS picInfo86 = ProcessBasicInformation;
     PROCESSINFOCLASS picInfo64 = ProcessWow64Information;
 
@@ -47,7 +45,7 @@ _GetPebAddress(const HANDLE &ProcessHandle)
 
     return pvRv;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 std::string
 sCommandLine(
     const DWORD &a_ciPid
@@ -99,7 +97,7 @@ sCommandLine(
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
-    DWORD dwPid  = 2088;
+    DWORD dwPid = 2088;
 
     std::string sCmd = sCommandLine(dwPid);
     std::cout << "sCmd: " << sCmd << std::endl;

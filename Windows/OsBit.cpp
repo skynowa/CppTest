@@ -1,5 +1,5 @@
 /**
- * \file  main.cpp
+ * \file  OsBit.cpp
  * \brief
  *
  * \todo

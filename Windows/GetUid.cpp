@@ -1,5 +1,5 @@
 /**
- * \file  main.cpp
+ * \file  GetUid.cpp
  * \brief
  *
  * \todo
