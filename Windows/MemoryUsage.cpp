@@ -1,19 +1,20 @@
 /**
  * \file  MemoryUsage.cpp
  * \brief
- *
- * \todo
  */
 
 
+//-------------------------------------------------------------------------------------------------
 #include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
 #include <vector>
+//-------------------------------------------------------------------------------------------------
 HWND GetConsoleHwnd(void)
 {
-#define MY_BUFSIZE 1024
+	#define MY_BUFSIZE 1024
+
 	HWND hwndFound;
 	char pszNewWindowTitle[MY_BUFSIZE];
 	char pszOldWindowTitle[MY_BUFSIZE];
@@ -24,9 +25,12 @@ HWND GetConsoleHwnd(void)
 	SetConsoleTitle(pszNewWindowTitle);
 	hwndFound=FindWindow(NULL, pszNewWindowTitle);
 	SetConsoleTitle(pszOldWindowTitle);
+
 	return(hwndFound);
 }
-int main(int, char **) {
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
 	char src[80];
 	char dest[80];
 	int Div=1024;
@@ -39,6 +43,7 @@ int main(int, char **) {
 	SetConsoleTitle(dest);
 	SetConsoleTextAttribute ( hStdout,  BACKGROUND_BLUE |7 );
 	system("cls");
+
 	GlobalMemoryStatus (&stat);
 	strcpy(src,"���������� ������ ��������");CharToOem(src,dest);
 	printf("%s\t%ld Kb\n",dest, stat.dwTotalPhys/Div);
@@ -53,7 +58,9 @@ int main(int, char **) {
 	strcpy(src,"����������� ������ ��������");CharToOem(src,dest);
 	printf("%s\t%ld Kb\n\n",dest, stat.dwAvailVirtual/Div);
 	printf ("%ld%%",stat.dwMemoryLoad);
+
 	SetConsoleTextAttribute ( hStdout,  BACKGROUND_BLUE |14 );
+
 	do
 	{
 		::Sleep(40);
@@ -68,12 +75,11 @@ int main(int, char **) {
 			sprintf (src,"%ld%% %s",stat.dwMemoryLoad,dest);
 			SetConsoleTitle(src);
 		}
+
 		old=stat.dwMemoryLoad;
 	}
-	while(true);
+	while (true);
 
-	system("pause");
 	return 0;
 }
-
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------

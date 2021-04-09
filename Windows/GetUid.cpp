@@ -1,8 +1,6 @@
 /**
  * \file  GetUid.cpp
  * \brief
- *
- * \todo
  */
 
 
