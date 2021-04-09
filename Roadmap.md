@@ -974,17 +974,17 @@
     </details>
 
 * <details close>
-  <summary><b>Windows</b> [███████░░░] 72% (39)</summary>
+  <summary><b>Windows</b> [█████████░] 92% (39)</summary>
 
-    * ❌ CxHandle.cpp
-    * ❌ getuid.cpp
-    * ❌ Batery.cpp
-    * ❌ OsBit.txt
-    * ❌ AnsiUtf8.cpp
+    * ✅ `GetUid.cpp`
+    * ✅ `CxHandle.cpp`
+    * ✅ `Battery.cpp`
+    * ✅ `AnsiUtf8.cpp`
     * ❌ Event.cpp
-    * ❌ GetTokenInformation.cpp
-    * ❌ CommandLine.cpp
-    * ❌ MemoryUsage.cpp
+    * ✅ `GetTokenInformation.cpp`
+    * ✅ `OsBit.md`
+    * ✅ `CommandLine.cpp`
+    * ✅ `MemoryUsage.cpp`
     * ❌ OsBit.cpp
     * ❌ WaitForSingleObject.cpp
 

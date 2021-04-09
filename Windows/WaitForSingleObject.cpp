@@ -5,32 +5,34 @@
  * \todo
  */
 
-// WaitForSingleObject Sample.cpp
-
+//-------------------------------------------------------------------------------------------------
 #include <windows.h>
 #include <iostream>
 #include <stdio.h>
 #include <string>
 #include <vector>
-
+//-------------------------------------------------------------------------------------------------
 using namespace std;
-
-
+//-------------------------------------------------------------------------------------------------
 HANDLE hEvent;
-
-DWORD WINAPI SampleThread(LPVOID iValue) {
+//-------------------------------------------------------------------------------------------------
+DWORD WINAPI SampleThread(LPVOID iValue)
+{
 	int iFinish = 10000;
+
 	for	(int i=0; i <= iFinish; i++) {
 		cout << i << endl;
 	}
-	SetEvent(hEvent);
+
+	SetEvent(::hEvent);
 
 	return 0;
 }
-
-void main() {
+//-------------------------------------------------------------------------------------------------
+void main()
+{
 	HANDLE hThread;
-	DWORD dwGenericThread;
+	DWORD  dwGenericThread;
 	hThread = CreateThread(NULL, 0, SampleThread, NULL, 0, &dwGenericThread);
 	if (hThread == NULL) {
 		DWORD dwError = GetLastError();
@@ -38,12 +40,14 @@ void main() {
 		return;
 	}
 
-	hEvent = CreateEvent(NULL, FALSE, FALSE, "Test");
+	::hEvent = CreateEvent(NULL, FALSE, FALSE, "Test");
 	cout << "Started waiting for the thread to complete.." << endl ;
-	WaitForSingleObject(hEvent, INFINITE);
+
+	WaitForSingleObject(::hEvent, INFINITE);
 	cout << "Thread Completed." <<endl ;
 
-	CloseHandle(hEvent);
+	CloseHandle(::hEvent);
 
 	system("pause");
 }
+//-------------------------------------------------------------------------------------------------

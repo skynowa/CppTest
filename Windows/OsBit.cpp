@@ -2,35 +2,31 @@
  * \file  OsBit.cpp
  * \brief
  *
- * \todo
+ * Module Name:	CppCheckOSBitness.cpp
+ * Project:		CppCheckOSBitness
+ * Copyright (c) Microsoft Corporation.
+ *
+ * The code sample demonstrates how to determine whether the operating system
+ * of the current machine or any remote machine is a 64-bit operating system.
+ *
+ * This source is subject to the Microsoft Public License.
+ * See http://www.microsoft.com/opensource/licenses.mspx#Ms-PL.
+ * All other rights reserved.
+ *
+ * THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
+ * EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
  */
 
 
-/****************************** Module Header ******************************\
-* Module Name:	CppCheckOSBitness.cpp
-* Project:		CppCheckOSBitness
-* Copyright (c) Microsoft Corporation.
-*
-* The code sample demonstrates how to determine whether the operating system
-* of the current machine or any remote machine is a 64-bit operating system.
-*
-* This source is subject to the Microsoft Public License.
-* See http://www.microsoft.com/opensource/licenses.mspx#Ms-PL.
-* All other rights reserved.
-*
-* THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
-* EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
-* WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-\***************************************************************************/
-
+//-------------------------------------------------------------------------------------------------
 #pragma region Includes
 #include <stdio.h>
 #include <windows.h>
 #pragma endregion
 
-
 #pragma region Is64BitOperatingSystem (IsWow64Process)
-
+//-------------------------------------------------------------------------------------------------
 //
 //   FUNCTION: DoesWin32MethodExist(PCWSTR, PCSTR)
 //
@@ -54,8 +50,7 @@ BOOL DoesWin32MethodExist(PCWSTR pszModuleName, PCSTR pszMethodName)
     }
     return (GetProcAddress(hModule, pszMethodName) != NULL);
 }
-
-
+//-------------------------------------------------------------------------------------------------
 //
 //   FUNCTION: Is64BitOperatingSystem()
 //
@@ -78,9 +73,8 @@ BOOL Is64BitOperatingSystem()
     return FALSE;  // 64-bit Windows does not support Win16
 #endif
 }
-
+//-------------------------------------------------------------------------------------------------
 #pragma endregion
-
 
 #pragma region Is64BitOperatingSystem (WMI)
 
@@ -89,8 +83,7 @@ BOOL Is64BitOperatingSystem()
 #include <strsafe.h>
 #include <comdef.h>
 #include <wincred.h>
-
-
+//-------------------------------------------------------------------------------------------------
 //
 //   FUNCTION: Is64BitOperatingSystem(LPCWSTR, LPCWSTR, LPCWSTR)
 //
@@ -355,10 +348,9 @@ Cleanup:
 
     return f64bitOS;
 }
-
+//-------------------------------------------------------------------------------------------------
 #pragma endregion
-
-
+//-------------------------------------------------------------------------------------------------
 int wmain(int argc, wchar_t* argv[])
 {
     // Solution 1. Is64BitOperatingSystem (IsWow64Process)
@@ -390,3 +382,4 @@ int wmain(int argc, wchar_t* argv[])
 
 	return 0;
 }
+//-------------------------------------------------------------------------------------------------
