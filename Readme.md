@@ -17,7 +17,7 @@
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) █░░░░░░░░░ 14% (14)
 - [Unix](#unix) ░░░░░░░░░░ 0% (3)
-- [Windows](#windows) ██████████ 100% (37)
+- [Windows](#windows) ████████░░ 81% (37)
 
 
 ##  <a id="algos">Algos ░░░░░░░░░░ 0% (13)</a> <a href="#" title="Back to top">⇧</a>
@@ -985,7 +985,7 @@
 
     </details>
 
-##  <a id="windows">Windows ██████████ 100% (37)</a> <a href="#" title="Back to top">⇧</a>
+##  <a id="windows">Windows ████████░░ 81% (37)</a> <a href="#" title="Back to top">⇧</a>
 
 * ✅ `GetUid.cpp`
 * ✅ `CxHandle.cpp`
@@ -1000,7 +1000,7 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ RegDLL 100% (28)</summary>
+    <summary>📁 ⌛ RegDLL 75% (28)</summary>
 
 
     </details>
@@ -1022,28 +1022,28 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ MFCAp 100% (12)</summary>
+      <summary>📁 ⌛ MFCAp 67% (12)</summary>
 
                 * ✅ `StdAfx.cpp`
-                * ✅ `MainFrm.cpp`
+                * ❌ MainFrm.cpp
                 * ✅ `Resource.h`
                 * ✅ `MFCApView.h`
                 * ✅ `MFCApDoc.h`
                 * ✅ `DLLCode.h`
-                * ✅ `MFCApView.cpp`
+                * ❌ MFCApView.cpp
                 * ✅ `MFCAp.h`
-                * ✅ `MFCAp.cpp`
-                * ✅ `MFCApDoc.cpp`
+                * ❌ MFCAp.cpp
+                * ❌ MFCApDoc.cpp
                 * ✅ `MainFrm.h`
                 * ✅ `StdAfx.h`
 
       </details>
 
     * <details close>
-      <summary>📁 ✅ RDLLMFC 100% (7)</summary>
+      <summary>📁 ⌛ RDLLMFC 86% (7)</summary>
 
                 * ✅ `StdAfx.cpp`
-                * ✅ `RDLLMFC.cpp`
+                * ❌ RDLLMFC.cpp
                 * ✅ `RDLLMFC.h`
                 * ✅ `Resource.h`
                 * ✅ `DLLCode.h`
@@ -1053,13 +1053,13 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ W32DLL 100% (5)</summary>
+      <summary>📁 ⌛ W32DLL 60% (5)</summary>
 
-                * ✅ `StdAfx.cpp`
+                * ❌ StdAfx.cpp
                 * ✅ `DLLCode.h`
                 * ✅ `DLLCode.cpp`
                 * ✅ `W32DLL.cpp`
-                * ✅ `StdAfx.h`
+                * ❌ StdAfx.h
 
       </details>
 

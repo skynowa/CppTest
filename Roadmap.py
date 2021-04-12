@@ -76,19 +76,21 @@ class RoadmapGen:
 	################################################################################################
 	# Check file for 'todo' labels
 	def _isFileTodo(self, a_filePath):
-		isTodo = True
-
-		todoLabel = '\\todo'
+		todoLabels = ['todo']
 
 		try:
 			f = open(a_filePath, "r")
 			fileContent = f.read()
 
-			isTodo = (fileContent.find(todoLabel) != -1)
+			for it_todoLabel in todoLabels:
+				match = re.search(it_todoLabel, fileContent, re.IGNORECASE)
+				if (match):
+					return True
+			# for
 		except:
 			self._writeLine("Error: {}\n".format(a_filePath))
 
-		return isTodo
+		return False
 
 	################################################################################################
 	# Collect dirs info
