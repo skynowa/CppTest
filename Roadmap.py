@@ -12,7 +12,7 @@
 # + Progress bar for each dir
 # + Done/Todo icons
 # + Ignores dirs/files
-# ? Draw "brances"
+# ? Draw "branches"
 # - Clickable files
 # + todo labels list
 #
@@ -200,10 +200,6 @@ class RoadmapGen:
 
 		# Dir (begin)
 		if (a_level == 0):
-			# self._writeLine('{}<details close>'.format(indent))
-			# self._writeLine('{}<summary><b>{}</b> {}</summary>'
-			# 	.format(indent, dirName, self._progressBar(doneFilesPct, allfilesNum)))
-
 			self._writeLine('##  <a id="{}">{} {}</a> {}'.format(
 				dirName.lower(),
 				dirName,
