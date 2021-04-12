@@ -44,6 +44,8 @@ class RoadmapGen:
 	dirsExcludes  = []
 	filesIncludes = []
 
+	lableTitle    = ''
+
 	################################################################################################
 	# ctr
 	def __init__(self):
@@ -58,6 +60,8 @@ class RoadmapGen:
 			'*.txt', '*.md', '*.htm','*.html',
 			'*.js', '*.java']
 		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
+
+		self.labelTitle = 'cpp-roadmap'
 
 	################################################################################################
 	# Construct dic
@@ -204,7 +208,7 @@ class RoadmapGen:
 				dirName.lower(),
 				dirName,
 				self._progressBar(doneFilesPct, allfilesNum),
-				self._backTo('c-roadmap', 'Back to top', '⇧')))
+				self._backTo(self.labelTitle, 'Back to top', '⇧')))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
@@ -251,7 +255,7 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._label('c-roadmap', 'C++ Roadmap', 'C++ Roadmap')))
+		self._writeLine('# {}'.format(self._label(self.labelTitle, 'C++ Roadmap', 'C++ Roadmap')))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
