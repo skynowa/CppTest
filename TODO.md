@@ -8,6 +8,11 @@
 
 - https://dou.ua/lenta/columns/skills-outside-of-programming-languages/
 
+## C++ modern
+
+- https://github.com/AnthonyCalandra/modern-cpp-features
+- https://github.com/NTimmons/ModernCPP_Examples
+
 ## Move
 
 https://www.youtube.com/watch?v=oQDOqB1asNw
