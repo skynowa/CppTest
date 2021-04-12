@@ -137,8 +137,8 @@ class RoadmapGen:
 		return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 	################################################################################################
-	def _dirProcess(self, level, dirPath, dirs, files):
-		if (level < 0):
+	def _dirProcess(self, a_level, a_dirPath, a_dirs, a_files):
+		if (a_level < 0):
 			return
 
 		iconCurrent    = ''
@@ -147,14 +147,14 @@ class RoadmapGen:
 		iconInProgress = '⌛'
 		iconDir        = '📁'
 
-		indent    = '  ' * level
-		subindent = '    ' * level
+		indent    = '  ' * a_level
+		subindent = '    ' * a_level
 
 		# _writeLine('dirPath: {}'.format(dirPath))
 
 		# dir
 
-		info = self.tree[dirPath]
+		info = self.tree[a_dirPath]
 		# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
 
 		allfilesNum  = info[0]
@@ -167,30 +167,30 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
-		if (level == 0):
+		if (a_level == 0):
 			# Dir
 			self._writeLine('{}<details close>'.format(indent))
 
 			# Root dir
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
-			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+			# 	.format(indent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
 
 			self._writeLine('{}<summary><b>{}</b> {}</summary>'
-				.format(indent, os.path.basename(dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+				.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
-			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
+			# 	.format(indent, os.path.basename(a_dirPath), doneFilesPct, doneFilesPct))
 		else:
 			# Dir
 			self._writeLine('{}* <details close>'.format(indent))
 
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
-				.format(indent, iconDir, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
+				.format(indent, iconDir, iconCurrent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
 
 		# files
 		self._writeLine('')
 
-		for it_file in files:
+		for it_file in a_files:
 			fileName = Path(it_file).name
 
 			if ( self._isFileTodo(it_file) ):
@@ -205,7 +205,7 @@ class RoadmapGen:
 		self._writeLine('')
 
 		# Dir  (close)
-		if (level == 0):
+		if (a_level == 0):
 			self._writeLine('{}</details>'.format(indent))
 		else:
 			self._writeLine('{}  </details>'.format(indent))
