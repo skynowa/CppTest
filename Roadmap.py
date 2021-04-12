@@ -269,7 +269,7 @@ class RoadmapGen:
 		self._writeLine('')
 
 		# Content
-		self._writeLine('<div style="background-color:black">')
+		# self._writeLine('<div style="background-color:black">')
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
@@ -288,7 +288,7 @@ class RoadmapGen:
 		# for
 
 		# Title - ends
-		self._writeLine('</div>')
+		# self._writeLine('</div>')
 
 ################################################################################################
 if __name__ == "__main__":
