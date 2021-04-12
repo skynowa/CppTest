@@ -188,8 +188,8 @@ class RoadmapGen:
 			# self._writeLine('{}<summary><b>{}</b> {}</summary>'
 			# 	.format(indent, dirName, self._progressBar(doneFilesPct, allfilesNum)))
 
-			self._writeLine('##  <a id="{}">{} {}</a>'
-				.format(dirName.lower(), dirName, self._progressBar(doneFilesPct, allfilesNum)))
+			self._writeLine('##  <a id="{}">{} {}</a> {}'
+				.format(dirName.lower(), dirName, self._progressBar(doneFilesPct, allfilesNum), '<a href="#" title="Back to top">⇧</a>'))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
