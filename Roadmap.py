@@ -167,13 +167,12 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
+		# Dir (begin)
 		if (a_level == 0):
-			# Dir
 			self._writeLine('{}<details close>'.format(indent))
 			self._writeLine('{}<summary><b>{}</b> {}</summary>'
 				.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 		else:
-			# Dir
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
 				.format(indent, iconDir, iconCurrent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
@@ -194,7 +193,7 @@ class RoadmapGen:
 
 		self._writeLine('')
 
-		# Dir  (close)
+		# Dir (end)
 		if (a_level == 0):
 			self._writeLine('{}</details>'.format(indent))
 		else:
