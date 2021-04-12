@@ -37,16 +37,13 @@ isBot(const char *a_ip)
     STD_TEST(ip > 0);
 
     for (size_t i = 0 ; i < blackListSize; ++ i) {
-        const int iRv = ( blackList[i][0] == (ip & blackList[i][1]) );
-        if (iRv != 0) {
+        const auto _ip_test   = blackList[i][0];
+        const auto _mask_test = blackList[i][1];
+
+        const bool bRv = (_ip_test == (ip & _mask_test));
+        if (bRv) {
+            std::cout << TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl;
             return true;
-        }
-
-        if (false) {
-            const auto _ip   { blackList[i][0] };
-            const auto _mask { blackList[i][1] };
-
-            std::cout << TRACE_VAR3(_ip, _mask, iRv) << std::endl;
         }
     }
 
@@ -70,6 +67,10 @@ int main(int, char **)
 #if 0
 
 blackListSize: 3830
+
+_ip_test: 3518589952, _mask_test: 4294967040, bRv: 1
+
 ip: 209.185.108.10, bRv: 1
+
 
 #endif
