@@ -152,7 +152,6 @@ class RoadmapGen:
 		# _writeLine('dirPath: {}'.format(dirPath))
 
 		# dir
-		self._writeLine('{}* <details close>'.format(indent))
 
 		info = self.tree[dirPath]
 		# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
@@ -167,8 +166,11 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
-		# root dir
+		# Dir
+		self._writeLine('{}* <details close>'.format(indent))
+
 		if (level == 1):
+			# Root dir
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
