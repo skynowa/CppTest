@@ -148,7 +148,7 @@ class RoadmapGen:
 		return '<a id="{}" title="{}">{}</a>'.format(a_id, a_title, a_text)
 
 	def _goToLabel(self, a_id, a_title, a_text):
-		# ▴ ⬆ ⇧
+		# ▴ ⬆ ⇧ [↩]
 		return '<a href="#{}" title="{}">{}</a>'.format(a_id, a_title, a_text)
 
 	################################################################################################
