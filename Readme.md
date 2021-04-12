@@ -113,7 +113,7 @@
     * <details close>
       <summary>📁 ❌ IsBot 0% (1)</summary>
 
-        * ❌ main_BlackList.cpp
+        * ❌ IsBot.cpp
 
       </details>
 
