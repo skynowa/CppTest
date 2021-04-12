@@ -179,10 +179,6 @@ class RoadmapGen:
 		indent    = '  '   * a_level
 		subindent = '    ' * a_level
 
-		# _writeLine('dirPath: {}'.format(dirPath))
-
-		# dir
-
 		info = self.tree[a_dirPath]
 		# _writeLine('{}: <{}, {}, {}, {}>'.format(dirPath, info[0], info[1], info[2], info[3]))
 
