@@ -147,7 +147,7 @@ class RoadmapGen:
 	def _label(self, a_id, a_title, a_text):
 		return '<a id="{}" title="{}">{}</a>'.format(a_id, a_title, a_text)
 
-	def _backTo(self, a_id, a_title, a_text):
+	def _goToLabel(self, a_id, a_title, a_text):
 		# ▴ ⬆ ⇧
 		return '<a href="#{}" title="{}">{}</a>'.format(a_id, a_title, a_text)
 
@@ -200,7 +200,7 @@ class RoadmapGen:
 				dirName.lower(),
 				dirName,
 				self._progressBar(doneFilesPct, allfilesNum),
-				self._backTo(self.labelTitle, 'Back to top', '⇧')))
+				self._goToLabel(self.labelTitle, 'Back to top', '⇧')))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
