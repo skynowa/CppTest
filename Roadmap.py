@@ -204,7 +204,7 @@ class RoadmapGen:
 				dirName.lower(),
 				dirName,
 				self._progressBar(doneFilesPct, allfilesNum),
-				self._backTo('cpp-roadmap', 'Back to top', '⇧')))
+				self._backTo('c-roadmap', 'Back to top', '⇧')))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
@@ -251,7 +251,7 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._label('cpp-roadmap', 'C++ Roadmap', 'C++ Roadmap')))
+		self._writeLine('# {}'.format(self._label('c-roadmap', 'C++ Roadmap', 'C++ Roadmap')))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
