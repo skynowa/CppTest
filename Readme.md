@@ -1,4 +1,4 @@
-# C++ Roadmap
+# <a href="#" title="">C++ Roadmap</a>
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
@@ -506,7 +506,7 @@
 
 * ✅ `README.md`
 * ❌ CppQuestions.md
-* ❌ FAQ.txt
+* ❌ FAQ.md
 * ❌ CppInterview400_dou.ua.md
 * ❌ RSDN.md
 
