@@ -1,4 +1,4 @@
-# C++ Roadmap [todo]
+# C++ Roadmap
 
 <div style="background-color:black">
 

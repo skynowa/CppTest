@@ -14,6 +14,7 @@
 # + Ignores dirs/files
 # ? Draw "brances"
 # - Clickable files
+# - todo labels list
 #
 ################################################################################################
 
@@ -137,7 +138,7 @@ class RoadmapGen:
 
 	################################################################################################
 	def _dirProcess(self, level, dirPath, dirs, files):
-		if (level == 0):
+		if (level < 0):
 			return
 
 		iconCurrent    = ''
@@ -146,8 +147,8 @@ class RoadmapGen:
 		iconInProgress = '⌛'
 		iconDir        = '📁'
 
-		indent    = ' ' * 2 * (level - 1)
-		subindent = ' ' * 2 * (level + 1)
+		indent    = '  ' * level
+		subindent = '    ' * level
 
 		# _writeLine('dirPath: {}'.format(dirPath))
 
@@ -166,7 +167,7 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
-		if (level == 1):
+		if (level == 0):
 			# Dir
 			self._writeLine('{}<details close>'.format(indent))
 
@@ -174,7 +175,7 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
 
-			self._writeLine('{}  <summary><b>{}</b> {}</summary>'
+			self._writeLine('{}<summary><b>{}</b> {}</summary>'
 				.format(indent, os.path.basename(dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
@@ -201,7 +202,7 @@ class RoadmapGen:
 		self._writeLine('')
 
 		# Dir  (close)
-		if (level == 1):
+		if (level == 0):
 			self._writeLine('{}</details>'.format(indent))
 		else:
 			self._writeLine('{}  </details>'.format(indent))
@@ -234,7 +235,7 @@ class RoadmapGen:
 			files = [os.path.join(currentDirPath, f) for f in files]
 			files = [f for f in files if re.match(self.filesIncludes, f)]
 
-			level = currentDirPath.replace(rootPath, '').count(os.sep)
+			level = currentDirPath.replace(rootPath, '').count(os.sep) - 1
 
 			self._dirInfo(currentDirPath)
 			self._dirProcess(level, currentDirPath, dirs, files)
