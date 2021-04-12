@@ -148,7 +148,7 @@ class RoadmapGen:
 		iconDir        = '📁'
 
 		indent    = '  ' * a_level
-		subindent = '    ' * a_level
+		subindent = (indent * 2) * a_level
 
 		# _writeLine('dirPath: {}'.format(dirPath))
 
