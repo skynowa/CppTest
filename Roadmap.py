@@ -189,6 +189,7 @@ class RoadmapGen:
 
 		# files
 		self._writeLine('')
+
 		for it_file in files:
 			fileName = Path(it_file).name
 
@@ -199,6 +200,8 @@ class RoadmapGen:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
 			self._writeLine('{}* {}'.format(subindent, fileName))
+		# for
+
 		self._writeLine('')
 
 		# Dir  (close)
