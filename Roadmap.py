@@ -170,16 +170,8 @@ class RoadmapGen:
 		if (a_level == 0):
 			# Dir
 			self._writeLine('{}<details close>'.format(indent))
-
-			# Root dir
-			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
-			# 	.format(indent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
-
 			self._writeLine('{}<summary><b>{}</b> {}</summary>'
 				.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
-
-			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
-			# 	.format(indent, os.path.basename(a_dirPath), doneFilesPct, doneFilesPct))
 		else:
 			# Dir
 			self._writeLine('{}* <details close>'.format(indent))
