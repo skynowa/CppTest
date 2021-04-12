@@ -4,8 +4,8 @@
 
 ## Algos [░░░░░░░░░░] 0% (13)
 
-    * ❌ BubbleSort.cpp
-    * ❌ InvertString.cpp
+  * ❌ BubbleSort.cpp
+  * ❌ InvertString.cpp
 
 
   * <details close>
