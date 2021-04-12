@@ -19,7 +19,6 @@
 - [Unix](#unix) ░░░░░░░░░░ 0% (3)
 - [Windows](#windows) ██████████ 100% (37)
 
-<div style="background-color:black">
 
 ##  <a id="algos">Algos ░░░░░░░░░░ 0% (13)</a> <a href="#" title="Back to top">⇧</a>
 
@@ -1063,4 +1062,3 @@
 
       </details>
 
-</div>
