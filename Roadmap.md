@@ -1,27 +1,27 @@
 # C++ Roadmap
 
-- [Algos](Algos) [░░░░░░░░░░] 0% (13)
-- [C](C) [██████████] 100% (8)
-- [Core](Core) [█░░░░░░░░░] 12% (163)
-- [Crossplatform](Crossplatform) [░░░░░░░░░░] 0% (9)
-- [DevOps](DevOps) [░░░░░░░░░░] 0.0% (0)
-- [FAQ](FAQ) [░░░░░░░░░░] 0% (4)
-- [IpcMt](IpcMt) [░░░░░░░░░░] 0% (30)
-- [Libs](Libs) [░░░░░░░░░░] 0% (16)
-- [Network](Network) [██████████] 100% (3)
-- [OOD](OOD) [░░░░░░░░░░] 0.0% (0)
-- [Patterns](Patterns) [░░░░░░░░░░] 0% (30)
-- [PreproccessCompile](PreproccessCompile) [░░░░░░░░░░] 0.0% (0)
-- [SCM_CI_CD](SCM_CI_CD) [░░░░░░░░░░] 0.0% (0)
-- [SQL](SQL) [░░░░░░░░░░] 0% (1)
-- [Stl](Stl) [░░░░░░░░░░] 2% (81)
-- [Templates](Templates) [█░░░░░░░░░] 14% (14)
-- [Unix](Unix) [░░░░░░░░░░] 0% (3)
-- [Windows](Windows) [██████████] 100% (37)
+- [Algos](#Algos) [░░░░░░░░░░] 0% (13)
+- [C](#C) [██████████] 100% (8)
+- [Core](#Core) [█░░░░░░░░░] 12% (163)
+- [Crossplatform](#Crossplatform) [░░░░░░░░░░] 0% (9)
+- [DevOps](#DevOps) [░░░░░░░░░░] 0.0% (0)
+- [FAQ](#FAQ) [░░░░░░░░░░] 0% (4)
+- [IpcMt](#IpcMt) [░░░░░░░░░░] 0% (30)
+- [Libs](#Libs) [░░░░░░░░░░] 0% (16)
+- [Network](#Network) [██████████] 100% (3)
+- [OOD](#OOD) [░░░░░░░░░░] 0.0% (0)
+- [Patterns](#Patterns) [░░░░░░░░░░] 0% (30)
+- [PreproccessCompile](#PreproccessCompile) [░░░░░░░░░░] 0.0% (0)
+- [SCM_CI_CD](#SCM_CI_CD) [░░░░░░░░░░] 0.0% (0)
+- [SQL](#SQL) [░░░░░░░░░░] 0% (1)
+- [Stl](#Stl) [░░░░░░░░░░] 2% (81)
+- [Templates](#Templates) [█░░░░░░░░░] 14% (14)
+- [Unix](#Unix) [░░░░░░░░░░] 0% (3)
+- [Windows](#Windows) [██████████] 100% (37)
 
 <div style="background-color:black">
 
-## Algos [░░░░░░░░░░] 0% (13) <span id="Algos"></span>
+## Algos [░░░░░░░░░░] 0% (13)
 
 * ❌ BubbleSort.cpp
 * ❌ InvertString.cpp
@@ -57,7 +57,7 @@
 
     </details>
 
-## C [██████████] 100% (8) <span id="C"></span>
+## C [██████████] 100% (8)
 
 * ✅ `Time.cpp`
 * ✅ `Atoi.cpp`
@@ -76,7 +76,7 @@
 
     </details>
 
-## Core [█░░░░░░░░░] 12% (163) <span id="Core"></span>
+## Core [█░░░░░░░░░] 12% (163)
 
 * ✅ `Explicit.cpp`
 * ✅ `GoTo.cpp`
@@ -472,7 +472,7 @@
 
     </details>
 
-## Crossplatform [░░░░░░░░░░] 0% (9) <span id="Crossplatform"></span>
+## Crossplatform [░░░░░░░░░░] 0% (9)
 
 
 </details>
@@ -498,12 +498,12 @@
 
     </details>
 
-## DevOps [░░░░░░░░░░] 0.0% (0) <span id="DevOps"></span>
+## DevOps [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-## FAQ [░░░░░░░░░░] 0% (4) <span id="FAQ"></span>
+## FAQ [░░░░░░░░░░] 0% (4)
 
 * ❌ CppQuestions.md
 * ❌ FAQ.txt
@@ -512,7 +512,7 @@
 
 </details>
 
-## IpcMt [░░░░░░░░░░] 0% (30) <span id="IpcMt"></span>
+## IpcMt [░░░░░░░░░░] 0% (30)
 
 * ❌ signal_stacktrace.cpp
 * ❌ psiginfo.cpp
@@ -601,7 +601,7 @@
 
     </details>
 
-## Libs [░░░░░░░░░░] 0% (16) <span id="Libs"></span>
+## Libs [░░░░░░░░░░] 0% (16)
 
 
 </details>
@@ -676,7 +676,7 @@
 
       </details>
 
-## Network [██████████] 100% (3) <span id="Network"></span>
+## Network [██████████] 100% (3)
 
 * ✅ `IpString.cpp`
 * ✅ `TcpUdpDiffs.md`
@@ -684,12 +684,12 @@
 
 </details>
 
-## OOD [░░░░░░░░░░] 0.0% (0) <span id="OOD"></span>
+## OOD [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-## Patterns [░░░░░░░░░░] 0% (30) <span id="Patterns"></span>
+## Patterns [░░░░░░░░░░] 0% (30)
 
 * ❌ FAQ.md
 
@@ -742,23 +742,23 @@
 
     </details>
 
-## PreproccessCompile [░░░░░░░░░░] 0.0% (0) <span id="PreproccessCompile"></span>
+## PreproccessCompile [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-## SCM_CI_CD [░░░░░░░░░░] 0.0% (0) <span id="SCM_CI_CD"></span>
+## SCM_CI_CD [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-## SQL [░░░░░░░░░░] 0% (1) <span id="SQL"></span>
+## SQL [░░░░░░░░░░] 0% (1)
 
 * ❌ test.sql
 
 </details>
 
-## Stl [░░░░░░░░░░] 2% (81) <span id="Stl"></span>
+## Stl [░░░░░░░░░░] 2% (81)
 
 * ✅ `StlFeatures.md`
 
@@ -952,7 +952,7 @@
 
     </details>
 
-## Templates [█░░░░░░░░░] 14% (14) <span id="Templates"></span>
+## Templates [█░░░░░░░░░] 14% (14)
 
 * ❌ MaximumOfTwoValues.cpp
 * ❌ VariadicFunc.cpp
@@ -971,7 +971,7 @@
 
 </details>
 
-## Unix [░░░░░░░░░░] 0% (3) <span id="Unix"></span>
+## Unix [░░░░░░░░░░] 0% (3)
 
 * ❌ umask.cpp
 * ❌ Fork.cpp
@@ -985,7 +985,7 @@
 
     </details>
 
-## Windows [██████████] 100% (37) <span id="Windows"></span>
+## Windows [██████████] 100% (37)
 
 * ✅ `GetUid.cpp`
 * ✅ `CxHandle.cpp`

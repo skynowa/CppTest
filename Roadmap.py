@@ -137,6 +137,17 @@ class RoadmapGen:
 		return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 	################################################################################################
+	# TOC
+	def _tocProcess(self, a_dirPath):
+		info = self.tree[a_dirPath]
+
+		allfilesNum  = info[0]
+		doneFilesPct = info[3]
+
+		self._writeLine('- [{0}](#{0}) {1}'
+			.format(os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+
+	################################################################################################
 	def _dirProcess(self, a_level, a_dirPath, a_dirs, a_files):
 		if (a_level < 0):
 			return
@@ -169,9 +180,12 @@ class RoadmapGen:
 
 		# Dir (begin)
 		if (a_level == 0):
-			self._writeLine('{}<details close>'.format(indent))
-			self._writeLine('{}<summary><b>{}</b> {}</summary>'
-				.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+			# self._writeLine('{}<details close>'.format(indent))
+			# self._writeLine('{}<summary><b>{}</b> {}</summary>'
+			# 	.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+
+			self._writeLine('## {0} {1}'
+				.format(os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
@@ -210,13 +224,36 @@ class RoadmapGen:
 		# g { color: Green }
 		# </style>
 
+		rootPath = str(Path.cwd());
+
 		# Title
 		self._writeLine('# C++ Roadmap')
 		self._writeLine('')
-		self._writeLine('<div style="background-color:black">')
+
+		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
+			level = it_currentDirPath.replace(rootPath, '').count(os.sep) - 1
+
+			# exclude dirs
+			it_dirs[:] = [d for d in it_dirs if d not in self.dirsExcludes]
+			it_dirs.sort(reverse=False)
+
+			# exclude/include files
+			it_files = [os.path.join(it_currentDirPath, f) for f in it_files]
+			it_files = [f for f in it_files if re.match(self.filesIncludes, f)]
+
+			self._dirInfo(it_currentDirPath)
+
+			if (level != 0):
+				continue
+
+			self._tocProcess(it_currentDirPath)
+		# for
+
 		self._writeLine('')
 
-		rootPath = str(Path.cwd());
+		# Content
+		self._writeLine('<div style="background-color:black">')
+		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
 			level = it_currentDirPath.replace(rootPath, '').count(os.sep) - 1
