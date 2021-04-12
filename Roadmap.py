@@ -139,7 +139,8 @@ class RoadmapGen:
 	################################################################################################
 	# Back to top link
 	def _backToTop(self):
-		return '<a href="#" title="Back to top">⇧</a>'
+		# ▴ ⬆ ⇧
+		return '<a href="#" title="Back to top">{}</a>'.format('⇧')
 
 	################################################################################################
 	# TOC
@@ -164,6 +165,7 @@ class RoadmapGen:
 		iconDone       = '✅'
 		iconInProgress = '⌛'
 		iconDir        = '📁'
+		# 🕵
 
 		indent    = '  ' * a_level
 		subindent = (indent * 2) * a_level
