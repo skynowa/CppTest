@@ -76,7 +76,7 @@ class RoadmapGen:
 	################################################################################################
 	# Check file for 'todo' labels
 	def _isFileTodo(self, a_filePath):
-		todoLabels = ['todo']
+		todoLabels = [r'\\todo', r'\[todo\]']
 
 		try:
 			f = open(a_filePath, "r")
