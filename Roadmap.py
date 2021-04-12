@@ -61,10 +61,10 @@ class RoadmapGen:
 
 	################################################################################################
 	# Construct dic
-	def _nestedDictDefault(self, default_factory, depth = 1):
-		result = partial(defaultdict, default_factory)
+	def _nestedDictDefault(self, a_default_factory, a_depth = 1):
+		result = partial(defaultdict, a_default_factory)
 
-		for _ in repeat(None, depth - 1):
+		for _ in repeat(None, a_depth - 1):
 			result = partial(defaultdict, result)
 
 		return result()
