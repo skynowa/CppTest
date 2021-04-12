@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  fallthrough.cpp
  * \brief [[fallthrough]]
- *
- * \todo
  *
  * This attribute indicates that the break operator inside a case block is missing intentionally
  * (i.e., control is passed to the next case block), and therefore, a compiler or static code
@@ -42,8 +40,6 @@ int main(int, char **)
         f5();
     }
 
-    // std::cout << TRACE_VAR("") << std::endl;
-
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
@@ -51,6 +47,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+// no warnings
 
 #endif

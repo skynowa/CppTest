@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  maybe_unused.cpp
  * \brief [[maybe_unused]]
- *
- * \todo
  *
  * This attribute is used to suppress compiler/analyzer warnings for unused variables,
  * function parameters, static functions, and more.
@@ -28,8 +26,6 @@ void Func()
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // std::cout << TRACE_VAR("") << std::endl;
-
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
@@ -37,6 +33,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+// no warnings
 
 #endif

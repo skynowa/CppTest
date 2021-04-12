@@ -1,5 +1,5 @@
 /**
- * \file  main.cpp
+ * \file  Sample1.cpp
  * \brief New standard attributes
  *
  * C++17 introduces three new attributes: [[fallthrough]], [[nodiscard]], [[maybe_unused]]
@@ -9,7 +9,6 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 // Will warn if return of foo() is ignored
 [[nodiscard]] int
@@ -20,7 +19,7 @@ foo()
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	int a {1};
+	const int a {1};
 
 	switch (a) {
 	// Indicates that falling through on case 1 is intentional
@@ -28,7 +27,7 @@ int main(int, char **)
 	case 2:
 	// Indicates that b might be unused, such as on production builds
 		[[maybe_unused]] int b = foo();
-		assert(b > 0);
+		STD_TEST(b > 0);
 		break;
 	}
 
@@ -39,6 +38,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+// no warnings
 
 #endif
