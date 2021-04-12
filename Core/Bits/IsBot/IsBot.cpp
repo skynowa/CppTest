@@ -21,7 +21,7 @@ constexpr size_t arraySize(T (&)[N]) { return N; }
 //--------------------------------------------------------------------------------------------------
 constexpr size_t blackList[][2]
 {
-    #include "Black_list.lst"
+    #include "BlackList.lst"
 };
 
 const size_t blackListSize = arraySize(blackList);
@@ -31,7 +31,7 @@ isBot(const char *a_ip)
 {
     STD_TEST_PTR(a_ip);
 
-    std::cout << TRACE_VAR(blackListSize) << std::endl;
+    std::cout << TRACE_VAR(blackListSize) << std::endl << std::endl;
 
     const auto ip = ntohl( inet_addr(a_ip) );
     STD_TEST(ip > 0);
@@ -42,7 +42,7 @@ isBot(const char *a_ip)
 
         const bool bRv = (_ip_test == (ip & _mask_test));
         if (bRv) {
-            std::cout << TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl;
+            std::cout << TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl << std::endl;
             return true;
         }
     }
@@ -71,6 +71,5 @@ blackListSize: 3830
 _ip_test: 3518589952, _mask_test: 4294967040, bRv: 1
 
 ip: 209.185.108.10, bRv: 1
-
 
 #endif
