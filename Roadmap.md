@@ -138,11 +138,11 @@
     * <details close>
       <summary>📁⌛ Attributes 80% (5)</summary>
 
-        * ✅ `maybe_unused.cpp`
         * ❌ FAQ.md
         * ✅ `Sample1.cpp`
-        * ✅ `fallthrough.cpp`
-        * ✅ `nodiscard.cpp`
+        * ✅ `MaybeUnused.cpp`
+        * ✅ `FallThrough.cpp`
+        * ✅ `NoDiscard.cpp`
 
       </details>
 
