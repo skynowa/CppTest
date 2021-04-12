@@ -14,7 +14,7 @@
 # + Ignores dirs/files
 # ? Draw "brances"
 # - Clickable files
-# - todo labels list
+# + todo labels list
 #
 ################################################################################################
 
@@ -47,7 +47,7 @@ class RoadmapGen:
 	################################################################################################
 	# ctr
 	def __init__(self):
-		self.mdPath = os.path.dirname(os.path.realpath(__file__)) + '/Roadmap.md';
+		self.mdPath = os.path.dirname(os.path.realpath(__file__)) + '/Readme.md';
 		self.file   = open(self.mdPath, 'w')
 		self.tree   = self._nestedDictDefault(list, 10)
 
