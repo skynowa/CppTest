@@ -2,8 +2,7 @@
 
 <div style="background-color:black">
 
-<details close>
-<summary><b>Algos</b> [░░░░░░░░░░] 0% (13)</summary>
+## Algos [░░░░░░░░░░] 0% (13)
 
 * ❌ BubbleSort.cpp
 * ❌ InvertString.cpp
@@ -39,8 +38,7 @@
 
     </details>
 
-<details close>
-<summary><b>C</b> [██████████] 100% (8)</summary>
+## C [██████████] 100% (8)
 
 * ✅ `Time.cpp`
 * ✅ `Atoi.cpp`
@@ -59,8 +57,7 @@
 
     </details>
 
-<details close>
-<summary><b>Core</b> [█░░░░░░░░░] 12% (163)</summary>
+## Core [█░░░░░░░░░] 12% (163)
 
 * ✅ `Explicit.cpp`
 * ✅ `GoTo.cpp`
@@ -456,8 +453,7 @@
 
     </details>
 
-<details close>
-<summary><b>Crossplatform</b> [░░░░░░░░░░] 0% (9)</summary>
+## Crossplatform [░░░░░░░░░░] 0% (9)
 
 
 </details>
@@ -483,14 +479,12 @@
 
     </details>
 
-<details close>
-<summary><b>DevOps</b> [░░░░░░░░░░] 0.0% (0)</summary>
+## DevOps [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-<details close>
-<summary><b>FAQ</b> [░░░░░░░░░░] 0% (4)</summary>
+## FAQ [░░░░░░░░░░] 0% (4)
 
 * ❌ CppQuestions.md
 * ❌ FAQ.txt
@@ -499,8 +493,7 @@
 
 </details>
 
-<details close>
-<summary><b>IpcMt</b> [░░░░░░░░░░] 0% (30)</summary>
+## IpcMt [░░░░░░░░░░] 0% (30)
 
 * ❌ signal_stacktrace.cpp
 * ❌ psiginfo.cpp
@@ -589,8 +582,7 @@
 
     </details>
 
-<details close>
-<summary><b>Libs</b> [░░░░░░░░░░] 0% (16)</summary>
+## Libs [░░░░░░░░░░] 0% (16)
 
 
 </details>
@@ -665,8 +657,7 @@
 
       </details>
 
-<details close>
-<summary><b>Network</b> [██████████] 100% (3)</summary>
+## Network [██████████] 100% (3)
 
 * ✅ `IpString.cpp`
 * ✅ `TcpUdpDiffs.md`
@@ -674,14 +665,12 @@
 
 </details>
 
-<details close>
-<summary><b>OOD</b> [░░░░░░░░░░] 0.0% (0)</summary>
+## OOD [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-<details close>
-<summary><b>Patterns</b> [░░░░░░░░░░] 0% (30)</summary>
+## Patterns [░░░░░░░░░░] 0% (30)
 
 * ❌ FAQ.md
 
@@ -734,27 +723,23 @@
 
     </details>
 
-<details close>
-<summary><b>PreproccessCompile</b> [░░░░░░░░░░] 0.0% (0)</summary>
+## PreproccessCompile [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-<details close>
-<summary><b>SCM_CI_CD</b> [░░░░░░░░░░] 0.0% (0)</summary>
+## SCM_CI_CD [░░░░░░░░░░] 0.0% (0)
 
 
 </details>
 
-<details close>
-<summary><b>SQL</b> [░░░░░░░░░░] 0% (1)</summary>
+## SQL [░░░░░░░░░░] 0% (1)
 
 * ❌ test.sql
 
 </details>
 
-<details close>
-<summary><b>Stl</b> [░░░░░░░░░░] 2% (81)</summary>
+## Stl [░░░░░░░░░░] 2% (81)
 
 * ✅ `StlFeatures.md`
 
@@ -948,8 +933,7 @@
 
     </details>
 
-<details close>
-<summary><b>Templates</b> [█░░░░░░░░░] 14% (14)</summary>
+## Templates [█░░░░░░░░░] 14% (14)
 
 * ❌ MaximumOfTwoValues.cpp
 * ❌ VariadicFunc.cpp
@@ -968,8 +952,7 @@
 
 </details>
 
-<details close>
-<summary><b>Unix</b> [░░░░░░░░░░] 0% (3)</summary>
+## Unix [░░░░░░░░░░] 0% (3)
 
 * ❌ umask.cpp
 * ❌ Fork.cpp
@@ -983,8 +966,7 @@
 
     </details>
 
-<details close>
-<summary><b>Windows</b> [██████████] 100% (37)</summary>
+## Windows [██████████] 100% (37)
 
 * ✅ `GetUid.cpp`
 * ✅ `CxHandle.cpp`
