@@ -6,8 +6,6 @@
 
   * ❌ BubbleSort.cpp
   * ❌ InvertString.cpp
-
-
   * <details close>
     <summary>📁 ❌ CircularLinkedList 0% (1)</summary>
 
@@ -39,12 +37,12 @@
 
 ## C [██████████] 100% (8)
 
-    * ✅ `Time.cpp`
-    * ✅ `Atoi.cpp`
-    * ✅ `Printf.cpp`
-    * ✅ `Strptime.cpp`
-    * ✅ `BuffZero.cpp`
-    * ✅ `VSnprintf.cpp`
+  * ✅ `Time.cpp`
+  * ✅ `Atoi.cpp`
+  * ✅ `Printf.cpp`
+  * ✅ `Strptime.cpp`
+  * ✅ `BuffZero.cpp`
+  * ✅ `VSnprintf.cpp`
 
 
   * <details close>
