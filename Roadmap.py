@@ -140,9 +140,9 @@ class RoadmapGen:
 
 	################################################################################################
 	# Back to label
-	def _backTo(self, a_href, a_title, a_text):
+	def _backTo(self, a_id, a_title, a_text):
 		# ▴ ⬆ ⇧
-		return '<a href="{}" title="{}">{}</a>'.format(a_href, a_title, a_text)
+		return '<a href="#{}" title="{}">{}</a>'.format(a_id, a_title, a_text)
 
 	################################################################################################
 	# TOC
@@ -201,7 +201,7 @@ class RoadmapGen:
 				dirName.lower(),
 				dirName,
 				self._progressBar(doneFilesPct, allfilesNum),
-				self._backTo('#', 'Back to top', '⇧')))
+				self._backTo('', 'Back to top', '⇧')))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
@@ -248,7 +248,7 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._backTo('#', '', 'C++ Roadmap')))
+		self._writeLine('# {}'.format(self._backTo('', '', 'C++ Roadmap')))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
