@@ -40,7 +40,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## C [██████████] 100% (8) {#mht}
+## C [██████████] 100% (8) <span id="mht"></span>
 
 * ✅ `Time.cpp`
 * ✅ `Atoi.cpp`
