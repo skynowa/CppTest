@@ -172,9 +172,9 @@ class RoadmapGen:
 		iconCurrent    = ''
 		iconToDo       = '❌'
 		iconDone       = '✅'
-		iconInProgress = '⌛'
+		iconInProgress = '🕵'
 		iconDir        = '📁'
-		# 🕵
+		# 🕵 ⌛
 
 		indent    = '  '   * a_level
 		subindent = '    ' * a_level

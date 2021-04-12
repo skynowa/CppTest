@@ -130,7 +130,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 36% (22)</summary>
+    <summary>📁 🕵 C++17 36% (22)</summary>
 
     * ❌ TemplateAutoParam.cpp
     * ❌ StructuredBindings.cpp
@@ -369,7 +369,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Pointers 25% (4)</summary>
+    <summary>📁 🕵 Pointers 25% (4)</summary>
 
     * ✅ `xPTR_DELETE.cpp`
     * ❌ CatchPtr.hpp
@@ -936,7 +936,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Vector 9% (11)</summary>
+    <summary>📁 🕵 Vector 9% (11)</summary>
 
     * ❌ RandomNumberInitializationInVector.cpp
     * ❌ RemoveAllOccurrencesOfAnElementFromVector.cpp
