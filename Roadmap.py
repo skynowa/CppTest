@@ -137,6 +137,11 @@ class RoadmapGen:
 		return '{}{} {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 	################################################################################################
+	# Back to top link
+	def _backToTop(self):
+		return '<a href="#" title="Back to top">⇧</a>'
+
+	################################################################################################
 	# TOC
 	def _tocProcess(self, a_dirPath):
 		info = self.tree[a_dirPath]
@@ -188,12 +193,20 @@ class RoadmapGen:
 			# self._writeLine('{}<summary><b>{}</b> {}</summary>'
 			# 	.format(indent, dirName, self._progressBar(doneFilesPct, allfilesNum)))
 
-			self._writeLine('##  <a id="{}">{} {}</a> {}'
-				.format(dirName.lower(), dirName, self._progressBar(doneFilesPct, allfilesNum), '<a href="#" title="Back to top">⇧</a>'))
+			self._writeLine('##  <a id="{}">{} {}</a> {}'.format(
+				dirName.lower(),
+				dirName,
+				self._progressBar(doneFilesPct, allfilesNum),
+				self._backToTop()))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
-			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
-				.format(indent, iconDir, iconCurrent, dirName, doneFilesPct, allfilesNum))
+			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
+				indent,
+				iconDir,
+				iconCurrent,
+				dirName,
+				doneFilesPct,
+				allfilesNum))
 
 		# files
 		self._writeLine('')
