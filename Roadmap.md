@@ -60,7 +60,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [█░░░░░░░░░] 10% (161)</summary>
+  <summary><b>Core</b> [█░░░░░░░░░] 12% (163)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
@@ -115,7 +115,7 @@
     </details>
 
   * <details close>
-    <summary>📁⌛ C++17 20% (20)</summary>
+    <summary>📁⌛ C++17 32% (22)</summary>
 
       * ❌ TemplateAutoParam.cpp
       * ❌ StructuredBindings.cpp
@@ -136,9 +136,11 @@
     </details>
 
     * <details close>
-      <summary>📁⌛ Attributes 80% (5)</summary>
+      <summary>📁✅ Attributes 100% (7)</summary>
 
-        * ❌ FAQ.md
+        * ✅ `CarriesDependency.cpp`
+        * ✅ `NoReturn.cpp`
+        * ✅ `Deprecated.cpp`
         * ✅ `Sample1.cpp`
         * ✅ `MaybeUnused.cpp`
         * ✅ `FallThrough.cpp`
