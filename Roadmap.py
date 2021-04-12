@@ -144,8 +144,10 @@ class RoadmapGen:
 		allfilesNum  = info[0]
 		doneFilesPct = info[3]
 
-		self._writeLine('- [{0}](#{0}) {1}'
-			.format(os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+		dirName = os.path.basename(a_dirPath)
+
+		self._writeLine('- [{}](#{}) {}'
+			.format(dirName, dirName.lower(), self._progressBar(doneFilesPct, allfilesNum)))
 
 	################################################################################################
 	def _dirProcess(self, a_level, a_dirPath, a_dirs, a_files):
@@ -178,18 +180,20 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
+		dirName = os.path.basename(a_dirPath)
+
 		# Dir (begin)
 		if (a_level == 0):
 			# self._writeLine('{}<details close>'.format(indent))
 			# self._writeLine('{}<summary><b>{}</b> {}</summary>'
-			# 	.format(indent, os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+			# 	.format(indent, dirName, self._progressBar(doneFilesPct, allfilesNum)))
 
-			self._writeLine('## {0} {1}'
-				.format(os.path.basename(a_dirPath), self._progressBar(doneFilesPct, allfilesNum)))
+			self._writeLine('##  <a id="{}">{} {}</a>'
+				.format(dirName.lower(), dirName, self._progressBar(doneFilesPct, allfilesNum)))
 		else:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
-				.format(indent, iconDir, iconCurrent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
+				.format(indent, iconDir, iconCurrent, dirName, doneFilesPct, allfilesNum))
 
 		# files
 		self._writeLine('')
