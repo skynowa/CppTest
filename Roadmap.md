@@ -1,10 +1,27 @@
 # C++ Roadmap
 
+- [Algos](Algos) [░░░░░░░░░░] 0% (13)
+- [C](C) [██████████] 100% (8)
+- [Core](Core) [█░░░░░░░░░] 12% (163)
+- [Crossplatform](Crossplatform) [░░░░░░░░░░] 0% (9)
+- [DevOps](DevOps) [░░░░░░░░░░] 0.0% (0)
+- [FAQ](FAQ) [░░░░░░░░░░] 0% (4)
+- [IpcMt](IpcMt) [░░░░░░░░░░] 0% (30)
+- [Libs](Libs) [░░░░░░░░░░] 0% (16)
+- [Network](Network) [██████████] 100% (3)
+- [OOD](OOD) [░░░░░░░░░░] 0.0% (0)
+- [Patterns](Patterns) [░░░░░░░░░░] 0% (30)
+- [PreproccessCompile](PreproccessCompile) [░░░░░░░░░░] 0.0% (0)
+- [SCM_CI_CD](SCM_CI_CD) [░░░░░░░░░░] 0.0% (0)
+- [SQL](SQL) [░░░░░░░░░░] 0% (1)
+- [Stl](Stl) [░░░░░░░░░░] 2% (81)
+- [Templates](Templates) [█░░░░░░░░░] 14% (14)
+- [Unix](Unix) [░░░░░░░░░░] 0% (3)
+- [Windows](Windows) [██████████] 100% (37)
+
 <div style="background-color:black">
 
-including a [link to the header](#mht).
-
-## Algos [░░░░░░░░░░] 0% (13)
+## Algos [░░░░░░░░░░] 0% (13) <span id="Algos"></span>
 
 * ❌ BubbleSort.cpp
 * ❌ InvertString.cpp
@@ -40,7 +57,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## C [██████████] 100% (8) <span id="mht"></span>
+## C [██████████] 100% (8) <span id="C"></span>
 
 * ✅ `Time.cpp`
 * ✅ `Atoi.cpp`
@@ -59,7 +76,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## Core [█░░░░░░░░░] 12% (163)
+## Core [█░░░░░░░░░] 12% (163) <span id="Core"></span>
 
 * ✅ `Explicit.cpp`
 * ✅ `GoTo.cpp`
@@ -455,7 +472,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## Crossplatform [░░░░░░░░░░] 0% (9)
+## Crossplatform [░░░░░░░░░░] 0% (9) <span id="Crossplatform"></span>
 
 
 </details>
@@ -481,12 +498,12 @@ including a [link to the header](#mht).
 
     </details>
 
-## DevOps [░░░░░░░░░░] 0.0% (0)
+## DevOps [░░░░░░░░░░] 0.0% (0) <span id="DevOps"></span>
 
 
 </details>
 
-## FAQ [░░░░░░░░░░] 0% (4)
+## FAQ [░░░░░░░░░░] 0% (4) <span id="FAQ"></span>
 
 * ❌ CppQuestions.md
 * ❌ FAQ.txt
@@ -495,7 +512,7 @@ including a [link to the header](#mht).
 
 </details>
 
-## IpcMt [░░░░░░░░░░] 0% (30)
+## IpcMt [░░░░░░░░░░] 0% (30) <span id="IpcMt"></span>
 
 * ❌ signal_stacktrace.cpp
 * ❌ psiginfo.cpp
@@ -584,7 +601,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## Libs [░░░░░░░░░░] 0% (16)
+## Libs [░░░░░░░░░░] 0% (16) <span id="Libs"></span>
 
 
 </details>
@@ -659,7 +676,7 @@ including a [link to the header](#mht).
 
       </details>
 
-## Network [██████████] 100% (3)
+## Network [██████████] 100% (3) <span id="Network"></span>
 
 * ✅ `IpString.cpp`
 * ✅ `TcpUdpDiffs.md`
@@ -667,12 +684,12 @@ including a [link to the header](#mht).
 
 </details>
 
-## OOD [░░░░░░░░░░] 0.0% (0)
+## OOD [░░░░░░░░░░] 0.0% (0) <span id="OOD"></span>
 
 
 </details>
 
-## Patterns [░░░░░░░░░░] 0% (30)
+## Patterns [░░░░░░░░░░] 0% (30) <span id="Patterns"></span>
 
 * ❌ FAQ.md
 
@@ -725,23 +742,23 @@ including a [link to the header](#mht).
 
     </details>
 
-## PreproccessCompile [░░░░░░░░░░] 0.0% (0)
+## PreproccessCompile [░░░░░░░░░░] 0.0% (0) <span id="PreproccessCompile"></span>
 
 
 </details>
 
-## SCM_CI_CD [░░░░░░░░░░] 0.0% (0)
+## SCM_CI_CD [░░░░░░░░░░] 0.0% (0) <span id="SCM_CI_CD"></span>
 
 
 </details>
 
-## SQL [░░░░░░░░░░] 0% (1)
+## SQL [░░░░░░░░░░] 0% (1) <span id="SQL"></span>
 
 * ❌ test.sql
 
 </details>
 
-## Stl [░░░░░░░░░░] 2% (81)
+## Stl [░░░░░░░░░░] 2% (81) <span id="Stl"></span>
 
 * ✅ `StlFeatures.md`
 
@@ -935,7 +952,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## Templates [█░░░░░░░░░] 14% (14)
+## Templates [█░░░░░░░░░] 14% (14) <span id="Templates"></span>
 
 * ❌ MaximumOfTwoValues.cpp
 * ❌ VariadicFunc.cpp
@@ -954,7 +971,7 @@ including a [link to the header](#mht).
 
 </details>
 
-## Unix [░░░░░░░░░░] 0% (3)
+## Unix [░░░░░░░░░░] 0% (3) <span id="Unix"></span>
 
 * ❌ umask.cpp
 * ❌ Fork.cpp
@@ -968,7 +985,7 @@ including a [link to the header](#mht).
 
     </details>
 
-## Windows [██████████] 100% (37)
+## Windows [██████████] 100% (37) <span id="Windows"></span>
 
 * ✅ `GetUid.cpp`
 * ✅ `CxHandle.cpp`
