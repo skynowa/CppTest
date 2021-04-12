@@ -4,6 +4,10 @@
 
 - Doxygen
 
+## Backend
+
+- https://dou.ua/lenta/columns/skills-outside-of-programming-languages/
+
 ## Move
 
 https://www.youtube.com/watch?v=oQDOqB1asNw
