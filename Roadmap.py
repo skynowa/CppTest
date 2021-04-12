@@ -98,17 +98,17 @@ class RoadmapGen:
 		todoFiles = 0
 		filesPct  = 0
 
-		for currentDirPath, dirs, files in os.walk(a_currentDirPath):
+		for it_currentDirPath, it_dirs, it_files in os.walk(a_currentDirPath):
 			# exclude dirs
-			dirs[:] = [d for d in dirs if d not in self.dirsExcludes]
-			dirs.sort(reverse=False)
+			it_dirs[:] = [d for d in it_dirs if d not in self.dirsExcludes]
+			it_dirs.sort(reverse=False)
 
 			# exclude/include files
-			files = [os.path.join(currentDirPath, f) for f in files]
-			files = [f for f in files if re.match(self.filesIncludes, f)]
+			it_files = [os.path.join(it_currentDirPath, f) for f in it_files]
+			it_files = [f for f in it_files if re.match(self.filesIncludes, f)]
 
 			# Read files - find todoLabel
-			for file in files:
+			for file in it_files:
 				allFiles += 1
 
 				if ( self._isFileTodo(file) ) :
@@ -189,10 +189,10 @@ class RoadmapGen:
 
 		# files
 		self._writeLine('')
-		for file in files:
-			fileName = Path(file).name
+		for it_file in files:
+			fileName = Path(it_file).name
 
-			if ( self._isFileTodo(file) ):
+			if ( self._isFileTodo(it_file) ):
 				fileName = '{} {}'.format(iconToDo, fileName)
 				# fileName = '<span style="color:red">{}</span>'.format(fileName)
 			else:
