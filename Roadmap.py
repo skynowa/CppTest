@@ -4,6 +4,7 @@
 # FAQ
 #
 # https://theasciicode.com.ar/
+# https://www.vertex42.com/ExcelTips/unicode-symbols.html
 # https://stackoverflow.com/questions/24768630/is-there-a-way-to-show-a-progressbar-on-github-wiki
 #
 # TODO

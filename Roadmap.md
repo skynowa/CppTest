@@ -60,7 +60,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [█░░░░░░░░░] 7% (161)</summary>
+  <summary><b>Core</b> [█░░░░░░░░░] 8% (161)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
@@ -115,7 +115,7 @@
     </details>
 
   * <details close>
-    <summary>📁❌ C++17 0% (20)</summary>
+    <summary>📁⌛ C++17 5% (20)</summary>
 
       * ❌ TemplateAutoParam.cpp
       * ❌ StructuredBindings.cpp
@@ -136,11 +136,11 @@
     </details>
 
     * <details close>
-      <summary>📁❌ Attributes 0% (5)</summary>
+      <summary>📁⌛ Attributes 20% (5)</summary>
 
         * ❌ maybe_unused.cpp
         * ❌ FAQ.md
-        * ❌ Sample1.cpp
+        * ✅ `Sample1.cpp`
         * ❌ fallthrough.cpp
         * ❌ nodiscard.cpp
 
