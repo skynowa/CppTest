@@ -255,7 +255,7 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._label(self.labelTitle, 'C++ Roadmap', 'C++ Roadmap')))
+		self._writeLine('# {}'.format(self._label(self.labelTitle, '', 'C++ Roadmap')))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):

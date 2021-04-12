@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="C++ Roadmap">C++ Roadmap</a>
+# <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
