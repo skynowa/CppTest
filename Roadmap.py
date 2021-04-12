@@ -134,7 +134,7 @@ class RoadmapGen:
 		valueToDos = valueToDo * round((100 - a_doneFilesPct) / 10.0)
 		valueDones = valueDone * round(a_doneFilesPct / 10.0)
 
-		return '[{}{}] {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
+		return '{}{} {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 	################################################################################################
 	# TOC
