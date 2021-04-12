@@ -5,7 +5,7 @@
 - [Core](#core) █░░░░░░░░░ 12% (163)
 - [Crossplatform](#crossplatform) ░░░░░░░░░░ 0% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
-- [FAQ](#faq) ██░░░░░░░░ 20% (5)
+- [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) ░░░░░░░░░░ 0% (16)
 - [Network](#network) ██████████ 100% (3)
@@ -502,9 +502,8 @@
 
 </details>
 
-##  <a id="faq">FAQ ██░░░░░░░░ 20% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* ✅ `README.md`
 * ❌ CppQuestions.md
 * ❌ FAQ.md
 * ❌ CppInterview400_dou.ua.md
