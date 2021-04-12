@@ -41,7 +41,7 @@ isBot(const char *a_ip)
         const auto _mask_test = blackList[i][1];
 
         const bool bRv = (_ip_test == (ip & _mask_test));
-        if (bRv) {
+        if (!bRv) {
             std::cout << TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl << std::endl;
             return true;
         }
