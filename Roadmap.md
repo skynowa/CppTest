@@ -2,13 +2,13 @@
 
 <div style="background-color:black">
 
-* <details close>
+<details close>
   <summary><b>Algos</b> [░░░░░░░░░░] 0% (13)</summary>
 
     * ❌ BubbleSort.cpp
     * ❌ InvertString.cpp
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ CircularLinkedList 0% (1)</summary>
@@ -39,7 +39,7 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>C</b> [██████████] 100% (8)</summary>
 
     * ✅ `Time.cpp`
@@ -49,7 +49,7 @@
     * ✅ `BuffZero.cpp`
     * ✅ `VSnprintf.cpp`
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ✅ Process 100% (2)</summary>
@@ -59,7 +59,7 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>Core</b> [█░░░░░░░░░] 12% (163)</summary>
 
     * ✅ `Explicit.cpp`
@@ -67,7 +67,7 @@
     * ✅ `ReturnBool.cpp`
     * ✅ `SwitchString.cpp`
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ✅ Array 100% (4)</summary>
@@ -456,11 +456,11 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>Crossplatform</b> [░░░░░░░░░░] 0% (9)</summary>
 
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ File 0% (4)</summary>
@@ -483,13 +483,13 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>DevOps</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>FAQ</b> [░░░░░░░░░░] 0% (4)</summary>
 
     * ❌ CppQuestions.md
@@ -497,9 +497,9 @@
     * ❌ CppInterview400_dou.ua.md
     * ❌ RSDN.md
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>IpcMt</b> [░░░░░░░░░░] 0% (30)</summary>
 
     * ❌ signal_stacktrace.cpp
@@ -511,7 +511,7 @@
     * ❌ signal.cpp
     * ❌ IpcMethods.txt
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ C++11 0% (1)</summary>
@@ -589,11 +589,11 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>Libs</b> [░░░░░░░░░░] 0% (16)</summary>
 
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ Boost 0% (3)</summary>
@@ -665,27 +665,27 @@
 
       </details>
 
-* <details close>
+<details close>
   <summary><b>Network</b> [██████████] 100% (3)</summary>
 
     * ✅ `IpString.cpp`
     * ✅ `TcpUdpDiffs.md`
     * ✅ `Mount.cpp`
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>OOD</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>Patterns</b> [░░░░░░░░░░] 0% (30)</summary>
 
     * ❌ FAQ.md
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ Behavioral 0% (15)</summary>
@@ -734,31 +734,31 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>PreproccessCompile</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>SCM_CI_CD</b> [░░░░░░░░░░] 0.0% (0)</summary>
 
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>SQL</b> [░░░░░░░░░░] 0% (1)</summary>
 
     * ❌ test.sql
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>Stl</b> [░░░░░░░░░░] 2% (81)</summary>
 
     * ✅ `StlFeatures.md`
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ Algos 0% (6)</summary>
@@ -948,7 +948,7 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>Templates</b> [█░░░░░░░░░] 14% (14)</summary>
 
     * ❌ MaximumOfTwoValues.cpp
@@ -966,15 +966,15 @@
     * ✅ `Export.h`
     * ❌ Params.cpp
 
-  </details>
+</details>
 
-* <details close>
+<details close>
   <summary><b>Unix</b> [░░░░░░░░░░] 0% (3)</summary>
 
     * ❌ umask.cpp
     * ❌ Fork.cpp
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ❌ Linux 0% (1)</summary>
@@ -983,7 +983,7 @@
 
     </details>
 
-* <details close>
+<details close>
   <summary><b>Windows</b> [██████████] 100% (37)</summary>
 
     * ✅ `GetUid.cpp`
@@ -996,7 +996,7 @@
     * ✅ `MemoryUsage.cpp`
     * ✅ `OsBit.cpp`
 
-  </details>
+</details>
 
   * <details close>
     <summary>📁 ✅ RegDLL 100% (28)</summary>

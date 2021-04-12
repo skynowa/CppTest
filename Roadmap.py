@@ -166,10 +166,10 @@ class RoadmapGen:
 		else:
 			iconCurrent = iconInProgress
 
-		# Dir
-		self._writeLine('{}* <details close>'.format(indent))
-
 		if (level == 1):
+			# Dir
+			self._writeLine('{}<details close>'.format(indent))
+
 			# Root dir
 			# self._writeLine('{}  <summary><b>{}/</b> (<b>{}%</b> of {})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
@@ -180,10 +180,11 @@ class RoadmapGen:
 			# self._writeLine('{}  <summary><b>{}/</b> ![{}%](https://progress-bar.dev/{})</summary>'
 			# 	.format(indent, os.path.basename(dirPath), doneFilesPct, doneFilesPct))
 		else:
+			# Dir
+			self._writeLine('{}* <details close>'.format(indent))
+
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
 				.format(indent, iconDir, iconCurrent, os.path.basename(dirPath), doneFilesPct, allfilesNum))
-
-		# dirs - n/a
 
 		# files
 		self._writeLine('')
@@ -199,7 +200,12 @@ class RoadmapGen:
 			self._writeLine('{}* {}'.format(subindent, fileName))
 		self._writeLine('')
 
-		self._writeLine('{}  </details>'.format(indent))
+		# Dir  (close)
+		if (level == 1):
+			self._writeLine('{}</details>'.format(indent))
+		else:
+			self._writeLine('{}  </details>'.format(indent))
+
 		self._writeLine('')
 
 	################################################################################################
