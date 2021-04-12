@@ -54,7 +54,7 @@ class RoadmapGen:
 		self.filesIncludes = [
 			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cxx', '*.cc', '*.c', '*.cpp.off',
 			'*.sql',
-			'*.txt', '*.md', '*.htm','*.html',
+			'*.txt', '*.htm','*.html',
 			'*.js', '*.java']
 		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
 

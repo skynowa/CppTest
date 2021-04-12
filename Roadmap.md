@@ -60,7 +60,7 @@
     </details>
 
 * <details close>
-  <summary><b>Core</b> [█░░░░░░░░░] 12% (163)</summary>
+  <summary><b>Core</b> [█░░░░░░░░░] 12% (162)</summary>
 
     * ✅ `Explicit.cpp`
     * ✅ `GoTo.cpp`
@@ -115,7 +115,7 @@
     </details>
 
   * <details close>
-    <summary>📁⌛ C++17 32% (22)</summary>
+    <summary>📁⌛ C++17 33% (21)</summary>
 
       * ❌ TemplateAutoParam.cpp
       * ❌ StructuredBindings.cpp
@@ -124,7 +124,6 @@
       * ❌ EnumListInitialization.cpp
       * ❌ StructuredBindingsRef.cpp
       * ❌ ConstexprIf.cpp
-      * ❌ FAQ.md
       * ❌ BracedInitList.cpp
       * ❌ ConstexprLambda.cpp
       * ❌ FoldExpressions.cpp
@@ -490,22 +489,18 @@
   </details>
 
 * <details close>
-  <summary><b>FAQ</b> [░░░░░░░░░░] 0% (4)</summary>
+  <summary><b>FAQ</b> [░░░░░░░░░░] 0% (1)</summary>
 
-    * ❌ CppQuestions.md
     * ❌ FAQ.txt
-    * ❌ CppInterview400_dou.ua.md
-    * ❌ RSDN.md
 
   </details>
 
 * <details close>
-  <summary><b>IpcMt</b> [░░░░░░░░░░] 0% (30)</summary>
+  <summary><b>IpcMt</b> [░░░░░░░░░░] 0% (29)</summary>
 
     * ❌ signal_stacktrace.cpp
     * ❌ psiginfo.cpp
     * ❌ signal_ctrl_c.cpp
-    * ❌ FAQ.md
     * ❌ ThreadHarwareConcurrency.cpp
     * ❌ condition_variable.cpp
     * ❌ signal.cpp
@@ -590,7 +585,7 @@
     </details>
 
 * <details close>
-  <summary><b>Libs</b> [░░░░░░░░░░] 0% (16)</summary>
+  <summary><b>Libs</b> [░░░░░░░░░░] 0% (15)</summary>
 
 
   </details>
@@ -615,9 +610,8 @@
     </details>
 
   * <details close>
-    <summary>📁❌ LibUv 0% (1)</summary>
+    <summary>📁❌ LibUv 0.0% (0)</summary>
 
-      * ❌ FAQ.md
 
     </details>
 
@@ -666,10 +660,9 @@
       </details>
 
 * <details close>
-  <summary><b>Network</b> [██████████] 100% (3)</summary>
+  <summary><b>Network</b> [██████████] 100% (2)</summary>
 
     * ✅ `IpString.cpp`
-    * ✅ `TcpUdpDiffs.md`
     * ✅ `Mount.cpp`
 
   </details>
@@ -681,9 +674,8 @@
   </details>
 
 * <details close>
-  <summary><b>Patterns</b> [░░░░░░░░░░] 0% (30)</summary>
+  <summary><b>Patterns</b> [░░░░░░░░░░] 0% (29)</summary>
 
-    * ❌ FAQ.md
 
   </details>
 
@@ -949,13 +941,12 @@
     </details>
 
 * <details close>
-  <summary><b>Templates</b> [█░░░░░░░░░] 14% (14)</summary>
+  <summary><b>Templates</b> [█░░░░░░░░░] 8% (13)</summary>
 
     * ❌ MaximumOfTwoValues.cpp
     * ❌ VariadicFunc.cpp
     * ❌ AverageOfValuesInObjects.cpp
     * ❌ MaximumOfTwoObjects.cpp
-    * ✅ `FAQ.md`
     * ❌ Templates_and_Classes.txt
     * ❌ VariadicTemplates3.cpp
     * ❌ AverageOfAnArray.cpp
@@ -984,14 +975,13 @@
     </details>
 
 * <details close>
-  <summary><b>Windows</b> [██████████] 100% (37)</summary>
+  <summary><b>Windows</b> [██████████] 100% (36)</summary>
 
     * ✅ `GetUid.cpp`
     * ✅ `CxHandle.cpp`
     * ✅ `Battery.cpp`
     * ✅ `AnsiUtf8.cpp`
     * ✅ `GetTokenInformation.cpp`
-    * ✅ `OsBit.md`
     * ✅ `CommandLine.cpp`
     * ✅ `MemoryUsage.cpp`
     * ✅ `OsBit.cpp`
