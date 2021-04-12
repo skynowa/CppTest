@@ -226,19 +226,19 @@ class RoadmapGen:
 
 		rootPath = str(Path.cwd());
 
-		for currentDirPath, dirs, files in os.walk(rootPath):
-			level = currentDirPath.replace(rootPath, '').count(os.sep) - 1
+		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
+			level = it_currentDirPath.replace(rootPath, '').count(os.sep) - 1
 
 			# exclude dirs
-			dirs[:] = [d for d in dirs if d not in self.dirsExcludes]
-			dirs.sort(reverse=False)
+			it_dirs[:] = [d for d in it_dirs if d not in self.dirsExcludes]
+			it_dirs.sort(reverse=False)
 
 			# exclude/include files
-			files = [os.path.join(currentDirPath, f) for f in files]
-			files = [f for f in files if re.match(self.filesIncludes, f)]
+			it_files = [os.path.join(it_currentDirPath, f) for f in it_files]
+			it_files = [f for f in it_files if re.match(self.filesIncludes, f)]
 
-			self._dirInfo(currentDirPath)
-			self._dirProcess(level, currentDirPath, dirs, files)
+			self._dirInfo(it_currentDirPath)
+			self._dirProcess(level, it_currentDirPath, it_dirs, it_files)
 		# for
 
 		# Title - ends
