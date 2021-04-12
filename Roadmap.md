@@ -754,9 +754,9 @@
   </details>
 
 * <details close>
-  <summary><b>Stl</b> [░░░░░░░░░░] 1% (81)</summary>
+  <summary><b>Stl</b> [░░░░░░░░░░] 2% (81)</summary>
 
-    * ❌ StlFeatures.txt
+    * ✅ `StlFeatures.md`
 
   </details>
 
