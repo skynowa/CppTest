@@ -94,9 +94,9 @@
     * <details close>
       <summary>📁 ✅ ArrayToFunction 100% (3)</summary>
 
-                * ✅ `ArrayToFunction3.cpp`
-                * ✅ `ArrayToFunction1.cpp`
-                * ✅ `ArrayToFunction2.cpp`
+        * ✅ `ArrayToFunction3.cpp`
+        * ✅ `ArrayToFunction1.cpp`
+        * ✅ `ArrayToFunction2.cpp`
 
       </details>
 
@@ -113,7 +113,7 @@
     * <details close>
       <summary>📁 ❌ IsBot 0% (1)</summary>
 
-                * ❌ main_BlackList.cpp
+        * ❌ main_BlackList.cpp
 
       </details>
 
@@ -153,13 +153,13 @@
     * <details close>
       <summary>📁 ✅ Attributes 100% (7)</summary>
 
-                * ✅ `CarriesDependency.cpp`
-                * ✅ `NoReturn.cpp`
-                * ✅ `Deprecated.cpp`
-                * ✅ `Sample1.cpp`
-                * ✅ `MaybeUnused.cpp`
-                * ✅ `FallThrough.cpp`
-                * ✅ `NoDiscard.cpp`
+        * ✅ `CarriesDependency.cpp`
+        * ✅ `NoReturn.cpp`
+        * ✅ `Deprecated.cpp`
+        * ✅ `Sample1.cpp`
+        * ✅ `MaybeUnused.cpp`
+        * ✅ `FallThrough.cpp`
+        * ✅ `NoDiscard.cpp`
 
       </details>
 
@@ -205,15 +205,15 @@
     * <details close>
       <summary>📁 ❌ Hierarchy 0% (2)</summary>
 
-                * ❌ Hierarchy.cpp
-                * ❌ Proxy.cpp
+        * ❌ Hierarchy.cpp
+        * ❌ Proxy.cpp
 
       </details>
 
     * <details close>
       <summary>📁 ❌ Union 0% (1)</summary>
 
-                * ❌ Union.cpp
+        * ❌ Union.cpp
 
       </details>
 
@@ -247,8 +247,8 @@
     * <details close>
       <summary>📁 ❌ EnumIO 0% (2)</summary>
 
-                * ❌ EnumIO.h
-                * ❌ EnumIO_test.cpp
+        * ❌ EnumIO.h
+        * ❌ EnumIO_test.cpp
 
       </details>
 
@@ -264,25 +264,25 @@
     * <details close>
       <summary>📁 ❌ SignalsToException 0% (1)</summary>
 
-                * ❌ SignalsToException.cpp
+        * ❌ SignalsToException.cpp
 
       </details>
 
     * <details close>
       <summary>📁 ❌ SignalsToException_2 0% (3)</summary>
 
-                * ❌ SignalHandler.h
-                * ❌ SignalHandler.inl
-                * ❌ SignalsToException_2.cpp
+        * ❌ SignalHandler.h
+        * ❌ SignalHandler.inl
+        * ❌ SignalsToException_2.cpp
 
       </details>
 
     * <details close>
       <summary>📁 ❌ WinException 0% (3)</summary>
 
-                * ❌ CxWinException.cpp
-                * ❌ WinException.cpp
-                * ❌ CxWinException.h
+        * ❌ CxWinException.cpp
+        * ❌ WinException.cpp
+        * ❌ CxWinException.h
 
       </details>
 
@@ -296,36 +296,36 @@
     * <details close>
       <summary>📁 ❌ Function 0% (2)</summary>
 
-                * ❌ NativeFunction.cpp
-                * ❌ InlineFunction.cpp
+        * ❌ NativeFunction.cpp
+        * ❌ InlineFunction.cpp
 
       </details>
 
     * <details close>
       <summary>📁 ❌ Functor 0% (7)</summary>
 
-                * ❌ FunctorExample4.cpp
-                * ❌ FunctorExample1.cpp
-                * ❌ FunctorExample2.cpp
-                * ❌ Functor.cpp
-                * ❌ FunctorTarget.cpp
-                * ❌ FunctorExample3.cpp
-                * ❌ StaticFunctor.cpp
+        * ❌ FunctorExample4.cpp
+        * ❌ FunctorExample1.cpp
+        * ❌ FunctorExample2.cpp
+        * ❌ Functor.cpp
+        * ❌ FunctorTarget.cpp
+        * ❌ FunctorExample3.cpp
+        * ❌ StaticFunctor.cpp
 
       </details>
 
     * <details close>
       <summary>📁 ❌ Lambda 0% (9)</summary>
 
-                * ❌ LambdaMemberVariableCapture.cpp
-                * ❌ LambdaScopes.cpp
-                * ❌ LambdaScopeFaultScenario.cpp
-                * ❌ LambaExamples.cpp
-                * ❌ LambdaPtrsSizes.cpp
-                * ❌ LambdaScopesByValue.cpp
-                * ❌ LambdaScopesByReference.cpp
-                * ❌ GccLambdaLeaky.cpp
-                * ❌ LambdaBasic.cpp
+        * ❌ LambdaMemberVariableCapture.cpp
+        * ❌ LambdaScopes.cpp
+        * ❌ LambdaScopeFaultScenario.cpp
+        * ❌ LambaExamples.cpp
+        * ❌ LambdaPtrsSizes.cpp
+        * ❌ LambdaScopesByValue.cpp
+        * ❌ LambdaScopesByReference.cpp
+        * ❌ GccLambdaLeaky.cpp
+        * ❌ LambdaBasic.cpp
 
       </details>
 
@@ -396,22 +396,22 @@
     * <details close>
       <summary>📁 ❌ Vars1 0% (4)</summary>
 
-                * ❌ module.h
-                * ❌ main_Var1.cpp
-                * ❌ header.h
-                * ❌ module.inl
+        * ❌ module.h
+        * ❌ main_Var1.cpp
+        * ❌ header.h
+        * ❌ module.inl
 
       </details>
 
     * <details close>
       <summary>📁 ❌ Vars2 0% (6)</summary>
 
-                * ❌ CxVars.inl
-                * ❌ module.h
-                * ❌ CVar.h
-                * ❌ CxVars.h
-                * ❌ main_Var2.cpp
-                * ❌ module.inl
+        * ❌ CxVars.inl
+        * ❌ module.h
+        * ❌ CVar.h
+        * ❌ CxVars.h
+        * ❌ main_Var2.cpp
+        * ❌ module.inl
 
       </details>
 
@@ -432,9 +432,9 @@
     * <details close>
       <summary>📁 ❌ CString 0% (3)</summary>
 
-                * ❌ main_CString.cpp
-                * ❌ CString.inl
-                * ❌ CString.h
+        * ❌ main_CString.cpp
+        * ❌ CString.inl
+        * ❌ CString.h
 
       </details>
 
@@ -649,9 +649,9 @@
     * <details close>
       <summary>📁 ❌ QSharedMemory 0% (3)</summary>
 
-                * ❌ main_MainDialog.cpp
-                * ❌ MainDialog.cpp
-                * ❌ MainDialog.h
+        * ❌ main_MainDialog.cpp
+        * ❌ MainDialog.cpp
+        * ❌ MainDialog.h
 
       </details>
 
@@ -671,8 +671,8 @@
     * <details close>
       <summary>📁 ❌ GlobalHotKey 0% (2)</summary>
 
-                * ❌ xgrabkey.c
-                * ❌ xgrabkey_2.c
+        * ❌ xgrabkey.c
+        * ❌ xgrabkey_2.c
 
       </details>
 
@@ -1008,58 +1008,58 @@
     * <details close>
       <summary>📁 ✅ DLLClient1 100% (2)</summary>
 
-                * ✅ `DLLCode.h`
-                * ✅ `DLLCode.cpp`
+        * ✅ `DLLCode.h`
+        * ✅ `DLLCode.cpp`
 
       </details>
 
     * <details close>
       <summary>📁 ✅ DLLClient2 100% (2)</summary>
 
-                * ✅ `DLLCode.h`
-                * ✅ `DLLClient2.cpp`
+        * ✅ `DLLCode.h`
+        * ✅ `DLLClient2.cpp`
 
       </details>
 
     * <details close>
       <summary>📁 ✅ MFCAp 100% (12)</summary>
 
-                * ✅ `StdAfx.cpp`
-                * ✅ `MainFrm.cpp`
-                * ✅ `Resource.h`
-                * ✅ `MFCApView.h`
-                * ✅ `MFCApDoc.h`
-                * ✅ `DLLCode.h`
-                * ✅ `MFCApView.cpp`
-                * ✅ `MFCAp.h`
-                * ✅ `MFCAp.cpp`
-                * ✅ `MFCApDoc.cpp`
-                * ✅ `MainFrm.h`
-                * ✅ `StdAfx.h`
+        * ✅ `StdAfx.cpp`
+        * ✅ `MainFrm.cpp`
+        * ✅ `Resource.h`
+        * ✅ `MFCApView.h`
+        * ✅ `MFCApDoc.h`
+        * ✅ `DLLCode.h`
+        * ✅ `MFCApView.cpp`
+        * ✅ `MFCAp.h`
+        * ✅ `MFCAp.cpp`
+        * ✅ `MFCApDoc.cpp`
+        * ✅ `MainFrm.h`
+        * ✅ `StdAfx.h`
 
       </details>
 
     * <details close>
       <summary>📁 ✅ RDLLMFC 100% (7)</summary>
 
-                * ✅ `StdAfx.cpp`
-                * ✅ `RDLLMFC.cpp`
-                * ✅ `RDLLMFC.h`
-                * ✅ `Resource.h`
-                * ✅ `DLLCode.h`
-                * ✅ `DLLCode.cpp`
-                * ✅ `StdAfx.h`
+        * ✅ `StdAfx.cpp`
+        * ✅ `RDLLMFC.cpp`
+        * ✅ `RDLLMFC.h`
+        * ✅ `Resource.h`
+        * ✅ `DLLCode.h`
+        * ✅ `DLLCode.cpp`
+        * ✅ `StdAfx.h`
 
       </details>
 
     * <details close>
       <summary>📁 ✅ W32DLL 100% (5)</summary>
 
-                * ✅ `StdAfx.cpp`
-                * ✅ `DLLCode.h`
-                * ✅ `DLLCode.cpp`
-                * ✅ `W32DLL.cpp`
-                * ✅ `StdAfx.h`
+        * ✅ `StdAfx.cpp`
+        * ✅ `DLLCode.h`
+        * ✅ `DLLCode.cpp`
+        * ✅ `W32DLL.cpp`
+        * ✅ `StdAfx.h`
 
       </details>
 
