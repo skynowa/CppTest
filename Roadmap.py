@@ -175,7 +175,6 @@ class RoadmapGen:
 		else:
 			# Dir
 			self._writeLine('{}* <details close>'.format(indent))
-
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'
 				.format(indent, iconDir, iconCurrent, os.path.basename(a_dirPath), doneFilesPct, allfilesNum))
 
@@ -187,7 +186,6 @@ class RoadmapGen:
 
 			if ( self._isFileTodo(it_file) ):
 				fileName = '{} {}'.format(iconToDo, fileName)
-				# fileName = '<span style="color:red">{}</span>'.format(fileName)
 			else:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
