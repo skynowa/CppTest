@@ -222,7 +222,7 @@ class RoadmapGen:
 			else:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
-			self._writeLine('{}* {}'.format(subindent, fileName))
+			self._writeLine('{}* <a href="{}">{}</a>'.format(subindent, it_file, fileName))
 		# for
 
 		self._writeLine('')
