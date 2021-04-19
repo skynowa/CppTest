@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) █░░░░░░░░░ 14% (164)
+- [Core](#core) ██░░░░░░░░ 15% (164)
 - [Crossplatform](#crossplatform) ██████████ 100% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core █░░░░░░░░░ 14% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 15% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -461,12 +461,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Virtual 0% (6)</summary>
+    <summary>📁 ⌛ Virtual 17% (6)</summary>
 
     * <a href="/Core/Virtual/VirtualFunction2.cpp" title="">❌ VirtualFunction2.cpp</a>
     * <a href="/Core/Virtual/VirtualInheritance2.cpp" title="virtual inheritance">❌ VirtualInheritance2.cpp</a>
-    * <a href="/Core/Virtual/VirtualDestructor.txt" title="">❌ VirtualDestructor.txt</a>
     * <a href="/Core/Virtual/VirtualInheritance1.cpp" title="">❌ VirtualInheritance1.cpp</a>
+    * <a href="/Core/Virtual/FAQ.md" title="">✅ `FAQ.md`</a>
     * <a href="/Core/Virtual/VirtualFunction1.cpp" title="">❌ VirtualFunction1.cpp</a>
     * <a href="/Core/Virtual/PureVirtual.cpp" title="">❌ PureVirtual.cpp</a>
 
