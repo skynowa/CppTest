@@ -13,7 +13,7 @@
 # + Done/Todo icons
 # + Ignores dirs/files
 # ? Draw "branches"
-# - Clickable files
+# + Clickable files
 # + todo labels list
 #
 ################################################################################################
@@ -215,8 +215,6 @@ class RoadmapGen:
 		self._writeLine('')
 
 		for it_file in a_files:
-			# https://github.com/skynowa/CppTest/blob/master/Algos/InvertString.cpp ->
-			# https://github.com/skynowa/CppTest/blob/master/Algos/InvertString.cpp
 			fileUrl = it_file.replace('/home/skynowa/Projects/CppTest/', '/')
 
 			fileName = Path(it_file).name
