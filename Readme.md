@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) █░░░░░░░░░ 12% (163)
+- [Core](#core) █░░░░░░░░░ 13% (164)
 - [Crossplatform](#crossplatform) ░░░░░░░░░░ 0% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
@@ -12,7 +12,7 @@
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ░░░░░░░░░░ 0% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
-- [SCM_CI_CD](#scm_ci_cd) ░░░░░░░░░░ 0.0% (0)
+- [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ░░░░░░░░░░ 0% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) █░░░░░░░░░ 14% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core █░░░░░░░░░ 12% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █░░░░░░░░░ 13% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * ✅ `Explicit.cpp`
 * ✅ `SwitchString.cpp`
@@ -369,10 +369,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Pointers 25% (4)</summary>
+    <summary>📁 ⌛ Pointers 40% (5)</summary>
 
     * ❌ AutoPtr.h
     * ❌ FunctionPtr.cpp
+    * ✅ `RefCounter.cpp`
     * ✅ `xPTR_DELETE.cpp`
     * ❌ CatchPtr.hpp
 
@@ -746,7 +747,7 @@
 
 </details>
 
-##  <a id="scm_ci_cd">SCM_CI_CD ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
