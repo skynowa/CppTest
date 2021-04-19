@@ -330,12 +330,12 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Loops 0% (5)</summary>
+    <summary>📁 ⌛ Loops 20% (5)</summary>
 
     * <a href="/Core/Loops/For.cpp" title="">❌ For.cpp</a>
     * <a href="/Core/Loops/GoToLablel.cpp" title="">❌ GoToLablel.cpp</a>
     * <a href="/Core/Loops/ForVoid.cpp" title="">❌ ForVoid.cpp</a>
-    * <a href="/Core/Loops/SwitchCase.cpp" title="modern switch, case">❌ SwitchCase.cpp</a>
+    * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">✅ `SwitchCase.cpp`</a>
     * <a href="/Core/Loops/ForBreak.cpp" title="">❌ ForBreak.cpp</a>
 
     </details>
