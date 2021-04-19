@@ -1,8 +1,6 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  Thread_old.h
+ * \brief Class representing an operating system execution thread
  */
 
 
@@ -12,14 +10,14 @@
 #elif defined(_WIN32)
     #include <windows.h>
 #endif
-
-// Class representing an operating system execution thread
+//--------------------------------------------------------------------------------------------------
 class Thread
 {
 public:
     Thread()
     {
     }
+
     virtual ~Thread()
     {
     }
@@ -79,3 +77,4 @@ protected:
         HANDLE    threadHandle;
     #endif
 };
+//--------------------------------------------------------------------------------------------------

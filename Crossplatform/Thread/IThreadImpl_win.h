@@ -1,8 +1,6 @@
 /**
- * \file   Thread_win.h
+ * \file  IThreadImpl_win.h
  * \brief
- *
- * \todo
  */
 
 

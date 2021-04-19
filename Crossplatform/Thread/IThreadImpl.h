@@ -1,8 +1,6 @@
 /**
- * \file   IThreadImpl.h
+ * \file  IThreadImpl.h
  * \brief
- *
- * \todo
  */
 
 
@@ -17,7 +15,8 @@ public:
 
     static void destruct(IThreadImpl* impl)
     {
-        delete impl; impl = 0;
+        delete impl;
+        impl = 0;
     }
 
     IThreadImpl()

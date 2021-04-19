@@ -3,7 +3,7 @@
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
 - [Core](#core) █░░░░░░░░░ 13% (164)
-- [Crossplatform](#crossplatform) ████░░░░░░ 44% (9)
+- [Crossplatform](#crossplatform) ██████████ 100% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
@@ -472,7 +472,7 @@
 
     </details>
 
-##  <a id="crossplatform">Crossplatform ████░░░░░░ 44% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="crossplatform">Crossplatform ██████████ 100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -488,13 +488,13 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Thread 0% (5)</summary>
+    <summary>📁 ✅ Thread 100% (5)</summary>
 
-    * <a href="/Crossplatform/Thread/IThreadImpl.h" title="">❌ IThreadImpl.h</a>
-    * <a href="/Crossplatform/Thread/IThreadImpl_posix.h" title="">❌ IThreadImpl_posix.h</a>
-    * <a href="/Crossplatform/Thread/Thread_old.h" title="">❌ Thread_old.h</a>
-    * <a href="/Crossplatform/Thread/Thread.h" title="">❌ Thread.h</a>
-    * <a href="/Crossplatform/Thread/IThreadImpl_win.h" title="">❌ IThreadImpl_win.h</a>
+    * <a href="/Crossplatform/Thread/IThreadImpl.h" title="">✅ `IThreadImpl.h`</a>
+    * <a href="/Crossplatform/Thread/IThreadImpl_posix.h" title="">✅ `IThreadImpl_posix.h`</a>
+    * <a href="/Crossplatform/Thread/Thread_old.h" title="Class representing an operating system execution thread">✅ `Thread_old.h`</a>
+    * <a href="/Crossplatform/Thread/Thread.h" title="">✅ `Thread.h`</a>
+    * <a href="/Crossplatform/Thread/IThreadImpl_win.h" title="">✅ `IThreadImpl_win.h`</a>
 
     </details>
 

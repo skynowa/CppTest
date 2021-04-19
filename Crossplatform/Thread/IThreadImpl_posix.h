@@ -1,8 +1,6 @@
 /**
- * \file   Thread_posix.h
+ * \file  IThreadImpl_posix.h
  * \brief
- *
- * \todo
  */
 
 

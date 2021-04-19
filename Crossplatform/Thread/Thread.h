@@ -1,8 +1,6 @@
 /**
- * \file   Thread.h
+ * \file  Thread.h
  * \brief
- *
- * \todo
  */
 
 
