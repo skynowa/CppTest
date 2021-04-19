@@ -35,7 +35,6 @@ class RoadmapGen:
 	# branch = '│   '
 	# tee    = '├── '
 	# last   = '└── '
-	# label1 = '⌛'
 
 	mdPath        = ''
 	file          = ''
