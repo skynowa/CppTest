@@ -1,15 +1,15 @@
 /**
- * \file  inotify.cpp
- * \brief inotify API
- *
- * Usage: demo_inotify [pathname]
- *
- * The program monitors each of the files specified on the command line for all
- * possible file events.
- *
- * This program is Linux-specific. The inotify API is available in Linux 2.6.13
- * and later.
- */
+* \file  inotify.cpp
+* \brief inotify API
+*
+* Usage: demo_inotify [pathname]
+*
+* The program monitors each of the files specified on the command line for all
+* possible file events.
+*
+* This program is Linux-specific. The inotify API is available in Linux 2.6.13
+* and later.
+*/
 
 
 #include <StdTest.h>
@@ -65,14 +65,14 @@ int main(int argc, char **argv)
 	int iRv {};
 
 	// Create inotify instance
-	int inotifyFd = ::inotify_init();
-	STD_TEST(inotifyFd != -1);
+	int fdNotify = ::inotify_init();
+	STD_TEST(fdNotify != -1);
 
 	// For each command-line argument, add a watch for all events
 	std::vector<int> watchFds;
 	{
 		for (int j = 1; j < argc; ++ j) {
-			int watchFd = ::inotify_add_watch(inotifyFd, argv[j], IN_ALL_EVENTS);
+			int watchFd = ::inotify_add_watch(fdNotify, argv[j], IN_ALL_EVENTS);
 			STD_TEST(watchFd != - 1);
 
 			printf("Watching %s using wd %d\n", argv[j], watchFd);
@@ -85,7 +85,7 @@ int main(int argc, char **argv)
 	for ( ; ; ) {
 		char buff[BUF_LEN] {};
 
-		const ssize_t numRead = ::read(inotifyFd, buff, BUF_LEN);
+		const ssize_t numRead = ::read(fdNotify, buff, BUF_LEN);
 		STD_TEST(numRead > 0);
 
 		printf("Read %zu bytes from inotify fd\n", numRead);
@@ -99,14 +99,16 @@ int main(int argc, char **argv)
 		}
 	}
 
+	// Remove watch
 	for (size_t i = 0; i < watchFds.size(); ++ i) {
-		iRv = ::inotify_rm_watch(inotifyFd, watchFds[i]);
+		iRv = ::inotify_rm_watch(fdNotify, watchFds[i]);
 		STD_TEST(iRv != -1)
 	}
 
-    iRv = ::close(inotifyFd);
-    STD_TEST(iRv != -1);
+	// Clean
+	iRv = ::close(fdNotify);
+	STD_TEST(iRv != -1);
 
-    return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
