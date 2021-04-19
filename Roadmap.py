@@ -15,6 +15,7 @@
 # ? Draw "branches"
 # + Clickable files
 # + Todo labels list
+# + Hint from Doxygen "\brief" comment
 #
 ################################################################################################
 
@@ -79,22 +80,43 @@ class RoadmapGen:
 
 	################################################################################################
 	# Check file for 'todo' labels
-	def _isFileTodo(self, a_filePath):
-		todoLabels = [r'\\todo', r'\[todo\]']
+	def _fileInfo(self, a_filePath):
+		isFileTodo   = False
+		commentBrief = ''
+
+		##################################################
+		# Read file
+		fileContent = ''
 
 		try:
 			f = open(a_filePath, "r")
 			fileContent = f.read()
+		except:
+			self._writeLine("Error: {}\n".format(a_filePath))
+			return (isFileTodo, commentBrief)
 
+		##################################################
+		# isFileTodo
+		todoLabels = [r'\\todo', r'\[todo\]']
+
+		try:
 			for it_todoLabel in todoLabels:
 				match = re.search(it_todoLabel, fileContent, re.IGNORECASE)
 				if (match):
-					return True
+					isFileTodo = True
 			# for
 		except:
 			self._writeLine("Error: {}\n".format(a_filePath))
 
-		return False
+		##################################################
+		# commentsBrief
+		pattern = r'\\brief(.*?)' + os.linesep
+
+		match = re.search(pattern, fileContent)
+		if (match):
+			commentBrief = match.group(1).strip()
+
+		return (isFileTodo, commentBrief)
 
 	################################################################################################
 	# Collect dirs info
@@ -117,7 +139,8 @@ class RoadmapGen:
 			for file in it_files:
 				allFiles += 1
 
-				if ( self._isFileTodo(file) ) :
+				isFileTodo, commentBrief = self._fileInfo(file)
+				if (isFileTodo) :
 					todoFiles += 1
 				else:
 					doneFiles += 1
@@ -219,12 +242,14 @@ class RoadmapGen:
 
 			fileName = Path(it_file).name
 
-			if ( self._isFileTodo(it_file) ):
+			isFileTodo, commentBrief = self._fileInfo(it_file)
+			if (isFileTodo):
 				fileName = '{} {}'.format(iconToDo, fileName)
 			else:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
-			self._writeLine('{}* <a href="{}">{}</a>'.format(subindent, fileUrl, fileName))
+			self._writeLine('{}* <a href="{}" title="{}">{}</a>'.format(subindent, fileUrl,
+				commentBrief, fileName))
 		# for
 
 		self._writeLine('')
