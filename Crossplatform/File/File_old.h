@@ -1,14 +1,12 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  File_old.h
+ * \brief File class, similar to java.io.File, though lacking functionality
  */
 
 
 #include <string>
 
-#ifdef _POSIX
+#if   defined(_POSIX)
     #include <unistd.h>
     #include <dirent.h>
     #include <sys/stat.h>
@@ -18,21 +16,21 @@
 #else
     #error Couldn’t detect correct OS
 #endif
-
+//--------------------------------------------------------------------------------------------------
 using namespace std;
-// File class, similar to java.io.File, though lacking functionality
+
 class File
 {
 public:
-    File(const string & filePath) :
+    File(const string &filePath) :
         path(filePath)
     {
     }
+
     virtual ~File()
     {
     }
 
-    // ensure that a File is a directory
     bool isDirectory() const
     {
     #ifdef _POSIX
@@ -50,7 +48,6 @@ public:
     #endif
     }
 
-    // make sure that a file exists
     bool exists() const
     {
     #ifdef _POSIX
@@ -63,5 +60,7 @@ public:
     }
 
 protected:
-    string path; // the path to the file
+    string path;
+        ///< the path to the file
 };
+//--------------------------------------------------------------------------------------------------
