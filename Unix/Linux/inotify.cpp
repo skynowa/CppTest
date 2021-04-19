@@ -59,8 +59,8 @@ int main(int argc, char **argv)
 		return EXIT_SUCCESS;
 	}
 
-	constexpr std::size_t EVENT_SIZE = sizeof(struct inotify_event);
-	constexpr std::size_t BUF_LEN    = (EVENT_SIZE + NAME_MAX + 1) * 10;
+	constexpr std::size_t EVENT_SIZE {sizeof(struct inotify_event)};
+	constexpr std::size_t BUF_LEN    {(EVENT_SIZE + NAME_MAX + 1) * 10};
 
 	int iRv {};
 
