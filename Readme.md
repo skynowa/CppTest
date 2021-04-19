@@ -3,7 +3,7 @@
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
 - [Core](#core) █░░░░░░░░░ 13% (164)
-- [Crossplatform](#crossplatform) ░░░░░░░░░░ 0% (9)
+- [Crossplatform](#crossplatform) █░░░░░░░░░ 11% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
@@ -472,18 +472,18 @@
 
     </details>
 
-##  <a id="crossplatform">Crossplatform ░░░░░░░░░░ 0% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="crossplatform">Crossplatform █░░░░░░░░░ 11% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
 
   * <details close>
-    <summary>📁 ❌ File 0% (4)</summary>
+    <summary>📁 ⌛ File 25% (4)</summary>
 
     * <a href="/Crossplatform/File/FileRouter.inl" title="">❌ FileRouter.inl</a>
     * <a href="/Crossplatform/File/FileRouter.h" title="">❌ FileRouter.h</a>
     * <a href="/Crossplatform/File/File.h" title="">❌ File.h</a>
-    * <a href="/Crossplatform/File/File_old.h" title="">❌ File_old.h</a>
+    * <a href="/Crossplatform/File/File_old.h" title="File class, similar to java.io.File, though lacking functionality">✅ `File_old.h`</a>
 
     </details>
 
