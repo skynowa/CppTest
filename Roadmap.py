@@ -215,6 +215,8 @@ class RoadmapGen:
 		self._writeLine('')
 
 		for it_file in a_files:
+			fileUrl = it_file.replace('/home/skynowa/Projects/', '/')
+
 			fileName = Path(it_file).name
 
 			if ( self._isFileTodo(it_file) ):
@@ -222,7 +224,7 @@ class RoadmapGen:
 			else:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
-			self._writeLine('{}* <a href="{}">{}</a>'.format(subindent, it_file, fileName))
+			self._writeLine('{}* <a href="{}">{}</a>'.format(subindent, fileUrl, fileName))
 		# for
 
 		self._writeLine('')
