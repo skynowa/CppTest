@@ -57,7 +57,8 @@ class RoadmapGen:
 			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cxx', '*.cc', '*.c', '*.cpp.off',
 			'*.sql',
 			'*.txt', '*.md', '*.htm','*.html',
-			'*.js', '*.java']
+			'*.js', '*.java',
+			'*.py']
 		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
 
 		self.labelTitle = 'cpp-roadmap'
