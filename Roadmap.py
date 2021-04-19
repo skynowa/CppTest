@@ -215,7 +215,9 @@ class RoadmapGen:
 		self._writeLine('')
 
 		for it_file in a_files:
-			fileUrl = it_file.replace('/home/skynowa/Projects/', '/')
+			# https://github.com/skynowa/CppTest/blob/master/Algos/InvertString.cpp ->
+			# https://github.com/skynowa/CppTest/blob/master/Algos/InvertString.cpp
+			fileUrl = it_file.replace('/home/skynowa/Projects/CppTest/', '/')
 
 			fileName = Path(it_file).name
 
