@@ -1,15 +1,12 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  File.h
+ * \brief Platform-independent wrapper for the FileRouter class
  */
 
 
 #include <string>
 #include <FileRouter.h>
-
-// Platform-independent wrapper for the FileRouter class
+//--------------------------------------------------------------------------------------------------
 class File
 {
 public:
@@ -36,3 +33,4 @@ public:
 protected:
     std::string path;
 };
+//--------------------------------------------------------------------------------------------------
