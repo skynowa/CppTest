@@ -14,7 +14,7 @@
 # + Ignores dirs/files
 # ? Draw "branches"
 # + Clickable files
-# + todo labels list
+# + Todo labels list
 #
 ################################################################################################
 
