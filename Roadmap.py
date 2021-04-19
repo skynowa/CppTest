@@ -16,6 +16,7 @@
 # + Clickable files
 # + Todo labels list
 # + Hint from Doxygen "\brief" comment
+# - Priority label
 #
 ################################################################################################
 
