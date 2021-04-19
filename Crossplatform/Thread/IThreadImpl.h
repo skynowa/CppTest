@@ -27,8 +27,9 @@ public:
     {
     }
 
+    virtual void start(Thread* thread) = 0;
+
     static void  yield();
     static void  waitFor(Thread* thread);
-    virtual void start(Thread* thread) = 0;
 };
 //-------------------------------------------------------------------------------------------------
