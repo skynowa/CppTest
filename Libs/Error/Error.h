@@ -41,7 +41,7 @@ public:
 ///@{
 	static Error ok();
 	static Error error(const Level level, const int code, const std::string &msg);
-	static Error test(bool expr);
+	static Error test(const bool expr);
 ///@}
 
 private:
