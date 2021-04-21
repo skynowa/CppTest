@@ -30,14 +30,14 @@ Error::~Error()
 bool
 Error::isOk() const
 {
-	if (_level == Level::Ok ||
-		_code != 0 ||
-		!_msg.empty())
+	if (_level == Level::Ok &&
+		_code  == 0 &&
+		_msg.empty())
 	{
-		return false;
+		return true;
 	}
 
-	return true;
+	return false;
 }
 //-------------------------------------------------------------------------------------------------
 
