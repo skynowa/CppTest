@@ -27,7 +27,8 @@ Error::~Error()
 {
 }
 //--------------------------------------------------------------------------------------------------
-Error::operator bool() const
+bool
+Error::isOk() const
 {
 	if (_level == Level::Ok ||
 		_code != 0 ||
@@ -80,7 +81,7 @@ operator << (
 {
 	a_stream
 		<< ">>> Error: {"
-		<< (bool)a_error       << ", "
+		<< a_error.isOk()      << ", "
 		<< (int)a_error._level << ", "
 		<< a_error._code       << ", "
 		<< a_error._msg        << "}";

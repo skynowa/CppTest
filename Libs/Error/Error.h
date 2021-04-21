@@ -35,7 +35,7 @@ public:
    ~Error();
 ///@}
 
-	explicit operator bool() const;
+	bool isOk() const;
 
 	static Error ok();
 	static Error error(const Level level, const int code, const std::string &msg);
