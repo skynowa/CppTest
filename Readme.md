@@ -7,7 +7,7 @@
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ░░░░░░░░░░ 0% (16)
+- [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ░░░░░░░░░░ 0% (30)
@@ -601,7 +601,7 @@
 
     </details>
 
-##  <a id="libs">Libs ░░░░░░░░░░ 0% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs █░░░░░░░░░ 11% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -612,6 +612,14 @@
     * <a href="/Libs/Boost/ProgramOptions.cpp" title="Boost.ProgramOptions">❌ ProgramOptions.cpp</a>
     * <a href="/Libs/Boost/Bind.cpp" title="Boost.Bind">❌ Bind.cpp</a>
     * <a href="/Libs/Boost/ScopeArray.cpp" title="">❌ ScopeArray.cpp</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Error 100% (2)</summary>
+
+    * <a href="/Libs/Error/Error.cpp" title="">✅ `Error.cpp`</a>
+    * <a href="/Libs/Error/Error.h" title="">✅ `Error.h`</a>
 
     </details>
 
