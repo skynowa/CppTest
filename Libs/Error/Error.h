@@ -37,14 +37,17 @@ public:
 
 	bool isOk() const;
 
+///@name static
+///@{
 	static Error ok();
 	static Error error(const Level level, const int code, const std::string &msg);
 	static Error test(bool expr);
+///@}
 
 private:
-	Level       _level {};
-	int         _code {};
-	std::string _msg {};
+	const Level       _level {};
+	const int         _code {};
+	const std::string _msg {};
 	// module
 	// file
 	// line
