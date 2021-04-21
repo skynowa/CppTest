@@ -76,7 +76,7 @@ Error::test(
 	const bool a_expr
 )
 {
-	return a_expr ? Error::ok() : Error::error(Level::Error, 10, "Test fail", false);
+	return {Level::Error, 10, "Test fail", a_expr};
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ operator << (
 )
 {
 	a_stream
-		<< ">>> Error: {"
+		<< "{"
 		<< a_error.isOk()      << ", "
 		<< (int)a_error._level << ", "
 		<< a_error._code       << ", "
@@ -109,15 +109,15 @@ operator << (
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << Error::ok() << std::endl;
-    std::cout << Error::error(Error::Level::Warning, 202, "Warning fail", false) << std::endl;
-    std::cout << Error::test(true) << std::endl;
-    std::cout << Error::test(false) << std::endl;
+    std::cout << "ok: "    << Error::ok() << std::endl;
+    std::cout << "error: " << Error::error(Error::Level::Warning, 202, "Warning fail", false) << std::endl;
+    std::cout << "test: "  << Error::test(true) << std::endl;
+    std::cout << "test: "  << Error::test(false) << std::endl;
     std::cout << std::endl;
-    std::cout << Error() << std::endl;
-    std::cout << Error(Error::Level::Warning, 202, "Warning fail", false) << std::endl;
-//    std::cout << Error(true) << std::endl;
-//    std::cout << Error(false) << std::endl;
+    std::cout << "ok: "    << Error() << std::endl;
+    std::cout << "error: " << Error(Error::Level::Warning, 202, "Warning fail", false) << std::endl;
+//    std::cout << "xxx: " << Error(true) << std::endl;
+//    std::cout << "xxx: " << Error(false) << std::endl;
 
     return EXIT_SUCCESS;
 }
