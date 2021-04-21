@@ -31,7 +31,7 @@ public:
 ///@name ctors, dtor
 ///@{
 	Error();
-	Error(const Level level, const int code, const std::string &msg);
+	Error(const Level level, const int code, const std::string &msg, const bool expr);
    ~Error();
 ///@}
 
@@ -40,7 +40,7 @@ public:
 ///@name static
 ///@{
 	static Error ok();
-	static Error error(const Level level, const int code, const std::string &msg);
+	static Error error(const Level level, const int code, const std::string &msg, const bool expr);
 	static Error test(const bool expr);
 ///@}
 
@@ -52,7 +52,7 @@ private:
 	// file
 	// line
 	// function
-	// expression
+	const bool        _expr {true};
 	// stackTrace
 
 
