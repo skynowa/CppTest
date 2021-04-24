@@ -14,60 +14,63 @@
 class Message
 {
 public:
-	std::string greeting {};
-	std::string recipient {};
+	std::string hello {};
+	std::string world {};
 
-	void send()
+	void send() const
 	{
-		std::cout << greeting << " " << recipient << std::endl;
+		std::cout << hello << " " << world << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-class IBuilder
+class IBuilderMessage
 {
 public:
-	virtual ~IBuilder() = default;
+	virtual ~IBuilderMessage() = default;
 
-	virtual void build(Message & msg) const = 0;
+	virtual void update(Message *out_msg) const = 0;
 };
 //-------------------------------------------------------------------------------------------------
-class Hello :
-	public IBuilder
+
+
+//-------------------------------------------------------------------------------------------------
+class BuilderHello :
+	public IBuilderMessage
 {
 public:
-	void build(Message &out_msg) const override
+	void update(Message *out_msg) const override
 	{
-		out_msg.greeting = "Hello";
+		out_msg->hello = "Hello";
 	}
 };
 //-------------------------------------------------------------------------------------------------
-class World :
-	public IBuilder
+class BuilderWorld :
+	public IBuilderMessage
 {
 public:
-	void build(Message &out_msg) const override
+	void update(Message *out_msg) const override
 	{
-		out_msg.recipient = "world!";
+		out_msg->world = "world!";
 	}
 };
 //-------------------------------------------------------------------------------------------------
 void
-hello_world(
-	const IBuilder &a_stage1,
-	const IBuilder &a_stage2
+helloWorld(
+	const IBuilderMessage &a_builder1,
+	const IBuilderMessage &a_builder2
 )
 {
 	Message msg;
 
-	a_stage1.build(msg);
-	a_stage2.build(msg);
+	a_builder1.update(&msg);
+	a_builder2.update(&msg);
 
 	msg.send();
 }
 //-------------------------------------------------------------------------------------------------
 int main()
 {
-	hello_world(Hello(), World());
+	helloWorld(BuilderHello(), BuilderWorld());
 
 	return EXIT_SUCCESS;
 }
