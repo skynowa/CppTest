@@ -10,7 +10,7 @@
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
-- [Patterns](#patterns) █░░░░░░░░░ 7% (30)
+- [Patterns](#patterns) █░░░░░░░░░ 10% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ░░░░░░░░░░ 0% (1)
@@ -697,7 +697,7 @@
 
 </details>
 
-##  <a id="patterns">Patterns █░░░░░░░░░ 7% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="patterns">Patterns █░░░░░░░░░ 10% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
 
@@ -725,10 +725,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Creational 33% (6)</summary>
+    <summary>📁 ⌛ Creational 50% (6)</summary>
 
     * <a href="/Patterns/Creational/AbstractFactory.cpp" title="">❌ AbstractFactory.cpp</a>
-    * <a href="/Patterns/Creational/Builder.cpp" title="">❌ Builder.cpp</a>
+    * <a href="/Patterns/Creational/Builder.cpp" title="Builder - responsible for constructing an object">✅ `Builder.cpp`</a>
     * <a href="/Patterns/Creational/Singleton.cpp" title="Singleton - only one instance of a class">✅ `Singleton.cpp`</a>
     * <a href="/Patterns/Creational/FactoryMethod.cpp" title="">❌ FactoryMethod.cpp</a>
     * <a href="/Patterns/Creational/ClassFactory.cpp" title="">❌ ClassFactory.cpp</a>

@@ -1,65 +1,69 @@
 /**
- * \file
- * \brief
+ * \file  Builder.cpp
+ * \brief Builder - responsible for constructing an object
  *
- * \todo
+ * Builder is a class (or set of classes) responsible for constructing an object.
+ * Each builder constructs a different part of the object.
  */
 
-/*
-Builder is a class (or set of classes) responsible for constructing an object.
-Each builder constructs a different part of the object.
-*/
 
-#include <string>
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//-------------------------------------------------------------------------------------------------
+class Message;
+
+class IBuilder
+{
+public:
+	virtual ~IBuilder() = default;
+
+	virtual void build(Message & msg) const = 0;
+};
 //-------------------------------------------------------------------------------------------------
 class Message
 {
 public:
-	std::string greeting, recipient;
+	std::string greeting {};
+	std::string recipient {};
 
 	void send()
 	{
-		std::cout << greeting << " " << recipient << "!" << std::endl;
+		std::cout << greeting << " " << recipient << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-class Builder
-{
-public:
-	virtual ~Builder() = default;
-	virtual void build(Message & msg) const=0;
-};
-//-------------------------------------------------------------------------------------------------
 class Hello :
-	public Builder
+	public IBuilder
 {
 public:
-	void build(Message & msg) const
+	void build(Message &a_msg) const override
 	{
-		msg.greeting = "Hello";
+		a_msg.greeting = "Hello";
 	}
 };
 //-------------------------------------------------------------------------------------------------
 class World :
-	public Builder
+	public IBuilder
 {
 public:
-	void build(Message & msg) const
+	void build(Message &a_msg) const override
 	{
-		msg.recipient = "world";
+		a_msg.recipient = "world!";
 	}
 };
 //-------------------------------------------------------------------------------------------------
 void
 hello_world(
-	const Builder & stage1,
-	const Builder & stage2
+	const IBuilder &a_stage1,
+	const IBuilder &a_stage2
 )
 {
 	Message msg;
-	stage1.build(msg);
-	stage2.build(msg);
+
+	a_stage1.build(msg);
+	a_stage2.build(msg);
+
 	msg.send();
 }
 //-------------------------------------------------------------------------------------------------
@@ -67,6 +71,12 @@ int main()
 {
 	hello_world(Hello(), World());
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Hello world!
+
+#endif
