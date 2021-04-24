@@ -29,24 +29,16 @@ class HelloWorld :
     public IGreeter
 {
 public:
-    std::string message() const
+    std::string message() const override
     {
         return "Hello world!";
     }
 };
 //-------------------------------------------------------------------------------------------------
-void
-helloWorld(
-    const IGreeter &a_greeter
-)
-{
-	a_greeter.run();
-}
-//-------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld greeter;
-	::helloWorld(greeter);
+	greeter.run();
 
 	return EXIT_SUCCESS;
 }
