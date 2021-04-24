@@ -1,54 +1,54 @@
 /**
- * \file
- * \brief
+ * \file  Prototype.cpp
+ * \brief Prototype - object which is cloneable
  *
- * \todo
+ * A Prototype is an object which is cloneable, i.e. you can create a copy,
+ * even though you don't know what you are creating a copy of.
  */
 
-/*
-A Prototype is an object which is cloneable, i.e. you can create a copy,
-even though you don't know what you are creating a copy of.
-*/
 
-#include <iostream>
-#include <memory>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-class DoSomething
+class ICloneable
 {
 public:
-	virtual ~DoSomething() = default;
+			 ICloneable() = default;
+	virtual ~ICloneable() = default;
 
-	virtual std::auto_ptr<DoSomething> clone() const=0;
-	virtual void do_it() = 0;
+	virtual std::unique_ptr<ICloneable> clone() const = 0;
+	virtual void test() = 0;
 };
 //-------------------------------------------------------------------------------------------------
 class HelloWorld :
-	public DoSomething
+	public ICloneable
 {
 public:
-	std::auto_ptr<DoSomething> clone() const
+	std::unique_ptr<ICloneable> clone() const override
 	{
-		return std::auto_ptr<DoSomething>(new HelloWorld);
+		return std::unique_ptr<ICloneable>(new HelloWorld);
 	}
 
-	void do_it()
+	void test() override
 	{
 		std::cout << "Hello world!" << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-void
-hello_world(
-	const DoSomething & something
-)
+int main(int, char **)
 {
-	std::auto_ptr<DoSomething> clone = something.clone();
-	clone->do_it();
+	HelloWorld hw;
+
+	std::unique_ptr<ICloneable> hwClone = hw.clone();
+	hwClone->test();
+
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
-int main()
-{
-	hello_world(HelloWorld());
-	return 0;
-}
-//-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Hello world!
+
+#endif

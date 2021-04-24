@@ -10,7 +10,7 @@
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
-- [Patterns](#patterns) ░░░░░░░░░░ 0% (30)
+- [Patterns](#patterns) ░░░░░░░░░░ 3% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ░░░░░░░░░░ 0% (1)
@@ -697,7 +697,7 @@
 
 </details>
 
-##  <a id="patterns">Patterns ░░░░░░░░░░ 0% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="patterns">Patterns ░░░░░░░░░░ 3% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
 
@@ -725,14 +725,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Creational 0% (6)</summary>
+    <summary>📁 ⌛ Creational 17% (6)</summary>
 
     * <a href="/Patterns/Creational/AbstractFactory.cpp" title="">❌ AbstractFactory.cpp</a>
     * <a href="/Patterns/Creational/Builder.cpp" title="">❌ Builder.cpp</a>
     * <a href="/Patterns/Creational/Singleton.cpp" title="">❌ Singleton.cpp</a>
     * <a href="/Patterns/Creational/FactoryMethod.cpp" title="">❌ FactoryMethod.cpp</a>
     * <a href="/Patterns/Creational/ClassFactory.cpp" title="">❌ ClassFactory.cpp</a>
-    * <a href="/Patterns/Creational/Prototype.cpp" title="">❌ Prototype.cpp</a>
+    * <a href="/Patterns/Creational/Prototype.cpp" title="Prototype - object which is cloneable">✅ `Prototype.cpp`</a>
 
     </details>
 
