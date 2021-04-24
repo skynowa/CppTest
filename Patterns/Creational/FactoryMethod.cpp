@@ -1,61 +1,60 @@
 /**
- * \file
- * \brief
+ * \file  FactoryMethod.cpp
+ * \brief Factory method - creates object in a derived class
  *
  * \todo
+ * Factory method creates some object (in this case a string) in a derived class,
+ * for use in a base class.
  */
 
-/*
-Factory method creates some object (in this case a string) in a derived class,
-for use in a base class.
-*/
 
-
-#include <iostream>
-#include <string>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class IGreeter
 {
 public:
     virtual ~IGreeter() = default;
 
-    virtual std::string get_message() = 0;
-    void greet()
+    virtual std::string message() const = 0;
+
+    void run() const
     {
-        std::cout << get_message() << std::endl;
+        std::cout << message() << std::endl;
     }
 };
 //-------------------------------------------------------------------------------------------------
-class CHelloWorld :
+class HelloWorld :
     public IGreeter
 {
 public:
-    std::string get_message()
+    std::string message() const
     {
         return "Hello world!";
     }
 };
 //-------------------------------------------------------------------------------------------------
 void
-hello_world(
-    IGreeter & greeter
+helloWorld(
+    const IGreeter &a_greeter
 )
 {
-	greeter.greet();
+	a_greeter.run();
 }
 //-------------------------------------------------------------------------------------------------
 int main()
 {
-	CHelloWorld greeter;
-	hello_world(greeter);
+	HelloWorld greeter;
+	::helloWorld(greeter);
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-    Hello world!
+Hello world!
 
 #endif

@@ -70,7 +70,7 @@ helloWorld(
 //-------------------------------------------------------------------------------------------------
 int main()
 {
-	helloWorld(BuilderHello(), BuilderWorld());
+	::helloWorld(BuilderHello(), BuilderWorld());
 
 	return EXIT_SUCCESS;
 }

@@ -730,7 +730,7 @@
     * <a href="/Patterns/Creational/AbstractFactory.cpp" title="">❌ AbstractFactory.cpp</a>
     * <a href="/Patterns/Creational/Builder.cpp" title="Builder - responsible for constructing an object">✅ `Builder.cpp`</a>
     * <a href="/Patterns/Creational/Singleton.cpp" title="Singleton - only one instance of a class">✅ `Singleton.cpp`</a>
-    * <a href="/Patterns/Creational/FactoryMethod.cpp" title="">❌ FactoryMethod.cpp</a>
+    * <a href="/Patterns/Creational/FactoryMethod.cpp" title="Factory method - creates object in a derived class">❌ FactoryMethod.cpp</a>
     * <a href="/Patterns/Creational/ClassFactory.cpp" title="">❌ ClassFactory.cpp</a>
     * <a href="/Patterns/Creational/Prototype.cpp" title="Prototype - object which is cloneable">✅ `Prototype.cpp`</a>
 
