@@ -31,7 +31,7 @@ class HelloWorld :
 public:
     std::string message() const
     {
-        return "Hello world!";
+        return "Hello world!"s;
     }
 };
 //-------------------------------------------------------------------------------------------------
