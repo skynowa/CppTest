@@ -1,27 +1,23 @@
 /**
- * \file
- * \brief
+ * \file  Singleton.cpp
+ * \brief Singleton - only one instance of a class
  *
- * \todo
+ * Singleton ensures that there is one, and only one instance of a class.
+ * Like global variables, everybody has access to that instance.
+ * Singleton should be used sparingly since the assumption that
+ * there should be just one of something usually ends up being wrong.
+ * Singleton is hard to write unit tests with.
  */
 
-/*
-Singleton ensures that there is one, and only one instance of a class.
-Like global variables, everybody has access to that instance.
-Singleton should be used sparingly since the assumption that
-there should be just one of something usually ends up being wrong.
-Singleton is hard to write unit tests with.
-*/
 
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class HelloWorld
 {
-	HelloWorld() = default;
-	HelloWorld(const HelloWorld&);
-
 public:
-	void output()
+	void test()
 	{
 		std::cout << "Hello world!" << std::endl;
 	}
@@ -31,17 +27,29 @@ public:
 		static HelloWorld singleton;
 		return singleton;
 	}
+
+private:
+	HelloWorld() = default;
+	HelloWorld(const HelloWorld &);
 };
 //-------------------------------------------------------------------------------------------------
 void
-hello_world()
+helloWorld()
 {
-	HelloWorld::get().output();
+	HelloWorld::get().test();
 }
 //-------------------------------------------------------------------------------------------------
 int main()
 {
-	hello_world();
-	return 0;
+	helloWorld();
+
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Hello world!
+
+#endif
