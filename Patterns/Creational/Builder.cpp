@@ -11,16 +11,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-class Message;
-
-class IBuilder
-{
-public:
-	virtual ~IBuilder() = default;
-
-	virtual void build(Message & msg) const = 0;
-};
-//-------------------------------------------------------------------------------------------------
 class Message
 {
 public:
@@ -33,13 +23,21 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------------------------
+class IBuilder
+{
+public:
+	virtual ~IBuilder() = default;
+
+	virtual void build(Message & msg) const = 0;
+};
+//-------------------------------------------------------------------------------------------------
 class Hello :
 	public IBuilder
 {
 public:
-	void build(Message &a_msg) const override
+	void build(Message &out_msg) const override
 	{
-		a_msg.greeting = "Hello";
+		out_msg.greeting = "Hello";
 	}
 };
 //-------------------------------------------------------------------------------------------------
@@ -47,9 +45,9 @@ class World :
 	public IBuilder
 {
 public:
-	void build(Message &a_msg) const override
+	void build(Message &out_msg) const override
 	{
-		a_msg.recipient = "world!";
+		out_msg.recipient = "world!";
 	}
 };
 //-------------------------------------------------------------------------------------------------
