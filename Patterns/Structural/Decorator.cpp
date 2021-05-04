@@ -1,7 +1,8 @@
 /**
  * \file  Decorator.cpp
  * \brief Decorator adds / overrides functionality of a class
- * \todo
+ *
+ * \review
  *
  * Unlike normal inheritance, decorator overrides behaviour of a derived class, not a base class
  */

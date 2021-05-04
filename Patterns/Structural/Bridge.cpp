@@ -2,7 +2,7 @@
  * \file  Bridge.cpp
  * \brief Bridge allows two implementations to vary independently
  *
- * \remark
+ * \review
  *
  * In this case, the implementations of message and recipient are independent,
  * but combine to output "Hello world!"

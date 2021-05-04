@@ -2,8 +2,8 @@
  * \file  Proxy.cpp
  * \brief
  *
- * \todo
-
+ * \review
+ *
  * Proxy allows one object to stand for something else.
  * So whilst you think you are dealing with one object,
  * you are actually dealing with something else.
