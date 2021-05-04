@@ -1,11 +1,7 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  test.sql
+ * \brief SQL queries
  */
-
-SQL
 
 
 // increment

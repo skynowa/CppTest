@@ -2,7 +2,6 @@
  * \file  FactoryMethod.cpp
  * \brief Factory method - creates object in a derived class
  *
- * \todo
  * Factory method creates some object (in this case a string) in a derived class,
  * for use in a base class.
  */
@@ -12,10 +11,10 @@
 #include <StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-class IGreeter
+class IMessage
 {
 public:
-    virtual ~IGreeter() = default;
+    virtual ~IMessage() = default;
 
     virtual std::string message() const = 0;
 
@@ -26,7 +25,7 @@ public:
 };
 //-------------------------------------------------------------------------------------------------
 class HelloWorld :
-    public IGreeter
+    public IMessage
 {
 public:
     std::string message() const override

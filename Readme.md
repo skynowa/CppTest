@@ -6,14 +6,15 @@
 - [Crossplatform](#crossplatform) ██████████ 100% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
+- [Idioms](#idioms) ██████████ 100% (1)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
-- [Patterns](#patterns) █░░░░░░░░░ 10% (30)
+- [Patterns](#patterns) █░░░░░░░░░ 13% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) ░░░░░░░░░░ 0% (1)
+- [SQL](#sql) ██████████ 100% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) █░░░░░░░░░ 14% (14)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
@@ -512,6 +513,12 @@
 
 </details>
 
+##  <a id="idioms">Idioms ██████████ 100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Idioms/FAQ.md" title="">✅ `FAQ.md`</a>
+
+</details>
+
 ##  <a id="ipcmt">IpcMt ░░░░░░░░░░ 0% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/IpcMethods.txt" title="">❌ IpcMethods.txt</a>
@@ -697,7 +704,7 @@
 
 </details>
 
-##  <a id="patterns">Patterns █░░░░░░░░░ 10% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="patterns">Patterns █░░░░░░░░░ 13% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
 
@@ -725,12 +732,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Creational 50% (6)</summary>
+    <summary>📁 ⌛ Creational 67% (6)</summary>
 
     * <a href="/Patterns/Creational/AbstractFactory.cpp" title="">❌ AbstractFactory.cpp</a>
     * <a href="/Patterns/Creational/Builder.cpp" title="Builder - responsible for constructing an object">✅ `Builder.cpp`</a>
     * <a href="/Patterns/Creational/Singleton.cpp" title="Singleton - only one instance of a class">✅ `Singleton.cpp`</a>
-    * <a href="/Patterns/Creational/FactoryMethod.cpp" title="Factory method - creates object in a derived class">❌ FactoryMethod.cpp</a>
+    * <a href="/Patterns/Creational/FactoryMethod.cpp" title="Factory method - creates object in a derived class">✅ `FactoryMethod.cpp`</a>
     * <a href="/Patterns/Creational/ClassFactory.cpp" title="">❌ ClassFactory.cpp</a>
     * <a href="/Patterns/Creational/Prototype.cpp" title="Prototype - object which is cloneable">✅ `Prototype.cpp`</a>
 
@@ -760,9 +767,9 @@
 
 </details>
 
-##  <a id="sql">SQL ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/SQL/test.sql" title="">❌ test.sql</a>
+* <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
 
 </details>
 
