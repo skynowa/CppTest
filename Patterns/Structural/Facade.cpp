@@ -1,18 +1,18 @@
 /**
- * \file
+ * \file  Facade.cpp
  * \brief
  *
  * \todo
+ *
+ * Facade hides a lot of complex behaviour behind a simple, single interface.
+ * It puts a shop-front on an otherwise complex set of classes.
  */
 
-/*
-Facade hides a lot of complex behaviour behind a simple, single interface.
-It puts a shop-front on an otherwise complex set of classes.
-*/
 
-#include <string>
-#include <iostream>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class HelloWorld
 {
 public:
@@ -53,3 +53,4 @@ int main()
 	hello_world(hw);
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------

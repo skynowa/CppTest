@@ -1,17 +1,15 @@
 /**
- * \file
- * \brief
+ * \file  Composite.cpp
+ * \brief Composite combines several classes into a single class.
  *
  * \todo
  */
 
-/*
-Composite combines several classes into a single class.
-*/
 
-#include <iostream>
-#include <string>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Greeting
 {
 public:
@@ -57,7 +55,7 @@ void hello_world(const Composite & composite)
 {
 	composite.greet();
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	Hello hello;
@@ -65,3 +63,4 @@ int main()
 	hello_world(Composite(hello, world));
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------

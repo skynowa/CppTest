@@ -1,16 +1,15 @@
 /**
- * \file
- * \brief
+ * \file  Adapter.cpp
+ * \brief Convert one class so that it appears to be another class
  *
  * \todo
  */
 
-/*
-Convert one class so that it appears to be another class.
-*/
 
-#include <iostream>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class RoundPeg
 {
 public:
@@ -60,10 +59,11 @@ void hello_world(const RoundPeg & peg)
 {
 	RoundHole().insert(peg);
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld peg;
 	hello_world(SquarePegAdapter(peg));
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------

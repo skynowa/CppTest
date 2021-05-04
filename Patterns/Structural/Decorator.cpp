@@ -1,20 +1,19 @@
 /**
- * \file
+ * \file  Decorator.cpp
  * \brief
  *
  * \todo
+ *
+ * Decorator adds or overrides functionality of a class.
+ * Unlike normal inheritance, decorator overrides behaviour
+ * of a derived class, not a base class.
  */
 
-/*
-Decorator adds or overrides functionality of a class.
-Unlike normal inheritance, decorator overrides behaviour
-of a derived class, not a base class.
-*/
 
-
-#include <iostream>
-#include <string>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Greeting
 {
 public:
@@ -46,10 +45,11 @@ void hello_world(const Greeting & greeting)
 {
 	std::cout << greeting.get_greeting() << std::endl;
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld hw;
 	hello_world(Exclamation(hw));
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------

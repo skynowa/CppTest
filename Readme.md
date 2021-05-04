@@ -206,7 +206,7 @@
     * <details close>
       <summary>📁 ❌ Hierarchy 0% (2)</summary>
 
-        * <a href="/Core/Class/Hierarchy/Proxy.cpp" title="">❌ Proxy.cpp</a>
+        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">❌ ProxyLayer.cpp</a>
         * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="class hierarchy">❌ Hierarchy.cpp</a>
 
       </details>
@@ -746,14 +746,14 @@
   * <details close>
     <summary>📁 ❌ Structural 0% (8)</summary>
 
-    * <a href="/Patterns/Structural/proxy.cpp" title="">❌ proxy.cpp</a>
     * <a href="/Patterns/Structural/ContainerFacade.h" title="">❌ ContainerFacade.h</a>
-    * <a href="/Patterns/Structural/composite.cpp" title="">❌ composite.cpp</a>
-    * <a href="/Patterns/Structural/bridge.cpp" title="">❌ bridge.cpp</a>
-    * <a href="/Patterns/Structural/facade.cpp" title="">❌ facade.cpp</a>
-    * <a href="/Patterns/Structural/flyweight.cpp" title="">❌ flyweight.cpp</a>
-    * <a href="/Patterns/Structural/decorator.cpp" title="">❌ decorator.cpp</a>
-    * <a href="/Patterns/Structural/adapter.cpp" title="">❌ adapter.cpp</a>
+    * <a href="/Patterns/Structural/Facade.cpp" title="">❌ Facade.cpp</a>
+    * <a href="/Patterns/Structural/Adapter.cpp" title="Convert one class so that it appears to be another class">❌ Adapter.cpp</a>
+    * <a href="/Patterns/Structural/FlyWeight.cpp" title="">❌ FlyWeight.cpp</a>
+    * <a href="/Patterns/Structural/Bridge.cpp" title="">❌ Bridge.cpp</a>
+    * <a href="/Patterns/Structural/Composite.cpp" title="Composite combines several classes into a single class.">❌ Composite.cpp</a>
+    * <a href="/Patterns/Structural/Decorator.cpp" title="">❌ Decorator.cpp</a>
+    * <a href="/Patterns/Structural/Proxy.cpp" title="">❌ Proxy.cpp</a>
 
     </details>
 

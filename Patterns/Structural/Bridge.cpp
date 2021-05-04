@@ -1,19 +1,19 @@
 /**
- * \file
+ * \file  Bridge.cpp
  * \brief
  *
  * \todo
+ *
+ * Bridge allows two implementations to vary independently.
+ * In this case, the implementations of message and recipient are independent,
+ * but combine to output "Hello world!"
  */
 
-/*
-Bridge allows two implementations to vary independently.
-In this case, the implementations of message and recipient are independent,
-but combine to output "Hello world!"
-*/
 
-#include <iostream>
-#include <string>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Message
 {
 public:
@@ -50,7 +50,7 @@ void hello_world(Message & msg, Recipient & recipient)
 {
 	recipient.send(msg);
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	Hello hello;
@@ -58,3 +58,4 @@ int main()
 	hello_world(hello, world);
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------
