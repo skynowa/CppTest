@@ -1,15 +1,16 @@
 /**
- * \file
- * \brief
+ * \file  ClassFactory.cpp
+ * \brief Class factory pattern is an object/method for creating other objects
  *
- * \todo
+ * The class factory creates and returns new objects by instantiating various classes
+ * (through the use of constructors). In most cases, a class factory has at most one method/function
+ * that is given some type of incoming data and returns a new object (or pointer) to what was created
  */
 
 
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 // AbstractProductA
 class ICar
@@ -21,23 +22,21 @@ public:
 	virtual void printName() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteProductA1
 class Ford :
 	public ICar
 {
 public:
-	virtual void printName()
+	void printName() override
 	{
 		std::cout << "Ford" << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteProductA2
 class Toyota :
 	public ICar
 {
 public:
-	virtual void printName()
+	void printName() override
 	{
 		std::cout << "Toyota" << std::endl;
 	}
@@ -46,7 +45,6 @@ public:
 
 
 //-------------------------------------------------------------------------------------------------
-// AbstractProductB
 class IEngine
 {
 public:
@@ -56,23 +54,21 @@ public:
 	virtual void printPower() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteProductB1
 class FordEngine :
 	public IEngine
 {
 public:
-	virtual void printPower()
+	void printPower() override
 	{
 		std::cout << "Ford Engine 4.4" << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteProductB2
 class ToyotaEngine :
 	public IEngine
 {
 public:
-	virtual void printPower()
+	void printPower() override
 	{
 		std::cout << "Toyota Engine 3.2" << std::endl;
 	}
@@ -82,52 +78,46 @@ public:
 
 
 //-------------------------------------------------------------------------------------------------
-// AbstractFactory
 class ICarFactory
 {
 public:
-	virtual ICar*     createCar()    = 0;
-	virtual IEngine*  createEngine() = 0;
+	virtual ~ICarFactory() = default;
+
+	virtual ICar*    createCar()    = 0;
+	virtual IEngine* createEngine() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteFactory1
 class FordFactory :
 	public ICarFactory
 {
 public:
-	// from ICarFactory
-	virtual ICar* createCar()
+	ICar* createCar() override
 	{
 		return new Ford();
 	}
 
-	virtual IEngine* createEngine()
+	IEngine* createEngine() override
 	{
 		return new FordEngine();
 	}
 };
 //-------------------------------------------------------------------------------------------------
-// ConcreteFactory2
 class ToyotaFactory :
 	public ICarFactory
 {
 public:
-	// from ICarFactory
-	virtual ICar* createCar()
+	ICar* createCar() override
 	{
 		return new Toyota();
 	}
 
-	virtual IEngine* createEngine()
+	IEngine* createEngine() override
 	{
 		return new ToyotaEngine();
 	}
 };
 //-------------------------------------------------------------------------------------------------
-void
-use(
-	ICarFactory *f
-)
+void use(ICarFactory *f)
 {
 	ICar    *myCar    = f->createCar();
 	IEngine *myEngine = f->createEngine();
