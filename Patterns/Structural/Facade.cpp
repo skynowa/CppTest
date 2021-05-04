@@ -27,15 +27,22 @@ class HelloWorldImpl :
 	public IHelloWorld
 {
 public:
-	std::string hello() { return "Hello"; }
-	std::string world() { return "world"; }
+	std::string hello() override
+	{
+		return "Hello";
+	}
 
-	void output(const std::string & str)
+	std::string world() override
+	{
+		return "world";
+	}
+
+	void output(const std::string & str) override
 	{
 		std::cout << str;
 	}
 
-	void endl()
+	void endl() override
 	{
 		std::cout << std::endl;
 	}
