@@ -10,60 +10,72 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class RoundPeg
+class IRoundPeg
 {
 public:
-	virtual ~RoundPeg() { }
-	virtual void do_round() const=0;
-};
+	virtual ~IRoundPeg() = default;
 
-class SquarePeg
-{
-public:
-	virtual ~SquarePeg() { }
-	virtual void do_square() const=0;
+	virtual void do_round() const = 0;
 };
-
-class RoundHole
+//--------------------------------------------------------------------------------------------------
+class ISquarePeg
 {
 public:
-	void insert(const RoundPeg & peg) const
-	{
-		peg.do_round();
-	}
+	virtual ~ISquarePeg() = default;
+
+	virtual void do_square() const = 0;
 };
-
-class SquarePegAdapter : public RoundPeg
+//--------------------------------------------------------------------------------------------------
+class SquarePegAdapter :
+	public IRoundPeg
 {
-	SquarePeg & square_peg;
 public:
-	SquarePegAdapter(SquarePeg & peg) : square_peg(peg)
+	SquarePegAdapter(ISquarePeg &a_peg) :
+		_square_peg(a_peg)
 	{
 	}
-	void do_round() const
-	{
-		square_peg.do_square();
-	}
-};
 
-class HelloWorld : public SquarePeg
+	void do_round() const override
+	{
+		_square_peg.do_square();
+	}
+
+private:
+	ISquarePeg &_square_peg;
+};
+//--------------------------------------------------------------------------------------------------
+class HelloWorld :
+	public ISquarePeg
 {
 public:
-	void do_square() const
+	void do_square() const override
 	{
 		std::cout << "Hello world!" << std::endl;
 	}
 };
+//-------------------------------------------------------------------------------------------------
 
-void hello_world(const RoundPeg & peg)
+
+//--------------------------------------------------------------------------------------------------
+class RoundHole
 {
-	RoundHole().insert(peg);
+public:
+	void insert(const IRoundPeg &a_peg) const
+	{
+		a_peg.do_round();
+	}
+};
+//--------------------------------------------------------------------------------------------------
+void hello_world(const IRoundPeg &a_peg)
+{
+	RoundHole().insert(a_peg);
 }
 //--------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld peg;
-	hello_world(SquarePegAdapter(peg));
+	::hello_world( SquarePegAdapter(peg) );
+
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
