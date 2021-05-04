@@ -11,6 +11,7 @@
 #
 # + Progress bar for each dir
 # + Done/Todo icons
+# + Review (as Done) icon
 # + Ignores dirs/files
 # ? Draw "branches"
 # + Clickable files
@@ -80,9 +81,10 @@ class RoadmapGen:
 		self.file.write(a_line + '\n')
 
 	################################################################################################
-	# Check file for 'todo' labels
+	# Check file for 'todo', 'remark' labels + brief comment
 	def _fileInfo(self, a_filePath):
 		isFileTodo   = False
+		isFileRemark = False
 		commentBrief = ''
 
 		##################################################
@@ -110,6 +112,19 @@ class RoadmapGen:
 			self._writeLine("Error: {}\n".format(a_filePath))
 
 		##################################################
+		# isFileRemark
+		remarkLabels = [r'\\remark', r'\[remark\]']
+
+		try:
+			for it_remarkLabel in remarkLabels:
+				match = re.search(it_remarkLabel, fileContent, re.IGNORECASE)
+				if (match):
+					isFileRemark = True
+			# for
+		except:
+			self._writeLine("Error: {}\n".format(a_filePath))
+
+		##################################################
 		# commentsBrief
 		pattern = r'\\brief(.*?)' + os.linesep
 
@@ -117,7 +132,7 @@ class RoadmapGen:
 		if (match):
 			commentBrief = match.group(1).strip()
 
-		return (isFileTodo, commentBrief)
+		return (isFileTodo, isFileRemark, commentBrief)
 
 	################################################################################################
 	# Collect dirs info
@@ -140,8 +155,8 @@ class RoadmapGen:
 			for file in it_files:
 				allFiles += 1
 
-				isFileTodo, commentBrief = self._fileInfo(file)
-				if (isFileTodo) :
+				isFileTodo, isFileRemark, commentBrief = self._fileInfo(file)
+				if   (isFileTodo) :
 					todoFiles += 1
 				else:
 					doneFiles += 1
@@ -195,6 +210,7 @@ class RoadmapGen:
 
 		iconCurrent    = ''
 		iconToDo       = '❌'
+		iconRemark     = '🖊' # '🕵' '📝' '🏳' '⮕' '🤔' '❓'
 		iconDone       = '✅'
 		iconInProgress = '⌛'
 		iconDir        = '📁'
@@ -243,9 +259,11 @@ class RoadmapGen:
 
 			fileName = Path(it_file).name
 
-			isFileTodo, commentBrief = self._fileInfo(it_file)
-			if (isFileTodo):
+			isFileTodo, isFileRemark, commentBrief = self._fileInfo(it_file)
+			if   (isFileTodo):
 				fileName = '{} {}'.format(iconToDo, fileName)
+			elif (isFileRemark):
+				fileName = '{} `{}`'.format(iconRemark, fileName)
 			else:
 				fileName = '{} `{}`'.format(iconDone, fileName)
 
