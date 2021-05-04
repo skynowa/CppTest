@@ -12,7 +12,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-// AbstractProductA
 class ICar
 {
 public:
