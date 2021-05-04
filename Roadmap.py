@@ -11,7 +11,7 @@
 #
 # + Progress bar for each dir
 # + Done/Todo icons
-# + Review (as Done) icon
+# + Remark/Review (as Done) icon
 # + Ignores dirs/files
 # ? Draw "branches"
 # + Clickable files
@@ -113,7 +113,7 @@ class RoadmapGen:
 
 		##################################################
 		# isFileRemark
-		remarkLabels = [r'\\remark', r'\[remark\]']
+		remarkLabels = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
 
 		try:
 			for it_remarkLabel in remarkLabels:
