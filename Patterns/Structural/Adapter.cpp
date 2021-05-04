@@ -66,16 +66,19 @@ public:
 	}
 };
 //--------------------------------------------------------------------------------------------------
-void hello_world(const IRoundPeg &a_peg)
-{
-	RoundHole().insert(a_peg);
-}
-//--------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld peg;
-	::hello_world( SquarePegAdapter(peg) );
+
+	RoundHole hole;
+	hole.insert( SquarePegAdapter(peg) );
 
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Hello world!
+
+#endif
