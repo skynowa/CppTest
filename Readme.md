@@ -11,7 +11,7 @@
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
-- [Patterns](#patterns) █░░░░░░░░░ 13% (30)
+- [Patterns](#patterns) ██░░░░░░░░ 17% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 100% (1)
@@ -704,7 +704,7 @@
 
 </details>
 
-##  <a id="patterns">Patterns █░░░░░░░░░ 13% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="patterns">Patterns ██░░░░░░░░ 17% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
 
@@ -732,9 +732,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Creational 67% (6)</summary>
+    <summary>📁 ⌛ Creational 83% (6)</summary>
 
-    * <a href="/Patterns/Creational/AbstractFactory.cpp" title="">❌ AbstractFactory.cpp</a>
+    * <a href="/Patterns/Creational/AbstractFactory.cpp" title="An abstract factory is used to create objects">✅ `AbstractFactory.cpp`</a>
     * <a href="/Patterns/Creational/Builder.cpp" title="Builder - responsible for constructing an object">✅ `Builder.cpp`</a>
     * <a href="/Patterns/Creational/Singleton.cpp" title="Singleton - only one instance of a class">✅ `Singleton.cpp`</a>
     * <a href="/Patterns/Creational/FactoryMethod.cpp" title="Factory method - creates object in a derived class">✅ `FactoryMethod.cpp`</a>

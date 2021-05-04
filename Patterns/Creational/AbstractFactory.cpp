@@ -1,32 +1,28 @@
 /**
- * \file
- * \brief
+ * \file  AbstractFactory.cpp
+ * \brief An abstract factory is used to create objects
  *
- * \todo
+ * However you want to change what object is created
  */
 
-/*
-An abstract factory is used to create objects.
-However you want to change what object is created.
-*/
 
-
-#include <iostream>
-#include <string>
-#include <memory>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class IMessage
 {
 public:
     virtual ~IMessage() = default;
+
     virtual std::string get() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-class CMessageA :
+class MsgA :
     public IMessage
 {
 public:
-    virtual std::string get()
+    std::string get() override
     {
         return "Hello world!";
     }
@@ -36,34 +32,26 @@ class IMessageFactory
 {
 public:
     virtual ~IMessageFactory() = default;
-    virtual std::auto_ptr<IMessage> create_message() const = 0;
+
+    virtual std::unique_ptr<IMessage> create() const = 0;
 };
 //-------------------------------------------------------------------------------------------------
-class CMessageFactoryA :
+class MsgFactoryA :
     public IMessageFactory
 {
 public:
-    virtual std::auto_ptr<IMessage> create_message() const
+    std::unique_ptr<IMessage> create() const override
     {
-        return std::auto_ptr<IMessage>(new CMessageA());
+        return std::unique_ptr<IMessage>(new MsgA());
     }
 };
 //-------------------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------------------------------------------
-void
-hello_world(
-    const IMessageFactory &factory
-)
-{
-	std::auto_ptr<IMessage> message = factory.create_message();
-
-	std::cout << message->get() << std::endl;
-}
-//-------------------------------------------------------------------------------------------------
 int main()
 {
-	hello_world( CMessageFactoryA() );
+    MsgFactoryA factory;
+	std::unique_ptr<IMessage> msg = factory.create();
+
+	std::cout << TRACE_VAR(msg->get()) << std::endl;
 
 	return 0;
 }
