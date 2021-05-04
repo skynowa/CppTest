@@ -1,11 +1,9 @@
 /**
  * \file  FlyWeight.cpp
- * \brief
+ * \brief Flyweight creates objects as they are needed
  *
- * \todo
- *
- * Flyweight creates objects as they are needed, because keeping them around is unnecessary.
- * Here the Character class is a flyweight that is only used for the duration of the inner loop.
+ * Because keeping them around is unnecessary.
+ * Here the Character class is a flyweight that is ONLY used for the duration of the inner loop
  */
 
 
@@ -15,28 +13,38 @@
 //--------------------------------------------------------------------------------------------------
 class Character
 {
-	char ch;
 public:
-	Character(char c) : ch(c) { }
-	void output() const { std::cout << ch; }
-};
-
-struct OutputChar
-{
-	void operator()(char ch) const
+	explicit Character(const char c) :
+		_ch(c)
 	{
-		Character(ch).output();
 	}
+
+	void output() const
+	{
+		std::cout << _ch;
+	}
+
+private:
+	const char _ch {};
 };
-
-void hello_world(const std::string & message)
-{
-	std::for_each(message.begin(), message.end(), OutputChar());
-}
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
-	hello_world("Hello world!\n");
+	const std::string msg = "Hello world!\n";
+
+	std::for_each(msg.cbegin(), msg.cend(),
+		[](const char a_ch) -> void
+		{
+			Character character(a_ch);
+			character.output();
+		});
+
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Hello world!
+
+#endif

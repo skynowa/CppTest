@@ -31,7 +31,7 @@ void hello_world(const ProxyCout &a_cout)
 //--------------------------------------------------------------------------------------------------
 int main()
 {
-	hello_world( CoutProxy() );
+	hello_world( ProxyCout() );
 
 	return 0;
 }

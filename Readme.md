@@ -11,7 +11,7 @@
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
-- [Patterns](#patterns) ██░░░░░░░░ 20% (30)
+- [Patterns](#patterns) ██░░░░░░░░ 23% (30)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 100% (1)
@@ -704,7 +704,7 @@
 
 </details>
 
-##  <a id="patterns">Patterns ██░░░░░░░░ 20% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="patterns">Patterns ██░░░░░░░░ 23% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
 
@@ -744,12 +744,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Structural 0% (8)</summary>
+    <summary>📁 ⌛ Structural 12% (8)</summary>
 
     * <a href="/Patterns/Structural/ContainerFacade.h" title="">❌ ContainerFacade.h</a>
     * <a href="/Patterns/Structural/Facade.cpp" title="">❌ Facade.cpp</a>
     * <a href="/Patterns/Structural/Adapter.cpp" title="Convert one class so that it appears to be another class">❌ Adapter.cpp</a>
-    * <a href="/Patterns/Structural/FlyWeight.cpp" title="">❌ FlyWeight.cpp</a>
+    * <a href="/Patterns/Structural/FlyWeight.cpp" title="Flyweight creates objects as they are needed">✅ `FlyWeight.cpp`</a>
     * <a href="/Patterns/Structural/Bridge.cpp" title="">❌ Bridge.cpp</a>
     * <a href="/Patterns/Structural/Composite.cpp" title="Composite combines several classes into a single class.">❌ Composite.cpp</a>
     * <a href="/Patterns/Structural/Decorator.cpp" title="">❌ Decorator.cpp</a>
