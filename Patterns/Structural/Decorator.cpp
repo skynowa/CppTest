@@ -1,12 +1,9 @@
 /**
  * \file  Decorator.cpp
- * \brief
- *
+ * \brief Decorator adds / overrides functionality of a class
  * \todo
  *
- * Decorator adds or overrides functionality of a class.
- * Unlike normal inheritance, decorator overrides behaviour
- * of a derived class, not a base class.
+ * Unlike normal inheritance, decorator overrides behaviour of a derived class, not a base class
  */
 
 
@@ -14,42 +11,55 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class Greeting
+class IGreeting
 {
 public:
-	virtual ~Greeting() { }
-	virtual std::string get_greeting() const=0;
-};
+	virtual ~IGreeting() = default;
 
-class Exclamation : public Greeting
+	virtual std::string greeting() const = 0;
+};
+//--------------------------------------------------------------------------------------------------
+class Exclamation :
+	public IGreeting
 {
-	const Greeting & greeting;
 public:
-	Exclamation(const Greeting & gr) : greeting(gr) { }
-	std::string get_greeting() const
+	Exclamation(const IGreeting &a_greeting) :
+		_greeting(a_greeting)
 	{
-		return greeting.get_greeting() + "!";
 	}
-};
 
-class HelloWorld : public Greeting
+	std::string greeting() const override
+	{
+		return _greeting.greeting() + "!";
+	}
+
+private:
+	const IGreeting &_greeting;
+};
+//--------------------------------------------------------------------------------------------------
+class HelloWorld :
+	public IGreeting
 {
 public:
-	std::string get_greeting() const
+	std::string greeting() const override
 	{
 		return "Hello world";
 	}
 };
-
-void hello_world(const Greeting & greeting)
-{
-	std::cout << greeting.get_greeting() << std::endl;
-}
 //--------------------------------------------------------------------------------------------------
 int main()
 {
 	HelloWorld hw;
-	hello_world(Exclamation(hw));
+	Exclamation exclamation(hw);
+
+	std::cout << TRACE_VAR(exclamation.greeting()) << std::endl;
+
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+exclamation.greeting(): Hello world!
+
+#endif
