@@ -1,10 +1,7 @@
 /**
  * \file  Bridge.cpp
- * \brief
+ * \brief Bridge allows two implementations to vary independently
  *
- * \todo
- *
- * Bridge allows two implementations to vary independently.
  * In this case, the implementations of message and recipient are independent,
  * but combine to output "Hello world!"
  */
@@ -14,48 +11,57 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class Message
+class IMessage
 {
 public:
-	virtual ~Message() { }
-	virtual void send_to(const std::string &)=0;
-};
+	virtual ~IMessage() = default;
 
-class Recipient
-{
-public:
-	virtual ~Recipient() { }
-	virtual void send(Message &)=0;
+	virtual void sendTo(const std::string &) = 0;
 };
-
-class Hello : public Message
+//--------------------------------------------------------------------------------------------------
+class Hello :
+	public IMessage
 {
 public:
-	void send_to(const std::string & name)
+	void sendTo(const std::string &a_name) override
 	{
-		std::cout << "Hello " << name << "!" << std::endl;
+		std::cout << "Hello " << a_name << "!" << std::endl;
 	};
 };
+//--------------------------------------------------------------------------------------------------
 
-class World : public Recipient
+//--------------------------------------------------------------------------------------------------
+class IRecipient
 {
 public:
-	void send(Message & msg)
+	virtual ~IRecipient() = default;
+
+	virtual void send(IMessage &) = 0;
+};
+//--------------------------------------------------------------------------------------------------
+class World :
+	public IRecipient
+{
+public:
+	void send(IMessage &a_msg) override
 	{
-		msg.send_to("world");
+		a_msg.sendTo("world");
 	};
 };
-
-void hello_world(Message & msg, Recipient & recipient)
-{
-	recipient.send(msg);
-}
 //--------------------------------------------------------------------------------------------------
 int main()
 {
 	Hello hello;
 	World world;
-	hello_world(hello, world);
+
+	world.send(hello);
+
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Hello world!
+
+#endif
