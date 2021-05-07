@@ -6,7 +6,7 @@
 - [Crossplatform](#crossplatform) ██████████ 100% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 100% (1)
+- [Idioms](#idioms) ██████████ 100% (2)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -513,8 +513,9 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 100% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">✅ `FAQ.md`</a>
 
 </details>
