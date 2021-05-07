@@ -51,19 +51,19 @@ protected:
 int main(int, char **)
 {
 	{
-		Game game = Game::singlePlayer();
-		game.print();
+		Game single = Game::singlePlayer();
+		single.print();
 	}
 
 	{
-		Game game = Game::multiPlayer();
-		game.print();
+		Game milti = Game::multiPlayer();
+		gmiltiame.print();
 	}
 
 	// multiplayer game; without named constructor (does not compile)
 	{
 	#if 0
-		Game game = Game(1);
+		Game single = Game("Single");
 		game.print();
 	#endif
 	}
