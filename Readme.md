@@ -3,10 +3,9 @@
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
 - [Core](#core) ██░░░░░░░░ 15% (164)
-- [Crossplatform](#crossplatform) ██████████ 100% (9)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 100% (2)
+- [Idioms](#idioms) ██████████ 100% (11)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -473,32 +472,6 @@
 
     </details>
 
-##  <a id="crossplatform">Crossplatform ██████████ 100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-
-</details>
-
-  * <details close>
-    <summary>📁 ✅ File 100% (4)</summary>
-
-    * <a href="/Crossplatform/File/FileRouter.inl" title="">✅ `FileRouter.inl`</a>
-    * <a href="/Crossplatform/File/FileRouter.h" title="Class to handle all File operations in a platform-dependent manner">✅ `FileRouter.h`</a>
-    * <a href="/Crossplatform/File/File.h" title="Platform-independent wrapper for the FileRouter class">✅ `File.h`</a>
-    * <a href="/Crossplatform/File/File_old.h" title="File class, similar to java.io.File, though lacking functionality">✅ `File_old.h`</a>
-
-    </details>
-
-  * <details close>
-    <summary>📁 ✅ Thread 100% (5)</summary>
-
-    * <a href="/Crossplatform/Thread/IThreadImpl.h" title="">✅ `IThreadImpl.h`</a>
-    * <a href="/Crossplatform/Thread/IThreadImpl_posix.h" title="">✅ `IThreadImpl_posix.h`</a>
-    * <a href="/Crossplatform/Thread/Thread_old.h" title="Class representing an operating system execution thread">✅ `Thread_old.h`</a>
-    * <a href="/Crossplatform/Thread/Thread.h" title="">✅ `Thread.h`</a>
-    * <a href="/Crossplatform/Thread/IThreadImpl_win.h" title="">✅ `IThreadImpl_win.h`</a>
-
-    </details>
-
 ##  <a id="devops">DevOps ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
@@ -513,12 +486,39 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 100% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">✅ `FAQ.md`</a>
 
 </details>
+
+  * <details close>
+    <summary>📁 ✅ Pimpl 100% (9)</summary>
+
+
+    </details>
+
+    * <details close>
+      <summary>📁 ✅ File 100% (4)</summary>
+
+        * <a href="/Idioms/Pimpl/File/FileRouter.inl" title="">✅ `FileRouter.inl`</a>
+        * <a href="/Idioms/Pimpl/File/FileRouter.h" title="Class to handle all File operations in a platform-dependent manner">✅ `FileRouter.h`</a>
+        * <a href="/Idioms/Pimpl/File/File.h" title="Platform-independent wrapper for the FileRouter class">✅ `File.h`</a>
+        * <a href="/Idioms/Pimpl/File/File_old.h" title="File class, similar to java.io.File, though lacking functionality">✅ `File_old.h`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ Thread 100% (5)</summary>
+
+        * <a href="/Idioms/Pimpl/Thread/IThreadImpl.h" title="">✅ `IThreadImpl.h`</a>
+        * <a href="/Idioms/Pimpl/Thread/IThreadImpl_posix.h" title="">✅ `IThreadImpl_posix.h`</a>
+        * <a href="/Idioms/Pimpl/Thread/Thread_old.h" title="Class representing an operating system execution thread">✅ `Thread_old.h`</a>
+        * <a href="/Idioms/Pimpl/Thread/Thread.h" title="">✅ `Thread.h`</a>
+        * <a href="/Idioms/Pimpl/Thread/IThreadImpl_win.h" title="">✅ `IThreadImpl_win.h`</a>
+
+      </details>
 
 ##  <a id="ipcmt">IpcMt ░░░░░░░░░░ 0% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
