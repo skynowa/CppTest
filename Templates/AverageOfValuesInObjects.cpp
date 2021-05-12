@@ -1,66 +1,89 @@
 /**
- * \file
+ * \file  AverageOfValuesInObjects.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
-
+//--------------------------------------------------------------------------------------------------
 template <typename T>
-T average(T *array, int length)
+T
+average(T *array, int length)
 {
 	T sum = 0;
-	for (int i = 0; i < length; i++)
+
+	for (int i = 0; i < length; i++) {
 		sum += array[i];
+	}
 
 	sum /= length;
+
 	return sum;
 }
-
+//--------------------------------------------------------------------------------------------------
 class Cents
 {
-	int m_cents;
 public:
-	Cents(int cents): m_cents(cents)
-	{}
-
-	int get_cents()
+	Cents(int cents) :
+		_cents(cents)
 	{
-		cout << m_cents << endl;
 	}
 
-	friend bool operator> (const Cents &c1, const Cents &c2)
+	int cents()
 	{
-		return (c1.m_cents > c2.m_cents);
+		cout << _cents << endl;
+
+		return _cents;
 	}
 
-	friend ostream& operator<< (ostream& out, const Cents& c1)
+	friend bool
+	operator > (const Cents &c1, const Cents &c2)
 	{
-		out << "Average of the Cents is = " << c1.m_cents << " cents";
+		return (c1._cents > c2._cents);
+	}
+
+	friend ostream &
+	operator << (ostream& out, const Cents& c1)
+	{
+		out << "Average of the Cents is = " << c1._cents << " cents";
 		return out;
 	}
 
-	Cents& operator+= (Cents &c1)
+	Cents &
+	operator+= (Cents &c1)
 	{
-		m_cents += c1.m_cents;
+		_cents += c1._cents;
 		return *this;
 	}
 
-	Cents& operator/= (int value)
+	Cents &
+	operator/= (int value)
 	{
-		m_cents /= value;
+		_cents /= value;
 		return *this;
 	}
+
+private:
+	int _cents {};
 };
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
-    Cents array[] = { Cents(5), Cents(10), Cents(15), Cents(14) };
+    Cents array[] { Cents(5), Cents(10), Cents(15), Cents(14) };
+
     cout << average(array, 4) << endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Average of the Cents is = 11 cents
+
+#endif
