@@ -54,14 +54,14 @@ public:
 	}
 
 	Cents &
-	operator+= (Cents &c1)
+	operator += (Cents &c1)
 	{
 		_cents += c1._cents;
 		return *this;
 	}
 
 	Cents &
-	operator/= (int value)
+	operator /= (int value)
 	{
 		_cents /= value;
 		return *this;
@@ -75,7 +75,7 @@ int main()
 {
     Cents array[] { Cents(5), Cents(10), Cents(15), Cents(14) };
 
-    cout << average(array, 4) << endl;
+    cout << ::average(array, 4) << endl;
 
     return EXIT_SUCCESS;
 }
