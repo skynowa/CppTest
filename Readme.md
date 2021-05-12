@@ -15,7 +15,7 @@
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 100% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
-- [Templates](#templates) █░░░░░░░░░ 14% (14)
+- [Templates](#templates) ██░░░░░░░░ 15% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
 - [Windows](#windows) ██████████ 100% (37)
 
@@ -967,14 +967,13 @@
 
     </details>
 
-##  <a id="templates">Templates █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="templates">Templates ██░░░░░░░░ 15% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoValues.cpp" title="">❌ MaximumOfTwoValues.cpp</a>
 * <a href="/Templates/VariadicFunc.cpp" title="">❌ VariadicFunc.cpp</a>
 * <a href="/Templates/AverageOfValuesInObjects.cpp" title="">❌ AverageOfValuesInObjects.cpp</a>
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">❌ MaximumOfTwoObjects.cpp</a>
 * <a href="/Templates/FAQ.md" title="">✅ `FAQ.md`</a>
-* <a href="/Templates/Templates_and_Classes.txt" title="">❌ Templates_and_Classes.txt</a>
 * <a href="/Templates/VariadicTemplates3.cpp" title="">❌ VariadicTemplates3.cpp</a>
 * <a href="/Templates/AverageOfAnArray.cpp" title="">❌ AverageOfAnArray.cpp</a>
 * <a href="/Templates/Export.cpp" title="">❌ Export.cpp</a>
