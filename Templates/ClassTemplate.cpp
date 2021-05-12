@@ -31,7 +31,7 @@ private:
 //-------------------------------------------------------------------------------------------------
 template <class T>
 void
-Stack<T>::push (T const& elem)
+Stack<T>::push(T const& elem)
 {
    // append copy of passed element
    elems.push_back(elem);
@@ -39,7 +39,7 @@ Stack<T>::push (T const& elem)
 //-------------------------------------------------------------------------------------------------
 template <class T>
 void
-Stack<T>::pop ()
+Stack<T>::pop()
 {
    if (elems.empty()) {
       throw out_of_range("Stack<>::pop(): empty stack");
@@ -51,7 +51,7 @@ Stack<T>::pop ()
 //-------------------------------------------------------------------------------------------------
 template <class T>
 T
-Stack<T>::top () const
+Stack<T>::top() const
 {
    if (elems.empty()) {
       throw out_of_range("Stack<>::top(): empty stack");
@@ -67,11 +67,9 @@ int main()
       Stack<int>    intStack;
       Stack<string> stringStack;
 
-      // manipulate int stack
       intStack.push(7);
       cout << intStack.top() <<endl;
 
-      // manipulate string stack
       stringStack.push("hello");
       cout << stringStack.top() << std::endl;
 
@@ -80,8 +78,12 @@ int main()
 
    }
    catch (exception const& ex) {
-      cerr << "Exception: " << ex.what() <<endl;
-      return -1;
+      cerr << "Exception: " << ex.what() << endl;
+      return - 1;
+   }
+   catch (...) {
+      cerr << "Exception: unknown" << endl;
+      return - 1;
    }
 
    return 0;
