@@ -57,7 +57,7 @@ int main(int, char **)
 
 	{
 		Game milti = Game::multiPlayer();
-		gmiltiame.print();
+		milti.print();
 	}
 
 	// multiplayer game; without named constructor (does not compile)
