@@ -525,11 +525,11 @@
 * <a href="/IpcMt/signal_stacktrace.cpp" title="">❌ signal_stacktrace.cpp</a>
 * <a href="/IpcMt/psiginfo.cpp" title="">❌ psiginfo.cpp</a>
 * <a href="/IpcMt/signal_ctrl_c.cpp" title="">❌ signal_ctrl_c.cpp</a>
+* <a href="/IpcMt/IpcMethods.md" title="">❌ 📝 IpcMethods.md</a>
 * <a href="/IpcMt/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/IpcMt/ThreadHarwareConcurrency.cpp" title="">❌ ThreadHarwareConcurrency.cpp</a>
 * <a href="/IpcMt/condition_variable.cpp" title="">❌ condition_variable.cpp</a>
 * <a href="/IpcMt/signal.cpp" title="http://aspyct.org, a.dotreppe@aspyct.org">❌ signal.cpp</a>
-* <a href="/IpcMt/IpcMethods.txt" title="">❌ IpcMethods.txt</a>
 
 </details>
 
@@ -635,8 +635,8 @@
     <summary>📁 ❌ LibEvent 0% (4)</summary>
 
     * <a href="/Libs/LibEvent/all_test.cpp" title="">❌ all_test.cpp</a>
-    * <a href="/Libs/LibEvent/FAQ.txt" title="">❌ FAQ.txt</a>
     * <a href="/Libs/LibEvent/time-test.c" title="">❌ time-test.c</a>
+    * <a href="/Libs/LibEvent/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Libs/LibEvent/signal-test.c" title="">❌ signal-test.c</a>
 
     </details>
@@ -783,8 +783,8 @@
     <summary>📁 ❌ Algos 0% (6)</summary>
 
     * <a href="/Stl/Algos/difference.cpp" title="">❌ difference.cpp</a>
+    * <a href="/Stl/Algos/Sort.md" title="">❌ 📝 Sort.md</a>
     * <a href="/Stl/Algos/accumulate.cpp" title="">❌ accumulate.cpp</a>
-    * <a href="/Stl/Algos/sort.txt" title="">❌ sort.txt</a>
     * <a href="/Stl/Algos/replace_if.cpp" title="">❌ replace_if.cpp</a>
     * <a href="/Stl/Algos/transform.cpp" title="">❌ transform.cpp</a>
     * <a href="/Stl/Algos/set_symmetric_difference.cpp" title="">❌ set_symmetric_difference.cpp</a>
