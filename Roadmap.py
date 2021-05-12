@@ -10,7 +10,7 @@
 # TODO
 #
 # + Progress bar for each dir
-# + Done/Todo icons
+# + Done/Todo/Faq(md) icons
 # + Remark/Review (as Done) icon
 # + Ignores dirs/files
 # ? Draw "branches"
@@ -85,6 +85,7 @@ class RoadmapGen:
 	def _fileInfo(self, a_filePath):
 		isFileTodo   = False
 		isFileRemark = False
+		isFileFaq    = False
 		commentBrief = ''
 
 		##################################################
@@ -125,6 +126,12 @@ class RoadmapGen:
 			self._writeLine("Error: {}\n".format(a_filePath))
 
 		##################################################
+		# isFileFaq
+		fileExt = os.path.splitext(a_filePath)[1][1:].strip().lower()
+		if (fileExt == 'md') :
+			isFileFaq = True
+
+		##################################################
 		# commentsBrief
 		pattern = r'\\brief(.*?)' + os.linesep
 
@@ -132,7 +139,7 @@ class RoadmapGen:
 		if (match):
 			commentBrief = match.group(1).strip()
 
-		return (isFileTodo, isFileRemark, commentBrief)
+		return (isFileTodo, isFileRemark, isFileFaq, commentBrief)
 
 	################################################################################################
 	# Collect dirs info
@@ -155,7 +162,7 @@ class RoadmapGen:
 			for file in it_files:
 				allFiles += 1
 
-				isFileTodo, isFileRemark, commentBrief = self._fileInfo(file)
+				isFileTodo, isFileRemark, isFileFaq, commentBrief = self._fileInfo(file)
 				if   (isFileTodo) :
 					todoFiles += 1
 				else:
@@ -211,6 +218,7 @@ class RoadmapGen:
 		iconCurrent    = ''
 		iconToDo       = '❌'
 		iconRemark     = '🖊' # '🕵' '📝' '🏳' '⮕' '🤔' '❓'
+		iconFaq        = '📝'
 		iconDone       = '✅'
 		iconInProgress = '⌛'
 		iconDir        = '📁'
@@ -259,7 +267,10 @@ class RoadmapGen:
 
 			fileName = Path(it_file).name
 
-			isFileTodo, isFileRemark, commentBrief = self._fileInfo(it_file)
+			isFileTodo, isFileRemark, isFileFaq, commentBrief = self._fileInfo(it_file)
+			if (isFileFaq) :
+				fileName = '{} {}'.format(iconFaq, fileName)
+
 			if   (isFileTodo):
 				fileName = '{} {}'.format(iconToDo, fileName)
 			elif (isFileRemark):

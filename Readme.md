@@ -139,7 +139,7 @@
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">❌ EnumListInitialization.cpp</a>
     * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">❌ StructuredBindingsRef.cpp</a>
     * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">❌ ConstexprIf.cpp</a>
-    * <a href="/Core/C++17/FAQ.md" title="">✅ `FAQ.md`</a>
+    * <a href="/Core/C++17/FAQ.md" title="">✅ `📝 FAQ.md`</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">❌ BracedInitList.cpp</a>
     * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">❌ ConstexprLambda.cpp</a>
     * <a href="/Core/C++17/FoldExpressions.cpp" title="Fold expressions">❌ FoldExpressions.cpp</a>
@@ -466,7 +466,7 @@
     * <a href="/Core/Virtual/VirtualInheritance1.cpp" title="">❌ VirtualInheritance1.cpp</a>
     * <a href="/Core/Virtual/VirtualFunction1.cpp" title="">❌ VirtualFunction1.cpp</a>
     * <a href="/Core/Virtual/VirtualInheritance2.cpp" title="virtual inheritance">❌ VirtualInheritance2.cpp</a>
-    * <a href="/Core/Virtual/FAQ.md" title="">✅ `FAQ.md`</a>
+    * <a href="/Core/Virtual/FAQ.md" title="">✅ `📝 FAQ.md`</a>
     * <a href="/Core/Virtual/VirtualFunction2.cpp" title="">❌ VirtualFunction2.cpp</a>
     * <a href="/Core/Virtual/PureVirtual.cpp" title="">❌ PureVirtual.cpp</a>
 
@@ -479,17 +479,17 @@
 
 ##  <a id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/FAQ/CppQuestions.md" title="">❌ CppQuestions.md</a>
-* <a href="/FAQ/FAQ.md" title="">❌ FAQ.md</a>
-* <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ CppInterview400_dou.ua.md</a>
-* <a href="/FAQ/RSDN.md" title="">❌ RSDN.md</a>
+* <a href="/FAQ/CppQuestions.md" title="">❌ 📝 CppQuestions.md</a>
+* <a href="/FAQ/FAQ.md" title="">❌ 📝 FAQ.md</a>
+* <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
+* <a href="/FAQ/RSDN.md" title="">❌ 📝 RSDN.md</a>
 
 </details>
 
 ##  <a id="idioms">Idioms ██████████ 100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
-* <a href="/Idioms/FAQ.md" title="">✅ `FAQ.md`</a>
+* <a href="/Idioms/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
@@ -525,7 +525,7 @@
 * <a href="/IpcMt/signal_stacktrace.cpp" title="">❌ signal_stacktrace.cpp</a>
 * <a href="/IpcMt/psiginfo.cpp" title="">❌ psiginfo.cpp</a>
 * <a href="/IpcMt/signal_ctrl_c.cpp" title="">❌ signal_ctrl_c.cpp</a>
-* <a href="/IpcMt/FAQ.md" title="">❌ FAQ.md</a>
+* <a href="/IpcMt/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/IpcMt/ThreadHarwareConcurrency.cpp" title="">❌ ThreadHarwareConcurrency.cpp</a>
 * <a href="/IpcMt/condition_variable.cpp" title="">❌ condition_variable.cpp</a>
 * <a href="/IpcMt/signal.cpp" title="http://aspyct.org, a.dotreppe@aspyct.org">❌ signal.cpp</a>
@@ -644,7 +644,7 @@
   * <details close>
     <summary>📁 ❌ LibUv 0% (1)</summary>
 
-    * <a href="/Libs/LibUv/FAQ.md" title="">❌ FAQ.md</a>
+    * <a href="/Libs/LibUv/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
@@ -695,7 +695,7 @@
 ##  <a id="network">Network ██████████ 100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/IpString.cpp" title="">✅ `IpString.cpp`</a>
-* <a href="/Network/TcpUdpDiffs.md" title="">✅ `TcpUdpDiffs.md`</a>
+* <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 
 </details>
@@ -707,7 +707,7 @@
 
 ##  <a id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Patterns/FAQ.md" title="">❌ FAQ.md</a>
+* <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -775,7 +775,7 @@
 
 ##  <a id="stl">Stl ░░░░░░░░░░ 2% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Stl/StlFeatures.md" title="">✅ `StlFeatures.md`</a>
+* <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
 </details>
 
@@ -972,7 +972,7 @@
 * <a href="/Templates/MaximumOfTwoValues.cpp" title="">✅ `MaximumOfTwoValues.cpp`</a>
 * <a href="/Templates/AverageOfValuesInObjects.cpp" title="">✅ `AverageOfValuesInObjects.cpp`</a>
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">✅ `MaximumOfTwoObjects.cpp`</a>
-* <a href="/Templates/FAQ.md" title="">✅ `FAQ.md`</a>
+* <a href="/Templates/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/Templates/AverageOfAnArray.cpp" title="">✅ `AverageOfAnArray.cpp`</a>
 * <a href="/Templates/Export.cpp" title="">✅ `Export.cpp`</a>
 * <a href="/Templates/Export.h" title="">✅ `Export.h`</a>
@@ -1018,7 +1018,7 @@
 * <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
 * <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
 * <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
-* <a href="/Windows/OsBit.md" title="">✅ `OsBit.md`</a>
+* <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
 * <a href="/Windows/CommandLine.cpp" title="">✅ `CommandLine.cpp`</a>
 * <a href="/Windows/MemoryUsage.cpp" title="">✅ `MemoryUsage.cpp`</a>
 * <a href="/Windows/OsBit.cpp" title="">✅ `OsBit.cpp`</a>
