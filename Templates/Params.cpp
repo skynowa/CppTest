@@ -1,73 +1,81 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  Params.cpp
+ * \brief Template params
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 template <typename T>
-class A {
-    public:
-        explicit A (const T &t) {
-            _m_t = t;
-        }
+class A
+{
+public:
+    explicit A(const T &t)
+    {
+        _t = t;
+    }
 
-        void     vPrint() {
-            std::cout << "_m_t: " << _m_t << std::endl;
-        }
+    void print()
+    {
+        std::cout << "_t: " << _t << std::endl;
+    }
 
-    private:
-        T _m_t;
+private:
+    T _t {};
 };
-
+//-------------------------------------------------------------------------------------------------
 template <typename T, int iValue>
-class B {
-    public:
-        explicit B (const T &t) {
-            _m_t = t;
-            _m_iValue = iValue;
-        }
+class B
+{
+public:
+    explicit B(const T &t)
+    {
+        _t      = t;
+        _iValue = iValue;
+    }
 
-        void     vPrint() {
-            std::cout << "_m_t: "      << _m_t
-                      << "_m_iValue: " << _m_iValue
-                      << std::endl;
-        }
+    void print()
+    {
+        std::cout
+            << "_t: "      << _t
+            << "_iValue: " << _iValue
+            << std::endl;
+    }
 
-    private:
-        T   _m_t;
-        int _m_iValue;
+private:
+    T   _t {};
+    int _iValue {};
 };
-
-#if xNOT_COMPILE
+//-------------------------------------------------------------------------------------------------
+#if 0
 
 // error C2993: 'double' : illegal type for non-type template parameter 'dValue'
 
 template <typename T, double dValue>
-class C {
-    public:
-        explicit C     (const T &t) {
-            // std::cout << __FUNCTION__ << std::endl;
+class C
+{
+public:
+    explicit C(const T &t)
+    {
+        // std::cout << __FUNCTION__ << std::endl;
 
-            _m_t = t;
-            _m_dValue = dValue;
-        }
+        _t      = t;
+        _dValue = dValue;
+    }
 
-        void     vPrint() {
-            std::cout << "_m_t: "    << _m_t
-                      << "_m_dValue" << _m_dValue
-                      << std::endl;
-        }
+    void print()
+    {
+        std::cout
+            << "_t: "    << _t
+            << "_dValue" << _dValue
+            << std::endl;
+    }
 
-    private:
-        T      _m_t;
-        double _m_dValue;
+private:
+    T      _t {};
+    double _dValue {};
 };
 
 #endif
@@ -76,36 +84,36 @@ int main(int, char **)
 {
     // template <typename T> class A
     {
-        A<int>          ( 1 ).vPrint();
-        A<unsigned int> ( 2U ).vPrint();
-        A<unsigned long>( 3UL ).vPrint();
-        A<double>       ( 4.0 ).vPrint();
-        A<const char *> ( "5" ).vPrint();
-        A<std::string>  ( std::string("6") ).vPrint();
-        A<bool>         ( true ).vPrint();
+        A<int>          ( 1 ).print();
+        A<unsigned int> ( 2U ).print();
+        A<unsigned long>( 3UL ).print();
+        A<double>       ( 4.0 ).print();
+        A<const char *> ( "5" ).print();
+        A<std::string>  ( std::string("6") ).print();
+        A<bool>         ( true ).print();
     }
 
     // template <typename T, int iValue> class B
     {
-        B<int, 1>          ( 1 ).vPrint();
-        B<unsigned int, 2> ( 2U ).vPrint();
-        B<unsigned long, 3>( 3UL ).vPrint();
-        B<double, 4>       ( 4.0 ).vPrint();
-        B<const char *, 5> ( "5" ).vPrint();
-        B<std::string, 6>  ( std::string("6") ).vPrint();
-        B<bool, 7>         ( true ).vPrint();
+        B<int, 1>          ( 1 ).print();
+        B<unsigned int, 2> ( 2U ).print();
+        B<unsigned long, 3>( 3UL ).print();
+        B<double, 4>       ( 4.0 ).print();
+        B<const char *, 5> ( "5" ).print();
+        B<std::string, 6>  ( std::string("6") ).print();
+        B<bool, 7>         ( true ).print();
     }
 
     // template <typename T, double dValue> class C
     {
-    #if xNOT_COMPILE
-        C<int, 1.0>          ( 1 ).vPrint();
-        C<unsigned int, 2.0> ( 2U ).vPrint();
-        C<unsigned long, 3.0>( 3UL ).vPrint();
-        C<double, 4.0>       ( 4.0 ).vPrint();
-        C<const char *, 5.0> ( "5" ).vPrint();
-        C<std::string, 6.0>  ( std::string("6") ).vPrint();
-        C<bool, 7.0>         ( true ).vPrint();
+    #if 0
+        C<int, 1.0>          ( 1 ).print();
+        C<unsigned int, 2.0> ( 2U ).print();
+        C<unsigned long, 3.0>( 3UL ).print();
+        C<double, 4.0>       ( 4.0 ).print();
+        C<const char *, 5.0> ( "5" ).print();
+        C<std::string, 6.0>  ( std::string("6") ).print();
+        C<bool, 7.0>         ( true ).print();
     #endif
     }
 
@@ -117,22 +125,22 @@ int main(int, char **)
 #if OUTPUT
 
 // class A
-_m_t: 1
-_m_t: 2
-_m_t: 3
-_m_t: 4
-_m_t: 5
-_m_t: 6
-_m_t: 1
+_t: 1
+_t: 2
+_t: 3
+_t: 4
+_t: 5
+_t: 6
+_t: 1
 
 // class B
-_m_t: 1_m_iValue: 1
-_m_t: 2_m_iValue: 2
-_m_t: 3_m_iValue: 3
-_m_t: 4_m_iValue: 4
-_m_t: 5_m_iValue: 5
-_m_t: 6_m_iValue: 6
-_m_t: 1_m_iValue: 7
+_t: 1_iValue: 1
+_t: 2_iValue: 2
+_t: 3_iValue: 3
+_t: 4_iValue: 4
+_t: 5_iValue: 5
+_t: 6_iValue: 6
+_t: 1_iValue: 7
 
 // class C
 // not compile :
