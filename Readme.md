@@ -975,11 +975,17 @@
 * <a href="/Templates/FAQ.md" title="">✅ `FAQ.md`</a>
 * <a href="/Templates/AverageOfAnArray.cpp" title="">✅ `AverageOfAnArray.cpp`</a>
 * <a href="/Templates/Export.cpp" title="">✅ `Export.cpp`</a>
-* <a href="/Templates/ClassTemplate.cpp" title="">✅ `ClassTemplate.cpp`</a>
 * <a href="/Templates/Export.h" title="">✅ `Export.h`</a>
 * <a href="/Templates/Params.cpp" title="Template params">✅ `Params.cpp`</a>
 
 </details>
+
+  * <details close>
+    <summary>📁 ✅ Class 100% (1)</summary>
+
+    * <a href="/Templates/Class/ClassTemplate.cpp" title="">✅ `ClassTemplate.cpp`</a>
+
+    </details>
 
   * <details close>
     <summary>📁 ❌ Variadic 0% (4)</summary>
