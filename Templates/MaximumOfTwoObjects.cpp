@@ -1,45 +1,60 @@
 /**
- * \file
+ * \file  MaximumOfTwoObjects.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
-
+//--------------------------------------------------------------------------------------------------
 template <typename T>
-const T& maximum(const T& x, const T& y)
+const T &
+maximum(const T &x, const T &y)
 {
 	return (x > y) ? x : y;
 }
-
+//--------------------------------------------------------------------------------------------------
 class Cents
 {
-	int m_cents;
 public:
-	Cents(int cents): m_cents(cents)
-	{}
-
-	int get_cents()
+	explicit Cents(const int cents):
+		_cents(cents)
 	{
-		cout << m_cents << endl;
 	}
 
-	friend bool operator> (const Cents &c1, const Cents &c2)
+	int cents() const
 	{
-		return (c1.m_cents > c2.m_cents);
+		return _cents;
 	}
+
+	friend bool
+	operator > (const Cents &c1, const Cents &c2)
+	{
+		return (c1._cents > c2._cents);
+	}
+
+private:
+	const int _cents {};
 };
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	Cents nickle(5);
 	Cents dime(10);
 
 	Cents bigger = maximum(nickle, dime);
-	bigger.get_cents();
-	return 0;
+
+	cout << TRACE_VAR(bigger.cents()) << endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+bigger.cents(): 10
+
+#endif
