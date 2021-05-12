@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  ClassTemplate.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -13,30 +11,36 @@
 #include <stdexcept>
 
 using namespace std;
-
+//-------------------------------------------------------------------------------------------------
 template <class T>
-class Stack {
-   private:
-      vector<T> elems;    // elements
+class Stack
+{
+public:
+   void push(T const&);
+   void pop();
+   T    top() const;
 
-   public:
-      void push(T const&);  // push element
-      void pop();               // pop element
-      T top() const;            // return top element
+   bool empty() const
+   {
+      return elems.empty();
+   }
 
-      bool empty() const {      // return true if empty.
-         return elems.empty();
-      }
+private:
+   vector<T> elems {};
 };
-
+//-------------------------------------------------------------------------------------------------
 template <class T>
-void Stack<T>::push (T const& elem) {
+void
+Stack<T>::push (T const& elem)
+{
    // append copy of passed element
    elems.push_back(elem);
 }
-
+//-------------------------------------------------------------------------------------------------
 template <class T>
-void Stack<T>::pop () {
+void
+Stack<T>::pop ()
+{
    if (elems.empty()) {
       throw out_of_range("Stack<>::pop(): empty stack");
    }
@@ -44,9 +48,11 @@ void Stack<T>::pop () {
    // remove last element
    elems.pop_back();
 }
-
+//-------------------------------------------------------------------------------------------------
 template <class T>
-T Stack<T>::top () const {
+T
+Stack<T>::top () const
+{
    if (elems.empty()) {
       throw out_of_range("Stack<>::top(): empty stack");
    }
@@ -54,11 +60,12 @@ T Stack<T>::top () const {
    // return copy of last element
    return elems.back();
 }
-
-int main() {
+//-------------------------------------------------------------------------------------------------
+int main()
+{
    try {
-      Stack<int> intStack;          // stack of ints
-      Stack<string> stringStack;    // stack of strings
+      Stack<int>    intStack;
+      Stack<string> stringStack;
 
       // manipulate int stack
       intStack.push(7);
@@ -71,10 +78,21 @@ int main() {
       stringStack.pop();
       stringStack.pop();
 
-   } catch (exception const& ex) {
+   }
+   catch (exception const& ex) {
       cerr << "Exception: " << ex.what() <<endl;
       return -1;
    }
 
    return 0;
 }
+//-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+7
+hello
+Exception: Stack<>::pop(): empty stack
+
+#endif
