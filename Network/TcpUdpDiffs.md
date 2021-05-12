@@ -1,9 +1,4 @@
-/**
- * \file  TcpUdpDiffs.md
- * \brief
- */
-
-# TCP vs UDP отличия
+# TCP vs UDP diffs
 
 ## FAQ
 
