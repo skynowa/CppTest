@@ -15,7 +15,7 @@
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 100% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
-- [Templates](#templates) ████░░░░░░ 38% (13)
+- [Templates](#templates) █████░░░░░ 46% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
 - [Windows](#windows) ██████████ 100% (37)
 
@@ -967,9 +967,9 @@
 
     </details>
 
-##  <a id="templates">Templates ████░░░░░░ 38% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="templates">Templates █████░░░░░ 46% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Templates/MaximumOfTwoValues.cpp" title="">❌ MaximumOfTwoValues.cpp</a>
+* <a href="/Templates/MaximumOfTwoValues.cpp" title="">✅ `MaximumOfTwoValues.cpp`</a>
 * <a href="/Templates/VariadicFunc.cpp" title="">❌ VariadicFunc.cpp</a>
 * <a href="/Templates/AverageOfValuesInObjects.cpp" title="">❌ AverageOfValuesInObjects.cpp</a>
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">❌ MaximumOfTwoObjects.cpp</a>
