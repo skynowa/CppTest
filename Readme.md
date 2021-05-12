@@ -970,20 +970,26 @@
 ##  <a id="templates">Templates ███████░░░ 69% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoValues.cpp" title="">✅ `MaximumOfTwoValues.cpp`</a>
-* <a href="/Templates/VariadicFunc.cpp" title="">❌ VariadicFunc.cpp</a>
 * <a href="/Templates/AverageOfValuesInObjects.cpp" title="">✅ `AverageOfValuesInObjects.cpp`</a>
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">✅ `MaximumOfTwoObjects.cpp`</a>
 * <a href="/Templates/FAQ.md" title="">✅ `FAQ.md`</a>
-* <a href="/Templates/VariadicTemplates3.cpp" title="">❌ VariadicTemplates3.cpp</a>
 * <a href="/Templates/AverageOfAnArray.cpp" title="">✅ `AverageOfAnArray.cpp`</a>
 * <a href="/Templates/Export.cpp" title="">✅ `Export.cpp`</a>
-* <a href="/Templates/VariadicTemplates2.cpp" title="">❌ VariadicTemplates2.cpp</a>
 * <a href="/Templates/ClassTemplate.cpp" title="">✅ `ClassTemplate.cpp`</a>
-* <a href="/Templates/VariadicTemplates.cpp" title="">❌ VariadicTemplates.cpp</a>
 * <a href="/Templates/Export.h" title="">✅ `Export.h`</a>
 * <a href="/Templates/Params.cpp" title="Template params">✅ `Params.cpp`</a>
 
 </details>
+
+  * <details close>
+    <summary>📁 ❌ Variadic 0% (4)</summary>
+
+    * <a href="/Templates/Variadic/VariadicFunc.cpp" title="">❌ VariadicFunc.cpp</a>
+    * <a href="/Templates/Variadic/VariadicTemplates3.cpp" title="">❌ VariadicTemplates3.cpp</a>
+    * <a href="/Templates/Variadic/VariadicTemplates2.cpp" title="">❌ VariadicTemplates2.cpp</a>
+    * <a href="/Templates/Variadic/VariadicTemplates.cpp" title="">❌ VariadicTemplates.cpp</a>
+
+    </details>
 
 ##  <a id="unix">Unix ███░░░░░░░ 33% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
