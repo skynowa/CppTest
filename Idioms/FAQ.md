@@ -6,4 +6,4 @@
 
 ## Books
 
-C++ in Detail: Common Idioms
+[todo] C++ in Detail: Common Idioms
