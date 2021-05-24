@@ -22,12 +22,10 @@
 class X
 {
 public:
-	int  a {};
-	char b {};
-
+	// Initialize with default values, if any.
 	X() :
-		a{-999},
-		b{'C'}
+		_a{-999},
+		_b{'C'}
 	{
 	}
 
@@ -35,7 +33,7 @@ public:
 	X &
 	setA(const int i)
 	{
-		a = i;
+		_a = i;
 		return *this;
 	}
 
@@ -43,16 +41,23 @@ public:
 	X &
 	setB(const char c)
 	{
-		b = c;
+		_b = c;
 		return *this;
 	}
 
+private:
+	int  _a {};
+	char _b {};
+
+	friend
+	std::ostream &operator << (std::ostream &os, const X &x);
 };
 //-------------------------------------------------------------------------------------------------
 std::ostream &
 operator << (std::ostream &os, const X &x)
 {
-	os << TRACE_VAR2(x.a, x.b);
+	os
+		<< "{" << x._a << ", " << x._b << "}";
 
 	return os;
 }
@@ -73,6 +78,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-x: x.a: 10, x.b: Z
+x: {10, Z}
 
 #endif
