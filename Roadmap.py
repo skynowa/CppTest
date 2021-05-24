@@ -39,6 +39,7 @@ class RoadmapGen:
 	# tee    = '├── '
 	# last   = '└── '
 
+	appName       = ''
 	mdPath        = ''
 	file          = ''
 	tree          = partial(defaultdict, list)
@@ -51,9 +52,10 @@ class RoadmapGen:
 	################################################################################################
 	# ctr
 	def __init__(self):
-		self.mdPath = os.path.dirname(os.path.realpath(__file__)) + '/Readme.md';
-		self.file   = open(self.mdPath, 'w')
-		self.tree   = self._nestedDictDefault(list, 10)
+		self.appName = 'C++ Roadmap'
+		self.mdPath  = os.path.dirname(os.path.realpath(__file__)) + '/Readme.md';
+		self.file    = open(self.mdPath, 'w')
+		self.tree    = self._nestedDictDefault(list, 10)
 
 		self.dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
 		self.filesIncludes = [
@@ -295,6 +297,8 @@ class RoadmapGen:
 	################################################################################################
 	# root dir - process
 	def run(self):
+		print('{} - start'.format(self.appName))
+
 		# <style>
 		# r { color: Red }
 		# o { color: Orange }
@@ -304,7 +308,7 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._label(self.labelTitle, '', 'C++ Roadmap')))
+		self._writeLine('# {}'.format(self._label(self.labelTitle, '', self.appName)))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
@@ -349,6 +353,8 @@ class RoadmapGen:
 
 		# Title - ends
 		# self._writeLine('</div>')
+
+		print('{} - stop'.format(self.appName))
 
 ################################################################################################
 if __name__ == "__main__":

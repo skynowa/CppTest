@@ -76,3 +76,8 @@ foreach(IT_SOURCE ${SOURCES})
 
 endforeach()
 #--------------------------------------------------------------------------------------------------
+add_custom_target(
+	roadmap
+	COMMAND           "${CMAKE_SOURCE_DIR}/Roadmap.py"
+	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+#--------------------------------------------------------------------------------------------------
