@@ -22,13 +22,6 @@
 class X
 {
 public:
-	// Initialize with default values, if any.
-	X() :
-		_a{-999},
-		_b{'C'}
-	{
-	}
-
 	// non-const function
 	X &
 	setA(const int i)
@@ -45,9 +38,22 @@ public:
 		return *this;
 	}
 
+	static
+	X construct()
+	{
+		return X();
+	}
+
 private:
 	int  _a {};
 	char _b {};
+
+	// Initialize with default values, if any.
+	X() :
+		_a{-999},
+		_b{'C'}
+	{
+	}
 
 	friend
 	std::ostream &operator << (std::ostream &os, const X &x);
@@ -64,10 +70,9 @@ operator << (std::ostream &os, const X &x)
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	X x;
-	x
-		.setA(10)
-		.setB('Z');
+	const auto &x = X::construct()
+						.setA(10)
+						.setB('Z');
 
 	std::cout << TRACE_VAR(x) << std::endl;
 
