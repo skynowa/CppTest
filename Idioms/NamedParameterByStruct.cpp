@@ -1,10 +1,8 @@
 /**
- * \file  NamedParameter.cpp
- * \brief Solve order of the parameters problen
+ * \file  NamedParameterByStruct.cpp
+ * \brief Solve order of the parameters problem
  *
- * Change the function's parameters to methods of a newly created class, where all these methods
- * return *this by reference. Then you simply rename the main function into a parameterless "do-it"
- * method on that class
+ * Pass params as sruct
  */
 
 
