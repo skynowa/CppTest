@@ -494,6 +494,18 @@
 </details>
 
   * <details close>
+    <summary>📁 ❌ GoF 0.0% (0)</summary>
+
+
+    </details>
+
+  * <details close>
+    <summary>📁 ❌ Grasp 0.0% (0)</summary>
+
+
+    </details>
+
+  * <details close>
     <summary>📁 ❌ OOD 0.0% (0)</summary>
 
 
