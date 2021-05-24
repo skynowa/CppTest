@@ -297,7 +297,8 @@ class RoadmapGen:
 	################################################################################################
 	# root dir - process
 	def run(self):
-		print('{} - start'.format(self.appName))
+		print('[{}] start'.format(self.appName))
+		print('[{}] {}'.format(self.appName, self.mdPath))
 
 		# <style>
 		# r { color: Red }
@@ -354,7 +355,7 @@ class RoadmapGen:
 		# Title - ends
 		# self._writeLine('</div>')
 
-		print('{} - stop'.format(self.appName))
+		print('[{}] stop'.format(self.appName))
 
 ################################################################################################
 if __name__ == "__main__":
