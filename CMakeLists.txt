@@ -66,5 +66,13 @@ foreach(IT_SOURCE ${SOURCES})
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 	target_link_libraries(${CPP_TEST} ${LIBRARIES})
+
+	# Build and run test
+	add_custom_target(
+		test_${CPP_TEST}
+		COMMAND ${CPP_TEST}
+		DEPENDS ${CPP_TEST}
+		WORKING_DIRECTORY ${CMAKE_PROJECT_DIR})
+
 endforeach()
 #--------------------------------------------------------------------------------------------------
