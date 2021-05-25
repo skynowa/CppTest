@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  InitConstructor.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class A
 {
@@ -35,6 +33,7 @@ int main(int, char **)
 
 	{
 		A a = {};
+		(void)a;
 
 		std::cout << std::endl;
 	}
@@ -46,9 +45,7 @@ int main(int, char **)
 		std::cout << std::endl;
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
-
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
