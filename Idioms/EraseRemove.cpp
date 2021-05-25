@@ -17,18 +17,29 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+template<class ContainerT, class ValueT>
+ContainerT &
+removeErase(
+	ContainerT   &out_vec,	///< [in,out]
+    const ValueT &a_value	///<
+)
+{
+	std::cout << TRACE_VAR(out_vec) << std::endl;
+
+	// remove
+	auto it = std::remove(out_vec.begin(), out_vec.end(), a_value);
+	std::cout << TRACE_VAR(out_vec) << std::endl;
+
+	// really remove all elements with value
+	out_vec.erase(it, out_vec.end());
+	std::cout << TRACE_VAR(out_vec) << std::endl;
+}
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	std::vector<int> vec {0, 10, 20, 99, 100};
-	std::cout << TRACE_VAR(vec) << std::endl;
 
-	// remove
-	auto it = std::remove(vec.begin(), vec.end(), 99);
-	std::cout << TRACE_VAR(vec) << std::endl;
-
-	// really remove all elements with value 99
-	vec.erase(it, vec.end());
-	std::cout << TRACE_VAR(vec) << std::endl;
+	::removeErase(vec, 99);
 
     return EXIT_SUCCESS;
 }
@@ -37,8 +48,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-vec: std::vector (size=5): {0,10,20,99,100}
-vec: std::vector (size=5): {0,10,20,100,100}
-vec: std::vector (size=4): {0,10,20,100}
+out_vec: std::vector (size=5): {0,10,20,99,100}
+out_vec: std::vector (size=5): {0,10,20,100,100}
+out_vec: std::vector (size=4): {0,10,20,100}
 
 #endif
