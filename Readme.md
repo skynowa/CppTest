@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ███░░░░░░░ 34% (163)
+- [Core](#core) ████░░░░░░ 35% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 87% (15)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███░░░░░░░ 34% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████░░░░░░ 35% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -224,9 +224,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Double 25% (4)</summary>
+    <summary>📁 ⌛ Double 50% (4)</summary>
 
-    * <a href="/Core/Double/DoubleCompare.cpp" title="">❌ DoubleCompare.cpp</a>
+    * <a href="/Core/Double/DoubleCompare.cpp" title="">✅ `DoubleCompare.cpp`</a>
     * <a href="/Core/Double/DoubleCast.cpp" title="">✅ `DoubleCast.cpp`</a>
     * <a href="/Core/Double/IsGreater.cpp" title="">❌ IsGreater.cpp</a>
     * <a href="/Core/Double/IntDoubleCompare.cpp" title="">❌ IntDoubleCompare.cpp</a>

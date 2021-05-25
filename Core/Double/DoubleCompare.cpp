@@ -1,19 +1,12 @@
  /*
  * \file  DoubleCompare.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <string>
-#include <iostream>
-#include <assert.h>
-#include <iomanip>      // std::setprecision
-
-//-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -29,8 +22,7 @@ int main(int, char **)
         std::cout << "false" << std::endl;
     }
 
-
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
