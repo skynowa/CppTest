@@ -16,6 +16,13 @@ int main(int, char **)
 	std::cout << "------------------------------" << std::endl;
 
 	{
+		std::cout << "Ctor {}:\n" << std::endl;
+
+		RuleOfFive a{"a"};
+	}
+	std::cout << "------------------------------" << std::endl;
+
+	{
 		std::cout << "Ctor default:\n" << std::endl;
 
 		RuleOfFive a;
@@ -74,6 +81,11 @@ int main(int, char **)
 #if OUTPUT
 
 ------------------------------
+Ctor {}:
+
+RuleOfFive(const char *): a
+~RuleOfFive(): nullptr
+------------------------------
 Ctor default:
 
 RuleOfFive(): nullptr
@@ -119,5 +131,6 @@ operator = (RuleOfFive &&): a
 ~RuleOfFive(): nullptr
 ~RuleOfFive(): nullptr
 ------------------------------
+
 
 #endif
