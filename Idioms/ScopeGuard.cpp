@@ -18,27 +18,26 @@
 class ScopeGuard
 {
 public:
-	ScopeGuard () :
-		engaged_(true)
+	ScopeGuard ()
 	{
 		// Acquire resources here
 	}
 
 	~ScopeGuard ()
 	{
-		if (engaged_) {
+		if (_isRelease) {
 			// Release resources here
 		}
 	}
 
-	void release ()
+	void release()
 	{
-		engaged_ = false;
 		// Resources will no longer be released
+		_isRelease = false;
 	}
 
 private:
-	bool engaged_ {};
+	bool _isRelease {true};
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -48,7 +47,7 @@ int main(int, char **)
 	// ...... Something may throw here. If it does we release resources.
 
 	// Resources will not be released in normal execution.
-	guard.release ();
+	guard.release();
 
     return EXIT_SUCCESS;
 }
