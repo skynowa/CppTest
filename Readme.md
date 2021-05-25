@@ -183,13 +183,13 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 11% (19)</summary>
+    <summary>📁 ⌛ Class 16% (19)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="">❌ InheritanceFunctions.cpp</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">❌ InitConstructor.cpp</a>
     * <a href="/Core/Class/CpoyConstructor2.cpp" title="copy constructor 2">❌ CpoyConstructor2.cpp</a>
     * <a href="/Core/Class/QuotedString.java" title="">❌ QuotedString.java</a>
-    * <a href="/Core/Class/ConstructOrder.cpp" title="">❌ ConstructOrder.cpp</a>
+    * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">❌ CallMethod.cpp</a>
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">❌ FunctionDefinition.cpp</a>
     * <a href="/Core/Class/CondtructorOrder.cpp" title="">❌ CondtructorOrder.cpp</a>
