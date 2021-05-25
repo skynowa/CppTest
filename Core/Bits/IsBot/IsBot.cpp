@@ -2,7 +2,7 @@
  * \file  IsBot.cpp
  * \brief
  *
- * \todo
+ * \review
  *
  * http://xpoint.ru/forums/programming/perl/misc/thread/32675.xhtml
  */
@@ -66,10 +66,11 @@ int main(int, char **)
 
 #if 0
 
-blackListSize: 3830
+blackListSize: 4
 
-_ip_test: 3518589952, _mask_test: 4294967040, bRv: 1
+_ip_test: 3518627072, _mask_test: 4294967040, bRv: 0
 
 ip: 209.185.108.10, bRv: 1
+
 
 #endif

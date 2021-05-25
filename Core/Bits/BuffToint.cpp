@@ -11,7 +11,7 @@
 int main()
 {
     // int == 742
-    const unsigned char array[4] = {0x00, 0x00, 0x02, 0xe7};
+    const unsigned char array[4] {0x00, 0x00, 0x02, 0xe7};
 
     // 1 variant
     {

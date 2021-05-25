@@ -101,7 +101,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 80% (5)</summary>
+    <summary>📁 ✅ Bits 100% (5)</summary>
 
     * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
@@ -111,9 +111,9 @@
     </details>
 
     * <details close>
-      <summary>📁 ❌ IsBot 0% (1)</summary>
+      <summary>📁 ✅ IsBot 100% (1)</summary>
 
-        * <a href="/Core/Bits/IsBot/IsBot.cpp" title="">❌ IsBot.cpp</a>
+        * <a href="/Core/Bits/IsBot/IsBot.cpp" title="">🖊 `IsBot.cpp`</a>
 
       </details>
 
