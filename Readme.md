@@ -5,7 +5,7 @@
 - [Core](#core) ███░░░░░░░ 30% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) █████████░ 86% (14)
+- [Idioms](#idioms) █████████░ 87% (15)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -485,10 +485,11 @@
 
 </details>
 
-##  <a id="idioms">Idioms █████████░ 86% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms █████████░ 87% (15)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
+* <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
