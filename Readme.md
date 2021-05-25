@@ -101,9 +101,9 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 20% (5)</summary>
+    <summary>📁 ⌛ Bits 40% (5)</summary>
 
-    * <a href="/Core/Bits/bitset.cpp" title="">❌ bitset.cpp</a>
+    * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
     * <a href="/Core/Bits/BitMask.cpp" title="bit mask">❌ BitMask.cpp</a>
     * <a href="/Core/Bits/BitMask2.cpp" title="">❌ BitMask2.cpp</a>
