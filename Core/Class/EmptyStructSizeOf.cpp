@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  EmptyStructSizeOf.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -22,6 +20,11 @@ struct B_1byte :
 class C_0byte
 {
 	int NO_DATA[0];
+};
+//-------------------------------------------------------------------------------------------------
+class D_1byte
+{
+	int foo() {}
 };
 //-------------------------------------------------------------------------------------------------
 class D_8byte
@@ -46,6 +49,7 @@ int main(int, char **)
 		<< TRACE_VAR(sizeof(A_1byte))  << "\n"
 		<< TRACE_VAR(sizeof(B_1byte))  << "\n"
 		<< TRACE_VAR(sizeof(C_0byte))  << "\n"
+		<< TRACE_VAR(sizeof(D_1byte))  << "\n"
 		<< TRACE_VAR(sizeof(D_8byte))  << "\n"
 		<< TRACE_VAR(sizeof(E_4byte))  << "\n"
 		<< TRACE_VAR(sizeof(F_16byte)) << "\n"
@@ -61,6 +65,7 @@ int main(int, char **)
 sizeof(A_1byte): 1
 sizeof(B_1byte): 1
 sizeof(C_0byte): 0
+sizeof(D_1byte): 1
 sizeof(D_8byte): 8
 sizeof(E_4byte): 4
 sizeof(F_16byte): 16
