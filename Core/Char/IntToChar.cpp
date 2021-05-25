@@ -1,18 +1,16 @@
 /**
- * \file
+ * \file  IntToChar.cpp
  * \brief
- *
- * \todo
  */
 
 
-// Chars.cpp : Defines the entry point for the console application.
-//
-
+#include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 std::string
-sGetString(const size_t cuiLength) {
+sGetString(const size_t cuiLength)
+{
     const bool letters = true;
     const bool numbers = true;
     const bool symbols = true;
@@ -26,7 +24,7 @@ sGetString(const size_t cuiLength) {
     if (letters == true) {
         for (int i = 65; i <= 90; i++) {
             allPossible += static_cast<char>(i);
-            allPossible += static_cast<char>(i+32); // add a lower case letter, too!
+            allPossible += static_cast<char>(i + 32); // add a lower case letter, too!
         }
     }
 
@@ -64,7 +62,7 @@ sGetString(const size_t cuiLength) {
 
     return sRes;
 }
-
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
     //const std::string sBucketA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -89,3 +87,4 @@ int main(int, char **)
 
     return 0;
 }
+//-------------------------------------------------------------------------------------------------

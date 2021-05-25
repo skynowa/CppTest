@@ -173,12 +173,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Char 25% (4)</summary>
+    <summary>📁 ⌛ Char 50% (4)</summary>
 
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">❌ UnicodeAnsi.cpp</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">❌ SizeofUnicodes.cpp</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
-    * <a href="/Core/Char/IntToChar.cpp" title="">❌ IntToChar.cpp</a>
+    * <a href="/Core/Char/IntToChar.cpp" title="">✅ `IntToChar.cpp`</a>
 
     </details>
 
