@@ -1,53 +1,59 @@
  /*
- * \file  main.cpp
+ * \file  Hierarchy.cpp
  * \brief class hierarchy
- *
- * \todo
  */
 
 
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
-class A1 {
+class A1
+{
 public:
     A1() { std::cout << __FUNCTION__ << std::endl; }
 };
 
-class A2 : public A1 {
+class A2 :
+    public A1
+{
 public:
     A2() { std::cout << __FUNCTION__ << std::endl; }
 };
 
-class A3 : public A2 {
+class A3 :
+    public A2
+{
 public:
     A3() { std::cout << __FUNCTION__ << std::endl; }
 };
 //---------------------------------------------------------------------------
-class C1 {
+class C1
+{
 public:
     C1() { std::cout << __FUNCTION__ << std::endl; }
 };
 //---------------------------------------------------------------------------
-class B1 {
+class B1
+{
 public:
     B1() { std::cout << __FUNCTION__ << std::endl; }
 };
 
-class B2 : public B1, public C1 {
+class B2 :
+    public B1,
+    public C1
+{
 public:
     B2() { std::cout << __FUNCTION__ << std::endl; }
 };
 
-class B3 : public B2 {
+class B3 :
+    public B2
+{
 public:
     B3() { std::cout << __FUNCTION__ << std::endl; }
 };
-//---------------------------------------------------------------------------
-
-
 //---------------------------------------------------------------------------
 class Z :
     public A3,
