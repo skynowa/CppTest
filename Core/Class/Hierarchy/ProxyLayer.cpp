@@ -1,24 +1,17 @@
 /**
  * \file  ProxyLayer.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-#include <iostream>
-#include <map>
-
-using namespace std;
 //-------------------------------------------------------------------------------------------------
 class A
 {
 public:
-    A() = default;
+             A() = default;
     virtual ~A() = default;
 
     virtual void foo(int i)
@@ -78,7 +71,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-ProxyNo::foo: 0
+ProxyNo::foo:  0
 ProxyYes::foo: 1
 
 #endif

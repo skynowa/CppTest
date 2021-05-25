@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 24% (163)
+- [Core](#core) ██░░░░░░░░ 25% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 24% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 25% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 94% (16)</summary>
+    <summary>📁 ✅ Class 100% (16)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
@@ -202,9 +202,9 @@
     </details>
 
     * <details close>
-      <summary>📁 ⌛ Hierarchy 50% (2)</summary>
+      <summary>📁 ✅ Hierarchy 100% (2)</summary>
 
-        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">❌ ProxyLayer.cpp</a>
+        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
         * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="class hierarchy">✅ `Hierarchy.cpp`</a>
 
       </details>
