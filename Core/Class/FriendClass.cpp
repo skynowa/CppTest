@@ -1,46 +1,46 @@
  /*
- * \file  Main.cpp
+ * \file  FriendClass.cpp
  * \brief friend class
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
 #include <string>
 #include <iostream>
 #include <assert.h>
-//--------------------------------------------------------------------------------
-class CFile {
-    private:
-        friend class CTest_CFile;
+//--------------------------------------------------------------------------------------------------
+class File
+{
+private:
+    static bool _isExists()
+    {
+        std::cout << __FUNCTION__ << std::endl;
+        return false;
+    }
 
-        static bool _isExists() {
-            std::cout << __FUNCTION__ << std::endl;
-            return false;
-        }
+    friend class TestFriend;
 };
-//--------------------------------------------------------------------------------
-class CTest_CFile {
-    public:
-        bool test() {
-            return CFile::_isExists();
-        }
+//--------------------------------------------------------------------------------------------------
+class TestFriend
+{
+public:
+    bool test()
+    {
+        return File::_isExists();
+    }
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    CTest_CFile t;
-
+    TestFriend t;
     t.test();
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-CFile::_is_exists
+File::_isExists
 
 #endif
