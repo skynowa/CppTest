@@ -44,13 +44,13 @@ class CDerivedVirtual
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << "sizeof(void *):          " << sizeof(void *)          << std::endl;
-    std::cout << "sizeof(SEmpty):          " << sizeof(SEmpty)          << std::endl;
-    std::cout << "sizeof(CEmpty):          " << sizeof(CEmpty)          << std::endl;
-    std::cout << "sizeof(CData):           " << sizeof(CData)           << std::endl;
-    std::cout << "sizeof(CInterface):      " << sizeof(CInterface)      << std::endl;
-    std::cout << "sizeof(CVirtual:         " << sizeof(CVirtual)        << std::endl;
-    std::cout << "sizeof(CDerivedVirtual): " << sizeof(CDerivedVirtual) << std::endl;
+    std::cout << TRACE_VAR(sizeof(void *))          << std::endl;
+    std::cout << TRACE_VAR(sizeof(SEmpty))          << std::endl;
+    std::cout << TRACE_VAR(sizeof(CEmpty))          << std::endl;
+    std::cout << TRACE_VAR(sizeof(CData))           << std::endl;
+    std::cout << TRACE_VAR(sizeof(CInterface))      << std::endl;
+    std::cout << TRACE_VAR(sizeof(CVirtual))        << std::endl;
+    std::cout << TRACE_VAR(sizeof(CDerivedVirtual)) << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -63,7 +63,7 @@ sizeof(SEmpty):          1
 sizeof(CEmpty):          1
 sizeof(CData):           1
 sizeof(CInterface):      8
-sizeof(CVirtual:         8
+sizeof(CVirtual):        8
 sizeof(CDerivedVirtual): 8
 
 #endif
