@@ -47,9 +47,13 @@ class A :
 public:
 	Field f1{"f1"}, f2{"f2"}, f3{"f3"};
 
+	static Field fs;
+
 	A()	 { STD_TRACE_FUNC; }
 	~A() { STD_TRACE_FUNC; }
 };
+
+/* static */ Field A::fs{"f_static"};
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -64,6 +68,7 @@ int main(int, char **)
 
 #if OUTPUT
 
+		Field: f_static
 	::: Base1 :::
 	::: Base2 :::
 		Field: f1
@@ -76,5 +81,6 @@ int main(int, char **)
 		~Field: f1
 	::: ~Base2 :::
 	::: ~Base1 :::
+		~Field: f_static
 
 #endif
