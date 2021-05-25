@@ -49,8 +49,8 @@ public:
 	const Field f2{"f2"};
 	const Field f3{"f3"};
 
-	static const Field fs;
-	static const inline Field fsi {"f_static_inline"};
+	static const Field fs;								///< static as 2-nd
+	static const inline Field fsi {"f_static_inline"};	///< static as 1-st
 
 	A()	 { STD_TRACE_FUNC; }
 	~A() { STD_TRACE_FUNC; }
