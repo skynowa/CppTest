@@ -1,40 +1,47 @@
 /**
- * \file
+ * \file  SizeOfClass.cpp
  * \brief
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
-struct SEmpty {
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+struct SEmpty
+{
 };
 
-class CEmpty {
-
+class CEmpty
+{
 };
 
-class CData {
-    void foo() { ; }
+class CData
+{
+    void foo() {}
 };
 
-class CInterface {
+class CInterface
+{
+    virtual ~CInterface() {};
+
     virtual void foo() = 0;
 };
 
-class CVirtual {
-    virtual void foo() { ; }
+class CVirtual
+{
+    virtual ~CVirtual() {};
+
+    virtual void foo() {}
 };
 
-class CDerivedVirtual {
-    virtual void foo() { ; }
+class CDerivedVirtual
+{
+    virtual ~CDerivedVirtual() {};
+
+    virtual void foo() {}
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
     std::cout << "sizeof(void *):          " << sizeof(void *)          << std::endl;
@@ -47,19 +54,16 @@ int main(int, char **)
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
-
+//--------------------------------------------------------------------------------------------------
 
 #if OUTPUT
-// NOTE:
 
-sizeof(void *):          4
+sizeof(void *):          8
+sizeof(SEmpty):          1
 sizeof(CEmpty):          1
-sizeof(SEmpty):          1  // for C equal 0, C++ equal 1
 sizeof(CData):           1
-sizeof(CInterface):      4
-sizeof(CVirtual:         4
-sizeof(CDerivedVirtual): 4
-
+sizeof(CInterface):      8
+sizeof(CVirtual:         8
+sizeof(CDerivedVirtual): 8
 
 #endif

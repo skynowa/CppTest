@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 22% (163)
+- [Core](#core) ██░░░░░░░░ 23% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 22% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 23% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 75% (16)</summary>
+    <summary>📁 ⌛ Class 81% (16)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
@@ -196,7 +196,7 @@
     * <a href="/Core/Class/CopyCtor.cpp" title="copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
-    * <a href="/Core/Class/SizeOfClass.cpp" title="">❌ SizeOfClass.cpp</a>
+    * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
 
     </details>
