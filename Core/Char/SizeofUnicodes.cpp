@@ -1,8 +1,6 @@
 /**
  * \file  SizeofUnicodes.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -20,11 +18,10 @@ int main(int, char **)
 }
 //--------------------------------------------------------------------------------------------------
 
-
 #if OUTPUT
 
-sizeof(_T('|0')) = 4
-sizeof(_T('0'))  = 4
-sizeof(0)        = 4
+sizeof(L'\0'): 4
+sizeof(L'0'):  4
+sizeof(0):     4
 
 #endif

@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 25% (163)
+- [Core](#core) ███░░░░░░░ 26% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 25% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███░░░░░░░ 26% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -173,10 +173,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Char 50% (4)</summary>
+    <summary>📁 ⌛ Char 75% (4)</summary>
 
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">❌ UnicodeAnsi.cpp</a>
-    * <a href="/Core/Char/SizeofUnicodes.cpp" title="">❌ SizeofUnicodes.cpp</a>
+    * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
     * <a href="/Core/Char/IntToChar.cpp" title="">✅ `IntToChar.cpp`</a>
 
