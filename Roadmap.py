@@ -237,6 +237,8 @@ class RoadmapGen:
 
 		if   (doneFilesPct == 100):
 			iconCurrent = iconDone
+		if   (allfilesNum == 0):
+			iconCurrent = ''
 		elif (doneFilesPct == 0):
 			iconCurrent = iconToDo
 		else:

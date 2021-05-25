@@ -68,7 +68,7 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Process 100% (2)</summary>
+    <summary>📁 ⌛ Process 100% (2)</summary>
 
     * <a href="/C/Process/Exit.cpp" title="">✅ `Exit.cpp`</a>
     * <a href="/C/Process/ExitFunctions.cpp" title="">✅ `ExitFunctions.cpp`</a>
@@ -85,14 +85,14 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Array 100% (4)</summary>
+    <summary>📁 ⌛ Array 100% (4)</summary>
 
     * <a href="/Core/Array/ArraySize.cpp" title="">✅ `ArraySize.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ ArrayToFunction 100% (3)</summary>
+      <summary>📁 ⌛ ArrayToFunction 100% (3)</summary>
 
         * <a href="/Core/Array/ArrayToFunction/ArrayToFunction3.cpp" title="">✅ `ArrayToFunction3.cpp`</a>
         * <a href="/Core/Array/ArrayToFunction/ArrayToFunction1.cpp" title="">✅ `ArrayToFunction1.cpp`</a>
@@ -118,13 +118,13 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ C++11 0.0% (0)</summary>
+    <summary>📁  C++11 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 ❌ C++14 0.0% (0)</summary>
+    <summary>📁  C++14 0.0% (0)</summary>
 
 
     </details>
@@ -151,7 +151,7 @@
     </details>
 
     * <details close>
-      <summary>📁 ✅ Attributes 100% (7)</summary>
+      <summary>📁 ⌛ Attributes 100% (7)</summary>
 
         * <a href="/Core/C++17/Attributes/Deprecated.cpp" title="">✅ `Deprecated.cpp`</a>
         * <a href="/Core/C++17/Attributes/CarriesDependency.cpp" title="">✅ `CarriesDependency.cpp`</a>
@@ -164,7 +164,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Cast 100% (3)</summary>
+    <summary>📁 ⌛ Cast 100% (3)</summary>
 
     * <a href="/Core/Cast/BoolCast.cpp" title="">✅ `BoolCast.cpp`</a>
     * <a href="/Core/Cast/ReinterpretCast.cpp" title="">✅ `ReinterpretCast.cpp`</a>
@@ -173,7 +173,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Char 100% (4)</summary>
+    <summary>📁 ⌛ Char 100% (4)</summary>
 
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">✅ `UnicodeAnsi.cpp`</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Class 100% (16)</summary>
+    <summary>📁 ⌛ Class 100% (16)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
@@ -202,7 +202,7 @@
     </details>
 
     * <details close>
-      <summary>📁 ✅ Hierarchy 100% (2)</summary>
+      <summary>📁 ⌛ Hierarchy 100% (2)</summary>
 
         * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
         * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="class hierarchy">✅ `Hierarchy.cpp`</a>
@@ -210,7 +210,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ Union 100% (1)</summary>
+      <summary>📁 ⌛ Union 100% (1)</summary>
 
         * <a href="/Core/Class/Union/Union.cpp" title="Объединения — это тип класса, в котором все данные разделяют одну и туже область памяти">✅ `Union.cpp`</a>
 
@@ -495,31 +495,31 @@
 </details>
 
   * <details close>
-    <summary>📁 ❌ GoF 0.0% (0)</summary>
+    <summary>📁  GoF 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 ❌ Grasp 0.0% (0)</summary>
+    <summary>📁  Grasp 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 ❌ OOD 0.0% (0)</summary>
+    <summary>📁  OOD 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Pimpl 100% (9)</summary>
+    <summary>📁 ⌛ Pimpl 100% (9)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ File 100% (4)</summary>
+      <summary>📁 ⌛ File 100% (4)</summary>
 
         * <a href="/Idioms/Pimpl/File/FileRouter.inl" title="">✅ `FileRouter.inl`</a>
         * <a href="/Idioms/Pimpl/File/FileRouter.h" title="Class to handle all File operations in a platform-dependent manner">✅ `FileRouter.h`</a>
@@ -529,7 +529,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ Thread 100% (5)</summary>
+      <summary>📁 ⌛ Thread 100% (5)</summary>
 
         * <a href="/Idioms/Pimpl/Thread/IThreadImpl.h" title="">✅ `IThreadImpl.h`</a>
         * <a href="/Idioms/Pimpl/Thread/IThreadImpl_posix.h" title="">✅ `IThreadImpl_posix.h`</a>
@@ -650,7 +650,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Error 100% (2)</summary>
+    <summary>📁 ⌛ Error 100% (2)</summary>
 
     * <a href="/Libs/Error/Error.cpp" title="">✅ `Error.cpp`</a>
     * <a href="/Libs/Error/Error.h" title="">✅ `Error.h`</a>
@@ -759,7 +759,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Creational 100% (6)</summary>
+    <summary>📁 ⌛ Creational 100% (6)</summary>
 
     * <a href="/Patterns/Creational/AbstractFactory.cpp" title="An abstract factory is used to create objects">✅ `AbstractFactory.cpp`</a>
     * <a href="/Patterns/Creational/Builder.cpp" title="Builder - responsible for constructing an object">✅ `Builder.cpp`</a>
@@ -818,13 +818,13 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ C++11 0.0% (0)</summary>
+    <summary>📁  C++11 0.0% (0)</summary>
 
 
     </details>
 
   * <details close>
-    <summary>📁 ❌ C++14 0.0% (0)</summary>
+    <summary>📁  C++14 0.0% (0)</summary>
 
 
     </details>
@@ -1007,7 +1007,7 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Class 100% (1)</summary>
+    <summary>📁 ⌛ Class 100% (1)</summary>
 
     * <a href="/Templates/Class/ClassTemplate.cpp" title="">✅ `ClassTemplate.cpp`</a>
 
@@ -1031,7 +1031,7 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Linux 100% (1)</summary>
+    <summary>📁 ⌛ Linux 100% (1)</summary>
 
     * <a href="/Unix/Linux/inotify.cpp" title="inotify API">✅ `inotify.cpp`</a>
 
@@ -1052,13 +1052,13 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ RegDLL 100% (28)</summary>
+    <summary>📁 ⌛ RegDLL 100% (28)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ DLLClient1 100% (2)</summary>
+      <summary>📁 ⌛ DLLClient1 100% (2)</summary>
 
         * <a href="/Windows/RegDLL/DLLClient1/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
         * <a href="/Windows/RegDLL/DLLClient1/DLLCode.h" title="">✅ `DLLCode.h`</a>
@@ -1066,7 +1066,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ DLLClient2 100% (2)</summary>
+      <summary>📁 ⌛ DLLClient2 100% (2)</summary>
 
         * <a href="/Windows/RegDLL/DLLClient2/DLLClient2.cpp" title="">✅ `DLLClient2.cpp`</a>
         * <a href="/Windows/RegDLL/DLLClient2/DLLCode.h" title="">✅ `DLLCode.h`</a>
@@ -1074,7 +1074,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ MFCAp 100% (12)</summary>
+      <summary>📁 ⌛ MFCAp 100% (12)</summary>
 
         * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">✅ `MFCApDoc.cpp`</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCAp.h" title="">✅ `MFCAp.h`</a>
@@ -1092,7 +1092,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ RDLLMFC 100% (7)</summary>
+      <summary>📁 ⌛ RDLLMFC 100% (7)</summary>
 
         * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.h" title="">✅ `StdAfx.h`</a>
@@ -1105,7 +1105,7 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ W32DLL 100% (5)</summary>
+      <summary>📁 ⌛ W32DLL 100% (5)</summary>
 
         * <a href="/Windows/RegDLL/W32DLL/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
         * <a href="/Windows/RegDLL/W32DLL/StdAfx.h" title="">✅ `StdAfx.h`</a>
