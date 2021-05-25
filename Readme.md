@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ████░░░░░░ 38% (162)
+- [Core](#core) ████░░░░░░ 39% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 87% (15)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████░░░░░░ 38% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████░░░░░░ 39% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -234,11 +234,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Enum 60% (5)</summary>
+    <summary>📁 ⌛ Enum 80% (5)</summary>
 
     * <a href="/Core/Enum/CodeStyle.cpp" title="">✅ `CodeStyle.cpp`</a>
     * <a href="/Core/Enum/ForEnum.cpp" title="">❌ ForEnum.cpp</a>
-    * <a href="/Core/Enum/SizeOf.cpp" title="enum size">❌ SizeOf.cpp</a>
+    * <a href="/Core/Enum/SizeOf.cpp" title="enum size">✅ `SizeOf.cpp`</a>
 
     </details>
 

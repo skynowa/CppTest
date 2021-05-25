@@ -1,48 +1,42 @@
  /*
- * \file  main.cpp
+ * \file  SizeOf.cpp
  * \brief enum size
- *
- * \todo
  */
 
 
-#include <string>
-#include <iostream>
-#include <assert.h>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
+class A
+{
+public:
+    enum class EChar : char
+    {
+        chUNKNOWN,
+        chONE,
+        chTWO,
+        chTHREE
+    };
+
+    enum class ELongLong : long long
+    {
+        llUNKNOWN,
+        llONE,
+        llTWO,
+        llTHREE
+    };
+
+    const A::EChar     ch = A::EChar::chONE;
+    const A::ELongLong ll = A::ELongLong::llONE;
+};
+//-------------------------------------------------------------------------------------------------
+class B
+{
+};
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    class A
-    {
-    public:
-        enum class EChar : char
-        {
-            chUNKNOWN,
-            chONE,
-            chTWO,
-            chTHREE
-        };
-
-        enum class ELongLong : long long
-        {
-            llUNKNOWN,
-            llONE,
-            llTWO,
-            llTHREE
-        };
-
-        const A::EChar     ch = A::EChar::chONE;
-        const A::ELongLong ll = A::ELongLong::llONE;
-    };
-
-    class B
-    {
-    };
-
     A a;
     B b;
 
@@ -66,10 +60,15 @@ int main(int, char **)
 
 #if OUTPUT
 
-EChar: 1
-ch: 1
+sizeof(A::EChar): 1
+sizeof(a.ch): 1
 
-ELongLong: 8
-ll: 8
+sizeof(A::ELongLong): 8
+sizeof(a.ll): 8
+
+sizeof(A): 16
+sizeof(a): 16
+
+sizeof(B): 1
 
 #endif
