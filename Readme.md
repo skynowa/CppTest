@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ███░░░░░░░ 29% (163)
+- [Core](#core) ███░░░░░░░ 30% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███░░░░░░░ 29% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███░░░░░░░ 30% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -340,9 +340,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Move 50% (2)</summary>
+    <summary>📁 ✅ Move 100% (2)</summary>
 
-    * <a href="/Core/Move/MoveRef.cpp" title="">❌ MoveRef.cpp</a>
+    * <a href="/Core/Move/MoveRef.cpp" title="">✅ `MoveRef.cpp`</a>
     * <a href="/Core/Move/Move.cpp" title="">✅ `Move.cpp`</a>
 
     </details>
