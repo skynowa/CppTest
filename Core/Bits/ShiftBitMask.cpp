@@ -1,25 +1,22 @@
 /**
- * \file  main.cpp
- * \brief bit mask
+ * \file  ShiftBitMask.cpp
+ * \brief Shift bit mask
+
+ * logical OR: a || b
+ * logical AND: a && b
+ * logical NOT: !a
  *
- * \todo
+ * bitwise OR: a | v
+ * bitwise NOT: ~a
+ * bitwise AND:  a & b
+ * bitwise shift left: a << b
+ * bitwise shift right:  a >> b
  */
 
- /*
-    logical OR: a || b
-    logical AND: a && b
-    logical NOT: !a
 
-    bitwise OR: a | v
-    bitwise NOT: ~a
-    bitwise AND:  a & b
-    bitwise shift left: a << b
-    bitwise shift right:  a >> b
- */
-
-//---------------------------------------------------------------------------
 #include <StdStream.h>
 #include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -48,7 +45,7 @@ int main(int, char **)
         Error6 = 0x000020,
         Error7 = 0x000040,
         Error8 = 0x000080,
-        Error9 = 0x000100,
+        Error9 = 0x000100
     };
 
     std::cout << TRACE_VAR2(Value0, Error0) << std::endl;
