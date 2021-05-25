@@ -1,89 +1,111 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  InheritanceFunctions.cpp
+ * \brief Call derived methods
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-#include <list>
-#include <map>
+#include <Stl.h>
 //---------------------------------------------------------------------------
-class A {
-	public:
-		             A   () { STD_TRACE_FUNC; }
-		            ~A   () { STD_TRACE_FUNC; }
+class I
+{
+public:
+			 I() { STD_TRACE_FUNC; }
+	virtual ~I() { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { STD_TRACE_FUNC; }
+	virtual void foo() { std::cout << "\tI::foo()" << std::endl; }
 };
 //---------------------------------------------------------------------------
-class B : public A {
-	public:
-					 B()    { STD_TRACE_FUNC; }
-					~B()    { STD_TRACE_FUNC; }
+class A :
+	public I
+{
+public:
+			 A() { STD_TRACE_FUNC; }
+	virtual ~A() { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { STD_TRACE_FUNC; }
+	void foo() override { std::cout << "\tA::foo()" << std::endl; }
 };
 //---------------------------------------------------------------------------
-class C : public A {
-	public:
-		             C()   { STD_TRACE_FUNC; }
-		            ~C()   { STD_TRACE_FUNC; }
+class B :
+	public I
+{
+public:
+			 B() { STD_TRACE_FUNC; }
+	virtual ~B() { STD_TRACE_FUNC; }
 
-		virtual void vFoo() { STD_TRACE_FUNC; }
+	void foo() override { std::cout << "\tB::foo()" << std::endl; }
+};
+//---------------------------------------------------------------------------
+class AB :
+	public A,
+	public B
+{
+public:
+			 AB() { STD_TRACE_FUNC; }
+	virtual ~AB() { STD_TRACE_FUNC; }
 
+	void foo() override { std::cout << "\tAB::foo()" << std::endl; }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
-	//-------------------------------------
-	//
 	{
-		A *a = new A();
-		a->vFoo();
-		std:: cout << "----------" << std::endl;
+		std::cout << "-------------- I ----------------" << std::endl;
 
-		A *b = new B();
-		b->vFoo();
-		std:: cout << "----------" << std::endl;
-
-		A *c = new C();
-		c->vFoo();
-		std:: cout << "----------" << std::endl;
-
-		delete c;
-		std:: cout << "----------" << std::endl;
-		delete b;
-		std:: cout << "----------" << std::endl;
-		delete a;
-		std:: cout << "----------" << std::endl;
-
-		/*
-		A::A
-		A::vFoo
-		----------
-		A::A
-		B::B
-		B::vFoo
-		----------
-		A::A
-		C::C
-		C::vFoo
-		----------
-		A::~A
-		----------
-		A::~A
-		----------
-		A::~A
-		----------
-		*/
+		I *i = new I();
+		i->foo();
+		delete i;
 	}
 
-	return 0;
+	{
+		std::cout << "-------------- A ----------------" << std::endl;
+
+		I *b = new A();
+		b->foo();
+		delete b;
+
+	}
+
+	{
+		std::cout << "-------------- B ----------------" << std::endl;
+
+		I *c = new B();
+		c->foo();
+		delete c;
+	}
+
+	{
+		std::cout << "-------------- AB ----------------" << std::endl;
+
+	#if 0
+		I *ab = new AB(); // error: ‘I’ is an ambiguous base of ‘AB’
+		ab->foo();
+		delete ab;
+	#endif
+	}
+
+	return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
+
+#if OUTPUT
+
+-------------- I ----------------
+	::: I :::
+	I::foo()
+	::: ~I :::
+-------------- A ----------------
+	::: I :::
+	::: A :::
+	A::foo()
+	::: ~A :::
+	::: ~I :::
+-------------- B ----------------
+	::: I :::
+	::: B :::
+	B::foo()
+	::: ~B :::
+	::: ~I :::
+
+#endif

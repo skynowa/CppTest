@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 17% (164)
+- [Core](#core) ██░░░░░░░░ 18% (164)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 17% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 18% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -183,9 +183,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 24% (17)</summary>
+    <summary>📁 ⌛ Class 29% (17)</summary>
 
-    * <a href="/Core/Class/InheritanceFunctions.cpp" title="">❌ InheritanceFunctions.cpp</a>
+    * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">❌ InitConstructor.cpp</a>
     * <a href="/Core/Class/QuotedString.java" title="">❌ QuotedString.java</a>
     * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
