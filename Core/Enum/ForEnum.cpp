@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  ForEnum.cpp
  * \brief
- *
- * \todo
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-#include <algorithm>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 enum Type
 {
@@ -18,9 +16,9 @@ enum Type
 	Last = 4
 };
 
-static const Type All[] = {a, b, c};
+static const Type All[] {a, b, c};
 
-void log(const Type e)
+void trace(const Type e)
 {
 	std::cout << e << ",";
 }
@@ -29,27 +27,27 @@ int main(int, char **)
 {
 	// all
 	for (const auto e : All) {
-		log(e);
+		trace(e);
 	}
 	std::cout << std::endl;
 
 	// some
 	for (const auto e : {a, c}) {
-		log(e);
+		trace(e);
 	}
 	std::cout << std::endl;
 
 	// all
-	std::for_each(std::begin(All), std::end(All), log);
+	std::for_each(std::begin(All), std::end(All), trace);
 	std::cout << std::endl;
 
 	// for
 	for (Type e = a; e != Last; e = Type(e + 1)) {
-		log(e);
+		trace(e);
 	}
 	std::cout << std::endl;
 
-	// for (bits)
+	// TODO: for (bits)
 	enum BitType
 	{
 		First,
@@ -57,28 +55,24 @@ int main(int, char **)
 		Green = 0x1,
 		White = 0x2,
 		Blue  = 0x4,
-		Last  = 0x8,
+		Last  = 0x8
 	};
 
 
 	// std::cout << BitType(Green << 1) << std::endl;
 
-	// return 0;
+	// for (BitType e = First; e != Last; e = BitType(e << 1)) {
+	// 	std::cout << (int)e << ",";
+	// }
+	// std::cout << std::endl;
 
-	for (BitType e = First; e != Last; e = BitType(e << 1)) {
-		std::cout << (int)e << ",";
-	}
-	std::cout << std::endl;
-
-	return 0;
+    return EXIT_SUCCESS;
 }
-//-------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-1,2,3,
-1,3,
-1,2,3,
+
 
 #endif
