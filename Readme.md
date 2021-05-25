@@ -251,9 +251,9 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Exceptions 0% (10)</summary>
+    <summary>📁 ⌛ Exceptions 10% (10)</summary>
 
-    * <a href="/Core/Exceptions/Try.cpp" title="">❌ Try.cpp</a>
+    * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Core/Exceptions/Exception2.cpp" title="exception">❌ Exception2.cpp</a>
     * <a href="/Core/Exceptions/Exception3.cpp" title="">❌ Exception3.cpp</a>
 
