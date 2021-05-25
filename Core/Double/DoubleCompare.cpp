@@ -10,17 +10,13 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    double v1 = 420.8400001;
-    double v2 = 420.84;
+    const double v1 = 420.8400001;
+    const double v2 = 420.84;
 
     std::cout << std::setprecision(20) << TRACE_VAR(v1) << std::endl;
     std::cout << std::setprecision(20) << TRACE_VAR(v2) << std::endl;
 
-    if (v1 > v2) {
-        std::cout << "true"  << std::endl;
-    } else {
-        std::cout << "false" << std::endl;
-    }
+    std::cout << (v1 > v2 ? "true" : "false") << std::endl;
 
     return EXIT_SUCCESS;
 }
