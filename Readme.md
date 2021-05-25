@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ███░░░░░░░ 28% (163)
+- [Core](#core) ███░░░░░░░ 29% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███░░░░░░░ 28% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███░░░░░░░ 29% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -329,10 +329,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Loops 80% (5)</summary>
+    <summary>📁 ✅ Loops 100% (5)</summary>
 
     * <a href="/Core/Loops/For.cpp" title="">✅ `For.cpp`</a>
-    * <a href="/Core/Loops/GoToLablel.cpp" title="">❌ GoToLablel.cpp</a>
+    * <a href="/Core/Loops/GoToLablel.cpp" title="">✅ `GoToLablel.cpp`</a>
     * <a href="/Core/Loops/ForVoid.cpp" title="">✅ `ForVoid.cpp`</a>
     * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">✅ `SwitchCase.cpp`</a>
     * <a href="/Core/Loops/ForBreak.cpp" title="">✅ `ForBreak.cpp`</a>

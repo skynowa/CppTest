@@ -1,18 +1,14 @@
 /**
- * \file
+ * \file  GoToLablel.cpp
  * \brief
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-#include <cstdlib>
-//---------------------------------------------------------------------------
-int main(int argCount, char **args)
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
     for (size_t i = 0; i < 10; ++ i) {
         if (i == 5) {
@@ -22,9 +18,9 @@ int main(int argCount, char **args)
 
     std::cout << 1 << std::endl;;
 
-    finally: {
-        std::cout << 2 << std::endl;
-    }
+finally: {
+    std::cout << 2 << std::endl;
+}
 
     std::cout << 3 << std::endl;
 
@@ -39,7 +35,7 @@ int main(int argCount, char **args)
 2
 3
 
-// with out goto
+// without goto
 1
 2
 3
