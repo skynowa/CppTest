@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 62% (16)</summary>
+    <summary>📁 ⌛ Class 69% (16)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
@@ -197,7 +197,7 @@
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">❌ SizeOfClass.cpp</a>
-    * <a href="/Core/Class/MethodWithoutBody.cpp" title="">❌ MethodWithoutBody.cpp</a>
+    * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
 
     </details>
 

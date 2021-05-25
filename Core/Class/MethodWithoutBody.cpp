@@ -1,15 +1,12 @@
 /**
- * \file
+ * \file  MethodWithoutBody.cpp
  * \brief
- *
- * \todo
  */
 
 
-//-------------------------------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class A
 {
@@ -22,17 +19,17 @@ int main(int, char **)
     A a;
 
     std::cout << "Begin" << std::endl;
-    // a.foo();
+    // a.foo(); - undefined reference to `A::foo()'
     std::cout << "End" << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-    Begin
-    End
+Begin
+End
 
 #endif
