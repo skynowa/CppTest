@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ███░░░░░░░ 31% (163)
+- [Core](#core) ███░░░░░░░ 32% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 87% (15)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███░░░░░░░ 31% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███░░░░░░░ 32% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -101,12 +101,12 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 40% (5)</summary>
+    <summary>📁 ⌛ Bits 60% (5)</summary>
 
     * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
     * <a href="/Core/Bits/BitMask.cpp" title="bit mask">❌ BitMask.cpp</a>
-    * <a href="/Core/Bits/BitMask2.cpp" title="">❌ BitMask2.cpp</a>
+    * <a href="/Core/Bits/BadBitMask.cpp" title="Overflow bit mask">✅ `BadBitMask.cpp`</a>
 
     </details>
 
