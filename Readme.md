@@ -183,14 +183,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 47% (17)</summary>
+    <summary>📁 ⌛ Class 53% (17)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">❌ InitConstructor.cpp</a>
     * <a href="/Core/Class/QuotedString.java" title="">❌ QuotedString.java</a>
     * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">✅ `CallMethod.cpp`</a>
-    * <a href="/Core/Class/FunctionDefinition.cpp" title="">❌ FunctionDefinition.cpp</a>
+    * <a href="/Core/Class/FunctionDefinition.cpp" title="">✅ `FunctionDefinition.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
     * <a href="/Core/Class/CopyCtor.cpp" title="copy constructor">✅ `CopyCtor.cpp`</a>

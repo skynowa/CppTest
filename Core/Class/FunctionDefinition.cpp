@@ -1,25 +1,22 @@
 /**
- * \file  main.cpp
+ * \file  FunctionDefinition.cpp
  * \brief
- *
- * \todo
  */
 
 
-//-------------------------------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class A
 {
 public:
-    A()
+    explicit A()
     {
-        std::cout << "A - class" << std::endl;
+        std::cout << "A - ctor" << std::endl;
     }
 
-    A operator () ()
+    void operator () ()
     {
         std::cout << "A - operator()" << std::endl;
     }
@@ -43,6 +40,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-    A - class
+A - ctor
 
 #endif
