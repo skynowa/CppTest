@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  Move.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -13,33 +11,46 @@
 class File
 {
 public:
-    File(const char* filename)
+    explicit File(const char *filename)
     {
-        if ( !(_handle = fopen(filename, "r")) ) {
-            throw std::runtime_error("blah blah blah");
+        _handle = fopen(filename, "r");
+        if (_handle == nullptr) {
+            /// throw std::runtime_error("blah blah blah");
         }
+
+        std::cout << "File(const char *)" << std::endl;
     }
 
-    File(File&& that)
+    File(const File &) = delete;
+
+    File(File &&that)
     {
         _handle      = that._handle;
         that._handle = nullptr;
+
+        std::cout << "File(File &&)" << std::endl;
     }
 
-    File& operator = (File&& that)
+    File &
+    operator = (File &&that)
     {
         std::swap(_handle, that._handle);
+
+        std::cout << "operator = (File &&)" << std::endl;
+
         return *this;
     }
 
-    File(const File&) = delete;
-    void operator = (const File&) = delete;
+    void operator = (const File &) = delete;
 
     ~File()
     {
-        if (_handle) {
+        if (_handle != nullptr) {
             fclose(_handle);
+            _handle = nullptr;
         }
+
+        std::cout << "~File()" << std::endl;
     }
 
 private:
@@ -48,20 +59,55 @@ private:
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::vector<File> files;
-	files.push_back(File("data1.txt"));
-	files.push_back(File("data2.txt"));
-	files.erase(files.begin());
+    {
+        std::vector<File> files;
 
-    // std::cout << "" << std::endl;
+        {
+            std::cout << "\n::::: files.push_back('data1.txt') :::::" << std::endl;
+            files.push_back( File("data1.txt") );
 
-    return 0;
+            std::cout << "\n::::: files.push_back('data2.txt') :::::" << std::endl;
+            files.push_back( File("data2.txt") );
+        }
+
+        {
+            std::cout << "\n::::: files.erase() :::::" << std::endl;
+
+            files.erase( files.cbegin() );
+        }
+
+        {
+            std::cout << "\n::::: files - dtor :::::" << std::endl;
+        }
+    }
+
+    std::cout << std::endl;
+
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
+::::: files.push_back('data1.txt') :::::
+File(const char *)
+File(File &&)
+~File()
+
+::::: files.push_back('data2.txt') :::::
+File(const char *)
+File(File &&)
+File(File &&)
+~File()
+~File()
+
+::::: files.erase() :::::
+operator = (File &&)
+~File()
+
+::::: files - dtor :::::
+~File()
 
 
 #endif
