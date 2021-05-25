@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 16% (165)
+- [Core](#core) ██░░░░░░░░ 17% (164)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 16% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 17% (164)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -183,20 +183,19 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 17% (18)</summary>
+    <summary>📁 ⌛ Class 24% (17)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="">❌ InheritanceFunctions.cpp</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">❌ InitConstructor.cpp</a>
-    * <a href="/Core/Class/CpoyConstructor2.cpp" title="copy constructor 2">❌ CpoyConstructor2.cpp</a>
     * <a href="/Core/Class/QuotedString.java" title="">❌ QuotedString.java</a>
     * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">❌ CallMethod.cpp</a>
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">❌ FunctionDefinition.cpp</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
+    * <a href="/Core/Class/CopyCtor.cpp" title="copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">❌ FriendClass.cpp</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">❌ EmptyStructSizeOf.cpp</a>
-    * <a href="/Core/Class/CopyConstructor1.cpp" title="Copy constructor, operator =">❌ CopyConstructor1.cpp</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">❌ SizeOfClass.cpp</a>
     * <a href="/Core/Class/InitOrder.cpp" title="">❌ InitOrder.cpp</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">❌ MethodWithoutBody.cpp</a>

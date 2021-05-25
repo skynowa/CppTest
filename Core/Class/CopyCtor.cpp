@@ -1,37 +1,33 @@
  /*
- * \file  main.cpp
- * \brief copy constructor 2
- *
- * \todo
+ * \file  CopyCtor.cpp
+ * \brief copy constructor
  */
 
-
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //------------------------------------------------------------------------------
 class A
 {
 public:
-         A();
-    void show();
+    A();
+
+    void print() const;
 
 private:
-    int         i;
-    std::string s;
+    int         _i {};
+    std::string _s;
 };
 //------------------------------------------------------------------------------
 A::A() :
-    i(-1),
-    s("string")
+    _i{- 1},
+    _s{"str"}
 {
 }
 //------------------------------------------------------------------------------
-void A::show()
+void A::print() const
 {
-    std::cout << "i = " << i << " "
-              << "s = " << s << std::endl;
+    std::cout << TRACE_VAR2(_i, _s) << std::endl;
 }
 //---------------------------------------------------------------------------
 int main(int, char **)
@@ -39,8 +35,8 @@ int main(int, char **)
     A a1;
     A a2 = a1;
 
-    a1.show();
-    a2.show();
+    a1.print();
+    a2.print();
 
     return EXIT_SUCCESS;
 }
@@ -49,7 +45,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-i = -1 s = string
-i = -1 s = string
+_i: -1, _s: str
+_i: -1, _s: str
 
 #endif
