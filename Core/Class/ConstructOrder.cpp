@@ -25,7 +25,7 @@ public:
 class Field
 {
 public:
-	explicit Field(const std::string &a_name) :
+	explicit Field(std::string a_name) :
 		_name{a_name}
 	{
 		std::cout << "\t\tField: " << _name << std::endl;
@@ -45,15 +45,18 @@ class A :
 	public Base2
 {
 public:
-	Field f1{"f1"}, f2{"f2"}, f3{"f3"};
+	const Field f1{"f1"};
+	const Field f2{"f2"};
+	const Field f3{"f3"};
 
-	static Field fs;
+	static const Field fs;
+	static const inline Field fsi {"f_static_inline"};
 
 	A()	 { STD_TRACE_FUNC; }
 	~A() { STD_TRACE_FUNC; }
 };
 
-/* static */ Field A::fs{"f_static"};
+/* static */ const Field A::fs{"f_static"};
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -68,19 +71,20 @@ int main(int, char **)
 
 #if OUTPUT
 
-		Field: f_static
-	::: Base1 :::
-	::: Base2 :::
-		Field: f1
-		Field: f2
-		Field: f3
-	::: A :::
-	::: ~A :::
-		~Field: f3
-		~Field: f2
-		~Field: f1
-	::: ~Base2 :::
-	::: ~Base1 :::
-		~Field: f_static
+	Field: f_static_inline
+	Field: f_static
+::: Base1 :::
+::: Base2 :::
+	Field: f1
+	Field: f2
+	Field: f3
+::: A :::
+::: ~A :::
+	~Field: f3
+	~Field: f2
+	~Field: f1
+::: ~Base2 :::
+::: ~Base1 :::
+	~Field: f_static
 
 #endif
