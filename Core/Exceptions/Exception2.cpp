@@ -10,7 +10,8 @@
 #include <StdTest.h>
 #include <Stl.h>
 //---------------------------------------------------------------------------
-void foo() {
+void foo()
+{
     std::cout << __FUNCTION__ << " - begin" << std::endl;
 
     throw 1.0;
