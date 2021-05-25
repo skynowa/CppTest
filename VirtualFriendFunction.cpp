@@ -1,8 +1,6 @@
 /**
  * \file  VirtualFriendFunction.cpp
  * \brief Simulate a virtual friend function
- *
- * \todo
  */
 
 
@@ -23,7 +21,6 @@ protected:
 	{
 		os << _value;
 	}
-
 
 private:
 	std::string _value {"IBase"};
