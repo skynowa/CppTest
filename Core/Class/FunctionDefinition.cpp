@@ -11,16 +11,26 @@
 class A
 {
 public:
+    // called
     explicit A()
     {
         std::cout << "A - ctor" << std::endl;
     }
 
+    // NOT called
     void operator () ()
     {
         std::cout << "A - operator()" << std::endl;
     }
 };
+//-------------------------------------------------------------------------------------------------
+// NOT called
+A a()
+{
+    std::cout << "A - function" << std::endl;
+
+    return A{};
+}
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -29,7 +39,7 @@ int main(int, char **)
     }
 
     {
-        // function definition (not constructor, not operator() )
+        // function definition (not constructor, not operator())
         A a();
     }
 
@@ -41,5 +51,6 @@ int main(int, char **)
 #if OUTPUT
 
 A - ctor
+
 
 #endif
