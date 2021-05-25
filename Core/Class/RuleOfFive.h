@@ -33,14 +33,6 @@ public:
 		_trace("RuleOfFive(const char *)");
 	}
 
-	~RuleOfFive()
-	{
-		delete[] _buff;
-		_buff = nullptr;
-
-		_trace("~RuleOfFive()");
-	}
-
 	// copy constructor
 	RuleOfFive(const RuleOfFive &a_other) :
 		RuleOfFive(a_other._buff)
@@ -53,6 +45,14 @@ public:
 		_buff(std::exchange(a_other._buff, nullptr))
 	{
 		_trace("RuleOfFive(RuleOfFive &&a_other)");
+	}
+
+	~RuleOfFive()
+	{
+		delete[] _buff;
+		_buff = nullptr;
+
+		_trace("~RuleOfFive()");
 	}
 ///@}
 

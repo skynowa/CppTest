@@ -8,7 +8,7 @@
 #include <StdTest.h>
 #include <Stl.h>
 
-#include "Core/Class/RuleOfFive.h"
+#include "/home/skynowa/Projects/CppTest/Core/Class/RuleOfFive.h"
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
