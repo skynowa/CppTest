@@ -1,14 +1,12 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  ConstructOrder.cpp
+ * \brief Construct order
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class Base1
 {
@@ -27,8 +25,19 @@ public:
 class Field
 {
 public:
-	Field()	 { STD_TRACE_FUNC; }
-	~Field() { STD_TRACE_FUNC; }
+	explicit Field(const std::string &a_name) :
+		_name{a_name}
+	{
+		std::cout << "\t\tField: " << _name << std::endl;
+	}
+
+	~Field()
+	{
+		std::cout << "\t\t~Field: " << _name << std::endl;
+	}
+
+private:
+	const std::string _name{};
 };
 //-------------------------------------------------------------------------------------------------
 class A :
@@ -36,7 +45,7 @@ class A :
 	public Base2
 {
 public:
-	Field f1, f2, f3;
+	Field f1{"f1"}, f2{"f2"}, f3{"f3"};
 
 	A()	 { STD_TRACE_FUNC; }
 	~A() { STD_TRACE_FUNC; }
@@ -44,9 +53,11 @@ public:
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	A a;
+	{
+		A a;
+	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -55,14 +66,14 @@ int main(int, char **)
 
 	::: Base1 :::
 	::: Base2 :::
-	::: Field :::
-	::: Field :::
-	::: Field :::
+		Field: f1
+		Field: f2
+		Field: f3
 	::: A :::
 	::: ~A :::
-	::: ~Field :::
-	::: ~Field :::
-	::: ~Field :::
+		~Field: f3
+		~Field: f2
+		~Field: f1
 	::: ~Base2 :::
 	::: ~Base1 :::
 
