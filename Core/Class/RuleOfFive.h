@@ -62,18 +62,20 @@ public:
 	RuleOfFive &
 	operator = (const RuleOfFive &a_other)
 	{
+		*this = RuleOfFive(a_other);
+
 		_trace("operator = (const RuleOfFive &)");
 
-		return *this = RuleOfFive(a_other);
+		return *this;
 	}
 
 	// move assignment
 	RuleOfFive &
 	operator = (RuleOfFive &&a_other) noexcept
 	{
-		_trace("operator = (RuleOfFive &&)");
-
 		std::swap(_buff, a_other._buff);
+
+		_trace("operator = (RuleOfFive &&)");
 
 		return *this;
 	}
