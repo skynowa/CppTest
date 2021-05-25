@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 81% (16)</summary>
+    <summary>📁 ⌛ Class 88% (16)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
@@ -210,9 +210,9 @@
       </details>
 
     * <details close>
-      <summary>📁 ❌ Union 0% (1)</summary>
+      <summary>📁 ✅ Union 100% (1)</summary>
 
-        * <a href="/Core/Class/Union/Union.cpp" title="">❌ Union.cpp</a>
+        * <a href="/Core/Class/Union/Union.cpp" title="Объединения — это тип класса, в котором все данные разделяют одну и туже область памяти">✅ `Union.cpp`</a>
 
       </details>
 
