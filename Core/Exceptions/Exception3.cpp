@@ -1,44 +1,54 @@
 /*
-* \file  Main.cpp
-* \brief
- *
- * \todo
+ * \file  Exception3.cpp
+ * \brief
  */
 
 
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-#include <exception>
-//---------------------------------------------------------------------------
-class A {
-    public:
-                     A()   { std::cout << "A::A()\n"; }
-        virtual void Foo() { std::cout << "A::Foo()\n"; }
+class A
+{
+public:
+             A() { std::cout << "A::A()\n"; }
+    virtual ~A() {}
+
+    virtual void foo() const
+    {
+        std::cout << "A::foo()\n";
+    }
 };
 //---------------------------------------------------------------------------
 class B :
-    public    A
+    public A
     // protected A
     // private   A
 {
-    public:
-                     B()   { std::cout << "B::B()\n"; }
-        virtual void Foo() { std::cout << "B::Foo()\n"; }
+public:
+    B()
+    {
+        std::cout << "B::B()\n";
+    }
+
+    void foo() const override
+    {
+        std::cout << "B::foo()\n";
+    }
 };
 //---------------------------------------------------------------------------
-int main() {
+int main()
+{
     try {
         throw B();
     }
-    catch (A &ex) {
-        std::cout << "catch (A &ex)\n";
-        ex.Foo();
-    }
-    catch (B &ex) {
+    catch (const B &ex) {
         std::cout << "catch (B &ex)\n";
-        ex.Foo();
+        ex.foo();
+    }
+    catch (const A &ex) {
+        std::cout << "catch (A &ex)\n";
+        ex.foo();
     }
 
     return EXIT_SUCCESS;
@@ -48,16 +58,9 @@ int main() {
 
 #if OUTPUT
 
-    // class B : public A
-    A::A()
-    B::B()
-    catch (A &ex)
-    B::Foo()
-
-    // class B : protected or private A
-    A::A()
-    B::B()
-    catch (B &ex)
-    B::Foo()
+A::A()
+B::B()
+catch (B &ex)
+B::foo()
 
 #endif

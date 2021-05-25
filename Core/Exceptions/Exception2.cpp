@@ -1,15 +1,14 @@
  /*
- * \file  Main.cpp
+ * \file  Exception2.cpp
  * \brief exception
  *
  * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
 void foo() {
     std::cout << __FUNCTION__ << " - begin" << std::endl;

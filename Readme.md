@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ████░░░░░░ 40% (162)
+- [Core](#core) ████░░░░░░ 41% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 87% (15)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████░░░░░░ 40% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████░░░░░░ 41% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -251,11 +251,11 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Exceptions 10% (10)</summary>
+    <summary>📁 ⌛ Exceptions 20% (10)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Core/Exceptions/Exception2.cpp" title="exception">❌ Exception2.cpp</a>
-    * <a href="/Core/Exceptions/Exception3.cpp" title="">❌ Exception3.cpp</a>
+    * <a href="/Core/Exceptions/Exception3.cpp" title="">✅ `Exception3.cpp`</a>
 
     </details>
 
