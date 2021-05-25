@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ████░░░░░░ 37% (163)
+- [Core](#core) ████░░░░░░ 38% (163)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 87% (15)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████░░░░░░ 37% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████░░░░░░ 38% (163)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -234,9 +234,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Enum 33% (6)</summary>
+    <summary>📁 ⌛ Enum 50% (6)</summary>
 
-    * <a href="/Core/Enum/CodeStyle.cpp" title="">❌ CodeStyle.cpp</a>
+    * <a href="/Core/Enum/CodeStyle.cpp" title="">✅ `CodeStyle.cpp`</a>
     * <a href="/Core/Enum/SafeEnum.cpp" title="https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Type_Safe_Enum">❌ SafeEnum.cpp</a>
     * <a href="/Core/Enum/ForEnum.cpp" title="">❌ ForEnum.cpp</a>
     * <a href="/Core/Enum/SizeOf.cpp" title="enum size">❌ SizeOf.cpp</a>
