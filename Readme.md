@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██░░░░░░░░ 15% (165)
+- [Core](#core) ██░░░░░░░░ 16% (166)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) █████████░ 86% (14)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██░░░░░░░░ 15% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██░░░░░░░░ 16% (166)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -183,7 +183,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Class 6% (18)</summary>
+    <summary>📁 ⌛ Class 11% (19)</summary>
 
     * <a href="/Core/Class/InheritanceFunctions.cpp" title="">❌ InheritanceFunctions.cpp</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">❌ InitConstructor.cpp</a>
@@ -194,6 +194,7 @@
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">❌ FunctionDefinition.cpp</a>
     * <a href="/Core/Class/CondtructorOrder.cpp" title="">❌ CondtructorOrder.cpp</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
+    * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">❌ FriendClass.cpp</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">❌ EmptyStructSizeOf.cpp</a>
     * <a href="/Core/Class/CopyConstructor1.cpp" title="Copy constructor, operator =">❌ CopyConstructor1.cpp</a>
