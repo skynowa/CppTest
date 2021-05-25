@@ -1,34 +1,59 @@
 /**
- * \file
+ * \file  ForBreak.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-
-//---------------------------------------------------------------------------
-int main(int, char **) {
-
-	for (int i = 0; i < 100; ++ i) {
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+	for (int i = 0; i < 10; ++ i) {
 		{
 			{
-				if (50 == i) {
+				if (i == 5) {
 					break;
 				}
-				std::cout << "break 1" << std::endl;
+
+				std::cout << "break_1" << std::endl;
 			}
-			std::cout << "break 2" << std::endl;
+
+			std::cout << "break_2" << std::endl;
 		}
-		std::cout << "break 3" << std::endl;
+
+		std::cout << "break_3" << std::endl << std::endl;
 	}
 
 	std::cout << "end" << std::endl;
-	system("pause");
-	return 0;
+
+    return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+break_1
+break_2
+break_3
+
+break_1
+break_2
+break_3
+
+break_1
+break_2
+break_3
+
+break_1
+break_2
+break_3
+
+break_1
+break_2
+break_3
+
+end
+
+#endif
