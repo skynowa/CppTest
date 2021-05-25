@@ -224,10 +224,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Double 0% (4)</summary>
+    <summary>📁 ⌛ Double 25% (4)</summary>
 
     * <a href="/Core/Double/DoubleCompare.cpp" title="">❌ DoubleCompare.cpp</a>
-    * <a href="/Core/Double/DoubleCast.cpp" title="">❌ DoubleCast.cpp</a>
+    * <a href="/Core/Double/DoubleCast.cpp" title="">✅ `DoubleCast.cpp`</a>
     * <a href="/Core/Double/IsGreater.cpp" title="">❌ IsGreater.cpp</a>
     * <a href="/Core/Double/IntDoubleCompare.cpp" title="">❌ IntDoubleCompare.cpp</a>
 

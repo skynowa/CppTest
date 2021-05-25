@@ -1,26 +1,24 @@
 /**
- * \file  main.cpp
+ * \file  DoubleCast.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
-	    double     d = -0.15;
+	    double     d = -10.15;
 	    signed int i = static_cast<signed int>(d);
 
 	    std::cout << TRACE_VAR2(d, i) << std::endl;
     }
 
     {
-	    double     d = 0.25;
+	    double     d = 20.25;
 	    signed int i = static_cast<signed int>(d);
 
 	    std::cout << TRACE_VAR2(d, i) << std::endl;
@@ -33,7 +31,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-d: -0.15, i: 0
-d:  0.25, i: 0
+d: -10.15, i: -10
+d: 20.25,  i: 20
+
 
 #endif
