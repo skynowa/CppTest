@@ -191,6 +191,9 @@ class RoadmapGen:
 		if (a_doneFilesPct != 100.0 and a_doneFilesPct > 50.0):
 			a_doneFilesPct = '{}{}'.format('🔥', a_doneFilesPct)
 
+		if (a_doneFilesPct == 100.0):
+			a_doneFilesPct = '{}{}'.format('🚩', a_doneFilesPct)
+
 		return '{}{} {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
 	################################################################################################
