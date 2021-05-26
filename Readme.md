@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ██████░░░░ 57% (160)
+- [Core](#core) ██████░░░░ 🔥57% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 100% (31)
@@ -15,7 +15,7 @@
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 100% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
-- [Templates](#templates) ███████░░░ 69% (13)
+- [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
 - [Windows](#windows) ██████████ 100% (37)
 
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██████░░░░ 57% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██████░░░░ 🔥57% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -1019,7 +1019,7 @@
 
     </details>
 
-##  <a id="templates">Templates ███████░░░ 69% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="templates">Templates ███████░░░ 🔥69% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">✅ `MaximumOfTwoObjects.cpp`</a>
 * <a href="/Templates/AverageOfValuesInObjects.cpp" title="">✅ `AverageOfValuesInObjects.cpp`</a>
