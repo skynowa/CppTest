@@ -5,7 +5,7 @@
 - [Core](#core) ████░░░░░░ 41% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 97% (31)
+- [Idioms](#idioms) ██████████ 100% (31)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -484,7 +484,7 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 97% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 100% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -556,9 +556,9 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Solid 83% (6)</summary>
+    <summary>📁 ✅ Solid 100% (6)</summary>
 
-    * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">❌ SingleResponsibility_SRP.cpp</a>
+    * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">✅ `SingleResponsibility_SRP.cpp`</a>
     * <a href="/Idioms/Solid/Readme.md" title="">🖊 `📝 Readme.md`</a>
     * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">🖊 `InterfaceSegregation_ISP.cpp`</a>
     * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">🖊 `DependencyInversion_DIP.cpp`</a>
