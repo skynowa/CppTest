@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ██████░░░░ 🔥65% (160)
+- [Core](#core) ███████░░░ 🔥66% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (31)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ██████░░░░ 🔥65% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███████░░░ 🔥66% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -345,7 +345,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Operators 93% (14)</summary>
+    <summary>📁 ✅ Operators 100% (14)</summary>
 
     * <a href="/Core/Operators/OperatorIn.cpp" title="">✅ `OperatorIn.cpp`</a>
     * <a href="/Core/Operators/OperatorsNewDelete.cpp" title="replace operator new and delete to log allocations">✅ `OperatorsNewDelete.cpp`</a>
@@ -353,14 +353,14 @@
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
     * <a href="/Core/Operators/OverloadingArithmeticOperator.cpp" title="">✅ `OverloadingArithmeticOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingPrefixIncermentDecrementOperator.cpp" title="">✅ `OverloadingPrefixIncermentDecrementOperator.cpp`</a>
-    * <a href="/Core/Operators/OverloadingLogicalOperator.cpp" title="">✅ `OverloadingLogicalOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingLogicalOperator.cpp" title="">🖊 `OverloadingLogicalOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingArithmeticOperatorUsingMemberFunction.cpp" title="this function is a member function!">✅ `OverloadingArithmeticOperatorUsingMemberFunction.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
-    * <a href="/Core/Operators/OverloadingInputOutputOperator.cpp" title="">✅ `OverloadingInputOutputOperator.cpp`</a>
-    * <a href="/Core/Operators/OverloadingPostfixIncermentDecrementOperator.cpp" title="">✅ `OverloadingPostfixIncermentDecrementOperator.cpp`</a>
-    * <a href="/Core/Operators/OverloadingUnaryOperator.cpp" title="">✅ `OverloadingUnaryOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingInputOutputOperator.cpp" title="">🖊 `OverloadingInputOutputOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingPostfixIncermentDecrementOperator.cpp" title="">🖊 `OverloadingPostfixIncermentDecrementOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingUnaryOperator.cpp" title="">🖊 `OverloadingUnaryOperator.cpp`</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="">✅ `DecIncInt.cpp`</a>
-    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">❌ PlacementNew.cpp</a>
+    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">🖊 `PlacementNew.cpp`</a>
 
     </details>
 

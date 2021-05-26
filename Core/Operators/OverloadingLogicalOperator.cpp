@@ -2,6 +2,8 @@
  * \file  OverloadingLogicalOperator.cpp
  * \brief
  *
+ * \review
+ *
  * The comparison operators are all binary operators that do not modify their left operands,
  * we will make our overloaded comparison operators friend functions.
  */
