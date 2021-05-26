@@ -349,17 +349,17 @@
 
     * <a href="/Core/Operators/OperatorIn.cpp" title="">✅ `OperatorIn.cpp`</a>
     * <a href="/Core/Operators/OperatorsNewDelete.cpp" title="replace operator new and delete to log allocations">✅ `OperatorsNewDelete.cpp`</a>
-    * <a href="/Core/Operators/NamespaceOperator.cpp" title="">✅ `NamespaceOperator.cpp`</a>
+    * <a href="/Core/Operators/NamespaceOperator.cpp" title="">🖊 `NamespaceOperator.cpp`</a>
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
-    * <a href="/Core/Operators/OverloadingArithmeticOperator.cpp" title="">✅ `OverloadingArithmeticOperator.cpp`</a>
-    * <a href="/Core/Operators/OverloadingPrefixIncermentDecrementOperator.cpp" title="">✅ `OverloadingPrefixIncermentDecrementOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingArithmeticOperator.cpp" title="">🖊 `OverloadingArithmeticOperator.cpp`</a>
+    * <a href="/Core/Operators/OverloadingPrefixIncermentDecrementOperator.cpp" title="">🖊 `OverloadingPrefixIncermentDecrementOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingLogicalOperator.cpp" title="">🖊 `OverloadingLogicalOperator.cpp`</a>
-    * <a href="/Core/Operators/OverloadingArithmeticOperatorUsingMemberFunction.cpp" title="this function is a member function!">✅ `OverloadingArithmeticOperatorUsingMemberFunction.cpp`</a>
+    * <a href="/Core/Operators/OverloadingArithmeticOperatorUsingMemberFunction.cpp" title="this function is a member function!">🖊 `OverloadingArithmeticOperatorUsingMemberFunction.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
     * <a href="/Core/Operators/OverloadingInputOutputOperator.cpp" title="">🖊 `OverloadingInputOutputOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingPostfixIncermentDecrementOperator.cpp" title="">🖊 `OverloadingPostfixIncermentDecrementOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingUnaryOperator.cpp" title="">🖊 `OverloadingUnaryOperator.cpp`</a>
-    * <a href="/Core/Operators/DecIncInt.cpp" title="">✅ `DecIncInt.cpp`</a>
+    * <a href="/Core/Operators/DecIncInt.cpp" title="">🖊 `DecIncInt.cpp`</a>
     * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">🖊 `PlacementNew.cpp`</a>
 
     </details>
