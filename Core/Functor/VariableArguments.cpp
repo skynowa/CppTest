@@ -1,29 +1,12 @@
  /*
  * \file  VariableArguments.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <string>
-#include <iostream>
-#include <assert.h>
-#include <stdio.h>
-#include <stdarg.h>
-
-//-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
-
-void printVars(const char *format, ...);
-//-------------------------------------------------------------------------------------------------
-int main(int, char **)
-{
-    printVars("fcsi", 32.4f, 'a', "Test string", 4);
-
-    return 0;
-}
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 /**
  * printVars
@@ -85,3 +68,21 @@ printVars(const char *format, ...)
 
     va_end(vl);
 }
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+    ::printVars("fcsi", 32.4f, 'a', "Test string", 4);
+
+    return EXIT_SUCCESS;
+}
+//-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+32.400002
+a
+Test string
+4
+
+#endif
