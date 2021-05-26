@@ -251,7 +251,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Exceptions 20% (10)</summary>
+    <summary>📁 ⌛ Exceptions 30% (10)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Core/Exceptions/Exception2.cpp" title="exception">❌ Exception2.cpp</a>
@@ -260,9 +260,9 @@
     </details>
 
     * <details close>
-      <summary>📁 ❌ SignalsToException 0% (1)</summary>
+      <summary>📁 ✅ SignalsToException 100% (1)</summary>
 
-        * <a href="/Core/Exceptions/SignalsToException/SignalsToException.cpp" title="http://www.ibm.com/developerworks/library/l-cppexcep/">❌ SignalsToException.cpp</a>
+        * <a href="/Core/Exceptions/SignalsToException/SignalsToException.cpp" title="http://www.ibm.com/developerworks/library/l-cppexcep/">🖊 `SignalsToException.cpp`</a>
 
       </details>
 

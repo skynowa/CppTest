@@ -1,27 +1,25 @@
  /*
- * \file  main.cpp
+ * \file  SignalsToException.cpp
  * \brief http://www.ibm.com/developerworks/library/l-cppexcep/
  *
- * \todo
+ * \review
  */
 
 
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+
 #include <execinfo.h>
 #include <signal.h>
-#include <exception>
-#include <stdexcept>
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include <cassert>
-
-//-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
 //-------------------------------------------------------------------------------------------------
 class StackTrace
 {
 public:
+    virtual ~StackTrace()
+    {
+    }
+
     StackTrace()
     {
         void*  array[25];
@@ -40,7 +38,7 @@ public:
     }
 };
 //-------------------------------------------------------------------------------------------------
-template <class T>   // SignalExceptionClass
+template<class T>
 class SignalTranslator
 {
 public:
@@ -62,7 +60,7 @@ private:
         void signalHandler(int)
         {
             throw std::runtime_error("Hello, world!");
-            //throw T();
+            // throw T();
         }
     };
 };
@@ -155,7 +153,10 @@ class A
 public:
     A()
     {
-        int i = 0, j = 1 / i;
+        int i = 0;
+        int j = 1 / i;
+        (void)j;
+
         // *(int *)0 = 0;
     }
 };
@@ -172,7 +173,7 @@ int main(int, char **)
 
     A a;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
