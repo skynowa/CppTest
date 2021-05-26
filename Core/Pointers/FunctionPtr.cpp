@@ -1,27 +1,29 @@
- /*
- * \file  Main.cpp
+/**
+ * \file  FunctionPtr.cpp
  * \brief pointer to function
  *
  * \todo "std::func_ptr"
+ * \review
  *
  * https://isocpp.org/wiki/faq/pointers-to-members
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-
-//---------------------------------------------------------------------------
-int (*funcPtr)(const std::string &value) = NULL;
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int (*funcPtr)(const std::string &value) = nullptr;
 
 int iFunc(const std::string &a_value)
 {
    std::cout << a_value << std::endl;
    return 0;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 class A;
 
-int (A::*classFuncPtr)(const std::string &value) = NULL;
+int (A::*classFuncPtr)(const std::string &value) = nullptr;
 
 class A
 {
@@ -32,7 +34,7 @@ public:
        return 0;
     }
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
     // function pointer
@@ -61,11 +63,13 @@ int main(int, char **)
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
+Test!!
+Test!!
 Test!!
 Test!!
 Test!!
