@@ -1,37 +1,52 @@
 /**
- * \file
+ * \file  OverloadingUnaryOperator.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Cents
 {
-private:
-    int m_cents;
 public:
-    Cents(int cents) { m_cents = cents; }
+    Cents(int cents)
+    {
+        _cents = cents;
+    }
 
     // Overload -Cents as a member function
     Cents operator-() const;
 
-    int getCents() const { return m_cents; }
+    int getCents() const
+    {
+        return _cents;
+    }
+
+private:
+    int _cents {};
 };
-
-Cents Cents::operator-() const
+//--------------------------------------------------------------------------------------------------
+Cents
+Cents::operator - () const
 {
-	return Cents(-m_cents);
+	return Cents(- _cents);
 }
-
-int main()
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
 	const Cents nickle(5);
-	cout << "Nickle of debt is worth " << (-nickle).getCents() << " cents." << endl;
 
-	return 0;
+	std::cout << "Nickle of debt is worth " << (- nickle).getCents() << " cents." << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Nickle of debt is worth -5 cents.
+
+#endif

@@ -1,61 +1,79 @@
 /**
- * \file
+ * \file  OverloadingPostfixIncermentDecrementOperator.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Digits
 {
-	int m_digit;
 public:
-	Digits(int digit) : m_digit(digit)
-	{}
+	Digits(int digit) :
+		_digit(digit)
+	{
+	}
 
-	Digits operator++(int);
-	Digits operator--(int);
+	Digits operator ++ (int);
+	Digits operator -- (int);
 
-	friend ostream& operator<< (ostream &out, const Digits &d);
+	friend
+	std::ostream &operator << (std::ostream &out, const Digits &d);
+
+private:
+	int _digit {};
 };
-
-Digits Digits::operator++(int)
+//--------------------------------------------------------------------------------------------------
+Digits
+Digits::operator ++ (int)
 {
-	//Create a temporary variable with our current digit
-	Digits temp(m_digit);
+	// Create a temporary variable with our current digit
+	Digits temp(_digit);
 
-	//Use prefix operator to increment this digit
-	++(m_digit);
+	// Use prefix operator to increment this digit
+	++ _digit;
 
-	//return temporary result
+	// return temporary result
 	return temp;
 }
-
-Digits Digits::operator--(int)
+//--------------------------------------------------------------------------------------------------
+Digits
+Digits::operator -- (int)
 {
-	Digits temp(m_digit);
+	Digits temp(_digit);
 
-	--(m_digit);
+	--_digit;
 
 	return temp;
 }
-
-ostream& operator<< (ostream &out, const Digits &d)
+//--------------------------------------------------------------------------------------------------
+std::ostream &
+operator << (std::ostream &out, const Digits &d)
 {
-	out << d.m_digit;
+	out << d._digit;
+
 	return out;
 }
-
-int main()
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
 	Digits d1(5);
-	cout << "The Digit is : " << d1 << endl;
-	cout << "Postfix Increment : " << d1++ << endl;
-	cout << "Postfix Decrement : " << d1-- << endl;
 
-	return 0;
+	std::cout << "The Digit is : "      << d1      << std::endl;
+	std::cout << "Postfix Increment : " << (d1 ++) << std::endl;
+	std::cout << "Postfix Decrement : " << (d1 --) << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+The Digit is : 5
+Postfix Increment : 5
+Postfix Decrement : 6
+
+#endif

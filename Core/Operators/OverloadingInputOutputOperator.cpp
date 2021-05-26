@@ -1,37 +1,49 @@
 /**
- * \file
+ * \file  OverloadingInputOutputOperator.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Point
 {
-	double m_x, m_y, m_z;
-
 public:
-	Point(double x=0.0, double y=0.0, double z=0.0) : m_x(x), m_y(y), m_z(z) //Dont forget to pass the default values or else create a default constructor.
-	{}
+	Point(
+		double x = 0.0,
+		double y = 0.0,
+		double z = 0.0
+	) :
+		m_x(x),
+		m_y(y),
+		m_z(z)
+	{
+	}
 
-	friend ostream& operator<< (ostream &out, const Point &point);
-	friend istream& operator>> (istream &in, Point &point);
+	friend
+	std::ostream &operator << (std::ostream &out, const Point &point);
 
+	friend
+	std::istream &operator >> (std::istream &in, Point &point);
+
+private:
+	double m_x{}, m_y{}, m_z{};
 };
-
-//If you try to return std::ostream by value, you’ll get a compiler error.
-//This happens because std::ostream specifically disallows being copied.
-ostream& operator<< (ostream &out, const Point &point)
+//--------------------------------------------------------------------------------------------------
+// If you try to return std::ostream by value, you’ll get a compiler error.
+// This happens because std::ostream specifically disallows being copied.
+std::ostream &
+operator<< (std::ostream &out, const Point &point)
 {
 	out << "Point(" << point.m_x << ", " << point.m_y << ", " << point.m_z << ")";
+
 	return out;
 }
-
-istream& operator>> (istream &in, Point &point)
+//--------------------------------------------------------------------------------------------------
+std::istream &
+operator >> (std::istream &in, Point &point)
 {
 	in >> point.m_x;
 	in >> point.m_y;
@@ -39,17 +51,32 @@ istream& operator>> (istream &in, Point &point)
 
 	return in;
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	Point p1(1.0, 2.0, 3.0);
 	Point p2(4.0, 5.0, 6.0);
 
-	cout << p1 << " " << p2 << endl;
+	std::cout << p1 << " " << p2 << std::endl;
 
 	Point p3;
-	cin >> p3;
-	cout << "You entered " << p3 << endl;
+	std::cin >> p3;
 
-	return 0;
+	std::cout << "You entered " << p3 << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Point(1, 2, 3) Point(4, 5, 6)
+
+1
+2
+3333
+
+You entered Point(1, 2, 3333)
+
+#endif

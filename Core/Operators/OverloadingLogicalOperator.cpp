@@ -1,52 +1,57 @@
 /**
- * \file
+ * \file  OverloadingLogicalOperator.cpp
  * \brief
  *
- * \todo
+ * The comparison operators are all binary operators that do not modify their left operands,
+ * we will make our overloaded comparison operators friend functions.
  */
 
 
-//The comparison operators are all binary operators that do not modify their left operands,
-//we will make our overloaded comparison operators friend functions.
-
-#include <iostream>
-#include <string>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Cents
 {
-	int m_cents;
 public:
-	Cents(int cents) : m_cents(cents)
-	{}
+	Cents(int cents) :
+		_cents(cents)
+	{
+	}
 
-	friend bool operator> (const Cents &c1, const Cents &c2);
-	friend bool operator< (const Cents &c1, const Cents &c2);
-	friend bool operator>= (const Cents &c1, const Cents &c2);
-	friend bool operator<= (const Cents &c1, const Cents &c2);
+	friend bool operator >  (const Cents &c1, const Cents &c2);
+	friend bool operator <  (const Cents &c1, const Cents &c2);
+	friend bool operator >= (const Cents &c1, const Cents &c2);
+	friend bool operator <= (const Cents &c1, const Cents &c2);
+
+private:
+	int _cents {};
 };
-
-bool operator> (const Cents &c1, const Cents &c2)
+//--------------------------------------------------------------------------------------------------
+bool
+operator > (const Cents &c1, const Cents &c2)
 {
-	return c1.m_cents > c2.m_cents;
+	return c1._cents > c2._cents;
 }
-
-bool operator< (const Cents &c1, const Cents &c2)
+//--------------------------------------------------------------------------------------------------
+bool
+operator < (const Cents &c1, const Cents &c2)
 {
-	return c1.m_cents < c2.m_cents;
+	return c1._cents < c2._cents;
 }
-
-bool operator>= (const Cents &c1, const Cents &c2)
+//--------------------------------------------------------------------------------------------------
+bool
+operator >= (const Cents &c1, const Cents &c2)
 {
-	return c1.m_cents >= c2.m_cents;
+	return c1._cents >= c2._cents;
 }
-
-bool operator<= (const Cents &c1, const Cents &c2)
+//--------------------------------------------------------------------------------------------------
+bool
+operator <= (const Cents &c1, const Cents &c2)
 {
-	return c1.m_cents <= c2.m_cents;
+	return c1._cents <= c2._cents;
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
     Cents dime(10);
@@ -64,6 +69,14 @@ int main()
     if (nickle <= dime)
         std::cout << "a dime is greater than or equal to a nickle.\n";
 
-
-    return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+a dime is greater than a nickle.
+a dime is greater than or equal to a nickle.
+
+#endif

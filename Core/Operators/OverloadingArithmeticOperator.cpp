@@ -1,66 +1,83 @@
 /**
- * \file
+ * \file  OverloadingArithmeticOperator.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Cents
 {
-	int m_cents;
 public:
-	Cents(int cents) : m_cents(cents)
-	{}
+	Cents(int cents) :
+		_cents(cents)
+	{
+	}
 
 	int getCents() const
 	{
-		return m_cents;
+		return _cents;
 	}
 
-	friend Cents operator+ (const Cents &c1, const Cents &c2)
+	friend Cents
+	operator + (const Cents &c1, const Cents &c2)
 	{
-		return Cents(c1.m_cents + c2.m_cents);
+		return Cents(c1._cents + c2._cents);
 	}
 
-	friend Cents operator- (const Cents &c1, const Cents &c2)
+	friend Cents
+	operator - (const Cents &c1, const Cents &c2)
 	{
-		return Cents(c1.m_cents - c2.m_cents);
+		return Cents(c1._cents - c2._cents);
 	}
 
-	friend Cents operator+ (const Cents &c1, int value)
+	friend Cents
+	operator + (const Cents &c1, int value)
 	{
-		// we can access m_cents directly because this is a friend function
-		return Cents(c1.m_cents + value);
+		// we can access _cents directly because this is a friend function
+		return Cents(c1._cents + value);
 	}
 
-	friend Cents operator+ (int value, const Cents &c1)
+	friend
+	Cents operator + (int value, const Cents &c1)
 	{
-		// we can access m_cents directly because this is a friend function
-		return Cents(c1.m_cents + value);
+		// we can access _cents directly because this is a friend function
+		return Cents(c1._cents + value);
 	}
 
+private:
+	int _cents {};
 };
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 	Cents c1(5);
 	Cents c2(10);
 
-	Cents cent_sum = c1 + c2;
+	Cents cent_sum  = c1 + c2;
 	Cents cent_diff = c2 - c1;
-	cout << "I have " << cent_sum.getCents() << " cents" << endl;
-	cout << "I have " << cent_diff.getCents() << " cents." << endl;
+
+	std::cout << "I have " << cent_sum.getCents() << " cents" << std::endl;
+	std::cout << "I have " << cent_diff.getCents() << " cents." << std::endl;
 
 	Cents c3 = Cents(4) + 6;
 	Cents c4 = 6 + Cents(4);
 
-	cout << "I have " << c3.getCents() << " cents." << endl;
-	cout << "I have " << c4.getCents() << " cents." << endl;
+	std::cout << "I have " << c3.getCents() << " cents." << std::endl;
+	std::cout << "I have " << c4.getCents() << " cents." << std::endl;
 
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+I have 15 cents
+I have 5 cents.
+I have 10 cents.
+I have 10 cents.
+
+#endif

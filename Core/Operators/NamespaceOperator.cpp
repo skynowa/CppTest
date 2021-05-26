@@ -1,16 +1,12 @@
 /**
- * \file
+ * \file  NamespaceOperator.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-
 //-------------------------------------------------------------------------------------------------
 struct Data
 {
@@ -57,7 +53,7 @@ int main(int, char **)
 	n::A a;
 	a.print();
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 

@@ -1,36 +1,33 @@
 /**
- * \file
+ * \file  OperatorIn.cpp
  * \brief
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <assert.h>
-#include <string>
-#include <iostream>
-#include <sstream>
-//---------------------------------------------------------------------------
-namespace std {
-   typedef basic_string<unsigned char, char_traits<unsigned char>, allocator<unsigned char> > ustring_t;
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+namespace std
+{
+
+using ustring_t = basic_string<unsigned char, char_traits<unsigned char>, allocator<unsigned char>>;
+
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 std::basic_ostringstream<char>&
 operator << (
    std::basic_ostringstream<char> &osOut,
    const std::ustring_t           &cusValue
 )
 {
-    std::string sRv;
-
-    sRv.assign( cusValue.begin(), cusValue.end() );
+    std::string sRv(cusValue.cbegin(), cusValue.cend());
 
     osOut << sRv << std::flush;
 
     return osOut;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main()
 {
     std::ostringstream ossStream;
@@ -41,14 +38,12 @@ int main()
 
     std::cout << ossStream.str() << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
 #if OUTPUT
-// NOTE:
 
-> ./main
-
-    aaaabbbb
+aaaabbbb
 
 #endif
