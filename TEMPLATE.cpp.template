@@ -15,6 +15,7 @@ int main(int, char **)
 
 
     // std::cout << TRACE_VAR("") << std::endl;
+    // STD_TRACE_FUNC;
 
     return EXIT_SUCCESS;
 }

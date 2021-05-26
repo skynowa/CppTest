@@ -1,6 +1,6 @@
 /**
- * \file
- * \brief
+ * \file  PlacementNew.cpp
+ * \brief Placement new allows you to construct an object on memory that's already allocated
  *
  * \todo
  */
@@ -8,28 +8,34 @@
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <new>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class A
 {
 public:
-	 A(const std::size_t x) {}
-	~A() {}
+	A(const std::size_t a_x) :
+		_x{a_x}
+	{
+		STD_TRACE_FUNC;
+	}
+
+	~A()
+	{
+		STD_TRACE_FUNC;
+	}
+
+private:
+	const std::size_t _x {};
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-   /**
-    * FAQ
-    *
-    * Placement new allows you to construct an object on memory that's already allocated
-    */
-
 	// sample 1
 	{
-		const std::size_t n = 50;
+		const std::size_t n {5};
 
-		A* placementBuff = static_cast<A*>(operator new[] (n * sizeof(A)));
+		A *placementBuff = static_cast<A *>(operator new[] (n * sizeof(A)));
+
 		for (std::size_t i = 0; i < n; ++ i) {
 			// здесь память для объекта не выделяется, но инициализируется
 			new (placementBuff + i) A(rand());
@@ -47,14 +53,15 @@ int main(int, char **)
 
 	// sample 2
 	{
-		typedef char T;
-		const std::size_t n = 50;
+		using T = char;
+
+		const std::size_t n {5};
 
 		// allocate memory
-		T* placementBuff = new T[n * sizeof(T)];
+		T *placementBuff = new T[n * sizeof(T)];
 
 		// construct in allocated storage ("place")
-		T* ptr = new(placementBuff) T;
+		T *ptr = new(placementBuff) T;
 
 		// test
 		strcpy(ptr, "ABCDEF");
@@ -67,13 +74,23 @@ int main(int, char **)
 		delete [] placementBuff;
 	}
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-
+	::: A :::
+	::: A :::
+	::: A :::
+	::: A :::
+	::: A :::
+	::: ~A :::
+	::: ~A :::
+	::: ~A :::
+	::: ~A :::
+	::: ~A :::
+ptr: ABCDEF
 
 #endif

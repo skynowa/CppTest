@@ -360,7 +360,7 @@
     * <a href="/Core/Operators/OverloadingPostfixIncermentDecrementOperator.cpp" title="">❌ OverloadingPostfixIncermentDecrementOperator.cpp</a>
     * <a href="/Core/Operators/OverloadingUnaryOperator.cpp" title="">❌ OverloadingUnaryOperator.cpp</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="">❌ DecIncInt.cpp</a>
-    * <a href="/Core/Operators/PlacementNew.cpp" title="">❌ PlacementNew.cpp</a>
+    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">❌ PlacementNew.cpp</a>
 
     </details>
 
