@@ -5,7 +5,7 @@
 - [Core](#core) ████░░░░░░ 41% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) █████████░ 89% (19)
+- [Idioms](#idioms) █████████░ 90% (20)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -484,8 +484,9 @@
 
 </details>
 
-##  <a id="idioms">Idioms █████████░ 89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms █████████░ 90% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/ScopeGuard.cpp" title="To ensure that resources are always released in face of an exception but not while returning normally">✅ `ScopeGuard.cpp`</a>
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
