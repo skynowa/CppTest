@@ -285,16 +285,16 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Functor 0% (19)</summary>
+    <summary>📁 ⌛ Functor 5% (19)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">❌ VariableArguments.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ❌ Function 0% (2)</summary>
+      <summary>📁 ⌛ Function 50% (2)</summary>
 
-        * <a href="/Core/Functor/Function/InlineFunction.cpp" title="">❌ InlineFunction.cpp</a>
+        * <a href="/Core/Functor/Function/InlineFunction.cpp" title="">✅ `InlineFunction.cpp`</a>
         * <a href="/Core/Functor/Function/NativeFunction.cpp" title="">❌ NativeFunction.cpp</a>
 
       </details>

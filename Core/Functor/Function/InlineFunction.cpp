@@ -1,65 +1,88 @@
 /**
- * \file
+ * \file  InlineFunction.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-
-using namespace std;
-class operation
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+class Operation
 {
-    int a,b,add,sub,mul;
-    float div;
 public:
     void get();
     void sum();
     void difference();
     void product();
     void division();
+
+private:
+    int   a, b, add, sub, mul;
+    float div;
 };
-inline void operation :: get()
+//-------------------------------------------------------------------------------------------------
+inline void
+Operation::get()
 {
-    cout << "Enter first value:";
-    cin >> a;
-    cout << "Enter second value:";
-    cin >> b;
-}
+    // std::cout << "Enter first value:";
+    a = 10;
 
-inline void operation :: sum()
-{
-    add = a+b;
-    cout << "Addition of two numbers: " << a+b << "\n";
+    // std::cout << "Enter second value:";
+    b = 20;
 }
-
-inline void operation :: difference()
+//-------------------------------------------------------------------------------------------------
+inline void
+Operation::sum()
 {
-    sub = a-b;
-    cout << "Difference of two numbers: " << a-b << "\n";
+    add = a + b;
+
+    std::cout << "Addition of two numbers: " << add << "\n";
 }
-
-inline void operation :: product()
+//-------------------------------------------------------------------------------------------------
+inline void
+Operation::difference()
 {
-    mul = a*b;
-    cout << "Product of two numbers: " << a*b << "\n";
+    sub = a - b;
+
+    std::cout << "Difference of two numbers: " << sub << "\n";
 }
-
-inline void operation ::division()
+//-------------------------------------------------------------------------------------------------
+inline void
+Operation::product()
 {
-    div=a/b;
-    cout<<"Division of two numbers: "<<a/b<<"\n" ;
+    mul = a * b;
+
+    std::cout << "Product of two numbers: " << mul << "\n";
 }
-
-int main()
+//-------------------------------------------------------------------------------------------------
+inline void
+Operation::division()
 {
-    cout << "Program using inline function\n";
-    operation s;
+    div = a / b;
+
+    std::cout<<"Division of two numbers: "<< div <<"\n" ;
+}
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+    Operation s;
     s.get();
     s.sum();
     s.difference();
     s.product();
     s.division();
-    return 0;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Addition of two numbers: 30
+Difference of two numbers: -10
+Product of two numbers: 200
+Division of two numbers: 0
+
+#endif
