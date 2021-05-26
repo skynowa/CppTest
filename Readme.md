@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) █████░░░░░ 51% (160)
+- [Core](#core) ██████░░░░ 57% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 100% (31)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core █████░░░░░ 51% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██████░░░░ 57% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -285,7 +285,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Functor 47% (17)</summary>
+    <summary>📁 ✅ Functor 100% (17)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
 
@@ -311,17 +311,17 @@
       </details>
 
     * <details close>
-      <summary>📁 ❌ Lambda 0% (9)</summary>
+      <summary>📁 ✅ Lambda 100% (9)</summary>
 
-        * <a href="/Core/Functor/Lambda/LambdaPtrsSizes.cpp" title="">❌ LambdaPtrsSizes.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopes.cpp" title="">❌ LambdaScopes.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByValue.cpp" title="">❌ LambdaScopesByValue.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaBasic.cpp" title="">❌ LambdaBasic.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByReference.cpp" title="">❌ LambdaScopesByReference.cpp</a>
-        * <a href="/Core/Functor/Lambda/GccLambdaLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">❌ GccLambdaLeaky.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopeFaultScenario.cpp" title="">❌ LambdaScopeFaultScenario.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambaExamples.cpp" title="">❌ LambaExamples.cpp</a>
-        * <a href="/Core/Functor/Lambda/LambdaMemberVariableCapture.cpp" title="">❌ LambdaMemberVariableCapture.cpp</a>
+        * <a href="/Core/Functor/Lambda/LambdaPtrsSizes.cpp" title="">✅ `LambdaPtrsSizes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopes.cpp" title="">✅ `LambdaScopes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopesByValue.cpp" title="">✅ `LambdaScopesByValue.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaBasic.cpp" title="">✅ `LambdaBasic.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopesByReference.cpp" title="">✅ `LambdaScopesByReference.cpp`</a>
+        * <a href="/Core/Functor/Lambda/GccLambdaLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">✅ `GccLambdaLeaky.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopeFaultScenario.cpp" title="">🖊 `LambdaScopeFaultScenario.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambaExamples.cpp" title="">✅ `LambaExamples.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaMemberVariableCapture.cpp" title="">✅ `LambdaMemberVariableCapture.cpp`</a>
 
       </details>
 

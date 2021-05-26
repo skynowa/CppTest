@@ -1,48 +1,58 @@
 /**
- * \file
+ * \file  LambdaScopeFaultScenario.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
-#include <iostream>
-#include <string>
-#include <functional>
-
-std::function<void ()> getCallBack()
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+std::function<void ()>
+getCallBack()
 {
-	// Local Variable
-	int counter = 10;
+	int counter {10};
 
-	// Defining Lambda function and
 	// Capturing Local variables by Reference
-	auto func = [&counter]  () mutable {
-		std::cout<<"Inside Lambda :: counter = "<< counter <<std::endl;
+	auto func = [&counter] () mutable
+	{
+		std::cout << "Inside Lambda :: " << TRACE_VAR(counter) << std::endl; // TODO: ????
 
 		// Change the counter
 		// Change will affect the outer variable because counter variable is
 		// captured by Reference in Lambda function
 		counter = 20;
 
-		std::cout<<"Inside Lambda :: After changing :: counter = "<<counter<<std::endl;
-
-		};
+		std::cout << "Inside Lambda :: After changing :: " << TRACE_VAR(counter) << std::endl;
+	};
 
 	return func;
 }
-
-int main(int argc, char **argv)
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
+	auto func = getCallBack();
 
-	std::function<void ()> func = getCallBack();
-
-	//Call the Lambda function
+	// Call the Lambda function
 	func();
 
 	// Lambda function will access and modify the variable that has been captured it by reference
-	// But that variable was actually a local variable on stack which was removed from stack when getCallbacK() returned
+	// But that variable was actually a local variable on stack which was removed from stack
+	// when getCallbacK() returned
 	// So, lambda function will basically corrupt the stack
 
-	return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Inside Lambda :: counter: 21881
+Inside Lambda :: After changing :: counter: 20
+
+Segmentation fault (core dumped)
+
+#endif

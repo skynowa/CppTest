@@ -1,15 +1,12 @@
 /**
- * \file  main.cpp
+ * \file  GccLambdaLeaky.cpp
  * \brief https://www.youtube.com/watch?v=S9_mYmvO4Ow
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {

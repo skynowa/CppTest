@@ -1,15 +1,12 @@
 /**
- * \file
+ * \file  LambdaPtrsSizes.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -31,7 +28,7 @@ int main(int, char **)
     	<< TRACE_VAR(sizeof(uniquePtr))             << "\n"
     	<< TRACE_VAR(sizeof(uniquePtr.get()))       << "\n";
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
