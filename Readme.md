@@ -254,8 +254,8 @@
     <summary>📁 ✅ Exceptions 100% (10)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
+    * <a href="/Core/Exceptions/ThrowDerived.cpp" title="">✅ `ThrowDerived.cpp`</a>
     * <a href="/Core/Exceptions/NonCatchedException.cpp" title="Non-catched "double" exception">✅ `NonCatchedException.cpp`</a>
-    * <a href="/Core/Exceptions/Exception3.cpp" title="">✅ `Exception3.cpp`</a>
 
     </details>
 

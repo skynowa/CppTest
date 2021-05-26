@@ -1,5 +1,5 @@
 /*
- * \file  Exception3.cpp
+ * \file  ThrowDerived.cpp
  * \brief
  */
 
