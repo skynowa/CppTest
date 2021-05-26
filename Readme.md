@@ -1,23 +1,23 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
-- [C](#c) ██████████ 100% (8)
+- [C](#c) ██████████ 🚩100% (8)
 - [Core](#core) ██████░░░░ 🔥57% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 100% (31)
+- [Idioms](#idioms) ██████████ 🚩100% (31)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
-- [Network](#network) ██████████ 100% (3)
+- [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) ██████████ 100% (1)
+- [SQL](#sql) ██████████ 🚩100% (1)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
-- [Windows](#windows) ██████████ 100% (37)
+- [Windows](#windows) ██████████ 🚩100% (37)
 
 
 ##  <a id="algos">Algos ░░░░░░░░░░ 0% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -56,7 +56,7 @@
 
     </details>
 
-##  <a id="c">C ██████████ 100% (8)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="c">C ██████████ 🚩100% (8)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
@@ -482,7 +482,7 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 100% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 🚩100% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -744,7 +744,7 @@
 
       </details>
 
-##  <a id="network">Network ██████████ 100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="network">Network ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
@@ -819,7 +819,7 @@
 
 </details>
 
-##  <a id="sql">SQL ██████████ 100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
 
@@ -1063,7 +1063,7 @@
 
     </details>
 
-##  <a id="windows">Windows ██████████ 100% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="windows">Windows ██████████ 🚩100% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
