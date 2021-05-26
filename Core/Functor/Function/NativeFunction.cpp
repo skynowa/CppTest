@@ -1,26 +1,22 @@
 /**
  * \file  NativeFunction.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //-------------------------------------------------------------------------------------------------
 template <typename T>
-class naive_function;
+class NaiveFunction;
 
 template <typename ReturnValue, typename... Args>
-class naive_function<ReturnValue(Args...)>
+class NaiveFunction<ReturnValue(Args...)>
 {
 public:
 	template <typename T>
-	naive_function& operator=(T t)
+	NaiveFunction& operator=(T t)
 	{
 		callable_ = std::make_unique<CallableT<T>>(t);
 		return *this;
@@ -45,8 +41,8 @@ private:
 		public ICallable
 	{
 	public:
-		CallableT(const T& t)
-			: t_(t)
+		CallableT(const T& t) :
+			_t(t)
 		{
 		}
 
@@ -54,44 +50,56 @@ private:
 
 		ReturnValue Invoke(Args... args) override
 		{
-			return t_(args...);
+			return _t(args...);
 		}
 
 	private:
-		T t_;
+		T _t {};
 	};
 
-	std::unique_ptr<ICallable> callable_;
+	std::unique_ptr<ICallable> callable_ {};
 };
 //-------------------------------------------------------------------------------------------------
 void func()
 {
-	cout << "func" << endl;
+	std::cout << "func" << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
-struct functor
+struct Functor
 {
-	void operator()()
+	void operator()() const
 	{
-		cout << "functor" << endl;
+		std::cout << "Functor" << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	naive_function<void()> f;
-	f = func;
-	f();
+	{
+		NaiveFunction<void()> f;
+		f = func;
 
-	f = functor();
-	f();
+		f();
+	}
 
-	f = []() { cout << "lambda" << endl; };
-	f();
+	{
+		NaiveFunction<void()> f;
+		f = Functor();
 
-    // std::cout << TRACE_VAR("") << std::endl;
+		f();
+	}
 
-    return 0;
+	{
+		NaiveFunction<void()> f;
+		f = []() -> void
+		{
+			std::cout << "lambda" << std::endl;
+		};
+
+		f();
+	}
+
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -99,7 +107,7 @@ int main(int, char **)
 #if OUTPUT
 
 func
-functor
+Functor
 lambda
 
 #endif
