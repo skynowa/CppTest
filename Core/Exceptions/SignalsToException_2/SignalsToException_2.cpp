@@ -1,25 +1,19 @@
  /*
- * \file  main.cpp
+ * \file  SignalsToException_2.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 #include "SignalHandler.h"
-#include <iostream>
-#include <unistd.h>
-#include <stdlib.h>
-
-using namespace std;
-
-
 //-------------------------------------------------------------------------------------------------
 int main(int argsNum, char **)
 {
-	int iret;
+	int exitCode {};
 
 	try {
 		SignalHandler signalHandler;
@@ -39,14 +33,15 @@ int main(int argsNum, char **)
 			std::cout << iRv << std::endl;
 		}
 
-		iret = EXIT_SUCCESS;
+		exitCode = EXIT_SUCCESS;
 	}
-	catch (SignalException& e) {
+	catch (const SignalException &e) {
 		std::cout << "SignalException: " << e.what() << std::endl;
-		iret = EXIT_FAILURE;
+
+		exitCode = EXIT_FAILURE;
 	}
 
-	return(iret);
+	return exitCode;
 }
 //-------------------------------------------------------------------------------------------------
 

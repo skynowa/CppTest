@@ -9,9 +9,7 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 #include <execinfo.h>
-#include <signal.h>
 //-------------------------------------------------------------------------------------------------
 class StackTrace
 {

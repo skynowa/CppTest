@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) ████░░░░░░ 41% (162)
+- [Core](#core) ████░░░░░░ 45% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 100% (31)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████░░░░░░ 41% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████░░░░░░ 45% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -251,7 +251,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Exceptions 30% (10)</summary>
+    <summary>📁 ⌛ Exceptions 90% (10)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Core/Exceptions/Exception2.cpp" title="exception">❌ Exception2.cpp</a>
@@ -267,20 +267,20 @@
       </details>
 
     * <details close>
-      <summary>📁 ❌ SignalsToException_2 0% (3)</summary>
+      <summary>📁 ✅ SignalsToException_2 100% (3)</summary>
 
-        * <a href="/Core/Exceptions/SignalsToException_2/SignalsToException_2.cpp" title="">❌ SignalsToException_2.cpp</a>
-        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">❌ SignalHandler.inl</a>
-        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.h" title="">❌ SignalHandler.h</a>
+        * <a href="/Core/Exceptions/SignalsToException_2/SignalsToException_2.cpp" title="">🖊 `SignalsToException_2.cpp`</a>
+        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">✅ `SignalHandler.inl`</a>
+        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.h" title="">✅ `SignalHandler.h`</a>
 
       </details>
 
     * <details close>
-      <summary>📁 ❌ WinException 0% (3)</summary>
+      <summary>📁 ✅ WinException 100% (3)</summary>
 
-        * <a href="/Core/Exceptions/WinException/CxWinException.h" title="">❌ CxWinException.h</a>
-        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">❌ CxWinException.cpp</a>
-        * <a href="/Core/Exceptions/WinException/WinException.cpp" title="">❌ WinException.cpp</a>
+        * <a href="/Core/Exceptions/WinException/CxWinException.h" title="">✅ `CxWinException.h`</a>
+        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">✅ `CxWinException.cpp`</a>
+        * <a href="/Core/Exceptions/WinException/WinException.cpp" title="">✅ `WinException.cpp`</a>
 
       </details>
 

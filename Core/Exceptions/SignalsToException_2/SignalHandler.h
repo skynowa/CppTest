@@ -1,25 +1,23 @@
 /**
  * \file  SignalHandler.h
  * \brief
- *
- * \todo
  */
 
 
 #pragma once
 
 #include <stdexcept>
-
-using std::runtime_error;
-
+// #include <signal.h>
+// #include <errno.h>
 //-------------------------------------------------------------------------------------------------
 class SignalException :
-  public runtime_error
+    public std::runtime_error
 {
 public:
-   SignalException(const std::string& _message)
-      : std::runtime_error(_message)
-   {}
+    SignalException(const std::string& _message) :
+        std::runtime_error(_message)
+    {
+    }
 };
 //-------------------------------------------------------------------------------------------------
 class SignalHandler
@@ -28,8 +26,8 @@ protected:
     static bool _isGotExitSignal;
 
 public:
-    SignalHandler();
-    ~SignalHandler();
+    SignalHandler() = default;
+    ~SignalHandler() = default;
 
     static bool gotExitSignal();
     static void setExitSignal(bool bExitSignal);

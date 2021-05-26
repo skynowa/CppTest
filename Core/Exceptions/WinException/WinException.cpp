@@ -1,20 +1,17 @@
 /**
- * \file
+ * \file  WinException.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <windows.h>
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 #include "CxWinException.h"
-//---------------------------------------------------------------------------
-int main() {
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
 	try	{
         throw CxWinException(_T("i == 0"));
 	}
@@ -26,4 +23,4 @@ int main() {
 
 	return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
