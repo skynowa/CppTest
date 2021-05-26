@@ -1,8 +1,6 @@
 /**
  * \file  StaticFunctor.cpp
  * \brief
- *
- * \todo
  */
 
 

@@ -285,7 +285,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Functor 41% (17)</summary>
+    <summary>📁 ⌛ Functor 47% (17)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
 
@@ -300,9 +300,9 @@
       </details>
 
     * <details close>
-      <summary>📁 ⌛ Functor 80% (5)</summary>
+      <summary>📁 ✅ Functor 100% (5)</summary>
 
-        * <a href="/Core/Functor/Functor/StaticFunctor.cpp" title="">❌ StaticFunctor.cpp</a>
+        * <a href="/Core/Functor/Functor/StaticFunctor.cpp" title="">✅ `StaticFunctor.cpp`</a>
         * <a href="/Core/Functor/Functor/Functor.cpp" title="">✅ `Functor.cpp`</a>
         * <a href="/Core/Functor/Functor/FunctorTarget.cpp" title="function::target example">✅ `FunctorTarget.cpp`</a>
         * <a href="/Core/Functor/Functor/RegualarFuncFunctor.cpp" title="Regualar function as functor">✅ `RegualarFuncFunctor.cpp`</a>
