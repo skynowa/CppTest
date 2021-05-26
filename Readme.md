@@ -5,7 +5,7 @@
 - [Core](#core) ████░░░░░░ 41% (162)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 95% (21)
+- [Idioms](#idioms) ██████████ 97% (30)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 100% (3)
@@ -484,7 +484,7 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 97% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -501,14 +501,23 @@
 </details>
 
   * <details close>
-    <summary>📁  GoF 0.0% (0)</summary>
+    <summary>📁 ✅ Dry 100% (1)</summary>
 
+    * <a href="/Idioms/Dry/Dry.cpp" title="DRY - Don't repeat yourself">🖊 `Dry.cpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁  Grasp 0.0% (0)</summary>
+    <summary>📁 ✅ Grasp 100% (1)</summary>
 
+    * <a href="/Idioms/Grasp/Grasp.cpp" title="GRASP (object-oriented design) - General Responsibility Assignment Software Patterns (or Principles)">🖊 `Grasp.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Kiss 100% (1)</summary>
+
+    * <a href="/Idioms/Kiss/Kiss.cpp" title="keep it simple stupid">🖊 `Kiss.cpp`</a>
 
     </details>
 
@@ -546,9 +555,21 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Solid 0% (1)</summary>
+    <summary>📁 ⌛ Solid 83% (6)</summary>
 
-    * <a href="/Idioms/Solid/Readme.md" title="">❌ 📝 Readme.md</a>
+    * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">❌ SingleResponsibility_SRP.cpp</a>
+    * <a href="/Idioms/Solid/Readme.md" title="">🖊 `📝 Readme.md`</a>
+    * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">🖊 `InterfaceSegregation_ISP.cpp`</a>
+    * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">🖊 `DependencyInversion_DIP.cpp`</a>
+    * <a href="/Idioms/Solid/LiskovSubstitution_LSP.cpp" title="Subclasses should be substitutable for their base classes">🖊 `LiskovSubstitution_LSP.cpp`</a>
+    * <a href="/Idioms/Solid/OpenClosed_OCP.cpp" title="Classes should be open for extension and closed to modification">🖊 `OpenClosed_OCP.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Yagni 100% (1)</summary>
+
+    * <a href="/Idioms/Yagni/Yagni.cpp" title="YAGNI - You aren't gonna need it">🖊 `Yagni.cpp`</a>
 
     </details>
 
