@@ -1,25 +1,20 @@
 /**
- * \file  main.cpp
+ * \file  FunctorTarget.cpp
  * \brief function::target example
- *
- * \todo
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
-
-#include <iostream>
-#include <functional>
-#include <vector>
-
-using namespace std;
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-using functor_t     = function<void(const string &value)>;
-using functor_ptr_t = void(*)(const string &value);
-
-void functor(const string &value)
+using functor_t     = std::function<void(const std::string &value)>;
+using functor_ptr_t = void(*)(const std::string &value);
+//-------------------------------------------------------------------------------------------------
+void
+functor(const std::string &value)
 {
-    cout << __FUNCTION__ << " " << value << endl;
+    std::cout << __FUNCTION__ << " " << value << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -48,7 +43,7 @@ int main(int, char **)
 
     std::cout << "Finished" << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -57,6 +52,8 @@ int main(int, char **)
 
 0
 0
-0x7ffc98252fb0
+0x7ffd4a640e90
+functor test123
+0
 
 #endif

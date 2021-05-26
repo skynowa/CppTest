@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 100% (8)
-- [Core](#core) █████░░░░░ 48% (162)
+- [Core](#core) █████░░░░░ 51% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 100% (31)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core █████░░░░░ 48% (162)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████░░░░░ 51% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -285,7 +285,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Functor 16% (19)</summary>
+    <summary>📁 ⌛ Functor 41% (17)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
 
@@ -300,15 +300,13 @@
       </details>
 
     * <details close>
-      <summary>📁 ❌ Functor 0% (7)</summary>
+      <summary>📁 ⌛ Functor 80% (5)</summary>
 
-        * <a href="/Core/Functor/Functor/FunctorExample3.cpp" title="">❌ FunctorExample3.cpp</a>
-        * <a href="/Core/Functor/Functor/StaticFunctor.cpp" title="filecomment">❌ StaticFunctor.cpp</a>
-        * <a href="/Core/Functor/Functor/FunctorExample1.cpp" title="">❌ FunctorExample1.cpp</a>
-        * <a href="/Core/Functor/Functor/FunctorExample2.cpp" title="">❌ FunctorExample2.cpp</a>
-        * <a href="/Core/Functor/Functor/Functor.cpp" title="">❌ Functor.cpp</a>
-        * <a href="/Core/Functor/Functor/FunctorTarget.cpp" title="function::target example">❌ FunctorTarget.cpp</a>
-        * <a href="/Core/Functor/Functor/FunctorExample4.cpp" title="">❌ FunctorExample4.cpp</a>
+        * <a href="/Core/Functor/Functor/StaticFunctor.cpp" title="">❌ StaticFunctor.cpp</a>
+        * <a href="/Core/Functor/Functor/Functor.cpp" title="">✅ `Functor.cpp`</a>
+        * <a href="/Core/Functor/Functor/FunctorTarget.cpp" title="function::target example">✅ `FunctorTarget.cpp`</a>
+        * <a href="/Core/Functor/Functor/RegualarFuncFunctor.cpp" title="Regualar function as functor">✅ `RegualarFuncFunctor.cpp`</a>
+        * <a href="/Core/Functor/Functor/OperatorFunctor.cpp" title="operator() as functor">✅ `OperatorFunctor.cpp`</a>
 
       </details>
 
