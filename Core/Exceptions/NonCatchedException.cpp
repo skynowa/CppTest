@@ -1,8 +1,6 @@
  /*
- * \file  Exception2.cpp
- * \brief exception
- *
- * \todo
+ * \file  NonCatchedException.cpp
+ * \brief Non-catched "double" exception
  */
 
 
@@ -32,7 +30,9 @@ int main()
    }
    catch (const int &i) {
       std::cout << "catch (int &i) - begin" << std::endl;
+
       throw;
+
       std::cout << "catch (int &i) - end"   << std::endl;
    }
 
@@ -44,20 +44,9 @@ int main()
 
 
 
-#if OUTPUT_GCC
+#if OUTPUT
 
 foo - begin
-catch (int &i) - begin
-
-
-stderr:
-terminate called after throwing an instance of 'int'
-
-#endif
-
-#if OUTPUT_MSVC
-
-Unhandled exception at at 0x752DB9BC in Exception.exe:
-Microsoft C++ exception: int at memory location 0x0020FBAC
+terminate called after throwing an instance of 'double'
 
 #endif
