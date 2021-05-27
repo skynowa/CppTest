@@ -1,22 +1,29 @@
 /**
- * \file
+ * \file  Var.h
  * \brief
- *
- * \todo
  */
 
 
 #pragma once
 
-#include "Var.h"
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class CxVars
+class Var
 {
 public:
-	static const Var _var;
+	std::string value {};
 
-	CxVars() = delete;
-	~CxVars() = delete;
+	Var() :
+		value{"aaa"}
+	{
+		STD_TRACE_FUNC;
+	};
+
+	~Var()
+	{
+		STD_TRACE_FUNC;
+	};
 };
 //--------------------------------------------------------------------------------------------------
-#include "CxVars.inl"

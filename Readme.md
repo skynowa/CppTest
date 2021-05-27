@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ███████░░░ 🔥72% (160)
+- [Core](#core) ████████░░ 🔥75% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███████░░░ 🔥72% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████████░░ 🔥75% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -383,7 +383,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Static 50% (12)</summary>
+    <summary>📁 ⌛ Static 92% (12)</summary>
 
     * <a href="/Core/Static/StaticHolder.cpp" title="">✅ `StaticHolder.cpp`</a>
     * <a href="/Core/Static/Data.cpp" title="">✅ `Data.cpp`</a>
@@ -401,13 +401,13 @@
       </details>
 
     * <details close>
-      <summary>📁 ❌ Vars2 0% (6)</summary>
+      <summary>📁 ⌛ Vars2 83% (6)</summary>
 
-        * <a href="/Core/Static/Vars2/CxVars.inl" title="">❌ CxVars.inl</a>
-        * <a href="/Core/Static/Vars2/module.h" title="">❌ module.h</a>
-        * <a href="/Core/Static/Vars2/CVar.h" title="">❌ CVar.h</a>
-        * <a href="/Core/Static/Vars2/main_Var2.cpp" title="">❌ main_Var2.cpp</a>
-        * <a href="/Core/Static/Vars2/module.inl" title="">❌ module.inl</a>
+        * <a href="/Core/Static/Vars2/CxVars.inl" title="">✅ `CxVars.inl`</a>
+        * <a href="/Core/Static/Vars2/module.h" title="">✅ `module.h`</a>
+        * <a href="/Core/Static/Vars2/main_Var2.cpp" title="">✅ `main_Var2.cpp`</a>
+        * <a href="/Core/Static/Vars2/module.inl" title="">✅ `module.inl`</a>
+        * <a href="/Core/Static/Vars2/Var.h" title="">✅ `Var.h`</a>
         * <a href="/Core/Static/Vars2/CxVars.h" title="">❌ CxVars.h</a>
 
       </details>
