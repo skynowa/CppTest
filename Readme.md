@@ -1141,3 +1141,15 @@
 
       </details>
 
+---
+## FAQ
+
+  - 📁 - Dir
+  - 📝 - FAQ
+  - ✅ - Done
+  - ⌛ - In-progress
+  - 🖊 - Remark
+  - ❌ - Todo
+  - 🔥 - TOC - hot
+  - 🚩 - TOC - done
+

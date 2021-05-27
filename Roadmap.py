@@ -49,6 +49,15 @@ class RoadmapGen:
 
 	lableTitle    = ''
 
+	iconToDo       = '❌'
+	iconRemark     = '🖊' # '🕵' '📝' '🏳' '⮕' '🤔' '❓'
+	iconFaq        = '📝'
+	iconDone       = '✅'
+	iconInProgress = '⌛'
+	iconDir        = '📁'
+	iconTocHot     = '🔥'
+	iconTocDone    = '🚩'
+
 	################################################################################################
 	# ctr
 	def __init__(self):
@@ -190,11 +199,11 @@ class RoadmapGen:
 
 		# hot point
 		if (a_doneFilesPct != 100.0 and a_doneFilesPct > 50.0):
-			a_doneFilesPct = '{}{}'.format('🔥', a_doneFilesPct)
+			a_doneFilesPct = '{}{}'.format(self.iconTocHot, a_doneFilesPct)
 
 		# done point
 		if (a_doneFilesPct == 100.0):
-			a_doneFilesPct = '{}{}'.format('🚩', a_doneFilesPct)
+			a_doneFilesPct = '{}{}'.format(self.iconTocDone, a_doneFilesPct)
 
 		return '{}{} {}% ({})'.format(valueDones, valueToDos, a_doneFilesPct, a_allfilesNum)
 
@@ -225,14 +234,7 @@ class RoadmapGen:
 		if (a_level < 0):
 			return
 
-		iconCurrent    = ''
-		iconToDo       = '❌'
-		iconRemark     = '🖊' # '🕵' '📝' '🏳' '⮕' '🤔' '❓'
-		iconFaq        = '📝'
-		iconDone       = '✅'
-		iconInProgress = '⌛'
-		iconDir        = '📁'
-		# 🕵
+		iconCurrent = ''
 
 		indent    = '  '   * a_level
 		subindent = '    ' * a_level
@@ -244,13 +246,13 @@ class RoadmapGen:
 		doneFilesPct = info[3]
 
 		if   (doneFilesPct == 100):
-			iconCurrent = iconDone
+			iconCurrent = self.iconDone
 		elif (allfilesNum == 0):
 			iconCurrent = ''
 		elif (doneFilesPct == 0):
-			iconCurrent = iconToDo
+			iconCurrent = self.iconToDo
 		else:
-			iconCurrent = iconInProgress
+			iconCurrent = self.iconInProgress
 
 		dirName = os.path.basename(a_dirPath)
 
@@ -265,7 +267,7 @@ class RoadmapGen:
 			self._writeLine('{}* <details close>'.format(indent))
 			self._writeLine('{}  <summary>{} {} {} {}% ({})</summary>'.format(
 				indent,
-				iconDir,
+				self.iconDir,
 				iconCurrent,
 				dirName,
 				doneFilesPct,
@@ -281,14 +283,14 @@ class RoadmapGen:
 
 			isFileTodo, isFileRemark, isFileFaq, commentBrief = self._fileInfo(it_file)
 			if (isFileFaq) :
-				fileName = '{} {}'.format(iconFaq, fileName)
+				fileName = '{} {}'.format(self.iconFaq, fileName)
 
 			if   (isFileTodo):
-				fileName = '{} {}'.format(iconToDo, fileName)
+				fileName = '{} {}'.format(self.iconToDo, fileName)
 			elif (isFileRemark):
-				fileName = '{} `{}`'.format(iconRemark, fileName)
+				fileName = '{} `{}`'.format(self.iconRemark, fileName)
 			else:
-				fileName = '{} `{}`'.format(iconDone, fileName)
+				fileName = '{} `{}`'.format(self.iconDone, fileName)
 
 			self._writeLine('{}* <a href="{}" title="{}">{}</a>'.format(subindent, fileUrl,
 				commentBrief, fileName))
@@ -303,6 +305,31 @@ class RoadmapGen:
 			self._writeLine('{}  </details>'.format(indent))
 
 		self._writeLine('')
+
+	################################################################################################
+	# FAQ
+	def faq(self):
+		self._writeLine('---')
+		self._writeLine('## FAQ')
+		self._writeLine('')
+		self._writeLine(
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			.format(
+				self.iconDir,        'Dir',
+				self.iconFaq,        'FAQ',
+				self.iconDone,       'Done',
+				self.iconInProgress, 'In-progress',
+				self.iconRemark,     'Remark',
+				self.iconToDo,       'Todo',
+				self.iconTocHot,     'TOC - hot',
+				self.iconTocDone,    'TOC - done'))
 
 	################################################################################################
 	# root dir - process
@@ -366,6 +393,8 @@ class RoadmapGen:
 		# self._writeLine('</div>')
 
 		print('[{}] stop'.format(self.appName))
+
+		self.faq()
 
 ################################################################################################
 if __name__ == "__main__":
