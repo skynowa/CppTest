@@ -1,31 +1,26 @@
 /**
- * \file
+ * \file  VirtualFunction2.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class A
 {
 public:
-   A() { std::cout << "A::A" << std::endl;}
-   ~A(){ std::cout << "A::~A" << std::endl;}
-
+     A() { std::cout << "A::A" << std::endl; }
+    ~A() { std::cout << "A::~A" << std::endl; }
 };
-
-class B : public A
+//-------------------------------------------------------------------------------------------------
+class B :
+	public A
 {
 public:
-   B() { std::cout << "B::B" << std::endl;}
-   ~B(){ std::cout << "B::~B" << std::endl;}
-
+     B() { std::cout << "B::B" << std::endl; }
+    ~B() { std::cout << "B::~B" << std::endl; }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)
@@ -36,6 +31,18 @@ int main(int, char **)
 	delete x;
 	delete y;
 
-	return 0;
+    return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+A::A
+A::A
+B::B
+A::~A
+B::~B
+A::~A
+
+#endif

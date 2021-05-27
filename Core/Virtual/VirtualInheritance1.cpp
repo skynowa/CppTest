@@ -1,59 +1,55 @@
 /**
- * \file
+ * \file  VirtualInheritance1.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class IInterface
 {
-	public:
-		              IInterface() { std::cout << __FUNCTION__ << std::endl; };
-		 virtual     ~IInterface() { std::cout << __FUNCTION__ << std::endl; };
+public:
+             IInterface() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~IInterface() { std::cout << __FUNCTION__ << std::endl; };
 
-		 virtual void vFoo() = 0;
+    virtual void vFoo() = 0;
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 class CA :
     public /* virtual */ IInterface
- {
-	public:
-		              CA() { std::cout << __FUNCTION__ << std::endl; };
-		virtual      ~CA() { std::cout << __FUNCTION__ << std::endl; };
+{
+public:
+             CA() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~CA() { std::cout << __FUNCTION__ << std::endl; };
 
-		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 class CB :
     public /* virtual */ IInterface
 {
-	public:
-		              CB() { std::cout << __FUNCTION__ << std::endl; };
-		virtual      ~CB() { std::cout << __FUNCTION__ << std::endl; };
+public:
+             CB() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~CB() { std::cout << __FUNCTION__ << std::endl; };
 
-		virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 class CX :
     public CA,
     public CB
 {
-	public:
-		              CX() { std::cout << __FUNCTION__ << std::endl; };
-		virtual      ~CX() { std::cout << __FUNCTION__ << std::endl; };
+public:
+             CX() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~CX() { std::cout << __FUNCTION__ << std::endl; };
 
-	    virtual void  vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
-//---------------------------------------------------------------------------
-
-
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	//-------------------------------------
@@ -163,4 +159,46 @@ int main(int, char **)
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+IInterface
+CA
+IInterface
+CB
+CX
+~CX
+~CB
+~IInterface
+~CA
+~IInterface
+-------------------------
+IInterface
+CA
+vFoo
+~CA
+~IInterface
+-------------------------
+IInterface
+CB
+vFoo
+~CB
+~IInterface
+-------------------------
+IInterface
+CA
+vFoo
+~CA
+~IInterface
+-------------------------
+IInterface
+CB
+vFoo
+~CB
+~IInterface
+-------------------------
+
+
+#endif

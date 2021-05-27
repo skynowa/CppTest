@@ -1,29 +1,36 @@
 /**
- * \file
+ * \file  VirtualFunction1.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+class X
+{
+public:
+	virtual ~X() = default;
 
-
-//---------------------------------------------------------------------------
-class X {
-	public:
-		virtual char getType(){return 'X';}
+	virtual char getType()
+	{
+		return 'X';
+	}
 };
 //---------------------------------------------------------------------------
-class Y: public X {
-	public:
-		char getType(){return 'Y';}
+class Y :
+	public X
+{
+public:
+	char getType()
+	{
+		return 'Y';
+	}
 };
 //---------------------------------------------------------------------------
-int main(int, char **) {
+int main(int, char **)
+{
 	X *x = new X();
 	X *y = new Y();
 
@@ -32,7 +39,13 @@ int main(int, char **) {
 	delete x;
 	delete y;
 
-	system("pause");
-	return 0;
+    return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+X    Y
+
+#endif

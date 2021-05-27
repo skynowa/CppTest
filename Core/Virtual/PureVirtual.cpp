@@ -1,35 +1,38 @@
 /**
- * \file
+ * \file  PureVirtual.cpp
  * \brief
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
-class A {
-    public:
-        void bar() {
-            foo();
-        }
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+class A
+{
+public:
+    virtual ~A() = default;
 
-    private: /* or public */
-        virtual void foo() {
-            std::cout << __FUNCTION__ << std::endl;
-        }
+    void bar()
+    {
+        foo();
+    }
+
+private: /* or public */
+    virtual void foo()
+    {
+        std::cout << __FUNCTION__ << std::endl;
+    }
 };
 //---------------------------------------------------------------------------
 class B:
     public A
 {
-    private: /* or public */
-        virtual void foo() {
-            std::cout << __FUNCTION__ << std::endl;
-        }
+private: /* or public */
+    virtual void foo()
+    {
+        std::cout << __FUNCTION__ << std::endl;
+    }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)
@@ -48,6 +51,6 @@ int main(int, char **)
 
 #if OUTPUT
 
- B::foo
+B::foo
 
 #endif

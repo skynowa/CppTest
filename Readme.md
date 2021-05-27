@@ -2,10 +2,10 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) █████████░ 🔥88% (160)
+- [Core](#core) █████████░ 🔥91% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 🚩100% (32)
+- [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 🚩100% (3)
@@ -75,12 +75,11 @@
 
     </details>
 
-##  <a id="core">Core █████████░ 🔥88% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🔥91% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
-* <a href="/Core/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
 
 </details>
 
@@ -457,14 +456,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Virtual 17% (6)</summary>
+    <summary>📁 ✅ Virtual 100% (6)</summary>
 
-    * <a href="/Core/Virtual/VirtualFunction2.cpp" title="">❌ VirtualFunction2.cpp</a>
-    * <a href="/Core/Virtual/VirtualInheritance2.cpp" title="virtual inheritance">❌ VirtualInheritance2.cpp</a>
-    * <a href="/Core/Virtual/VirtualInheritance1.cpp" title="">❌ VirtualInheritance1.cpp</a>
+    * <a href="/Core/Virtual/VirtualFunction2.cpp" title="">✅ `VirtualFunction2.cpp`</a>
+    * <a href="/Core/Virtual/VirtualInheritance2.cpp" title="virtual inheritance">🖊 `VirtualInheritance2.cpp`</a>
+    * <a href="/Core/Virtual/VirtualInheritance1.cpp" title="">🖊 `VirtualInheritance1.cpp`</a>
     * <a href="/Core/Virtual/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-    * <a href="/Core/Virtual/VirtualFunction1.cpp" title="">❌ VirtualFunction1.cpp</a>
-    * <a href="/Core/Virtual/PureVirtual.cpp" title="">❌ PureVirtual.cpp</a>
+    * <a href="/Core/Virtual/VirtualFunction1.cpp" title="">✅ `VirtualFunction1.cpp`</a>
+    * <a href="/Core/Virtual/PureVirtual.cpp" title="">✅ `PureVirtual.cpp`</a>
 
     </details>
 
@@ -482,7 +481,7 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 🚩100% (32)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 🚩100% (33)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -495,6 +494,7 @@
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
 
