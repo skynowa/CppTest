@@ -376,9 +376,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Random 0% (1)</summary>
+    <summary>📁 ✅ Random 100% (1)</summary>
 
-    * <a href="/Core/Random/Random.cpp" title="">❌ Random.cpp</a>
+    * <a href="/Core/Random/Random.cpp" title="">✅ `Random.cpp`</a>
 
     </details>
 
