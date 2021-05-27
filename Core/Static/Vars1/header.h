@@ -1,24 +1,24 @@
 /**
- * \file
+ * \file  header.h
  * \brief
- *
- * \todo
  */
 
 
-#ifndef header_h
-#define header_h
+#pragma once
 
-#include <iostream>
+#include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 struct Test
 {
-    struct Init {
+    struct Init
+    {
         Init()
         {
             STD_TRACE_FUNC
         }
+
         ~Init()
         {
             STD_TRACE_FUNC
@@ -27,7 +27,7 @@ struct Test
 
     Test()
     {
-        static const Init m_Obj;
+        static const Init _init;
     }
 };
-#endif //header_h
+//--------------------------------------------------------------------------------------------------
