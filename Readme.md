@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ████████░░ 🔥82% (160)
+- [Core](#core) ████████░░ 🔥84% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████████░░ 🔥82% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████████░░ 🔥84% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -436,10 +436,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Types 0% (2)</summary>
+    <summary>📁 ✅ Types 100% (2)</summary>
 
-    * <a href="/Core/Types/TypeNames.cpp" title="">❌ TypeNames.cpp</a>
-    * <a href="/Core/Types/TypeSizes.cpp" title="">❌ TypeSizes.cpp</a>
+    * <a href="/Core/Types/TypeNames.cpp" title="">✅ `TypeNames.cpp`</a>
+    * <a href="/Core/Types/TypeSizes.cpp" title="">✅ `TypeSizes.cpp`</a>
 
     </details>
 

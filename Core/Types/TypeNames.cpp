@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  TypeNames.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -20,11 +18,11 @@ template<typename T>
 const char *getTypeName_1();
 
 #define MAKE_TEMPLATE_NAME(T) \
-  template<> \
-  const char *getTypeName_1<T>() { return #T; }
+    template<> \
+    const char *getTypeName_1<T>() { return #T; }
 //-------------------------------------------------------------------------------------------------
 struct Foo {};
-class Bar {};
+class  Bar {};
 
 MAKE_TEMPLATE_NAME(int);
 MAKE_TEMPLATE_NAME(float);
@@ -135,16 +133,27 @@ int main(int, char **)
         std::cout << getTypeName_3(m) << "\n" << std::endl;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-::getTypeName<int>(): int
-::getTypeName<float>(): float
-::getTypeName<Foo>(): Foo
-::getTypeName<Bar>(): Bar
+::: getTypeName_1 :::
+::getTypeName_1<int>(): int
+::getTypeName_1<float>(): float
+::getTypeName_1<Foo>(): Foo
+::getTypeName_1<Bar>(): Bar
+
+
+::: getTypeName_2 :::
+std::map<int, std::string>
+
+
+::: getTypeName_3 :::
+getTypeName_3(it.first): unknown
+getTypeName_3(it.second): bool
+map<unknown, bool>
 
 #endif
