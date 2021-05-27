@@ -25,7 +25,7 @@ int main(int, char **)
 #if OUTPUT
 
 	::: Var :::
-foo: CxVars::var.value: aaa
+foo:  CxVars::var.value: aaa
 main: CxVars::var.value: aaa
 	::: ~Var :::
 
