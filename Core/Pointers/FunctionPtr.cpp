@@ -2,7 +2,6 @@
  * \file  FunctionPtr.cpp
  * \brief pointer to function
  *
- * \todo "std::func_ptr"
  * \review
  *
  * https://isocpp.org/wiki/faq/pointers-to-members
@@ -15,50 +14,64 @@
 //--------------------------------------------------------------------------------------------------
 int (*funcPtr)(const std::string &value) = nullptr;
 
-int iFunc(const std::string &a_value)
+int
+func(const std::string &a_value)
 {
-   std::cout << a_value << std::endl;
-   return 0;
+    std::cout << a_value << std::endl;
+    return 0;
 }
 //--------------------------------------------------------------------------------------------------
 class A;
-
-int (A::*classFuncPtr)(const std::string &value) = nullptr;
+int (A::*methodPtr)(const std::string &value) const = nullptr;
 
 class A
 {
 public:
-    int classFunc(const std::string &a_value)
+    int
+    method(const std::string &a_value) const
     {
-       std::cout << a_value << std::endl;
-       return 0;
+        std::cout << a_value << std::endl;
+
+        return 0;
     }
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // function pointer
+    // function - by name
     {
-        ::funcPtr = &iFunc;
+        (*func)("function - by name 1");
+        func("function - by name 2");
 
-        (*iFunc)("Test!!");
-        iFunc("Test!!");
-
-        (*::funcPtr)("Test!!");
-        ::funcPtr("Test!!");
+        std::cout << std::endl;
     }
 
-    // class member pointer
+    // function - by pointer
     {
-        A objA;
+        ::funcPtr = &func;
 
-        ::classFuncPtr = &A::classFunc;
+        (*::funcPtr)("function - by pointer 1");
+        ::funcPtr("function - by pointer 2");
 
-        (*iFunc)("Test!!");
-        iFunc("Test!!");
+        std::cout << std::endl;
+    }
 
-        // (A::*classFuncPtr)("Test!!");
-        // A::g_classFunc("Test!!");
+    // method - by name
+    {
+        A a;
+        a.method("method - by name");
+
+        std::cout << std::endl;
+    }
+
+    // method - by pointer
+    {
+        ::methodPtr = &A::method;
+
+        A a;
+        (a.*::methodPtr)("method - by pointer");
+
+        std::cout << std::endl;
     }
 
     return EXIT_SUCCESS;
@@ -68,11 +81,14 @@ int main(int, char **)
 
 #if OUTPUT
 
-Test!!
-Test!!
-Test!!
-Test!!
-Test!!
-Test!!
+function - by name 1
+function - by name 2
+
+function - by pointer 1
+function - by pointer 2
+
+method - by name
+
+method - by pointer
 
 #endif

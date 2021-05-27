@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ███████░░░ 🔥67% (160)
+- [Core](#core) ███████░░░ 🔥68% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███████░░░ 🔥67% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███████░░░ 🔥68% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -365,11 +365,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Pointers 80% (5)</summary>
+    <summary>📁 ✅ Pointers 100% (5)</summary>
 
     * <a href="/Core/Pointers/PtrDelete.cpp" title="">✅ `PtrDelete.cpp`</a>
     * <a href="/Core/Pointers/AutoPtr.h" title="auto pointer">🖊 `AutoPtr.h`</a>
-    * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">❌ FunctionPtr.cpp</a>
+    * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">🖊 `FunctionPtr.cpp`</a>
     * <a href="/Core/Pointers/RefCounter.cpp" title="How do I do simple reference counting">🖊 `RefCounter.cpp`</a>
     * <a href="/Core/Pointers/CatchPtr.hpp" title="">🖊 `CatchPtr.hpp`</a>
 
