@@ -13,11 +13,9 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	{
-		::foo();
+	::foo();
 
-		std::cout << __FUNCTION__ << ": " << TRACE_VAR(CxVars::_var.value) << std::endl;
-	}
+	std::cout << __FUNCTION__ << ": " << TRACE_VAR(CxVars::_var.value) << std::endl;
 
     return EXIT_SUCCESS;
 }
