@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  CxVars.h
  * \brief
- *
- * \todo
  */
 
 
