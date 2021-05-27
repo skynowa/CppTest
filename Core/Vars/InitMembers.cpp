@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  InitMembers.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 struct Foo
 {
@@ -36,7 +34,7 @@ int main(int, char **)
 
 	::foo();
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 

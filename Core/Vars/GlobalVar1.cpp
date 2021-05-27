@@ -1,16 +1,12 @@
 /**
- * \file  main.cpp
+ * \file  GlobalVar1.cpp
  * \brief global and local var with the same name
- *
- * \todo
  */
 
 
-//---------------------------------------------------------------------------
-#include <unistd.h>
-#include <assert.h>
-#include <string>
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
 std::string s = "string_global";
 //---------------------------------------------------------------------------
@@ -24,16 +20,13 @@ int main(int, char **)
     assert("string_local" == s);
     std::cout << "Local  s = " << s   << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
 
 #if OUTPUT
-// NOTE:
 
-> ./main
-
-    Global s = string_global
-    Local  s = string_local
+Global s = string_global
+Local  s = string_local
 
 #endif

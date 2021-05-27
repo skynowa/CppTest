@@ -1,16 +1,12 @@
  /*
- * \file  main.cpp
+ * \file  GlobalVar2.cpp
  * \brief
- *
- * \todo
  */
 
 
-//-------------------------------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-#include <cstdlib>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 void onExit()
 {
@@ -57,7 +53,7 @@ int main(int, char **)
     std::exit(EXIT_SUCCESS);
 #else
     // Local - dtor will be *called* !!!
-    return 0;
+    return EXIT_SUCCESS;
 #endif
 }
 //-------------------------------------------------------------------------------------------------
@@ -65,8 +61,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-    main
-    onExit
-    ~Global
+main
+onExit
+~Global
 
 #endif

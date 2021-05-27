@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  InitVars.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 struct Point
 {
@@ -38,7 +36,7 @@ int main(int, char **)
 		p.print();
 	}
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 

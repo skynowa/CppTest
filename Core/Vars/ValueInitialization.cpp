@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  ValueInitialization.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 template<class T>
 void
@@ -33,7 +31,7 @@ print(const T &a_data, const std::string &a_title)
 			<< a_data._pBuff[3]
 			<< "}"              << "\n\n";
 }
-
+//--------------------------------------------------------------------------------------------------
 struct Data1
 {
 	signed int  _int;
@@ -46,7 +44,7 @@ struct Data1
 	{
 	}
 };
-
+//--------------------------------------------------------------------------------------------------
 struct Data2
 {
 	signed int  _int {};
@@ -59,7 +57,7 @@ struct Data2
 	{
 	}
 };
-
+//--------------------------------------------------------------------------------------------------
 struct SubData3
 {
 	int i {};
@@ -71,7 +69,7 @@ struct SubData3
 			<< TRACE_VAR(__FUNCTION__) << ", "<< TRACE_VAR(i) << std::endl;
 	}
 };
-
+//--------------------------------------------------------------------------------------------------
 struct Data3
 {
 	SubData3 subData3 {3};
@@ -127,7 +125,7 @@ int main(int, char **)
 
 	{
 		Data1 data; std::memset(&data, 1, sizeof(data));
-		print<Data1>(data, "std::memset(1)");
+		print<Data1>(data, "std::memset(1)");v
 	}
 #endif
 
@@ -142,7 +140,7 @@ int main(int, char **)
 		Data3 data;
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -151,20 +149,20 @@ int main(int, char **)
 
 ()
 a_data._int: 2
-a_data._ptr: 0x557d394d948d
-a_data._buff: {0,0,0,0}
+a_data._ptr: 0x563c86b936ad
+a_data._buff: {-1792898240,32543,0,0}
 a_data._pBuff: {0,0,0,0}
 
 = {}
 a_data._int: 2
-a_data._ptr: 0x557d394d948d
-a_data._buff: {0,0,0,0}
+a_data._ptr: 0x563c86b936ad
+a_data._buff: {-1792898240,32543,0,0}
 a_data._pBuff: {0,0,0,0}
 
 {}
 a_data._int: 2
-a_data._ptr: 0x557d394d948d
-a_data._buff: {0,0,0,0}
+a_data._ptr: 0x563c86b936ad
+a_data._buff: {-1792898240,32543,0,0}
 a_data._pBuff: {0,0,0,0}
 
 member {}
@@ -172,5 +170,8 @@ a_data._int: 0
 a_data._ptr: 0
 a_data._buff: {0,0,0,0}
 a_data._pBuff: {0,0,0,0}
+
+Twice construct
+__FUNCTION__: SubData3, i: 5
 
 #endif

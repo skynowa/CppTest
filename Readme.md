@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ████████░░ 🔥84% (160)
+- [Core](#core) █████████░ 🔥88% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████████░░ 🔥84% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🔥88% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -444,15 +444,15 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Vars 0% (7)</summary>
+    <summary>📁 ⌛ Vars 86% (7)</summary>
 
-    * <a href="/Core/Vars/InitVars.cpp" title="">❌ InitVars.cpp</a>
+    * <a href="/Core/Vars/InitVars.cpp" title="">✅ `InitVars.cpp`</a>
     * <a href="/Core/Vars/LvalueRvalue.cpp" title="">❌ LvalueRvalue.cpp</a>
-    * <a href="/Core/Vars/VarVisibility.cpp" title="var visibility">❌ VarVisibility.cpp</a>
-    * <a href="/Core/Vars/GlobalVar1.cpp" title="global and local var with the same name">❌ GlobalVar1.cpp</a>
-    * <a href="/Core/Vars/GlobalVar2.cpp" title="">❌ GlobalVar2.cpp</a>
-    * <a href="/Core/Vars/ValueInitialization.cpp" title="">❌ ValueInitialization.cpp</a>
-    * <a href="/Core/Vars/InitMembers.cpp" title="">❌ InitMembers.cpp</a>
+    * <a href="/Core/Vars/VarVisibility.cpp" title="var visibility">✅ `VarVisibility.cpp`</a>
+    * <a href="/Core/Vars/GlobalVar1.cpp" title="global and local var with the same name">✅ `GlobalVar1.cpp`</a>
+    * <a href="/Core/Vars/GlobalVar2.cpp" title="">✅ `GlobalVar2.cpp`</a>
+    * <a href="/Core/Vars/ValueInitialization.cpp" title="">✅ `ValueInitialization.cpp`</a>
+    * <a href="/Core/Vars/InitMembers.cpp" title="">✅ `InitMembers.cpp`</a>
 
     </details>
 

@@ -1,15 +1,12 @@
- /*
- * \file  main.cpp
+/**
+ * \file  VarVisibility.cpp
  * \brief var visibility
- *
- * \todo
  */
 
 
-//-------------------------------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class A
 {
@@ -37,7 +34,7 @@ int main(int, char **)
     A a;
     a.print();
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
