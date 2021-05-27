@@ -1,16 +1,12 @@
 /**
- * \file
+ * \file  StaticHolder.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 template<int valueT>
 struct StaticHolder
@@ -19,17 +15,17 @@ struct StaticHolder
 };
 
 template<int valueT>
-int StaticHolder<valueT>::value = valueT;
+int StaticHolder<valueT>::value {valueT};
 
-typedef StaticHolder<3> IntStaticHolder;
+using int_static_holder_t = StaticHolder<3>;
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    IntStaticHolder holder;
+    int_static_holder_t holder;
 
     std::cout << TRACE_VAR(holder.value) << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 

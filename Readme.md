@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ███████░░░ 🔥68% (160)
+- [Core](#core) ███████░░░ 🔥69% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ███████░░░ 🔥68% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ███████░░░ 🔥69% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -383,9 +383,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Static 0% (12)</summary>
+    <summary>📁 ⌛ Static 8% (12)</summary>
 
-    * <a href="/Core/Static/StaticHolder.cpp" title="">❌ StaticHolder.cpp</a>
+    * <a href="/Core/Static/StaticHolder.cpp" title="">✅ `StaticHolder.cpp`</a>
     * <a href="/Core/Static/Data.cpp" title="">❌ Data.cpp</a>
 
     </details>
