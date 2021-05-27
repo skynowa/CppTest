@@ -13,7 +13,7 @@
 class CxVars
 {
 public:
-	static const Var _var;
+	static const Var var;
 
 	CxVars() = delete;
 	~CxVars() = delete;
