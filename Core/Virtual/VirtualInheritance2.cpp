@@ -1,26 +1,15 @@
 /**
- * \file
+ * \file  VirtualInheritance2.cpp
  * \brief virtual inheritance
  *
  * \todo
  */
 
- /*
-    ��� ����� ���� � ��� 3 ����������� ����������� ������ � (B1..B3)
-    � ����� � �������� � ����:
 
-        class C :
-            public virtual B1, public virtual B2, public virtual B3
-
-    ������� ����� ����� �?
-*/
-
-
-//---------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
-//---------------------------------------------------------------------------
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class A {
     public:
         A () {
