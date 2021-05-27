@@ -1,23 +1,21 @@
 /**
- * \file
+ * \file  main_CString.cpp
  * \brief
- *
- * \todo
  */
 
 
-//----------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+
 #include "CString.h"
-//----------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-/*******************************************************************************
-*    public, constructors
-*
-*******************************************************************************/
+    /*******************************************************************************
+    *    public, constructors
+    *
+    *******************************************************************************/
 
     // CString()
     {
@@ -66,28 +64,29 @@ int main(int, char **)
         }
     }
 
-/*******************************************************************************
-*    public, methods
-*
-*******************************************************************************/
+
+    /*******************************************************************************
+    *    public, methods
+    *
+    *******************************************************************************/
 
     // isEmpty()
     {
         {
             CString s("isEmpty()");
-            assert(!s.isEmpty());
+            STD_TEST(!s.isEmpty());
         }
 
         {
             CString s;
-            assert(s.isEmpty());
+            STD_TEST(s.isEmpty());
         }
     }
 
     // data()
     {
         CString s("data()");
-        assert(s == "data()");
+        STD_TEST(s == "data()");
     }
 
     // print()
@@ -95,17 +94,18 @@ int main(int, char **)
         CString("print").print();
     }
 
-/*******************************************************************************
-*    public, operators
-*
-*******************************************************************************/
+
+    /*******************************************************************************
+    *    public, operators
+    *
+    *******************************************************************************/
 
     // operator char * ()
     {
         CString s("operator char * ()");
 
         char *p = s;
-        assert(p == s);
+        STD_TEST(p == s);
     }
 
     // operator const char * ()
@@ -113,7 +113,7 @@ int main(int, char **)
         CString s("operator char * ()");
 
         const char *p = s;
-        assert(p == s);
+        STD_TEST(p == s);
     }
 
     // operator + (const CString &a_str)
@@ -123,7 +123,7 @@ int main(int, char **)
         CString s2("s2");
 
         rv = s1 + s2;
-        assert(rv == "s1s2");
+        STD_TEST(rv == "s1s2");
     }
 
     // operator = (const CString &a_str)
@@ -133,7 +133,7 @@ int main(int, char **)
         CString s;
 
         s = str;
-        assert(s == str);
+        STD_TEST(s == str);
     }
 
     // operator == (const CString &a_str)
@@ -141,7 +141,7 @@ int main(int, char **)
         CString s1("s1");
         CString s2("s1");
 
-        assert(s1 == s2);
+        STD_TEST(s1 == s2);
     }
 
     // operator != (const CString &a_str)
@@ -149,7 +149,7 @@ int main(int, char **)
         CString s1("s1");
         CString s2("s2");
 
-        assert(s1 != s2);
+        STD_TEST(s1 != s2);
     }
 
     // operator () ()
@@ -162,11 +162,24 @@ int main(int, char **)
     // operator [] (size_t i)
     {
         CString s("abc");
-        assert(s[size_t(0)] == 'a');
-        assert(s[size_t(1)] == 'b');
-        assert(s[size_t(2)] == 'c');
+        STD_TEST(s[size_t(0)] == 'a');
+        STD_TEST(s[size_t(1)] == 'b');
+        STD_TEST(s[size_t(2)] == 'c');
     }
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+<empty>
+<empty>
+default constructor
+copy constructor 1
+copy constructor 2
+print
+operator ()
+
+#endif
