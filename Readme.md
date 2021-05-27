@@ -383,10 +383,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Static 8% (12)</summary>
+    <summary>📁 ⌛ Static 17% (12)</summary>
 
     * <a href="/Core/Static/StaticHolder.cpp" title="">✅ `StaticHolder.cpp`</a>
-    * <a href="/Core/Static/Data.cpp" title="">❌ Data.cpp</a>
+    * <a href="/Core/Static/Data.cpp" title="">✅ `Data.cpp`</a>
 
     </details>
 
