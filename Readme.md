@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ░░░░░░░░░░ 0% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ████████░░ 🔥78% (160)
+- [Core](#core) ████████░░ 🔥82% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0.0% (0)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (32)
@@ -75,7 +75,7 @@
 
     </details>
 
-##  <a id="core">Core ████████░░ 🔥78% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ████████░░ 🔥82% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -413,16 +413,16 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ String 27% (11)</summary>
+    <summary>📁 ✅ String 100% (11)</summary>
 
-    * <a href="/Core/String/StringView.cpp" title="">❌ StringView.cpp</a>
-    * <a href="/Core/String/CapacityFunction.cpp" title="">❌ CapacityFunction.cpp</a>
-    * <a href="/Core/String/ManipulatingFunction.cpp" title="">❌ ManipulatingFunction.cpp</a>
-    * <a href="/Core/String/InputFunction.cpp" title="">❌ InputFunction.cpp</a>
-    * <a href="/Core/String/Reverse.cpp" title="">❌ Reverse.cpp</a>
-    * <a href="/Core/String/OtherUsefulFunction.cpp" title="">❌ OtherUsefulFunction.cpp</a>
-    * <a href="/Core/String/InitializationWays.cpp" title="">❌ InitializationWays.cpp</a>
-    * <a href="/Core/String/IteratorFunction.cpp" title="">❌ IteratorFunction.cpp</a>
+    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">🖊 `StringView.cpp`</a>
+    * <a href="/Core/String/CapacityFunction.cpp" title="">✅ `CapacityFunction.cpp`</a>
+    * <a href="/Core/String/ManipulatingFunction.cpp" title="">✅ `ManipulatingFunction.cpp`</a>
+    * <a href="/Core/String/InputFunction.cpp" title="">✅ `InputFunction.cpp`</a>
+    * <a href="/Core/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
+    * <a href="/Core/String/OtherUsefulFunction.cpp" title="">✅ `OtherUsefulFunction.cpp`</a>
+    * <a href="/Core/String/InitializationWays.cpp" title="">✅ `InitializationWays.cpp`</a>
+    * <a href="/Core/String/IteratorFunction.cpp" title="">✅ `IteratorFunction.cpp`</a>
 
     </details>
 

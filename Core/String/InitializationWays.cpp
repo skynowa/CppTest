@@ -1,37 +1,51 @@
 /**
- * \file
+ * \file  InitializationWays.cpp
  * \brief
- *
- * \todo
  */
 
-#include <bits/stdc++.h>
 
-using namespace std;
-
-int main() {
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
 	// various constructor of string class
 
     // initialization by raw string
-    string str1("first string");
+    std::string str1("first string");
 
     // initialization by another string
-    string str2(str1);
+    std::string str2(str1);
 
     // initialization by character with number of occurence
-    string str3(5, '#');
+    std::string str3(5, '#');
 
     // initialization by part of another string
-    string str4(str1, 6, 6); // from 6th index (second parameter)
-                             // 6 characters (third parameter)
+    // from 6th index (second parameter)
+    // 6 characters (third parameter)
+    std::string str4(str1, 6, 6);
 
     // initialization by part of another string : iteartor version
-    string str5(str2.begin(), str2.begin() + 5);
+    std::string str5(str2.begin(), str2.begin() + 5);
 
-    cout << str1 << endl;
-    cout << str2 << endl;
-    cout << str3 << endl;
-    cout << str4 << endl;
-    cout << str5 << endl;
-	return 0;
+    std::cout << str1 << std::endl;
+    std::cout << str2 << std::endl;
+    std::cout << str3 << std::endl;
+    std::cout << str4 << std::endl;
+    std::cout << str5 << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+first string
+first string
+#####
+string
+first
+
+#endif

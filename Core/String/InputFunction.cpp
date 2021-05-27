@@ -1,25 +1,34 @@
 /**
- * \file
+ * \file  InputFunction.cpp
  * \brief
- *
- * \todo
  */
 
-#include <bits/stdc++.h>
 
-using namespace std;
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+	std::string str = "AAA";
 
-int main() {
-	string str;
-	getline(cin, str);
-
-	cout << "The String is: " << str << endl;
+	std::cout << "The String is: " << str << std::endl;
 
 	str.push_back('s');
-	cout <<"The string after push back operation is: " << str << endl;
+	std::cout <<"The string after push back operation is: " << str << std::endl;
 
 	str.pop_back();
-	cout <<"The string after pop back operation is: " << str << endl;
+	std::cout <<"The string after pop back operation is: " << str << std::endl;
 
-	return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+The String is: AAA
+The string after push back operation is: AAAs
+The string after pop back operation is: AAA
+
+#endif

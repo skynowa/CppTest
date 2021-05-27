@@ -1,69 +1,82 @@
 /**
- * \file
+ * \file  OtherUsefulFunction.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <bits/stdc++.h>
-
-using namespace std;
-
-int main() {
-	string str("GeeksforGeeks");
-    string str1("GeeksforGeeks");
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+	std::string str("GeeksforGeeks");
+    std::string str1("GeeksforGeeks");
 
     // Comparing strings using compare()
-    if ( str.compare(str1) == 0 )
-        cout << "Strings are equal";
+    if (str.compare(str1) == 0)
+        std::cout << "Strings are equal";
     else
-        cout << "Strings are unequal";
+        std::cout << "Strings are unequal";
 
-    string str2("The Geeks for Geeks");
+    std::string str2("The Geeks for Geeks");
 
     // find() returns position to first
     // occurrence of substring "Geeks"
     // Prints 4
-    cout << "First occurrence of \"Geeks\" starts from : ";
-    cout << str2.find("Geeks") << endl;
+    std::cout << "First occurrence of \"Geeks\" starts from : ";
+    std::cout << str2.find("Geeks") << std::endl;
 
     // Prints position of first occurrence of
     // any character of "reef" (Prints 2)
-    cout << "First occurrence of character from \"reef\" is at : ";
-    cout << str2.find_first_of("reef") << endl;
+    std::cout << "First occurrence of character from \"reef\" is at : ";
+    std::cout << str2.find_first_of("reef") << std::endl;
 
     // Prints position of last occurrence of
     // any character of "reef" (Prints 16)
-    cout << "Last occurrence of character from \"reef\" is at : ";
-    cout << str2.find_last_of("reef") << endl;
+    std::cout << "Last occurrence of character from \"reef\" is at : ";
+    std::cout << str2.find_last_of("reef") << std::endl;
 
     // rfind() returns position to last
     // occurrence of substring "Geeks"
     // Prints 14
-    cout << "Last occurrence of \"Geeks\" starts from : ";
-    cout << str2.rfind("Geeks") << endl;
+    std::cout << "Last occurrence of \"Geeks\" starts from : ";
+    std::cout << str2.rfind("Geeks") << std::endl;
 
-    string str3("Geeksfor");
+    std::string str3("Geeksfor");
 
     // Printing the original string
-    cout << str3 << endl;
+    std::cout << str3 << std::endl;
 
     // Inserting "for" at 5th position
     str3.insert(8,"Geeks");
 
     // Printing the modified string
     // Prints "GeeksforGeeks"
-    cout << str3 << endl;
+    std::cout << str3 << std::endl;
 
     //Clearing the string
     str3.clear();
 
     //Checking if string is empty. Returns a boolean value.
     if (str3.empty() ==true)	//This also works. str3.empty()==1
-    	cout << "The string is Empty" << endl;
+    	std::cout << "The string is Empty" << std::endl;
     else
-    	cout <<"The string is not empty." << endl;
+    	std::cout <<"The string is not empty." << std::endl;
 
-	return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Strings are equalFirst occurrence of "Geeks" starts from : 4
+First occurrence of character from "reef" is at : 2
+Last occurrence of character from "reef" is at : 16
+Last occurrence of "Geeks" starts from : 14
+Geeksfor
+GeeksforGeeks
+The string is Empty
+
+#endif

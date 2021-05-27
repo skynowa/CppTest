@@ -1,15 +1,14 @@
 /**
- * \file
- * \brief
+ * \file  StringView.cpp
+ * \brief StringView + Enum
  *
- * \todo
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 class StringView
 {
@@ -135,7 +134,7 @@ enum class Color : short
 	Yellow,
 	Red
 };
-
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	// std::cout << ">" << typeName<Color>() << "<"  << std::endl;
@@ -143,13 +142,13 @@ int main(int, char **)
 
     // std::cout << TRACE_VAR("") << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
-//-------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-
+>(Color)2<
 
 #endif

@@ -1,32 +1,42 @@
 /**
- * \file
+ * \file  Reverse.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <bits/stdc++.h>
-
-using namespace std;
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 // Function to reverse a string
-void reverseStr(string &str)
+void reverseStr(std::string &str)
 {
-    int n = str.length();
+    const std::size_t n = str.size();
 
-    // Swap character starting from two
-    // corners
-    for (int i=0; i<n/2; i++)
-       swap(str[i], str[n-i-1]);
+    // Swap character starting from two corners
+    for (std::size_t i = 0; i < n / 2; ++ i) {
+        std::swap(str[i], str[n - i - 1]);
+    }
 }
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+	std::string str = "abcdef";
+    std::cout << str << " -> ";
 
-int main() {
-	string str = "geeksforgeeks";
-    reverseStr(str);
+    // Using the built-in reverse Function:
+    // std::reverse(str.begin(), str.end());
+    ::reverseStr(str);
 
-    //Using the built-in reverse Function:
-    //reverse(str.begin(),str.end());
-    cout << str;
-    return 0;
+    std::cout << str << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+abcdef -> fedcba
+
+#endif

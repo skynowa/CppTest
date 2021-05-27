@@ -1,35 +1,42 @@
 /**
- * \file
+ * \file  IteratorFunction.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <bits/stdc++.h>
-
-using namespace std;
-
-int main() {
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
 	// Initializing string`
-    string str = "geeksforgeeks";
+    std::string str = "geeksforgeeks";
 
     // Declaring iterator
-    std::string::iterator it;
+    // Displaying string
+    std::cout << "The string using forward iterators is : ";
+    for (std::string::iterator it = str.begin(); it != str.end(); ++ it) {
+        std::cout << *it;
+    }
+    std::cout << std::endl;
 
     // Declaring reverse iterator
-    std::string::reverse_iterator it1;
-
-    // Displaying string
-    cout << "The string using forward iterators is : ";
-    for (it=str.begin(); it!=str.end(); it++)
-    cout << *it;
-    cout << endl;
-
     // Displaying reverse string
-    cout << "The reverse string using reverse iterators is : ";
-    for (it1=str.rbegin(); it1!=str.rend(); it1++)
-    cout << *it1;
-    cout << endl;
-	return 0;
+    std::cout << "The reverse string using reverse iterators is : ";
+    for (std::string::reverse_iterator it1 = str.rbegin(); it1 != str.rend(); ++ it1) {
+        std::cout << *it1;
+    }
+    std::cout << std::endl;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+The string using forward iterators is : geeksforgeeks
+The reverse string using reverse iterators is : skeegrofskeeg
+
+#endif
