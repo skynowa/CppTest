@@ -12,56 +12,48 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-int (*funcPtr)(const std::string &value) = nullptr;
-
 int
 func(const std::string &a_value)
 {
-    std::cout << a_value << std::endl;
+    std::cout << "func: " << a_value << std::endl;
     return 0;
 }
-//--------------------------------------------------------------------------------------------------
-class A;
-int (A::*methodPtr)(const std::string &value) const = nullptr;
 
+int (*funcPtr)(const std::string &) = nullptr;
+//--------------------------------------------------------------------------------------------------
 class A
 {
 public:
     int
     method(const std::string &a_value) const
     {
-        std::cout << a_value << std::endl;
-
+        std::cout << "method: " << a_value << std::endl;
         return 0;
     }
 };
+
+int (A::*methodPtr)(const std::string &) const = nullptr;
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
     // function - by name
     {
-        (*func)("function - by name 1");
-        func("function - by name 2");
-
-        std::cout << std::endl;
+        (*func)("by name 1");
+        func("by name 2");
     }
 
     // function - by pointer
     {
         ::funcPtr = &func;
 
-        (*::funcPtr)("function - by pointer 1");
-        ::funcPtr("function - by pointer 2");
-
-        std::cout << std::endl;
+        (*::funcPtr)("by pointer 1");
+        ::funcPtr("by pointer 2");
     }
 
     // method - by name
     {
         A a;
-        a.method("method - by name");
-
-        std::cout << std::endl;
+        a.method("by name");
     }
 
     // method - by pointer
@@ -69,9 +61,7 @@ int main(int, char **)
         ::methodPtr = &A::method;
 
         A a;
-        (a.*::methodPtr)("method - by pointer");
-
-        std::cout << std::endl;
+        (a.*::methodPtr)("by pointer");
     }
 
     return EXIT_SUCCESS;
@@ -81,14 +71,11 @@ int main(int, char **)
 
 #if OUTPUT
 
-function - by name 1
-function - by name 2
-
-function - by pointer 1
-function - by pointer 2
-
-method - by name
-
-method - by pointer
+func: by name 1
+func: by name 2
+func: by pointer 1
+func: by pointer 2
+method: by name
+method: by pointer
 
 #endif
