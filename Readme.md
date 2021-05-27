@@ -1152,5 +1152,5 @@
   - 🖊 - Remark
   - ❌ - Todo
   - 🔥 - TOC - hot
-  - 🚩 - TOC - done
+  - 🚩 - TOC - done / nearly done
 

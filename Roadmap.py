@@ -331,7 +331,7 @@ class RoadmapGen:
 				self.iconRemark,     'Remark',
 				self.iconToDo,       'Todo',
 				self.iconTocHot,     'TOC - hot',
-				self.iconTocDone,    'TOC - done'))
+				self.iconTocDone,    'TOC - done / nearly done'))
 
 	################################################################################################
 	# root dir - process
