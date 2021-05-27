@@ -198,8 +198,11 @@ class RoadmapGen:
 		valueDones = valueDone * round(a_doneFilesPct / 10.0)
 
 		# hot point
-		if (a_doneFilesPct < 100.0 and a_doneFilesPct > 50.0):
+		if (a_doneFilesPct > 50.0 and a_doneFilesPct < 100.0):
 			a_doneFilesPct = '{}{}'.format(self.iconTocHot, a_doneFilesPct)
+		# done point
+		elif (a_doneFilesPct > 89.9 and a_doneFilesPct < 100.0):
+			a_doneFilesPct = '{}{}'.format(self.iconTocDone, a_doneFilesPct)
 		# done point
 		elif (a_doneFilesPct == 100.0):
 			a_doneFilesPct = '{}{}'.format(self.iconTocDone, a_doneFilesPct)
