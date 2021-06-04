@@ -13,7 +13,7 @@
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) █████░░░░░ 🔥50% (2)
+- [SQL](#sql) ██████████ 🚩100% (2)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
@@ -821,9 +821,9 @@
 
 </details>
 
-##  <a id="sql">SQL █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 🚩100% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
+* <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
 
 </details>
