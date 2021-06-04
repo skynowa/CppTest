@@ -5,7 +5,7 @@
 - [Core](#core) █████████░ 🚩91% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
-- [Idioms](#idioms) ██████████ 🚩100% (33)
+- [Idioms](#idioms) ██████████ 🚩100% (34)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
 - [Libs](#libs) █░░░░░░░░░ 11% (18)
 - [Network](#network) ██████████ 🚩100% (3)
@@ -13,7 +13,7 @@
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) ██████████ 🚩100% (1)
+- [SQL](#sql) █████░░░░░ 🔥50% (2)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ███░░░░░░░ 33% (3)
@@ -482,7 +482,7 @@
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 🚩100% (33)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="idioms">Idioms ██████████ 🚩100% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -568,9 +568,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Yagni 100% (1)</summary>
+    <summary>📁 ✅ Yagni 100% (2)</summary>
 
     * <a href="/Idioms/Yagni/Yagni.cpp" title="YAGNI - You aren't gonna need it">🖊 `Yagni.cpp`</a>
+    * <a href="/Idioms/Yagni/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
     </details>
 
@@ -821,8 +822,9 @@
 
 </details>
 
-##  <a id="sql">SQL ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
 
 </details>
