@@ -1,38 +1,56 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  ScopeArray.cpp
+ * \brief boost::scoped_array
  */
 
-#include <cstdlib>
-#include <iostream>
+
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 #include "boost/scoped_array.hpp"
-
-static int count = 0;
 //-------------------------------------------------------------------------------------------------
-class printer
+class Printer
 {
-	int m_id;
-
 public:
-	printer(void) : m_id(count++)  {
-		std::cout << "Printer " << m_id  << " construct" << std::endl;
+	Printer() :
+		_id{_count ++}
+	{
+		std::cout << __FUNCTION__ << ": " << TRACE_VAR2(_count, _id) << std::endl;
 	}
 
-	~printer(void) {
-			std::cout << "Printer " << m_id  << " destroyed" << std::endl;
+	~Printer()
+	{
+		std::cout << __FUNCTION__ << ": " << TRACE_VAR2(_count, _id) << std::endl;
 	}
+
+private:
+	static inline int _count {};
+
+	int _id {};
 };
 //-------------------------------------------------------------------------------------------------
-int main(void)
+int main(int, char **)
 {
-
 	{
-		boost::scoped_array<printer> p2(new printer[5]);
+		boost::scoped_array<Printer> p2(new Printer[5]);
 	}
 
 	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+Printer: _count: 1, _id: 0
+Printer: _count: 2, _id: 1
+Printer: _count: 3, _id: 2
+Printer: _count: 4, _id: 3
+Printer: _count: 5, _id: 4
+~Printer: _count: 5, _id: 4
+~Printer: _count: 5, _id: 3
+~Printer: _count: 5, _id: 2
+~Printer: _count: 5, _id: 1
+~Printer: _count: 5, _id: 0
+
+#endif

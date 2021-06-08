@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ████████░░ 🔥78% (18)
+- [Libs](#libs) ██████████ 🚩100% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -663,17 +663,17 @@
 
     </details>
 
-##  <a id="libs">Libs ████████░░ 🔥78% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs ██████████ 🚩100% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
 
   * <details close>
-    <summary>📁 ❌ Boost 0% (3)</summary>
+    <summary>📁 ✅ Boost 100% (3)</summary>
 
-    * <a href="/Libs/Boost/ProgramOptions.cpp" title="Boost.ProgramOptions">❌ ProgramOptions.cpp</a>
-    * <a href="/Libs/Boost/Bind.cpp" title="Boost.Bind">❌ Bind.cpp</a>
-    * <a href="/Libs/Boost/ScopeArray.cpp" title="">❌ ScopeArray.cpp</a>
+    * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">✅ `ProgramOptions.cpp`</a>
+    * <a href="/Libs/Boost/Bind.cpp" title="boost::bind">✅ `Bind.cpp`</a>
+    * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">✅ `ScopeArray.cpp`</a>
 
     </details>
 
@@ -696,9 +696,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ LibUv 0% (1)</summary>
+    <summary>📁 ✅ LibUv 100% (1)</summary>
 
-    * <a href="/Libs/LibUv/FAQ.md" title="">❌ 📝 FAQ.md</a>
+    * <a href="/Libs/LibUv/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
 
     </details>
 

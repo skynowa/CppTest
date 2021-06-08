@@ -1,8 +1,6 @@
 /**
- * \file  bind.cpp
- * \brief Boost.Bind
- *
- * \todo
+ * \file  Bind.cpp
+ * \brief boost::bind
  */
 
 
@@ -12,36 +10,43 @@
 
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
-
 //-------------------------------------------------------------------------------------------------
-class CButton
+class Button
 {
 public:
-    boost::function<void()> vOnClick {};
+    boost::function<void()> onClick {};
 };
 //-------------------------------------------------------------------------------------------------
-class CPlayer
+class Player
 {
 public:
-	void vPlay() { STD_TRACE_FUNC; };
-	void vStop() { STD_TRACE_FUNC; };
+	void play() { STD_TRACE_FUNC; };
+	void stop() { STD_TRACE_FUNC; };
 };
 //-------------------------------------------------------------------------------------------------
 int main(int , char **)
 {
-	CButton playButton;
-	CButton stopButton;
-	CPlayer thePlayer;
+	Player player;
 
-	// connect
-	playButton.vOnClick = boost::bind(&CPlayer::vPlay, &thePlayer);
-	/// stopButton.vOnClick = boost::bind(&CPlayer::vStop, &thePlayer);
-	stopButton.vOnClick = boost::bind(&CPlayer::vPlay, &thePlayer);
+	{
+		Button btn;
+		btn.onClick = boost::bind(&Player::play, &player);
+		btn.onClick();
+	}
 
-	// click
-	playButton.vOnClick();
-	stopButton.vOnClick();
+	{
+		Button btn;
+		btn.onClick = boost::bind(&Player::stop, &player);
+		btn.onClick();
+	}
 
-	return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+	::: play :::
+	::: stop :::
+
+#endif

@@ -1,29 +1,27 @@
 /**
  * \file  ProgramOptions.cpp
- * \brief Boost.ProgramOptions
- *
- * \todo
+ * \brief boost::program_options
  *
  * https://theboostcpplibraries.com/boost.program_options
  */
 
 
-#include <boost/program_options.hpp>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <iterator>
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
-namespace po = boost::program_options;
+#include <boost/program_options.hpp>
 //-------------------------------------------------------------------------------------------------
-void to_cout(const std::vector<std::string> &v)
+void
+toCout(const std::vector<std::string> &v)
 {
-	std::copy(v.begin(), v.end(), std::ostream_iterator<std::string>{std::cout, "\n"});
+	std::copy(v.cbegin(), v.cend(), std::ostream_iterator<std::string>{std::cout, "\n"});
 }
 //-------------------------------------------------------------------------------------------------
 int main(int argc, const char *argv[])
 {
+	namespace po = boost::program_options;
+
 	try {
 		int age {};
 
@@ -40,28 +38,51 @@ int main(int argc, const char *argv[])
 			("unreg",  "Unrecognized options");
 
 		po::command_line_parser parser{argc, argv};
-		parser.options(desc).allow_unregistered().style(
-			po::command_line_style::default_style |
-			po::command_line_style::allow_slash_for_short);
+		parser
+			.options(desc)
+			.allow_unregistered().style(
+				po::command_line_style::default_style |
+				po::command_line_style::allow_slash_for_short);
 		po::parsed_options parsed_options = parser.run();
 
 		po::variables_map vm;
+		std::cout << TRACE_VAR(vm.size()) << std::endl;
+
 		po::store(parsed_options, vm);
 		po::notify(vm);
 
-		if      (vm.count("help"))
-			std::cout << desc << '\n';
-		else if (vm.count("age"))
-			std::cout << "Age: " << age << '\n';
-		else if (vm.count("phone"))
-			to_cout(vm["phone"].as<std::vector<std::string>>());
-		else if (vm.count("unreg"))
-			to_cout(collect_unrecognized(parsed_options.options, po::exclude_positional));
-		else if (vm.count("pi"))
-			std::cout << "Pi: " << vm["pi"].as<float>() << '\n';
+		if      (vm.count("help")) {
+			std::cout << desc << std::endl;
+		}
+		else if (vm.count("age")) {
+			std::cout << "Age: " << age << std::endl;
+		}
+		else if (vm.count("phone")) {
+			::toCout(vm["phone"].as<std::vector<std::string>>());
+		}
+		else if (vm.count("unreg")) {
+			::toCout(collect_unrecognized(parsed_options.options, po::exclude_positional));
+		}
+		else if (vm.count("pi")) {
+			std::cout << "Pi: " << vm["pi"].as<float>() << std::endl;
+		}
 	}
 	catch (const po::error &ex) {
-		std::cerr << ex.what() << '\n';
+		std::cout << ex.what() << std::endl;
 	}
+	catch (const std::exception &ex) {
+		std::cout << ex.what() << std::endl;
+	}
+	catch (...) {
+		std::cout << "Unknown exception" << std::endl;
+	}
+
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+vm.size(): 0
+
+#endif
