@@ -128,12 +128,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 77% (22)</summary>
+    <summary>📁 ⌛ C++17 82% (22)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
     * <a href="/Core/C++17/Utf8CharLiterals.cpp" title="UTF-8 Character Literals">❌ Utf8CharLiterals.cpp</a>
-    * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">❌ InlineVars.cpp</a>
+    * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">✅ `InlineVars.cpp`</a>
     * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
     * <a href="/Core/C++17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
     * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
