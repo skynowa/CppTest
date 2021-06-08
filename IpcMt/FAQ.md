@@ -1,12 +1,4 @@
-/**
- * \file
- * \brief
- *
- * \todo
- */
-
-
-# Inter Process Communication
+# Inter Process Communication [todo]
 
 Inter Process Communication (IPC) is a mechanism that involves communication of one process with another process. This usually occurs only in one system.
 
