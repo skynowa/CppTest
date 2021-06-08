@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  EnumListInitialization.cpp
  * \brief Direct List Initialization of Enums
- *
- * \todo
  *
  * Enums can now be initialized using braced syntax.
  */
@@ -11,7 +9,6 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -20,8 +17,13 @@ int main(int, char **)
 	};
 
 	Byte b {0};             // OK
+	std::cout << TRACE_VAR(b) << std::endl;
+
 	/// Byte c {-1};        // ERROR
+
 	Byte d = Byte{1};       // OK
+	std::cout << TRACE_VAR(d) << std::endl;
+
 	/// Byte e = Byte{256}; // ERROR
 
     return EXIT_SUCCESS;
@@ -31,6 +33,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+b: 0
+d: 1
 
 #endif

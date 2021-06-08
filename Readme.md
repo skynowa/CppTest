@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ██░░░░░░░░ 15% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ██████████ 🚩95% (159)
+- [Core](#core) ██████████ 🚩96% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
@@ -74,7 +74,7 @@
 
     </details>
 
-##  <a id="core">Core ██████████ 🚩95% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██████████ 🚩96% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -128,9 +128,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 73% (22)</summary>
+    <summary>📁 ⌛ C++17 77% (22)</summary>
 
-    * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">❌ EnumListInitialization.cpp</a>
+    * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
     * <a href="/Core/C++17/Utf8CharLiterals.cpp" title="UTF-8 Character Literals">❌ Utf8CharLiterals.cpp</a>
     * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">❌ InlineVars.cpp</a>
