@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ██░░░░░░░░ 15% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) █████████░ 🚩90% (159)
+- [Core](#core) █████████░ 🚩91% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
@@ -74,7 +74,7 @@
 
     </details>
 
-##  <a id="core">Core █████████░ 🚩90% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🚩91% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -128,7 +128,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 36% (22)</summary>
+    <summary>📁 ⌛ C++17 41% (22)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">❌ EnumListInitialization.cpp</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">❌ TemplateArgDeduction.cpp</a>
@@ -137,7 +137,7 @@
     * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">❌ ConstexprLambda.cpp</a>
     * <a href="/Core/C++17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
     * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
-    * <a href="/Core/C++17/NestedNamespaces.cpp" title="Nested namespaces">❌ NestedNamespaces.cpp</a>
+    * <a href="/Core/C++17/NestedNamespaces.cpp" title="Nested namespaces">✅ `NestedNamespaces.cpp`</a>
     * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">❌ StructuredBindingsRef.cpp</a>
     * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">❌ ConstexprIf.cpp</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">❌ BracedInitList.cpp</a>

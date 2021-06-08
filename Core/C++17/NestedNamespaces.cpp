@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  NestedNamespaces.cpp
  * \brief Nested namespaces
- *
- * \todo
  *
  * Using the namespace resolution operator to create nested namespace definitions.
  */
@@ -11,7 +9,6 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 namespace A
 {
@@ -20,7 +17,7 @@ namespace B
 namespace C
 {
 
-int i;
+int i {11};
 
 }
 }
@@ -30,13 +27,14 @@ int i;
 namespace A::B::C
 {
 
-int j;
+int j {17};
 
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // std::cout << TRACE_VAR("") << std::endl;
+    std::cout << TRACE_VAR(A::B::C::i) << std::endl;
+    std::cout << TRACE_VAR(A::B::C::j) << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -45,6 +43,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+A::B::C::i: 11
+A::B::C::j: 17
 
 #endif
