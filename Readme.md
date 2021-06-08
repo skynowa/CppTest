@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) █████░░░░░ 🔥50% (18)
+- [Libs](#libs) ██████░░░░ 🔥56% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -664,7 +664,7 @@
 
     </details>
 
-##  <a id="libs">Libs █████░░░░░ 🔥50% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs ██████░░░░ 🔥56% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -704,9 +704,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Pcre 0% (1)</summary>
+    <summary>📁 ✅ Pcre 100% (1)</summary>
 
-    * <a href="/Libs/Pcre/pcrepp.cpp" title="">❌ pcrepp.cpp</a>
+    * <a href="/Libs/Pcre/pcrepp.cpp" title="">🖊 `pcrepp.cpp`</a>
 
     </details>
 

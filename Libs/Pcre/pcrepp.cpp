@@ -1,12 +1,8 @@
 /**
- * \file
+ * \file  pcrepp.cpp
  * \brief
  *
- * \todo
- */
-
-
-/*
+ * \review
  *
  *  This file  is part of the PCRE++ Class Library.
  *
@@ -42,15 +38,16 @@
  *  Or contact:
  *
  *   "Thomas Linden" <tom@daemon.de>
- *
- *
  */
 
 
-/* you need to include the pcre++ header file */
-#include <pcre++.h>
-#include <iostream>
+//--------------------------------------------------------------------------------------------------
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
+#include <pcre++.h>
+//--------------------------------------------------------------------------------------------------
 using namespace std;
 using namespace pcrepp;
 
@@ -59,8 +56,9 @@ typedef std::vector<std::string> Array;
 
 /* A typedef for a vector iterator */
 typedef std::vector<std::string>::iterator ArrayIterator;
-
-void regex() {
+//--------------------------------------------------------------------------------------------------
+void regex()
+{
     /*
      * define a string with a regular expression
      */
@@ -121,10 +119,9 @@ void regex() {
       cout << "   didn't match." << endl;
     }
 }
-
-
-
-void replace() {
+//--------------------------------------------------------------------------------------------------
+void replace()
+{
     /*
      * Sample of replace() usage
      */
@@ -147,9 +144,9 @@ void replace() {
      */
     cout << "   new: " << n << endl;
 }
-
-
-void replace_multi() {
+//--------------------------------------------------------------------------------------------------
+void replace_multi()
+{
   /*
    * Sample of replace() usage with multiple substrings
    */
@@ -172,9 +169,9 @@ void replace_multi() {
    */
   cout << "   new:  " << n  << endl;
 }
-
-
-void normalize() {
+//--------------------------------------------------------------------------------------------------
+void normalize()
+{
   /*
    * another sample to check if normalizing using replace() works
    */
@@ -196,9 +193,9 @@ void normalize() {
    */
   cout << "   new:  " << n  << endl;
 }
-
-
-void split() {
+//--------------------------------------------------------------------------------------------------
+void split()
+{
   /*
    * Sample of split() usage
    */
@@ -228,9 +225,9 @@ void split() {
         cout << *A << " ";
       cout << endl;
 }
-
-
-void ex() {
+//--------------------------------------------------------------------------------------------------
+void ex()
+{
   /*
    * Pcre::exception Test
    */
@@ -244,9 +241,9 @@ void ex() {
     cout << "  substring 2: " << ex.get_match(1) << endl;
   }
 }
-
-
-void mycopy() {
+//--------------------------------------------------------------------------------------------------
+void mycopy()
+{
   /*
    * Sample use of copy contsructor and operator=
    */
@@ -276,8 +273,9 @@ void mycopy() {
     if(reg3.search("anton"))
       cout << "  string 'anton' matched using reg3 object" << endl;
 }
-
-void multisearch() {
+//--------------------------------------------------------------------------------------------------
+void multisearch()
+{
   Pcre reg("([^\\n]+\\n)");
   string str = "\nline1\nline2\nline3\n";
   size_t pos = 0;
@@ -291,8 +289,9 @@ void multisearch() {
       break;
   }
 }
-
-int main() {
+//--------------------------------------------------------------------------------------------------
+int main()
+{
   /*
    * the Pcre class throws errors via exceptions
    */
@@ -332,3 +331,4 @@ int main() {
   }
   exit(0);
 }
+//--------------------------------------------------------------------------------------------------
