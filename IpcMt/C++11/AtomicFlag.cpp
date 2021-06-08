@@ -1,30 +1,25 @@
 /**
- * \file  main.cpp
+ * \file  AtomicFlag.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <thread>
-#include <vector>
-#include <iostream>
-#include <atomic>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-std::atomic_flag lock = ATOMIC_FLAG_INIT;
+std::atomic_flag lock {ATOMIC_FLAG_INIT};
 //-------------------------------------------------------------------------------------------------
 void f(const int n)
 {
-    for (int cnt = 0; cnt < 3; ++cnt) {
+    for (int cnt = 0; cnt < 3; ++ cnt) {
         while (lock.test_and_set(std::memory_order_acquire)) {
-             ;
+            ;
         }
 
-        std::cout << "Output from thread " << TRACE_VAR(n) << std::endl;
-        std::cout << "----------" << std::endl;
+        std::cout << "Thread Output - " << TRACE_VAR(n) << std::endl;
 
         lock.clear(std::memory_order_release);
     }
@@ -42,13 +37,24 @@ int main(int, char **)
         t.join();
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-
+Thread Output - n: 0
+Thread Output - n: 0
+Thread Output - n: 2
+Thread Output - n: 1
+Thread Output - n: 0
+Thread Output - n: 1
+Thread Output - n: 2
+Thread Output - n: 1
+Thread Output - n: 2
+Thread Output - n: 3
+Thread Output - n: 3
+Thread Output - n: 3
 
 #endif
