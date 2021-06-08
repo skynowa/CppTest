@@ -1,8 +1,6 @@
 /**
- * \file  SSH2.cpp
+ * \file  Ssh2.cpp
  * \brief lib SSH2
- *
- * \todo
  *
  * http://www.staroceans.org/practice/libssh2.cpp
  */
@@ -12,8 +10,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 
-#include <cstdio>
-#include <string>
 #include "libssh2.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -27,16 +23,19 @@ using namespace std;
 class MySSH2
 {
 private:
-	int m_sock {};
+	int    m_sock {};
 	LIBSSH2_SESSION *m_session {};
 	LIBSSH2_CHANNEL *m_channel {};
-	char m_err[1025] {};
-	string m_strIp;
-	string m_strUser;
-	string m_strPasswd;
-	bool bInitialized {};
+	char   m_err[1025] {};
+	string m_strIp {};
+	string m_strUser {};
+	string m_strPasswd {};
+	bool   bInitialized {};
 
 public:
+	MySSH2(const MySSH2&) = delete;
+	MySSH2& operator=(const MySSH2&) = delete;
+
 	int waitsocket(int socket_fd, LIBSSH2_SESSION *session)
 	{
 	    struct timeval timeout;
@@ -73,6 +72,8 @@ public:
 		{
 			bInitialized = true;
 		}
+
+		return true;
 	}
 
 	bool init_socket()
@@ -290,6 +291,8 @@ public:
 			}
 		}
 		cout << "************error happens************** " << endl << m_err << endl;
+
+		return true;
 	}
 
 	~MySSH2()
@@ -353,13 +356,12 @@ waitsocket(int socket_fd, LIBSSH2_SESSION *session)
     return rc;
 }
 //-------------------------------------------------------------------------------------------------
-#include <cstdlib>
 #define NICK_KNOWN_HOST
 
 int test2(int argc, char** argv)
 {
 	const char *hostname = "192.168.1.169";
-	//const char *hostname = "127.0.0.1";
+	// const char *hostname = "127.0.0.1";
 	const char *commandline = "ls -asl";
 	const char *username    = "nick";
 	const char *password    = "xxxxx";
@@ -607,9 +609,10 @@ shutdown:
 
 }
 //-------------------------------------------------------------------------------------------------
-int main(int, char**)
+int main(int, char **)
 {
-	return test1();
-	// return test2(argc, argv);
+	return ::test1();
+
+	// return ::test2(argc, argv);
 }
 //-------------------------------------------------------------------------------------------------

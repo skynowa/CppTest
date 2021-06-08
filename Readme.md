@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ██░░░░░░░░ 22% (18)
+- [Libs](#libs) ███░░░░░░░ 28% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -664,7 +664,7 @@
 
     </details>
 
-##  <a id="libs">Libs ██░░░░░░░░ 22% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs ███░░░░░░░ 28% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -727,9 +727,9 @@
       </details>
 
   * <details close>
-    <summary>📁 ❌ Ssh2 0% (1)</summary>
+    <summary>📁 ✅ Ssh2 100% (1)</summary>
 
-    * <a href="/Libs/Ssh2/SSH2.cpp" title="lib SSH2">❌ SSH2.cpp</a>
+    * <a href="/Libs/Ssh2/Ssh2.cpp" title="lib SSH2">✅ `Ssh2.cpp`</a>
 
     </details>
 
