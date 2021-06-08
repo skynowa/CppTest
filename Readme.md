@@ -1162,5 +1162,5 @@
 ### Labels
 
   - ['\\todo', '[todo]'] - todo
-  - ['\\\\remark', '\\[remark\\]', '\\\\review', '\\[review\\]'] - review
+  - ['\\remark', '[remark]', '\\review', '[review]'] - review
 
