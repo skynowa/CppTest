@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ██░░░░░░░░ 15% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) █████████░ 🚩90% (160)
+- [Core](#core) █████████░ 🚩90% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) ░░░░░░░░░░ 2% (81)
+- [Stl](#stl) ░░░░░░░░░░ 4% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -74,7 +74,7 @@
 
     </details>
 
-##  <a id="core">Core █████████░ 🚩90% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🚩90% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -412,13 +412,12 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ String 100% (11)</summary>
+    <summary>📁 ✅ String 100% (10)</summary>
 
     * <a href="/Core/String/StringView.cpp" title="StringView + Enum">🖊 `StringView.cpp`</a>
     * <a href="/Core/String/CapacityFunction.cpp" title="">✅ `CapacityFunction.cpp`</a>
     * <a href="/Core/String/ManipulatingFunction.cpp" title="">✅ `ManipulatingFunction.cpp`</a>
     * <a href="/Core/String/InputFunction.cpp" title="">✅ `InputFunction.cpp`</a>
-    * <a href="/Core/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
     * <a href="/Core/String/OtherUsefulFunction.cpp" title="">✅ `OtherUsefulFunction.cpp`</a>
     * <a href="/Core/String/InitializationWays.cpp" title="">✅ `InitializationWays.cpp`</a>
     * <a href="/Core/String/IteratorFunction.cpp" title="">✅ `IteratorFunction.cpp`</a>
@@ -828,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl ░░░░░░░░░░ 2% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl ░░░░░░░░░░ 4% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -981,10 +980,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ String 0% (3)</summary>
+    <summary>📁 ⌛ String 33% (3)</summary>
 
     * <a href="/Stl/String/stringWithNull.cpp" title="">❌ stringWithNull.cpp</a>
-    * <a href="/Stl/String/reverse.cpp" title="">❌ reverse.cpp</a>
+    * <a href="/Stl/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
     * <a href="/Stl/String/CstrNull.cpp" title="c_str() of empty std::string">❌ CstrNull.cpp</a>
 
     </details>
