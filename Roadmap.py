@@ -49,6 +49,7 @@ class RoadmapGen:
 
 	lableTitle    = ''
 
+	# todos
 	iconToDo       = '❌'
 	iconRemark     = '🖊' # '🕵' '📝' '🏳' '⮕' '🤔' '❓'
 	iconFaq        = '📝'
@@ -57,6 +58,10 @@ class RoadmapGen:
 	iconDir        = '📁'
 	iconTocHot     = '🔥'
 	iconTocDone    = '🚩'
+
+	# labels
+	todoLabels     = [r'\\todo', r'\[todo\]']
+	remarkLabels   = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
 
 	################################################################################################
 	# ctr
@@ -112,10 +117,8 @@ class RoadmapGen:
 
 		##################################################
 		# isFileTodo
-		todoLabels = [r'\\todo', r'\[todo\]']
-
 		try:
-			for it_todoLabel in todoLabels:
+			for it_todoLabel in self.todoLabels:
 				match = re.search(it_todoLabel, fileContent, re.IGNORECASE)
 				if (match):
 					isFileTodo = True
@@ -125,10 +128,8 @@ class RoadmapGen:
 
 		##################################################
 		# isFileRemark
-		remarkLabels = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
-
 		try:
-			for it_remarkLabel in remarkLabels:
+			for it_remarkLabel in self.remarkLabels:
 				match = re.search(it_remarkLabel, fileContent, re.IGNORECASE)
 				if (match):
 					isFileRemark = True
@@ -334,14 +335,12 @@ class RoadmapGen:
 				self.iconTocDone,    'TOC - done / nearly done'))
 
 
-		todoLabels   = [r'\\todo', r'\[todo\]']
-		remarkLabels = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
 		self._writeLine(
 			'  - {} - {}\n'
 			'  - {} - {}\n'
 			.format(
-				todoLabels,   'todo',
-				remarkLabels, 'review'))
+				self.todoLabels,   'todo',
+				self.remarkLabels, 'review'))
 
 	################################################################################################
 	# root dir - process
