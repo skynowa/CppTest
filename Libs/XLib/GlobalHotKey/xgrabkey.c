@@ -1,21 +1,16 @@
 /**
- * \file
+ * \file  xgrabkey.c
  * \brief
  *
- * \todo
- */
-
-
-/**
  * Compile: gcc xgrabkey.c `pkg-config --cflags --libs x11`
  *
  * https://gist.github.com/jouyouyun/669726de58df8d333666
  */
 
-#include <cstdio>
-#include <iostream>
-#include <type_traits>
-#include <unistd.h>
+
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 #include <X11/Xlib.h>
 #include <xcb/xcb.h>
 //-------------------------------------------------------------------------------------------------
@@ -73,11 +68,10 @@ qxtX11ErrorHandler(
 
     exit(1);  // exit the application for all unhandled errors.
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
-int
-main ()
+int main(int, char **)
 {
     using x11_error_handler_t = std::add_pointer<int(Display *display, XErrorEvent *event)>::type;
     x11_error_handler_t _errorHandlerLast {};
@@ -131,6 +125,6 @@ main ()
 	XCloseDisplay(dpy);
 	std::cout << "XCloseDisplay" << std::endl;
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------

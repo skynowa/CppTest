@@ -10,7 +10,7 @@
 #include <StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-template <typename T >
+template<typename T >
 void
 bubbleSort(T &a)
 {
