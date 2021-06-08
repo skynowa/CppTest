@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  Bool.cpp
  * \brief
- *
- * \todo
  */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -21,7 +19,7 @@ int main(int, char **)
 		std::cout << "{" << it_m.first << "," << it_m.second << "}" << std::endl;
 	}
 
-	std::cout << "{Z," << m["Z"] << "}" << std::endl;
+	std::cout << "{Z," << m["Z"] << "} - default ctor" << std::endl;
 
     return 0;
 }
@@ -33,6 +31,6 @@ int main(int, char **)
 {A,1}
 {B,0}
 {C,1}
-{Z,0}
+{Z,0} - default ctor
 
 #endif

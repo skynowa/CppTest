@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) █░░░░░░░░░ 10% (81)
+- [Stl](#stl) █░░░░░░░░░ 11% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 10% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 11% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -931,10 +931,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Map 0% (12)</summary>
+    <summary>📁 ⌛ Map 8% (12)</summary>
 
     * <a href="/Stl/Map/MapReversePrint.cpp" title="">❌ MapReversePrint.cpp</a>
-    * <a href="/Stl/Map/Bool.cpp" title="">❌ Bool.cpp</a>
+    * <a href="/Stl/Map/Bool.cpp" title="">✅ `Bool.cpp`</a>
     * <a href="/Stl/Map/MapBasics.cpp" title="">❌ MapBasics.cpp</a>
     * <a href="/Stl/Map/OperatorAccess.cpp" title="">❌ OperatorAccess.cpp</a>
     * <a href="/Stl/Map/MapOperatorAccessElement.cpp" title="">❌ MapOperatorAccessElement.cpp</a>
