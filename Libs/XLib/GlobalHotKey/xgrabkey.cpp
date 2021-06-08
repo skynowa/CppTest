@@ -1,5 +1,5 @@
 /**
- * \file  xgrabkey.c
+ * \file  xgrabkey.cpp
  * \brief
  *
  * Compile: gcc xgrabkey.c `pkg-config --cflags --libs x11`

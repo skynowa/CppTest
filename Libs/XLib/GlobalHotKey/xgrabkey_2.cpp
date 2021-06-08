@@ -1,20 +1,17 @@
 /**
- * \file
+ * \file  xgrabkey_2.cpp
  * \brief
  *
- * \todo
- */
-
-
-/* Written by Nick Welch <mack@incise.org>, 2005.
+ * Written by Nick Welch <mack@incise.org>, 2005.
  *
  * http://incise.org/xlib-key-passing.html
  * https://stackoverflow.com/questions/36764217/ubuntu-hotkeys-with-x11-xlib-x-error-badaccess
  */
 
 
-#include <stdio.h>
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 #include <X11/Xlib.h>
 //-------------------------------------------------------------------------------------------------
 void swallow_keystroke(Display * dpy, XEvent * ev)
@@ -30,7 +27,7 @@ void passthru_keystroke(Display * dpy, XEvent * ev)
     XFlush(dpy); /* don't forget! */
 }
 //-------------------------------------------------------------------------------------------------
-int main(void)
+int main(int, char **)
 {
     Display * dpy = XOpenDisplay(nullptr);
     KeyCode F1;

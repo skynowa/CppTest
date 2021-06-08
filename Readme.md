@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ██░░░░░░░░ 17% (18)
+- [Libs](#libs) ██░░░░░░░░ 22% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -664,7 +664,7 @@
 
     </details>
 
-##  <a id="libs">Libs ██░░░░░░░░ 17% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs ██░░░░░░░░ 22% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -734,16 +734,16 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ XLib 50% (2)</summary>
+    <summary>📁 ✅ XLib 100% (2)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 ⌛ GlobalHotKey 50% (2)</summary>
+      <summary>📁 ✅ GlobalHotKey 100% (2)</summary>
 
-        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.c" title="">✅ `xgrabkey.c`</a>
-        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.c" title="">❌ xgrabkey_2.c</a>
+        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.cpp" title="">✅ `xgrabkey.cpp`</a>
+        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.cpp" title="">✅ `xgrabkey_2.cpp`</a>
 
       </details>
 

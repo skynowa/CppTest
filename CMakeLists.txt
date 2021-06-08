@@ -58,7 +58,9 @@ foreach(IT_SOURCE ${SOURCES})
 		endif()
 	endif()
 
-	if ("${IT_SOURCE}" MATCHES "Libs/Qt/")
+	if ("${IT_SOURCE}" MATCHES "Libs/Qt/" OR
+		"${IT_SOURCE}" MATCHES "Libs/XLib/"
+	)
 		message(STATUS "Skip: ${IT_SOURCE}" )
 		continue()
 	endif()
