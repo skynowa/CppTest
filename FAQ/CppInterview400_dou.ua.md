@@ -1,11 +1,4 @@
-/**
- * \file  CppInterview400. md
- * \brief
- *
- * \todo
- */
-
-# 400+ запитань для Junior, Middle, Senior
+# 400+ запитань для Junior, Middle, Senior (dou.ua) [todo]
 
 https://dou.ua/lenta/articles/interview-questions-c-developer/
 
