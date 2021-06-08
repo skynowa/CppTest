@@ -1,8 +1,7 @@
 # C++ Questions [todo]
 
-
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Question:       What does the const member function qualifier do?
 Choice 1
      It allows the invocation of a non-const member function for the object pointed to by this.
@@ -15,7 +14,7 @@ Choice 4
 Choice 5
      It allows changes to the state of the object pointed to by this.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
      class Value {
@@ -42,7 +41,7 @@ Choice 4
 Choice 5
      operator >
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
      extern void done(int, int) throw(const char*, RangeErr);
@@ -59,7 +58,7 @@ Choice 4
 Choice 5
      done guarantees that it only throws integer exceptions.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     class professor {};
@@ -83,7 +82,7 @@ Choice 4
 Choice 5
      ~myprofessor(),~professor(), ~teacher(),~researcher()
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     #include <iostream>
@@ -120,8 +119,8 @@ Choice 5
 void <<operator<<(std::ostream&, Airplane const&)
 as a stand alone, overloaded operator.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -158,7 +157,7 @@ Choice 4
 Choice 5
      std::generate(vs.begin(), 5, "hello");
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Scenario:
      You have a class whose internal representation is not exposed
 	 to the user and can change transparently.
@@ -174,8 +173,8 @@ Choice 4
 Choice 5
      Polymorphism
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Question:
 	Which one of the following is the correct way to declare a pointer to non-static member function
 	of class A that accepts an int reference and returns void?
@@ -190,8 +189,8 @@ Choice 4+
 Choice 5
      void (*A::f)(int&);
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Question:       Where do you initialize a non-static class member that is a reference?
 Choice 1
      Point of declaration and member initialization list
@@ -205,7 +204,7 @@ Choice 5
      Member initialization list only
 
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     template <typename T>
@@ -235,8 +234,8 @@ Choice 4
 Choice 5
      tVar is a variable of an unknown type.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -264,8 +263,8 @@ Choice 4
 Choice 5
      4
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -327,8 +326,8 @@ Choice 4
 Choice 5+
      B::Go B::Back B::Go B::Back B::Go
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     class A
@@ -361,8 +360,8 @@ Choice 4
 Choice 5
      The constructor declaration for A is illegal.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Statement
     C++ contains numerous algorithm functions that accept function objects as a parameter.
 
@@ -378,8 +377,8 @@ Choice 4
 Choice 5
      Actions
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     class Foo {
@@ -399,8 +398,8 @@ Choice 4
 Choice 5
      It prevents the constructor from being called from a non-explicit function.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Scenario:
 
     std::string s("Hello World");
@@ -422,7 +421,7 @@ Choice 5
 Answer: Choice 4
     source.cpp:7:23: error: invalid conversion from 'const char*' to 'char*' [-fpermissive]
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Scenario:
      You need to define the following function so that it will return true if the sets passed to it have any intersection
 	 and false otherwise.
@@ -442,7 +441,7 @@ Choice 4
 Choice 5
      std::search_n()
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     class mybase {};
@@ -461,7 +460,7 @@ Choice 4
 Choice 5
      The declaration of derived2 is invalid because either derived or mybase must be virtual.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     void f() throw(std::runtime_error) {
@@ -485,7 +484,7 @@ Choice 5
      std::logic_error
 
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Question:       With regard to enumeration types, which one of the following statements is true?
 Choice 1
      Only one identifier in an enum list can have the value zero.
@@ -498,7 +497,7 @@ Choice 4
 Choice 5
      An integer can implicitly be converted to an enumeration type.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     #include <string>
@@ -520,8 +519,8 @@ Choice 4
 Choice 5
      cin.getline(str);
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     class Z {
@@ -556,7 +555,7 @@ Choice 4
 Choice 5
      It tells the compiler to allocate storage for e in a separate section.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
      template<>
@@ -578,7 +577,7 @@ Choice 4
 Choice 5
      An empty template declaration
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Question:       What happens if a function throws an exception that is NOT listed in the function exception specification list?
 Choice 1
      The exception is passed up the handler chain.
@@ -591,8 +590,8 @@ Choice 4
 Choice 5
      abort() is immediately invoked.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -629,8 +628,8 @@ Choice 4
 Choice 5+
      5
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     template<typename T>
@@ -676,8 +675,8 @@ Choice 5+
         return ( typeof(T) == typeof(int) );
     };
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     class Base {
@@ -711,8 +710,8 @@ Choice 4
 Choice 5
      Derived class cannot have a virtual destructor.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Question:       The number of characters contained in a std::string object can be found using which one of the following functions?
 Choice 1+
      std::string::size
@@ -725,8 +724,8 @@ Choice 4
 Choice 5
      std::string::capacity
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     /*
@@ -752,25 +751,25 @@ Sample code:
             std::cout << "C";
         }
 
-        std::cout << "-DONE" << std::endl;
+        std::cout << "-[DONE]" << std::endl;
 
         return 0;
     }
 
 Question:  What is the output of the above program?
 Choice 1
-     A-ERROR-DONE
+     A-ERROR-[DONE]
 Choice 2
-     A-range_error-DONE
+     A-range_error-[DONE]
 Choice 3+
-     B-ERROR-DONE
+     B-ERROR-[DONE]
 Choice 4
-     B-range_error-DONE
+     B-range_error-[DONE]
 Choice 5
-     C-DONE
+     C-[DONE]
 
-//---------------------------------------------------------------------------
-// DONE:
+---------------------------------------------------------------------------------------------------
+// [DONE]:
 Question:       Given a variable str of type std::string, which one of the following statements outputs the string backwards?
 Choice 1
      std::copy(str.reverse(), std::unary_function(std::cout));
@@ -785,7 +784,7 @@ Choice 4
 Choice 5
      std::cout << str.reverse();
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     class X {
@@ -817,7 +816,7 @@ Choice 4
 Choice 5
      a = a = b + c;
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Scenario:
      A function throws an exception of type std::unexpected.
 
@@ -833,8 +832,8 @@ Choice 4
 Choice 5
      An exception is thrown in which the type is not in the function's exception specification.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Question:       In order to use std::cin and std::cout, which header file do you include in your code?
 Choice 1+
      <iostream>
@@ -847,8 +846,8 @@ Choice 4
 Choice 5
      <string.h>
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -890,8 +889,8 @@ Choice 4
 Choice 5
      Given the fact that the same function name f() is brought into scope multiple times, the code does not compile.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -929,7 +928,7 @@ Choice 4+
 Choice 5
      Nested namespaces are illegal.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 // N/A
 Sample code:
 
@@ -967,7 +966,7 @@ Choice 4
 Choice 5
      ciillf
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Sample code:
 
     template<class T>
@@ -995,8 +994,8 @@ Choice 4
 Choice 5
      friend template<class B> class A;
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -1022,8 +1021,8 @@ Choice 4
 Choice 5
      There is a syntax error in that the initializer list is empty.
 
-//---------------------------------------------------------------------------
-// DONE
+---------------------------------------------------------------------------------------------------
+// [DONE]
 Sample code:
 
     #include <iostream>
@@ -1053,4 +1052,4 @@ Choice 4
 Choice 5
      An exception of type std::failed_alloc can be thrown.
 
-//---------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
