@@ -315,6 +315,9 @@ class RoadmapGen:
 		self._writeLine('---')
 		self._writeLine('## FAQ')
 		self._writeLine('')
+
+		self._writeLine('### Icons')
+		self._writeLine('')
 		self._writeLine(
 			'  - {} - {}\n'
 			'  - {} - {}\n'
@@ -334,7 +337,8 @@ class RoadmapGen:
 				self.iconTocHot,     'TOC - hot',
 				self.iconTocDone,    'TOC - done / nearly done'))
 
-
+		self._writeLine('### Labels')
+		self._writeLine('')
 		self._writeLine(
 			'  - {} - {}\n'
 			'  - {} - {}\n'

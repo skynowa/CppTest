@@ -1148,6 +1148,8 @@
 ---
 ## FAQ
 
+### Icons
+
   - 📁 - Dir
   - 📝 - FAQ
   - ✅ - Done
@@ -1156,6 +1158,8 @@
   - ❌ - Todo
   - 🔥 - TOC - hot
   - 🚩 - TOC - done / nearly done
+
+### Labels
 
   - ['\\\\todo', '\\[todo\\]'] - todo
   - ['\\\\remark', '\\[remark\\]', '\\\\review', '\\[review\\]'] - review
