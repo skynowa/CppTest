@@ -414,7 +414,7 @@
   * <details close>
     <summary>📁 ✅ String 100% (10)</summary>
 
-    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">🖊 `StringView.cpp`</a>
+    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">✅ `StringView.cpp`</a>
     * <a href="/Core/String/CapacityFunction.cpp" title="">✅ `CapacityFunction.cpp`</a>
     * <a href="/Core/String/ManipulatingFunction.cpp" title="">✅ `ManipulatingFunction.cpp`</a>
     * <a href="/Core/String/InputFunction.cpp" title="">✅ `InputFunction.cpp`</a>

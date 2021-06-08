@@ -1,8 +1,6 @@
 /**
  * \file  StringView.cpp
  * \brief StringView + Enum
- *
- * \review
  */
 
 
@@ -15,17 +13,17 @@ class StringView
 public:
 	using const_iterator = const char *;
 
-	template <std::size_t N>
+	template<std::size_t N>
 	constexpr
 	StringView(const char(&a)[N]) noexcept :
-		_ptr (a),
-		_size(N - 1)
+		_ptr {a},
+		_size{N - 1}
 	{}
 
 	constexpr
 	StringView(const char *p, const std::size_t N) noexcept :
-		_ptr (p),
-		_size(N)
+		_ptr {p},
+		_size{N}
 	{}
 
 	constexpr const char *
@@ -47,7 +45,7 @@ public:
 	}
 
 	constexpr const_iterator
-	end()   const noexcept
+	end() const noexcept
 	{
 		return _ptr + _size;
 	}
@@ -130,17 +128,15 @@ StringView enumName()
 //-------------------------------------------------------------------------------------------------
 enum class Color : short
 {
-	Blue,
-	Yellow,
-	Red
+	Blue   = 0,
+	Yellow = 1,
+	Red    = 2
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	// std::cout << ">" << typeName<Color>() << "<"  << std::endl;
-	std::cout << ">" << enumName<Color, Color::Red>() << "<"  << std::endl;
-
-    // std::cout << TRACE_VAR("") << std::endl;
+	/// std::cout << ">" << ::typeName<Color>() << "<"  << std::endl;
+	std::cout << ">" << ::enumName<Color, Color::Red>() << "<"  << std::endl;
 
     return EXIT_SUCCESS;
 }
