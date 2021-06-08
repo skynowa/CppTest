@@ -747,7 +747,7 @@ This call would return the number of bytes read (or zero in case of encountering
 
 To know the cause of failure, check with errno variable or perror() function.
 
-```
+```c
 #include<unistd.h>
 
 ssize_t write(int fd, void *buf, size_t count)
