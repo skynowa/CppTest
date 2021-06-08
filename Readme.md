@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) █░░░░░░░░░ 11% (81)
+- [Stl](#stl) █░░░░░░░░░ 12% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 11% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 12% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -898,9 +898,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ IOStream 0% (1)</summary>
+    <summary>📁 ✅ IOStream 100% (1)</summary>
 
-    * <a href="/Stl/IOStream/OperatorOutput.cpp" title="">❌ OperatorOutput.cpp</a>
+    * <a href="/Stl/IOStream/OperatorOutput.cpp" title="">✅ `OperatorOutput.cpp`</a>
 
     </details>
 

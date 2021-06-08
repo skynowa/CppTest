@@ -1,14 +1,12 @@
 /**
- * \file
+ * \file  OperatorOutput.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class StdStream
 {
@@ -24,7 +22,10 @@ public:
 using ustring_t = std::basic_string<unsigned char>;
 
 inline std::ostream &
-operator << (std::ostream &a_os, const ::ustring_t &a_value)
+operator << (
+	std::ostream      &a_os,
+	const ::ustring_t &a_value
+)
 {
 	StdStream::format(a_os, a_value);
 
