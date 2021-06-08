@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  TemplateArgDeduction.cpp
  * \brief Template argument deduction for class templates
- *
- * \todo
  *
  * Automatic template argument deduction much like how it's done for functions,
  * but now including class constructors
@@ -24,8 +22,8 @@ struct Container
 		printType();
 	}
 
-	Container(T val) :
-		_val{val}
+	explicit Container(const T a_val) :
+		_val{a_val}
 	{
 		printType();
 	}
@@ -38,7 +36,7 @@ struct Container
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	Container c;		// Container<float>
+	Container c;		// Container<float> - default
 	Container c1{1};	// Container<int>
 	Container c2{1UL};	// Container<unsigned long>
 
