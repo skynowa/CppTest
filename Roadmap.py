@@ -342,8 +342,8 @@ class RoadmapGen:
 
 		_todoLabels = self.todoLabels
 
-		for x in _todoLabels:
-			x = x.replace("\\\\", "\\")
+		for i in range(len(_todoLabels)):
+			_todoLabels[i] = _todoLabels[i].replace("\\\\", "\\")
 
 		self._writeLine(
 			'  - {} - {}\n'
