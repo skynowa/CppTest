@@ -2,7 +2,7 @@
 
 - [Algos](#algos) ██░░░░░░░░ 15% (13)
 - [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) █████████░ 🚩91% (159)
+- [Core](#core) █████████░ 🚩92% (159)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
@@ -74,7 +74,7 @@
 
     </details>
 
-##  <a id="core">Core █████████░ 🚩91% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🚩92% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
@@ -128,7 +128,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 45% (22)</summary>
+    <summary>📁 ⌛ C++17 50% (22)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">❌ EnumListInitialization.cpp</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">❌ TemplateArgDeduction.cpp</a>
@@ -144,7 +144,7 @@
     * <a href="/Core/C++17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C++17/SelectionVarInitializer.cpp" title="Selection statements with initializer">✅ `SelectionVarInitializer.cpp`</a>
     * <a href="/Core/C++17/FoldExpressions.cpp" title="Fold expressions">❌ FoldExpressions.cpp</a>
-    * <a href="/Core/C++17/StructuredBindings.cpp" title="Structured bindings">❌ StructuredBindings.cpp</a>
+    * <a href="/Core/C++17/StructuredBindings.cpp" title="Structured bindings">✅ `StructuredBindings.cpp`</a>
 
     </details>
 

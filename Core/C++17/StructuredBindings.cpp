@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  StructuredBindings.cpp
  * \brief Structured bindings
- *
- * \todo
  *
  * A proposal for de-structuring initialization, that would allow writing auto [ x, y, z ] = expr;
  * where the type of expr was a tuple-like object, whose elements would be bound
@@ -14,7 +12,6 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 using Coordinate = std::pair<int, float>;
 
@@ -32,7 +29,7 @@ int main(int, char **)
 	}
 
 	{
-		std::map<int, char> m {{1, 'a'}, {2, 'b'}};
+		const std::map<int, char> m {{1, 'a'}, {2, 'b'}};
 
 		for (const auto &[key, value] : m) {
 			std::cout << TRACE_VAR2(key, value) << std::endl;
