@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  SelectionVarInitializer.cpp
  * \brief Selection statements with initializer
- *
- * \todo
  *
  * New versions of the if and switch statements which simplify common code patterns and help
  * users keep scopes tight.
@@ -12,21 +10,21 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 class Gadget
 {
 public:
-	int status()
+	int status() const
 	{
 		return 0;
 	}
 
-	void zip()
+	void zip() const
 	{
+		STD_TRACE_FUNC;
 	}
 
-	std::string message()
+	std::string message() const
 	{
 		return "[msg]";
 	}
@@ -36,13 +34,16 @@ int main(int, char **)
 {
 	// if
 	{
-		std::mutex  mx;
+		std::mutex       mx;
 		std::vector<int> v;
-		const int   val {10};
+		const int        val {10};
 
 		{
 			std::lock_guard<std::mutex> lk(mx);
-			if (v.empty()) v.push_back(val);
+
+			if (v.empty()) {
+				v.push_back(val);
+			}
 		}
 
 		// vs.
@@ -55,8 +56,7 @@ int main(int, char **)
 	{
 		Gadget gadget;
 
-
-		switch (auto s = gadget.status()) {
+		switch (const auto s = gadget.status()) {
 		case 1:
 			gadget.zip();
 			break;
@@ -66,7 +66,7 @@ int main(int, char **)
 		}
 
 		// vs.
-		switch (Gadget gadget; auto s = gadget.status()) {
+		switch (const Gadget gadget; const auto s = gadget.status()) {
 		case 1:
 			gadget.zip();
 			break;
@@ -76,8 +76,6 @@ int main(int, char **)
 		}
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
-
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
@@ -85,6 +83,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+s: 0
+s: 0
 
 #endif
