@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) ██░░░░░░░░ 15% (82)
+- [Stl](#stl) ██░░░░░░░░ 15% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl ██░░░░░░░░ 15% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl ██░░░░░░░░ 15% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -972,10 +972,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ SmartPtrs 33% (3)</summary>
+    <summary>📁 ⌛ SmartPtrs 50% (2)</summary>
 
     * <a href="/Stl/SmartPtrs/smart-pointers-in-cpp11.md" title="">✅ `📝 smart-pointers-in-cpp11.md`</a>
-    * <a href="/Stl/SmartPtrs/smart-pointers-in-cpp11.html" title="">❌ smart-pointers-in-cpp11.html</a>
     * <a href="/Stl/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
 
     </details>
