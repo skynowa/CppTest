@@ -1157,3 +1157,6 @@
   - 🔥 - TOC - hot
   - 🚩 - TOC - done / nearly done
 
+  - ['\\\\todo', '\\[todo\\]'] - todo
+  - ['\\\\remark', '\\[remark\\]', '\\\\review', '\\[review\\]'] - review
+

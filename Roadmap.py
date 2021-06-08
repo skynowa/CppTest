@@ -333,6 +333,16 @@ class RoadmapGen:
 				self.iconTocHot,     'TOC - hot',
 				self.iconTocDone,    'TOC - done / nearly done'))
 
+
+		todoLabels   = [r'\\todo', r'\[todo\]']
+		remarkLabels = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
+		self._writeLine(
+			'  - {} - {}\n'
+			'  - {} - {}\n'
+			.format(
+				todoLabels,   'todo',
+				remarkLabels, 'review'))
+
 	################################################################################################
 	# root dir - process
 	def run(self):
