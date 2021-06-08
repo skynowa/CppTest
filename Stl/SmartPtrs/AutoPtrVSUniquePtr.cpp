@@ -1,17 +1,34 @@
 /**
- * \file
+ * \file  AutoPtrVSUniquePtr.cpp
  * \brief
  *
  * \todo
+ *
+ * - The const std::auto_ptr Idiom
+ * - std::auto_ptr and Exception Safety
+ * - std::auto_ptr - can't be stored arrays
+ *
+ * - std::unique_ptr - can be stored in containers
+ * - std::unique_ptr - can be stored arrays
+ * - unique_ptr can handle arrays correctly (it will call delete[], while auto_ptr will attempt to call delete
+ * - Объект этого класса теряет права владения ресурсом при копировании (присваивании,
+ *   использовании в конструкторе копий, передаче в функцию по значению)
+ * - права владения ресурсов уходят в y_ptr и x_ptr начинает указывать на null pointer
+ *   (сделает элемент вектора невалидным)
+ * - В отличии от auto_ptr, unique_ptr запрещает копирование
+ *   Изменение прав владения ресурсом осуществляется с помощью вспомогательной функции std::move
+ * - The boost::shared_ptr template makes it easy to handle multiple pointers to the same object,
+ *   and the object is only deleted after the last reference to it went out of scope.
+ *
+ * http://archive.kalnitsky.org/2011/11/02/smart-pointers-in-cpp11/
+ * http://www.gotw.ca/publications/using_auto_ptr_effectively.htm
+ *
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <memory>
-#include <vector>
-
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -93,50 +110,21 @@ int main(int, char **)
 
 std::auto_ptr
 a.get(): {0, 0}
-b.get(): {0x55e445c75c30, 10}
+b.get(): {0x5648001d3280, 10}
 
 std::unique_ptr
 a.get(): {0, 0}
-b.get(): {0x55e445c75c30, 10}
+b.get(): {0x5648001d3280, 10}
 
-std::vector<std::auto_ptr<int> >
-vec[0].get(): {0x55c0e2d06c30, 10}
+std::vector< std::auto_ptr<int> >
+vec[0].get(): {0x5648001d3280, 10}
 vec[1].get(): {0, 0}
-vec[2].get(): {0x55c0e2d06c50, 12}
+vec[2].get(): {0x5648001d32a0, 12}
 
 std::vector< std::unique_ptr<int> >
-vec[0].get(): {0x5586b76d3c50, 10}
+vec[0].get(): {0x5648001d32a0, 10}
 vec[1].get(): {0, 0}
-vec[2].get(): {0x5586b76d3c30, 12}
+vec[2].get(): {0x5648001d3280, 12}
+
 
 #endif
-
-
-/**
- * FAQ
- *
- * - The const std::auto_ptr Idiom
- * - std::auto_ptr and Exception Safety
- * - std::auto_ptr - can't be stored arrays
- *
- * - std::unique_ptr - can be stored in containers
- * - std::unique_ptr - can be stored arrays
- * - unique_ptr can handle arrays correctly (it will call delete[], while auto_ptr will attempt to call delete
- * - Объект этого класса теряет права владения ресурсом при копировании (присваивании,
- *   использовании в конструкторе копий, передаче в функцию по значению)
- * - права владения ресурсов уходят в y_ptr и x_ptr начинает указывать на null pointer
- *   (сделает элемент вектора невалидным)
- * - В отличии от auto_ptr, unique_ptr запрещает копирование
- *   Изменение прав владения ресурсом осуществляется с помощью вспомогательной функции std::move
- * - The boost::shared_ptr template makes it easy to handle multiple pointers to the same object,
- *   and the object is only deleted after the last reference to it went out of scope.
- */
-
-
-/**
- * FAQ
- *
- * http://archive.kalnitsky.org/2011/11/02/smart-pointers-in-cpp11/
- * http://www.gotw.ca/publications/using_auto_ptr_effectively.htm
- *
- */
