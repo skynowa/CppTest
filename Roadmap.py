@@ -340,6 +340,8 @@ class RoadmapGen:
 		self._writeLine('### Labels')
 		self._writeLine('')
 
+		separator = ', '
+
 		_todoLabels = self.todoLabels
 		for i in range(len(_todoLabels)):
 			_todoLabels[i] = _todoLabels[i].replace("\\\\", "\\")
@@ -356,8 +358,8 @@ class RoadmapGen:
 			'  - {} - {}\n'
 			'  - {} - {}\n'
 			.format(
-				_todoLabels,   'Todo',
-				_remarkLabels, 'Review'))
+				separator.join(_todoLabels),   'Todo',
+				separator.join(_remarkLabels), 'Review'))
 
 	################################################################################################
 	# root dir - process

@@ -1160,6 +1160,6 @@
 
 ### Labels
 
-  - ['\\todo', '[todo]'] - Todo
-  - ['\\remark', '[remark]', '\\review', '[review]'] - Review
+  - \todo, [todo] - Todo
+  - \remark, [remark], \review, [review] - Review
 
