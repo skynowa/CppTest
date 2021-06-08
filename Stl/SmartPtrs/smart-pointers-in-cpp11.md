@@ -1,6 +1,6 @@
 # Введение в C++11: умные указатели [todo]
 
-kalnitsky's way, ProjectsAboutFeed, 02 ноя 2011
+[kalnitsky's way](http://archive.kalnitsky.org/), ProjectsAboutFeed, 02 ноя 2011
 
 Продолжу доброю традицию и расскажу сегодня об умных указателях, также известных как Smart Pointers. Умные указатели очень актуальны в мире C++ и новый стандарт не обошел их стороной.
 
