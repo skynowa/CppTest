@@ -1,13 +1,8 @@
 /**
- * \file
+ * \file  all_test.cpp
  * \brief
  *
- * \todo
- */
-
-
-/**
- * FAQ
+ * \review
  *
  * - select(2), kqueue(2), poll(2), epoll(4) и /dev/poll
  * - signals
@@ -39,7 +34,10 @@
  * https://youtu.be/08lbmD-wDfI
  */
 
-#include <iostream>
+
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 #include <event2/event.h>
 
 //-------------------------------------------------------------------------------------------------
@@ -176,7 +174,7 @@ baseLoop(
 	::event_free(watch_ev2);
 }
 //-------------------------------------------------------------------------------------------------
-int main(int argc, char const *argv[])
+int main(int, char **)
 {
 	evutil_socket_t watch_fd1 {};
 	evutil_socket_t watch_fd2 {};
@@ -248,7 +246,7 @@ int main(int argc, char const *argv[])
 	/// int event_base_update_cache_time(struct event_base *base);
 
 
-	::baseLoop(base, watch_fd1, watch_fd1);
+	::baseLoop(base, watch_fd1, watch_fd2);
 
 	::event_base_free(base);
 	::libevent_global_shutdown();

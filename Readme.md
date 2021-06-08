@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ██████░░░░ 🔥56% (18)
+- [Libs](#libs) ███████░░░ 🔥72% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -663,7 +663,7 @@
 
     </details>
 
-##  <a id="libs">Libs ██████░░░░ 🔥56% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs ███████░░░ 🔥72% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -686,12 +686,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ LibEvent 0% (4)</summary>
+    <summary>📁 ⌛ LibEvent 75% (4)</summary>
 
-    * <a href="/Libs/LibEvent/all_test.cpp" title="">❌ all_test.cpp</a>
-    * <a href="/Libs/LibEvent/time-test.c" title="">❌ time-test.c</a>
+    * <a href="/Libs/LibEvent/all_test.cpp" title="">🖊 `all_test.cpp`</a>
+    * <a href="/Libs/LibEvent/time-test.c" title="">🖊 `time-test.c`</a>
     * <a href="/Libs/LibEvent/FAQ.md" title="">❌ 📝 FAQ.md</a>
-    * <a href="/Libs/LibEvent/signal-test.c" title="">❌ signal-test.c</a>
+    * <a href="/Libs/LibEvent/signal-test.c" title="">🖊 `signal-test.c`</a>
 
     </details>
 

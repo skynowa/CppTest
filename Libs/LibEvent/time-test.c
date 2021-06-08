@@ -1,12 +1,9 @@
 /**
- * \file
+ * \file  time-test.c
  * \brief
  *
- * \todo
- */
-
-
-/*
+ * \review
+ *
  * XXX This sample code was once meant to show how to use the basic Libevent
  * interfaces, but it never worked on non-Unix platforms, and some of the
  * interfaces have changed since it was first written.  It should probably
@@ -15,6 +12,12 @@
  * Compile with:
  * cc -I/usr/local/include -o time-test time-test.c -L/usr/local/lib -levent
  */
+
+
+//--------------------------------------------------------------------------------------------------
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 #include <sys/types.h>
 
@@ -30,10 +33,6 @@
 #include <sys/time.h>
 #endif
 #include <fcntl.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
 
 #include <event2/event.h>
 #include <event2/event_struct.h>
@@ -42,11 +41,11 @@
 #ifdef _WIN32
 #include <winsock2.h>
 #endif
-
+//--------------------------------------------------------------------------------------------------
 struct timeval lasttime;
 
 int event_is_persistent;
-
+//--------------------------------------------------------------------------------------------------
 static void
 timeout_cb(evutil_socket_t fd, short event, void *arg)
 {
@@ -70,7 +69,7 @@ timeout_cb(evutil_socket_t fd, short event, void *arg)
 		event_add(timeout, &tv);
 	}
 }
-
+//--------------------------------------------------------------------------------------------------
 int
 main(int argc, char **argv)
 {
@@ -112,3 +111,4 @@ main(int argc, char **argv)
 
 	return (0);
 }
+//--------------------------------------------------------------------------------------------------

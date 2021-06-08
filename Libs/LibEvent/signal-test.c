@@ -1,16 +1,18 @@
 /**
- * \file
+ * \file  signal-test.c
  * \brief
  *
- * \todo
- */
-
-
-/*
+ * \review
+ *
  * Compile with:
  * cc -I/usr/local/include -o signal-test \
  *   signal-test.c -L/usr/local/lib -levent
  */
+
+
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 #include <sys/types.h>
 
@@ -27,15 +29,11 @@
 #endif
 #include <signal.h>
 #include <fcntl.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
 
 #include <event2/event.h>
-
+//--------------------------------------------------------------------------------------------------
 int called = 0;
-
+//--------------------------------------------------------------------------------------------------
 static void
 signal_cb(evutil_socket_t fd, short event, void *arg)
 {
@@ -48,7 +46,7 @@ signal_cb(evutil_socket_t fd, short event, void *arg)
 
 	called++;
 }
-
+//--------------------------------------------------------------------------------------------------
 int
 main(int argc, char **argv)
 {
@@ -77,3 +75,4 @@ main(int argc, char **argv)
 
 	return (0);
 }
+//--------------------------------------------------------------------------------------------------
