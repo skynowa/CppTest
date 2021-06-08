@@ -356,8 +356,8 @@ class RoadmapGen:
 			'  - {} - {}\n'
 			'  - {} - {}\n'
 			.format(
-				_todoLabels,   'todo',
-				_remarkLabels, 'review'))
+				_todoLabels,   'Todo',
+				_remarkLabels, 'Review'))
 
 	################################################################################################
 	# root dir - process
@@ -395,8 +395,6 @@ class RoadmapGen:
 
 			self._tocProcess(it_currentDirPath)
 		# for
-
-		self._writeLine('')
 
 		# Content
 		# self._writeLine('<div style="background-color:black">')

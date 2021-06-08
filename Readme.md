@@ -19,7 +19,6 @@
 - [Unix](#unix) ███░░░░░░░ 33% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
 
-
 ##  <a id="algos">Algos ██░░░░░░░░ 15% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
@@ -1161,6 +1160,6 @@
 
 ### Labels
 
-  - ['\\todo', '[todo]'] - todo
-  - ['\\remark', '[remark]', '\\review', '[review]'] - review
+  - ['\\todo', '[todo]'] - Todo
+  - ['\\remark', '[remark]', '\\review', '[review]'] - Review
 
