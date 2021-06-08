@@ -1,8 +1,6 @@
 /**
- * \file  main.cpp
+ * \file  ConstexprLambda.cpp
  * \brief constexpr lambda
- *
- * \todo
  *
  * Compile-time lambdas using constexpr.
  */
@@ -11,12 +9,11 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	{
-		auto identity = [](int n) constexpr
+		auto identity = [](int n) constexpr -> int
 		{
 			return n;
 		};
@@ -25,13 +22,14 @@ int main(int, char **)
 	}
 
 	{
-		constexpr auto add = [](int x, int y)
-		{
-			auto L = [=] { return x; };
-			auto R = [=] { return y; };
+		constexpr auto add =
+			[](int x, int y)
+			{
+				auto L = [=] { return x; };
+				auto R = [=] { return y; };
 
-			return [=] { return L() + R(); };
-		};
+				return [=] { return L() + R(); };
+			};
 
 		static_assert(add(1, 2)() == 3);
 	}
@@ -41,7 +39,11 @@ int main(int, char **)
 		{
 			constexpr int addOne(int n)
 			{
-				return [n] { return n + 1; }();
+				return
+					[n]
+					{
+						return n + 1;
+					}();
 			};
 		};
 
