@@ -1,44 +1,53 @@
 /**
- * \file
+ * \file  JoiningThreads.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-#include <thread>
-#include <algorithm>
-
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
-
+//-------------------------------------------------------------------------------------------------
 class WorkerThread
 {
 public:
-    void operator()()
+    void operator()() const
     {
-        std::cout<<"Worker Thread "<<std::this_thread::get_id()<<" is Executing \n"<<std::endl;
+        std::stringstream msg;
+        msg << "Thread ID: " << std::this_thread::get_id() << std::endl;
+
+        std::cout << msg.str();
     }
 };
-
-int main()
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
     std::vector<std::thread> threadList;
 
-    for(int i = 0; i < 10; i++)
-    {
+    for (int i = 0; i < 3; ++ i) {
         threadList.push_back( std::thread( WorkerThread() ) );
     }
 
-    // Now wait for all the worker thread to finish i.e.
+    std::cout << "Wait for all the worker thread to finish...\n" << std::endl;
+
     // Call join() function on each of the std::thread object
-    std::cout<<"wait for all the worker thread to finish"<<std::endl;
+    std::for_each(threadList.begin(), threadList.end(), std::mem_fn(&std::thread::join));
 
-    std::for_each(threadList.begin(),threadList.end(), std::mem_fn(&std::thread::join));
+    std::cout << "\nExiting from Main Thread" << std::endl;
 
-    std::cout<<"Exiting from Main Thread"<<std::endl;
-    return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Wait for all the worker thread to finish...
+
+Thread ID: 140484435232512
+Thread ID: 140484418447104
+Thread ID: 140484426839808
+
+Exiting from Main Thread
+
+#endif
