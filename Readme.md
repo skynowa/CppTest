@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) █░░░░░░░░░ 12% (81)
+- [Stl](#stl) █░░░░░░░░░ 14% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 12% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 14% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -891,9 +891,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Functional 0% (1)</summary>
+    <summary>📁 ✅ Functional 100% (1)</summary>
 
-    * <a href="/Stl/Functional/ref.cpp" title="">❌ ref.cpp</a>
+    * <a href="/Stl/Functional/ref.cpp" title="">✅ `ref.cpp`</a>
 
     </details>
 

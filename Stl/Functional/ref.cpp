@@ -1,38 +1,31 @@
 /**
- * \file
+ * \file  ref.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <string>
-#include <iostream>
-#include <assert.h>
-
-#include <iostream>
-#include <future>
-#include <chrono>
-
-//-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class Test
 {
 public:
 	static std::mutex outMutex;
 
-    Test(){}
+    Test() = default;
 
-    void out(const int no, const double &value) const;
+    void out(const int no, const double value) const;
     void test() const;
 };
 //-------------------------------------------------------------------------------------------------
 std::mutex Test::outMutex;
 //-------------------------------------------------------------------------------------------------
 void
-Test::out(const int no, const double &value) const
+Test::out(
+    const int    no,
+    const double value
+) const
 {
     {
         std::lock_guard<std::mutex> locker(outMutex);
@@ -46,7 +39,7 @@ Test::out(const int no, const double &value) const
 void
 Test::test() const
 {
-    double w[2] {10.0, 20.0};
+    const double w[2] {10.0, 20.0};
 
     std::cout << "-> " << 0 << " -- " << w[0] << std::endl;
 	std::cout << "-> " << 1 << " -- " << w[1] << std::endl;
@@ -60,22 +53,19 @@ Test::test() const
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    try {
-        Test t;
-        t.test();
-    }
-    catch (const std::exception &e) {
-        std::cout << "\nstd::exception: " << e.what() << std::endl;
-    }
-    catch (...) {
-        std::cout << "\nUnknown exception" << std::endl;
-    }
+    Test t;
+    t.test();
+
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-
+-> 0 -- 10
+-> 1 -- 20
+<- 0 -- 10
+<- 1 -- 20
 
 #endif
