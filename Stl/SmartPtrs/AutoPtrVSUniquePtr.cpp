@@ -62,7 +62,7 @@ int main(int, char **)
 		std::cout << std::endl;
 	}
 
-	// std::vector< std::auto_ptr<int> >
+	// std::vector<std::auto_ptr<int>>
 	{
 		std::cout << "std::vector< std::auto_ptr<int> >" << std::endl;
 
@@ -79,7 +79,7 @@ int main(int, char **)
 		std::cout << std::endl;
 	}
 
-	// std::vector< std::unique_ptr<int> >
+	// std::vector<std::unique_ptr<int>>
 	{
 		std::cout << "std::vector< std::unique_ptr<int> >" << std::endl;
 
@@ -101,7 +101,7 @@ int main(int, char **)
 		std::cout << std::endl;
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -125,6 +125,5 @@ std::vector< std::unique_ptr<int> >
 vec[0].get(): {0x5648001d32a0, 10}
 vec[1].get(): {0, 0}
 vec[2].get(): {0x5648001d3280, 12}
-
 
 #endif
