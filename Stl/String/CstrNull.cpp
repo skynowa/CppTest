@@ -1,37 +1,35 @@
 /**
  * \file  CstrNull.cpp
- * \brief c_str() of empty std::string
- *
- * \todo
+ * \brief c_str(), data(), ... of empty std::string
  */
 
 
-//---------------------------------------------------------------------------
-#include <unistd.h>
-#include <assert.h>
-#include <string>
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::string s;
+    const std::string str;
 
-    const char *p = NULL;
-    assert(NULL == p);
+    const char *ptr {};
+    assert(ptr == nullptr);
 
-    p = s.c_str();
-    assert(NULL != p);
+    ptr = str.c_str();
+    assert(ptr != nullptr);
 
-    // std::cout << "" << std::endl;
+    ptr = str.data();
+    assert(ptr != nullptr);
 
-    return 0;
+    ptr = &str[0];
+    assert(ptr != nullptr);
+
+    return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------
 
 #if OUTPUT
-// NOTE:
 
-$ ./CstrNull
     <no asserts>
 
 #endif

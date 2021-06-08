@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) ░░░░░░░░░░ 4% (81)
+- [Stl](#stl) █░░░░░░░░░ 6% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl ░░░░░░░░░░ 4% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 6% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -980,11 +980,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ String 33% (3)</summary>
+    <summary>📁 ✅ String 100% (3)</summary>
 
-    * <a href="/Stl/String/stringWithNull.cpp" title="">❌ stringWithNull.cpp</a>
+    * <a href="/Stl/String/stringWithNull.cpp" title="">✅ `stringWithNull.cpp`</a>
     * <a href="/Stl/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
-    * <a href="/Stl/String/CstrNull.cpp" title="c_str() of empty std::string">❌ CstrNull.cpp</a>
+    * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">✅ `CstrNull.cpp`</a>
 
     </details>
 
