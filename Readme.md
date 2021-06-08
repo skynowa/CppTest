@@ -1,6 +1,6 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
-- [Algos](#algos) ░░░░░░░░░░ 0% (13)
+- [Algos](#algos) █░░░░░░░░░ 8% (13)
 - [C](#c) ██████████ 🚩100% (8)
 - [Core](#core) █████████░ 🚩90% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
@@ -20,9 +20,9 @@
 - [Windows](#windows) ██████████ 🚩100% (37)
 
 
-##  <a id="algos">Algos ░░░░░░░░░░ 0% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="algos">Algos █░░░░░░░░░ 8% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Algos/InvertString.cpp" title="">❌ InvertString.cpp</a>
+* <a href="/Algos/InvertString.cpp" title="">✅ `InvertString.cpp`</a>
 * <a href="/Algos/BubbleSort.cpp" title="">❌ BubbleSort.cpp</a>
 
 </details>

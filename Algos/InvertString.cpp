@@ -1,8 +1,6 @@
 /**
  * \file  InvertString.cpp
  * \brief
- *
- * \todo
  */
 
 
@@ -12,19 +10,22 @@
 //-------------------------------------------------------------------------------------------------
 template <typename T >
 void
-invert_string(T &a)
+invertString(T &a)
 {
-	typename T::size_type length = a.size();
+	const std::size_t _size = a.size();
 
-	for (typename T::size_type i = 0; i < (length / 2); ++ i) {
-		std::swap(a[i], a[length - i - 1]);
+	for (typename T::size_type i = 0; i < (_size / 2); ++ i) {
+		const std::size_t index1 = i;
+		const std::size_t index2 = (_size - 1) - i;
+
+		std::swap(a[index1], a[index2]);
 	}
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::string str = "abcdefg";
-    ::invert_string(str);
+    std::string str = "54321";
+    ::invertString(str);
 
     std::cout << TRACE_VAR(str) << std::endl;
 
@@ -35,6 +36,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+str: gfedcba
 
 #endif
