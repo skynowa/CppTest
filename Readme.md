@@ -14,7 +14,7 @@
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
 - [SQL](#sql) ██████████ 🚩100% (2)
-- [Stl](#stl) █░░░░░░░░░ 6% (81)
+- [Stl](#stl) █░░░░░░░░░ 7% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
@@ -827,7 +827,7 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 6% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 7% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 
@@ -949,10 +949,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ MultiMap 0% (3)</summary>
+    <summary>📁 ⌛ MultiMap 33% (3)</summary>
 
     * <a href="/Stl/MultiMap/MultimapBasics.cpp" title="">❌ MultimapBasics.cpp</a>
-    * <a href="/Stl/MultiMap/MultimapCI.cpp" title="">❌ MultimapCI.cpp</a>
+    * <a href="/Stl/MultiMap/MultimapCI.cpp" title="">✅ `MultimapCI.cpp`</a>
     * <a href="/Stl/MultiMap/MultimapOperations.cpp" title="">❌ MultimapOperations.cpp</a>
 
     </details>

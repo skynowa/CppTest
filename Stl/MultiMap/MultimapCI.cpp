@@ -1,35 +1,34 @@
 /**
  * \file  MultimapCI.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //-------------------------------------------------------------------------------------------------
 struct CmpCI
 {
-	bool operator()(const string& key1,const string& key2) const
+	bool operator() (
+		const std::string &key1,
+		const std::string &key2
+	) const
 	{
-			return strcasecmp(key1.c_str(), key2.c_str()) > 0;
+		return ::strcasecmp(key1.c_str(), key2.c_str()) > 0;
 	}
 };
 
-using string_mmap_t = multimap<string, string, ::CmpCI>;
+using string_mmap_t = std::multimap<std::string, std::string, ::CmpCI>;
 //-------------------------------------------------------------------------------------------------
 int main()
 {
 	bool bRv {};
 
-	const string targetC = "C";
-	const string targetD = "D";
+	const std::string targetC = "C";
+	const std::string targetD = "D";
 
-	string_mmap_t values
+	const string_mmap_t values
 	{
 		{"a",     "0"},
 		{"b",     "1"},
@@ -37,11 +36,11 @@ int main()
 		{targetC, "2"}
 	};
 
-	for (auto &it : values) {
-		cout << it.first << " :: " << it.second << endl;
+	for (const auto &it : values) {
+		std::cout << it.first << " :: " << it.second << std::endl;
 	}
 
-	cout << " ******************************************************** " << endl;
+	std::cout << std::endl << std::endl;
 
 	// Total Elements in the range 'c'
 	{
@@ -51,7 +50,7 @@ int main()
 		std::cout << "Total values for key '" << targetC << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetC) != values.end());
-		cout << TRACE_VAR2(targetC, bRv) << endl << endl;
+		std::cout << TRACE_VAR2(targetC, bRv) << std::endl << std::endl;
 	}
 
 	// Total Elements in the range 'd'
@@ -62,11 +61,11 @@ int main()
 		std::cout << "Total values for key '" << targetD << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetD) != values.end());
-		cout << TRACE_VAR2(targetD, bRv) << endl << endl;
+		std::cout << TRACE_VAR2(targetD, bRv) << std::endl << std::endl;
 	}
 
-	for (auto &it : values) {
-		cout << it.first << " :: " << it.second << endl;
+	for (const auto &it : values) {
+		std::cout << it.first << " :: " << it.second << std::endl;
 	}
 
 	return 0;
@@ -76,6 +75,20 @@ int main()
 
 #if OUTPUT
 
+c :: 2
+C :: 2
+b :: 1
+a :: 0
+ ********************************************************
+Total values for key 'C' are : 2
+targetC: C, bRv: 1
 
+Total values for key 'D' are : 0
+targetD: D, bRv: 0
+
+c :: 2
+C :: 2
+b :: 1
+a :: 0
 
 #endif
