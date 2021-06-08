@@ -1,10 +1,4 @@
-/**
- * \file
- * \brief
- *
- * \todo
- */
-
+# IpcMethods
 
 - Pipe
 - FIFO
