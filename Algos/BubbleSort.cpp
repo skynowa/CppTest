@@ -2,7 +2,7 @@
  * \file  BubbleSort.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
@@ -12,26 +12,21 @@
 //-------------------------------------------------------------------------------------------------
 template <typename T >
 void
-bubble_sort(T &a)
+bubbleSort(T &a)
 {
-	for (typename T::size_type i = 0; a.size() && i < a.size() - 1; ++ i) {
-		for (typename T::size_type j = i; j + 1 > 0; -- j) {
-			if (a[j] > a[j+1])
-				std::swap(a[j], a[j+1]);
+    for (typename T::size_type i = 0; a.size() && i < a.size() - 1; ++ i) {
+        for (typename T::size_type j = i; j + 1 > 0; -- j) {
+            if (a[j] > a[j + 1]) {
+                std::swap(a[j], a[j + 1]);
+            }
 		}
 	}
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::vector<int> v;
-    v.push_back( 7 );
-    v.push_back( 1000 );
-    v.push_back( 134 );
-    v.push_back( 23 );
-    v.push_back( 1 );
-
-    ::bubble_sort( v );
+    std::vector<int> v {7, 1000, 134, 23, 1};
+    ::bubbleSort(v);
 
     std::cout << TRACE_VAR(v) << std::endl;
 
@@ -42,6 +37,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+v: std::vector (size=5): {1,7,23,134,1000}
 
 #endif

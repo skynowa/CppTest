@@ -1,5 +1,5 @@
 /**
- * \file  InvertString.cpp
+ * \file  ReverseString.cpp
  * \brief
  */
 
@@ -10,7 +10,7 @@
 //-------------------------------------------------------------------------------------------------
 template <typename T >
 void
-invertString(T &a)
+reverseString(T &a)
 {
 	const std::size_t _size = a.size();
 
@@ -25,7 +25,7 @@ invertString(T &a)
 int main(int, char **)
 {
     std::string str = "54321";
-    ::invertString(str);
+    ::reverseString(str);
 
     std::cout << TRACE_VAR(str) << std::endl;
 
