@@ -1,18 +1,17 @@
 /**
- * \file  main.cpp
+ * \file  Umask.cpp
  * \brief https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm
  *
- * \todo
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
+#include <Stl.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <stdio.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
@@ -21,17 +20,17 @@ int main(int, char **)
 
 	open( ... );
 
-	umask( old_mask );
+	umask old_mask);
 #endif
 
 	mode_t oldMask {};
 	mode_t newMask {};
 
 	// Get old mask, temporarily setting the mask to 0
-	oldMask = ::umask((mode_t) 0);
+	oldMask = ::umask( static_cast<mode_t>(0) );
 
 	// Print old mask. Octal values are used by mask
-	printf("Old mask = %o\n", (int) oldMask);
+	printf("Old mask = %o\n", static_cast<int>(oldMask));
 
 	// Make sure group read permission is allowed
 	if (oldMask & S_IRGRP) {
@@ -40,19 +39,20 @@ int main(int, char **)
 	}
 
 	// Make sure group write and execute permission is not allowed.
-	newMask = (oldMask|S_IWGRP|S_IXGRP);
+	newMask = (oldMask | S_IWGRP | S_IXGRP);
 
-	::umask(newMask);                            // Update mask
-	printf("New mask = %o\n\n", (int) newMask);    // Print new mask
+	// Update mask
+	::umask(newMask);
+
+	// Print new mask
+	printf("New mask = %o\n\n", (int) newMask);
 
 	printf("The file mode creation mask now specifies:\n\n");
 	printf("	Group read permission      UNMASKED\n");
 	printf("	Group write permission     MASKED\n");
 	printf("	Group execute permission   MASKED\n");
 
-	// std::cout << TRACE_VAR("") << std::endl;
-
-    return 0;
+    return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -64,9 +64,8 @@ New mask = 32
 
 The file mode creation mask now specifies:
 
-     Group read permission      UNMASKED
-     Group write permission     MASKED
-     Group execute permission   MASKED
-
+	Group read permission      UNMASKED
+	Group write permission     MASKED
+	Group execute permission   MASKED
 
 #endif

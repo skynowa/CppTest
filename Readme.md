@@ -16,7 +16,7 @@
 - [SQL](#sql) ██████████ 🚩100% (2)
 - [Stl](#stl) ░░░░░░░░░░ 2% (81)
 - [Templates](#templates) ███████░░░ 🔥69% (13)
-- [Unix](#unix) ███░░░░░░░ 33% (3)
+- [Unix](#unix) ██████████ 🚩100% (3)
 - [Windows](#windows) ██████████ 🚩100% (37)
 
 ##  <a id="algos">Algos ██░░░░░░░░ 15% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -1052,17 +1052,17 @@
 
     </details>
 
-##  <a id="unix">Unix ███░░░░░░░ 33% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="unix">Unix ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Unix/umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">❌ umask.cpp</a>
-* <a href="/Unix/Fork.cpp" title="process">❌ Fork.cpp</a>
+* <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
+* <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
 
 </details>
 
   * <details close>
     <summary>📁 ✅ Linux 100% (1)</summary>
 
-    * <a href="/Unix/Linux/inotify.cpp" title="inotify API">✅ `inotify.cpp`</a>
+    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">✅ `Inotify.cpp`</a>
 
     </details>
 

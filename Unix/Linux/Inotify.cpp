@@ -1,5 +1,5 @@
 /**
-* \file  inotify.cpp
+* \file  Inotify.cpp
 * \brief inotify API
 *
 * Usage: demo_inotify [pathname]
@@ -12,6 +12,7 @@
 */
 
 
+#include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
