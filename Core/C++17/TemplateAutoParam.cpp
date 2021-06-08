@@ -1,5 +1,5 @@
 /**
- * \file  main.cpp
+ * \file  TemplateAutoParam.cpp
  * \brief Declaring non-type template parameters with auto
  *
  * \todo
@@ -38,7 +38,7 @@ int main(int, char **)
 
 	// Type is deduced to be `int`.
 	{
-		auto seq = IntegerSequence<0, 1, 2, 7>();
+		auto seq = IntegerSequence<0, 1, 2, 7, 8>();
     	std::cout << TRACE_VAR(seq.size()) << std::endl;
 	}
 
