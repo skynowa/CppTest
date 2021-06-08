@@ -1,8 +1,6 @@
 /**
- * \file
+ * \file  main_MainDialog.cpp
  * \brief
- *
- * \todo
  */
 
 

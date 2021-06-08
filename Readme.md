@@ -7,7 +7,7 @@
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ░░░░░░░░░░ 0% (30)
-- [Libs](#libs) ███░░░░░░░ 28% (18)
+- [Libs](#libs) █████░░░░░ 🔥50% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
@@ -664,7 +664,7 @@
 
     </details>
 
-##  <a id="libs">Libs ███░░░░░░░ 28% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="libs">Libs █████░░░░░ 🔥50% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -711,18 +711,18 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Qt 0% (4)</summary>
+    <summary>📁 ✅ Qt 100% (4)</summary>
 
-    * <a href="/Libs/Qt/HttpUpload.cpp" title="">❌ HttpUpload.cpp</a>
+    * <a href="/Libs/Qt/HttpUpload.cpp" title="">✅ `HttpUpload.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ❌ QSharedMemory 0% (3)</summary>
+      <summary>📁 ✅ QSharedMemory 100% (3)</summary>
 
-        * <a href="/Libs/Qt/QSharedMemory/MainDialog.h" title="">❌ MainDialog.h</a>
-        * <a href="/Libs/Qt/QSharedMemory/main_MainDialog.cpp" title="">❌ main_MainDialog.cpp</a>
-        * <a href="/Libs/Qt/QSharedMemory/MainDialog.cpp" title="">❌ MainDialog.cpp</a>
+        * <a href="/Libs/Qt/QSharedMemory/MainDialog.h" title="">✅ `MainDialog.h`</a>
+        * <a href="/Libs/Qt/QSharedMemory/main_MainDialog.cpp" title="">✅ `main_MainDialog.cpp`</a>
+        * <a href="/Libs/Qt/QSharedMemory/MainDialog.cpp" title="">✅ `MainDialog.cpp`</a>
 
       </details>
 

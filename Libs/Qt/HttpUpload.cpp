@@ -1,11 +1,10 @@
 /**
- * \file
+ * \file  HttpUpload.cpp
  * \brief
- *
- * \todo
  */
 
 
+//--------------------------------------------------------------------------------------------------
 void MainWindow::on_pushButton_clicked()
 {
    /**
@@ -80,7 +79,7 @@ void MainWindow::on_pushButton_clicked()
 
     file.close();
 }
-
+//--------------------------------------------------------------------------------------------------
 void MainWindow::httpRequestFinished(int, bool)
 {
     QHttpResponseHeader responce = http->lastResponse();
@@ -90,3 +89,4 @@ void MainWindow::httpRequestFinished(int, bool)
         qDebug() << "data.cod.ru" << responce.value("Location");
     }
 }
+//--------------------------------------------------------------------------------------------------
