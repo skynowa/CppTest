@@ -1,5 +1,5 @@
  /*
- * \file  main.cpp
+ * \file  accumulate.cpp
  * \brief
  *
  * \todo
@@ -8,10 +8,7 @@
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <list>
-#include <numeric>
-#include <string>
-
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {

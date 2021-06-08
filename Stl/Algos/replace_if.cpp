@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  replace_if.cpp
  * \brief
  *
  * \todo
@@ -8,8 +8,7 @@
 
 #include <StdStream.h>
 #include <StdTest.h>
-#include <algorithm>
-#include <cctype>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 bool
 functor(const char a_it)
