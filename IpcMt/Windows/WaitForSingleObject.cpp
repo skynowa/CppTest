@@ -2,52 +2,57 @@
  * \file  WaitForSingleObject.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 //-------------------------------------------------------------------------------------------------
-#include <windows.h>
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-//-------------------------------------------------------------------------------------------------
-using namespace std;
-//-------------------------------------------------------------------------------------------------
-HANDLE hEvent;
-//-------------------------------------------------------------------------------------------------
-DWORD WINAPI SampleThread(LPVOID iValue)
-{
-	int iFinish = 10000;
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
-	for	(int i=0; i <= iFinish; i++) {
-		cout << i << endl;
+#include <windows.h>
+//-------------------------------------------------------------------------------------------------
+HANDLE hEvent {};
+//-------------------------------------------------------------------------------------------------
+DWORD WINAPI
+SampleThread(LPVOID iValue)
+{
+	const int iFinish = 10000;
+
+	for	(int i = 0; i <= iFinish; ++ i) {
+		std::cout << i << std::endl;
 	}
 
-	SetEvent(::hEvent);
+	::SetEvent(::hEvent);
 
 	return 0;
 }
 //-------------------------------------------------------------------------------------------------
-void main()
+int main(int, char **)
 {
-	HANDLE hThread;
-	DWORD  dwGenericThread;
-	hThread = CreateThread(NULL, 0, SampleThread, NULL, 0, &dwGenericThread);
-	if (hThread == NULL) {
-		DWORD dwError = GetLastError();
-		cout << "SCM:Error in Creating thread" << dwError << endl ;
-		return;
+	DWORD dwGenericThread {};
+	HANDLE hThread = ::CreateThread(nullptr, 0, SampleThread, nullptr, 0, &dwGenericThread);
+	if (hThread == nullptr) {
+		DWORD dwError = ::GetLastError();
+		std::cout << "SCM:Error in Creating thread: " << dwError << std::endl;
+		return EXIT_SUCCESS;
 	}
 
-	::hEvent = CreateEvent(NULL, FALSE, FALSE, "Test");
-	cout << "Started waiting for the thread to complete.." << endl ;
+	::hEvent = CreateEvent(nullptr, FALSE, FALSE, "Test");
+	std::cout << "Started waiting for the thread to complete.." << std::endl;
 
-	WaitForSingleObject(::hEvent, INFINITE);
-	cout << "Thread Completed." <<endl ;
+	::WaitForSingleObject(::hEvent, INFINITE);
+	std::cout << "Thread Completed." << std::endl;
 
-	CloseHandle(::hEvent);
+	::CloseHandle(::hEvent);
 
-	system("pause");
+    return EXIT_SUCCESS;
 }
-//-------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+
+
+#endif

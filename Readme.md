@@ -6,7 +6,7 @@
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
-- [IpcMt](#ipcmt) █░░░░░░░░░ 10% (30)
+- [IpcMt](#ipcmt) ██░░░░░░░░ 17% (30)
 - [Libs](#libs) ██████████ 🚩100% (18)
 - [Network](#network) ██████████ 🚩100% (3)
 - [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
@@ -573,7 +573,7 @@
 
     </details>
 
-##  <a id="ipcmt">IpcMt █░░░░░░░░░ 10% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="ipcmt">IpcMt ██░░░░░░░░ 17% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/IpcMethods.md" title="">❌ 📝 IpcMethods.md</a>
 * <a href="/IpcMt/condition_variable.cpp" title="">❌ condition_variable.cpp</a>
@@ -655,10 +655,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Windows 0% (2)</summary>
+    <summary>📁 ✅ Windows 100% (2)</summary>
 
-    * <a href="/IpcMt/Windows/WaitForSingleObject.cpp" title="">❌ WaitForSingleObject.cpp</a>
-    * <a href="/IpcMt/Windows/Event.cpp" title="">❌ Event.cpp</a>
+    * <a href="/IpcMt/Windows/WaitForSingleObject.cpp" title="">🖊 `WaitForSingleObject.cpp`</a>
+    * <a href="/IpcMt/Windows/Event.cpp" title="">🖊 `Event.cpp`</a>
 
     </details>
 

@@ -2,14 +2,15 @@
  * \file  Event.cpp
  * \brief
  *
- * \todo
+ * \review
  */
 
 
 //-------------------------------------------------------------------------------------------------
-#include <string>
-#include <iostream>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+
 #include <windows.h>
 #include <process.h>
 //-------------------------------------------------------------------------------------------------
@@ -125,15 +126,15 @@ int main(int, char **)
 
 	HANDLE handleA = (HANDLE)::_beginthreadex(nullptr, 0U, &threadA, nullptr, 0U, nullptr);
 	HANDLE handleB = (HANDLE)::_beginthreadex(nullptr, 0U, &threadB, nullptr, 0U, nullptr);
-    //HANDLE handleC = (HANDLE)::_beginthreadex(nullptr, 0U, &threadC, nullptr, 0U, nullptr);
+    // HANDLE handleC = (HANDLE)::_beginthreadex(nullptr, 0U, &threadC, nullptr, 0U, nullptr);
 
 	::WaitForSingleObject(handleA, INFINITE);
 	::WaitForSingleObject(handleB, INFINITE);
-    //::WaitForSingleObject(handleC, INFINITE);
+    // ::WaitForSingleObject(handleC, INFINITE);
 
 	::CloseHandle(handleA);
 	::CloseHandle(handleB);
-    //::CloseHandle(handleC);
+    // ::CloseHandle(handleC);
 
 	::CloseHandle(g_evEvent);
 
@@ -146,9 +147,7 @@ int main(int, char **)
 
 
 #if OUTPUT
-// NOTE:
 
 $ ./main
-
 
 #endif
