@@ -1,20 +1,20 @@
 /**
  * \file  AverageOfValuesInObjects.cpp
  * \brief
+ *
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //--------------------------------------------------------------------------------------------------
-template <typename T>
+template<typename T>
 T
 average(T *array, int length)
 {
-	T sum = 0;
+	T sum = 0; /* explicit */
 
 	for (int i = 0; i < length; i++) {
 		sum += array[i];
@@ -28,14 +28,15 @@ average(T *array, int length)
 class Cents
 {
 public:
-	Cents(int cents) :
-		_cents(cents)
+	/* explicit */ Cents(int a_cents) :
+		_cents(a_cents)
 	{
 	}
 
-	int cents()
+	int
+	cents() const
 	{
-		cout << _cents << endl;
+		std::cout << _cents << std::endl;
 
 		return _cents;
 	}
@@ -46,8 +47,8 @@ public:
 		return (c1._cents > c2._cents);
 	}
 
-	friend ostream &
-	operator << (ostream& out, const Cents& c1)
+	friend std::ostream &
+	operator << (std::ostream& out, const Cents& c1)
 	{
 		out << "Average of the Cents is = " << c1._cents << " cents";
 		return out;
@@ -75,7 +76,7 @@ int main()
 {
     Cents array[] { Cents(5), Cents(10), Cents(15), Cents(14) };
 
-    cout << ::average(array, 4) << endl;
+    std::cout << ::average(array, 4) << std::endl;
 
     return EXIT_SUCCESS;
 }

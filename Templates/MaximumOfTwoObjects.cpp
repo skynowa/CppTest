@@ -1,14 +1,14 @@
 /**
  * \file  MaximumOfTwoObjects.cpp
  * \brief
+ *
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //--------------------------------------------------------------------------------------------------
 template <typename T>
 const T &
@@ -47,7 +47,7 @@ int main()
 
 	Cents bigger = maximum(nickle, dime);
 
-	cout << TRACE_VAR(bigger.cents()) << endl;
+	std::cout << TRACE_VAR(bigger.cents()) << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -1,14 +1,14 @@
 /**
  * \file  MaximumOfTwoValues.cpp
  * \brief
+ *
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //--------------------------------------------------------------------------------------------------
 template <typename T>
 const T &
@@ -23,21 +23,21 @@ int main()
 		int i = 78;
 		int j = 89;
 
-		cout << "maximum(i, j) = " << maximum(i, j) << endl;
+		std::cout << "maximum(i, j) = " << maximum(i, j) << std::endl;
 	}
 
 	{
 		double a = 7.89;
 		double b = 3.56;
 
-		cout << "maximum(a, b) = " << maximum(a, b) << endl;
+		std::cout << "maximum(a, b) = " << maximum(a, b) << std::endl;
 	}
 
 	{
-		string s1 = "Hello";
-		string s2 = "World";
+		std::string s1 = "Hello";
+		std::string s2 = "World";
 
-		cout << "maximum(s1, s2) = " << maximum(s1, s2) << endl;
+		std::cout << "maximum(s1, s2) = " << maximum(s1, s2) << std::endl;
 	}
 
 	return EXIT_SUCCESS;

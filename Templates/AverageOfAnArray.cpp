@@ -1,14 +1,14 @@
 /**
  * \file  AverageOfAnArray.cpp
  * \brief
+ *
+ * \review
  */
 
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-
-using namespace std;
 //--------------------------------------------------------------------------------------------------
 template <typename T>
 T
@@ -25,13 +25,13 @@ average(const T *array, const int length)
 	return sum;
 }
 //--------------------------------------------------------------------------------------------------
-int main()
+int main(int, char **)
 {
 	const int array1[] { 5, 3, 2, 1, 4 };
-	cout << "Average of array1 = " << ::average(array1, 5) << endl;
+	std::cout << "Average of array1 = " << ::average(array1, 5) << std::endl;
 
 	const double array2[] { 3.12, 3.45, 9.23, 6.34 };
-    cout << "Average of array2 = " << ::average(array2, 4) << endl;
+    std::cout << "Average of array2 = " << ::average(array2, 4) << std::endl;
 
     return EXIT_SUCCESS;
 }
