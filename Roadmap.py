@@ -339,11 +339,17 @@ class RoadmapGen:
 
 		self._writeLine('### Labels')
 		self._writeLine('')
+
+		_todoLabels = self.todoLabels
+
+		for x in _todoLabels:
+			x.replace("\\\\", "\\")
+
 		self._writeLine(
 			'  - {} - {}\n'
 			'  - {} - {}\n'
 			.format(
-				self.todoLabels,   'todo',
+				_todoLabels,   'todo',
 				self.remarkLabels, 'review'))
 
 	################################################################################################
