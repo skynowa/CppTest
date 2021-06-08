@@ -128,7 +128,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 64% (22)</summary>
+    <summary>📁 ⌛ C++17 68% (22)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">❌ EnumListInitialization.cpp</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
@@ -139,7 +139,7 @@
     * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
     * <a href="/Core/C++17/NestedNamespaces.cpp" title="Nested namespaces">✅ `NestedNamespaces.cpp`</a>
     * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">✅ `StructuredBindingsRef.cpp`</a>
-    * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">❌ ConstexprIf.cpp</a>
+    * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">✅ `ConstexprIf.cpp`</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">✅ `BracedInitList.cpp`</a>
     * <a href="/Core/C++17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C++17/SelectionVarInitializer.cpp" title="Selection statements with initializer">✅ `SelectionVarInitializer.cpp`</a>
