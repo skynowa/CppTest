@@ -974,8 +974,8 @@
   * <details close>
     <summary>📁 ❌ SmartPtrs 0% (2)</summary>
 
-    * <a href="/Stl/SmartPtrs/smart-pointers-in-cpp11.md" title="">❌ 📝 smart-pointers-in-cpp11.md</a>
     * <a href="/Stl/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
+    * <a href="/Stl/SmartPtrs/SmartPointersInCpp11.md" title="">❌ 📝 SmartPointersInCpp11.md</a>
 
     </details>
 
