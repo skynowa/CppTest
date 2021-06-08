@@ -65,7 +65,8 @@ Following is a program to know the PID and PPID of the calling process.
 #include <sys/types.h>
 #include <unistd.h>
 
-int main() {
+int main()
+{
    int mypid, myppid;
    printf("Program to know PID and PPID's information\n");
    mypid = getpid();
