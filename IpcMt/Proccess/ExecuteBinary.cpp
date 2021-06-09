@@ -1,24 +1,20 @@
 /**
- * \file  main.cpp
+ * \file  ExecuteBinary.cpp
  * \brief
  *
- * \todo
+ * \review
  *
  * https://www.oreilly.com/library/view/secure-programming-cookbook/0596003943/ch01s07.html
  */
+
 
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
 
-#include <stdio.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <unistd.h>
 #include <sys/wait.h>
 //-------------------------------------------------------------------------------------------------
-struct SPC_PIPE
+struct SpcPipe
 {
 	FILE  *fdRead {};
 	FILE  *fdWrite {};
@@ -68,14 +64,14 @@ spc_fork()
 }
 //-------------------------------------------------------------------------------------------------
 /**
- * If spc_popen( ) is successful, the SPC_PIPE object it returns contains two FILE objects:
+ * If spc_popen( ) is successful, the SpcPipe object it returns contains two FILE objects:
  * fdRead can be used to read data written by the new program to its stdout file descriptor.
  * fdWrite can be used to write data to the new program for reading from its stdin file descriptor.
  * Unlike popen( ), which in its most portable form is unidirectional, spc_popen( ) is bidirectional
  */
 bool
 spc_popen(
-	SPC_PIPE   &out_p,	///< [in,out]
+	SpcPipe   &out_p,	///< [in,out]
 	const char *path,
 	char *const argv[],
 	char *const envp[]
@@ -137,7 +133,7 @@ spc_popen(
 //-------------------------------------------------------------------------------------------------
 int
 spc_pclose(
-	SPC_PIPE &out_p
+	SpcPipe &out_p
 )
 {
 	int   status {};
@@ -170,7 +166,7 @@ int main(int, char *const argv[], char *const envp[])
 	bool bRv {};
 	int  iRv {};
 
-	SPC_PIPE p;
+	SpcPipe p;
 
 	const std::string path = "/usr/bin/git";
 
