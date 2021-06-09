@@ -1,11 +1,12 @@
 /**
- * \file  main.cpp
+ * \file  GetStdInOutError.cpp
  * \brief Catch stderr and stdout from external program
  *
- * \todo
+ * \review
  *
  * http://www.cplusplus.com/forum/unices/82836/
  */
+
 
 #include <StdStream.h>
 #include <StdTest.h>
