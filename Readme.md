@@ -162,6 +162,12 @@
       </details>
 
   * <details close>
+    <summary>📁  C++20 0.0% (0)</summary>
+
+
+    </details>
+
+  * <details close>
     <summary>📁 ✅ Cast 100% (3)</summary>
 
     * <a href="/Core/Cast/BoolCast.cpp" title="">✅ `BoolCast.cpp`</a>
@@ -870,6 +876,12 @@
     * <a href="/Stl/C++17/Optional.cpp" title="std::optional">❌ Optional.cpp</a>
     * <a href="/Stl/C++17/Apply.cpp" title="std::apply">❌ Apply.cpp</a>
     * <a href="/Stl/C++17/Byte.cpp" title="std::byte">❌ Byte.cpp</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁  C++20 0.0% (0)</summary>
+
 
     </details>
 
