@@ -13,7 +13,7 @@
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) ██████████ 🚩100% (2)
+- [SQL](#sql) ██████████ 🚩100% (8)
 - [Stl](#stl) █░░░░░░░░░ 14% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
@@ -693,10 +693,10 @@
   * <details close>
     <summary>📁 ✅ LibEvent 100% (4)</summary>
 
+    * <a href="/Libs/LibEvent/time-test.cpp" title="">🖊 `time-test.cpp`</a>
     * <a href="/Libs/LibEvent/all_test.cpp" title="">🖊 `all_test.cpp`</a>
-    * <a href="/Libs/LibEvent/time-test.c" title="">🖊 `time-test.c`</a>
+    * <a href="/Libs/LibEvent/signal-test.cpp" title="">🖊 `signal-test.cpp`</a>
     * <a href="/Libs/LibEvent/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
-    * <a href="/Libs/LibEvent/signal-test.c" title="">🖊 `signal-test.c`</a>
 
     </details>
 
@@ -826,9 +826,15 @@
 
 </details>
 
-##  <a id="sql">SQL ██████████ 🚩100% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 🚩100% (8)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
+* <a href="/SQL/InnerJoin.sql" title="INNER JOIN">✅ `InnerJoin.sql`</a>
+* <a href="/SQL/FullJoin.sql" title="FULL OUTER JOIN">✅ `FullJoin.sql`</a>
+* <a href="/SQL/RightJoin.sql" title="RIGHT JOIN">✅ `RightJoin.sql`</a>
+* <a href="/SQL/SelfJoin.sql" title="Self Join">✅ `SelfJoin.sql`</a>
 * <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/SQL/Union.sql" title="UNION">✅ `Union.sql`</a>
 * <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
 
 </details>
