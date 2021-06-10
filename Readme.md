@@ -834,7 +834,7 @@
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/RightJoin.sql" title="RIGHT JOIN">✅ `RightJoin.sql`</a>
 * <a href="/SQL/SelfJoin.sql" title="Self Join">✅ `SelfJoin.sql`</a>
-* <a href="/SQL/LastNRecords.sql" title="">✅ `LastNRecords.sql`</a>
+* <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/Union.sql" title="UNION">✅ `Union.sql`</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 

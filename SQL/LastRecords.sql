@@ -1,5 +1,5 @@
 /**
- * \file  LastNRecords.sql
+ * \file  LastRecords.sql
  * \brief
  */
 
