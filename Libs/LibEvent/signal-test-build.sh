@@ -1,1 +1,1 @@
-cc -I/usr/local/include -o signal-test signal-test.c -L/usr/local/lib -levent
+cc -I/usr/local/include -o signal-test signal-test.cpp -L/usr/local/lib -levent

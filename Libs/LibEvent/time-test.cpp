@@ -1,5 +1,5 @@
 /**
- * \file  time-test.c
+ * \file  time-test.cpp
  * \brief
  *
  * \review
@@ -49,8 +49,11 @@ int event_is_persistent;
 static void
 timeout_cb(evutil_socket_t fd, short event, void *arg)
 {
+	(void)fd;
+	(void)event;
+
 	struct timeval newtime, difference;
-	struct event *timeout = arg;
+	struct event *timeout = static_cast<struct event *>(arg);
 	double elapsed;
 
 	evutil_gettimeofday(&newtime, NULL);

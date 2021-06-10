@@ -1,5 +1,5 @@
 /**
- * \file  signal-test.c
+ * \file  signal-test.cpp
  * \brief
  *
  * \review
@@ -37,7 +37,10 @@ int called = 0;
 static void
 signal_cb(evutil_socket_t fd, short event, void *arg)
 {
-	struct event *signal = arg;
+	(void)fd;
+	(void)event;
+
+	struct event *signal = static_cast<struct event *>(arg);
 
 	printf("signal_cb: got signal %d\n", event_get_signal(signal));
 
@@ -48,10 +51,11 @@ signal_cb(evutil_socket_t fd, short event, void *arg)
 }
 //--------------------------------------------------------------------------------------------------
 int
-main(int argc, char **argv)
+main(int, char **)
 {
 	struct event *signal_int;
 	struct event_base* base;
+
 #ifdef _WIN32
 	WORD wVersionRequested;
 	WSADATA wsaData;
@@ -73,6 +77,6 @@ main(int argc, char **argv)
 	event_free(signal_int);
 	event_base_free(base);
 
-	return (0);
+	return 0;
 }
 //--------------------------------------------------------------------------------------------------
