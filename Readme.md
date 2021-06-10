@@ -13,7 +13,7 @@
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
-- [SQL](#sql) ██████████ 🚩100% (8)
+- [SQL](#sql) ██████████ 🚩100% (9)
 - [Stl](#stl) █░░░░░░░░░ 14% (81)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (3)
@@ -826,16 +826,17 @@
 
 </details>
 
-##  <a id="sql">SQL ██████████ 🚩100% (8)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
 * <a href="/SQL/InnerJoin.sql" title="INNER JOIN">✅ `InnerJoin.sql`</a>
 * <a href="/SQL/FullJoin.sql" title="FULL OUTER JOIN">✅ `FullJoin.sql`</a>
+* <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/RightJoin.sql" title="RIGHT JOIN">✅ `RightJoin.sql`</a>
 * <a href="/SQL/SelfJoin.sql" title="Self Join">✅ `SelfJoin.sql`</a>
-* <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/SQL/LastNRecords.sql" title="">✅ `LastNRecords.sql`</a>
 * <a href="/SQL/Union.sql" title="UNION">✅ `Union.sql`</a>
-* <a href="/SQL/test.sql" title="SQL queries">✅ `test.sql`</a>
+* <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 
 </details>
 
