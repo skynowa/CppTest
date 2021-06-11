@@ -1,6 +1,6 @@
 /**
  * \file  SelfJoin.sql
- * \brief Self Join
+ * \brief Self JOIN
  *
  * A self join is a regular join, but the table is joined with itself.
  */
