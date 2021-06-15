@@ -1,22 +1,23 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
 - [Algos](#algos) ██░░░░░░░░ 15% (13)
-- [C](#c) ██████████ 🚩100% (8)
-- [Core](#core) ██████████ 🚩97% (159)
+- [C](#c) ██████████ 🚩100% (9)
+- [Core](#core) ██████████ 🚩96% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Idioms](#idioms) ██████████ 🚩100% (33)
 - [IpcMt](#ipcmt) ███░░░░░░░ 30% (30)
 - [Libs](#libs) ██████████ 🚩100% (18)
-- [Network](#network) ██████████ 🚩100% (3)
-- [OOD](#ood) ░░░░░░░░░░ 0.0% (0)
+- [Network](#network) ██████████ 🚩100% (4)
+- [OOD](#ood) ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
-- [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0.0% (0)
-- [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0.0% (0)
+- [Practice](#practice) ░░░░░░░░░░ 0% (1)
+- [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0% (1)
+- [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0% (1)
 - [SQL](#sql) ██████████ 🚩100% (13)
-- [Stl](#stl) █░░░░░░░░░ 14% (81)
+- [Stl](#stl) █░░░░░░░░░ 13% (82)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
-- [Unix](#unix) ██████████ 🚩100% (3)
+- [Unix](#unix) ██████████ 🚩100% (4)
 - [Windows](#windows) ██████████ 🚩100% (37)
 
 ##  <a id="algos">Algos ██░░░░░░░░ 15% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -55,10 +56,11 @@
 
     </details>
 
-##  <a id="c">C ██████████ 🚩100% (8)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
+* <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/C/Time.cpp" title="">✅ `Time.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
@@ -74,11 +76,12 @@
 
     </details>
 
-##  <a id="core">Core ██████████ 🚩97% (159)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██████████ 🚩96% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
+* <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -751,16 +754,18 @@
 
       </details>
 
-##  <a id="network">Network ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
 * <a href="/Network/IpString.cpp" title="">✅ `IpString.cpp`</a>
+* <a href="/Network/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a id="ood">OOD ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="ood">OOD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/OOD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -816,13 +821,21 @@
 
     </details>
 
-##  <a id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Practice/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/PreproccessCompile/FAQ.md" title="">❌ 📝 FAQ.md</a>
+
+</details>
+
+##  <a id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/SCM_CICD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -844,9 +857,10 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 14% (81)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
+* <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -1074,10 +1088,11 @@
 
     </details>
 
-##  <a id="unix">Unix ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
+* <a href="/Unix/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 

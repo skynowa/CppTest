@@ -1,5 +1,9 @@
 # FAQ [todo]
 
+## Links
+
+- [400+ запитань для Junior, Middle, Senior (dou.ua)](https://dou.ua/lenta/articles/interview-questions-c-developer/)
+
 -------------------------------------------------------------------------------------------------
 OOP -
 
