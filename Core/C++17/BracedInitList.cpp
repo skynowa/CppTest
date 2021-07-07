@@ -36,6 +36,42 @@ int main(int, char **)
 		std::cout << TRACE_VAR(x4) << std::endl;
 	}
 
+	{
+		std::cout << std::endl;
+
+		struct SourceInfoData
+		{
+			std::string filePath;
+			std::size_t lineNum;
+			std::string funcName;
+			std::size_t counter;
+
+			// expression
+			std::string exprVar1;
+			int         exprValue1 {-1};
+			std::string exprVar2;
+			int         exprValue2 {-2};
+			std::string exprOp {"="};
+
+			void print()
+			{
+				std::cout << TRACE_VAR4(filePath, lineNum, funcName, counter) << std::endl;
+				std::cout << TRACE_VAR5(exprVar1, exprValue1, exprVar2, exprValue2, exprOp) << std::endl;
+				std::cout << std::endl;
+			}
+		};
+
+		{
+			SourceInfoData data {"file1", 111, "func1", 111000};
+			data.print();
+		}
+
+		{
+			SourceInfoData data = {"file1", 111, "func1", 111000};
+			data.print();
+		}
+	}
+
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
@@ -46,5 +82,12 @@ int main(int, char **)
 x2.size(): 3
 x3: 3
 x4: 3
+
+filePath: file1, lineNum: 111, funcName: func1, counter: 111000
+exprVar1: , exprValue1: -1, exprVar2: , exprValue2: -2, exprOp: =
+
+filePath: file1, lineNum: 111, funcName: func1, counter: 111000
+exprVar1: , exprValue1: -1, exprVar2: , exprValue2: -2, exprOp: =
+
 
 #endif
