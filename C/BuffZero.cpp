@@ -16,18 +16,18 @@ int main(int, char **)
         char szBuff[cuiBuffSize] {};
 
         for (size_t i = 0; i < cuiBuffSize; ++ i) {
-            std::cout << "["<< szBuff[0] << "]" << std::endl;
+            std::cout << ">"<< szBuff[0] << "<" << std::endl;
         }
 
         std::cout << std::endl;
 
     #if OUTPUT
 
-        [ ]
-        [ ]
-        [ ]
-        [ ]
-        [ ]
+        ><
+        ><
+        ><
+        ><
+        ><
 
     #endif
     }
@@ -36,18 +36,18 @@ int main(int, char **)
         char *pszBuff = new char[cuiBuffSize];
 
         for (size_t i = 0; i < cuiBuffSize; ++ i) {
-            std::cout << "["<< pszBuff[0] << "]" << std::endl;
+            std::cout << ">"<< pszBuff[0] << "<" << std::endl;
         }
 
         std::cout << std::endl;
 
     #if OUTPUT
 
-        [═]
-        [═]
-        [═]
-        [═]
-        [═]
+        ><
+        ><
+        ><
+        ><
+        ><
 
     #endif
     }
@@ -56,18 +56,18 @@ int main(int, char **)
         char *pszBuff = new char[cuiBuffSize]{};
 
         for (size_t i = 0; i < cuiBuffSize; ++ i) {
-            std::cout << "["<< pszBuff[0] << "]" << std::endl;
+            std::cout << ">"<< pszBuff[0] << "<" << std::endl;
         }
 
         std::cout << std::endl;
 
     #if OUTPUT
 
-        [ ]
-        [ ]
-        [ ]
-        [ ]
-        [ ]
+        ><
+        ><
+        ><
+        ><
+        ><
 
     #endif
     }
