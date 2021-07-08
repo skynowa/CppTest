@@ -1,7 +1,7 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
 - [Algos](#algos) █░░░░░░░░░ 14% (14)
-- [C](#c) ██████████ 🚩100% (9)
+- [C](#c) █████████░ 🔥89% (9)
 - [Core](#core) ██████████ 🚩96% (160)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
@@ -58,14 +58,14 @@
 
     </details>
 
-##  <a id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="c">C █████████░ 🔥89% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/Time.cpp" title="">✅ `Time.cpp`</a>
 * <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
-* <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
+* <a href="/C/BuffZero.cpp" title="">❌ BuffZero.cpp</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 
 </details>
@@ -1204,6 +1204,6 @@
 
 ### Labels
 
-  - \todo, [todo] - Todo
+  - \todo, [todo], [ ] - Todo
   - \remark, [remark], \review, [review] - Review
 

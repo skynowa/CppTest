@@ -60,7 +60,7 @@ class RoadmapGen:
 	iconTocDone    = '🚩'
 
 	# labels
-	todoLabels     = [r'\\todo', r'\[todo\]']
+	todoLabels     = [r'\\todo', r'\[todo\]', r'\[ \]']
 	remarkLabels   = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]']
 
 	################################################################################################
