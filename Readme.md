@@ -15,7 +15,7 @@
 - [Practice](#practice) ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0% (1)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0% (1)
-- [SQL](#sql) ██████████ 🚩100% (13)
+- [SQL](#sql) ██████████ 🚩100% (14)
 - [Stl](#stl) █░░░░░░░░░ 13% (82)
 - [Templates](#templates) ██████░░░░ 🔥62% (13)
 - [Unix](#unix) ██████████ 🚩100% (4)
@@ -846,7 +846,7 @@
 
 </details>
 
-##  <a id="sql">SQL ██████████ 🚩100% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="sql">SQL ██████████ 🚩100% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/InnerJoin.sql" title="INNER JOIN">✅ `InnerJoin.sql`</a>
@@ -857,6 +857,7 @@
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
+* <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
 * <a href="/SQL/SelfJoin.sql" title="Self JOIN">✅ `SelfJoin.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
