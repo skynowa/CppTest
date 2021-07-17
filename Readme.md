@@ -2,7 +2,7 @@
 
 - [Algos](#algos) █░░░░░░░░░ 14% (14)
 - [C](#c) ██████████ 🚩100% (9)
-- [Core](#core) ██████████ 🚩96% (160)
+- [Core](#core) ██████████ 🚩96% (161)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
 - [Front](#front) ░░░░░░░░░░ 0.0% (0)
@@ -78,7 +78,7 @@
 
     </details>
 
-##  <a id="core">Core ██████████ 🚩96% (160)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core ██████████ 🚩96% (161)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
@@ -133,7 +133,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 86% (22)</summary>
+    <summary>📁 ⌛ C++17 87% (23)</summary>
 
     * <a href="/Core/C++17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
     * <a href="/Core/C++17/StructuredBindings.cpp" title="Structured bindings">✅ `StructuredBindings.cpp`</a>
@@ -145,6 +145,7 @@
     * <a href="/Core/C++17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">✅ `BracedInitList.cpp`</a>
     * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
+    * <a href="/Core/C++17/ClassTemplateArgDeduction_CTAD.cpp" title="CTAD - Class template argument deduction">✅ `ClassTemplateArgDeduction_CTAD.cpp`</a>
     * <a href="/Core/C++17/FoldExpressions.cpp" title="Fold expressions">❌ FoldExpressions.cpp</a>
     * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">✅ `InlineVars.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
