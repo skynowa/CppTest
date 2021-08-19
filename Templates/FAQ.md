@@ -3,7 +3,7 @@
 ## FAQ
 
 * [todo] [www.geeksforgeeks.org](https://www.geeksforgeeks.org/templates-cpp/)
-* [todo] https://www.youtube.com/watch?v=-PKyagrtIfs&feature=youtu.be
+* [todo] https://www.youtube.com/watch?v=-PKyagrtIfs
 * [todo] https://www.youtube.com/watch?v=ULX_VTkMvf8
 * [todo] [Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
 
