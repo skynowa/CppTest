@@ -14,7 +14,7 @@
 - [Patterns](#patterns) ████░░░░░░ 41% (29)
 - [Practice](#practice) ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0% (1)
-- [Python](#python) ██████████ 🚩100% (1)
+- [Python](#python) ██████████ 🚩100% (2)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0% (1)
 - [SQL](#sql) ██████████ 🚩100% (14)
 - [Stl](#stl) █░░░░░░░░░ 13% (82)
@@ -843,8 +843,9 @@
 
 </details>
 
-##  <a id="python">Python ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="python">Python ██████████ 🚩100% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Python/InheritentCtorDtor.py" title="">✅ `InheritentCtorDtor.py`</a>
 * <a href="/Python/AbstractClass.py" title="">✅ `AbstractClass.py`</a>
 
 </details>
