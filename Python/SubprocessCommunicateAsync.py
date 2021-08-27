@@ -6,6 +6,7 @@
 # \brief Constantly print Subprocess output while process is running
 #
 # https://newbedev.com/constantly-print-subprocess-output-while-process-is-running
+# https://www.endpoint.com/blog/2015/01/getting-realtime-output-using-python/
 #
 
 
@@ -13,7 +14,7 @@ import sys
 import subprocess
 #--------------------------------------------------------------------------------------------------
 def run(self, a_cmd):
-	proc = subprocess.Popen(a_cmd, shell = False, bufsize = 0, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+	proc = subprocess.Popen(a_cmd, shell = False, bufsize = 0, stdout = subprocess.PIPE, stderr = subprocess.STDOUT, encoding='utf8')
 
 	# Poll process for new output until finished
 	while True:
