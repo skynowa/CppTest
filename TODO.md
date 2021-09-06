@@ -68,3 +68,13 @@ gda -p [pid]
 # list opened descriptors
 lsof -p [pid]
 ```
+
+## Luxoft
+
+- Smart pointers - 3/10, only theoretical knowledge about unique pointer.
+- Move semantics - 2/10, no theoretical nor practical knowledge.
+- stl containers - 7/10, good general knowledge of common containers.
+- multithreading - 4/10, knows about mutexes, doesn't know what problems they cause and how to solve them.
+- Linux - 4/10, no development experience for linux. Only knowledge from user POV.
+- IPC - NA, no experience.
+- UML - 6/10, knows about class diagram.
