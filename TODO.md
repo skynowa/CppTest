@@ -78,3 +78,9 @@ lsof -p [pid]
 - Linux - 4/10, no development experience for linux. Only knowledge from user POV.
 - IPC - NA, no experience.
 - UML - 6/10, knows about class diagram.
+
+## EPam
+
+- Exceptional C++" by Herb Sutter for the C++03 standard.
+- Modern C++" by Scott Meyers for the move semantics gaps and so.
+- C++ Concurrency in Action" by Antony Williams for the C++ multithreading.
