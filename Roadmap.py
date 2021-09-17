@@ -179,7 +179,7 @@ class RoadmapGen:
 		posEnd   = fileContent.find("\n#", posStart)
 
 		commentBrief = fileContent[posStart:posEnd].strip()
-		commentBrief = commentBrief.replace('"','\\"')
+		commentBrief = commentBrief.replace('"','')
 
 		# print('::::: filePath: {} :::::'.format(filePath))
 		# print("Pos: {}:{}".format(start, end))
