@@ -25,7 +25,7 @@
 - [Unix](#unix) ██████████ 🚩100% (4)
 - [Windows](#windows) ██████████ 🚩100% (37)
 
-##  <a id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
 * <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
@@ -62,13 +62,13 @@
 
     </details>
 
-##  <a id="backend">Backend ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="backend">Backend ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Backend/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
-##  <a id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
@@ -88,7 +88,7 @@
 
     </details>
 
-##  <a id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -492,13 +492,13 @@
 
     </details>
 
-##  <a id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/DevOps/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
 * <a href="/FAQ/CppQuestions.md" title="">❌ 📝 CppQuestions.md</a>
@@ -507,18 +507,18 @@
 
 </details>
 
-##  <a id="feedback">Feedback ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="feedback">Feedback ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Feedback/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
-##  <a id="front">Front ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="front">Front ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
 
-##  <a id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -611,7 +611,7 @@
 
     </details>
 
-##  <a id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/IpcMethods.md" title="">✅ `📝 IpcMethods.md`</a>
 * <a href="/IpcMt/condition_variable.cpp" title="">❌ condition_variable.cpp</a>
@@ -700,7 +700,7 @@
 
     </details>
 
-##  <a id="libs">Libs ██████████ 🚩100% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="libs">Libs ██████████ 🚩100% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -783,7 +783,7 @@
 
       </details>
 
-##  <a id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
@@ -792,13 +792,13 @@
 
 </details>
 
-##  <a id="ood">OOD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="ood">OOD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/OOD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -850,19 +850,19 @@
 
     </details>
 
-##  <a id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Practice/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/PreproccessCompile/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="python">Python ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="python">Python ██████████ 🚩100% (3)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Python/SubprocessCommunicateAsync.py" title="Constantly print Subprocess output while process is running">✅ `SubprocessCommunicateAsync.py`</a>
 * <a href="/Python/AbstractClass.py" title="">✅ `AbstractClass.py`</a>
@@ -870,19 +870,19 @@
 
 </details>
 
-##  <a id="review">Review ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="review">Review ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Review/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
-##  <a id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SCM_CICD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a id="sql">SQL ██████████ 🚩100% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="sql">SQL ██████████ 🚩100% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
@@ -901,7 +901,7 @@
 
 </details>
 
-##  <a id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1102,7 +1102,7 @@
 
     </details>
 
-##  <a id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">🖊 `MaximumOfTwoObjects.cpp`</a>
 * <a href="/Templates/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -1133,7 +1133,7 @@
 
     </details>
 
-##  <a id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
@@ -1148,7 +1148,7 @@
 
     </details>
 
-##  <a id="windows">Windows ██████████ 🚩100% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Test comment" id="windows">Windows ██████████ 🚩100% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
