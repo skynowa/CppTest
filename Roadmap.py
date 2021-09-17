@@ -28,6 +28,7 @@ import fnmatch
 import re
 
 from pathlib     import Path
+from datetime    import date
 from collections import defaultdict
 from functools   import partial
 from itertools   import repeat
@@ -417,7 +418,9 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		self._writeLine('# {}'.format(self._label(self.labelTitle, '', self.appName)))
+		dateNow = date.today().strftime("%d-%b-%Y")
+
+		self._writeLine('# {} - {}'.format(self._label(self.labelTitle, '', self.appName), dateNow))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
