@@ -101,7 +101,7 @@
   * <details close>
     <summary>📁 ✅ Array 100% (4)</summary>
 
-    * <a href="/Core/Array/ArraySize.cpp" title="">✅ `ArraySize.cpp`</a>
+    * <a href="/Core/Array/ArraySize.cpp" title="Size of array">✅ `ArraySize.cpp`</a>
 
     </details>
 

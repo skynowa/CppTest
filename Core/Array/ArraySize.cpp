@@ -1,6 +1,6 @@
 /**
  * \file  ArraySize.cpp
- * \brief
+ * \brief Size of array
  */
 
 
