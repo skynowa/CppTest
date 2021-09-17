@@ -1,5 +1,7 @@
 # Inter Process Communication [todo]
 
+IPC & MT - Inter Process / Thread Communication
+
 ## IPC & MT
 
 - [ ] C++ standart sync primitives

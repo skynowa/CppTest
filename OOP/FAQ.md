@@ -1,4 +1,8 @@
-# [todo] OOP/OOD
+# [todo] OOP
+
+OOP - Object-Oriented Programming
+OOD - Object-Oriented Design
+OOA - Object-oriented Analysis
 
 ## Junior
 

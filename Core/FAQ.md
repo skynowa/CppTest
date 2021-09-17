@@ -1,4 +1,6 @@
-# [todo] C/C++
+# [todo] FAQ
+
+C++ language features
 
 ## Junior
 

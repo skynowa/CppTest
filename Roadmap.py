@@ -171,23 +171,19 @@ class RoadmapGen:
 			fileContent = f.read()
 		except:
 			self._writeLine("Error: {}\n".format(filePath))
-			return commentBrief
+			return ''
 
 		##################################################
 		# commentsBrief
-		# pattern = r"^#(.*)#"
-		pattern = r'^#.*\n#'
-		# pattern = r'\s+(.*?)\s+#'
-		# pattern = r'# Brief(.*?)' + os.linesep
+		posStart = fileContent.find("\n")
+		posEnd   = fileContent.find("\n#", posStart)
 
-		match = re.search(pattern, fileContent, re.MULTILINE | re.IGNORECASE)
-		if (match):
-			print('filePath: {}'.format(filePath))
-			print('match: {}'.format(match))
-			print('match_0: {}'.format(match.group(0)))
-			# print('match_1: {}'.format(match.group(1)))
+		commentBrief = fileContent[posStart:posEnd].strip()
 
-			commentBrief = match.group(1).strip()
+		# print('::::: filePath: {} :::::'.format(filePath))
+		# print("Pos: {}:{}".format(start, end))
+		# print('commentBrief: \n{}'.format(commentBrief))
+		# print('')
 
 		return commentBrief
 
