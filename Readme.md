@@ -12,17 +12,13 @@
 - [IpcMt](#ipcmt "IPC & MT - Inter Process / Thread Communication") ███░░░░░░░ 30% (30)
 - [Libs](#libs "Third-party libraries") ██████████ 🚩100% (19)
 - [Network](#network "Network") ██████████ 🚩100% (4)
-- [OOP](#oop "OOP - Object-Oriented Programming
-OOD - Object-Oriented Design
-OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
+- [OOP](#oop "OOP - Object-Oriented Programming OOD - Object-Oriented Design OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "Design pattern") ████░░░░░░ 41% (29)
 - [Practice](#practice "Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
-- [SCM_CICD](#scm_cicd "SCM - Software configuration management
-CI - Continuous Integration
-CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
+- [SCM_CICD](#scm_cicd "SCM - Software configuration management CI - Continuous Integration CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [SQL](#sql "SQL language skills") ██████████ 🚩100% (15)
 - [Stl](#stl "") █░░░░░░░░░ 13% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
@@ -800,9 +796,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
 </details>
 
-##  <a title="OOP - Object-Oriented Programming
-OOD - Object-Oriented Design
-OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="OOP - Object-Oriented Programming OOD - Object-Oriented Design OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/OOP/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -888,9 +882,7 @@ OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (
 
 </details>
 
-##  <a title="SCM - Software configuration management
-CI - Continuous Integration
-CD - Continuous Delivery" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SCM - Software configuration management CI - Continuous Integration CD - Continuous Delivery" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SCM_CICD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
