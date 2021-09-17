@@ -1,4 +1,3 @@
 # FAQ
 
-Comments
-
+Windows OS (WinAPI)

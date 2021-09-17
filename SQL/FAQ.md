@@ -1,4 +1,3 @@
 # FAQ
 
-Comments
-
+SQL language skills

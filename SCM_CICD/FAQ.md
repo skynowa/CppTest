@@ -1,5 +1,9 @@
 # [todo] SCM/CI/CD
 
+SCM - Software configuration management
+CI - Continuous Integration
+CD - Continuous Delivery
+
 ## Junior
 
 - Які є види SCM?

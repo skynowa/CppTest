@@ -1,5 +1,7 @@
 # FAQ
 
+C language features
+
 ## Junior
 
 - Як static впливає на глобальні/локальні змінні?

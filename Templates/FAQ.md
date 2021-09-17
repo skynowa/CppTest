@@ -1,12 +1,16 @@
 # Templates
 
+Template metaprogramming
+
 ## FAQ
 
-* [todo] [www.geeksforgeeks.org](https://www.geeksforgeeks.org/templates-cpp/)
-* [todo] https://www.youtube.com/watch?v=-PKyagrtIfs
-* [todo] https://www.youtube.com/watch?v=ULX_VTkMvf8
-* [todo] [Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
-* [todo] [Webinar "Variadic templates. Magic & truth behind std::tuple & std::variant"](https://www.youtube.com/watch?v=9rp3MhMHpxI)
+- [ ] https://en.wikipedia.org/wiki/Template_metaprogramming
+- [ ] https://www.modernescpp.com/index.php/c-core-guidelines-rules-for-template-metaprogramming
+- [ ] [www.geeksforgeeks.org](https://www.geeksforgeeks.org/templates-cpp/)
+- [ ] https://www.youtube.com/watch?v=-PKyagrtIfs
+- [ ] https://www.youtube.com/watch?v=ULX_VTkMvf8
+- [ ] [Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
+- [ ] [Webinar "Variadic templates. Magic & truth behind std::tuple & std::variant"](https://www.youtube.com/watch?v=9rp3MhMHpxI)
 
 ## Classes
 

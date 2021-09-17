@@ -1,5 +1,7 @@
 # [todo] FAQ
 
+Practice on "paper"
+
 ## Junior
 
 - Порахуйте кількість одиниць у довільному числі.

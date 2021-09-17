@@ -1,4 +1,6 @@
-# [todo] Препроцесор і компіляція
+# [todo] Preproccess, Compile
+
+Build: Preproccess, Compile
 
 ## Junior
 

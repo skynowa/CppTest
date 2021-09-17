@@ -1,4 +1,3 @@
 # FAQ
 
-Comments
-
+Python language skills

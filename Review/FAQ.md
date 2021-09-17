@@ -1,4 +1,3 @@
 # FAQ
 
-Comments
-
+C++ best practice

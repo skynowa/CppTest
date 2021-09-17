@@ -1,5 +1,7 @@
 # FAQ
 
+C/C++ language idioms
+
 ## Links
 
 -

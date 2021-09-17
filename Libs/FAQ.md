@@ -1,4 +1,3 @@
 # FAQ
 
-Comments
-
+Third-party libraries
