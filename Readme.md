@@ -1258,6 +1258,6 @@ CD - Continuous Delivery" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 
 
 ### Labels
 
-  - `\\todo, \[todo\], \[ \]` - Todo
-  - `\\remark, \[remark\], \\review, \[review\]` - Review
+  - \\todo, \[todo\], \[ \] - Todo
+  - \\remark, \[remark\], \\review, \[review\] - Review
   - Brief comments from `FAQ.md` files used as dir titles
