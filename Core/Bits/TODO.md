@@ -1,0 +1,5 @@
+# TODO
+
+## Mask
+
+[ ] Bit mask

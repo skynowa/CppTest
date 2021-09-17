@@ -1,10 +1,12 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a>
 
 - [Algos](#algos) █░░░░░░░░░ 14% (14)
+- [Backend](#backend) ░░░░░░░░░░ 0% (1)
 - [C](#c) ██████████ 🚩100% (9)
-- [Core](#core) ██████████ 🚩96% (161)
+- [Core](#core) █████████░ 🚩94% (165)
 - [DevOps](#devops) ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq) ░░░░░░░░░░ 0% (4)
+- [Feedback](#feedback) ░░░░░░░░░░ 0% (1)
 - [Front](#front) ░░░░░░░░░░ 0.0% (0)
 - [Idioms](#idioms) ██████████ 🚩97% (34)
 - [IpcMt](#ipcmt) ███░░░░░░░ 30% (30)
@@ -15,23 +17,13 @@
 - [Practice](#practice) ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile) ░░░░░░░░░░ 0% (1)
 - [Python](#python) ██████████ 🚩100% (3)
+- [Review](#review) ░░░░░░░░░░ 0% (1)
 - [SCM_CICD](#scm_cicd) ░░░░░░░░░░ 0% (1)
 - [SQL](#sql) ██████████ 🚩100% (14)
 - [Stl](#stl) █░░░░░░░░░ 13% (82)
 - [Templates](#templates) ██████░░░░ 🔥57% (14)
 - [Unix](#unix) ██████████ 🚩100% (4)
 - [Windows](#windows) ██████████ 🚩100% (37)
-
-* <details close>
-  <summary>📁 ⌛ CppTest 69% (467)</summary>
-
-* <a href="/Stl.h" title="STL all headers">✅ `Stl.h`</a>
-* <a href="/Readme.md" title="">✅ `📝 Readme.md`</a>
-* <a href="/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Roadmap.py" title="" comment">❌ Roadmap.py</a>
-* <a href="/CMakeLists.txt" title="Build CppTest">✅ `CMakeLists.txt`</a>
-
-  </details>
 
 ##  <a id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -70,6 +62,12 @@
 
     </details>
 
+##  <a id="backend">Backend ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Backend/TODO.md" title="">❌ 📝 TODO.md</a>
+
+</details>
+
 ##  <a id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
@@ -90,9 +88,10 @@
 
     </details>
 
-##  <a id="core">Core ██████████ 🚩96% (161)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
+* <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
 * <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -116,8 +115,9 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Bits 100% (5)</summary>
+    <summary>📁 ⌛ Bits 83% (6)</summary>
 
+    * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
     * <a href="/Core/Bits/BadBitMask.cpp" title="Overflow bit mask">✅ `BadBitMask.cpp`</a>
@@ -360,8 +360,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Move 100% (2)</summary>
+    <summary>📁 ⌛ Move 67% (3)</summary>
 
+    * <a href="/Core/Move/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Move/MoveRef.cpp" title="">🖊 `MoveRef.cpp`</a>
     * <a href="/Core/Move/Move.cpp" title="">🖊 `Move.cpp`</a>
 
@@ -388,10 +389,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Pointers 100% (5)</summary>
+    <summary>📁 ⌛ Pointers 83% (6)</summary>
 
     * <a href="/Core/Pointers/PtrDelete.cpp" title="">✅ `PtrDelete.cpp`</a>
     * <a href="/Core/Pointers/AutoPtr.h" title="auto pointer">🖊 `AutoPtr.h`</a>
+    * <a href="/Core/Pointers/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">🖊 `FunctionPtr.cpp`</a>
     * <a href="/Core/Pointers/RefCounter.cpp" title="How do I do simple reference counting">🖊 `RefCounter.cpp`</a>
     * <a href="/Core/Pointers/CatchPtr.hpp" title="">🖊 `CatchPtr.hpp`</a>
@@ -502,6 +504,12 @@
 * <a href="/FAQ/CppQuestions.md" title="">❌ 📝 CppQuestions.md</a>
 * <a href="/FAQ/RSDN.md" title="">❌ 📝 RSDN.md</a>
 * <a href="/FAQ/FAQ.md" title="">❌ 📝 FAQ.md</a>
+
+</details>
+
+##  <a id="feedback">Feedback ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Feedback/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
@@ -859,6 +867,12 @@
 * <a href="/Python/SubprocessCommunicateAsync.py" title="Constantly print Subprocess output while process is running">✅ `SubprocessCommunicateAsync.py`</a>
 * <a href="/Python/AbstractClass.py" title="">✅ `AbstractClass.py`</a>
 * <a href="/Python/InheritentCtorDtor.py" title="">✅ `InheritentCtorDtor.py`</a>
+
+</details>
+
+##  <a id="review">Review ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Review/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
