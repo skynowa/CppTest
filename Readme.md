@@ -22,6 +22,17 @@
 - [Unix](#unix) ██████████ 🚩100% (4)
 - [Windows](#windows) ██████████ 🚩100% (37)
 
+* <details close>
+  <summary>📁 ⌛ CppTest 69% (467)</summary>
+
+* <a href="/Stl.h" title="STL all headers">✅ `Stl.h`</a>
+* <a href="/Readme.md" title="">✅ `📝 Readme.md`</a>
+* <a href="/TODO.md" title="">❌ 📝 TODO.md</a>
+* <a href="/Roadmap.py" title="" comment">❌ Roadmap.py</a>
+* <a href="/CMakeLists.txt" title="Build CppTest">✅ `CMakeLists.txt`</a>
+
+  </details>
+
 ##  <a id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>

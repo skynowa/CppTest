@@ -234,7 +234,7 @@ class RoadmapGen:
 
 	################################################################################################
 	def _dirProcess(self, a_level, a_dirPath, a_dirs, a_files):
-		if (a_level < 0):
+		if (a_level < -1):
 			return
 
 		iconCurrent = ''
