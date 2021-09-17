@@ -381,25 +381,13 @@ class RoadmapGen:
 
 		separator = ', '
 
-		_todoLabels = self.todoLabels
-		# for i in range(len(_todoLabels)):
-		# 	_todoLabels[i] = _todoLabels[i].replace("\\\\", "\\")
-		# 	_todoLabels[i] = _todoLabels[i].replace("\[", "[")
-		# 	_todoLabels[i] = _todoLabels[i].replace("\]", "]")
-
-		_remarkLabels = self.remarkLabels
-		# for i in range(len(_remarkLabels)):
-		# 	_remarkLabels[i] = _remarkLabels[i].replace("\\\\", "\\")
-		# 	_remarkLabels[i] = _remarkLabels[i].replace("\[", "[")
-		# 	_remarkLabels[i] = _remarkLabels[i].replace("\]", "]")
-
 		self._writeLine(
-			'  - {} - {}\n'
-			'  - {} - {}\n'
+			'  - `{}` - {}\n'
+			'  - `{}` - {}\n'
 			'  - Brief comments from `FAQ.md` files used as dir titles'
 			.format(
-				separator.join(_todoLabels),   'Todo',
-				separator.join(_remarkLabels), 'Review'))
+				separator.join(self.todoLabels),   'Todo',
+				separator.join(self.remarkLabels), 'Review'))
 
 	################################################################################################
 	# root dir - process
