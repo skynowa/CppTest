@@ -27,7 +27,7 @@
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
+* <a href="/Algos/ReverseString.cpp" title="">🖊 `ReverseString.cpp`</a>
 * <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
 * <a href="/Algos/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -71,10 +71,10 @@
 
 ##  <a title="C language features" id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
-* <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
+* <a href="/C/BuffZero.cpp" title="">🖊 `BuffZero.cpp`</a>
+* <a href="/C/Strptime.cpp" title="">🖊 `Strptime.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-* <a href="/C/Time.cpp" title="">✅ `Time.cpp`</a>
+* <a href="/C/Time.cpp" title="">🖊 `Time.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
@@ -93,7 +93,7 @@
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
+* <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">🖊 `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
 * <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -102,16 +102,16 @@
   * <details close>
     <summary>📁 ✅ Array 100% (4)</summary>
 
-    * <a href="/Core/Array/ArraySize.cpp" title="Size of array">✅ `ArraySize.cpp`</a>
+    * <a href="/Core/Array/ArraySize.cpp" title="Size of array">🖊 `ArraySize.cpp`</a>
 
     </details>
 
     * <details close>
       <summary>📁 ✅ ArrayToFunction 100% (3)</summary>
 
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction3.cpp" title="">✅ `ArrayToFunction3.cpp`</a>
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction1.cpp" title="">✅ `ArrayToFunction1.cpp`</a>
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction2.cpp" title="">✅ `ArrayToFunction2.cpp`</a>
+        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction3.cpp" title="">🖊 `ArrayToFunction3.cpp`</a>
+        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction1.cpp" title="">🖊 `ArrayToFunction1.cpp`</a>
+        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction2.cpp" title="">🖊 `ArrayToFunction2.cpp`</a>
 
       </details>
 
@@ -119,8 +119,8 @@
     <summary>📁 ⌛ Bits 83% (6)</summary>
 
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
-    * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
-    * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
+    * <a href="/Core/Bits/bitset.cpp" title="">🖊 `bitset.cpp`</a>
+    * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">🖊 `BuffToint.cpp`</a>
     * <a href="/Core/Bits/BadBitMask.cpp" title="Overflow bit mask">✅ `BadBitMask.cpp`</a>
     * <a href="/Core/Bits/ShiftBitMask.cpp" title="Shift bit mask">✅ `ShiftBitMask.cpp`</a>
 
@@ -151,32 +151,32 @@
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
     * <a href="/Core/C++17/Utf8CharLiterals.cpp" title="UTF-8 Character Literals">✅ `Utf8CharLiterals.cpp`</a>
-    * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">✅ `InlineVars.cpp`</a>
-    * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
+    * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">🖊 `InlineVars.cpp`</a>
+    * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">🖊 `ConstexprLambda.cpp`</a>
     * <a href="/Core/C++17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
-    * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
+    * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">🖊 `LambdaThisByValue.cpp`</a>
     * <a href="/Core/C++17/NestedNamespaces.cpp" title="Nested namespaces">✅ `NestedNamespaces.cpp`</a>
-    * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">✅ `StructuredBindingsRef.cpp`</a>
+    * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">🖊 `StructuredBindingsRef.cpp`</a>
     * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">✅ `ConstexprIf.cpp`</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">✅ `BracedInitList.cpp`</a>
     * <a href="/Core/C++17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C++17/ClassTemplateArgDeduction_CTAD.cpp" title="CTAD - Class template argument deduction">✅ `ClassTemplateArgDeduction_CTAD.cpp`</a>
-    * <a href="/Core/C++17/SelectionVarInitializer.cpp" title="Selection statements with initializer">✅ `SelectionVarInitializer.cpp`</a>
+    * <a href="/Core/C++17/SelectionVarInitializer.cpp" title="Selection statements with initializer">🖊 `SelectionVarInitializer.cpp`</a>
     * <a href="/Core/C++17/FoldExpressions.cpp" title="Fold expressions">❌ FoldExpressions.cpp</a>
-    * <a href="/Core/C++17/StructuredBindings.cpp" title="Structured bindings">✅ `StructuredBindings.cpp`</a>
+    * <a href="/Core/C++17/StructuredBindings.cpp" title="Structured bindings">🖊 `StructuredBindings.cpp`</a>
 
     </details>
 
     * <details close>
       <summary>📁 ✅ Attributes 100% (7)</summary>
 
-        * <a href="/Core/C++17/Attributes/Deprecated.cpp" title="">✅ `Deprecated.cpp`</a>
+        * <a href="/Core/C++17/Attributes/Deprecated.cpp" title="">🖊 `Deprecated.cpp`</a>
         * <a href="/Core/C++17/Attributes/CarriesDependency.cpp" title="">✅ `CarriesDependency.cpp`</a>
-        * <a href="/Core/C++17/Attributes/MaybeUnused.cpp" title="[[maybe_unused]]">✅ `MaybeUnused.cpp`</a>
-        * <a href="/Core/C++17/Attributes/NoDiscard.cpp" title="[[nodiscard]]">✅ `NoDiscard.cpp`</a>
-        * <a href="/Core/C++17/Attributes/NoReturn.cpp" title="Indicates that the function does not return">✅ `NoReturn.cpp`</a>
-        * <a href="/Core/C++17/Attributes/FallThrough.cpp" title="[[fallthrough]]">✅ `FallThrough.cpp`</a>
-        * <a href="/Core/C++17/Attributes/Sample1.cpp" title="New standard attributes">✅ `Sample1.cpp`</a>
+        * <a href="/Core/C++17/Attributes/MaybeUnused.cpp" title="[[maybe_unused]]">🖊 `MaybeUnused.cpp`</a>
+        * <a href="/Core/C++17/Attributes/NoDiscard.cpp" title="[[nodiscard]]">🖊 `NoDiscard.cpp`</a>
+        * <a href="/Core/C++17/Attributes/NoReturn.cpp" title="Indicates that the function does not return">🖊 `NoReturn.cpp`</a>
+        * <a href="/Core/C++17/Attributes/FallThrough.cpp" title="[[fallthrough]]">🖊 `FallThrough.cpp`</a>
+        * <a href="/Core/C++17/Attributes/Sample1.cpp" title="New standard attributes">🖊 `Sample1.cpp`</a>
 
       </details>
 
@@ -190,7 +190,7 @@
     <summary>📁 ✅ Cast 100% (3)</summary>
 
     * <a href="/Core/Cast/BoolCast.cpp" title="">✅ `BoolCast.cpp`</a>
-    * <a href="/Core/Cast/ReinterpretCast.cpp" title="">✅ `ReinterpretCast.cpp`</a>
+    * <a href="/Core/Cast/ReinterpretCast.cpp" title="">🖊 `ReinterpretCast.cpp`</a>
     * <a href="/Core/Cast/Casts.cpp" title="">✅ `Casts.cpp`</a>
 
     </details>
@@ -201,7 +201,7 @@
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">✅ `UnicodeAnsi.cpp`</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
-    * <a href="/Core/Char/IntToChar.cpp" title="">✅ `IntToChar.cpp`</a>
+    * <a href="/Core/Char/IntToChar.cpp" title="">🖊 `IntToChar.cpp`</a>
 
     </details>
 
@@ -215,10 +215,10 @@
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">✅ `CallMethod.cpp`</a>
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">✅ `FunctionDefinition.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
-    * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
+    * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">🖊 `RuleOfFive.h`</a>
     * <a href="/Core/Class/CopyCtor.cpp" title="copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
-    * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
+    * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">🖊 `EmptyStructSizeOf.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
 
@@ -227,7 +227,7 @@
     * <details close>
       <summary>📁 ✅ Hierarchy 100% (2)</summary>
 
-        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
+        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">🖊 `ProxyLayer.cpp`</a>
         * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="class hierarchy">✅ `Hierarchy.cpp`</a>
 
       </details>
@@ -294,7 +294,7 @@
       <summary>📁 ✅ SignalsToException_2 100% (3)</summary>
 
         * <a href="/Core/Exceptions/SignalsToException_2/SignalsToException_2.cpp" title="">🖊 `SignalsToException_2.cpp`</a>
-        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">✅ `SignalHandler.inl`</a>
+        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">🖊 `SignalHandler.inl`</a>
         * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.h" title="">✅ `SignalHandler.h`</a>
 
       </details>
@@ -303,7 +303,7 @@
       <summary>📁 ✅ WinException 100% (3)</summary>
 
         * <a href="/Core/Exceptions/WinException/CxWinException.h" title="">✅ `CxWinException.h`</a>
-        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">✅ `CxWinException.cpp`</a>
+        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">🖊 `CxWinException.cpp`</a>
         * <a href="/Core/Exceptions/WinException/WinException.cpp" title="">✅ `WinException.cpp`</a>
 
       </details>
@@ -311,7 +311,7 @@
   * <details close>
     <summary>📁 ✅ Functor 100% (17)</summary>
 
-    * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
+    * <a href="/Core/Functor/VariableArguments.cpp" title="">🖊 `VariableArguments.cpp`</a>
 
     </details>
 
@@ -319,7 +319,7 @@
       <summary>📁 ✅ Function 100% (2)</summary>
 
         * <a href="/Core/Functor/Function/InlineFunction.cpp" title="">✅ `InlineFunction.cpp`</a>
-        * <a href="/Core/Functor/Function/NativeFunction.cpp" title="">✅ `NativeFunction.cpp`</a>
+        * <a href="/Core/Functor/Function/NativeFunction.cpp" title="">🖊 `NativeFunction.cpp`</a>
 
       </details>
 
@@ -330,22 +330,22 @@
         * <a href="/Core/Functor/Functor/Functor.cpp" title="">✅ `Functor.cpp`</a>
         * <a href="/Core/Functor/Functor/FunctorTarget.cpp" title="function::target example">✅ `FunctorTarget.cpp`</a>
         * <a href="/Core/Functor/Functor/RegualarFuncFunctor.cpp" title="Regualar function as functor">✅ `RegualarFuncFunctor.cpp`</a>
-        * <a href="/Core/Functor/Functor/OperatorFunctor.cpp" title="operator() as functor">✅ `OperatorFunctor.cpp`</a>
+        * <a href="/Core/Functor/Functor/OperatorFunctor.cpp" title="operator() as functor">🖊 `OperatorFunctor.cpp`</a>
 
       </details>
 
     * <details close>
       <summary>📁 ✅ Lambda 100% (9)</summary>
 
-        * <a href="/Core/Functor/Lambda/LambdaPtrsSizes.cpp" title="">✅ `LambdaPtrsSizes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopes.cpp" title="">✅ `LambdaScopes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByValue.cpp" title="">✅ `LambdaScopesByValue.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaBasic.cpp" title="">✅ `LambdaBasic.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByReference.cpp" title="">✅ `LambdaScopesByReference.cpp`</a>
-        * <a href="/Core/Functor/Lambda/GccLambdaLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">✅ `GccLambdaLeaky.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaPtrsSizes.cpp" title="">🖊 `LambdaPtrsSizes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopes.cpp" title="">🖊 `LambdaScopes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopesByValue.cpp" title="">🖊 `LambdaScopesByValue.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaBasic.cpp" title="">🖊 `LambdaBasic.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaScopesByReference.cpp" title="">🖊 `LambdaScopesByReference.cpp`</a>
+        * <a href="/Core/Functor/Lambda/GccLambdaLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">🖊 `GccLambdaLeaky.cpp`</a>
         * <a href="/Core/Functor/Lambda/LambdaScopeFaultScenario.cpp" title="">🖊 `LambdaScopeFaultScenario.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambaExamples.cpp" title="">✅ `LambaExamples.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaMemberVariableCapture.cpp" title="">✅ `LambdaMemberVariableCapture.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambaExamples.cpp" title="">🖊 `LambaExamples.cpp`</a>
+        * <a href="/Core/Functor/Lambda/LambdaMemberVariableCapture.cpp" title="">🖊 `LambdaMemberVariableCapture.cpp`</a>
 
       </details>
 
@@ -355,7 +355,7 @@
     * <a href="/Core/Loops/For.cpp" title="">✅ `For.cpp`</a>
     * <a href="/Core/Loops/GoToLablel.cpp" title="">✅ `GoToLablel.cpp`</a>
     * <a href="/Core/Loops/ForVoid.cpp" title="">✅ `ForVoid.cpp`</a>
-    * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">✅ `SwitchCase.cpp`</a>
+    * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">🖊 `SwitchCase.cpp`</a>
     * <a href="/Core/Loops/ForBreak.cpp" title="">✅ `ForBreak.cpp`</a>
 
     </details>
@@ -373,7 +373,7 @@
     <summary>📁 ✅ Operators 100% (14)</summary>
 
     * <a href="/Core/Operators/OperatorIn.cpp" title="">✅ `OperatorIn.cpp`</a>
-    * <a href="/Core/Operators/OperatorsNewDelete.cpp" title="replace operator new and delete to log allocations">✅ `OperatorsNewDelete.cpp`</a>
+    * <a href="/Core/Operators/OperatorsNewDelete.cpp" title="replace operator new and delete to log allocations">🖊 `OperatorsNewDelete.cpp`</a>
     * <a href="/Core/Operators/NamespaceOperator.cpp" title="">🖊 `NamespaceOperator.cpp`</a>
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
     * <a href="/Core/Operators/OverloadingArithmeticOperator.cpp" title="">🖊 `OverloadingArithmeticOperator.cpp`</a>
@@ -404,7 +404,7 @@
   * <details close>
     <summary>📁 ✅ Random 100% (1)</summary>
 
-    * <a href="/Core/Random/Random.cpp" title="">✅ `Random.cpp`</a>
+    * <a href="/Core/Random/Random.cpp" title="">🖊 `Random.cpp`</a>
 
     </details>
 
@@ -412,7 +412,7 @@
     <summary>📁 ✅ Static 100% (12)</summary>
 
     * <a href="/Core/Static/StaticHolder.cpp" title="">✅ `StaticHolder.cpp`</a>
-    * <a href="/Core/Static/Data.cpp" title="">✅ `Data.cpp`</a>
+    * <a href="/Core/Static/Data.cpp" title="">🖊 `Data.cpp`</a>
 
     </details>
 
@@ -441,9 +441,9 @@
   * <details close>
     <summary>📁 ✅ String 100% (10)</summary>
 
-    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">✅ `StringView.cpp`</a>
+    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">🖊 `StringView.cpp`</a>
     * <a href="/Core/String/CapacityFunction.cpp" title="">✅ `CapacityFunction.cpp`</a>
-    * <a href="/Core/String/ManipulatingFunction.cpp" title="">✅ `ManipulatingFunction.cpp`</a>
+    * <a href="/Core/String/ManipulatingFunction.cpp" title="">🖊 `ManipulatingFunction.cpp`</a>
     * <a href="/Core/String/InputFunction.cpp" title="">✅ `InputFunction.cpp`</a>
     * <a href="/Core/String/OtherUsefulFunction.cpp" title="">✅ `OtherUsefulFunction.cpp`</a>
     * <a href="/Core/String/InitializationWays.cpp" title="">✅ `InitializationWays.cpp`</a>
@@ -454,16 +454,16 @@
     * <details close>
       <summary>📁 ✅ CString 100% (3)</summary>
 
-        * <a href="/Core/String/CString/CString.inl" title="simple string class">✅ `CString.inl`</a>
+        * <a href="/Core/String/CString/CString.inl" title="simple string class">🖊 `CString.inl`</a>
         * <a href="/Core/String/CString/CString.h" title="simple string class">🖊 `CString.h`</a>
-        * <a href="/Core/String/CString/main_CString.cpp" title="">✅ `main_CString.cpp`</a>
+        * <a href="/Core/String/CString/main_CString.cpp" title="">🖊 `main_CString.cpp`</a>
 
       </details>
 
   * <details close>
     <summary>📁 ✅ Types 100% (2)</summary>
 
-    * <a href="/Core/Types/TypeNames.cpp" title="">✅ `TypeNames.cpp`</a>
+    * <a href="/Core/Types/TypeNames.cpp" title="">🖊 `TypeNames.cpp`</a>
     * <a href="/Core/Types/TypeSizes.cpp" title="">✅ `TypeSizes.cpp`</a>
 
     </details>
@@ -476,7 +476,7 @@
     * <a href="/Core/Vars/VarVisibility.cpp" title="var visibility">✅ `VarVisibility.cpp`</a>
     * <a href="/Core/Vars/GlobalVar1.cpp" title="global and local var with the same name">✅ `GlobalVar1.cpp`</a>
     * <a href="/Core/Vars/GlobalVar2.cpp" title="">✅ `GlobalVar2.cpp`</a>
-    * <a href="/Core/Vars/ValueInitialization.cpp" title="">✅ `ValueInitialization.cpp`</a>
+    * <a href="/Core/Vars/ValueInitialization.cpp" title="">🖊 `ValueInitialization.cpp`</a>
     * <a href="/Core/Vars/InitMembers.cpp" title="">✅ `InitMembers.cpp`</a>
 
     </details>
@@ -529,11 +529,11 @@
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
 * <a href="/Idioms/NonCopyableMixin.cpp" title="To prevent objects of a class from being copy-constructed or assigned to each other">✅ `NonCopyableMixin.cpp`</a>
 * <a href="/Idioms/Raii.cpp" title="RAII - Resource Acquisition Is Initialization">✅ `Raii.cpp`</a>
-* <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
+* <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">🖊 `EraseRemove.cpp`</a>
 * <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
-* <a href="/Idioms/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Idioms/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
 * <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
@@ -610,7 +610,7 @@
   * <details close>
     <summary>📁 ✅ Yagni 100% (1)</summary>
 
-    * <a href="/Idioms/Yagni/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+    * <a href="/Idioms/Yagni/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
 
     </details>
 
@@ -712,9 +712,9 @@
   * <details close>
     <summary>📁 ✅ Boost 100% (3)</summary>
 
-    * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">✅ `ProgramOptions.cpp`</a>
+    * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">🖊 `ProgramOptions.cpp`</a>
     * <a href="/Libs/Boost/Bind.cpp" title="boost::bind">✅ `Bind.cpp`</a>
-    * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">✅ `ScopeArray.cpp`</a>
+    * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">🖊 `ScopeArray.cpp`</a>
 
     </details>
 
@@ -769,7 +769,7 @@
   * <details close>
     <summary>📁 ✅ Ssh2 100% (1)</summary>
 
-    * <a href="/Libs/Ssh2/Ssh2.cpp" title="lib SSH2">✅ `Ssh2.cpp`</a>
+    * <a href="/Libs/Ssh2/Ssh2.cpp" title="lib SSH2">🖊 `Ssh2.cpp`</a>
 
     </details>
 
@@ -782,7 +782,7 @@
     * <details close>
       <summary>📁 ✅ GlobalHotKey 100% (2)</summary>
 
-        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.cpp" title="">✅ `xgrabkey.cpp`</a>
+        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.cpp" title="">🖊 `xgrabkey.cpp`</a>
         * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.cpp" title="">✅ `xgrabkey_2.cpp`</a>
 
       </details>
@@ -846,7 +846,7 @@
 
     * <a href="/Patterns/Structural/Facade.cpp" title="Wrap / simplify complex behaviour">✅ `Facade.cpp`</a>
     * <a href="/Patterns/Structural/Adapter.cpp" title="Convert one class so that it appears to be another class">❌ Adapter.cpp</a>
-    * <a href="/Patterns/Structural/FlyWeight.cpp" title="Flyweight creates objects as they are needed">✅ `FlyWeight.cpp`</a>
+    * <a href="/Patterns/Structural/FlyWeight.cpp" title="Flyweight creates objects as they are needed">🖊 `FlyWeight.cpp`</a>
     * <a href="/Patterns/Structural/Bridge.cpp" title="Bridge allows two implementations to vary independently">🖊 `Bridge.cpp`</a>
     * <a href="/Patterns/Structural/Composite.cpp" title="Composite combines several classes into a single class.">✅ `Composite.cpp`</a>
     * <a href="/Patterns/Structural/Decorator.cpp" title="Decorator adds / overrides functionality of a class">🖊 `Decorator.cpp`</a>
@@ -981,7 +981,7 @@
   * <details close>
     <summary>📁 ✅ Functional 100% (1)</summary>
 
-    * <a href="/Stl/Functional/ref.cpp" title="">✅ `ref.cpp`</a>
+    * <a href="/Stl/Functional/ref.cpp" title="">🖊 `ref.cpp`</a>
 
     </details>
 
@@ -1022,7 +1022,7 @@
     <summary>📁 ⌛ Map 8% (12)</summary>
 
     * <a href="/Stl/Map/MapReversePrint.cpp" title="">❌ MapReversePrint.cpp</a>
-    * <a href="/Stl/Map/Bool.cpp" title="">✅ `Bool.cpp`</a>
+    * <a href="/Stl/Map/Bool.cpp" title="">🖊 `Bool.cpp`</a>
     * <a href="/Stl/Map/MapBasics.cpp" title="">❌ MapBasics.cpp</a>
     * <a href="/Stl/Map/OperatorAccess.cpp" title="">❌ OperatorAccess.cpp</a>
     * <a href="/Stl/Map/MapOperatorAccessElement.cpp" title="">❌ MapOperatorAccessElement.cpp</a>
@@ -1070,9 +1070,9 @@
   * <details close>
     <summary>📁 ✅ String 100% (3)</summary>
 
-    * <a href="/Stl/String/stringWithNull.cpp" title="">✅ `stringWithNull.cpp`</a>
-    * <a href="/Stl/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
-    * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">✅ `CstrNull.cpp`</a>
+    * <a href="/Stl/String/stringWithNull.cpp" title="">🖊 `stringWithNull.cpp`</a>
+    * <a href="/Stl/String/Reverse.cpp" title="">🖊 `Reverse.cpp`</a>
+    * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">🖊 `CstrNull.cpp`</a>
 
     </details>
 
@@ -1151,22 +1151,22 @@
   * <details close>
     <summary>📁 ✅ Linux 100% (1)</summary>
 
-    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">✅ `Inotify.cpp`</a>
+    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">🖊 `Inotify.cpp`</a>
 
     </details>
 
 ##  <a title="Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
+* <a href="/Windows/GetTokenInformation.cpp" title="">🖊 `GetTokenInformation.cpp`</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
-* <a href="/Windows/MemoryUsage.cpp" title="">✅ `MemoryUsage.cpp`</a>
-* <a href="/Windows/GetUid.cpp" title="">✅ `GetUid.cpp`</a>
+* <a href="/Windows/MemoryUsage.cpp" title="">🖊 `MemoryUsage.cpp`</a>
+* <a href="/Windows/GetUid.cpp" title="">🖊 `GetUid.cpp`</a>
 * <a href="/Windows/CommandLine.cpp" title="">✅ `CommandLine.cpp`</a>
 * <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
 * <a href="/Windows/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-* <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">✅ `CxHandle.cpp`</a>
-* <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
-* <a href="/Windows/OsBit.cpp" title="">✅ `OsBit.cpp`</a>
+* <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">🖊 `CxHandle.cpp`</a>
+* <a href="/Windows/AnsiUtf8.cpp" title="">🖊 `AnsiUtf8.cpp`</a>
+* <a href="/Windows/OsBit.cpp" title="">🖊 `OsBit.cpp`</a>
 
 </details>
 
@@ -1195,17 +1195,17 @@
     * <details close>
       <summary>📁 ✅ MFCAp 100% (12)</summary>
 
-        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">✅ `MFCApDoc.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">🖊 `MFCApDoc.cpp`</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCAp.h" title="">✅ `MFCAp.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">✅ `MFCAp.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">🖊 `MFCAp.cpp`</a>
         * <a href="/Windows/RegDLL/MFCAp/StdAfx.h" title="">✅ `StdAfx.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.h" title="">✅ `MFCApDoc.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/Resource.h" title="">✅ `Resource.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/MainFrm.h" title="">✅ `MainFrm.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">✅ `MainFrm.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">🖊 `MainFrm.cpp`</a>
         * <a href="/Windows/RegDLL/MFCAp/DLLCode.h" title="">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">✅ `MFCApView.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">🖊 `MFCApView.cpp`</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCApView.h" title="">✅ `MFCApView.h`</a>
 
       </details>
@@ -1217,7 +1217,7 @@
         * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.h" title="">✅ `StdAfx.h`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.h" title="">✅ `RDLLMFC.h`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/Resource.h" title="">✅ `Resource.h`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">✅ `RDLLMFC.cpp`</a>
+        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">🖊 `RDLLMFC.cpp`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.h" title="">✅ `DLLCode.h`</a>
 
@@ -1251,5 +1251,5 @@
 ### Labels
 
   - `\todo, [todo], [ ]` - Todo
-  - `\remark, [remark], \review, [review]` - Review
+  - `\remark, [remark], \review, [review], [?]` - Review
   - Brief comments from `FAQ.md` files used as dir titles
