@@ -1,4 +1,6 @@
-# [todo] STL/Algorithms
+# [todo] STL
+
+STL - Standard Template Library
 
 ## Junior
 

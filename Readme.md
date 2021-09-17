@@ -20,7 +20,7 @@
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [SQL](#sql "SQL language skills") ██████████ 🚩100% (15)
-- [Stl](#stl "") █░░░░░░░░░ 13% (82)
+- [Stl](#stl "STL - Standard Template Library") █░░░░░░░░░ 13% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
@@ -908,7 +908,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="STL - Standard Template Library" id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
