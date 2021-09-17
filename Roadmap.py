@@ -113,7 +113,7 @@ class RoadmapGen:
 			fileContent = f.read()
 		except:
 			self._writeLine("Error: {}\n".format(a_filePath))
-			return (isFileTodo, commentBrief)
+			return (isFileTodo, False, False, commentBrief)
 
 		##################################################
 		# isFileTodo
@@ -152,6 +152,44 @@ class RoadmapGen:
 			commentBrief = match.group(1).strip()
 
 		return (isFileTodo, isFileRemark, isFileFaq, commentBrief)
+
+	################################################################################################
+	# Info from FAQ.md
+	def _faqInfo(self, a_dirPath):
+		commentBrief = ''
+
+		filePath = a_dirPath + "/FAQ.md"
+		if (not os.path.isfile(filePath)):
+			return ''
+
+		##################################################
+		# Read file
+		fileContent = ''
+
+		try:
+			f = open(filePath, "r")
+			fileContent = f.read()
+		except:
+			self._writeLine("Error: {}\n".format(filePath))
+			return commentBrief
+
+		##################################################
+		# commentsBrief
+		# pattern = r"^#(.*)#"
+		pattern = r'^#.*\n#'
+		# pattern = r'\s+(.*?)\s+#'
+		# pattern = r'# Brief(.*?)' + os.linesep
+
+		match = re.search(pattern, fileContent, re.MULTILINE | re.IGNORECASE)
+		if (match):
+			print('filePath: {}'.format(filePath))
+			print('match: {}'.format(match))
+			print('match_0: {}'.format(match.group(0)))
+			# print('match_1: {}'.format(match.group(1)))
+
+			commentBrief = match.group(1).strip()
+
+		return commentBrief
 
 	################################################################################################
 	# Collect dirs info
@@ -227,10 +265,11 @@ class RoadmapGen:
 		allfilesNum  = info[0]
 		doneFilesPct = info[3]
 
-		dirName = os.path.basename(a_dirPath)
+		dirName      = os.path.basename(a_dirPath)
+		commentBrief = self._faqInfo(a_dirPath)
 
-		self._writeLine('- [{}](#{}) {}'
-			.format(dirName, dirName.lower(), self._progressBar(doneFilesPct, allfilesNum)))
+		self._writeLine('- [{}](#{} "{}") {}'
+			.format(dirName, dirName.lower(), commentBrief, self._progressBar(doneFilesPct, allfilesNum)))
 
 	################################################################################################
 	def _dirProcess(self, a_level, a_dirPath, a_dirs, a_files):
