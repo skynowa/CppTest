@@ -396,6 +396,7 @@ class RoadmapGen:
 		self._writeLine(
 			'  - {} - {}\n'
 			'  - {} - {}\n'
+			'  - Brief comments from `FAQ.md` files used as dir titles'
 			.format(
 				separator.join(_todoLabels),   'Todo',
 				separator.join(_remarkLabels), 'Review'))
