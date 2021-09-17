@@ -382,16 +382,16 @@ class RoadmapGen:
 		separator = ', '
 
 		_todoLabels = self.todoLabels
-		for i in range(len(_todoLabels)):
-			_todoLabels[i] = _todoLabels[i].replace("\\\\", "\\")
-			_todoLabels[i] = _todoLabels[i].replace("\[", "[")
-			_todoLabels[i] = _todoLabels[i].replace("\]", "]")
+		# for i in range(len(_todoLabels)):
+		# 	_todoLabels[i] = _todoLabels[i].replace("\\\\", "\\")
+		# 	_todoLabels[i] = _todoLabels[i].replace("\[", "[")
+		# 	_todoLabels[i] = _todoLabels[i].replace("\]", "]")
 
 		_remarkLabels = self.remarkLabels
-		for i in range(len(_remarkLabels)):
-			_remarkLabels[i] = _remarkLabels[i].replace("\\\\", "\\")
-			_remarkLabels[i] = _remarkLabels[i].replace("\[", "[")
-			_remarkLabels[i] = _remarkLabels[i].replace("\]", "]")
+		# for i in range(len(_remarkLabels)):
+		# 	_remarkLabels[i] = _remarkLabels[i].replace("\\\\", "\\")
+		# 	_remarkLabels[i] = _remarkLabels[i].replace("\[", "[")
+		# 	_remarkLabels[i] = _remarkLabels[i].replace("\]", "]")
 
 		self._writeLine(
 			'  - {} - {}\n'
