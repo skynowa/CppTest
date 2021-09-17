@@ -16,7 +16,7 @@
 OOD - Object-Oriented Design
 OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "Design pattern") ████░░░░░░ 41% (29)
-- [Practice](#practice "Practice on "paper"") ░░░░░░░░░░ 0% (1)
+- [Practice](#practice "Practice on \"paper\"") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
@@ -860,7 +860,7 @@ OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (
 
     </details>
 
-##  <a title="Practice on "paper"" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Practice on \"paper\"" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Practice/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
