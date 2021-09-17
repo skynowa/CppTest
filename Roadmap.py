@@ -296,8 +296,10 @@ class RoadmapGen:
 
 		# Dir (begin)
 		if (a_level == 0):
+			commentBrief = self._faqInfo(a_dirPath)
+
 			self._writeLine('##  <a title="{}" id="{}">{} {}</a> {}'.format(
-				"",	# TODO: title as brief comment
+				commentBrief,
 				dirName.lower(),
 				dirName,
 				self._progressBar(doneFilesPct, allfilesNum),

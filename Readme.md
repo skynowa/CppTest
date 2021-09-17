@@ -29,7 +29,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
 
-##  <a title="" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
 * <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
@@ -66,14 +66,14 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="backend">Backend █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Backend skills" id="backend">Backend █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Backend/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Backend/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a title="" id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C language features" id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
@@ -93,7 +93,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -497,13 +497,13 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="DevOps skills" id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/DevOps/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="" id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
 * <a href="/FAQ/CppQuestions.md" title="">❌ 📝 CppQuestions.md</a>
@@ -512,20 +512,20 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
 </details>
 
-##  <a title="" id="feedback">Feedback █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Feedbacks from companies" id="feedback">Feedback █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Feedback/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Feedback/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a title="" id="front">Front ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Frontend skills" id="front">Front ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Front/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a title="" id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C/C++ language idioms" id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -618,7 +618,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="IPC & MT - Inter Process / Thread Communication" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/IpcMethods.md" title="">✅ `📝 IpcMethods.md`</a>
 * <a href="/IpcMt/condition_variable.cpp" title="">❌ condition_variable.cpp</a>
@@ -707,7 +707,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩100% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Third-party libraries" id="libs">Libs ██████████ 🚩100% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
@@ -791,7 +791,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
       </details>
 
-##  <a title="" id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Network" id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
@@ -800,13 +800,15 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
 </details>
 
-##  <a title="" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="OOP - Object-Oriented Programming
+OOD - Object-Oriented Design
+OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/OOP/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Design pattern" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -858,19 +860,19 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Practice on "paper"" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Practice/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="" id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Build: Preproccess, Compile" id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/PreproccessCompile/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="" id="python">Python ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Python language skills" id="python">Python ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Python/SubprocessCommunicateAsync.py" title="Constantly print Subprocess output while process is running">✅ `SubprocessCommunicateAsync.py`</a>
 * <a href="/Python/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -879,20 +881,22 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
 </details>
 
-##  <a title="" id="review">Review █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ best practice" id="review">Review █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Review/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Review/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a title="" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SCM - Software configuration management
+CI - Continuous Integration
+CD - Continuous Delivery" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SCM_CICD/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="" id="sql">SQL ██████████ 🚩100% (15)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SQL language skills" id="sql">SQL ██████████ 🚩100% (15)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
@@ -1113,7 +1117,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Template metaprogramming" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">🖊 `MaximumOfTwoObjects.cpp`</a>
 * <a href="/Templates/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -1144,7 +1148,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Unix OS" id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
@@ -1159,7 +1163,7 @@ CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 
     </details>
 
-##  <a title="" id="windows">Windows ██████████ 🚩100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
