@@ -6,8 +6,8 @@ CD - Continuous Delivery
 
 ## Package managers
 
-- [ ] vcpkg
-- [ ] Conan
+- [ ] [vcpkg](https://vcpkg.io/en/docs/README.html)
+- [ ] [Conan](https://docs.conan.io/en/latest/)
 
 ## Junior
 
