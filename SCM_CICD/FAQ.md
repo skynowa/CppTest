@@ -4,6 +4,11 @@ SCM - Software configuration management
 CI - Continuous Integration
 CD - Continuous Delivery
 
+## Package managers
+
+- [ ] vcpkg
+- [ ] Conan
+
 ## Junior
 
 - Які є види SCM?
