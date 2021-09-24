@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **22-Sep-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **24-Sep-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (165)
+- [Core](#core "C++ language features") █████████░ 🚩94% (166)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (4)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -89,7 +89,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (165)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (166)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
@@ -390,9 +390,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Pointers 83% (6)</summary>
+    <summary>📁 ⌛ Pointers 86% (7)</summary>
 
     * <a href="/Core/Pointers/RefCounter.cpp" title="How do I do simple reference counting">🖊 `RefCounter.cpp`</a>
+    * <a href="/Core/Pointers/FAQ.md" title="">✅ `📝 FAQ.md`</a>
     * <a href="/Core/Pointers/CatchPtr.hpp" title="">🖊 `CatchPtr.hpp`</a>
     * <a href="/Core/Pointers/PtrDelete.cpp" title="">✅ `PtrDelete.cpp`</a>
     * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">🖊 `FunctionPtr.cpp`</a>
