@@ -12,7 +12,7 @@ CD - Continuous Delivery
 
 ## Github
 
-- [x] [GitHub Actions](https://docs.github.com/en/actions/quickstart)
+- [x] [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
 
 ## [ ] Junior
 
