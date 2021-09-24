@@ -1,4 +1,4 @@
-# [todo] SCM/CI/CD
+# SCM/CI/CD
 
 SCM - Software configuration management
 CI - Continuous Integration
@@ -14,7 +14,7 @@ CD - Continuous Delivery
 
 - [x] [GitHub Actions](https://docs.github.com/en/actions/quickstart)
 
-## Junior
+## [ ] Junior
 
 - Які є види SCM?
 - Для чого використовують системи контролю версій?
@@ -23,7 +23,7 @@ CD - Continuous Delivery
 - Різниця між git fetch і git pull?
 - Які є етапи вирішення merge conflict?
 
-## Middle
+## [ ] Middle
 
 - Розкажіть про процеси CI.
 - Як відредагувати коміт?
@@ -40,7 +40,7 @@ CD - Continuous Delivery
 - Які принципи ітеративних методологій?
 - Які переваги та недоліки code-convention?
 
-## Senior
+## [ ] Senior
 
 - Розкажіть про налаштування процесу менеджменту гілок репозиторію.
 - Розкажіть про стратегію бренчування
