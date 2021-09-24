@@ -6,13 +6,13 @@ CD - Continuous Delivery
 
 ## Package managers
 
+- [x] [Package Managers](https://caiorss.github.io/C-Cpp-Notes/package-managers.html)
 - [ ] [vcpkg](https://vcpkg.io/en/docs/README.html)
 - [ ] [Conan](https://docs.conan.io/en/latest/)
-    - https://caiorss.github.io/C-Cpp-Notes/package-managers.html
 
 ## Github
 
-- [+] [GitHub Actions](https://docs.github.com/en/actions/quickstart)
+- [x] [GitHub Actions](https://docs.github.com/en/actions/quickstart)
 
 ## Junior
 
