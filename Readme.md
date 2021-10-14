@@ -24,7 +24,6 @@
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
-- [build](#build "") ░░░░░░░░░░ 0.0% (0)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -1236,11 +1235,6 @@
         * <a href="/Windows/RegDLL/W32DLL/DLLCode.h" title="prototypes all of the DLL interface objects">✅ `DLLCode.h`</a>
 
       </details>
-
-##  <a title="" id="build">build ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-
-</details>
 
 ---
 ## FAQ
