@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **28-Sep-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **14-Oct-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -24,6 +24,7 @@
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
+- [build](#build "") ░░░░░░░░░░ 0.0% (0)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -398,7 +399,7 @@
     * <a href="/Core/Pointers/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">🖊 `FunctionPtr.cpp`</a>
     * <a href="/Core/Pointers/RefCounter.cpp" title="How do I do simple reference counting">🖊 `RefCounter.cpp`</a>
-    * <a href="/Core/Pointers/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+    * <a href="/Core/Pointers/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
     * <a href="/Core/Pointers/CatchPtr.hpp" title="">🖊 `CatchPtr.hpp`</a>
 
     </details>
@@ -1235,6 +1236,11 @@
         * <a href="/Windows/RegDLL/W32DLL/DLLCode.h" title="prototypes all of the DLL interface objects">✅ `DLLCode.h`</a>
 
       </details>
+
+##  <a title="" id="build">build ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+
+</details>
 
 ---
 ## FAQ

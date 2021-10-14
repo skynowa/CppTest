@@ -35,3 +35,7 @@
 - For assignment operators, return by non-const reference.
 - When handling memory addresses and not ownership, prefer raw pointers.
 - To transfer ownership, use smart pointers.
+
+## FAQ
+
+- [-] https://www.cppstories.com/2013/02/smart-pointers-gotchas/
