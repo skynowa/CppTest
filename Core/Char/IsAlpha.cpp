@@ -1,6 +1,6 @@
 /**
  * \file  IsAlpha.cpp
- * \brief1
+ * \brief
  */
 
 
