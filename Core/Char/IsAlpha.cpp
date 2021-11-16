@@ -20,8 +20,6 @@ int main(int, char **)
 			printf ("std::isalpha: %ld - FALSE\n", (ssize_t)it_char);
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
-
     return EXIT_SUCCESS;
 }
 //--------------------------------------------------------------------------------------------------
