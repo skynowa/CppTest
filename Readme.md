@@ -202,7 +202,7 @@
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">✅ `UnicodeAnsi.cpp`</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
-    * <a href="/Core/Char/IsAlpha.cpp" title="">🖊 `IsAlpha.cpp`</a>
+    * <a href="/Core/Char/IsAlpha.cpp" title="1">🖊 `IsAlpha.cpp`</a>
     * <a href="/Core/Char/IntToChar.cpp" title="">🖊 `IntToChar.cpp`</a>
 
     </details>
