@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **16-Nov-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **17-Nov-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (168)
+- [Core](#core "C++ language features") █████████░ 🚩94% (169)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (4)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -90,7 +90,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (168)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (169)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -202,7 +202,7 @@
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">✅ `UnicodeAnsi.cpp`</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
-    * <a href="/Core/Char/IsAlpha.cpp" title="1">🖊 `IsAlpha.cpp`</a>
+    * <a href="/Core/Char/IsAlpha.cpp" title="">🖊 `IsAlpha.cpp`</a>
     * <a href="/Core/Char/IntToChar.cpp" title="">🖊 `IntToChar.cpp`</a>
 
     </details>
@@ -312,15 +312,16 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Functor 100% (17)</summary>
+    <summary>📁 ✅ Functor 100% (18)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">🖊 `VariableArguments.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Function 100% (2)</summary>
+      <summary>📁 ✅ Function 100% (3)</summary>
 
+        * <a href="/Core/Functor/Function/ReturnSyntax.cpp" title="">✅ `ReturnSyntax.cpp`</a>
         * <a href="/Core/Functor/Function/InlineFunction.cpp" title="">✅ `InlineFunction.cpp`</a>
         * <a href="/Core/Functor/Function/NativeFunction.cpp" title="">🖊 `NativeFunction.cpp`</a>
 
