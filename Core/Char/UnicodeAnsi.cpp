@@ -25,14 +25,6 @@ int main(int, char **) {
 		std::cout << "size_W:   " << buff_W.size()      << std::endl << std::endl;
 	}
 
-	// TCHAR
-	{
-		std::wstring buff_T = L"SomeText";
-
-		std::cout << "sizeof_T: " << sizeof(L"SomeText") << std::endl;
-		std::cout << "size_T:   " << buff_T.size()      << std::endl << std::endl;
-	}
-
 	{
 		std::wstring str = L"Some string!!!";
 		/// ::send(0, reinterpret_cast<char const*>(str.data()), str.size() * sizeof(std::wstring::value_type), 0);
@@ -56,8 +48,6 @@ sizeof_A: 9
 size_A:   8
 sizeof_W: 36
 size_W:   8
-sizeof_T: 36
-size_T:   8
 
 
 sizeof_CHAR:         9

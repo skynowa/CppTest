@@ -27,16 +27,16 @@ int main(int, char **)
 
 #if OUTPUT
 
-std::isalpha: -48 - FALSE
-std::isalpha: -71 - FALSE
-std::isalpha: -47 - FALSE
+std::isalpha: -48  - FALSE
+std::isalpha: -71  - FALSE
+std::isalpha: -47  - FALSE
 std::isalpha: -122 - FALSE
-std::isalpha: -47 - FALSE
+std::isalpha: -47  - FALSE
 std::isalpha: -125 - FALSE
-std::isalpha: -48 - FALSE
-std::isalpha: -70 - FALSE
-std::isalpha: -48 - FALSE
-std::isalpha: -75 - FALSE
-std::isalpha: 0 - FALSE
+std::isalpha: -48  - FALSE
+std::isalpha: -70  - FALSE
+std::isalpha: -48  - FALSE
+std::isalpha: -75  - FALSE
+std::isalpha: 0    - FALSE
 
 #endif

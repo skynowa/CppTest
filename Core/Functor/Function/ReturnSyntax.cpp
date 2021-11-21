@@ -11,17 +11,13 @@
 std::string
 fooStr()
 {
-	std::string sRv = __FUNCTION__;
-
-	return sRv;
+	return __FUNCTION__;
 }
 //--------------------------------------------------------------------------------------------------
 auto
 fooAuto() -> std::string
 {
-	std::string sRv = __FUNCTION__;
-
-	return sRv;
+	return __FUNCTION__;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
