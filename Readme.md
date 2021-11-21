@@ -5,7 +5,7 @@
 - [C](#c "C language features") ██████████ 🚩100% (9)
 - [Core](#core "C++ language features") █████████░ 🚩94% (169)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
-- [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (4)
+- [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
 - [Front](#front "Frontend skills") ██████████ 🚩100% (1)
 - [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
@@ -24,7 +24,6 @@
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
-- [build](#build "") ░░░░░░░░░░ 0.0% (0)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -504,10 +503,11 @@
 
 </details>
 
-##  <a title="FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
 * <a href="/FAQ/CppQuestions.md" title="">❌ 📝 CppQuestions.md</a>
+* <a href="/FAQ/Books.md" title="">❌ 📝 Books.md</a>
 * <a href="/FAQ/RSDN.md" title="">❌ 📝 RSDN.md</a>
 * <a href="/FAQ/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -1238,11 +1238,6 @@
         * <a href="/Windows/RegDLL/W32DLL/DLLCode.h" title="prototypes all of the DLL interface objects">✅ `DLLCode.h`</a>
 
       </details>
-
-##  <a title="" id="build">build ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-
-</details>
 
 ---
 ## FAQ
