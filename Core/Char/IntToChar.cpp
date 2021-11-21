@@ -88,3 +88,21 @@ int main(int, char **)
     return 0;
 }
 //-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+/**
+\C$li,IZ..
+FiW.yKL'JS
+>[$\KY;i&1
+n[6Mtdb4@;
+"~ngDe8Oe;
+|{a!?kV}Tu
+z$QhLbYm\s
+S>!"A(C]oH
+b0FCKMz"L`
+F-]'kHC)%`
+*/
+
+#endif
