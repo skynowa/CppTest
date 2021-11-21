@@ -14,10 +14,8 @@ int main(int, char **)
 
 	for (const auto it_char : str) {
 		int iRv = std::isalpha(it_char);
-		if (iRv)
-			printf ("std::isalpha: %ld - TRUE\n", (ssize_t)it_char);
-		else
-			printf ("std::isalpha: %ld - FALSE\n", (ssize_t)it_char);
+
+		printf ("std::isalpha: %ld - %d\n", (ssize_t)it_char, iRv);
 	}
 
     return EXIT_SUCCESS;
@@ -27,16 +25,16 @@ int main(int, char **)
 
 #if OUTPUT
 
-std::isalpha: -48  - FALSE
-std::isalpha: -71  - FALSE
-std::isalpha: -47  - FALSE
-std::isalpha: -122 - FALSE
-std::isalpha: -47  - FALSE
-std::isalpha: -125 - FALSE
-std::isalpha: -48  - FALSE
-std::isalpha: -70  - FALSE
-std::isalpha: -48  - FALSE
-std::isalpha: -75  - FALSE
-std::isalpha: 0    - FALSE
+std::isalpha: -48  - 0
+std::isalpha: -71  - 0
+std::isalpha: -47  - 0
+std::isalpha: -122 - 0
+std::isalpha: -47  - 0
+std::isalpha: -125 - 0
+std::isalpha: -48  - 0
+std::isalpha: -70  - 0
+std::isalpha: -48  - 0
+std::isalpha: -75  - 0
+std::isalpha: 0    - 0
 
 #endif
