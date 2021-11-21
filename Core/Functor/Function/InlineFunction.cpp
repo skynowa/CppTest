@@ -37,7 +37,7 @@ Operation::sum()
 {
     add = a + b;
 
-    std::cout << "Addition of two numbers: " << add << "\n";
+    std::cout << __FUNCTION__ << ": " << add << "\n";
 }
 //-------------------------------------------------------------------------------------------------
 inline void
@@ -45,7 +45,7 @@ Operation::difference()
 {
     sub = a - b;
 
-    std::cout << "Difference of two numbers: " << sub << "\n";
+    std::cout << __FUNCTION__ << ": " << sub << "\n";
 }
 //-------------------------------------------------------------------------------------------------
 inline void
@@ -53,7 +53,7 @@ Operation::product()
 {
     mul = a * b;
 
-    std::cout << "Product of two numbers: " << mul << "\n";
+    std::cout << __FUNCTION__ << ": " << mul << "\n";
 }
 //-------------------------------------------------------------------------------------------------
 inline void
@@ -61,7 +61,7 @@ Operation::division()
 {
     div = a / b;
 
-    std::cout<<"Division of two numbers: "<< div <<"\n" ;
+    std::cout << __FUNCTION__ << ": "<< div <<"\n" ;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -80,9 +80,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-Addition of two numbers: 30
-Difference of two numbers: -10
-Product of two numbers: 200
-Division of two numbers: 0
+sum: 30
+difference: -10
+product: 200
+division: 0
 
 #endif
