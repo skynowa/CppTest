@@ -71,7 +71,7 @@ foreach(IT_SOURCE ${SOURCES})
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 	target_link_libraries(${CPP_TEST} ${LIBRARIES})
 
-	# Build and run test
+	# Targets - Build and run test
 	add_custom_target(
 		test_${CPP_TEST}
 		COMMAND           ${CPP_TEST}
@@ -80,6 +80,7 @@ foreach(IT_SOURCE ${SOURCES})
 
 endforeach()
 #--------------------------------------------------------------------------------------------------
+# Targets
 add_custom_target(
 	roadmap
 	COMMAND           "${CMAKE_SOURCE_DIR}/Roadmap.py"
