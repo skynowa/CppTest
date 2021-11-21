@@ -9,11 +9,11 @@
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
 std::string
-sGetString(const size_t cuiLength)
+str(const size_t cuiLength)
 {
-    const bool letters = true;
-    const bool numbers = true;
-    const bool symbols = true;
+    const bool is_letters = true;
+    const bool is_numbers = true;
+    const bool is_symbols = true;
 
     std::string sRes;
     // the shortest way to do this is to create a string, containing
@@ -21,20 +21,20 @@ sGetString(const size_t cuiLength)
     // to our return value
     std::string allPossible; // this will contain all necessary characters
 
-    if (letters == true) {
+    if (is_letters) {
         for (int i = 65; i <= 90; i++) {
             allPossible += static_cast<char>(i);
             allPossible += static_cast<char>(i + 32); // add a lower case letter, too!
         }
     }
 
-    if (numbers == true) {
+    if (is_numbers) {
         for (int i = 48; i <= 57; i++) {
             allPossible += static_cast<char>(i);
         }
     }
 
-    if (symbols == true) { // if you want symbols, we'll add symbols (note, their ASCII values are scattered)
+    if (is_symbols) { // if you want symbols, we'll add symbols (note, their ASCII values are scattered)
         for (int i = 33; i <= 47; i++) {
             allPossible += static_cast<char>(i);
         }
@@ -53,12 +53,12 @@ sGetString(const size_t cuiLength)
     }
 
     // get the number of characters to use (used for rand())
-    size_t numberOfPossibilities = allPossible.length();
-    for (size_t i = 0; i < cuiLength; i++) {
+    size_t numberOfPossibilities = allPossible.size();
+    for (size_t i = 0; i < cuiLength; ++ i) {
         sRes += allPossible[rand() % numberOfPossibilities];
     }
 
-    //std::random_shuffle(sRes.begin(), sRes.end());
+    // std::random_shuffle(sRes.begin(), sRes.end());
 
     return sRes;
 }
@@ -82,7 +82,7 @@ int main(int, char **)
 
     srand(time_t(NULL));
     for (size_t i = 0; i < 10; ++ i ) {
-        std::cout << sGetString(10) << std::endl;
+        std::cout << str(10) << std::endl;
     }
 
     return 0;
