@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **21-Nov-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **30-Nov-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (169)
+- [Core](#core "C++ language features") █████████░ 🚩94% (170)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -89,7 +89,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (169)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (170)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -277,9 +277,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Exceptions 100% (10)</summary>
+    <summary>📁 ✅ Exceptions 100% (11)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
+    * <a href="/Core/Exceptions/TryCatchMain.cpp" title="Main without braces in try/catch">✅ `TryCatchMain.cpp`</a>
     * <a href="/Core/Exceptions/ThrowDerived.cpp" title="">✅ `ThrowDerived.cpp`</a>
     * <a href="/Core/Exceptions/NonCatchedException.cpp" title="Non-catched "double" exception">✅ `NonCatchedException.cpp`</a>
 
