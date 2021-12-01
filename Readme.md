@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **30-Nov-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Dec-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -19,7 +19,7 @@
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [SQL](#sql "SQL language skills") ██████████ 🚩100% (15)
+- [SQL](#sql "SQL language skills") ██████████ 🚩100% (16)
 - [Stl](#stl "STL - Standard Template Library") █░░░░░░░░░ 13% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
@@ -894,7 +894,7 @@
 
 </details>
 
-##  <a title="SQL language skills" id="sql">SQL ██████████ 🚩100% (15)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SQL language skills" id="sql">SQL ██████████ 🚩100% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
@@ -913,6 +913,13 @@
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 
 </details>
+
+  * <details close>
+    <summary>📁 ✅ Distinct 100% (1)</summary>
+
+    * <a href="/SQL/Distinct/MultipleColumns.sql" title="DISTINCT multiple columns">✅ `MultipleColumns.sql`</a>
+
+    </details>
 
 ##  <a title="STL - Standard Template Library" id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
