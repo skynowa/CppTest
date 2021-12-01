@@ -897,17 +897,11 @@
 ##  <a title="SQL language skills" id="sql">SQL ██████████ 🚩100% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
-* <a href="/SQL/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
-* <a href="/SQL/InnerJoin.sql" title="INNER JOIN">✅ `InnerJoin.sql`</a>
-* <a href="/SQL/FullJoin.sql" title="FULL OUTER JOIN">✅ `FullJoin.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
-* <a href="/SQL/RightJoin.sql" title="RIGHT JOIN">✅ `RightJoin.sql`</a>
-* <a href="/SQL/SelfJoin.sql" title="Self JOIN">✅ `SelfJoin.sql`</a>
 * <a href="/SQL/Having.sql" title="HAVING">✅ `Having.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-* <a href="/SQL/Union.sql" title="UNION">✅ `Union.sql`</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
@@ -918,6 +912,24 @@
     <summary>📁 ✅ Distinct 100% (1)</summary>
 
     * <a href="/SQL/Distinct/MultipleColumns.sql" title="DISTINCT multiple columns">✅ `MultipleColumns.sql`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Join 100% (5)</summary>
+
+    * <a href="/SQL/Join/LeftJoin.sql" title="LEFT JOIN">✅ `LeftJoin.sql`</a>
+    * <a href="/SQL/Join/InnerJoin.sql" title="INNER JOIN">✅ `InnerJoin.sql`</a>
+    * <a href="/SQL/Join/FullJoin.sql" title="FULL OUTER JOIN">✅ `FullJoin.sql`</a>
+    * <a href="/SQL/Join/RightJoin.sql" title="RIGHT JOIN">✅ `RightJoin.sql`</a>
+    * <a href="/SQL/Join/SelfJoin.sql" title="Self JOIN">✅ `SelfJoin.sql`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Union 100% (1)</summary>
+
+    * <a href="/SQL/Union/Union.sql" title="UNION">✅ `Union.sql`</a>
 
     </details>
 
