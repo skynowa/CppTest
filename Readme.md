@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Dec-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Dec-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (170)
+- [Core](#core "C++ language features") █████████░ 🚩94% (171)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -89,7 +89,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (170)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (171)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -354,12 +354,13 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Loops 100% (5)</summary>
+    <summary>📁 ✅ Loops 100% (6)</summary>
 
     * <a href="/Core/Loops/For.cpp" title="">✅ `For.cpp`</a>
     * <a href="/Core/Loops/GoToLablel.cpp" title="">✅ `GoToLablel.cpp`</a>
     * <a href="/Core/Loops/ForVoid.cpp" title="">✅ `ForVoid.cpp`</a>
     * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">🖊 `SwitchCase.cpp`</a>
+    * <a href="/Core/Loops/ForEndCondition.cpp" title="">✅ `ForEndCondition.cpp`</a>
     * <a href="/Core/Loops/ForBreak.cpp" title="">✅ `ForBreak.cpp`</a>
 
     </details>
