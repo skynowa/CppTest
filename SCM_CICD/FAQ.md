@@ -9,6 +9,7 @@ CD - Continuous Delivery
 - [x] [Package Managers](https://caiorss.github.io/C-Cpp-Notes/package-managers.html)
 - [ ] [vcpkg](https://vcpkg.io/en/docs/README.html)
 - [ ] [Conan](https://docs.conan.io/en/latest/)
+- [x] [Почему vcpkg не Conan](https://www.youtube.com/watch?v=TUnonqlbZII)
 
 ## Github
 
