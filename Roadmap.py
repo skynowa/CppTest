@@ -123,6 +123,7 @@ class RoadmapGen:
 				match = re.search(it_todoLabel, fileContent, re.IGNORECASE)
 				if (match):
 					isFileTodo = True
+					break
 			# for
 		except:
 			self._writeLine("Error: {}\n".format(a_filePath))
@@ -134,6 +135,7 @@ class RoadmapGen:
 				match = re.search(it_remarkLabel, fileContent, re.IGNORECASE)
 				if (match):
 					isFileRemark = True
+					break
 			# for
 		except:
 			self._writeLine("Error: {}\n".format(a_filePath))

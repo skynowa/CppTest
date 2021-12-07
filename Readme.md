@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Dec-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **07-Dec-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -261,7 +261,7 @@
   * <details close>
     <summary>📁 ✅ Enum 100% (6)</summary>
 
-    * <a href="/Core/Enum/CodeStyle.cpp" title="">✅ `CodeStyle.cpp`</a>
+    * <a href="/Core/Enum/CodeStyle.cpp" title="">🖊 `CodeStyle.cpp`</a>
     * <a href="/Core/Enum/ForEnum.cpp" title="">🖊 `ForEnum.cpp`</a>
     * <a href="/Core/Enum/ReverseEnum.cpp" title="Enum in reverse order">✅ `ReverseEnum.cpp`</a>
     * <a href="/Core/Enum/SizeOf.cpp" title="enum size">✅ `SizeOf.cpp`</a>

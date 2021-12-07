@@ -7,11 +7,11 @@
 #include <StdStream.h>
 #include <StdTest.h>
 #include <Stl.h>
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 namespace open_mode
 {
 
-enum EType
+enum Type
 {
     Read1 = 0,
     Read2 = 1,
@@ -19,16 +19,16 @@ enum EType
     Max   = READ3 + 1
 };
 
-enum class /* struct */ Alpha
+};
+//-------------------------------------------------------------------------------------------------
+enum class /* struct */ OpenMode
 {
     a   = 0,
     b   = 1,
     c   = 2,
     max = c + 1
 };
-
-};
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 class A
 {
 public:
@@ -41,60 +41,74 @@ public:
 
     A() = default;
 };
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+template<typename T>
 void
-foo1(open_mode::EType mode)
-{
-    std::cout << "mode: " << mode << std::endl;
-}
-//---------------------------------------------------------------------------
-void
-printAlpha(open_mode::Alpha mode)
+printEnum(T mode)
 {
     std::cout << "mode: " << static_cast<int>(mode) << std::endl;
 }
-//---------------------------------------------------------------------------
-void
-foo3(A::OpenMode mode)
-{
-    std::cout << "mode: " << mode << std::endl;
-}
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
     {
-        std::cout << open_mode::Read1 << std::endl;
-        std::cout << open_mode::Read2 << std::endl;
-        std::cout << open_mode::READ3 << std::endl;
-        std::cout << open_mode::Max   << std::endl;
+        std::cout << "[enum Type]" << std::endl;
+
+        ::printEnum(open_mode::Read1);
+        ::printEnum(open_mode::Read2);
+        ::printEnum(open_mode::READ3);
+        ::printEnum(open_mode::Max);
+
         std::cout << std::endl;
     }
 
     {
+        std::cout << "[enum class Alpha]" << std::endl;
+
+        ::printEnum(OpenMode::a);
+        ::printEnum(OpenMode::b);
+        ::printEnum(OpenMode::c);
+        ::printEnum(OpenMode::max);
+
+        std::cout << std::endl;
+    }
+
+    {
+        std::cout << "[class A]" << std::endl;
+
         A::OpenMode mode = A::OPEN_MODE_READ;
 
-        std::cout << mode              << std::endl;
-        std::cout << A::omRead         << std::endl;
-        std::cout << A::OpenMode_Read  << std::endl;
-        std::cout << A::OPEN_MODE_READ << std::endl;
+        ::printEnum(mode);
+        ::printEnum(A::omRead);
+        ::printEnum(A::OpenMode_Read);
+        ::printEnum(A::OPEN_MODE_READ);
+
         std::cout << std::endl;
     }
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-0
-1
-2
-3
+[enum Type]
+mode: 0
+mode: 1
+mode: 2
+mode: 3
 
-2
-0
-1
-2
+[enum class Alpha]
+mode: 0
+mode: 1
+mode: 2
+mode: 3
+
+[class A]
+mode: 2
+mode: 0
+mode: 1
+mode: 2
 
 #endif
