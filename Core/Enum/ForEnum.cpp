@@ -15,7 +15,7 @@ enum Type
 	a    = 1,
 	b    = 2,
 	c    = 3,
-	Last = 4
+	Last = c + 1
 };
 
 static const Type All[] {a, b, c};
@@ -60,7 +60,6 @@ int main(int, char **)
 		Last  = 0x8
 	};
 
-
 	// std::cout << BitType(Green << 1) << std::endl;
 
 	// for (BitType e = First; e != Last; e = BitType(e << 1)) {
@@ -75,6 +74,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+1,2,3,
+1,3,
+1,2,3,
+1,2,3,
 
 #endif
