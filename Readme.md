@@ -3,7 +3,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (171)
+- [Core](#core "C++ language features") █████████░ 🚩94% (172)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -89,7 +89,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (171)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (172)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -259,9 +259,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Enum 100% (6)</summary>
+    <summary>📁 ✅ Enum 100% (7)</summary>
 
     * <a href="/Core/Enum/CodeStyle.cpp" title="">✅ `CodeStyle.cpp`</a>
+    * <a href="/Core/Enum/TODO.md" title="">✅ `📝 TODO.md`</a>
     * <a href="/Core/Enum/ForEnum.cpp" title="">🖊 `ForEnum.cpp`</a>
     * <a href="/Core/Enum/ReverseEnum.cpp" title="Enum in reverse order">✅ `ReverseEnum.cpp`</a>
     * <a href="/Core/Enum/SizeOf.cpp" title="enum size">✅ `SizeOf.cpp`</a>
