@@ -1,8 +1,6 @@
 /*
- * \file  main.cpp
- * \brief inserting into a list
- *
- * \todo
+ * \file  Insert.cpp
+ * \brief Inserting into a list
  */
 
 
@@ -20,25 +18,24 @@ int main(int, char **)
     std::list<Item> items;
     {
         for (size_t i = 1; i <= 5; ++ i) {
-            Item item = {i};    // 1 2 3 4 5
+            Item item {i};    // 1 2 3 4 5
 
             items.push_back(item);
         }
     }
 
-    std::list<Item>::iterator it = items.begin();
+    auto it = items.begin();
+
     ++ it; // it points now to number 2
 
-    Item item = {777};
+    Item item {777};
     items.insert(it, item); // 1 777 2 3 4 5
 
-    std::cout << "items:";
+    std::cout << "items:\n\n";
 
-    for (std::list<Item>::iterator it = items.begin(); it != items.end(); ++ it) {
-        std::cout << ' ' << (*it).id;
+    for (auto it = items.cbegin(); it != items.cend(); ++ it) {
+        std::cout << it->id << std::endl;
     }
-
-    std::cout << '\n';
 
     return 0;
 }
@@ -47,6 +44,13 @@ int main(int, char **)
 
 #if OUTPUT
 
-items: 1 777 2 3 4 5
+items:
+
+1
+777
+2
+3
+4
+5
 
 #endif
