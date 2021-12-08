@@ -6,12 +6,9 @@
  */
 
 
-#include <string>
-#include <iostream>
-#include <cassert>
-#include <list>
-#include <vector>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 #define TRACE_VAR(v) \
     #v ": " << (v)

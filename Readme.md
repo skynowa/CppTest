@@ -20,7 +20,7 @@
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [SQL](#sql "SQL language skills") ██████████ 🚩100% (16)
-- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 15% (82)
+- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 16% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
@@ -935,7 +935,7 @@
 
     </details>
 
-##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 15% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 16% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1028,12 +1028,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ List 0% (12)</summary>
+    <summary>📁 ⌛ List 8% (12)</summary>
 
     * <a href="/Stl/List/ListOperations.cpp" title="">❌ ListOperations.cpp</a>
     * <a href="/Stl/List/ListRemoveIf.cpp" title="">❌ ListRemoveIf.cpp</a>
     * <a href="/Stl/List/splice.cpp" title="">❌ splice.cpp</a>
-    * <a href="/Stl/List/ListConditionalEraseWhileIteration.cpp" title="">❌ ListConditionalEraseWhileIteration.cpp</a>
+    * <a href="/Stl/List/ListConditionalErase.cpp" title="List Conditional Erase While Iteration">✅ `ListConditionalErase.cpp`</a>
     * <a href="/Stl/List/ListSearchUsingGenerate.cpp" title="">❌ ListSearchUsingGenerate.cpp</a>
     * <a href="/Stl/List/list.cpp" title="">❌ list.cpp</a>
     * <a href="/Stl/List/ListRemove.cpp" title="">❌ ListRemove.cpp</a>
