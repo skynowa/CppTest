@@ -23,7 +23,7 @@ int main(int, char **)
         }
     }
 
-    std::cout << "items:\n";
+    std::cout << "items:\n\n";
     for (auto &it : items) {
         std::cout << TRACE_VAR(it.id) << std::endl;
     }
@@ -34,6 +34,8 @@ int main(int, char **)
 
 
 #if OUTPUT
+
+items:
 
 it.id: 1
 it.id: 2
