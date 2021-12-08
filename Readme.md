@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **08-Dec-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **09-Dec-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -20,7 +20,7 @@
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [SQL](#sql "SQL language skills") ██████████ 🚩100% (16)
-- [Stl](#stl "STL - Standard Template Library") █░░░░░░░░░ 13% (82)
+- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 15% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
@@ -935,7 +935,7 @@
 
     </details>
 
-##  <a title="STL - Standard Template Library" id="stl">Stl █░░░░░░░░░ 13% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 15% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -943,12 +943,12 @@
 </details>
 
   * <details close>
-    <summary>📁 ❌ Algos 0% (6)</summary>
+    <summary>📁 ⌛ Algos 17% (6)</summary>
 
     * <a href="/Stl/Algos/replace_if.cpp" title="">❌ replace_if.cpp</a>
+    * <a href="/Stl/Algos/Transform.cpp" title="">✅ `Transform.cpp`</a>
     * <a href="/Stl/Algos/Sort.md" title="">❌ 📝 Sort.md</a>
     * <a href="/Stl/Algos/difference.cpp" title="">❌ difference.cpp</a>
-    * <a href="/Stl/Algos/transform.cpp" title="">❌ transform.cpp</a>
     * <a href="/Stl/Algos/set_symmetric_difference.cpp" title="">❌ set_symmetric_difference.cpp</a>
     * <a href="/Stl/Algos/accumulate.cpp" title="">❌ accumulate.cpp</a>
 

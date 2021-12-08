@@ -1,5 +1,5 @@
 /**
- * \file  transform.cpp
+ * \file  Transform.cpp
  * \brief
  */
 
@@ -20,10 +20,10 @@ int main(int, char **)
             std::back_inserter(valuesOut),
             [](const int a_num) -> int
             {
-                std::cout << TRACE_VAR(a_num) << std::endl;
-
                 return a_num * 1.2;
             });
+
+        std::cout << TRACE_VAR(valuesOut) << std::endl;
     }
 
     {
@@ -35,24 +35,25 @@ int main(int, char **)
             valuesIn.begin(),
             [](const int a_num) -> int
             {
-                std::cout << TRACE_VAR(a_num) << std::endl;
-
                 return a_num * 1.2;
             });
+
+        std::cout << TRACE_VAR(valuesIn) << std::endl;
     }
 
     {
         std::cout << "\nSample #3" << std::endl;
 
         const std::vector<int> valuesIn {1, 2, 3, 4, 5};
+        std::vector<double>    valuesOut;
 
         std::for_each(valuesIn.cbegin(), valuesIn.cend(),
-            [](const int a_num) -> int
+            [&](const int a_num) -> void
             {
-                std::cout << TRACE_VAR(a_num) << std::endl;
-
-                return a_num * 1.2;
+                valuesOut.push_back(a_num * 1.2);
             });
+
+        std::cout << TRACE_VAR(valuesIn) << std::endl;
     }
 
     return EXIT_SUCCESS;
@@ -62,10 +63,13 @@ int main(int, char **)
 
 #if OUTPUT
 
-number: 1.2
-number: 2.4
-number: 3.6
-number: 4.8
-number: 6
+Sample #1
+valuesOut: std::vector (size=5): {1,2,3,4,6}
+
+Sample #2
+valuesIn: std::vector (size=5): {1,2,3,4,6}
+
+Sample #3
+valuesIn: std::vector (size=5): {1,2,3,4,5}
 
 #endif
