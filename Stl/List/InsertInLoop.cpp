@@ -1,8 +1,6 @@
 /*
- * \file  main.cpp
- * \brief inserting into a list
- *
- * \todo
+ * \file  InsertInLoop.cpp
+ * \brief Inserting into a list
  */
 
 
@@ -10,9 +8,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
-
 struct Item
 {
     size_t id;
@@ -24,16 +19,14 @@ int main(int, char **)
 
     for (auto it = items.begin(); it != items.end(); ++ it) {
         if (it->id == 3) {
-            Item item {777};
-            items.insert(++ it, item);
+            items.insert(++ it, Item{777});
         }
     }
 
-    std::cout << "items:";
+    std::cout << "items:\n";
     for (auto &it : items) {
-        std::cout << ' ' << it.id;
+        std::cout << TRACE_VAR(it.id) << std::endl;
     }
-    std::cout << '\n';
 
     return 0;
 }
@@ -42,6 +35,11 @@ int main(int, char **)
 
 #if OUTPUT
 
-items: 777 0 777 1 777 2 777 3 777 4
+it.id: 1
+it.id: 2
+it.id: 3
+it.id: 777
+it.id: 4
+it.id: 5
 
 #endif
