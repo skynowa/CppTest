@@ -39,6 +39,13 @@ int main(int, char **)
     }
 
     {
+        const char ch {' '};
+        static_assert(ch == char{32});
+
+        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+    }
+
+    {
     #if 0
         const char ch {''};   // error: empty character constant
 
@@ -57,5 +64,6 @@ ch: ,  static_cast<int>(ch): 0
 ch: ,  static_cast<int>(ch): 0
 ch: ,  static_cast<int>(ch): 0
 ch: 0, static_cast<int>(ch): 48
+ch:  , static_cast<int>(ch): 32
 
 #endif
