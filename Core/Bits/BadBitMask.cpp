@@ -10,16 +10,30 @@
 //--------------------------------------------------------------------------------------------------
 int main()
 {
-    for (uint64_t i = 0; i < 70; ++ i) {
-		const uint64_t gds_id = i;
+    // Bit operation for "0"
+    {
+        std::size_t i{};
 
-		const auto mask_bad = (1    << (gds_id - 1));
-		const auto mask_ok  = (1ULL << (gds_id - 1ULL));
+        i |= 32;
 
-        std::cout
-            << gds_id << " - "
-            << "Bad mask: " << mask_bad << ", "
-            << "OK mask: "  << mask_ok << std::endl;
+        std::cout << TRACE_VAR(i) << std::endl;
+    }
+
+    // Overflow bit mask
+    {
+        std::cout << std::endl;
+
+        for (uint64_t i = 0; i < 70; ++ i) {
+            const uint64_t gds_id = i;
+
+            const auto mask_bad = (1    << (gds_id - 1));
+            const auto mask_ok  = (1ULL << (gds_id - 1ULL));
+
+            std::cout
+                << gds_id << " - "
+                << "Bad mask: " << mask_bad << ", "
+                << "OK mask: "  << mask_ok << std::endl;
+        }
     }
 
     return 0;
@@ -27,6 +41,8 @@ int main()
 //--------------------------------------------------------------------------------------------------
 
 #if OUTPUT
+
+i: 32
 
 0 - Bad mask: -2147483648, OK mask: 9223372036854775808
 1 - Bad mask: 1, OK mask: 1

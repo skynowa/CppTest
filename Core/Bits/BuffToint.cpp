@@ -40,7 +40,7 @@ int main()
     {
         int rv = 0;
 
-        rv = *(int *)array;
+        rv = *reinterpret_cast<const int *>(array);
 
         std::cout << TRACE_VAR(rv) << std::endl;
     }
