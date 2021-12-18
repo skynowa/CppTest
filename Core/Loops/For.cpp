@@ -18,15 +18,25 @@ trace(const std::string &a_point)
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
-    int i = 0;
+    {
+        int i = 0;
 
-    for (trace("1,"); trace("2"); trace("3,")) {
-        std::cout << " {" << TRACE_VAR(i) << "}" << std::endl;
+        for (trace("1,"); trace("2"); trace("3,")) {
+            std::cout << " {" << TRACE_VAR(i) << "}" << std::endl;
 
-        ++ i;
+            ++ i;
 
-        if (i == 5) {
-            break;
+            if (i == 5) {
+                break;
+            }
+        }
+    }
+
+    {
+        std::cout << std::endl;
+
+        for (int x = 0; x != 0; ++ x) {
+            std::cout << " {" << TRACE_VAR(x) << "}" << std::endl;
         }
     }
 
@@ -42,5 +52,7 @@ int main(int, char **)
 3,2 {i: 2}
 3,2 {i: 3}
 3,2 {i: 4}
+
+// x - n/a
 
 #endif
