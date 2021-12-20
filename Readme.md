@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **18-Dec-2021**
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **20-Dec-2021**
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -19,7 +19,7 @@
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [SQL](#sql "SQL language skills") ██████████ 🚩100% (16)
+- [SQL](#sql "SQL language skills") █████████░ 🚩94% (17)
 - [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 18% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
@@ -897,7 +897,7 @@
 
 </details>
 
-##  <a title="SQL language skills" id="sql">SQL ██████████ 🚩100% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (17)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
@@ -906,6 +906,7 @@
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
+* <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
 * <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 
