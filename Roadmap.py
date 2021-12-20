@@ -420,9 +420,10 @@ class RoadmapGen:
 		rootPath = str(Path.cwd());
 
 		# Title
-		dateNow = date.today().strftime("%d-%b-%Y")
+		dateNow        = date.today().strftime("%d-%b-%Y")
+		gitHubWatchers = "![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)"
 
-		self._writeLine('# {} **{}**'.format(self._label(self.labelTitle, '', self.appName), dateNow))
+		self._writeLine('# {} **{}** {}'.format(self._label(self.labelTitle, '', self.appName), dateNow, gitHubWatchers))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
