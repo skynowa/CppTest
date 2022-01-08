@@ -11,6 +11,7 @@ Template metaprogramming
 - [ ] https://www.youtube.com/watch?v=ULX_VTkMvf8
 - [ ] [Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
 - [ ] [Webinar "Variadic templates. Magic & truth behind std::tuple & std::variant"](https://www.youtube.com/watch?v=9rp3MhMHpxI)
+- [ ] [Template Metaprogramming: Practical Application](https://www.youtube.com/watch?v=4YC6_77-iEY)
 
 ## Classes
 
