@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **08-Jan-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **21-Jan-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [C](#c "C language features") ██████████ 🚩100% (9)
-- [Core](#core "C++ language features") █████████░ 🚩94% (173)
+- [Core](#core "C++ language features") █████████░ 🚩94% (174)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
@@ -89,7 +89,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (173)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (174)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -146,18 +146,16 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 87% (23)</summary>
+    <summary>📁 ⌛ C++17 88% (24)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
     * <a href="/Core/C++17/Utf8CharLiterals.cpp" title="UTF-8 Character Literals">✅ `Utf8CharLiterals.cpp`</a>
     * <a href="/Core/C++17/InlineVars.cpp" title="Inline variables">✅ `InlineVars.cpp`</a>
-    * <a href="/Core/C++17/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
     * <a href="/Core/C++17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
     * <a href="/Core/C++17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
     * <a href="/Core/C++17/NestedNamespaces.cpp" title="Nested namespaces">✅ `NestedNamespaces.cpp`</a>
     * <a href="/Core/C++17/StructuredBindingsRef.cpp" title="">✅ `StructuredBindingsRef.cpp`</a>
-    * <a href="/Core/C++17/ConstexprIf.cpp" title="constexpr if">✅ `ConstexprIf.cpp`</a>
     * <a href="/Core/C++17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">✅ `BracedInitList.cpp`</a>
     * <a href="/Core/C++17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C++17/ClassTemplateArgDeduction_CTAD.cpp" title="CTAD - Class template argument deduction">✅ `ClassTemplateArgDeduction_CTAD.cpp`</a>
@@ -177,6 +175,15 @@
         * <a href="/Core/C++17/Attributes/NoReturn.cpp" title="Indicates that the function does not return">✅ `NoReturn.cpp`</a>
         * <a href="/Core/C++17/Attributes/FallThrough.cpp" title="[[fallthrough]]">✅ `FallThrough.cpp`</a>
         * <a href="/Core/C++17/Attributes/Sample1.cpp" title="New standard attributes">✅ `Sample1.cpp`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ Constexpr 100% (3)</summary>
+
+        * <a href="/Core/C++17/Constexpr/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
+        * <a href="/Core/C++17/Constexpr/ConstexprIf.cpp" title="constexpr if">✅ `ConstexprIf.cpp`</a>
+        * <a href="/Core/C++17/Constexpr/ConstexprSwitch.cpp" title="">✅ `ConstexprSwitch.cpp`</a>
 
       </details>
 
