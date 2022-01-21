@@ -19,7 +19,7 @@
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [SQL](#sql "SQL language skills") █████████░ 🚩94% (17)
+- [SQL](#sql "SQL language skills") █████████░ 🚩94% (18)
 - [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 18% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
@@ -904,11 +904,12 @@
 
 </details>
 
-##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (17)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
+* <a href="/SQL/RandomRow.sql" title="Select random row">✅ `RandomRow.sql`</a>
 * <a href="/SQL/Having.sql" title="HAVING">✅ `Having.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
