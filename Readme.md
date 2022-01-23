@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **21-Jan-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Jan-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -93,7 +93,7 @@
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Core/SwitchString.cpp" title="https://github.com/rioki/rex/blob/master/strex.h#L71">✅ `SwitchString.cpp`</a>
+* <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="">✅ `ReturnBool.cpp`</a>
 * <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
