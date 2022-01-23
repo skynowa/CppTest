@@ -1,6 +1,10 @@
 /**
  * \file  SwitchString.cpp
- * \brief https://github.com/rioki/rex/blob/master/strex.h#L71
+ * \brief Compile-time switch for C-string
+ *
+ * \see Samples
+ * - https://github.com/rioki/rex/blob/master/strex.h#L71
+ * - https://learnmoderncpp.com/2020/06/01/strings-as-switch-case-labels/
  */
 
 
