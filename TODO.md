@@ -1,5 +1,7 @@
 # TODO
 
+- [ ] GitHub actions
+
 ## Tags
 
 - Valgrind
