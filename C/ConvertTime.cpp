@@ -1,29 +1,29 @@
 /**
- * \file  Time.cpp
+ * \file  ConvertTime.cpp
  * \brief
+ *
+ * \review
  */
 
 
-#include <iostream>
-
-#include <stdio.h>
-#include <time.h>
-#include <cstring>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+#define HOUR(time) ((uint16_t)((uint32_t)(time) / 3600000))
+#define MIN(time)  ((uint16_t)(((uint32_t)(time) % 3600000) / 60000))
+#define SEC(time)  ((uint16_t)((((uint32_t)(time) % 3600000) % 60000) / 1000))
+#define MSEC(time) ((uint16_t)((uint32_t)(time) % 1000))
 //--------------------------------------------------------------------------------------------------
 void
 msecToTimeStr(int iMsec)
 {
-	#define HOUR(time) ((uint16_t)((uint32_t)(time) / 3600000))
-	#define MIN(time)  ((uint16_t)(((uint32_t)(time) % 3600000) / 60000))
-	#define SEC(time)  ((uint16_t)((((uint32_t)(time) % 3600000) % 60000) / 1000))
-	#define MSEC(time) ((uint16_t)((uint32_t)(time) % 1000))
-
-    char buf1[64] {};
+    char buf1[80] {};
     sprintf(buf1, "%u:%.2u:%.2u:%.3u", HOUR(iMsec), MIN(iMsec), SEC(iMsec), MSEC(iMsec));
 
     std::cout << buf1 << '\t' << "message" << '\n';
 
-	char buf[64] {};
+	char buf[80] {};
     unsigned int h {}, m {}, s {}, ms {};
     unsigned int t = iMsec;
 
