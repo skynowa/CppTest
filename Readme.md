@@ -2,7 +2,7 @@
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
-- [C](#c "C language features") ██████████ 🚩100% (10)
+- [C](#c "C language features") ██████████ 🚩100% (11)
 - [Core](#core "C++ language features") █████████░ 🚩94% (174)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
@@ -69,16 +69,17 @@
 
 </details>
 
-##  <a title="C language features" id="c">C ██████████ 🚩100% (10)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C language features" id="c">C ██████████ 🚩100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
+* <a href="/C/ConvertTime.cpp" title="">🖊 `ConvertTime.cpp`</a>
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-* <a href="/C/Time.cpp" title="">🖊 `Time.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
+* <a href="/C/Strftime.cpp" title="">✅ `Strftime.cpp`</a>
 
 </details>
 
