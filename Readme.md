@@ -1,8 +1,8 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Jan-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **27-Apr-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
-- [C](#c "C language features") ██████████ 🚩100% (9)
+- [C](#c "C language features") ██████████ 🚩100% (10)
 - [Core](#core "C++ language features") █████████░ 🚩94% (174)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
@@ -69,8 +69,9 @@
 
 </details>
 
-##  <a title="C language features" id="c">C ██████████ 🚩100% (9)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C language features" id="c">C ██████████ 🚩100% (10)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
