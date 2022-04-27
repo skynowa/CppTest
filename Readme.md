@@ -75,7 +75,7 @@
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
-* <a href="/C/Time.cpp" title="">✅ `Time.cpp`</a>
+* <a href="/C/Time.cpp" title="">🖊 `Time.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
