@@ -1,8 +1,6 @@
 /**
  * \file  Time.cpp
  * \brief
- *
- * \review
  */
 
 
@@ -11,23 +9,6 @@
 #include <stdio.h>
 #include <time.h>
 #include <cstring>
-//--------------------------------------------------------------------------------------------------
-// 2008-09-25 11:38:44     Test string
-void
-logEntry(const char *message)
-{
-	// Output date and time in ISO 8601:2004 format, i.e., YYYY-MM-DD HH:MM:SS
-	const char *timeStringFormat = "%Y-%m-%d %H:%M:%S";
-	const int   timeStringLength = 20;
-	char        timeString[timeStringLength] {};
-
-	// get current date and time
-	time_t  t       = time(0);
-	tm     *curTime = localtime(&t);
-
-	strftime(timeString, timeStringLength, timeStringFormat, curTime);
-	std::cout << timeString << '\t' << message << '\n';
-}
 //--------------------------------------------------------------------------------------------------
 void
 msecToTimeStr(int iMsec)
