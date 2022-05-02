@@ -84,7 +84,7 @@ foreach(IT_SOURCE ${SOURCES})
 
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
 	add_executable(${CPP_TEST} ${IT_SOURCE})
-	target_link_libraries(${CPP_TEST} ${LIBRARIES})
+	target_link_libraries(${CPP_TEST} ${CONAN_LIBS} ${LIBRARIES})
 
 	# Targets - Build and run test
 	add_custom_target(
