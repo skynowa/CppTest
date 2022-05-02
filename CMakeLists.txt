@@ -37,7 +37,8 @@ foreach(IT_SOURCE ${SOURCES})
 		# TODO: Ignores
 	else()
 		if ("${IT_SOURCE}" MATCHES "Windows/" OR
-			"${IT_SOURCE}" MATCHES "WinException/")
+			"${IT_SOURCE}" MATCHES "WinException/"
+		)
 			message(STATUS "Skip: ${IT_SOURCE}" )
 			continue()
 		endif()
@@ -52,6 +53,7 @@ foreach(IT_SOURCE ${SOURCES})
 	endif()
 
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
+
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 	target_link_libraries(${CPP_TEST} ${CONAN_LIBS})
 
