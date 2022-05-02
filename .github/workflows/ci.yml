@@ -47,11 +47,6 @@ jobs:
       # GITHUB_ENV
       - name: GITHUB_ENV
         run: |
-          # echo "ENVs: $(printenv)"
-          echo "github.event.repository.name: ${{ github.event.repository.name }}"
-          echo "GITHUB_ENV: ${GITHUB_ENV}"
-          echo "OS: $(uname -s)"
-          echo ""
           echo "CC=${{ matrix.config.cc }}"   >> $GITHUB_ENV
           echo "CXX=${{ matrix.config.cxx }}" >> $GITHUB_ENV
         shell: bash
@@ -67,11 +62,6 @@ jobs:
         run: |
           CC="${{ matrix.config.cc }}"
           CXX="${{ matrix.config.cxx }}"
-
-          conan --version
-          # conan profile new default --detect --force
-          # conan profile show default
-          conan profile list
         shell: bash
 
       ##############################################################################################

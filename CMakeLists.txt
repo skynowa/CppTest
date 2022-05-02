@@ -22,7 +22,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_ROOT}/Modules/CMakeLib")
 message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
 
 # Boost
-find_package(Boost COMPONENTS program_options filesystem system)
+find_package(Boost REQUIRED
+	COMPONENTS program_options filesystem system)
+
 if (Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
