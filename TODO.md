@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] GitHub actions
+- [+] GitHub actions
 
 ## Tags
 
