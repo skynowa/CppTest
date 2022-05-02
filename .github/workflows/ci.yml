@@ -126,7 +126,7 @@ jobs:
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
-          git commit -m "[GitHub Bot] Readme.md - update" || 0
+          git commit -m "[💥 GitHub Bot 💥] Readme.md - update" || 0
           git push
         shell: bash
 
