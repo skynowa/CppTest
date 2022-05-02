@@ -5,6 +5,8 @@
 #
 
 
+set -ex
+
 # vars
 PROJECT_NAME="../$(basename ${PWD})"
 DIR_PROJECT="../${PROJECT_NAME}"
