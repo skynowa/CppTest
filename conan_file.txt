@@ -1,7 +1,7 @@
 [requires]
 boost/1.75.0
 libssh2/1.10.0
-libevent/2.1.8
+libevent/2.1.11
 
 [generators]
 cmake
