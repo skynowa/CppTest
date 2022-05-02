@@ -35,6 +35,7 @@ find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
 # find_package(Ssh2   QUIET REQUIRED)
 
 include(${CMAKE_SOURCE_DIR}/../../CppTest_conan/conanbuildinfo.cmake)
+conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
