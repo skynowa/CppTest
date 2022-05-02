@@ -1,6 +1,6 @@
 /**
  * \file  ReturnBool.cpp
- * \brief
+ * \brief Returm NO value (as bool)
  */
 
 
