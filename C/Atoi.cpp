@@ -25,7 +25,7 @@ int main(int, char **)
     std::cout << TRACE_VAR(c) << std::endl;
 
 #if 1
-    int d = ::atoi(NULL);
+    int d = ::atoi(nullptr);
     std::cout << d << std::endl;
 #endif
 
