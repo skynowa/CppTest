@@ -24,7 +24,7 @@ int main(int, char **)
 	switch (a) {
 	case 1:
 		// Indicates that falling through on case 1 is intentional
-		[[fallthrough]];
+		[[fallthrough]]; // NOTE: the semicolon to indicate the null statement
 	case 2:
 		// Indicates that b might be unused, such as on production builds
 		[[maybe_unused]] int b = foo();
