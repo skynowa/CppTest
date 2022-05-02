@@ -114,10 +114,10 @@ jobs:
       #   shell: bash
 
       # Roadmap
-      - name: ${{github.event.repository.name}} - Build
+      - name: Roadmap - Build
         run: |
           cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
           echo "PWD: $(ls -la)"
-          # git add ./Readme.md && git commit -m "Readme.md - update" && git push
+          git add ./Readme.md && git commit -m "Readme.md - update" && git push
         shell: bash
 #--------------------------------------------------------------------------------------------------
