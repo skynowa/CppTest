@@ -20,19 +20,6 @@ set(CMAKE_CXX_STANDARD          17)
 # Modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_ROOT}/Modules/CMakeLib")
 message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
-
-# Boost
-find_package(Boost REQUIRED
-	COMPONENTS program_options filesystem system)
-
-if (Boost_FOUND)
-    include_directories(${Boost_INCLUDE_DIRS})
-endif()
-
-find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
-# find_package(Pcre++ QUIET REQUIRED)
-# find_package(Event2 QUIET REQUIRED)
-# find_package(Ssh2   QUIET REQUIRED)
 #--------------------------------------------------------------------------------------------------
 # CONAN
 set(CONAN_PATHS      "${CMAKE_SOURCE_DIR}/../CppTest_conan/conan_paths.cmake")
@@ -45,6 +32,19 @@ include(${CONAN_PATHS})
 include(${CONAN_BUILD_INFO})
 
 conan_basic_setup()
+#--------------------------------------------------------------------------------------------------
+# Boost
+find_package(Boost REQUIRED
+	COMPONENTS program_options filesystem system)
+
+if (Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+endif()
+
+find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
+# find_package(Pcre++ QUIET REQUIRED)
+# find_package(Event2 QUIET REQUIRED)
+# find_package(Ssh2   QUIET REQUIRED)
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
