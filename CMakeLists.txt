@@ -44,7 +44,7 @@ endif()
 find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
 # find_package(Pcre++ QUIET REQUIRED)
 # find_package(Event2 QUIET REQUIRED)
-find_package(Ssh2   QUIET REQUIRED)
+# find_package(Ssh2   QUIET REQUIRED)
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
