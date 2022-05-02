@@ -109,7 +109,7 @@ int main(int, char **) {
 		}
 		cout << endl;
 		cout << endl;
-		system("pause");
+		(int)system("pause");
 		cout << endl;
 		cout << endl;
 
@@ -130,7 +130,7 @@ int main(int, char **) {
 		}
 		cout << endl;
 		cout << endl;
-		system("pause");
+		(int)system("pause");
 		cout << endl;
 		cout << endl;
 
@@ -143,8 +143,8 @@ int main(int, char **) {
 	//
 	cout << endl;
 	cout << endl;
-	system("pause");
-	return 0;
+	(int)system("pause");
 
+	return 0;
 }
 //---------------------------------------------------------------------------

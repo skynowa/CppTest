@@ -30,13 +30,13 @@ int main(int, char **argv)
 	};
 
 	int pipeIn[2] {};
-	::pipe(pipeIn);
+	(int)::pipe(pipeIn);
 
 	int pipeOut[2] {};
-	::pipe(pipeOut);
+	(int)::pipe(pipeOut);
 
 	int pipeErr[2] {};
-	::pipe(pipeErr);
+	(int)::pipe(pipeErr);
 
 	const int pid = ::fork();
 	if (pid == ProcessStatus::ChildOk) {

@@ -29,8 +29,11 @@ public:
 	}
 	bool operator<(const User& userObj) const
 	{
-		if (userObj.m_id < this->m_id)
+		if (userObj.m_id < this->m_id) {
 			return true;
+		}
+
+		return false;
 	}
 };
 
