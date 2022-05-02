@@ -22,18 +22,19 @@ set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake"
 include(${CONAN_BUILD_INFO})
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
-include_directories(${CMAKE_SOURCE_DIR})
-include_directories(${CMAKE_SOURCE_DIR}/StdStream)
-include_directories(${CMAKE_SOURCE_DIR}/StdTest)
+include_directories(
+	${CMAKE_SOURCE_DIR}
+	${CMAKE_SOURCE_DIR}/StdStream
+	${CMAKE_SOURCE_DIR}/StdTest)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
 	${CMAKE_SOURCE_DIR}/*.c
 	${CMAKE_SOURCE_DIR}/*.cpp)
 
 foreach(IT_SOURCE ${SOURCES})
-	# ignores
+	# Ignores
 	if (WIN32)
-		# TODO: ignores
+		# TODO: Ignores
 	else()
 		if ("${IT_SOURCE}" MATCHES "Windows/" OR
 			"${IT_SOURCE}" MATCHES "WinException/"
@@ -61,7 +62,6 @@ foreach(IT_SOURCE ${SOURCES})
 		COMMAND           ${CPP_TEST}
 		DEPENDS           ${CPP_TEST}
 		WORKING_DIRECTORY ${CMAKE_PROJECT_DIR})
-
 endforeach()
 #--------------------------------------------------------------------------------------------------
 # Targets
