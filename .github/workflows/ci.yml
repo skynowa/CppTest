@@ -22,14 +22,15 @@ jobs:
       matrix:
         config:
         - {
-            name:          "Ubuntu-20.04 (GCC)",
-            os:            ubuntu-20.04,
-            cc:            "gcc",
-            cxx:           "g++",
-            gen_script:    "./gen_eclipse.sh",
-            build_script:  "./build.sh",
-            conan_profile: "conan_profile_ubuntu_gcc.txt",
-            conan_file:    "conan_file.txt"
+            name:           "Ubuntu-20.04 (GCC)",
+            os:             ubuntu-20.04,
+            cc:             "gcc",
+            cxx:            "g++",
+            gen_script:     "./gen_eclipse.sh",
+            build_script:   "./build.sh",
+            raodmap_script: "./Roadmap.py",
+            conan_profile:  "conan_profile_ubuntu_gcc.txt",
+            conan_file:     "conan_file.txt"
           }
 
     steps:
@@ -120,5 +121,10 @@ jobs:
       # Build
       - name: ${{github.event.repository.name}} - Build
         run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.build_script }}
+        shell: bash
+
+      # Roadmap
+      - name: ${{github.event.repository.name}} - Build
+        run: cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
         shell: bash
 #--------------------------------------------------------------------------------------------------
