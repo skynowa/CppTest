@@ -24,7 +24,8 @@ if   [[ "$UNAME" == CYGWIN* || "$UNAME" == MINGW* ]] ; then
 	cmake --build . --target ${PROJECT_NAME} --config Release --parallel ${JOBS_NUM}
 elif [ "$UNAME" == "Linux" ] ; then
 	echo "OS: Linux"
-	cmake --build . --target ${PROJECT_NAME} --config Release -- -j${JOBS_NUM}
+	cmake --build . --config Release -- -j${JOBS_NUM}
+	## cmake --build . --target ${PROJECT_NAME} --config Release -- -j${JOBS_NUM}
 elif [ "$UNAME" == "Darwin" ] ; then
 	echo "OS: Darwin"
 	cmake --build . --target ${PROJECT_NAME} --config Release -- -j${JOBS_NUM}
