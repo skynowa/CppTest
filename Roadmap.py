@@ -72,14 +72,13 @@ class RoadmapGen:
 		self.file    = open(self.mdPath, 'w')
 		self.tree    = self._nestedDictDefault(list, 10)
 
-		self.dirsExcludes  = ['.git', 'StdStream', 'StdTest', 'res']
+		self.dirsExcludes  = ['.git', '.github', 'StdStream', 'StdTest', 'res']
 		self.filesIncludes = [
 			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cxx', '*.cc', '*.c', '*.cpp.off',
 			'*.sql',
 			'*.txt', '*.md', '*.htm','*.html',
 			'*.js', '*.java',
-			'*.py',
-			'.github']
+			'*.py']
 		self.filesIncludes = r'|'.join([fnmatch.translate(x) for x in self.filesIncludes])
 
 		self.labelTitle = 'cpp-roadmap'
