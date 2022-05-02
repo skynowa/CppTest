@@ -6,7 +6,7 @@
 
 
 # vars
-PROJECT_NAME="xLib"
+PROJECT_NAME="../$(basename ${PWD})"
 DIR_PROJECT="../${PROJECT_NAME}"
 DIR_BUILD="../../${PROJECT_NAME}_build"
 
