@@ -122,7 +122,7 @@ jobs:
       - name: Roadmap - Push
         run: |
           cd "${{github.workspace}}/${{github.event.repository.name}}"
-          echo "PWD: $(ls -la)"
+          # echo "PWD: $(ls -la)"
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
