@@ -119,7 +119,7 @@ jobs:
           cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
           echo "PWD: $(ls -la)"
           git config --global user.email "skynowa@gmail.com"
-          git config --global user.name  "Github Bot"
-          git add ./Readme.md && git commit -m "Readme.md - update" && git push
+          git config --global user.name  "GitHub Bot"
+          git add ./Readme.md && git commit -m "[GitHub Bot] Readme.md - update" && git push
         shell: bash
 #--------------------------------------------------------------------------------------------------
