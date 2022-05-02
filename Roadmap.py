@@ -426,7 +426,7 @@ class RoadmapGen:
 
 		self._writeLine('# {} **{}**'.format(self._label(self.labelTitle, '', self.appName), dateNow))
 		self._writeLine('')
-		self._writeLine('{} {}'.format(ghWatchers, ghCiStatus)
+		self._writeLine('{} {}'.format(ghWatchers, ghCiStatus))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
