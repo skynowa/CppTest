@@ -64,21 +64,21 @@ jobs:
           CXX="${{matrix.config.cxx}}"
         shell: bash
 
-      ##############################################################################################
-      # CMakeLib
+      # ##############################################################################################
+      # # CMakeLib
 
-      # Checkout
-      - name: CMakeLib - Checkout
-        uses: actions/checkout@v3
-        with:
-          repository:  skynowa/CMakeLib
-          path:        ${{github.workspace}}/CMakeLib
-          fetch-depth: 1
+      # # Checkout
+      # - name: CMakeLib - Checkout
+      #   uses: actions/checkout@v3
+      #   with:
+      #     repository:  skynowa/CMakeLib
+      #     path:        ${{github.workspace}}/CMakeLib
+      #     fetch-depth: 1
 
-      # Install
-      - name: CMakeLib - Install
-        run: cd "${{github.workspace}}/CMakeLib" && ./install.sh
-        shell: bash
+      # # Install
+      # - name: CMakeLib - Install
+      #   run: cd "${{github.workspace}}/CMakeLib" && ./install.sh
+      #   shell: bash
 
       ##############################################################################################
       # Project

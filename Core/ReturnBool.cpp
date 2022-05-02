@@ -8,9 +8,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wreturn-type"
-
 bool
 isValid()
 {
@@ -18,8 +15,6 @@ isValid()
 
     // return true;
 }
-
-#pragma GCC diagnostic pop
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
