@@ -1,4 +1,6 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-May-2022**
+
+![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/skynowa/cpptest) ![GitHub last commit](https://img.shields.io/github/last-commit/skynowa/cpptest) ![GitHub issues](https://img.shields.io/github/issues-raw/skynowa/cpptest?color=red) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/skynowa/cpptest?color=green) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/skynowa/cpptest?color=red) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/skynowa/cpptest?color=green)
 
 - [.github](#.github "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
