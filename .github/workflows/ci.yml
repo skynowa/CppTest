@@ -129,10 +129,12 @@ jobs:
           echo "status: $?"
 
           git commit -m "[🏃 GitHub Bot] Readme.md - update"
-          echo "status: $?"
-          echo "status: $?"
 
-          if [ $? -eq 0 ]; then
+          STATUS=$?
+          echo "STATUS: ${STATUS}"
+          echo "STATUS: ${STATUS}"
+
+          if [ ${STATUS} -eq 0 ]; then
               git push
           else
               echo "Push skip"
