@@ -55,7 +55,7 @@ include_directories(${CMAKE_SOURCE_DIR}/StdTest)
 set(LIBRARIES
 	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
 	${cmPCRE_PP_LIBRARIES} ${cmEVENT2_LIBRARIES} ${cmSSH2_LIBRARIES}
-	${Boost_PROGRAM_OPTIONS_LIBRARY})
+	${Boost_PROGRAM_OPTIONS_LIBRARY} ${OPENSSL_LIBRARIES})
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
 	${CMAKE_SOURCE_DIR}/*.c
