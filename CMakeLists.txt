@@ -52,10 +52,10 @@ include_directories(${CMAKE_SOURCE_DIR}/StdTest)
 
 ### set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
 
-set(LIBRARIES
-	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
-	${cmPCRE_PP_LIBRARIES} ${cmEVENT2_LIBRARIES} ${cmSSH2_LIBRARIES}
-	${Boost_PROGRAM_OPTIONS_LIBRARY} ${OPENSSL_LIBRARIES})
+# set(LIBRARIES
+# 	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
+# 	${cmPCRE_PP_LIBRARIES} ${cmEVENT2_LIBRARIES} ${cmSSH2_LIBRARIES}
+# 	${Boost_PROGRAM_OPTIONS_LIBRARY} ${OPENSSL_LIBRARIES})
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
 	${CMAKE_SOURCE_DIR}/*.c
