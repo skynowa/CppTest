@@ -1,18 +1,14 @@
 /**
- * \file
+ * \file  list.cpp
  * \brief
  *
  * \todo
  */
 
 
-#include <iostream>
-#include <stdio.h>
-#include <string>
-#include <vector>
-#include <iostream>
-#include <list>
-#include <assert.h>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 
@@ -35,7 +31,10 @@ class CTest {
 //---------------------------------------------------------------------------
 #endif	//CTestH
 //---------------------------------------------------------------------------
-int main(int, char **) {
+int main(int, char **)
+{
+	int iRv {};
+
 	//CTest *pT1 = new CTest(1);
 	//CTest *pT2 = new CTest(2);
 	//CTest *pT3 = new CTest(3);
@@ -109,7 +108,10 @@ int main(int, char **) {
 		}
 		cout << endl;
 		cout << endl;
-		(int)system("pause");
+
+		iRv= system("pause");
+		STD_UNUSED(iRv);
+
 		cout << endl;
 		cout << endl;
 
@@ -130,20 +132,22 @@ int main(int, char **) {
 		}
 		cout << endl;
 		cout << endl;
-		(int)system("pause");
+
+		iRv= system("pause");
+		STD_UNUSED(iRv);
+
 		cout << endl;
 		cout << endl;
 
 	}
 
-
-
-
 	//-------------------------------------
 	//
 	cout << endl;
 	cout << endl;
-	(int)system("pause");
+
+	iRv= system("pause");
+	STD_UNUSED(iRv);
 
 	return 0;
 }
