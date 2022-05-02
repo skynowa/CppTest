@@ -6,7 +6,6 @@ libevent/[>1.0.0]
 
 [generators]
 cmake
-cmake_paths
 
 [options]
 
