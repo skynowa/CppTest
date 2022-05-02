@@ -22,10 +22,11 @@ int main(int, char **)
 	const int a {1};
 
 	switch (a) {
-	// Indicates that falling through on case 1 is intentional
-	case 1: [[fallthrough]]
+	case 1:
+		// Indicates that falling through on case 1 is intentional
+		[[fallthrough]];
 	case 2:
-	// Indicates that b might be unused, such as on production builds
+		// Indicates that b might be unused, such as on production builds
 		[[maybe_unused]] int b = foo();
 		STD_TEST(b > 0);
 		break;
