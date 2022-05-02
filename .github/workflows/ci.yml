@@ -15,8 +15,8 @@ on:
 #--------------------------------------------------------------------------------------------------
 jobs:
   build:
-    name:    ${{ matrix.config.name }}
-    runs-on: ${{ matrix.config.os }}
+    name:    ${{matrix.config.name}}
+    runs-on: ${{matrix.config.os}}
     strategy:
       fail-fast: false
       matrix:
@@ -47,8 +47,8 @@ jobs:
       # GITHUB_ENV
       - name: GITHUB_ENV
         run: |
-          echo "CC=${{ matrix.config.cc }}"   >> $GITHUB_ENV
-          echo "CXX=${{ matrix.config.cxx }}" >> $GITHUB_ENV
+          echo "CC=${{matrix.config.cc}}"   >> $GITHUB_ENV
+          echo "CXX=${{matrix.config.cxx}}" >> $GITHUB_ENV
         shell: bash
 
       # Conan - Install
@@ -60,8 +60,8 @@ jobs:
       # Conan - Setup
       - name: Conan - Setup
         run: |
-          CC="${{ matrix.config.cc }}"
-          CXX="${{ matrix.config.cxx }}"
+          CC="${{matrix.config.cc}}"
+          CXX="${{matrix.config.cxx}}"
         shell: bash
 
       ##############################################################################################
@@ -95,28 +95,28 @@ jobs:
       - name: Libs (Extra) - Install
         run: >-
             conan install
-            "${{github.workspace}}/${{github.event.repository.name}}/${{ matrix.config.conan_file }}"
+            "${{github.workspace}}/${{github.event.repository.name}}/${{matrix.config.conan_file}}"
             --install-folder "${{github.workspace}}/${{github.event.repository.name}}_conan"
             --output-folder  "${{github.workspace}}/${{github.event.repository.name}}_conan"
-            --profile "${{github.workspace}}/${{github.event.repository.name}}/${{ matrix.config.conan_profile }}"
+            --profile "${{github.workspace}}/${{github.event.repository.name}}/${{matrix.config.conan_profile}}"
             --build=missing
             --update
         shell: bash
 
       # Generate
       - name: ${{github.event.repository.name}} - Generate
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.gen_script }}
+        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.gen_script}}
         shell: bash
 
       # Build
       - name: ${{github.event.repository.name}} - Build
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.build_script }}
+        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.build_script}}
         shell: bash
 
       # # Roadmap
       # - name: Roadmap - Build
       #   run: |
-      #     cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
+      #     cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{matrix.config.raodmap_script}}
       #   shell: bash
 
       # - name: Roadmap - Push
