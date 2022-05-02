@@ -18,15 +18,8 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # CONAN
-set(CONAN_PATHS      "${CMAKE_SOURCE_DIR}/../CppTest_conan/conan_paths.cmake")
 set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake")
-
-message(STATUS "CONAN_PATHS:      ${CONAN_PATHS}")
-message(STATUS "CONAN_BUILD_INFO: ${CONAN_BUILD_INFO}")
-
-include(${CONAN_PATHS})
 include(${CONAN_BUILD_INFO})
-
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
