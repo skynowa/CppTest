@@ -16,6 +16,8 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **argv)
 {
+	int iRv {};
+
 	enum ProcessStatus : pid_t
 	{
 		ChildError = - 1, ///< returned in the parent, no child process is created, errno is set
@@ -30,13 +32,16 @@ int main(int, char **argv)
 	};
 
 	int pipeIn[2] {};
-	(int)::pipe(pipeIn);
+	iRv = ::pipe(pipeIn);
+	STD_UNUSED(iRv);
 
 	int pipeOut[2] {};
-	(int)::pipe(pipeOut);
+	iRv = ::pipe(pipeOut);
+	STD_UNUSED(iRv);
 
 	int pipeErr[2] {};
-	(int)::pipe(pipeErr);
+	iRv = ::pipe(pipeErr);
+	STD_UNUSED(iRv);
 
 	const int pid = ::fork();
 	if (pid == ProcessStatus::ChildOk) {
