@@ -33,6 +33,8 @@ removeErase(
 	// really remove all elements with value
 	out_vec.erase(it, out_vec.end());
 	std::cout << TRACE_VAR(out_vec) << std::endl;
+
+	return out_vec;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
