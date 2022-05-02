@@ -109,12 +109,15 @@ jobs:
         shell: bash
 
       # Build
-      - name: ${{github.event.repository.name}} - Build
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.build_script }}
-        shell: bash
+      # - name: ${{github.event.repository.name}} - Build
+      #   run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.build_script }}
+      #   shell: bash
 
       # Roadmap
       - name: ${{github.event.repository.name}} - Build
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
+        run: |
+          cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
+          echo "PWD: ${PWD}"
+          # git add ./Readme.md && git commit -m "Readme.md - update" && git push
         shell: bash
 #--------------------------------------------------------------------------------------------------
