@@ -31,11 +31,14 @@ NoDiscardType Func()
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-result"
     // Compiler/analyzer warning will be issued
     Sum(5, 6);
 
     // Compiler/analyzer warning will be issued
     Func();
+#pragma GCC diagnostic pop
 
     return EXIT_SUCCESS;
 }
