@@ -22,15 +22,10 @@ set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../${PROJECT_NAME}_conan/conanbuildinf
 include(${CONAN_BUILD_INFO})
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
-include_directories(
-	${CMAKE_SOURCE_DIR}
-	${CMAKE_SOURCE_DIR}/StdStream
-	${CMAKE_SOURCE_DIR}/StdTest)
-#--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
-	${CMAKE_SOURCE_DIR}/*.c
-	${CMAKE_SOURCE_DIR}/*.cpp)
-
+   ${CMAKE_SOURCE_DIR}/*.c
+   ${CMAKE_SOURCE_DIR}/*.cpp)
+#--------------------------------------------------------------------------------------------------
 foreach(IT_SOURCE ${SOURCES})
 	# Ignores
 	if (WIN32)
@@ -55,7 +50,14 @@ foreach(IT_SOURCE ${SOURCES})
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
 
 	add_executable(${CPP_TEST} ${IT_SOURCE})
-	target_link_libraries(${CPP_TEST} ${CONAN_LIBS})
+
+	target_include_directories(${CPP_TEST} PUBLIC
+		${CMAKE_SOURCE_DIR}
+		${CMAKE_SOURCE_DIR}/StdStream
+		${CMAKE_SOURCE_DIR}/StdTest)
+
+	target_link_libraries(${CPP_TEST}
+		${CONAN_LIBS})
 
 	# Targets - Build and run test
 	add_custom_target(test_${CPP_TEST}
