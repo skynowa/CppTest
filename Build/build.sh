@@ -5,7 +5,7 @@
 set -ex
 
 # vars
-PROJECT_NAME="../$(basename ${PWD})"
+PROJECT_NAME="CppTest"
 DIR_BUILD="../../${PROJECT_NAME}_build"
 JOBS_NUM=$(($(nproc) * 2))
 
