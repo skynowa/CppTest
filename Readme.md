@@ -2,7 +2,6 @@
 
 ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/skynowa/cpptest) ![GitHub last commit](https://img.shields.io/github/last-commit/skynowa/cpptest) ![GitHub issues](https://img.shields.io/github/issues-raw/skynowa/cpptest?color=red) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/skynowa/cpptest?color=green) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/skynowa/cpptest?color=red) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/skynowa/cpptest?color=green)
 
-- [.github](#.github "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
@@ -28,17 +27,6 @@
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
-
-##  <a title="" id=".github">.github ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-
-</details>
-
-  * <details close>
-    <summary>📁  workflows 0.0% (0)</summary>
-
-
-    </details>
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
