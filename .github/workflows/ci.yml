@@ -126,7 +126,12 @@ jobs:
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
+          echo "status: $?"
+
           git commit -m "[🏃 GitHub Bot] Readme.md - update"
+          echo "status: $?"
+          echo "status: $?"
+
           if [ $? -eq 0 ]; then
               git push
           else
