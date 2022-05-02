@@ -17,10 +17,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
-# Modules
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_ROOT}/Modules/CMakeLib")
-message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
-#--------------------------------------------------------------------------------------------------
 # CONAN
 set(CONAN_PATHS      "${CMAKE_SOURCE_DIR}/../CppTest_conan/conan_paths.cmake")
 set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake")
@@ -33,29 +29,9 @@ include(${CONAN_BUILD_INFO})
 
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
-# Boost
-find_package(Boost REQUIRED
-	COMPONENTS program_options filesystem system)
-
-if (Boost_FOUND)
-    include_directories(${Boost_INCLUDE_DIRS})
-endif()
-
-find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
-# find_package(Pcre++ QUIET REQUIRED)
-# find_package(Event2 QUIET REQUIRED)
-# find_package(Ssh2   QUIET REQUIRED)
-#--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/StdStream)
 include_directories(${CMAKE_SOURCE_DIR}/StdTest)
-
-### set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra -Weffc++")
-
-# set(LIBRARIES
-# 	${CMAKE_THREAD_LIBS} ${CMAKE_DL_LIBS} ${PTHREAD_LIBRARY} stdc++fs rt m z
-# 	${cmPCRE_PP_LIBRARIES} ${cmEVENT2_LIBRARIES} ${cmSSH2_LIBRARIES}
-# 	${Boost_PROGRAM_OPTIONS_LIBRARY} ${OPENSSL_LIBRARIES})
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
 	${CMAKE_SOURCE_DIR}/*.c
@@ -84,7 +60,7 @@ foreach(IT_SOURCE ${SOURCES})
 
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
 	add_executable(${CPP_TEST} ${IT_SOURCE})
-	target_link_libraries(${CPP_TEST} ${CONAN_LIBS} ${LIBRARIES})
+	target_link_libraries(${CPP_TEST} ${CONAN_LIBS})
 
 	# Targets - Build and run test
 	add_custom_target(
