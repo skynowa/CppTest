@@ -1,0 +1,123 @@
+#--------------------------------------------------------------------------------------------------
+# \file  ci.yml
+# \brief Github CI
+#
+#--------------------------------------------------------------------------------------------------
+
+
+name: CI
+#--------------------------------------------------------------------------------------------------
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+#--------------------------------------------------------------------------------------------------
+jobs:
+  build:
+    name:    ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+        - {
+            name:          "Ubuntu-20.04 (GCC)",
+            os:            ubuntu-20.04,
+            cc:            "gcc",
+            cxx:           "g++",
+            gen_script:    "./gen_eclipse.sh",
+            conan_profile: "conan_profile_ubuntu_gcc.txt",
+            conan_file:    "conan_file.txt"
+          }
+
+    steps:
+      ##############################################################################################
+      # Cancel
+      - name: Previous Runs - Cancel
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{github.token}}
+
+      ##############################################################################################
+      # Env
+
+      # GITHUB_ENV
+      - name: GITHUB_ENV
+        run: |
+          # echo "ENVs: $(printenv)"
+          echo "github.event.repository.name: ${{ github.event.repository.name }}"
+          echo "GITHUB_ENV: ${GITHUB_ENV}"
+          echo "OS: $(uname -s)"
+          echo ""
+          echo "CC=${{ matrix.config.cc }}"   >> $GITHUB_ENV
+          echo "CXX=${{ matrix.config.cxx }}" >> $GITHUB_ENV
+        shell: bash
+
+      # Conan - Install
+      - name: Conan - Install
+        run: |
+          pip install conan --upgrade
+        shell: bash
+
+      # Conan - Setup
+      - name: Conan - Setup
+        run: |
+          CC="${{ matrix.config.cc }}"
+          CXX="${{ matrix.config.cxx }}"
+
+          conan --version
+          # conan profile new default --detect --force
+          # conan profile show default
+          conan profile list
+        shell: bash
+
+      ##############################################################################################
+      # CMakeLib
+
+      # Checkout
+      - name: CMakeLib - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository:  skynowa/CMakeLib
+          path:        ${{github.workspace}}/CMakeLib
+          fetch-depth: 1
+
+      # Install
+      - name: CMakeLib - Install
+        run: cd "${{github.workspace}}/CMakeLib" && ./install.sh
+        shell: bash
+
+      ##############################################################################################
+      # xLib
+
+      # Checkout
+      - name: xLib - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository:  ${{github.repository}} # skynowa/xLib
+          path:        ${{github.workspace}}/xLib
+          fetch-depth: 1
+
+      # Libs (Extra)
+      - name: Libs (Extra) - Install
+        run: >-
+            conan install
+            "${{github.workspace}}/xLib/${{ matrix.config.conan_file }}"
+            --install-folder "${{github.workspace}}/xLib_conan"
+            --output-folder  "${{github.workspace}}/xLib_conan"
+            --profile "${{github.workspace}}/xLib/${{ matrix.config.conan_profile }}"
+            --build=missing
+            --update
+        shell: bash
+
+      # Generate
+      - name: xLib - Generate
+        run: cd "${{github.workspace}}/xLib/Build" && ${{ matrix.config.gen_script }}
+        shell: bash
+
+      # Build
+      - name: xLib - Build
+        run: cd "${{github.workspace}}/xLib/Build" && ./build.sh
+        shell: bash
+#--------------------------------------------------------------------------------------------------
