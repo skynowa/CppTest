@@ -109,15 +109,15 @@ jobs:
         shell: bash
 
       # Build
-      - name: ${{github.event.repository.name}} - Build
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.build_script}}
-        shell: bash
+      # - name: ${{github.event.repository.name}} - Build
+      #   run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.build_script}}
+      #   shell: bash
 
       # Roadmap
-      # - name: Roadmap - Build
-      #   run: |
-      #     cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{matrix.config.raodmap_script}}
-      #   shell: bash
+      - name: Roadmap - Build
+        run: |
+          cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{matrix.config.raodmap_script}}
+        shell: bash
 
       - name: Roadmap - Push
         run: |
@@ -126,7 +126,7 @@ jobs:
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
-          git commit -m "[💥 GitHub Bot 💥] Readme.md - update"
+          git commit -m "[🏃 GitHub Bot] Readme.md - update"
           git push
         shell: bash
 
