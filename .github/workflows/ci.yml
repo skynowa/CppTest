@@ -117,11 +117,11 @@ jobs:
       - name: Roadmap - Build
         run: |
           cd "${{github.workspace}}/${{github.event.repository.name}}" && ${{ matrix.config.raodmap_script }}
-          echo "PWD: $(ls -la)"
         shell: bash
 
       - name: Roadmap - Push
         run: |
+          echo "PWD: $(ls -la)"
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
