@@ -127,7 +127,11 @@ jobs:
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
           git commit -m "[🏃 GitHub Bot] Readme.md - update"
-          git push
+          if [ $? -eq 0 ]; then
+              git push
+          else
+              echo "Push skip"
+          fi
         shell: bash
 
 #--------------------------------------------------------------------------------------------------
