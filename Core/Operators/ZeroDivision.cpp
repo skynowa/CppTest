@@ -11,7 +11,11 @@
 int main(int, char **)
 {
 	const long val = 12;
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdiv-by-zero"
 	const auto rv  = val % 0;
+#pragma GCC diagnostic pop
 
     std::cout << TRACE_VAR(rv) << std::endl;
 
