@@ -109,9 +109,9 @@ jobs:
         shell: bash
 
       # Build
-      # - name: ${{github.event.repository.name}} - Build
-      #   run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.build_script}}
-      #   shell: bash
+      - name: ${{github.event.repository.name}} - Build
+        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{matrix.config.build_script}}
+        shell: bash
 
       # Roadmap
       - name: Roadmap - Build
