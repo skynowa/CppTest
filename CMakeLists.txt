@@ -18,7 +18,7 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # CONAN
-set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake")
+set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../${PROJECT_NAME}_conan/conanbuildinfo.cmake")
 include(${CONAN_BUILD_INFO})
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
@@ -37,8 +37,7 @@ foreach(IT_SOURCE ${SOURCES})
 		# TODO: Ignores
 	else()
 		if ("${IT_SOURCE}" MATCHES "Windows/" OR
-			"${IT_SOURCE}" MATCHES "WinException/"
-		)
+			"${IT_SOURCE}" MATCHES "WinException/")
 			message(STATUS "Skip: ${IT_SOURCE}" )
 			continue()
 		endif()
@@ -57,16 +56,14 @@ foreach(IT_SOURCE ${SOURCES})
 	target_link_libraries(${CPP_TEST} ${CONAN_LIBS})
 
 	# Targets - Build and run test
-	add_custom_target(
-		test_${CPP_TEST}
+	add_custom_target(test_${CPP_TEST}
 		COMMAND           ${CPP_TEST}
 		DEPENDS           ${CPP_TEST}
 		WORKING_DIRECTORY ${CMAKE_PROJECT_DIR})
 endforeach()
 #--------------------------------------------------------------------------------------------------
 # Targets
-add_custom_target(
-	roadmap
+add_custom_target(roadmap
 	COMMAND           "${CMAKE_SOURCE_DIR}/Roadmap.py"
 	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 #--------------------------------------------------------------------------------------------------
