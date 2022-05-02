@@ -33,10 +33,17 @@ find_library(PTHREAD_LIBRARY pthread QUIET REQUIRED)
 # find_package(Pcre++ QUIET REQUIRED)
 # find_package(Event2 QUIET REQUIRED)
 # find_package(Ssh2   QUIET REQUIRED)
+#--------------------------------------------------------------------------------------------------
+# CONAN
+set(CONAN_PATHS      "${CMAKE_SOURCE_DIR}/../CppTest_conan/conan_paths.cmake")
+set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake")
 
-# CONAN_PATHS
-include(${CMAKE_SOURCE_DIR}/../CppTest_conan/conan_paths.cmake)
-include(${CMAKE_SOURCE_DIR}/../CppTest_conan/conanbuildinfo.cmake)
+message(STATUS "CONAN_PATHS:      ${CONAN_PATHS}")
+message(STATUS "CONAN_BUILD_INFO: ${CONAN_BUILD_INFO}")
+
+include(${CONAN_PATHS})
+include(${CONAN_BUILD_INFO})
+
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
 include_directories(${CMAKE_SOURCE_DIR})
