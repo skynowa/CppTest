@@ -2,6 +2,7 @@
 boost/1.73.0
 # libssh2/[>1.8.0]
 # libevent/[>2.1.0]
+openssl/1.1.1m
 libevent/[>1.0.0]
 libssh2/[>1.0.0]
 
