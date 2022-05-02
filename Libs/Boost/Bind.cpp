@@ -8,7 +8,7 @@
 #include <StdTest.h>
 #include <Stl.h>
 
-#include <boost/bind.hpp>
+#include <boost/bind/bind.hpp>
 #include <boost/function.hpp>
 //-------------------------------------------------------------------------------------------------
 class Button
