@@ -32,6 +32,9 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 	// std::auto_ptr
 	{
 		std::cout << "std::auto_ptr" << std::endl;
@@ -100,6 +103,7 @@ int main(int, char **)
 		std::cout << TRACE_PTR(vec[2].get()) << std::endl;
 		std::cout << std::endl;
 	}
+#pragma GCC diagnostic pop
 
 	return EXIT_SUCCESS;
 }
