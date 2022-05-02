@@ -421,9 +421,22 @@ class RoadmapGen:
 
 		# Title
 		dateNow        = date.today().strftime("%d-%b-%Y")
-		gitHubWatchers = "![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)"
 
-		self._writeLine('# {} **{}** {}'.format(self._label(self.labelTitle, '', self.appName), dateNow, gitHubWatchers))
+		ghWatchers           = "![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)"
+		ghCiStatus           = "![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)"
+
+		ghCommitActivity     = "![GitHub commit activity](https://img.shields.io/github/commit-activity/w/skynowa/cpptest)"
+		ghCommitLast         = "![GitHub last commit](https://img.shields.io/github/last-commit/skynowa/cpptest)"
+
+		ghIssuesOpened       = "![GitHub issues](https://img.shields.io/github/issues-raw/skynowa/cpptest?color=red)"
+		ghIssuesClosed       = "![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/skynowa/cpptest?color=green)"
+
+		ghPullRequestsOpened = "![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/skynowa/cpptest?color=red)"
+		ghPullRequestsClosed = "![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/skynowa/cpptest?color=green)"
+
+		self._writeLine('# {} **{}**'.format(self._label(self.labelTitle, '', self.appName), dateNow))
+		self._writeLine('')
+		self._writeLine('{} {} {} {} {} {} {} {}'.format(ghWatchers, ghCiStatus, ghCommitActivity, ghCommitLast, ghIssuesOpened, ghIssuesClosed, ghPullRequestsOpened, ghPullRequestsClosed))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):
