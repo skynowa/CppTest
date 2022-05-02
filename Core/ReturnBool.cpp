@@ -23,7 +23,10 @@ isValid()
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreturn-type"
     std::cout << ::isValid() << std::endl;
+#pragma GCC diagnostic pop
 
     return 0;
 }
