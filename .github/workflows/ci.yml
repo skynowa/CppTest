@@ -126,19 +126,8 @@ jobs:
           git config --global user.email "skynowa@gmail.com"
           git config --global user.name  "GitHub Bot"
           git add ./Readme.md
-          echo "status: $?"
-
-          git commit -m "[🏃 GitHub Bot] Readme.md - update"
-
-          STATUS=$?
-          echo "STATUS: ${STATUS}"
-          echo "STATUS: ${STATUS}"
-
-          if [ ${STATUS} -eq 0 ]; then
-              git push
-          else
-              echo "Push skip"
-          fi
+          git commit -m "[🏃 GitHub Bot] Readme.md - update" || echo "Skip..."
+          git push
         shell: bash
 
 #--------------------------------------------------------------------------------------------------
