@@ -27,6 +27,7 @@ jobs:
             cc:            "gcc",
             cxx:           "g++",
             gen_script:    "./gen_eclipse.sh",
+            build_script:  "./build.sh",
             conan_profile: "conan_profile_ubuntu_gcc.txt",
             conan_file:    "conan_file.txt"
           }
@@ -118,6 +119,6 @@ jobs:
 
       # Build
       - name: ${{github.event.repository.name}} - Build
-        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ./build.sh
+        run: cd "${{github.workspace}}/${{github.event.repository.name}}/Build" && ${{ matrix.config.build_script }}
         shell: bash
 #--------------------------------------------------------------------------------------------------
