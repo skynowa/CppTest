@@ -30,7 +30,7 @@ f()
 	// No warning
 }
 //-------------------------------------------------------------------------------------------------
-void q [[ noreturn ]]
+void q /* [[ noreturn ]] - off, warning */
 (int i)
 {
 	// behavior is undefined if called with an argument <= 0
