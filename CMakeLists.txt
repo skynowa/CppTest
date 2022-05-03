@@ -48,8 +48,7 @@ foreach(IT_SOURCE ${SOURCES})
 		-Werror
 		-Wall
 		-Wextra
-		# -pedantic-errors
-		-pedantic
+		# -pedantic
 		# -Wconversion
 		# -Wsign-conversion
 		)
