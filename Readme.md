@@ -755,9 +755,9 @@
   * <details close>
     <summary>📁 ✅ LibEvent 100% (4)</summary>
 
-    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/all_test.cpp" title="">🖊 `all_test.cpp`</a>
-    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/signal-test.cpp" title="">🖊 `signal-test.cpp`</a>
-    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/time-test.cpp" title="">🖊 `time-test.cpp`</a>
+    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/TimeTest.cpp" title="">🖊 `TimeTest.cpp`</a>
+    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/SignalTest.cpp" title="">🖊 `SignalTest.cpp`</a>
+    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/AllTest.cpp" title="">🖊 `AllTest.cpp`</a>
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Libs/LibEvent/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
 
     </details>
