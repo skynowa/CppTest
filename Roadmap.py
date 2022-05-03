@@ -326,8 +326,9 @@ class RoadmapGen:
 		self._writeLine('')
 
 		for it_file in a_files:
-			fileUrl = it_file.replace('/home/skynowa/Projects/CppTest/', '/')
-			fileUrl = it_file.replace('blob/master/home/runner/work/CppTest/CppTest/CppTest/', '')
+			# https://github.com/skynowa/CppTest/blob/master/home/runner/work/CppTest/CppTest/CppTest/Idioms/ShrinkToFit.cpp
+			fileUrl = it_file.replace('/home/skynowa/Projects/CppTest', '')
+			fileUrl = it_file.replace('/home/runner/work/CppTest/CppTest/CppTest', '')
 
 			fileName = Path(it_file).name
 
