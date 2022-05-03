@@ -1,5 +1,5 @@
 /**
- * \file  bitset.cpp
+ * \file  Bitset.cpp
  * \brief
  */
 
