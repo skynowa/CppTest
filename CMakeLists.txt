@@ -10,12 +10,13 @@ cmake_minimum_required(VERSION 3.5.0)
 project("CppTest")
 #--------------------------------------------------------------------------------------------------
 # options
-set(PROJECT_TYPE                "CXX")
+set(PROJECT_TYPE                CXX)
+set(CMAKE_CXX_STANDARD          17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS        OFF)
 set(CMAKE_COLOR_MAKEFILE        ON)
 set(CMAKE_VERBOSE_MAKEFILE      OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_REQUIRED_QUIET        ON)
-set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # CONAN
 set(CONAN_BUILD_INFO "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
