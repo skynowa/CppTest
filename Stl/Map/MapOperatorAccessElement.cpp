@@ -6,9 +6,9 @@
  */
 
 
-#include <iostream>
-#include <map>
-#include <string>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 struct Occurance
 {

@@ -6,13 +6,14 @@
  */
 
 
-#include <iostream>
-#include <vector>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 struct Sample
 {
     Sample(){}
-    Sample(const Sample & obj)
+    Sample(const Sample &)
     {
         std::cout<<"Sample copy constructor"<<std::endl;
     }
