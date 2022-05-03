@@ -14,6 +14,9 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Werror=deprecated-copy"
+
 class String
 {
 public:
@@ -74,6 +77,8 @@ public:
 private:
     const char *_buff {};
 };
+
+#pragma GCC diagnostic pop
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
