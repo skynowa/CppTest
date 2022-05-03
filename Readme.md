@@ -3,28 +3,28 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [C](#c "C language features") ██████████ 🚩100% (11)
-- [Core](#core "C++ language features") █████████░ 🚩94% (174)
+- [C](#c "C language features") ██████████ 🏁100% (11)
+- [Core](#core "C++ language features") █████████░ 🏁94% (174)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
-- [Front](#front "Frontend skills") ██████████ 🚩100% (1)
-- [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
+- [Front](#front "Frontend skills") ██████████ 🏁100% (1)
+- [Idioms](#idioms "C/C++ language idioms") ██████████ 🏁97% (34)
 - [IpcMt](#ipcmt "IPC & MT - Inter Process / Thread Communication") ███░░░░░░░ 30% (30)
-- [Libs](#libs "Third-party libraries") ██████████ 🚩100% (19)
-- [Network](#network "Network") ██████████ 🚩100% (4)
+- [Libs](#libs "Third-party libraries") ██████████ 🏁100% (19)
+- [Network](#network "Network") ██████████ 🏁100% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "Design pattern") ████░░░░░░ 41% (29)
 - [Practice](#practice "Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
-- [Python](#python "Python language skills") ██████████ 🚩100% (4)
+- [Python](#python "Python language skills") ██████████ 🏁100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
-- [SQL](#sql "SQL language skills") █████████░ 🚩94% (18)
+- [SQL](#sql "SQL language skills") █████████░ 🏁94% (18)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 18% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
-- [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
-- [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
+- [Unix](#unix "Unix OS") ██████████ 🏁100% (4)
+- [Windows](#windows "Windows OS (WinAPI)") ██████████ 🏁100% (38)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -75,7 +75,7 @@
 
 </details>
 
-##  <a title="C language features" id="c">C ██████████ 🚩100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C language features" id="c">C ██████████ 🏁100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/Strftime.cpp" title="">✅ `Strftime.cpp`</a>
@@ -97,7 +97,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (174)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C++ language features" id="core">Core █████████░ 🏁94% (174)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/ReturnBool.cpp" title="Returm "NO" value (as bool)">✅ `ReturnBool.cpp`</a>
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
@@ -128,7 +128,7 @@
 
     * <a href="/Core/Bits/BadBitMask.cpp" title="Overflow bit mask">✅ `BadBitMask.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
-    * <a href="/Core/Bits/bitset.cpp" title="">✅ `bitset.cpp`</a>
+    * <a href="/Core/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Bits/ShiftBitMask.cpp" title="Shift bit mask">✅ `ShiftBitMask.cpp`</a>
 
@@ -539,13 +539,13 @@
 
 </details>
 
-##  <a title="Frontend skills" id="front">Front ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Frontend skills" id="front">Front ██████████ 🏁100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Front/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
-##  <a title="C/C++ language idioms" id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="C/C++ language idioms" id="idioms">Idioms ██████████ 🏁97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/DependencyInjection.cpp" title="">❌ DependencyInjection.cpp</a>
@@ -727,7 +727,7 @@
 
     </details>
 
-##  <a title="Third-party libraries" id="libs">Libs ██████████ 🚩100% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Third-party libraries" id="libs">Libs ██████████ 🏁100% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
@@ -811,7 +811,7 @@
 
       </details>
 
-##  <a title="Network" id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Network" id="network">Network ██████████ 🏁100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
@@ -890,7 +890,7 @@
 
 </details>
 
-##  <a title="Python language skills" id="python">Python ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Python language skills" id="python">Python ██████████ 🏁100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Python/InheritentCtorDtor.py" title="">✅ `InheritentCtorDtor.py`</a>
 * <a href="/Python/AbstractClass.py" title="">✅ `AbstractClass.py`</a>
@@ -906,7 +906,7 @@
 
 </details>
 
-##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="SQL language skills" id="sql">SQL █████████░ 🏁94% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
@@ -1185,7 +1185,7 @@
 
     </details>
 
-##  <a title="Unix OS" id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Unix OS" id="unix">Unix ██████████ 🏁100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
@@ -1200,7 +1200,7 @@
 
     </details>
 
-##  <a title="Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Windows OS (WinAPI)" id="windows">Windows ██████████ 🏁100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
 * <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
@@ -1291,7 +1291,7 @@
   - 🖊 - Remark
   - ❌ - Todo
   - 🔥 - TOC - hot
-  - 🚩 - TOC - done / nearly done
+  - 🏁 - TOC - done / nearly done
 
 ### Labels
 
