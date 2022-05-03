@@ -45,7 +45,7 @@ foreach(IT_SOURCE ${SOURCES})
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 
 	target_compile_options(${CPP_TEST} PRIVATE
-		# -Werror
+		-Werror
 		-Wall
 		-Wextra)
 
