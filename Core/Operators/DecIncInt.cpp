@@ -63,16 +63,16 @@ int main(int, char **)
 
     // 2
     {
+        #pragma GCC diagnostic push
+        #pragma GCC diagnostic ignored "-Wsequence-point"
+
         for (int i = 0; i < 5; ++ i) {
-	        std::cout << "i = " << i ++ << ", "
-
-			#pragma GCC diagnostic push
-			#pragma GCC diagnostic ignored "-Wsequence-point"
-
+	        std::cout
+                << "i = " << i ++ << ", "
 				<< "i = " << ++ i << std::endl;
-
-			#pragma GCC diagnostic pop
         }
+
+        #pragma GCC diagnostic pop
 
         std::cout << std::endl;
 
