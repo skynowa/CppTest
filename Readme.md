@@ -398,7 +398,7 @@
 
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/OperatorIn.cpp" title="">✅ `OperatorIn.cpp`</a>
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/OverloadingPrefixIncermentDecrementOperator.cpp" title="">🖊 `OverloadingPrefixIncermentDecrementOperator.cpp`</a>
-    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/DecIncInt.cpp" title="">🖊 `DecIncInt.cpp`</a>
+    * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/DecIncInt.cpp" title="Decrement, increment and sequence point">🖊 `DecIncInt.cpp`</a>
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/OverloadingArithmeticOperator.cpp" title="">🖊 `OverloadingArithmeticOperator.cpp`</a>
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/OverloadingInputOutputOperator.cpp" title="">🖊 `OverloadingInputOutputOperator.cpp`</a>
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Operators/OverloadingArithmeticOperatorUsingMemberFunction.cpp" title="this function is a member function!">🖊 `OverloadingArithmeticOperatorUsingMemberFunction.cpp`</a>
