@@ -1,5 +1,5 @@
 /**
- * \file  time-test.cpp
+ * \file  TimeTest.cpp
  * \brief
  *
  * \review

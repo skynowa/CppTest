@@ -1,5 +1,5 @@
 /**
- * \file  signal-test.cpp
+ * \file  SignalTest.cpp
  * \brief
  *
  * \review
