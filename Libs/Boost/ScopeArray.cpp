@@ -8,7 +8,7 @@
 #include <StdTest.h>
 #include <Stl.h>
 
-#include "boost/scoped_array.hpp"
+#include <boost/scoped_array.hpp>
 //-------------------------------------------------------------------------------------------------
 class Printer
 {
