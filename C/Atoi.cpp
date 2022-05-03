@@ -24,13 +24,10 @@ int main(int, char **)
     int c = ::atoi("NULL");
     std::cout << TRACE_VAR(c) << std::endl;
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Werror=nonnull"
-
+#if 0
 	int d = ::atoi(nullptr);
 	std::cout << d << std::endl;
-
-#pragma GCC diagnostic pop
+#endif
 
     return EXIT_SUCCESS;
 }
