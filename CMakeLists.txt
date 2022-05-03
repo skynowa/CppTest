@@ -47,7 +47,12 @@ foreach(IT_SOURCE ${SOURCES})
 	target_compile_options(${CPP_TEST} PRIVATE
 		-Werror
 		-Wall
-		-Wextra)
+		-Wextra
+		-pedantic-errors
+		-pedantic
+		# -Wconversion
+		# -Wsign-conversion
+		)
 
 	target_include_directories(${CPP_TEST} PRIVATE
 		${CMAKE_SOURCE_DIR}
