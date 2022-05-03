@@ -55,7 +55,7 @@ int main(int, char **)
 	{
 		using T = char;
 
-		const std::size_t n {5};
+		const std::size_t n {7};
 
 		// allocate memory
 		T *placementBuff = new T[n * sizeof(T)];

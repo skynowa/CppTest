@@ -10,8 +10,8 @@
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 // function with lvalue and rvalue reference overloads:
-void overloaded (const int& x) {std::cout << "[lvalue]";}
-void overloaded (int&& x)      {std::cout << "[rvalue]";}
+void overloaded (const int& ) {std::cout << "[lvalue]";}
+void overloaded (int&& )      {std::cout << "[rvalue]";}
 //-------------------------------------------------------------------------------------------------
 // function template taking rvalue reference to deduced type:
 template <class T> void

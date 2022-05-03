@@ -62,13 +62,23 @@ int main(int, char **)
 		};
 
 		{
+		#pragma GCC diagnostic push
+		#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
+
 			SourceInfoData data {"file1", 111, "func1", 111000};
 			data.print();
+
+		#pragma GCC diagnostic pop
 		}
 
 		{
+		#pragma GCC diagnostic push
+		#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
+
 			SourceInfoData data = {"file1", 111, "func1", 111000};
 			data.print();
+
+		#pragma GCC diagnostic pop
 		}
 	}
 

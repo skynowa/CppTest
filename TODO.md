@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] xxxxxx
+- [ ] -Wsequence-point
 
 ## Tags
 

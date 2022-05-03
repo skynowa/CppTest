@@ -6,10 +6,9 @@
  */
 
 
-#include <iostream>
-#include <thread>
-#include <vector>
-#include <mutex>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 
@@ -36,11 +35,11 @@ int testMultithreadedWallet()
 {
    Wallet walletObject;
    std::vector<std::thread> threads;
-   for(int i = 0; i < 5; ++i){
+   for(std::size_t i = 0; i < 5; ++i){
         threads.push_back(std::thread(&Wallet::addMoney, &walletObject, 1000));
    }
 
-   for(int i = 0; i < threads.size() ; i++)
+   for(std::size_t i = 0; i < threads.size() ; i++)
    {
        threads.at(i).join();
    }

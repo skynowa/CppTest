@@ -17,6 +17,7 @@ public:
 int main(int, char **)
 {
     A a;
+    STD_UNUSED(a);
 
     std::cout << "Begin" << std::endl;
     // a.foo(); - undefined reference to `A::foo()'

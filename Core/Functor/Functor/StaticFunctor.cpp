@@ -21,7 +21,7 @@ public:
         std::cout << __FUNCTION__ << std::endl;
     }
 
-    void operator() (int i)
+    void operator() (int)
     {
         std::cout << __FUNCTION__ << std::endl;
     }
@@ -41,7 +41,7 @@ public:
     }
 
     static void
-    exec(int i)
+    exec(int)
     {
         std::cout << __FUNCTION__ << std::endl;
     }

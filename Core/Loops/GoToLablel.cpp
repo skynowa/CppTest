@@ -12,7 +12,7 @@ int main(int, char **)
 {
     for (size_t i = 0; i < 10; ++ i) {
         if (i == 5) {
-            // goto finally;
+            goto finally;
         }
     }
 

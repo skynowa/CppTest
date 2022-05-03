@@ -24,6 +24,7 @@ int main ()
         std::begin(first),  std::end(first),
         std::begin(second), std::end(second),
         std::back_inserter(v));
+    STD_UNUSED(it);
 
     std::cout << "Difference has " << v.size() << " elements:\n";
 

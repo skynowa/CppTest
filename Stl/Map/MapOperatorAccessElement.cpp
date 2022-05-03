@@ -43,6 +43,7 @@ int main() {
 	// With default value of value field. Therefore, Will compile
 	// only if Occurance sruct has default constructor.
 	Occurance occur = wordMap["Hello"];
+	STD_UNUSED(occur);
 
 	for (auto elem : wordMap)
 		std::cout << elem.first << " :: " << elem.second.count << std::endl;

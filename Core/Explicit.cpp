@@ -38,6 +38,7 @@ int main(int, char **)
 	std::cout << TRACE_VAR(a) << std::endl;
 
 	B b;
+	STD_UNUSED(b);
 	// std::cout << TRACE_VAR(b) << std::endl;
 
 	C c;

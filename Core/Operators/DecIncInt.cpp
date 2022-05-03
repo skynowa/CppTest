@@ -65,7 +65,13 @@ int main(int, char **)
     {
         for (int i = 0; i < 5; ++ i) {
 	        std::cout << "i = " << i ++ << ", "
-                      << "i = " << ++ i << std::endl;
+
+			#pragma GCC diagnostic push
+			#pragma GCC diagnostic ignored "-Wsequence-point"
+
+				<< "i = " << ++ i << std::endl;
+
+			#pragma GCC diagnostic pop
         }
 
         std::cout << std::endl;

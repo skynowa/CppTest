@@ -7,11 +7,10 @@
 
 
 
-#include <iostream>
-#include <map>
-#include <string>
-#include <iterator>
-#include <algorithm>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
+
 
 void testResult(
 		std::pair<std::map<std::string, int>::iterator, bool> & result) {
@@ -57,6 +56,7 @@ int main() {
 
 	// Create a map iterator and point to beginning of map
 	std::map<std::string, int>::iterator it = mapOfWordCount.begin();
+	STD_UNUSED(it);
 
 	std::cout << "*****************************" << std::endl;
 	// Iterate over a map using std::for_each and Lambda function

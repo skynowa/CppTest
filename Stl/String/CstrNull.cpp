@@ -24,6 +24,8 @@ int main(int, char **)
     ptr = &str[0];
     assert(ptr != nullptr);
 
+    STD_UNUSED(ptr);
+
     return EXIT_SUCCESS;
 }
 //---------------------------------------------------------------------------

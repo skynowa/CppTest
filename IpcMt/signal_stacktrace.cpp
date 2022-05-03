@@ -273,6 +273,7 @@ int addr2line(char const * const program_name, void const * const addr)
             fputs("Caught SIGFPE: Arithmetic Exception\n", stderr);
             break;
         }
+        break;
       case SIGILL:
         switch(siginfo->si_code)
         {

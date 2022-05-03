@@ -6,14 +6,14 @@
  */
 
 
-#include <iostream>
-#include <thread>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 
 int main()
 {
-    int x = 9;
     std::thread threadObj([]{
             for(int i = 0; i < 10; i++)
                 std::cout<<"Display Thread Executing - " << i <<std::endl;
