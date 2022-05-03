@@ -21,6 +21,7 @@ set(CMAKE_REQUIRED_QUIET        ON)
 # CONAN
 set(CONAN_BUILD_INFO "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
 include(${CONAN_BUILD_INFO})
+
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
@@ -44,7 +45,9 @@ foreach(IT_SOURCE ${SOURCES})
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 
 	target_compile_options(${CPP_TEST} PRIVATE
-		-Werror -Wall -Wextra)
+		# -Werror
+		-Wall
+		-Wextra)
 
 	target_include_directories(${CPP_TEST} PUBLIC
 		${CMAKE_SOURCE_DIR}
