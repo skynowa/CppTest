@@ -29,7 +29,7 @@ msecToTimeStr(const int a_msec)
     * 3600 000 ms = 1 h
 	*/
 
-    h  = a_msect / 3600000;
+    h  = a_msec / 3600000;
     m  = a_msec % 3600000 / 60000;
     s  = a_msec % 60000 / 1000;
     ms = a_msec % 1000;
@@ -37,7 +37,7 @@ msecToTimeStr(const int a_msec)
 	char buf[80] {};
     sprintf(buf, "%u:%.2u:%.2u:%.3u", h, m, s, ms);
 
-    std::cout << buf << '\t' << "message" << '\n';
+    std::cout << buf << '\t' << "message" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
