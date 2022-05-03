@@ -1,6 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-May-2022**
-
-![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -232,7 +230,7 @@
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">✅ `FunctionDefinition.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
-    * <a href="/Core/Class/CopyCtor.cpp" title="copy constructor">✅ `CopyCtor.cpp`</a>
+    * <a href="/Core/Class/CopyCtor.cpp" title="Copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
