@@ -18,7 +18,7 @@ set(CMAKE_REQUIRED_QUIET        ON)
 set(CMAKE_CXX_STANDARD          17)
 #--------------------------------------------------------------------------------------------------
 # CONAN
-set(CONAN_BUILD_INFO "${CMAKE_SOURCE_DIR}/../${PROJECT_NAME}_conan/conanbuildinfo.cmake")
+set(CONAN_BUILD_INFO "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
 include(${CONAN_BUILD_INFO})
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------

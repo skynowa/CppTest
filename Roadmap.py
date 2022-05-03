@@ -7,6 +7,9 @@
 # https://www.vertex42.com/ExcelTips/unicode-symbols.html
 # https://stackoverflow.com/questions/24768630/is-there-a-way-to-show-a-progressbar-on-github-wiki
 #
+# Icons:
+# - https://gist.github.com/datawookie/fca41cba27f012e8196b736bc821f8fc
+#
 # TODO
 #
 # + Progress bar for each dir
