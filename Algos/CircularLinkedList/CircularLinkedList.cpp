@@ -6,7 +6,9 @@
  */
 
 
-#include <iostream>
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 
 using namespace std;
 
