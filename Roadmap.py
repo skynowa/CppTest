@@ -430,9 +430,7 @@ class RoadmapGen:
 		ghWatchers = "![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest)"
 		ghCiStatus = "![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)"
 
-		self._writeLine('# {} **{}**'.format(self._label(self.labelTitle, '', self.appName), dateNow))
-		self._writeLine('')
-		self._writeLine('{} {}'.format(ghWatchers, ghCiStatus))
+		self._writeLine('# {} **{}** {} {}'.format(self._label(self.labelTitle, '', self.appName), dateNow, ghWatchers, ghCiStatus))
 		self._writeLine('')
 
 		for it_currentDirPath, it_dirs, it_files in os.walk(rootPath):

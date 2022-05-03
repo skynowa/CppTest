@@ -1,6 +1,6 @@
  /*
  * \file  CopyCtor.cpp
- * \brief copy constructor
+ * \brief Copy constructor
  */
 
 #include <StdStream.h>
