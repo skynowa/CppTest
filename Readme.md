@@ -101,7 +101,7 @@
 
 ##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (174)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/ReturnBool.cpp" title="Returm NO value (as bool)">✅ `ReturnBool.cpp`</a>
+* <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/ReturnBool.cpp" title="Returm "NO" value (as bool)">✅ `ReturnBool.cpp`</a>
 * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/home/runner/work/CppTest/CppTest/CppTest/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
