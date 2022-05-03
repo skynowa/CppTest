@@ -7,11 +7,9 @@
 
 
 
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <algorithm>
-
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 // This is the type that will hold all the strings.
 // Each enumeration type will declare its own specialization.
@@ -30,26 +28,36 @@ template<typename T>
 struct enumRefHolder
 {
     T& enumVal;
-    enumRefHolder(T& enumVal): enumVal(enumVal) {}
+
+    enumRefHolder(T& enumVal) :
+    	enumVal(enumVal)
+    {
+    }
 };
 
 template<typename T>
 struct enumConstRefHolder
 {
     T const& enumVal;
-    enumConstRefHolder(T const& enumVal): enumVal(enumVal) {}
+
+    enumConstRefHolder(T const& enumVal) :
+    	enumVal(enumVal)
+    {
+    }
 };
 //-------------------------------------------------------------------------------------------------
 // The next two functions do the actual work of reading/writing an
 // enum as a string.
 template<typename T>
-std::ostream& operator << (std::ostream& str, enumConstRefHolder<T> const& data)
+std::ostream &
+operator << (std::ostream& str, enumConstRefHolder<T> const& data)
 {
    return str << enumStrings<T>::data[data.enumVal];
 }
 
 template<typename T>
-std::istream& operator >> (std::istream& str, enumRefHolder<T> const& data)
+std::istream &
+operator >> (std::istream& str, enumRefHolder<T> const& data)
 {
     std::string value;
     str >> value;
@@ -72,8 +80,16 @@ std::istream& operator >> (std::istream& str, enumRefHolder<T> const& data)
 // use the ability of function to deduce their template type without
 // being explicitly told to create the correct type of enumRefHolder<T>
 template<typename T>
-enumConstRefHolder<T>  enumToString(T const& e) {return enumConstRefHolder<T>(e);}
+enumConstRefHolder<T>
+enumToString(T const& e)
+{
+	return enumConstRefHolder<T>(e);
+}
 
 template<typename T>
-enumRefHolder<T>       enumFromString(T& e)     {return enumRefHolder<T>(e);}
+enumRefHolder<T>
+enumFromString(T& e)
+{
+	return enumRefHolder<T>(e);
+}
 //-------------------------------------------------------------------------------------------------

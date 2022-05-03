@@ -7,14 +7,13 @@
 
 
 #include "EnumIO.h"
-
 //-------------------------------------------------------------------------------------------------
 // Define Enum Like this
 enum X
 {
     Hi  = 0,
     Lo  = 1,
-    Max = 5
+    Max = 2
 };
 
 // Then you just need to define their string values.
