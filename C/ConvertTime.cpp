@@ -1,8 +1,6 @@
 /**
  * \file  ConvertTime.cpp
  * \brief
- *
- * \review
  */
 
 
@@ -16,16 +14,14 @@
 #define MSEC(time) ((uint16_t)((uint32_t)(time) % 1000))
 //--------------------------------------------------------------------------------------------------
 void
-msecToTimeStr(int iMsec)
+msecToTimeStr(const int a_msec)
 {
     char buf1[80] {};
-    sprintf(buf1, "%u:%.2u:%.2u:%.3u", HOUR(iMsec), MIN(iMsec), SEC(iMsec), MSEC(iMsec));
+    sprintf(buf1, "%u:%.2u:%.2u:%.3u", HOUR(a_msec), MIN(a_msec), SEC(a_msec), MSEC(a_msec));
 
     std::cout << buf1 << '\t' << "message" << '\n';
 
-	char buf[80] {};
     unsigned int h {}, m {}, s {}, ms {};
-    unsigned int t = iMsec;
 
    /**
     * 1 000 ms    = 1 sec
@@ -33,11 +29,12 @@ msecToTimeStr(int iMsec)
     * 3600 000 ms = 1 h
 	*/
 
-    h  = t / 3600000;
-    m  = t % 3600000 / 60000;
-    s  = t % 60000 / 1000;
-    ms = t % 1000;
+    h  = a_msect / 3600000;
+    m  = a_msec % 3600000 / 60000;
+    s  = a_msec % 60000 / 1000;
+    ms = a_msec % 1000;
 
+	char buf[80] {};
     sprintf(buf, "%u:%.2u:%.2u:%.3u", h, m, s, ms);
 
     std::cout << buf << '\t' << "message" << '\n';
