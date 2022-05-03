@@ -29,22 +29,13 @@ file(GLOB_RECURSE SOURCES
 #--------------------------------------------------------------------------------------------------
 foreach(IT_SOURCE ${SOURCES})
 	# Ignores
-	if (WIN32)
-		# TODO: Ignores
-	else()
-		if ("${IT_SOURCE}" MATCHES "Windows/" OR
-			"${IT_SOURCE}" MATCHES "WinException/"
-		)
-			message(STATUS "Skip: ${IT_SOURCE}" )
-			continue()
-		endif()
-	endif()
-
-	if ("${IT_SOURCE}" MATCHES "Libs/Qt/"   OR
-	    "${IT_SOURCE}" MATCHES "Libs/Pcre/" OR
+	if ("${IT_SOURCE}" MATCHES "Windows/"      OR
+		"${IT_SOURCE}" MATCHES "WinException/" OR
+		"${IT_SOURCE}" MATCHES "Libs/Qt/"      OR
+		"${IT_SOURCE}" MATCHES "Libs/Pcre/"    OR
 		"${IT_SOURCE}" MATCHES "Libs/XLib/"
 	)
-		message(STATUS "Skip: ${IT_SOURCE}" )
+		message(STATUS "Skip: ${IT_SOURCE}")
 		continue()
 	endif()
 
@@ -61,7 +52,8 @@ foreach(IT_SOURCE ${SOURCES})
 		${CMAKE_SOURCE_DIR}/StdTest)
 
 	target_link_libraries(${CPP_TEST}
-		${CONAN_LIBS})
+		${CONAN_LIBS}
+		-lstdc++fs)
 
 	# Targets - Build and run test
 	add_custom_target(test_${CPP_TEST}
