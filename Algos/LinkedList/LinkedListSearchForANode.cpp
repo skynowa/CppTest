@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  LinkedListSearchForANode.cpp
  * \brief
  *
  * \todo
@@ -170,7 +170,7 @@ void LinkedList :: insertAtPosition()
 
 void LinkedList :: deleteAtPosition()
 {
-    int pos, counter;
+    int pos{}, counter{};
     if (head == NULL)
     {
         cout << "Linked List is Empty" << endl;
@@ -180,7 +180,7 @@ void LinkedList :: deleteAtPosition()
     cout << "Enter the position of the value to be deleted" << endl;
     cin >> pos;
 
-    struct Node *current, *prev;
+    struct Node *current{}, *prev{};
     current = head;
 
     if (pos == 1)
@@ -215,6 +215,7 @@ void LinkedList :: deleteAtPosition()
             cout << "Position out of range" << endl;
         }
 
+        cout << counter << endl;
     }
 }
 
