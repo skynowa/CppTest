@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  CircularLinkedList.cpp
  * \brief
  *
  * \todo
@@ -58,6 +58,10 @@ void CircularLinkedList :: insertAtEnd()
 
 int main(int argc, char const *argv[])
 {
+	STD_UNUSED(argc);
+	STD_UNUSED(argv);
+
 	/* code */
+
 	return 0;
 }
