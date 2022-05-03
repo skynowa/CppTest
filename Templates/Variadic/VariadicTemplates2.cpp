@@ -16,6 +16,8 @@
 void
 log(const char *a_format)
 {
+	STD_UNUSED(a_format)
+
 	std::cout << "[" << __FUNCTION__ << "]: no params" << std::endl;
 }
 //-------------------------------------------------------------------------------------------------

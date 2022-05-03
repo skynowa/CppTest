@@ -167,7 +167,9 @@ void LinkedList :: insertAtPosition()
 
 void LinkedList :: deleteAtPosition()
 {
-    int pos, counter;
+    int pos {};
+    int counter {};
+
     if (head == NULL)
     {
         cout << "Linked List is Empty" << endl;
@@ -212,6 +214,7 @@ void LinkedList :: deleteAtPosition()
             cout << "Position out of range" << endl;
         }
 
+        cout << counter << endl;
     }
 }
 

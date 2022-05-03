@@ -105,6 +105,7 @@ int main(int, char **)
 
 		// Getting the file size (in bytes)
 		uintmax_t size = fs::file_size("./dir/file.txt");
+		STD_UNUSED(size)
 
 		// Renaming a file
 		fs::rename("./dir/file.txt", "./dir/file2.txt");
