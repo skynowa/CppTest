@@ -5,7 +5,7 @@
 #
 
 
-set -ex
+# set -ex
 
 # vars
 PROJECT_NAME="CppTest"
