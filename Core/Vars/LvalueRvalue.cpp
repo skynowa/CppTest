@@ -38,12 +38,15 @@ int main(int, char **)
 
     // а - именованная переменная это lvalue
     int a;
+    STD_UNUSED(a);
 
     // переменная с модификатором const также lvalue
     const char b = 'a';
+    STD_UNUSED(b);
 
     // указатель не является исключением.
-    int* ptr;
+    int* ptr{};
+    STD_UNUSED(ptr);
 
     // функция возвращает lvalue
     struct Foo
@@ -80,10 +83,12 @@ int main(int, char **)
     // ошибка 7 - это rvalue, невозможно создать ссылку на rvalue
 #if 0
     int i = &7;
+    STD_UNUSED(i);
 #endif
 
     // true is rvalue
     bool c = true;
+    STD_UNUSED(c);
 
     // функция возвращает rvalue
     struct Bar
