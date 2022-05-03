@@ -49,12 +49,12 @@ foreach(IT_SOURCE ${SOURCES})
 		-Wall
 		-Wextra)
 
-	target_include_directories(${CPP_TEST} PUBLIC
+	target_include_directories(${CPP_TEST} PRIVATE
 		${CMAKE_SOURCE_DIR}
 		${CMAKE_SOURCE_DIR}/StdStream
 		${CMAKE_SOURCE_DIR}/StdTest)
 
-	target_link_libraries(${CPP_TEST}
+	target_link_libraries(${CPP_TEST} PRIVATE
 		${CONAN_LIBS}
 		-lstdc++fs)
 
