@@ -21,8 +21,8 @@
 - [PreproccessCompile](#preproccesscompile "Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "Python language skills") ██████████ 🚩100% (4)
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
-- [SCM_CICD](#scm_cicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [SQL](#sql "SQL language skills") █████████░ 🚩94% (18)
+- [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 18% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
@@ -908,12 +908,6 @@
 
 </details>
 
-##  <a title="SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery" id="scm_cicd">SCM_CICD ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-* <a href="/home/runner/work/CppTest/CppTest/CppTest/SCM_CICD/FAQ.md" title="">❌ 📝 FAQ.md</a>
-
-</details>
-
 ##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/home/runner/work/CppTest/CppTest/CppTest/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
@@ -954,6 +948,12 @@
     * <a href="/home/runner/work/CppTest/CppTest/CppTest/SQL/Union/Union.sql" title="UNION">✅ `Union.sql`</a>
 
     </details>
+
+##  <a title="SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery" id="scmcicd">ScmCiCd ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/home/runner/work/CppTest/CppTest/CppTest/ScmCiCd/FAQ.md" title="">❌ 📝 FAQ.md</a>
+
+</details>
 
 ##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 18% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
