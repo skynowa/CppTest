@@ -4,15 +4,9 @@
  */
 
 
-#include <stdio.h>
-#include <stdarg.h>
-#include <iostream>
-#include <string>
-#include <iostream>
-#include <assert.h>
-//-------------------------------------------------------------------------------------------------
-#define TRACE_VAR(v) \
-    #v ": " << (v)
+#include <StdStream.h>
+#include <StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int
 bufferSize(
