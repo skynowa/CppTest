@@ -6,7 +6,7 @@
 
 # vars
 PROJECT_NAME="CppTest"
-DIR_BUILD="../${PROJECT_NAME}_conan"
+DIR_BUILD="../${PROJECT_NAME}_build"
 
 conan install \
 	conan_file.txt \
