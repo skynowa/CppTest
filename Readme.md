@@ -261,7 +261,7 @@
   * <details close>
     <summary>📁 ✅ CtorsDtor 100% (1)</summary>
 
-    * <a href="/Core/CtorsDtor/ConstructNew.cpp" title="">✅ `ConstructNew.cpp`</a>
+    * <a href="/Core/CtorsDtor/ConstructNew.cpp" title="Ctor with operator new">✅ `ConstructNew.cpp`</a>
 
     </details>
 
