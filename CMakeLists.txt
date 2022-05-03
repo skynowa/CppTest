@@ -49,7 +49,7 @@ foreach(IT_SOURCE ${SOURCES})
 		# -pedantic
 		# -Wconversion
 		# -Wsign-conversion
-		)
+	)
 
 	target_include_directories(${CPP_TEST} PRIVATE
 		${CMAKE_SOURCE_DIR}
