@@ -14,9 +14,6 @@
 #include <StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-// #pragma GCC diagnostic push
-// #pragma GCC diagnostic ignored "-Werror=deprecated-copy"
-
 class String
 {
 public:
@@ -32,10 +29,15 @@ public:
 	String &
 	operator = (const String &a_str)
     {
+		// TODO: [-Werror=deprecated-copy]
+	#if 0
 		// Copy-constructor - RAII
-        String temp(a_str);
+		String temp(a_str);
 		// Non-throwing swap
 		temp.swap(*this);
+	#else
+		STD_UNUSED(a_str);
+	#endif
 
         return *this;
     }
@@ -45,8 +47,13 @@ public:
 	operatorEqV2 /* operator = */ (const String &a_str)
     {
         if (this != &a_str) {
+            // TODO: [-Werror=deprecated-copy]
+		#if 0
 			// Copy-constructor and non-throwing swap
-            String(a_str).swap(*this);
+			String(a_str).swap(*this);
+		#else
+			STD_UNUSED(a_str);
+		#endif
         }
 
         return *this;
@@ -77,8 +84,6 @@ public:
 private:
     const char *_buff {};
 };
-
-// #pragma GCC diagnostic pop
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {

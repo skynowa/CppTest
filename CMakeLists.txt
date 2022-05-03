@@ -19,9 +19,7 @@ set(CMAKE_VERBOSE_MAKEFILE      OFF)
 set(CMAKE_REQUIRED_QUIET        ON)
 #--------------------------------------------------------------------------------------------------
 # CONAN
-set(CONAN_BUILD_INFO "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
-include(${CONAN_BUILD_INFO})
-
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
