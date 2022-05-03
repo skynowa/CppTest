@@ -1,6 +1,6 @@
 /**
  * \file  ConstructNew.cpp
- * \brief
+ * \brief Ctor with operator new
  */
 
 
