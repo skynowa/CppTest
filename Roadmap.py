@@ -61,7 +61,7 @@ class RoadmapGen:
 	iconInProgress = '⌛'
 	iconDir        = '📁'
 	iconTocHot     = '🔥'
-	iconTocDone    = '🏁' # '🚩'
+	iconTocDone    = '🚩' # '🏁'
 
 	# labels
 	todoLabels     = [r'\\todo', r'\[todo\]', r'\[ \]']

@@ -1,4 +1,4 @@
-# [todo] FAQ
+# [ ] FAQ
 
 Practice on "paper"
 
