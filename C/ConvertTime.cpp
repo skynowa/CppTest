@@ -4,8 +4,8 @@
  */
 
 
-#include <StdStream.h>
-#include <StdTest.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
 #define HOUR(time) ((uint16_t)((uint32_t)(time) / 3600000))

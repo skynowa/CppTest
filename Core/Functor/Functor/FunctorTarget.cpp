@@ -4,8 +4,8 @@
  */
 
 
-#include <StdStream.h>
-#include <StdTest.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 using functor_t     = std::function<void(const std::string &value)>;

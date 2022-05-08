@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include <StdStream.h>
-#include <StdTest.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 #include <Stl.h>
 
 #include <memory>

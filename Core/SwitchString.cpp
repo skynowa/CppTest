@@ -8,8 +8,8 @@
  */
 
 
-#include <StdStream.h>
-#include <StdTest.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
 constexpr std::size_t

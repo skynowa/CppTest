@@ -6,8 +6,8 @@
  */
 
 
-#include <StdStream.h>
-#include <StdTest.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 std::atomic_flag lock {ATOMIC_FLAG_INIT};

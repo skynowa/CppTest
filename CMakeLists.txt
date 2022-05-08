@@ -53,8 +53,9 @@ foreach(IT_SOURCE ${SOURCES})
 
 	target_include_directories(${CPP_TEST} PRIVATE
 		${CMAKE_SOURCE_DIR}
-		${CMAKE_SOURCE_DIR}/StdStream
-		${CMAKE_SOURCE_DIR}/StdTest)
+		# /usr/local/include/StdStream
+		# /usr/local/include/StdTest
+		)
 
 	target_link_libraries(${CPP_TEST} PRIVATE
 		${CONAN_LIBS}

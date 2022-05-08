@@ -6,7 +6,7 @@
  */
 
 
-#include <StdTest.h>
+#include <StdTest/StdTest.h>
 
 #include <stdio.h>
 #include <stdlib.h>
