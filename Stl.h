@@ -1,6 +1,8 @@
 /**
  * \file  Stl.h
  * \brief STL all headers
+ *
+ * Copy from https://github.com/skynowa/xLib/blob/master/Include/xLib/Core/Stl.h
  */
 
 
