@@ -10,3 +10,4 @@
 ## Done
 
 - [+] GitHub actions
+- [ ] StdTest / StdStream as submodules
