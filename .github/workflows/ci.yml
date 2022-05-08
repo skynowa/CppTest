@@ -65,6 +65,38 @@ jobs:
         shell: bash
 
       ##############################################################################################
+      # StdStream
+
+      # Checkout
+      - name: StdStream - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository:  skynowa/StdStream
+          path:        ${{github.workspace}}/StdStream
+          fetch-depth: 1
+
+      # Install
+      - name: StdStream - Install
+        run: cd "${{github.workspace}}/StdStream" && ./install.sh
+        shell: bash
+
+      ##############################################################################################
+      # StdTest
+
+      # Checkout
+      - name: StdTest - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository:  skynowa/StdTest
+          path:        ${{github.workspace}}/StdTest
+          fetch-depth: 1
+
+      # Install
+      - name: StdTest - Install
+        run: cd "${{github.workspace}}/StdTest" && ./install.sh
+        shell: bash
+
+      ##############################################################################################
       # Project
 
       # Checkout
