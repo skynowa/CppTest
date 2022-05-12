@@ -11,30 +11,39 @@
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
-#include <iostream>
  //-------------------------------------------------------------------------------------------------
 [[deprecated]]
-void TriassicPeriod()
+void
+foo1()
 {
-    std::clog << "Triassic Period: [251.9 - 208.5] million years ago.\n";
+    STD_TRACE_FUNC
 }
  //-------------------------------------------------------------------------------------------------
-[[deprecated("Use NeogenePeriod() instead.")]]
-void JurassicPeriod()
+[[deprecated("Use foo22() instead")]]
+void
+foo2()
 {
-    std::clog << "Jurassic Period: [201.3 - 152.1] million years ago.\n";
+    STD_TRACE_FUNC
 }
 //-------------------------------------------------------------------------------------------------
-[[deprecated("Use calcSomethingDifferently(int).")]]
-int calcSomething(int x)
+class A
 {
-    return x * 2;
+public:
+    static void foo3();
+};
+
+[[deprecated("Use foo33() instead")]]
+void
+A::foo3()
+{
+    STD_TRACE_FUNC
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // TriassicPeriod();
-    // JurassicPeriod();
+    // foo1();
+    // foo2();
+    // A::foo3();
 
     return EXIT_SUCCESS;
 }
