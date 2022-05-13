@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **12-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -21,7 +21,7 @@
 - [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
 - [SQL](#sql "SQL language skills") █████████░ 🚩94% (18)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 18% (82)
+- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 20% (82)
 - [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
 - [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
@@ -953,7 +953,7 @@
 
 </details>
 
-##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 18% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 20% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1046,9 +1046,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ List 25% (12)</summary>
+    <summary>📁 ⌛ List 33% (12)</summary>
 
-    * <a href="/Stl/List/ListRemoveIf.cpp" title="">❌ ListRemoveIf.cpp</a>
+    * <a href="/Stl/List/ListRemoveIf.cpp" title="">✅ `ListRemoveIf.cpp`</a>
     * <a href="/Stl/List/list.cpp" title="">❌ list.cpp</a>
     * <a href="/Stl/List/ListSearchUsingFind.cpp" title="">❌ ListSearchUsingFind.cpp</a>
     * <a href="/Stl/List/ListSearchUsingGenerate.cpp" title="">❌ ListSearchUsingGenerate.cpp</a>
