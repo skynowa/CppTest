@@ -16,12 +16,9 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::list<int> listOfInts( { 2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2, 4, 9 });
+	std::list<int> listOfInts( { 2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2, 4, 9 } );
 
-	//Display The List
-	std::copy(listOfInts.begin(), listOfInts.end(),
-			std::ostream_iterator<int>(std::cout, " "));
-	std::cout << std::endl;
+	std::cout << TRACE_VAR(listOfInts) << std::endl;
 
 	// Iterator itList points to element next to begin
 	std::list<int>::iterator itList = ++(listOfInts.begin());
@@ -29,21 +26,14 @@ int main(int, char **)
 	// Erasing element represented by iterator itList i.e. 3
 	itList = listOfInts.erase(itList);
 
-	//Display The List
-	std::copy(listOfInts.begin(), listOfInts.end(),
-			std::ostream_iterator<int>(std::cout, " "));
-	std::cout << std::endl;
+	std::cout << TRACE_VAR(listOfInts) << std::endl;
 
-	//Increment iterator
-	itList++;
+	++ itList;
 
 	// Erase a range of elements i.e. 6 to end
 	listOfInts.erase(itList, listOfInts.end());
 
-	//Display The List
-	std::copy(listOfInts.begin(), listOfInts.end(),
-			std::ostream_iterator<int>(std::cout, " "));
-	std::cout << std::endl;
+	std::cout << TRACE_VAR(listOfInts) << std::endl;
 
 	return 0;
 }
@@ -52,8 +42,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-2 3 4 6 4 9 1 2 8 9 4 6 2 4 9
-2 4 6 4 9 1 2 8 9 4 6 2 4 9
-2 4
+listOfInts: std::list (size=15): {2,3,4,6,4,9,1,2,8,9,4,6,2,4,9}
+listOfInts: std::list (size=14): {2,4,6,4,9,1,2,8,9,4,6,2,4,9}
+listOfInts: std::list (size=2):  {2,4}
 
 #endif
