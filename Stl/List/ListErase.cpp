@@ -1,18 +1,21 @@
 /**
- * \file
- * \brief
+ * \file  ListErase.cpp
+ * \brief Removes from the list container either a single element (position) or a range of elements ([first,last)).
  *
- * \todo
+ * This effectively reduces the container size by the number of elements removed, which are destroyed.
+ *
+ * Unlike other standard sequence containers, list and forward_list objects are specifically
+ * designed to be efficient inserting and removing elements in any position,
+ * even in the middle of the sequence.
  */
 
 
-#include <iostream>
-#include <list>
-#include <iterator>
-#include <algorithm>
-
-int main() {
-	// Create a list and initialize it with 7 elements
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
 	std::list<int> listOfInts( { 2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2, 4, 9 });
 
 	//Display The List
@@ -44,3 +47,13 @@ int main() {
 
 	return 0;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+2 3 4 6 4 9 1 2 8 9 4 6 2 4 9
+2 4 6 4 9 1 2 8 9 4 6 2 4 9
+2 4
+
+#endif
