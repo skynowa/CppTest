@@ -13,12 +13,12 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::list<int> listOfInts( { 2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2 });
+	std::list<int> listOfInts( {2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2} );
 
 	std::cout << "Before: " << TRACE_VAR(listOfInts.size()) << std::endl;
 
 	// Remove only first occurrence of element with value 4
-	auto pred = [](const int & val) -> bool
+	auto pred = [](const int &val) -> bool
 	{
 		return (val >= 2 && val < 5);
 	};
