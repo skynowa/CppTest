@@ -16,34 +16,30 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::list<int> listOfInts( { 2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2, 4, 9 } );
+	std::list<int> items( {0, 1, 2, 3, 4, 5} );
+	std::cout << TRACE_VAR(items) << std::endl;
 
-	std::cout << TRACE_VAR(listOfInts) << std::endl;
+	std::list<int>::iterator it_item = ++ (items.begin());
 
-	// Iterator itList points to element next to begin
-	std::list<int>::iterator itList = ++(listOfInts.begin());
+	// Erase #1
+	it_item = items.erase(it_item);
+	std::cout << "Erase #1: " << TRACE_VAR(items) << std::endl;
 
-	// Erasing element represented by iterator itList i.e. 3
-	itList = listOfInts.erase(itList);
+	// Erase #2
+	++ it_item;
 
-	std::cout << TRACE_VAR(listOfInts) << std::endl;
+	items.erase(it_item, items.end());
+	std::cout << "Erase #2: " << TRACE_VAR(items) << std::endl;
 
-	++ itList;
-
-	// Erase a range of elements i.e. 6 to end
-	listOfInts.erase(itList, listOfInts.end());
-
-	std::cout << TRACE_VAR(listOfInts) << std::endl;
-
-	return 0;
+	return EXIT_SUCCESS;
 }
 //--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT
 
-listOfInts: std::list (size=15): {2,3,4,6,4,9,1,2,8,9,4,6,2,4,9}
-listOfInts: std::list (size=14): {2,4,6,4,9,1,2,8,9,4,6,2,4,9}
-listOfInts: std::list (size=2):  {2,4}
+          items: std::list (size=6): {0,1,2,3,4,5}
+Erase #1: items: std::list (size=5): {0,2,3,4,5}
+Erase #2: items: std::list (size=2): {0,2}
 
 #endif
