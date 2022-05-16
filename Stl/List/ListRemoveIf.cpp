@@ -1,8 +1,7 @@
 /**
  * \file  ListRemoveIf.cpp
- * \brief
+ * \brief Removes from the container all the elements for which Predicate pred returns true
  *
- * Removes from the container all the elements for which Predicate pred returns true.
  * This calls the destructor of these objects and reduces the container size by
  * the number of elements removed.
  */
