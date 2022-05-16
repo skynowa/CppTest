@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **15-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **16-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -1048,7 +1048,7 @@
   * <details close>
     <summary>📁 ⌛ List 42% (12)</summary>
 
-    * <a href="/Stl/List/ListRemoveIf.cpp" title="">✅ `ListRemoveIf.cpp`</a>
+    * <a href="/Stl/List/ListRemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">✅ `ListRemoveIf.cpp`</a>
     * <a href="/Stl/List/list.cpp" title="">❌ list.cpp</a>
     * <a href="/Stl/List/ListSearchUsingFind.cpp" title="">❌ ListSearchUsingFind.cpp</a>
     * <a href="/Stl/List/ListSearchUsingGenerate.cpp" title="">❌ ListSearchUsingGenerate.cpp</a>
