@@ -35,7 +35,7 @@ int main(int, char **)
 		// ...
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

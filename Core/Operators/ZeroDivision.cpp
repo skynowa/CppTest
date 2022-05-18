@@ -17,7 +17,7 @@ int main(int, char **)
 	const auto rv  = val % 0;
 #pragma GCC diagnostic pop
 
-    std::cout << TRACE_VAR(rv) << std::endl;
+    std::cout << STD_TRACE_VAR(rv) << std::endl;
 
     return EXIT_SUCCESS;
 }

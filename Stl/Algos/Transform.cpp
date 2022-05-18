@@ -23,7 +23,7 @@ int main(int, char **)
                 return a_num * 1.2;
             });
 
-        std::cout << TRACE_VAR(valuesOut) << std::endl;
+        std::cout << STD_TRACE_VAR(valuesOut) << std::endl;
     }
 
     {
@@ -38,7 +38,7 @@ int main(int, char **)
                 return a_num * 1.2;
             });
 
-        std::cout << TRACE_VAR(valuesIn) << std::endl;
+        std::cout << STD_TRACE_VAR(valuesIn) << std::endl;
     }
 
     {
@@ -53,7 +53,7 @@ int main(int, char **)
                 valuesOut.push_back(a_num * 1.2);
             });
 
-        std::cout << TRACE_VAR(valuesIn) << std::endl;
+        std::cout << STD_TRACE_VAR(valuesIn) << std::endl;
     }
 
     return EXIT_SUCCESS;

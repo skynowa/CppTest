@@ -15,7 +15,7 @@ int main(int, char **)
 {
 	std::list<int> listOfInts( {2, 3, 4, 6, 4, 9, 1, 2, 8, 9, 4, 6, 2} );
 
-	std::cout << "Before: " << TRACE_VAR(listOfInts.size()) << std::endl;
+	std::cout << "Before: " << STD_TRACE_VAR(listOfInts.size()) << std::endl;
 
 	// Remove only first occurrence of element with value 4
 	auto pred = [](const int &val) -> bool
@@ -25,7 +25,7 @@ int main(int, char **)
 
 	listOfInts.remove_if(pred);
 
-	std::cout << "After: " << TRACE_VAR(listOfInts.size()) << std::endl;
+	std::cout << "After: " << STD_TRACE_VAR(listOfInts.size()) << std::endl;
 	std::cout << listOfInts << std::endl;
 	std::cout << std::endl;
 

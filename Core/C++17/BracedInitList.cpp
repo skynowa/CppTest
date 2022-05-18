@@ -21,19 +21,19 @@ int main(int, char **)
 	// decltype(x2) is std::initializer_list<int>
 	{
 		auto x2 = {1, 2, 3};
-		std::cout << TRACE_VAR(x2.size()) << std::endl;
+		std::cout << STD_TRACE_VAR(x2.size()) << std::endl;
 	}
 
 	// decltype(x3) is int
 	{
 		auto x3 {3};
-		std::cout << TRACE_VAR(x3) << std::endl;
+		std::cout << STD_TRACE_VAR(x3) << std::endl;
 	}
 
 	// decltype(x4) is double
 	{
 		auto x4 {3.0};
-		std::cout << TRACE_VAR(x4) << std::endl;
+		std::cout << STD_TRACE_VAR(x4) << std::endl;
 	}
 
 	{

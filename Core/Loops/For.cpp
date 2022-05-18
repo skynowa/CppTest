@@ -22,7 +22,7 @@ int main(int, char **)
         int i = 0;
 
         for (trace("1,"); trace("2"); trace("3,")) {
-            std::cout << " {" << TRACE_VAR(i) << "}" << std::endl;
+            std::cout << " {" << STD_TRACE_VAR(i) << "}" << std::endl;
 
             ++ i;
 
@@ -36,7 +36,7 @@ int main(int, char **)
         std::cout << std::endl;
 
         for (int x = 0; x != 0; ++ x) {
-            std::cout << " {" << TRACE_VAR(x) << "}" << std::endl;
+            std::cout << " {" << STD_TRACE_VAR(x) << "}" << std::endl;
         }
     }
 

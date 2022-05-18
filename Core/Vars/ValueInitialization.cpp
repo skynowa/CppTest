@@ -14,8 +14,8 @@ print(const T &a_data, const std::string &a_title)
 {
 	std::cout
 		<< a_title                    << "\n"
-		<< TRACE_VAR(a_data._int) << "\n"
-		<< TRACE_VAR(a_data._ptr) << "\n"
+		<< STD_TRACE_VAR(a_data._int) << "\n"
+		<< STD_TRACE_VAR(a_data._ptr) << "\n"
 		<< "a_data._buff: "
 			<< "{"
 			<< a_data._buff[0] << ","
@@ -66,7 +66,7 @@ struct SubData3
 		i(a_i)
 	{
 		std::cout
-			<< TRACE_VAR(__FUNCTION__) << ", "<< TRACE_VAR(i) << std::endl;
+			<< STD_TRACE_VAR(__FUNCTION__) << ", "<< STD_TRACE_VAR(i) << std::endl;
 	}
 };
 //--------------------------------------------------------------------------------------------------

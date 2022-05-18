@@ -20,7 +20,7 @@ int main(int, char **)
 		ip_int = ::inet_network( ip.c_str() );
 		STD_TEST(ip_int == 1547482829);
 
-		std::cout << TRACE_VAR(ip_int) << std::endl;
+		std::cout << STD_TRACE_VAR(ip_int) << std::endl;
 	}
 
 	// to string
@@ -31,7 +31,7 @@ int main(int, char **)
 		std::string ip_str = inet_ntoa(ip_addr);
 		STD_TEST(ip_str == ip);
 
-		std::cout << TRACE_VAR(ip_str) << std::endl;
+		std::cout << STD_TRACE_VAR(ip_str) << std::endl;
 	}
 
 	return 0;

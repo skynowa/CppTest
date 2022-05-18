@@ -16,8 +16,8 @@ void foo()
     static char buff1[10 + 1] {};
     static char buff2[10 + 1];
 
-    std::cout << TRACE_VAR(buff1) << std::endl;
-    std::cout << TRACE_VAR(buff2) << std::endl;
+    std::cout << STD_TRACE_VAR(buff1) << std::endl;
+    std::cout << STD_TRACE_VAR(buff2) << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -27,10 +27,10 @@ int main(int, char **)
 
     ::foo();
 
-    std::cout << TRACE_VAR(::buff1) << std::endl;
-    std::cout << TRACE_VAR(::buff2) << std::endl;
-    std::cout << TRACE_VAR(buff3) << std::endl;
-    std::cout << TRACE_VAR(buff4) << std::endl;
+    std::cout << STD_TRACE_VAR(::buff1) << std::endl;
+    std::cout << STD_TRACE_VAR(::buff2) << std::endl;
+    std::cout << STD_TRACE_VAR(buff3) << std::endl;
+    std::cout << STD_TRACE_VAR(buff4) << std::endl;
 
     return EXIT_SUCCESS;
 }

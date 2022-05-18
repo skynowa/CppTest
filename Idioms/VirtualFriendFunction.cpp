@@ -52,10 +52,10 @@ private:
 int main(int, char **)
 {
 	Derived d;
-    std::cout << TRACE_VAR(d) << std::endl;
+    std::cout << STD_TRACE_VAR(d) << std::endl;
 
 	IBase *base = &d;
-	std::cout << TRACE_VAR(*base) << std::endl;
+	std::cout << STD_TRACE_VAR(*base) << std::endl;
 
     return EXIT_SUCCESS;
 }

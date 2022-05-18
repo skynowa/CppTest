@@ -46,13 +46,13 @@ class F_16byte
 int main(int, char **)
 {
 	std::cout
-		<< TRACE_VAR(sizeof(A_1byte))  << "\n"
-		<< TRACE_VAR(sizeof(B_1byte))  << "\n"
-		<< TRACE_VAR(sizeof(C_0byte))  << "\n"
-		<< TRACE_VAR(sizeof(D_1byte))  << "\n"
-		<< TRACE_VAR(sizeof(D_8byte))  << "\n"
-		<< TRACE_VAR(sizeof(E_4byte))  << "\n"
-		<< TRACE_VAR(sizeof(F_16byte)) << "\n"
+		<< STD_TRACE_VAR(sizeof(A_1byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(B_1byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(C_0byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(D_1byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(D_8byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(E_4byte))  << "\n"
+		<< STD_TRACE_VAR(sizeof(F_16byte)) << "\n"
 		<< std::endl;
 
 	return 0;

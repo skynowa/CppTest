@@ -98,7 +98,7 @@ struct EnumWrapper
 		StringView p        = __PRETTY_FUNCTION__;
 		StringView enumType = typeName<Enum>();
 
-		// std::cout << TRACE_VAR(p) << std::endl;
+		// std::cout << STD_TRACE_VAR(p) << std::endl;
 
 		return StringView(p.data() + 86 + enumType.size(), p.size() - 86 - enumType.size() - 1 - 14);
 	#elif defined(__clang__)

@@ -23,7 +23,7 @@ handler(
     // Print out what we received.
     ::psiginfo(sinf, "::::: Received signal :::::");
 
-    std::cout << "::::: " << TRACE_VAR(sig) << " :::::" << std::endl;
+    std::cout << "::::: " << STD_TRACE_VAR(sig) << " :::::" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)

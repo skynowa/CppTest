@@ -30,7 +30,7 @@ int main()
 
 	vector<int> subVec = ::slice(vec, 3, 6);
 
-	cout << TRACE_VAR(subVec) <<endl;
+	cout << STD_TRACE_VAR(subVec) <<endl;
 
 	return 0;
 }

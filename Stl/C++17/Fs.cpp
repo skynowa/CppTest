@@ -89,7 +89,7 @@ int main(int, char **)
 		// Removal of the directory with all contents, if it exists
 		fs::remove_all("./dir");
 
-		// std::cout << TRACE_VAR("") << std::endl;
+		// std::cout << STD_TRACE_VAR("") << std::endl;
 	}
 
 	// Working with files:

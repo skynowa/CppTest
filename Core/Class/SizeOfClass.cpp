@@ -44,13 +44,13 @@ class CDerivedVirtual
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(sizeof(void *))          << std::endl;
-    std::cout << TRACE_VAR(sizeof(SEmpty))          << std::endl;
-    std::cout << TRACE_VAR(sizeof(CEmpty))          << std::endl;
-    std::cout << TRACE_VAR(sizeof(CData))           << std::endl;
-    std::cout << TRACE_VAR(sizeof(CInterface))      << std::endl;
-    std::cout << TRACE_VAR(sizeof(CVirtual))        << std::endl;
-    std::cout << TRACE_VAR(sizeof(CDerivedVirtual)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(void *))          << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(SEmpty))          << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(CEmpty))          << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(CData))           << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(CInterface))      << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(CVirtual))        << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(CDerivedVirtual)) << std::endl;
 
     return EXIT_SUCCESS;
 }

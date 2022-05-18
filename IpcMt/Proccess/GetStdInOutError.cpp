@@ -45,7 +45,7 @@ int main(int, char **argv)
 
 	const int pid = ::fork();
 	if (pid == ProcessStatus::ChildOk) {
-		std::cout << "Child: " << TRACE_VAR(pid) << std::endl;
+		std::cout << "Child: " << STD_TRACE_VAR(pid) << std::endl;
 
 		dup2(pipeIn[FdIndex::Read],   STDIN_FILENO);
 		dup2(pipeOut[FdIndex::Write], STDOUT_FILENO);
@@ -67,7 +67,7 @@ int main(int, char **argv)
 
 	if (pid <= ProcessStatus::ChildError) {
 		// failure, close the other ends of pipes
-		std::cout << "Child Error: " << TRACE_VAR(pid) << std::endl;
+		std::cout << "Child Error: " << STD_TRACE_VAR(pid) << std::endl;
 	} else {
 		// ProcessStatus::ParentOk
 
@@ -76,7 +76,7 @@ int main(int, char **argv)
 		//   - read  from pipeOut[FdIndex::Read]
 		//   - read  from pipeErr[FdIndex::Read]
 		// to communicate with the child process
-		std::cout << "Parent: " << TRACE_VAR(pid) << std::endl;
+		std::cout << "Parent: " << STD_TRACE_VAR(pid) << std::endl;
 
 		// read
 		::sleep(2);
@@ -86,10 +86,10 @@ int main(int, char **argv)
 		int status {};
 		::waitpid(pid, &status, 0);
 
-		std::cout << "Parent: waited, " << TRACE_VAR(status) << std::endl;
+		std::cout << "Parent: waited, " << STD_TRACE_VAR(status) << std::endl;
 	}
 
-	std::cout << "Finished: " << TRACE_VAR(pid) << std::endl;
+	std::cout << "Finished: " << STD_TRACE_VAR(pid) << std::endl;
 
 	return EXIT_SUCCESS;
 }

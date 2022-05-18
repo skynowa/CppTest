@@ -10,17 +10,17 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(sizeof(int8_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(int16_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(int32_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(int64_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(int8_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(int16_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(int32_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(int64_t)) << std::endl;
 
     std::cout << std::endl;
 
-    std::cout << TRACE_VAR(sizeof(uint8_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(uint16_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(uint32_t)) << std::endl;
-    std::cout << TRACE_VAR(sizeof(uint64_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(uint8_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(uint16_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(uint32_t)) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(uint64_t)) << std::endl;
 
     return EXIT_SUCCESS;
 }

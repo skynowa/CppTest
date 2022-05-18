@@ -10,9 +10,9 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(sizeof(L'\0')) << std::endl;
-    std::cout << TRACE_VAR(sizeof(L'0'))  << std::endl;
-    std::cout << TRACE_VAR(sizeof(0))     << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(L'\0')) << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(L'0'))  << std::endl;
+    std::cout << STD_TRACE_VAR(sizeof(0))     << std::endl;
 
     return EXIT_SUCCESS;
 }

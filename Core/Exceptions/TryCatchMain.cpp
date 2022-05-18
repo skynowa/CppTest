@@ -14,12 +14,12 @@ try	{
 	std::vector<int> v;
 
 	int value = v.at(0);
-	std::cout << TRACE_VAR(value) << std::endl;
+	std::cout << STD_TRACE_VAR(value) << std::endl;
 
 	return EXIT_SUCCESS;
 }
 catch (const std::exception &a_ex) {
-	std::cout << TRACE_VAR(a_ex.what()) << std::endl;
+	std::cout << STD_TRACE_VAR(a_ex.what()) << std::endl;
 
 	return EXIT_FAILURE;
 }

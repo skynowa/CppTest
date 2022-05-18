@@ -46,7 +46,7 @@ int main(int argc, const char *argv[])
 		po::parsed_options parsed_options = parser.run();
 
 		po::variables_map vm;
-		std::cout << TRACE_VAR(vm.size()) << std::endl;
+		std::cout << STD_TRACE_VAR(vm.size()) << std::endl;
 
 		po::store(parsed_options, vm);
 		po::notify(vm);

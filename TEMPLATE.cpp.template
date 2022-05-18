@@ -12,10 +12,9 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-
-
-    // std::cout << TRACE_VAR("") << std::endl;
     // STD_TRACE_FUNC;
+
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

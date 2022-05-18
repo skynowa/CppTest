@@ -36,7 +36,7 @@ public:
 
 	void print() const
 	{
-		std::cout << TRACE_VAR(_type) << std::endl;
+		std::cout << STD_TRACE_VAR(_type) << std::endl;
 	}
 
 protected:

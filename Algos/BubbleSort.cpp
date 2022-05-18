@@ -28,7 +28,7 @@ int main(int, char **)
     std::vector<int> v {7, 1000, 134, 23, 1};
     ::bubbleSort(v);
 
-    std::cout << TRACE_VAR(v) << std::endl;
+    std::cout << STD_TRACE_VAR(v) << std::endl;
 
     return EXIT_SUCCESS;
 }

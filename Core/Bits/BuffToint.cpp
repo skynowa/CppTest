@@ -22,7 +22,7 @@ int main()
             rv |= array[i];
         }
 
-        std::cout << TRACE_VAR(rv) << std::endl;
+        std::cout << STD_TRACE_VAR(rv) << std::endl;
     }
 
     // 2 variant
@@ -33,7 +33,7 @@ int main()
             rv = rv * 256 + (array[i] & 0xff);
         }
 
-        std::cout << TRACE_VAR(rv) << std::endl;
+        std::cout << STD_TRACE_VAR(rv) << std::endl;
     }
 
     // 3 variant
@@ -42,7 +42,7 @@ int main()
 
         rv = *reinterpret_cast<const int *>(array);
 
-        std::cout << TRACE_VAR(rv) << std::endl;
+        std::cout << STD_TRACE_VAR(rv) << std::endl;
     }
 
     // 4 variant
@@ -51,7 +51,7 @@ int main()
 
         memcpy(&rv, array, sizeof(int));
 
-        std::cout << TRACE_VAR(rv) << std::endl;
+        std::cout << STD_TRACE_VAR(rv) << std::endl;
     }
 
     return EXIT_SUCCESS;

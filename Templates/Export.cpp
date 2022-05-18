@@ -16,7 +16,7 @@ func(const T a_value)
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(func(111)) << std::endl;
+    std::cout << STD_TRACE_VAR(func(111)) << std::endl;
 
     return 0;
 }

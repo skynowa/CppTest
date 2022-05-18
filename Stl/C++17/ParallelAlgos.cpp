@@ -26,7 +26,7 @@ int main(int, char **)
 	// Sort elements using sequential execution policy
 	auto result2 = std::sort(std::execution::seq, std::begin(longVector), std::end(longVector));
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 #endif
 
     return EXIT_SUCCESS;

@@ -41,17 +41,17 @@ int main(int, char **)
     B b;
 
     std::cout
-        << TRACE_VAR(sizeof(A::EChar))     << "\n"
-        << TRACE_VAR(sizeof(a.ch))         << "\n"
+        << STD_TRACE_VAR(sizeof(A::EChar))     << "\n"
+        << STD_TRACE_VAR(sizeof(a.ch))         << "\n"
         << "\n"
-        << TRACE_VAR(sizeof(A::ELongLong)) << "\n"
-        << TRACE_VAR(sizeof(a.ll))         << "\n"
+        << STD_TRACE_VAR(sizeof(A::ELongLong)) << "\n"
+        << STD_TRACE_VAR(sizeof(a.ll))         << "\n"
         << "\n"
-        << TRACE_VAR(sizeof(A))            << "\n"
-        << TRACE_VAR(sizeof(a))            << "\n"
+        << STD_TRACE_VAR(sizeof(A))            << "\n"
+        << STD_TRACE_VAR(sizeof(a))            << "\n"
         << "\n"
-        << TRACE_VAR(sizeof(B))            << "\n"
-        << TRACE_VAR(sizeof(b))            << "\n";
+        << STD_TRACE_VAR(sizeof(B))            << "\n"
+        << STD_TRACE_VAR(sizeof(b))            << "\n";
 
     return 0;
 }

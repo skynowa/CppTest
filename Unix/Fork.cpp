@@ -20,9 +20,9 @@ int main(int, char **)
     pidRv = ::fork();
 
     if (pidRv > 0) {
-        std::cout << "Linux: " << TRACE_VAR(pidRv) << std::endl;
+        std::cout << "Linux: " << STD_TRACE_VAR(pidRv) << std::endl;
     } else {
-        std::cout << "GNU: "   << TRACE_VAR(pidRv) << std::endl;
+        std::cout << "GNU: "   << STD_TRACE_VAR(pidRv) << std::endl;
     }
 
     return EXIT_SUCCESS;

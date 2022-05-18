@@ -41,12 +41,12 @@ int main(int, char **)
 		bool &b2 {b};
 
 		auto aRv = logicalAnd(b, b2, true); // == true
-		std::cout << TRACE_VAR(aRv) << std::endl;
+		std::cout << STD_TRACE_VAR(aRv) << std::endl;
 	}
 
 	{
 		auto aRv = sum(1.0, 2.0f, 3); // == 6.0
-		std::cout << TRACE_VAR(aRv) << std::endl;
+		std::cout << STD_TRACE_VAR(aRv) << std::endl;
 	}
 
     return EXIT_SUCCESS;

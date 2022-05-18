@@ -84,10 +84,10 @@ int main(int, char **)
     printer.s = "xxx";
 
     std::cout
-        << TRACE_VAR(printer.i) << "\n"
-        << TRACE_VAR(printer.f) << "\n"
-        << TRACE_VAR(printer.c) << "\n"
-        << TRACE_VAR(printer.s) << "\n";
+        << STD_TRACE_VAR(printer.i) << "\n"
+        << STD_TRACE_VAR(printer.f) << "\n"
+        << STD_TRACE_VAR(printer.c) << "\n"
+        << STD_TRACE_VAR(printer.s) << "\n";
 
     return EXIT_SUCCESS;
 }

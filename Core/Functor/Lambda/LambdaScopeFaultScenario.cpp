@@ -18,14 +18,14 @@ getCallBack()
 	// Capturing Local variables by Reference
 	auto func = [&counter] () mutable
 	{
-		std::cout << "Inside Lambda :: " << TRACE_VAR(counter) << std::endl; // TODO: ????
+		std::cout << "Inside Lambda :: " << STD_TRACE_VAR(counter) << std::endl; // TODO: ????
 
 		// Change the counter
 		// Change will affect the outer variable because counter variable is
 		// captured by Reference in Lambda function
 		counter = 20;
 
-		std::cout << "Inside Lambda :: After changing :: " << TRACE_VAR(counter) << std::endl;
+		std::cout << "Inside Lambda :: After changing :: " << STD_TRACE_VAR(counter) << std::endl;
 	};
 
 	return func;

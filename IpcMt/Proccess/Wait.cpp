@@ -33,11 +33,11 @@ int main(int, char **)
 
 			pid = ::waitpid(pid, &status, WNOHANG);
 			if      (pid == -1) {
-				std::cout << TRACE_VAR(pid) << ", ";
+				std::cout << STD_TRACE_VAR(pid) << ", ";
 				::perror("waitpid() - error");
 			}
 			else if (pid == 0) {
-				std::cout << TRACE_VAR(pid) << ", ";
+				std::cout << STD_TRACE_VAR(pid) << ", ";
 
 				time_t t {};
 				time(&t);
@@ -46,7 +46,7 @@ int main(int, char **)
 				::sleep(1);
 			}
 			else {
-				std::cout << "\n" << TRACE_VAR(pid) << ", ";
+				std::cout << "\n" << STD_TRACE_VAR(pid) << ", ";
 
 				if ( WIFEXITED(status) )
 					printf("Child exited with status of %d (%d)\n", WEXITSTATUS(status), status);

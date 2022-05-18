@@ -36,7 +36,7 @@ int main(int, char **)
 {
 	::ustring_t s(10, 'g');
 
-    std::cout << TRACE_VAR(s) << std::endl;
+    std::cout << STD_TRACE_VAR(s) << std::endl;
 
     return 0;
 }

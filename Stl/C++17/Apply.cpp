@@ -22,7 +22,7 @@ int main(int, char **)
 
 	std::apply(add, std::make_tuple(1, 2)); // == 3
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

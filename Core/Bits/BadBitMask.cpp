@@ -16,7 +16,7 @@ int main()
 
         i |= 32;
 
-        std::cout << TRACE_VAR(i) << std::endl;
+        std::cout << STD_TRACE_VAR(i) << std::endl;
     }
 
     // Overflow bit mask

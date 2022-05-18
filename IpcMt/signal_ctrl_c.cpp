@@ -20,7 +20,7 @@ handler(
 	const int a_signalNum
 )
 {
-    std::cout << "\n" << TRACE_VAR(a_signalNum) << std::endl;
+    std::cout << "\n" << STD_TRACE_VAR(a_signalNum) << std::endl;
 
     ::isStop = true;
 }

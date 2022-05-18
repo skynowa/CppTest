@@ -17,11 +17,11 @@ int main(int, char **)
 		return val;
 	};
 
-	std::cout << TRACE_VAR(l.__val) << std::endl;
+	std::cout << STD_TRACE_VAR(l.__val) << std::endl;
 
 	l.__val = 4;
 
-	std::cout << TRACE_VAR(l.__val) << std::endl;
+	std::cout << STD_TRACE_VAR(l.__val) << std::endl;
 
     return l();
 }

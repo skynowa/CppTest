@@ -47,7 +47,7 @@ int main()
 
 	Cents bigger = maximum(nickle, dime);
 
-	std::cout << TRACE_VAR(bigger.cents()) << std::endl;
+	std::cout << STD_TRACE_VAR(bigger.cents()) << std::endl;
 
     return EXIT_SUCCESS;
 }

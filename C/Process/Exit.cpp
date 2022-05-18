@@ -66,7 +66,7 @@ int main(int, char **)
     std::exit(EXIT_FAILURE);
 
     std::cout << "After std::exit()" << std::endl;  // code not reached
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

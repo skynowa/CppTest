@@ -51,7 +51,7 @@ int main()
     MsgFactoryA factory;
 	std::unique_ptr<IMessage> msg = factory.create();
 
-	std::cout << TRACE_VAR(msg->get()) << std::endl;
+	std::cout << STD_TRACE_VAR(msg->get()) << std::endl;
 
 	return 0;
 }

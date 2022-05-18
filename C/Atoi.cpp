@@ -16,13 +16,13 @@ int main(int, char **)
     std::string s;
 
     int a = ::atoi( s.c_str() );
-    std::cout << TRACE_VAR(a) << std::endl;
+    std::cout << STD_TRACE_VAR(a) << std::endl;
 
     int b = ::atoi("");
-    std::cout << TRACE_VAR(b) << std::endl;
+    std::cout << STD_TRACE_VAR(b) << std::endl;
 
     int c = ::atoi("NULL");
-    std::cout << TRACE_VAR(c) << std::endl;
+    std::cout << STD_TRACE_VAR(c) << std::endl;
 
 #if 0
 	int d = ::atoi(nullptr);

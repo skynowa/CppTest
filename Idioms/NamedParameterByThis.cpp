@@ -74,7 +74,7 @@ int main(int, char **)
 						.setA(10)
 						.setB('Z');
 
-	std::cout << TRACE_VAR(x) << std::endl;
+	std::cout << STD_TRACE_VAR(x) << std::endl;
 
     return EXIT_SUCCESS;
 }

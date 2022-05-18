@@ -33,13 +33,13 @@ int main(int, char **)
 	// Explicitly pass type `int` as template argument.
 	{
 		auto seq = std::integer_sequence<int, 0, 1, 2>();
-    	std::cout << TRACE_VAR(seq.size()) << std::endl;
+    	std::cout << STD_TRACE_VAR(seq.size()) << std::endl;
 	}
 
 	// Type is deduced to be `int`.
 	{
 		auto seq = IntegerSequence<0, 1, 2, 7, 8>();
-    	std::cout << TRACE_VAR(seq.size()) << std::endl;
+    	std::cout << STD_TRACE_VAR(seq.size()) << std::endl;
 	}
 
     return EXIT_SUCCESS;

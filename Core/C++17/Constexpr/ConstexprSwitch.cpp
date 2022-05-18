@@ -23,7 +23,7 @@ int main(int, char **)
 {
 	int var = foo(3);
 
-    std::cout << TRACE_VAR(var) << std::endl;
+    std::cout << STD_TRACE_VAR(var) << std::endl;
 
     return EXIT_SUCCESS;
 }

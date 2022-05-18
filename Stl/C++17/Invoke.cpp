@@ -43,7 +43,7 @@ int main(int, char **)
 	Proxy<decltype(add)> p {add};
 	p(1, 2); // == 3
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

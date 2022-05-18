@@ -27,7 +27,7 @@ int main(int, char **)
     std::string str = "54321";
     ::reverseString(str);
 
-    std::cout << TRACE_VAR(str) << std::endl;
+    std::cout << STD_TRACE_VAR(str) << std::endl;
 
     return EXIT_SUCCESS;
 }

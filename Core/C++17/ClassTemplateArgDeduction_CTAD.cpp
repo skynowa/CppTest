@@ -46,25 +46,25 @@ int main(int, char **)
 	{
 		// deduces to std::pair<int, double> p(2, 4.5);
 		std::pair p(2, 4.5);
-		std::cout << TRACE_VAR(p) << std::endl;
+		std::cout << STD_TRACE_VAR(p) << std::endl;
 
 		// same as auto t = std::make_tuple(4, 3, 2.5);
 		std::tuple t(4, 3, 2.5);
-		std::cout << TRACE_VAR(t) << std::endl;
+		std::cout << STD_TRACE_VAR(t) << std::endl;
 
 		// same as std::less<void> l;
 		std::less l;
-		std::cout << TRACE_VAR(l(1, 2)) << std::endl;
+		std::cout << STD_TRACE_VAR(l(1, 2)) << std::endl;
 
 		// std::vector<unsigned int>
 		std::vector v{1U, 2U, 3U};
-		std::cout << TRACE_VAR(v) << std::endl;
+		std::cout << STD_TRACE_VAR(v) << std::endl;
 	}
 
 	// new-expressions
 	{
 		auto a = new A{'a', 'b'}; // allocated type is A<char>
-		std::cout << TRACE_VAR(*a) << std::endl;
+		std::cout << STD_TRACE_VAR(*a) << std::endl;
 	}
 
 	// function-style cast expressions

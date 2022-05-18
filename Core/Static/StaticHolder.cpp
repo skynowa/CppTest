@@ -23,7 +23,7 @@ int main(int, char **)
 {
     int_static_holder_t holder;
 
-    std::cout << TRACE_VAR(holder.value) << std::endl;
+    std::cout << STD_TRACE_VAR(holder.value) << std::endl;
 
     return EXIT_SUCCESS;
 }

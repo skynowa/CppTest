@@ -76,7 +76,7 @@ int main(int, char **)
         std::cout << it._value << (it._value.empty() ? "<moved>" : it._value) << std::endl;
     }
 
-    std::cout << TRACE_VAR(a1._value) << std::endl;
+    std::cout << STD_TRACE_VAR(a1._value) << std::endl;
 
     // std::cout <<"size = " <<  v.size() << std::endl;
     // std::cout << v[0] << std::endl;

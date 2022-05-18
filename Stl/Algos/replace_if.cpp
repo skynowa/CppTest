@@ -22,7 +22,7 @@ int main(int, char **)
 
 	value.erase(std::remove_if(value.begin(), value.end(), functor), value.end());
 
-	std::cout << TRACE_VAR(value) << std::endl;
+	std::cout << STD_TRACE_VAR(value) << std::endl;
 
 	return 0;
 }

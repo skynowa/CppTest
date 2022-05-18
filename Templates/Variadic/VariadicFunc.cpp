@@ -19,7 +19,7 @@ format()
 void
 format(int i)
 {
-	std::cout << "[format1]: " << TRACE_VAR(i) << std::endl;
+	std::cout << "[format1]: " << STD_TRACE_VAR(i) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
@@ -182,10 +182,10 @@ int main(int, char **)
 	// formatStr17_v2("fmt3", 300, 400.25, 'a');
 
 	std::string sRv = formatStr17_v3<std::stringstream>("_{}_{}_{}_{}_{}", "str", 4, 5, 6, "a");
-	STD_TEST_DO(sRv == "_str_4_5_6_a", std::cout << TRACE_VAR(sRv) << "\n";);
+	STD_TEST_DO(sRv == "_str_4_5_6_a", std::cout << STD_TRACE_VAR(sRv) << "\n";);
 
 	std::string procFile = formatStr17_v3<std::stringstream>("/proc/{}/exe", ::getpid());
-	std::cout << TRACE_VAR(procFile) << "\n";
+	std::cout << STD_TRACE_VAR(procFile) << "\n";
 
 #endif
 

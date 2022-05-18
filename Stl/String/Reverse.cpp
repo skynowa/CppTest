@@ -14,7 +14,7 @@ int main()
 
     std::reverse(&str[0], &str[5]);
 
-    std::cout << TRACE_VAR(str) << std::endl;
+    std::cout << STD_TRACE_VAR(str) << std::endl;
 
     return EXIT_SUCCESS;
 }

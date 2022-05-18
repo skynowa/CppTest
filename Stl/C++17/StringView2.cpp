@@ -33,8 +33,8 @@ int main(int, char **)
 	// str; "   trim me"
 	// v;   "trim me"
 
-    std::cout << TRACE_VAR(str) << std::endl;
-    std::cout << TRACE_VAR(v) << std::endl;
+    std::cout << STD_TRACE_VAR(str) << std::endl;
+    std::cout << STD_TRACE_VAR(v) << std::endl;
 
     return EXIT_SUCCESS;
 }

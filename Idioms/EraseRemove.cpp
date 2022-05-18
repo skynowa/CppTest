@@ -24,15 +24,15 @@ removeErase(
     const ValueT &a_value	///<
 )
 {
-	std::cout << TRACE_VAR(out_vec) << std::endl;
+	std::cout << STD_TRACE_VAR(out_vec) << std::endl;
 
 	// remove
 	auto it = std::remove(out_vec.begin(), out_vec.end(), a_value);
-	std::cout << TRACE_VAR(out_vec) << std::endl;
+	std::cout << STD_TRACE_VAR(out_vec) << std::endl;
 
 	// really remove all elements with value
 	out_vec.erase(it, out_vec.end());
-	std::cout << TRACE_VAR(out_vec) << std::endl;
+	std::cout << STD_TRACE_VAR(out_vec) << std::endl;
 
 	return out_vec;
 }

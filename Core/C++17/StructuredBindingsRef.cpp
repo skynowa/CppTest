@@ -23,17 +23,17 @@ int main(int, char **)
 
     // std::cout << "type: " << typeid( decltype([x_coord, y_coord]) ).name() << std::endl;
 
-	std::cout << TRACE_VAR(x_coord) << std::endl;
-	std::cout << TRACE_VAR(y_coord) << std::endl;
+	std::cout << STD_TRACE_VAR(x_coord) << std::endl;
+	std::cout << STD_TRACE_VAR(y_coord) << std::endl;
 
 	x_coord = 7;
 	y_coord = 8;
 
-	std::cout << TRACE_VAR(x_coord) << std::endl;
-	std::cout << TRACE_VAR(y_coord) << std::endl;
+	std::cout << STD_TRACE_VAR(x_coord) << std::endl;
+	std::cout << STD_TRACE_VAR(y_coord) << std::endl;
 
-  	std::cout << TRACE_VAR(p.x) << std::endl;
-  	std::cout << TRACE_VAR(p.y) << std::endl;
+  	std::cout << STD_TRACE_VAR(p.x) << std::endl;
+  	std::cout << STD_TRACE_VAR(p.y) << std::endl;
 
     return EXIT_SUCCESS;
 }

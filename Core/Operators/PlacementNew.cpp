@@ -65,7 +65,7 @@ int main(int, char **)
 
 		// test
 		strcpy(ptr, "ABCDEF");
-		std::cout << TRACE_VAR(ptr) << std::endl;
+		std::cout << STD_TRACE_VAR(ptr) << std::endl;
 
 		// destruct
 		ptr->~T();

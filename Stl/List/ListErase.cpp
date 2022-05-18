@@ -17,19 +17,19 @@
 int main(int, char **)
 {
 	std::list<int> items( {0, 1, 2, 3, 4, 5} );
-	std::cout << TRACE_VAR(items) << std::endl;
+	std::cout << STD_TRACE_VAR(items) << std::endl;
 
 	std::list<int>::iterator it_item = ++ (items.begin());
 
 	// Erase #1
 	it_item = items.erase(it_item);
-	std::cout << "Erase #1: " << TRACE_VAR(items) << std::endl;
+	std::cout << "Erase #1: " << STD_TRACE_VAR(items) << std::endl;
 
 	// Erase #2
 	++ it_item;
 
 	items.erase(it_item, items.end());
-	std::cout << "Erase #2: " << TRACE_VAR(items) << std::endl;
+	std::cout << "Erase #2: " << STD_TRACE_VAR(items) << std::endl;
 
 	return EXIT_SUCCESS;
 }

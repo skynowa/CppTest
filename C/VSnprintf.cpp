@@ -27,7 +27,7 @@ bufferSize(
 int main(int, char **)
 {
 	int iRv = bufferSize("Width trick: %*d", 5, 10);
-	std::cout << TRACE_VAR(iRv) << std::endl;
+	std::cout << STD_TRACE_VAR(iRv) << std::endl;
 
 	return 0;
 }

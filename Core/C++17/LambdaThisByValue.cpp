@@ -49,8 +49,8 @@ int main(int, char **)
 
 	a.value = 321;
 
-	std::cout << TRACE_VAR(funcCopy()) << std::endl;
-	std::cout << TRACE_VAR(funceRef()) << std::endl;
+	std::cout << STD_TRACE_VAR(funcCopy()) << std::endl;
+	std::cout << STD_TRACE_VAR(funceRef()) << std::endl;
 
     return EXIT_SUCCESS;
 }

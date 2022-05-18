@@ -22,8 +22,8 @@ fooAuto() -> std::string
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(fooStr()) << std::endl;
-    std::cout << TRACE_VAR(fooAuto()) << std::endl;
+    std::cout << STD_TRACE_VAR(fooStr()) << std::endl;
+    std::cout << STD_TRACE_VAR(fooAuto()) << std::endl;
 
     return EXIT_SUCCESS;
 }

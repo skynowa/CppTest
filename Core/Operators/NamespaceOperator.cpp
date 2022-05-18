@@ -41,7 +41,7 @@ public:
 
 	void print()
 	{
-		std::cout << TRACE_VAR(_d) << std::endl;
+		std::cout << STD_TRACE_VAR(_d) << std::endl;
 	}
 
 private:

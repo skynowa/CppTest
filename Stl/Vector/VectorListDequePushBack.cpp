@@ -46,7 +46,7 @@ containerPushBack(
 		assert(false && "Unknown type");
 	}
 
-	std::cout << ": " << TRACE_VAR(elapsedMSec) << std::endl;
+	std::cout << ": " << STD_TRACE_VAR(elapsedMSec) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

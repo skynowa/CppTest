@@ -15,7 +15,7 @@ struct Foo
 	explicit Foo() :
 		value(20)
 	{
-		std::cout << "Constructor: " << __FUNCTION__ << ", " << TRACE_VAR(value) << std::endl;
+		std::cout << "Constructor: " << __FUNCTION__ << ", " << STD_TRACE_VAR(value) << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ int main(int, char **)
 {
 	Foo foo;
 
-	std::cout << "Main:        " << __FUNCTION__ << ", " << TRACE_VAR(foo.value) << std::endl;
+	std::cout << "Main:        " << __FUNCTION__ << ", " << STD_TRACE_VAR(foo.value) << std::endl;
 
 	::foo();
 

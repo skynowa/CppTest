@@ -92,8 +92,8 @@ int main(int, char **)
 
 	strB = strA;
 
-    std::cout << TRACE_VAR(strA.buff()) << std::endl;
-    std::cout << TRACE_VAR(strB.buff()) << std::endl;
+    std::cout << STD_TRACE_VAR(strA.buff()) << std::endl;
+    std::cout << STD_TRACE_VAR(strB.buff()) << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -60,7 +60,7 @@ int main(int, char **)
 		// m == { { 1, "one" }, { 3, "three" }, { 4, "two" } }
 	}
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -24,7 +24,7 @@ int main(int, char **)
     	XXX
     };
 
-    std::cout << TRACE_VAR(RoomAttributeType::XXX) << std::endl;
+    std::cout << STD_TRACE_VAR(RoomAttributeType::XXX) << std::endl;
 
     return EXIT_SUCCESS;
 }

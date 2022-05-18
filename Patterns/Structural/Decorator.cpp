@@ -53,7 +53,7 @@ int main()
 	HelloWorld hw;
 	Exclamation exclamation(hw);
 
-	std::cout << TRACE_VAR(exclamation.greeting()) << std::endl;
+	std::cout << STD_TRACE_VAR(exclamation.greeting()) << std::endl;
 
 	return 0;
 }

@@ -25,7 +25,7 @@ int main(int, char **)
 
     std::cout << "items:\n\n";
     for (auto &it : items) {
-        std::cout << TRACE_VAR(it.id) << std::endl;
+        std::cout << STD_TRACE_VAR(it.id) << std::endl;
     }
 
     return 0;

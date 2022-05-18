@@ -15,8 +15,8 @@ int main(int, char **)
 {
 	std::map<std::string, std::string> m;
 
-    std::cout << TRACE_VAR(m["test"].empty()) << std::endl;
-    std::cout << TRACE_VAR(m["test"].empty()) << std::endl;
+    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
+    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
 
     return 0;
 }

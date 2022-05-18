@@ -35,14 +35,14 @@ struct C
 int main(int, char **)
 {
 	A a;
-	std::cout << TRACE_VAR(a) << std::endl;
+	std::cout << STD_TRACE_VAR(a) << std::endl;
 
 	B b;
 	STD_UNUSED(b);
-	// std::cout << TRACE_VAR(b) << std::endl;
+	// std::cout << STD_TRACE_VAR(b) << std::endl;
 
 	C c;
-	std::cout << TRACE_VAR(static_cast<bool>(c)) << std::endl;
+	std::cout << STD_TRACE_VAR(static_cast<bool>(c)) << std::endl;
 
     return 0;
 }

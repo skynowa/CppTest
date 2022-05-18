@@ -20,7 +20,7 @@ logEntry()
 
 	std::strftime(date, dateSize - 1, "%Y-%m-%d %H:%M:%S", localTime);
 
-	std::cout << TRACE_VAR(date) << '\n';
+	std::cout << STD_TRACE_VAR(date) << '\n';
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)

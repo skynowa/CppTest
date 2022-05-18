@@ -33,8 +33,8 @@ int j {17};
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << TRACE_VAR(A::B::C::i) << std::endl;
-    std::cout << TRACE_VAR(A::B::C::j) << std::endl;
+    std::cout << STD_TRACE_VAR(A::B::C::i) << std::endl;
+    std::cout << STD_TRACE_VAR(A::B::C::j) << std::endl;
 
     return EXIT_SUCCESS;
 }

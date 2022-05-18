@@ -61,7 +61,7 @@ int main(int, char **)
 			gadget.zip();
 			break;
 		case 0:
-			std::cout << TRACE_VAR(s) << std::endl;
+			std::cout << STD_TRACE_VAR(s) << std::endl;
 			break;
 		}
 
@@ -71,7 +71,7 @@ int main(int, char **)
 			gadget.zip();
 			break;
 		case 0:
-			std::cout << TRACE_VAR(s) << std::endl;
+			std::cout << STD_TRACE_VAR(s) << std::endl;
 			break;
 		}
 	}

@@ -23,7 +23,7 @@ int main(int, char **)
 			return std::to_string(std::stod(a_it_1) + std::stod(a_it_2));
 		});
 
-    std::cout << TRACE_VAR(sRv) << std::endl;
+    std::cout << STD_TRACE_VAR(sRv) << std::endl;
 
     return 0;
 }

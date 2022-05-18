@@ -17,7 +17,7 @@ int main(int, char **)
 			std::vector<int> veciVec;
 
 			int value = veciVec.at(0);
-			std::cout << TRACE_VAR(value) << std::endl;
+			std::cout << STD_TRACE_VAR(value) << std::endl;
 		//}
 
 		iRv = 1;
@@ -29,7 +29,7 @@ int main(int, char **)
 		iRv = - 3;
 	}
 
-	std::cout << TRACE_VAR(iRv) << std::endl;
+	std::cout << STD_TRACE_VAR(iRv) << std::endl;
 
     return EXIT_SUCCESS;
 }

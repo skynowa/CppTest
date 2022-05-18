@@ -19,7 +19,7 @@ void f(const int n)
             ;
         }
 
-        std::cout << "Thread Output - " << TRACE_VAR(n) << std::endl;
+        std::cout << "Thread Output - " << STD_TRACE_VAR(n) << std::endl;
 
         lock.clear(std::memory_order_release);
     }

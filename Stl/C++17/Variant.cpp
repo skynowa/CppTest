@@ -25,7 +25,7 @@ int main(int, char **)
 	std::get<double>(v); // == 12.0
 	std::get<1>(v); // == 12.0
 
-    // std::cout << TRACE_VAR("") << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }

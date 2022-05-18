@@ -31,7 +31,7 @@ isBot(const char *a_ip)
 {
     STD_TEST_PTR(a_ip);
 
-    std::cout << TRACE_VAR(blackListSize) << std::endl << std::endl;
+    std::cout << STD_TRACE_VAR(blackListSize) << std::endl << std::endl;
 
     const auto ip = ntohl( inet_addr(a_ip) );
     STD_TEST(ip > 0);

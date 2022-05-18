@@ -13,8 +13,8 @@ int main(int, char **)
     const double v1 = 420.8400001;
     const double v2 = 420.84;
 
-    std::cout << std::setprecision(20) << TRACE_VAR(v1) << std::endl;
-    std::cout << std::setprecision(20) << TRACE_VAR(v2) << std::endl;
+    std::cout << std::setprecision(20) << STD_TRACE_VAR(v1) << std::endl;
+    std::cout << std::setprecision(20) << STD_TRACE_VAR(v2) << std::endl;
 
     std::cout << (v1 > v2 ? "true" : "false") << std::endl;
 

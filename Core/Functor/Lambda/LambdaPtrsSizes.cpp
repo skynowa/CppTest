@@ -21,12 +21,12 @@ int main(int, char **)
 	std::unique_ptr<int> uniquePtr = std::make_unique<int>(123);
 
     std::cout
-    	<< TRACE_VAR(sizeof(functor))               << "\n"
-    	<< TRACE_VAR(sizeof(lambdaEmpty))           << "\n"
-    	<< TRACE_VAR(sizeof(lambdaArray100ByRef))   << "\n"
-    	<< TRACE_VAR(sizeof(lambdaArray100ByValue)) << "\n"
-    	<< TRACE_VAR(sizeof(uniquePtr))             << "\n"
-    	<< TRACE_VAR(sizeof(uniquePtr.get()))       << "\n";
+    	<< STD_TRACE_VAR(sizeof(functor))               << "\n"
+    	<< STD_TRACE_VAR(sizeof(lambdaEmpty))           << "\n"
+    	<< STD_TRACE_VAR(sizeof(lambdaArray100ByRef))   << "\n"
+    	<< STD_TRACE_VAR(sizeof(lambdaArray100ByValue)) << "\n"
+    	<< STD_TRACE_VAR(sizeof(uniquePtr))             << "\n"
+    	<< STD_TRACE_VAR(sizeof(uniquePtr.get()))       << "\n";
 
     return EXIT_SUCCESS;
 }
