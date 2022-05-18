@@ -14,42 +14,42 @@ int main(int, char **)
         const char ch {};
         static_assert(ch == char{});
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     }
 
     {
         const char ch {'\0'};
         static_assert(ch == char{});
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     }
 
     {
         const char ch {0};
         static_assert(ch == char{});
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     }
 
     {
         const char ch {'0'};
         static_assert(ch == char{48});
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     }
 
     {
         const char ch {' '};
         static_assert(ch == char{32});
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     }
 
     {
     #if 0
         const char ch {''};   // error: empty character constant
 
-        std::cout << TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
+        std::cout << STD_TRACE_VAR2(ch, static_cast<int>(ch)) << std::endl;
     #endif
     }
 

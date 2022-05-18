@@ -25,14 +25,14 @@ int main(int, char **)
 	{
 		const auto &[x, y] = origin();
 
-	    std::cout << TRACE_VAR2(x, y) << "\n" << std::endl;
+	    std::cout << STD_TRACE_VAR2(x, y) << "\n" << std::endl;
 	}
 
 	{
 		const std::map<int, char> m {{1, 'a'}, {2, 'b'}};
 
 		for (const auto &[key, value] : m) {
-			std::cout << TRACE_VAR2(key, value) << std::endl;
+			std::cout << STD_TRACE_VAR2(key, value) << std::endl;
 		}
 	}
 

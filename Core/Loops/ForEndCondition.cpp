@@ -13,7 +13,7 @@ int main(int, char **)
 	const std::size_t value_max {1};
 
 	for (size_t i = 0; i < value_max; ++ i) {
-		std::cout << TRACE_VAR2(value_max, i) << std::endl;
+		std::cout << STD_TRACE_VAR2(value_max, i) << std::endl;
 	}
 
     return EXIT_SUCCESS;

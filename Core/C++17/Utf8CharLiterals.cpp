@@ -15,7 +15,7 @@ int main(int, char **)
 {
 	const char x {u8'x'};
 
-    std::cout << TRACE_VAR2(x, sizeof(x)) << std::endl;
+    std::cout << STD_TRACE_VAR2(x, sizeof(x)) << std::endl;
 
     return EXIT_SUCCESS;
 }

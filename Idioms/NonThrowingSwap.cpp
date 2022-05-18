@@ -22,11 +22,11 @@ int main(int, char **)
 	int a {10};
 	int b {20};
 
-    std::cout << TRACE_VAR2(a, b) << std::endl;
+    std::cout << STD_TRACE_VAR2(a, b) << std::endl;
 
 	::swap(a, b);
 
-    std::cout << TRACE_VAR2(a, b) << std::endl;
+    std::cout << STD_TRACE_VAR2(a, b) << std::endl;
 
     return EXIT_SUCCESS;
 }

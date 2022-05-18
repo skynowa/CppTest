@@ -15,7 +15,7 @@ struct Point
 
 	void print() const
 	{
-	    std::cout << TRACE_VAR2(x, y) << std::endl;
+	    std::cout << STD_TRACE_VAR2(x, y) << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------

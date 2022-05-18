@@ -24,21 +24,21 @@ int main(int, char **)
 	{
 		std::vector<int> v;
 		v.reserve(64);
-		std::cout << TRACE_VAR2(v.size(), v.capacity()) << " -> ";
+		std::cout << STD_TRACE_VAR2(v.size(), v.capacity()) << " -> ";
 
 		// v is swapped with its temporary copy, which is capacity optimal
 		std::vector<int>(v).swap(v);
-		std::cout << TRACE_VAR2(v.size(), v.capacity()) << std::endl;
+		std::cout << STD_TRACE_VAR2(v.size(), v.capacity()) << std::endl;
 	}
 
 	{
 		std::vector<int> v;
 		v.reserve(64);
-		std::cout << TRACE_VAR2(v.size(), v.capacity()) << " -> ";
+		std::cout << STD_TRACE_VAR2(v.size(), v.capacity()) << " -> ";
 
 		// v is swapped with its temporary copy, which is capacity optimal
 		std::vector<int>(v.begin(), v.end()).swap(v);
-		std::cout << TRACE_VAR2(v.size(), v.capacity()) << std::endl;
+		std::cout << STD_TRACE_VAR2(v.size(), v.capacity()) << std::endl;
 	}
 
     return EXIT_SUCCESS;

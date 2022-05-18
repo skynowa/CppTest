@@ -16,12 +16,12 @@ public:
 	Printer() :
 		_id{_count ++}
 	{
-		std::cout << __FUNCTION__ << ": " << TRACE_VAR2(_count, _id) << std::endl;
+		std::cout << __FUNCTION__ << ": " << STD_TRACE_VAR2(_count, _id) << std::endl;
 	}
 
 	~Printer()
 	{
-		std::cout << __FUNCTION__ << ": " << TRACE_VAR2(_count, _id) << std::endl;
+		std::cout << __FUNCTION__ << ": " << STD_TRACE_VAR2(_count, _id) << std::endl;
 	}
 
 private:

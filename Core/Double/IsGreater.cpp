@@ -14,7 +14,7 @@ int main(int, char **)
 	const double test {0.0};
 
 	const bool bRv = std::isgreater(d, test);
-	std::cout << TRACE_VAR3(d, test, bRv) << std::endl;
+	std::cout << STD_TRACE_VAR3(d, test, bRv) << std::endl;
 
     return EXIT_SUCCESS;
 }

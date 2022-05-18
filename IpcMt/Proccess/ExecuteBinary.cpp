@@ -173,7 +173,7 @@ int main(int, char *const argv[], char *const envp[])
 	bRv = ::spc_popen(p, path.c_str(), argv, envp);
 	iRv = ::spc_pclose(p);
 
-	std::cout << TRACE_VAR3(path, bRv, iRv) << std::endl;
+	std::cout << STD_TRACE_VAR3(path, bRv, iRv) << std::endl;
 
 	return EXIT_SUCCESS;
 }

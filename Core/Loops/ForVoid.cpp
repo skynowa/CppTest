@@ -17,7 +17,7 @@ int main(int, char **)
 
         -- i, (void)++ x, ++ y)
     {
-        std::cout << TRACE_VAR3(i, x, y) << std::endl;
+        std::cout << STD_TRACE_VAR3(i, x, y) << std::endl;
     }
 
     return EXIT_SUCCESS;

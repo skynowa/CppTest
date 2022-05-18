@@ -50,7 +50,7 @@ int main()
 		std::cout << "Total values for key '" << targetC << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetC) != values.end());
-		std::cout << TRACE_VAR2(targetC, bRv) << std::endl << std::endl;
+		std::cout << STD_TRACE_VAR2(targetC, bRv) << std::endl << std::endl;
 	}
 
 	// Total Elements in the range 'd'
@@ -61,7 +61,7 @@ int main()
 		std::cout << "Total values for key '" << targetD << "' are : " << count << std::endl;
 
 		bRv = (values.find(targetD) != values.end());
-		std::cout << TRACE_VAR2(targetD, bRv) << std::endl << std::endl;
+		std::cout << STD_TRACE_VAR2(targetD, bRv) << std::endl << std::endl;
 	}
 
 	for (const auto &it : values) {

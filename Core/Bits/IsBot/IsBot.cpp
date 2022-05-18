@@ -42,7 +42,7 @@ isBot(const char *a_ip)
 
         const bool bRv = (_ip_test == (ip & _mask_test));
         if (!bRv) {
-            std::cout << TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl << std::endl;
+            std::cout << STD_TRACE_VAR3(_ip_test, _mask_test, bRv) << std::endl << std::endl;
             return true;
         }
     }
@@ -57,7 +57,7 @@ int main(int, char **)
     const bool bRv = ::isBot(ip);
     STD_TEST(bRv);
 
-    std::cout << TRACE_VAR2(ip, bRv) << std::endl;
+    std::cout << STD_TRACE_VAR2(ip, bRv) << std::endl;
 
 	return EXIT_SUCCESS;
 }

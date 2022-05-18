@@ -48,16 +48,16 @@ int main(int, char **)
         Error9 = 0x000100
     };
 
-    std::cout << TRACE_VAR2(Value0, Error0) << std::endl;
-    std::cout << TRACE_VAR2(Value1, Error1) << std::endl;
-    std::cout << TRACE_VAR2(Value2, Error2) << std::endl;
-    std::cout << TRACE_VAR2(Value3, Error3) << std::endl;
-    std::cout << TRACE_VAR2(Value4, Error4) << std::endl;
-    std::cout << TRACE_VAR2(Value5, Error5) << std::endl;
-    std::cout << TRACE_VAR2(Value6, Error6) << std::endl;
-    std::cout << TRACE_VAR2(Value7, Error7) << std::endl;
-    std::cout << TRACE_VAR2(Value8, Error8) << std::endl;
-    std::cout << TRACE_VAR2(Value9, Error9) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value0, Error0) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value1, Error1) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value2, Error2) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value3, Error3) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value4, Error4) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value5, Error5) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value6, Error6) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value7, Error7) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value8, Error8) << std::endl;
+    std::cout << STD_TRACE_VAR2(Value9, Error9) << std::endl;
 
     return EXIT_SUCCESS;
 }

@@ -55,8 +55,8 @@ int main(int, char **)
 
 			void print()
 			{
-				std::cout << TRACE_VAR4(filePath, lineNum, funcName, counter) << std::endl;
-				std::cout << TRACE_VAR5(exprVar1, exprValue1, exprVar2, exprValue2, exprOp) << std::endl;
+				std::cout << STD_TRACE_VAR4(filePath, lineNum, funcName, counter) << std::endl;
+				std::cout << STD_TRACE_VAR5(exprVar1, exprValue1, exprVar2, exprValue2, exprOp) << std::endl;
 				std::cout << std::endl;
 			}
 		};

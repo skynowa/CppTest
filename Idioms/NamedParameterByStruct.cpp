@@ -15,7 +15,7 @@ void draw(size_t xPosition, size_t yPosition, size_t width, size_t height, bool 
 {
 	std::cout
 		<< "Named Params - No:\n"
-		<< TRACE_VAR5(xPosition, yPosition, width, height, drawingNow)
+		<< STD_TRACE_VAR5(xPosition, yPosition, width, height, drawingNow)
 		<< "\n" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ void draw(const Params &params)
 {
 	std::cout
 		<< "Named Params - Yes:\n"
-		<< TRACE_VAR5(params.xPosition, params.yPosition, params.width, params.height,
+		<< STD_TRACE_VAR5(params.xPosition, params.yPosition, params.width, params.height,
 			params.drawingNow)
 		<< "\n" << std::endl;
 }

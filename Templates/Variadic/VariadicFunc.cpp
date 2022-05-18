@@ -25,13 +25,13 @@ format(int i)
 void
 format(int i, const char *c)
 {
-	std::cout << "[format2]: " << TRACE_VAR2(i, c) << std::endl;
+	std::cout << "[format2]: " << STD_TRACE_VAR2(i, c) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 void
 format(int i, double d, char ch)
 {
-	std::cout << "[format3]: " << TRACE_VAR3(i, d, ch) << std::endl;
+	std::cout << "[format3]: " << STD_TRACE_VAR3(i, d, ch) << std::endl;
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ formatStr14(const char *fmt, const ArgsT &...args)
 {
 	constexpr std::size_t argsSize = sizeof...(ArgsT);
 
-	std::cout << __FUNCTION__ << ": " << TRACE_VAR2(fmt, argsSize) << ": ";
+	std::cout << __FUNCTION__ << ": " << STD_TRACE_VAR2(fmt, argsSize) << ": ";
 
 	// Unpack the arguments for further treatment
     format(args...);
@@ -157,7 +157,7 @@ formatStr17_v3(
 	sRv += fmt.substr(posPrev, fmt.size() - posPrev);
 
 	STD_TEST_DO(argsSize == index,
-		std::cout << "Invalid params: " << TRACE_VAR2(argsSize, index) << std::endl);
+		std::cout << "Invalid params: " << STD_TRACE_VAR2(argsSize, index) << std::endl);
 
 	return sRv;
 }
