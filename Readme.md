@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **16-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **18-May-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
@@ -11,7 +11,7 @@
 - [Front](#front "Frontend skills") ██████████ 🚩100% (1)
 - [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
 - [IpcMt](#ipcmt "IPC & MT - Inter Process / Thread Communication") ███░░░░░░░ 30% (30)
-- [Libs](#libs "Third-party libraries") ██████████ 🚩100% (19)
+- [Libs](#libs "Third-party libraries") █████████░ 🔥89% (19)
 - [Network](#network "Network") ██████████ 🚩100% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "Design pattern") ████░░░░░░ 41% (29)
@@ -727,7 +727,7 @@
 
     </details>
 
-##  <a title="Third-party libraries" id="libs">Libs ██████████ 🚩100% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Third-party libraries" id="libs">Libs █████████░ 🔥89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
@@ -743,10 +743,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Error 100% (2)</summary>
+    <summary>📁 ❌ Error 0% (2)</summary>
 
-    * <a href="/Libs/Error/Error.cpp" title="">✅ `Error.cpp`</a>
-    * <a href="/Libs/Error/Error.h" title="">✅ `Error.h`</a>
+    * <a href="/Libs/Error/Error.cpp" title="">❌ Error.cpp</a>
+    * <a href="/Libs/Error/Error.h" title="">❌ Error.h</a>
 
     </details>
 
