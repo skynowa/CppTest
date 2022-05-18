@@ -28,7 +28,7 @@ int main(int, char **)
 		std::cout
 			<< itDateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << "\n"
 			<< (bool)(pszRv)    << "\n"
-			<< TRACE_PTR(pszRv) << "\n" << std::endl;
+			<< STD_TRACE_PTR(pszRv) << "\n" << std::endl;
 	}
 
     return 0;
