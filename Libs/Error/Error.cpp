@@ -1,8 +1,10 @@
-/*!
-@file Error.cc
+ /*
+ * \file  Error.cc
+ * \brief
+ *
+ * \todo
+ */
 
-@brief      This file implements Error.
-*/
 
 #include "Error.h"
 
@@ -123,5 +125,14 @@ int main(int, char **)
 }
 //--------------------------------------------------------------------------------------------------
 
+#if OUTPUT
 
+ok:    {1, 0, 0, , 1}
+error: {0, 4, 202, Warning fail, 0}
+test:  {0, 5, 10, Test fail, 1}
+test:  {0, 5, 10, Test fail, 0}
 
+ok:    {1, 0, 0, , 1}
+error: {0, 4, 202, Warning fail, 0}
+
+#endif

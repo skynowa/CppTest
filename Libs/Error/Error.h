@@ -1,18 +1,16 @@
-/*!
-@file Error.h
+ /*
+ * \file  Error.h
+ * \brief
+ *
+ * \todo
+ */
 
-@brief      This file implements Error.
-*/
 
 #pragma once
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
-
-#include <memory>
-#include <tuple>
-#include <ostream>
 //--------------------------------------------------------------------------------------------------
 class Error
 {
