@@ -1,18 +1,6 @@
-# Inter Process Communication [todo]
+# [ ] Inter Process Communication
 
 IPC & MT - Inter Process / Thread Communication
-
-## IPC & MT
-
-- [ ] C++ standart sync primitives
-- [ ] POSIX primitives
-    - [ ] std::future
-    - [ ] pthread_spin_*
-
-- [ ] condition variable - Suspisiuos wakeup
-- [ ] condition variable - notify one/all
-- [ ] dead lock - resolve methods
-- [ ] debug/fix methods
 
 ## Junior
 
