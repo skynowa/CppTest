@@ -17,7 +17,8 @@
 
 - Является ли С++ thread-safe?
 - В чем разница между многопоточностью и асинхронностью?
-- Что такое многопоточность? Какую функциональность предоставляет С++ для разработки многопоточных приложений? Какие основные проблемы многопоточных приложений?
+- Что такое многопоточность? Какую функциональность предоставляет С++ для разработки многопоточных
+  приложений? Какие основные проблемы многопоточных приложений?
 - Как передать информацию между несколькими процессами?
 - Как синхронизировать между собой несколько процессов?
 - Какие есть особенности работы с shared memory?
@@ -28,7 +29,8 @@
 - Как избежать состояния гонки?
 - Чем отличается мьютекс от семафора?
 - Какие примитивы синхронизации реализованы в C++? Преимущества lock_guard?
-- Что случится, если exception выйдет за пределы потока? Какие инструменты есть для безопасной асинхронности в С++?
+- Что случится, если exception выйдет за пределы потока? Какие инструменты есть для безопасной
+  асинхронности в С++?
 - Чем отличается std::launch::async от std::launch::deferred?
 - Что такое атомарная операция? std::atomic?
 - Как работать с std::conditional_variable?
@@ -48,7 +50,8 @@
 
 ## FAQ
 
-Inter Process Communication (IPC) is a mechanism that involves communication of one process with another process. This usually occurs only in one system.
+Inter Process Communication (IPC) is a mechanism that involves communication of one process with
+another process. This usually occurs only in one system.
 
 Communication can be of two types −
 
@@ -57,17 +60,29 @@ Communication can be of two types −
 
 Following are some important terms that we need to know before proceeding further on this topic.
 
-**Pipes** − Communication between **two related processes**. The mechanism is half duplex meaning the first process communicates with the second process. To achieve a full duplex i.e., for the second process to communicate with the first process another pipe is required.
+**Pipes** − Communication between **two related processes**. The mechanism is half duplex meaning
+the first process communicates with the second process. To achieve a full duplex i.e., for the
+second process to communicate with the first process another pipe is required.
 
-**FIFO** − Communication between **two unrelated processes**. FIFO is a ***full duplex***, meaning the first process can communicate with the second process and vice versa at the same time.
+**FIFO** − Communication between **two unrelated processes**. FIFO is a ***full duplex***, meaning
+the first process can communicate with the second process and vice versa at the same time.
 
-**Message Queues** − Communication between ***two or more processes with full duplex capacity***. The processes will communicate with each other by posting a message and retrieving it out of the queue. Once retrieved, the message is no longer available in the queue.
+**Message Queues** − Communication between ***two or more processes with full duplex capacity***.
+The processes will communicate with each other by posting a message and retrieving it out of the
+queue. Once retrieved, the message is no longer available in the queue.
 
-**Shared Memory** − Communication between **two or more processes** is achieved through a shared piece of memory among all processes. The shared memory needs to be protected from each other by synchronizing access to all the processes.
+**Shared Memory** − Communication between **two or more processes** is achieved through a shared
+piece of memory among all processes. The shared memory needs to be protected from each other by
+synchronizing access to all the processes.
 
-**Semaphores** − Semaphores are meant for synchronizing access to multiple processes. When one process wants to access the memory (for reading or writing), it needs to be locked (or protected) and released when the access is removed. This needs to be repeated by all the processes to secure data.
+**Semaphores** − Semaphores are meant for synchronizing access to multiple processes. When one
+process wants to access the memory (for reading or writing), it needs to be locked (or protected)
+and released when the access is removed. This needs to be repeated by all the processes to secure
+data.
 
-**Signals** − Signal is a mechanism to communication between multiple processes by way of signaling. This means a source process will send a signal (recognized by number) and the destination process will handle it accordingly.
+**Signals** − Signal is a mechanism to communication between multiple processes by way of signaling.
+This means a source process will send a signal (recognized by number) and the destination process
+will handle it accordingly.
 
 ## Process Information
 
@@ -77,9 +92,14 @@ What is a process?
 
 What is a program?
 
-​	A program is a file containing the information of a process and how to build it during run time. When you start execution of the program, it is loaded into RAM and starts executing.
+​	A program is a file containing the information of a process and how to build it during run time.
+When you start execution of the program, it is loaded into RAM and starts executing.
 
-Each process is identified with a unique positive integer called as process ID or simply PID (Process Identification number). The kernel usually limits the process ID to 32767, which is configurable. When the process ID reaches this limit, it is reset again, which is after the system processes range. The unused process IDs from that counter are then assigned to newly created processes.
+Each process is identified with a unique positive integer called as process ID or simply PID
+(Process Identification number). The kernel usually limits the process ID to 32767, which is
+configurable. When the process ID reaches this limit, it is reset again, which is after the system
+processes range. The unused process IDs from that counter are then assigned to newly created
+processes.
 
 The system call getpid() returns the process ID of the calling process.
 
@@ -90,9 +110,12 @@ The system call getpid() returns the process ID of the calling process.
 pid_t getpid(void);
 ```
 
-This call returns the process ID of the calling process which is guaranteed to be unique. This call is always successful and thus no return value to indicate an error.
+This call returns the process ID of the calling process which is guaranteed to be unique. This call
+is always successful and thus no return value to indicate an error.
 
-Each process has its unique ID called process ID that is fine but who created it? How to get information about its creator? Creator process is called the parent process. Parent ID or PPID can be obtained through getppid() call.
+Each process has its unique ID called process ID that is fine but who created it? How to get
+information about its creator? Creator process is called the parent process. Parent ID or PPID can
+be obtained through getppid() call.
 
 The system call getppid() returns the Parent PID of the calling process.
 
@@ -103,7 +126,8 @@ The system call getppid() returns the Parent PID of the calling process.
 pid_t getppid(void);
 ```
 
-This call returns the parent process ID of the calling process. This call is always successful and thus no return value to indicate an error.
+This call returns the parent process ID of the calling process. This call is always successful and
+thus no return value to indicate an error.
 
 Following is a program to know the PID and PPID of the calling process.
 
@@ -180,31 +204,45 @@ Cross verification of pid's by executing process commands on shell
 
 ## Process Image
 
-What exactly is process image? Process image is an executable file required while executing the program. This image usually contains the following sections −
+What exactly is process image? Process image is an executable file required while executing the
+program. This image usually contains the following sections −
 
 - Code segment or text segment
 - Data segment
 - Stack segment
 - Heap segment
 
-**Code segment** is a portion of object file or program’s virtual address space that consists of executable instructions. This is usually read-only data segment and has a fixed size.
+**Code segment** is a portion of object file or program’s virtual address space that consists of
+executable instructions. This is usually read-only data segment and has a fixed size.
 
 Data segment is of two types.
 
 - Initialized
 - Un-initialized
 
-**Initialized data segment** is a portion of the object file or program’s virtual address space that consists of initialized static and global variables.
+**Initialized data segment** is a portion of the object file or program’s virtual address space that
+consists of initialized static and global variables.
 
-**Un-initialized data segment** is a portion of the object file or program’s virtual address space that consists of uninitialized static and global variables. Un-initialized data segment is also called BSS (Block Started by Symbol) segment.
+**Un-initialized data segment** is a portion of the object file or program’s virtual address space
+that consists of uninitialized static and global variables. Un-initialized data segment is also
+called BSS (Block Started by Symbol) segment.
 
-**Data segment** is read-write, since the values of variables could be changed during run time. This segment also has a fixed size.
+**Data segment** is read-write, since the values of variables could be changed during run time. This
+segment also has a fixed size.
 
-**Stack segment** is an area of memory allotted for automatic variables and function parameters. It also stores a return address while executing function calls. Stack uses LIFO (Last-In-First-Out) mechanism for storing local or automatic variables, function parameters and storing next address or return address. The return address refers to the address to return after completion of function execution. This segment size is variable as per local variables, function parameters, and function calls. This segment grows from a higher address to a lower address.
+**Stack segment** is an area of memory allotted for automatic variables and function parameters. It
+also stores a return address while executing function calls. Stack uses LIFO (Last-In-First-Out)
+mechanism for storing local or automatic variables, function parameters and storing next address or
+return address. The return address refers to the address to return after completion of function
+execution. This segment size is variable as per local variables, function parameters, and function
+calls. This segment grows from a higher address to a lower address.
 
-**Heap segment** is area of memory allotted for dynamic memory storage such as for malloc() and calloc() calls. This segment size is also variable as per user allocation. This segment grows from a lower address to a higher address.
+**Heap segment** is area of memory allotted for dynamic memory storage such as for malloc() and
+calloc() calls. This segment size is also variable as per user allocation. This segment grows from a
+lower address to a higher address.
 
-Let us now check how the segments (data and bss segments) size vary with a few sample programs. Segment size is known by executing the command “size”.
+Let us now check how the segments (data and bss segments) size vary with a few sample programs.
+Segment size is known by executing the command “size”.
 
 ### Initial program
 
@@ -219,7 +257,8 @@ int main() {
 }
 ```
 
-In the following program, an uninitialized static variable is added. This means uninitialized segment (BSS) size would increase by 4 Bytes.
+In the following program, an uninitialized static variable is added. This means uninitialized
+segment (BSS) size would increase by 4 Bytes.
 
 ##### File: segment_size2.c
 
@@ -233,7 +272,8 @@ int main() {
 }
 ```
 
-In the following program, an initialized static variable is added. This means initialized segment (DATA) size would increase by 4 Bytes.
+In the following program, an initialized static variable is added. This means initialized segment
+(DATA) size would increase by 4 Bytes.
 
 ##### File: segment_size3.c
 
@@ -248,7 +288,8 @@ int main() {
 }
 ```
 
-In the following program, an initialized global variable is added. This means initialized segment (DATA) size would increase by 4 Bytes.
+In the following program, an initialized global variable is added. This means initialized segment
+(DATA) size would increase by 4 Bytes.
 
 ##### File: segment_size4.c
 
@@ -264,7 +305,8 @@ int main() {
 }
 ```
 
-In the following program, an uninitialized global variable is added. This means uninitialized segment (BSS) size would increase by 4 Bytes.
+In the following program, an uninitialized global variable is added. This means uninitialized
+segment (BSS) size would increase by 4 Bytes.
 
 ##### File: segment_size5.c
 
@@ -306,9 +348,14 @@ babukrishnam size segment_size1 segment_size2 segment_size3 segment_size4 segmen
 ```
 ## Process Creation & Termination
 
-How do we need to create a process within the program and may be wanted to schedule a different task for it. Can this be achieved? Yes, obviously through process creation. Of course, after the job is done it would get terminated automatically or you can terminate it as needed.
+How do we need to create a process within the program and may be wanted to schedule a different task
+for it. Can this be achieved? Yes, obviously through process creation. Of course, after the job is
+done it would get terminated automatically or you can terminate it as needed.
 
-Process creation is achieved through the **fork() system call**. The newly created process is called the child process and the process that initiated it (or the process when execution is started) is called the parent process. After the fork() system call, now we have two processes - parent and child processes. How to differentiate them? Very simple, it is through their return values.
+Process creation is achieved through the **fork() system call**. The newly created process is called
+the child process and the process that initiated it (or the process when execution is started) is
+called the parent process. After the fork() system call, now we have two processes - parent and
+child processes. How to differentiate them? Very simple, it is through their return values.
 
 ![System Call](https://www.tutorialspoint.com/inter_process_communication/images/system_call.jpg)
 
@@ -321,13 +368,15 @@ After creation of the child process, let us see the fork() system call details.
 pid_t fork(void);
 ```
 
-Creates the child process. After this call, there are two processes, the existing one is called the parent process and the newly created one is called the child process.
+Creates the child process. After this call, there are two processes, the existing one is called the
+parent process and the newly created one is called the child process.
 
 The fork() system call returns either of the three values −
 
 - Negative value to indicate an error, i.e., unsuccessful in creating the child process.
 - Returns a zero for child process.
-- Returns a positive value for the parent process. This value is the process ID of the newly created child process.
+- Returns a positive value for the parent process. This value is the process ID of the newly created
+  child process.
 
 Let us consider a simple program.
 
@@ -358,13 +407,18 @@ Called fork() system call
 Called fork() system call
 ```
 
-**Note** − Usually after fork() call, the child process and the parent process would perform different tasks. If the same task needs to be run, then for each fork() call it would run 2 power n times, where **n** is the number of times fork() is invoked.
+**Note** − Usually after fork() call, the child process and the parent process would perform
+different tasks. If the same task needs to be run, then for each fork() call it would run 2 power n
+times, where **n** is the number of times fork() is invoked.
 
-In the above case, fork() is called once, hence the output is printed twice (2 power 1). If fork() is called, say 3 times, then the output would be printed 8 times (2 power 3). If it is called 5 times, then it prints 32 times and so on and so forth.
+In the above case, fork() is called once, hence the output is printed twice (2 power 1). If fork()
+is called, say 3 times, then the output would be printed 8 times (2 power 3). If it is called 5
+times, then it prints 32 times and so on and so forth.
 
 ### File name: pids_after_fork.c
 
-Having seen fork() create the child process, it is time to see the details of the parent and the child processes.
+Having seen fork() create the child process, it is time to see the details of the parent and the
+child processes.
 
 ```c
 #include <stdio.h>
@@ -420,7 +474,9 @@ A process can terminate in either of the two ways −
 - Abnormally, occurs on delivery of certain signals, say terminate signal.
 - Normally, using _exit() system call (or _Exit() system call) or exit() library function.
 
-The difference between _exit() and exit() is mainly the cleanup activity. The **exit()** does some cleanup before returning the control back to the kernel, while the **_exit()** (or _Exit()) would return the control back to the kernel immediately.
+The difference between _exit() and exit() is mainly the cleanup activity. The **exit()** does some
+cleanup before returning the control back to the kernel, while the **_exit()** (or _Exit()) would
+return the control back to the kernel immediately.
 
 Consider the following example program with exit().
 
@@ -478,16 +534,21 @@ Hello, World!
 
 ## Child Process Monitoring
 
-As we have seen, whenever we create a child process from a program using fork, the following happens −
+As we have seen, whenever we create a child process from a program using fork, the following happens
+−
 
 - Current process now becomes the parent process
 - The new process becomes the child process
 
-What happens if the parent process finishes its task early than the child process and then quits or exits? Now who would be the parent of the child process? The parent of the child process is init process, which is the very first process initiating all the tasks.
+What happens if the parent process finishes its task early than the child process and then quits or
+exits? Now who would be the parent of the child process? The parent of the child process is init
+process, which is the very first process initiating all the tasks.
 
-To monitor the child process execution state, to check whether the child process is running or stopped or to check the execution status, etc. the wait() system calls and its variants is used.
+To monitor the child process execution state, to check whether the child process is running or
+stopped or to check the execution status, etc. the wait() system calls and its variants is used.
 
-Let us consider an example program, where the parent process does not wait for the child process, which results into init process becoming the new parent for the child process.
+Let us consider an example program, where the parent process does not wait for the child process,
+which results into init process becoming the new parent for the child process.
 
 ##### File name: parentprocess_nowait.c
 
@@ -510,7 +571,8 @@ int main() {
 }
 ```
 
-Observe that the parent process PID was 94 and the child process PID was 95. After the parent process exits, the PPID of the child process changed from 94 to 1 (init process).
+Observe that the parent process PID was 94 and the child process PID was 95. After the parent
+process exits, the PPID of the child process changed from 94 to 1 (init process).
 
 Following are the variants of system calls to monitor the child process/es −
 
@@ -518,7 +580,8 @@ Following are the variants of system calls to monitor the child process/es −
 - waitpid()
 - waitid()
 
-The **wait()** system call would wait for one of the children to terminate and return its termination status in the buffer as explained below.
+The **wait()** system call would wait for one of the children to terminate and return its
+termination status in the buffer as explained below.
 
 ```c
 #include <sys/types.h>
@@ -527,7 +590,9 @@ The **wait()** system call would wait for one of the children to terminate and r
 pid_t wait(int *status);
 ```
 
-This call returns the process ID of the terminated child on success and -1 on failure. The wait() system call suspends the execution of the current process and waits indefinitely until one of its children terminates. The termination status from the child is available in status.
+This call returns the process ID of the terminated child on success and -1 on failure. The wait()
+system call suspends the execution of the current process and waits indefinitely until one of its
+children terminates. The termination status from the child is available in status.
 
 Let us modify the previous program, so that the parent process now waits for the child process.
 
@@ -610,15 +675,20 @@ root     23511 23510  0 10:50 ?        00:00:00 /home/cppDriverNew 81fe6affab812
 In parent process: exit status from child is decimal 768, hexa 300
 ```
 
-**Note** − Even though child returns the exit status of 3, why the parent process sees that as 768. The status is stored in the higher order byte, so it is stored in hexadecimal format as 0X0300, which is 768 in decimal. Normal termination is as follows
+**Note** − Even though child returns the exit status of 3, why the parent process sees that as 768.
+The status is stored in the higher order byte, so it is stored in hexadecimal format as 0X0300,
+which is 768 in decimal. Normal termination is as follows
 
 | Higher Order Byte (Bits 8 to 15) | Lower Order Byte (Bits 0 to 7) |
 | -------------------------------- | ------------------------------ |
 | Exit status (0 to 255)           | 0                              |
 
-The wait() system call has limitation such as it can only wait until the exit of the next child. If we need to wait for a specific child it is not possible using wait(), however, it is possible using **waitpid()** system call.
+The wait() system call has limitation such as it can only wait until the exit of the next child. If
+we need to wait for a specific child it is not possible using wait(), however, it is possible using
+**waitpid()** system call.
 
-***The waitpid() system call would wait for specified children to terminate and return its termination status in the buffer as explained below.***
+***The waitpid() system call would wait for specified children to terminate and return its
+termination status in the buffer as explained below.***
 
 ```c
 #include <sys/types.h>
@@ -627,28 +697,40 @@ The wait() system call has limitation such as it can only wait until the exit of
 pid_t waitpid(pid_t pid, int *status, int options);
 ```
 
-The above call returns the process ID of the terminated child on success and -1 on failure. The waitpid() system call suspends the execution of the current process and waits indefinitely until the specified children (as per pid value) terminates. The termination status from the child is available in the status.
+The above call returns the process ID of the terminated child on success and -1 on failure. The
+waitpid() system call suspends the execution of the current process and waits indefinitely until the
+specified children (as per pid value) terminates. The termination status from the child is available
+in the status.
 
 The value of pid can be either of the following −
 
-- **< -1** − Wait for any child process whose process group ID is equal to the absolute value of pid.
+- **< -1** − Wait for any child process whose process group ID is equal to the absolute value of
+  pid.
 - **-1** − Wait for any child process, which equals to that of wait() system call.
 - **0** − Wait for any child process whose process group ID is equal to that of the calling process.
 - **>0** − Wait for any child process whose process ID is equal to the value of pid.
 
-By default, waitpid() system call waits only for the terminated children but this default behavior can be modified using the options argument.
+By default, waitpid() system call waits only for the terminated children but this default behavior
+can be modified using the options argument.
 
 ## Process Groups, Sessions & Job Control
 
-**Process Group** − Process group is a collection of one or more processes. A process group constitutes of one or more processes sharing the same process group identifier (PGID). A process group ID (PGID) is of the same type (pid_t) as the process ID. A process group has a process group leader, which is the process that creates the group and whose process ID becomes the process group ID of the group.
+**Process Group** − Process group is a collection of one or more processes. A process group
+constitutes of one or more processes sharing the same process group identifier (PGID). A process
+group ID (PGID) is of the same type (pid_t) as the process ID. A process group has a process group
+leader, which is the process that creates the group and whose process ID becomes the process group
+ID of the group.
 
 **Sessions** − It is a collection of various process groups.
 
-**Job Control** − This permits a shell user to simultaneously execute multiple commands (or jobs), one in the foreground and all remaining in the background. It is also possible to move the jobs from the foreground to the background and vice-versa.
+**Job Control** − This permits a shell user to simultaneously execute multiple commands (or jobs),
+one in the foreground and all remaining in the background. It is also possible to move the jobs from
+the foreground to the background and vice-versa.
 
 Let us understand this with the help of example program/s using shell (BASH).
 
-- Shell script (in BASH) to perform basic commands (date, echo, sleep and cal) named basic_commands.sh
+- Shell script (in BASH) to perform basic commands (date, echo, sleep and cal) named
+  basic_commands.sh
 - Shell script (in BASH) to perform basic commands (ps, echo)
 
 ```bash
@@ -671,11 +753,20 @@ sleep 200
 ps
 ```
 
-Use chmod command to give the file the execute permissions. By default, the normal file would get only read and write permissions and not execute permissions.
+Use chmod command to give the file the execute permissions. By default, the normal file would get
+only read and write permissions and not execute permissions.
 
-To stop the current running process, you need to enter CTRL+Z. This gives you a job number. The job can be resumed either in the foreground or the background. If needed, to resume the job in the foreground use ‘fg’ command. If needed, to resume the job in the background, use ‘bg’ command. By using this, it would run only the last stopped process. What if you want to start other than the last stopped process? Just use the job number after fg or bg (say bg %2 or bg %3, etc). If the running job is in the background, you can run any other tasks in the foreground. To get the list of jobs, use command, jobs. It is also possible to terminate the process either with CTRL+C or kill command. You can pass the job number while using the kill command.
+To stop the current running process, you need to enter CTRL+Z. This gives you a job number. The job
+can be resumed either in the foreground or the background. If needed, to resume the job in the
+foreground use ‘fg’ command. If needed, to resume the job in the background, use ‘bg’ command. By
+using this, it would run only the last stopped process. What if you want to start other than the
+last stopped process? Just use the job number after fg or bg (say bg %2 or bg %3, etc). If the
+running job is in the background, you can run any other tasks in the foreground. To get the list of
+jobs, use command, jobs. It is also possible to terminate the process either with CTRL+C or kill
+command. You can pass the job number while using the kill command.
 
-Check the following output which demonstrates stopping the jobs, moving the jobs from the foreground to the background and vice versa, terminating the jobs, etc.
+Check the following output which demonstrates stopping the jobs, moving the jobs from the foreground
+to the background and vice versa, terminating the jobs, etc.
 
 ```bash
 chmod u+x basic_commands.sh
@@ -736,9 +827,17 @@ Following table lists the differences between System V IPC and POSIX IPC.
 
 # Inter Process Communication - Pipes
 
-Pipe is a communication medium between two or more related or interrelated processes. It can be either within one process or a communication between the child and the parent processes. Communication can also be multi-level such as communication between the parent, the child and the grand-child, etc. Communication is achieved by one process writing into the pipe and other reading from the pipe. To achieve the pipe system call, create two files, one to write into the file and another to read from the file.
+Pipe is a communication medium between two or more related or interrelated processes. It can be
+either within one process or a communication between the child and the parent processes.
+Communication can also be multi-level such as communication between the parent, the child and the
+grand-child, etc. Communication is achieved by one process writing into the pipe and other reading
+from the pipe. To achieve the pipe system call, create two files, one to write into the file and
+another to read from the file.
 
-Pipe mechanism can be viewed with a real-time scenario such as filling water with the pipe into some container, say a bucket, and someone retrieving it, say with a mug. The filling process is nothing but writing into the pipe and the reading process is nothing but retrieving from the pipe. This implies that one output (water) is input for the other (bucket).
+Pipe mechanism can be viewed with a real-time scenario such as filling water with the pipe into some
+container, say a bucket, and someone retrieving it, say with a mug. The filling process is nothing
+but writing into the pipe and the reading process is nothing but retrieving from the pipe. This
+implies that one output (water) is input for the other (bucket).
 
 ```c
 #include<unistd.h>
@@ -746,11 +845,14 @@ Pipe mechanism can be viewed with a real-time scenario such as filling water wit
 int pipe(int pipedes[2]);
 ```
 
-This system call would create a pipe for one-way communication i.e., it creates two descriptors, first one is connected to read from the pipe and other one is connected to write into the pipe.
+This system call would create a pipe for one-way communication i.e., it creates two descriptors,
+first one is connected to read from the pipe and other one is connected to write into the pipe.
 
-Descriptor pipedes[0] is for reading and pipedes[1] is for writing. Whatever is written into pipedes[1] can be read from pipedes[0].
+Descriptor pipedes[0] is for reading and pipedes[1] is for writing. Whatever is written into
+pipedes[1] can be read from pipedes[0].
 
-This call would return zero on success and -1 in case of failure. To know the cause of failure, check with errno variable or perror() function.
+This call would return zero on success and -1 in case of failure. To know the cause of failure,
+check with errno variable or perror() function.
 
 ```c
 #include <sys/types.h>
@@ -761,17 +863,31 @@ int open(const char *pathname, int flags);
 int open(const char *pathname, int flags, mode_t mode);
 ```
 
-Even though the basic operations for file are read and write, it is essential to open the file before performing the operations and closing the file after completion of the required operations. Usually, by default, 3 descriptors opened for every process, which are used for input (standard input – stdin), output (standard output – stdout) and error (standard error – stderr) having file descriptors 0, 1 and 2 respectively.
+Even though the basic operations for file are read and write, it is essential to open the file
+before performing the operations and closing the file after completion of the required operations.
+Usually, by default, 3 descriptors opened for every process, which are used for input (standard
+input – stdin), output (standard output – stdout) and error (standard error – stderr) having file
+descriptors 0, 1 and 2 respectively.
 
-This system call would return a file descriptor used for further file operations of read/write/seek (lseek). Usually file descriptors start from 3 and increase by one number as the number of files open.
+This system call would return a file descriptor used for further file operations of read/write/seek
+(lseek). Usually file descriptors start from 3 and increase by one number as the number of files
+open.
 
-he arguments passed to open system call are pathname (relative or absolute path), flags mentioning the purpose of opening file (say, opening for read, O_RDONLY, to write, O_WRONLY, to read and write, O_RDWR, to append to the existing file O_APPEND, to create file, if not exists with O_CREAT and so on) and the required mode providing permissions of read/write/execute for user or owner/group/others. Mode can be mentioned with symbols.
+he arguments passed to open system call are pathname (relative or absolute path), flags mentioning
+the purpose of opening file (say, opening for read, O_RDONLY, to write, O_WRONLY, to read and write,
+O_RDWR, to append to the existing file O_APPEND, to create file, if not exists with O_CREAT and so
+on) and the required mode providing permissions of read/write/execute for user or
+owner/group/others. Mode can be mentioned with symbols.
 
 Read – 4, Write – 2 and Execute – 1.
 
-For example: Octal value (starts with 0), 0764 implies owner has read, write and execute permissions, group has read and write permissions, other has read permissions. This can also be represented as S_IRWXU | S_IRGRP | S_IWGRP | S_IROTH, which implies or operation of 0700|0040|0020|0004 → 0764.
+For example: Octal value (starts with 0), 0764 implies owner has read, write and execute
+permissions, group has read and write permissions, other has read permissions. This can also be
+represented as S_IRWXU | S_IRGRP | S_IWGRP | S_IROTH, which implies or operation of
+0700|0040|0020|0004 → 0764.
 
-This system call, on success, returns the new file descriptor id and -1 in case of error. The cause of error can be identified with errno variable or perror() function.
+This system call, on success, returns the new file descriptor id and -1 in case of error. The cause
+of error can be identified with errno variable or perror() function.
 
 ```c
 #include<unistd.h>
@@ -779,7 +895,10 @@ This system call, on success, returns the new file descriptor id and -1 in case 
 int close(int fd)
 ```
 
-The above system call closing already opened file descriptor. This implies the file is no longer in use and resources associated can be reused by any other process. This system call returns zero on success and -1 in case of error. The cause of error can be identified with errno variable or perror() function.
+The above system call closing already opened file descriptor. This implies the file is no longer in
+use and resources associated can be reused by any other process. This system call returns zero on
+success and -1 in case of error. The cause of error can be identified with errno variable or
+perror() function.
 
 ```c
 #include<unistd.h>
@@ -787,11 +906,17 @@ The above system call closing already opened file descriptor. This implies the f
 ssize_t read(int fd, void *buf, size_t count)
 ```
 
-The above system call is to read from the specified file with arguments of file descriptor fd, proper buffer with allocated memory (either static or dynamic) and the size of buffer.
+The above system call is to read from the specified file with arguments of file descriptor fd,
+proper buffer with allocated memory (either static or dynamic) and the size of buffer.
 
-The file descriptor id is to identify the respective file, which is returned after calling open() or pipe() system call. The file needs to be opened before reading from the file. It automatically opens in case of calling pipe() system call.
+The file descriptor id is to identify the respective file, which is returned after calling open() or
+pipe() system call. The file needs to be opened before reading from the file. It automatically opens
+in case of calling pipe() system call.
 
-This call would return the number of bytes read (or zero in case of encountering the end of the file) on success and -1 in case of failure. The return bytes can be smaller than the number of bytes requested, just in case no data is available or file is closed. Proper error number is set in case of failure.
+This call would return the number of bytes read (or zero in case of encountering the end of the
+file) on success and -1 in case of failure. The return bytes can be smaller than the number of bytes
+requested, just in case no data is available or file is closed. Proper error number is set in case
+of failure.
 
 To know the cause of failure, check with errno variable or perror() function.
 
@@ -801,12 +926,16 @@ To know the cause of failure, check with errno variable or perror() function.
 ssize_t write(int fd, void *buf, size_t count)
 ```
 
-The above system call is to write to the specified file with arguments of the file descriptor fd, a proper buffer with allocated memory (either static or dynamic) and the size of buffer.
+The above system call is to write to the specified file with arguments of the file descriptor fd, a
+proper buffer with allocated memory (either static or dynamic) and the size of buffer.
 
-The file descriptor id is to identify the respective file, which is returned after calling open() or pipe() system call.
+The file descriptor id is to identify the respective file, which is returned after calling open() or
+pipe() system call.
 
-The file needs to be opened before writing to the file. It automatically opens in case of calling pipe() system call.
+The file needs to be opened before writing to the file. It automatically opens in case of calling
+pipe() system call.
 
-This call would return the number of bytes written (or zero in case nothing is written) on success and -1 in case of failure. Proper error number is set in case of failure.
+This call would return the number of bytes written (or zero in case nothing is written) on success
+and -1 in case of failure. Proper error number is set in case of failure.
 
 To know the cause of failure, check with errno variable or perror() function.
