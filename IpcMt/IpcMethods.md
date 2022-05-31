@@ -11,4 +11,6 @@
 
 boost.interprocess
 
-You should be able to combine Boost.ASIO (for async sockets I/O) with Boost.Signals (for Observer pattern) or Boost.Signals2 (threadsafe version of Boost.Signals) to achieve what you want.
+You should be able to combine Boost.ASIO (for async sockets I/O)
+with Boost.Signals (for Observer pattern) or Boost.Signals2 (threadsafe version of Boost.Signals)
+to achieve what you want.
