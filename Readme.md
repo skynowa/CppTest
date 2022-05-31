@@ -4,13 +4,13 @@
 - [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "C language features") ██████████ 🚩100% (11)
-- [Core](#core "C++ language features") █████████░ 🚩94% (175)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩94% (175)
 - [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
 - [Front](#front "Frontend skills") ██████████ 🚩100% (1)
 - [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
-- [IpcMt](#ipcmt "IPC & MT - Inter Process / Thread Communication") ███░░░░░░░ 27% (30)
+- [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "Third-party libraries") █████████░ 🔥89% (19)
 - [Network](#network "Network") ██████████ 🚩100% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
@@ -97,7 +97,7 @@
 
     </details>
 
-##  <a title="C++ language features" id="core">Core █████████░ 🚩94% (175)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩94% (175)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -645,12 +645,12 @@
 
     </details>
 
-##  <a title="IPC & MT - Inter Process / Thread Communication" id="ipcmt">IpcMt ███░░░░░░░ 27% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/signal_stacktrace.cpp" title="">❌ signal_stacktrace.cpp</a>
 * <a href="/IpcMt/ThreadHarwareConcurrency.cpp" title="">✅ `ThreadHarwareConcurrency.cpp`</a>
 * <a href="/IpcMt/signal.cpp" title="http://aspyct.org, a.dotreppe@aspyct.org">❌ signal.cpp</a>
-* <a href="/IpcMt/FAQ.md" title="">❌ 📝 FAQ.md</a>
+* <a href="/IpcMt/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/IpcMt/PSigInfo.cpp" title="">❌ PSigInfo.cpp</a>
 * <a href="/IpcMt/signal_ctrl_c.cpp" title="">❌ signal_ctrl_c.cpp</a>
