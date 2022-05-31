@@ -35,6 +35,12 @@
 - [ ] Deadlock - resolve methods
 - [ ] Debug/fix methods
 
+## Etc
+
+- [ ] race-condition / fix
+- [ ] мьютексом vs семафором
+- [ ] atomic operation
+
 ## IPC Methods
 
 - Pipe
@@ -51,3 +57,7 @@ boost.interprocess
 You should be able to combine Boost.ASIO (for async sockets I/O)
 with Boost.Signals (for Observer pattern) or Boost.Signals2 (threadsafe version of Boost.Signals)
 to achieve what you want.
+
+## Video
+
+- [ ] [006. Многопоточность в С++ – Максим Бусел](https://www.youtube.com/watch?v=-TuJP8pUBW0)
