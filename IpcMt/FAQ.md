@@ -202,7 +202,7 @@ Segment size is known by executing the command “size”.
 
 ### Initial program
 
-##### File: segment_size1.c
+#### File: segment_size1.c
 
 ```c
 #include <stdio.h>
