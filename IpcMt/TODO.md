@@ -20,8 +20,8 @@
 
 ## Mutex
 
-- [ ] Recursive_mutex. Рекурсивный мьютекс
 - [ ] Что такое mutex и как его использовать. Синхронизация потоков.
+- [ ] Recursive_mutex. Рекурсивный мьютекс
 - [ ] lock_guard mutex
 - [ ] std::unique_lock mutex
 
@@ -34,3 +34,20 @@
 
 - [ ] Deadlock - resolve methods
 - [ ] Debug/fix methods
+
+## IPC Methods
+
+- Pipe
+- FIFO
+- Socket
+- ShareMemory + Semaphores
+- Memory mapped file
+- Msg queue (Unix)
+- Signal
+- File
+
+boost.interprocess
+
+You should be able to combine Boost.ASIO (for async sockets I/O)
+with Boost.Signals (for Observer pattern) or Boost.Signals2 (threadsafe version of Boost.Signals)
+to achieve what you want.
