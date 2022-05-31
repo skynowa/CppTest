@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  SignalCtrlC.cpp
  * \brief
  *
  * \todo

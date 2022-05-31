@@ -1,5 +1,5 @@
 /**
- * \file  JoiningThreads.cpp
+ * \file  JoinDetachThread.cpp
  * \brief
  */
 

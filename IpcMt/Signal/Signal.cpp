@@ -1,5 +1,5 @@
 /**
- * \file  signal.cpp
+ * \file  Signal.cpp
  * \brief http://aspyct.org, a.dotreppe@aspyct.org
  *
  * \todo

@@ -1,5 +1,5 @@
 /**
- * \file
+ * \file  SignalStacktrace.cpp
  * \brief
  *
  * \todo
