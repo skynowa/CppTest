@@ -139,21 +139,25 @@ Following is a program to know the PID and PPID of the calling process.
 
 int main()
 {
-   int mypid, myppid;
    printf("Program to know PID and PPID's information\n");
-   mypid = getpid();
-   myppid = getppid();
+
+   int mypid  = getpid();
+   int myppid = getppid();
+
    printf("My process ID is %d\n", mypid);
    printf("My parent process ID is %d\n", myppid);
+
    printf("Cross verification of pid's by executing process commands on shell\n");
+
    system("ps -ef");
+
    return 0;
 }
 ```
 
 On compilation and execution of the above program, following will be the output.
 
-```c
+```bash
 UID         PID   PPID  C STIME TTY          TIME CMD
 root          1      0  0  2017 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
 mysql       101      1  0  2017 ?        00:06:06 /usr/libexec/mysqld
@@ -249,10 +253,12 @@ Segment size is known by executing the command “size”.
 ##### File: segment_size1.c
 
 ```c
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
+int main()
+{
    printf("Hello World\n");
+
    return 0;
 }
 ```
@@ -263,11 +269,14 @@ segment (BSS) size would increase by 4 Bytes.
 ##### File: segment_size2.c
 
 ```C
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
+int main()
+{
    static int mystaticint1;
+
    printf("Hello World\n");
+
    return 0;
 }
 ```
@@ -278,12 +287,14 @@ In the following program, an initialized static variable is added. This means in
 ##### File: segment_size3.c
 
 ```C
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
    static int mystaticint1;
    static int mystaticint2 = 100;
+
    printf("Hello World\n");
+
    return 0;
 }
 ```
@@ -294,13 +305,17 @@ In the following program, an initialized global variable is added. This means in
 ##### File: segment_size4.c
 
 ```c
-#include<stdio.h>
+#include <stdio.h>
 
 int myglobalint1 = 500;
-int main() {
+
+int main()
+{
    static int mystaticint1;
    static int mystaticint2 = 100;
+
    printf("Hello World\n");
+
    return 0;
 }
 ```
@@ -311,23 +326,27 @@ segment (BSS) size would increase by 4 Bytes.
 ##### File: segment_size5.c
 
 ```c
-#include<stdio.h>
+#include <stdio.h>
 
 int myglobalint1 = 500;
 int myglobalint2;
-int main() {
+
+int main()
+{
    static int mystaticint1;
    static int mystaticint2 = 100;
+
    printf("Hello World\n");
+
    return 0;
 }
 ```
 
 ### Execution Steps
 
-##### Compilation
+#### Compilation
 
-```c
+```bash
 $ gcc segment_size1.c -o segment_size1
 $ gcc segment_size2.c -o segment_size2
 $ gcc segment_size3.c -o segment_size3
@@ -335,9 +354,9 @@ $ gcc segment_size4.c -o segment_size4
 $ gcc segment_size5.c -o segment_size5
 ```
 
-##### Execution/Output
+#### Execution/Output
 
-```c
+```bash
 babukrishnam size segment_size1 segment_size2 segment_size3 segment_size4 segment_size5
    text  data  bss  dec  hex  filename
    878   252    8   1138 472  segment_size1
@@ -346,6 +365,7 @@ babukrishnam size segment_size1 segment_size2 segment_size3 segment_size4 segmen
    878   260   12   1150 47e  segment_size4
    878   260   16   1154 482  segment_size5
 ```
+
 ## Process Creation & Termination
 
 How do we need to create a process within the program and may be wanted to schedule a different task
@@ -387,16 +407,18 @@ Let us consider a simple program.
 #include <sys/types.h>
 #include <unistd.h>
 
-int main() {
+int main()
+{
    fork();
    printf("Called fork() system call\n");
+
    return 0;
 }
 ```
 
-##### Compilation
+#### Compilation
 
-```
+```bash
 gcc basicfork.c -o basicfork
 ```
 
@@ -425,7 +447,8 @@ child processes.
 #include <sys/types.h>
 #include <unistd.h>
 
-int main() {
+int main()
+{
    pid_t pid, mypid, myppid;
    pid = getpid();
    printf("Before fork: Process id is %d\n", pid);
@@ -451,13 +474,14 @@ int main() {
       printf("Process id is %d and PPID is %d\n", mypid, myppid);
       printf("Newly created process id or child pid is %d\n", pid);
    }
+
    return 0;
 }
 ```
 
-##### Compilation and Execution Steps
+#### Compilation and Execution Steps
 
-```c
+```
 Before fork: Process id is 166629
 This is child process
 Process id is 166630 and PPID is 166629
@@ -480,25 +504,27 @@ return the control back to the kernel immediately.
 
 Consider the following example program with exit().
 
-##### File name: atexit_sample.c
+#### File name: atexit_sample.c
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-void exitfunc() {
+void exitfunc()
+{
    printf("Called cleanup function - exitfunc()\n");
-   return;
 }
 
-int main() {
+int main()
+{
    atexit(exitfunc);
    printf("Hello, World!\n");
+
    exit (0);
 }
 ```
 
-##### Compilation and Execution Steps
+#### Compilation and Execution Steps
 
 ```c
 Hello, World!
@@ -514,19 +540,21 @@ Consider the following example program with _exit().
 #include <stdlib.h>
 #include <unistd.h>
 
-void exitfunc() {
+void exitfunc()
+{
    printf("Called cleanup function - exitfunc()\n");
-   return;
 }
 
-int main() {
+int main()
+{
    atexit(exitfunc);
    printf("Hello, World!\n");
+
    _exit (0);
 }
 ```
 
-##### Compilation and Execution Steps
+#### Compilation and Execution Steps
 
 ```c
 Hello, World!
@@ -550,12 +578,13 @@ stopped or to check the execution status, etc. the wait() system calls and its v
 Let us consider an example program, where the parent process does not wait for the child process,
 which results into init process becoming the new parent for the child process.
 
-##### File name: parentprocess_nowait.c
+#### File name: parentprocess_nowait.c
 
 ```c
 #include<stdio.h>
 
-int main() {
+int main()
+{
    int pid;
    pid = fork();
 
@@ -567,6 +596,7 @@ int main() {
    } else {
       sleep(3);
    }
+
    return 0;
 }
 ```
@@ -605,9 +635,11 @@ Let us modify the previous program, so that the parent process now waits for the
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int main() {
+int main()
+{
    int pid;
    int status;
+
    pid = fork();
 
    // Child process
@@ -621,13 +653,14 @@ int main() {
       wait(&status);
       printf("In parent process: exit status from child is decimal %d, hexa %0x\n", status, status);
    }
+
    return 0;
 }
 ```
 
 Output:
 
-```c
+```shell
 UID        PID  PPID  C STIME TTY          TIME CMD
 root         1     0  0 May20 ?        00:06:19 /sbin/init
 root        51     1  0 May20 ?        00:00:05 /lib/systemd/systemd-journald
@@ -735,7 +768,7 @@ Let us understand this with the help of example program/s using shell (BASH).
 
 ```bash
 #!/bin/bash
-#basic_commands.sh
+# basic_commands.sh
 
 date
 echo "Now sleeping for 250 seconds, so that testing job control functionality is smooth"
@@ -745,7 +778,7 @@ cal
 
 ```bash
 #!/bin/bash
-#process_status.sh
+# process_status.sh
 
 ps
 echo "Now sleeping for 200 seconds, so that testing job control functionality is smooth"
@@ -840,7 +873,7 @@ but writing into the pipe and the reading process is nothing but retrieving from
 implies that one output (water) is input for the other (bucket).
 
 ```c
-#include<unistd.h>
+#include <unistd.h>
 
 int pipe(int pipedes[2]);
 ```
@@ -890,7 +923,7 @@ This system call, on success, returns the new file descriptor id and -1 in case 
 of error can be identified with errno variable or perror() function.
 
 ```c
-#include<unistd.h>
+#include <unistd.h>
 
 int close(int fd)
 ```
@@ -901,7 +934,7 @@ success and -1 in case of error. The cause of error can be identified with errno
 perror() function.
 
 ```c
-#include<unistd.h>
+#include <unistd.h>
 
 ssize_t read(int fd, void *buf, size_t count)
 ```
@@ -921,7 +954,7 @@ of failure.
 To know the cause of failure, check with errno variable or perror() function.
 
 ```c
-#include<unistd.h>
+#include <unistd.h>
 
 ssize_t write(int fd, void *buf, size_t count)
 ```
