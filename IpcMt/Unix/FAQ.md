@@ -1,6 +1,6 @@
 # IPC & MT - Inter Process / Thread Communication
 
-## FAQ
+## [ ] FAQ
 
 Inter Process Communication (IPC) is a mechanism that involves communication of one process with
 another process. This usually occurs only in one system.
