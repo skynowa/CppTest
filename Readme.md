@@ -684,15 +684,6 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Proccess 100% (3)</summary>
-
-    * <a href="/IpcMt/Proccess/ExecuteBinary.cpp" title="">🖊 `ExecuteBinary.cpp`</a>
-    * <a href="/IpcMt/Proccess/Wait.cpp" title="">✅ `Wait.cpp`</a>
-    * <a href="/IpcMt/Proccess/GetStdInOutError.cpp" title="Catch stderr and stdout from external program">🖊 `GetStdInOutError.cpp`</a>
-
-    </details>
-
-  * <details close>
     <summary>📁 ⌛ RaceCondition 50% (2)</summary>
 
     * <a href="/IpcMt/RaceCondition/RaceCondition_1.cpp" title="">❌ RaceCondition_1.cpp</a>
@@ -726,11 +717,20 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Unix 0% (1)</summary>
+    <summary>📁 ⌛ Unix 75% (4)</summary>
 
     * <a href="/IpcMt/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
+
+    * <details close>
+      <summary>📁 ✅ Proccess 100% (3)</summary>
+
+        * <a href="/IpcMt/Unix/Proccess/ExecuteBinary.cpp" title="">🖊 `ExecuteBinary.cpp`</a>
+        * <a href="/IpcMt/Unix/Proccess/Wait.cpp" title="">✅ `Wait.cpp`</a>
+        * <a href="/IpcMt/Unix/Proccess/GetStdInOutError.cpp" title="Catch stderr and stdout from external program">🖊 `GetStdInOutError.cpp`</a>
+
+      </details>
 
   * <details close>
     <summary>📁 ✅ Windows 100% (2)</summary>
