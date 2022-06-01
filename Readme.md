@@ -10,7 +10,7 @@
 - [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
 - [Front](#front "Frontend skills") ██████████ 🚩100% (1)
 - [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
-- [IpcMt](#ipcmt "") ███░░░░░░░ 27% (30)
+- [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "Third-party libraries") █████████░ 🔥89% (19)
 - [Network](#network "Network") ██████████ 🚩100% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
@@ -645,7 +645,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 27% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -693,10 +693,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ RaceCondition 0% (2)</summary>
+    <summary>📁 ⌛ RaceCondition 50% (2)</summary>
 
-    * <a href="/IpcMt/RaceCondition/RaceConditionExample2.cpp" title="">❌ RaceConditionExample2.cpp</a>
-    * <a href="/IpcMt/RaceCondition/RaceConditionExample.cpp" title="">❌ RaceConditionExample.cpp</a>
+    * <a href="/IpcMt/RaceCondition/RaceCondition_1.cpp" title="">❌ RaceCondition_1.cpp</a>
+    * <a href="/IpcMt/RaceCondition/RaceCondition_2.cpp" title="Here both the threads are racing for the common resource std::cout">✅ `RaceCondition_2.cpp`</a>
 
     </details>
 
