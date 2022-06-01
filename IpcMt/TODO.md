@@ -32,6 +32,7 @@
 
 ## Debug
 
+- [ ] [Топ 20 ошибок при работе с многопоточностью на С++ и способы избежать их](https://habr.com/ru/post/443406/)
 - [ ] Deadlock - resolve methods
 - [ ] Debug/fix methods
 
