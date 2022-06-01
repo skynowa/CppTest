@@ -6,24 +6,37 @@
  */
 
 
-#include <iostream>
-#include <string>
-#include <thread>
-
-using namespace std;
-
-void threadCallback(int x, std::string str)
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
+void
+worker(
+    const int         x,
+    const std::string str
+)
 {
-    std::cout<<"Passed Number = "<<x<<std::endl;
-    std::cout<<"Passed String = "<<str<<std::endl;
+    std::cout << "Passed Number = " << x   << std::endl;
+    std::cout << "Passed String = " << str << std::endl;
 }
-int main()
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
-    int x = 10;
-    std::string str = "Sample String";
+    const int         x   = 10;
+    const std::string str = "Sample String";
 
-    std::thread threadObj(threadCallback, x, str);
+    std::thread threadObj(worker, x, str);
 
     threadObj.join();
-    return 0;
+
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+Passed Number = 10
+Passed String = Sample String
+
+#endif

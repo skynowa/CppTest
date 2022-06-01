@@ -11,7 +11,7 @@
 class WorkerThread
 {
 public:
-    void operator()() const
+    void operator() () const
     {
         std::stringstream msg;
         msg << "Thread ID: " << std::this_thread::get_id() << std::endl;
@@ -22,16 +22,16 @@ public:
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::vector<std::thread> threadList;
+    std::vector<std::thread> threads;
 
     for (int i = 0; i < 3; ++ i) {
-        threadList.push_back( std::thread( WorkerThread() ) );
+        threads.push_back( std::thread( WorkerThread() ) );
     }
 
     std::cout << "Wait for all the worker thread to finish...\n" << std::endl;
 
     // Call join() function on each of the std::thread object
-    std::for_each(threadList.begin(), threadList.end(), std::mem_fn(&std::thread::join));
+    std::for_each(threads.begin(), threads.end(), std::mem_fn(&std::thread::join));
 
     std::cout << "\nExiting from Main Thread" << std::endl;
 
@@ -44,9 +44,9 @@ int main(int, char **)
 
 Wait for all the worker thread to finish...
 
-Thread ID: 140484435232512
-Thread ID: 140484418447104
-Thread ID: 140484426839808
+Thread ID: 140114755426048
+Thread ID: 140114772211456
+Thread ID: 140114763818752
 
 Exiting from Main Thread
 
