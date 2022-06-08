@@ -1,30 +1,30 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a> **08-Jun-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
-- [Backend](#backend "Backend skills") █████░░░░░ 🔥50% (2)
+- [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [C](#c "C language features") ██████████ 🚩100% (11)
+- [C](#c "[ ] C language features") █████████░ 🚩91% (11)
 - [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩94% (175)
-- [DevOps](#devops "DevOps skills") ░░░░░░░░░░ 0% (1)
-- [FAQ](#faq "FAQs") ░░░░░░░░░░ 0% (5)
-- [Feedback](#feedback "Feedbacks from companies") █████░░░░░ 🔥50% (2)
-- [Front](#front "Frontend skills") ██████████ 🚩100% (1)
-- [Idioms](#idioms "C/C++ language idioms") ██████████ 🚩97% (34)
+- [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
+- [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
+- [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
+- [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
+- [Idioms](#idioms "[ ] C/C++ language idioms") █████████░ 🚩94% (34)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "Third-party libraries") █████████░ 🔥89% (19)
-- [Network](#network "Network") ██████████ 🚩100% (4)
+- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥84% (19)
+- [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
-- [Patterns](#patterns "Design pattern") ████░░░░░░ 41% (29)
-- [Practice](#practice "Practice on paper") ░░░░░░░░░░ 0% (1)
-- [PreproccessCompile](#preproccesscompile "Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
-- [Python](#python "Python language skills") ██████████ 🚩100% (4)
-- [Review](#review "C++ best practice") █████░░░░░ 🔥50% (2)
-- [SQL](#sql "SQL language skills") █████████░ 🚩94% (18)
+- [Patterns](#patterns "[ ] Design pattern") ████░░░░░░ 41% (29)
+- [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
+- [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
+- [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
+- [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
+- [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (18)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "STL - Standard Template Library") ██░░░░░░░░ 21% (82)
-- [Templates](#templates "Template metaprogramming") ██████░░░░ 🔥57% (14)
-- [Unix](#unix "Unix OS") ██████████ 🚩100% (4)
-- [Windows](#windows "Windows OS (WinAPI)") ██████████ 🚩100% (38)
+- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 21% (82)
+- [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
+- [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
+- [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -63,9 +63,9 @@
 
     </details>
 
-##  <a title="Backend skills" id="backend">Backend █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Backend skills" id="backend">Backend ░░░░░░░░░░ 0% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Backend/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Backend/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Backend/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
@@ -75,12 +75,12 @@
 
 </details>
 
-##  <a title="C language features" id="c">C ██████████ 🚩100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C language features" id="c">C █████████░ 🚩91% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
-* <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
-* <a href="/C/Strftime.cpp" title="format date and time">✅ `Strftime.cpp`</a>
+* <a href="/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
@@ -523,13 +523,13 @@
 
     </details>
 
-##  <a title="DevOps skills" id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] DevOps skills" id="devops">DevOps ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/DevOps/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/FAQ/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
@@ -539,27 +539,27 @@
 
 </details>
 
-##  <a title="Feedbacks from companies" id="feedback">Feedback █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Feedbacks from companies" id="feedback">Feedback ░░░░░░░░░░ 0% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Feedback/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Feedback/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Feedback/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
-##  <a title="Frontend skills" id="front">Front ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Frontend skills" id="front">Front ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Front/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Front/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="C/C++ language idioms" id="idioms">Idioms ██████████ 🚩97% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms █████████░ 🚩94% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/ScopeGuard.cpp" title="To ensure that resources are always released in face of an exception but not while returning normally">✅ `ScopeGuard.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
 * <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
-* <a href="/Idioms/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
+* <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
 * <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
@@ -746,9 +746,9 @@
 
     </details>
 
-##  <a title="Third-party libraries" id="libs">Libs █████████░ 🔥89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥84% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -830,10 +830,10 @@
 
       </details>
 
-##  <a title="Network" id="network">Network ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Network" id="network">Network ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Network/IpString.cpp" title="">✅ `IpString.cpp`</a>
-* <a href="/Network/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Network/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Network/TcpUdpDiffs.md" title="">✅ `📝 TcpUdpDiffs.md`</a>
 * <a href="/Network/Mount.cpp" title="">✅ `Mount.cpp`</a>
 
@@ -845,7 +845,7 @@
 
 </details>
 
-##  <a title="Design pattern" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Design pattern" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -897,38 +897,38 @@
 
     </details>
 
-##  <a title="Practice on paper" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Practice on paper" id="practice">Practice ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Practice/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="Build: Preproccess, Compile" id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Build: Preproccess, Compile" id="preproccesscompile">PreproccessCompile ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/PreproccessCompile/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
-##  <a title="Python language skills" id="python">Python ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Python language skills" id="python">Python ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Python/SubprocessCommunicateAsync.py" title="Constantly print Subprocess output while process is running">✅ `SubprocessCommunicateAsync.py`</a>
-* <a href="/Python/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Python/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Python/InheritentCtorDtor.py" title="">✅ `InheritentCtorDtor.py`</a>
 * <a href="/Python/AbstractClass.py" title="">✅ `AbstractClass.py`</a>
 
 </details>
 
-##  <a title="C++ best practice" id="review">Review █████░░░░░ 🔥50% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C++ best practice" id="review">Review ░░░░░░░░░░ 0% (2)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Review/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Review/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Review/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
-##  <a title="SQL language skills" id="sql">SQL █████████░ 🚩94% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🔥89% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/RandomRow.sql" title="Select random row">✅ `RandomRow.sql`</a>
-* <a href="/SQL/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
@@ -972,7 +972,7 @@
 
 </details>
 
-##  <a title="STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 21% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 21% (82)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1173,7 +1173,7 @@
 
     </details>
 
-##  <a title="Template metaprogramming" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Template metaprogramming" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/Export.h" title="">✅ `Export.h`</a>
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">🖊 `MaximumOfTwoObjects.cpp`</a>
@@ -1204,10 +1204,10 @@
 
     </details>
 
-##  <a title="Unix OS" id="unix">Unix ██████████ 🚩100% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Unix OS" id="unix">Unix ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
-* <a href="/Unix/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
 
 </details>
@@ -1219,10 +1219,10 @@
 
     </details>
 
-##  <a title="Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩100% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩97% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">✅ `CxHandle.cpp`</a>
-* <a href="/Windows/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Windows/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
 * <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
 * <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
