@@ -1,6 +1,6 @@
 /**
  * \file  Strftime.cpp
- * \brief
+ * \brief format date and time
  */
 
 
@@ -12,15 +12,15 @@ void
 logEntry()
 {
 	const std::size_t dateSize {80};
-	char              date[dateSize] {};
+	char              date[dateSize + 1] {};
 
 	// get current date and time
 	const std::time_t  curTime   = std::time(nullptr);
 	const std::tm     *localTime = std::localtime(&curTime);
 
-	std::strftime(date, dateSize - 1, "%Y-%m-%d %H:%M:%S", localTime);
+	std::strftime(date, dateSize, "%Y-%m-%d %H:%M:%S", localTime);
 
-	std::cout << STD_TRACE_VAR(date) << '\n';
+	std::cout << STD_TRACE_VAR(date) << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -34,6 +34,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-2022-04-27 15:56:19	test
+date: 2022-06-09 02:01:07
 
 #endif

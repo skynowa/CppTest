@@ -1,6 +1,6 @@
 /**
  * \file  Strptime.cpp
- * \brief
+ * \brief Convert (parse) a string representation of time to a time tm structure
  */
 
 
@@ -19,7 +19,7 @@ int main(int, char **)
 
 	for (const auto &it_dateFormat : dateFormats) {
 		struct tm dt {};
-		char *pszRv = strptime("3 pm", it_dateFormat.c_str(), &dt);
+		char *pszRv = strptime("3 PM", it_dateFormat.c_str(), &dt);
 		STD_TEST(pszRv == nullptr);
 
 		std::cout
