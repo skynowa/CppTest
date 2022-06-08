@@ -77,10 +77,10 @@
 
 ##  <a title="C language features" id="c">C ██████████ 🚩100% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/C/Strptime.cpp" title="">✅ `Strptime.cpp`</a>
+* <a href="/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
 * <a href="/C/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
-* <a href="/C/Strftime.cpp" title="">✅ `Strftime.cpp`</a>
+* <a href="/C/Strftime.cpp" title="format date and time">✅ `Strftime.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
