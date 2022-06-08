@@ -19,10 +19,11 @@ int main(int, char **)
 
 	for (const auto &it_dateFormat : dateFormats) {
 		struct tm dt {};
-		char *pszRv = strptime("3 PM", it_dateFormat.c_str(), &dt);
-		STD_TEST(pszRv == nullptr);
+		char *pszRv = strptime("3:15 PM", it_dateFormat.c_str(), &dt);
+		// STD_TEST(pszRv == nullptr);
 
 		std::cout
+			<< "rv: " << (pszRv == nullptr) << ", "
 			<< it_dateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << std::endl;
 	}
 
@@ -33,9 +34,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-%I:%M %p -> 3:0
-%I:%M    -> 3:0
-%H:%M    -> 3:0
-%H:%M:%S -> 3:0
+rv: 0, %I:%M %p -> 15:15
+rv: 0, %I:%M    -> 3:15
+rv: 0, %H:%M    -> 3:15
+rv: 1, %H:%M:%S -> 3:15
 
 #endif
