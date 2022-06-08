@@ -17,18 +17,13 @@ int main(int, char **)
 		"%H:%M:%S"
 	};
 
-	for (const auto &itDateFormat : dateFormats) {
+	for (const auto &it_dateFormat : dateFormats) {
 		struct tm dt {};
-		char *pszRv = strptime("3 pm", itDateFormat.c_str(), &dt);
-		if (pszRv == nullptr) {
-			std::cout << "pszRv: nullptr" << std::endl;
-			continue;
-		}
+		char *pszRv = strptime("3 pm", it_dateFormat.c_str(), &dt);
+		STD_TEST(pszRv == nullptr);
 
 		std::cout
-			<< itDateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << "\n"
-			<< (bool)(pszRv)    << "\n"
-			<< STD_TRACE_PTR(pszRv) << "\n" << std::endl;
+			<< it_dateFormat << " -> " << dt.tm_hour << ":" << dt.tm_min << std::endl;
 	}
 
     return 0;
@@ -38,20 +33,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-%I:%M %p -> 15:13
-1
-pszRv: {, 0}
-
-%I:%M -> 3:13
-1
-pszRv: { pm, 32}
-
-%H:%M -> 3:13
-1
-pszRv: { pm, 32}
-
-%H:%M:%S -> 3:13
-0
-pszRv: {[Finished in 0.5s]
+%I:%M %p -> 3:0
+%I:%M    -> 3:0
+%H:%M    -> 3:0
+%H:%M:%S -> 3:0
 
 #endif
