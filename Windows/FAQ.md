@@ -1,3 +1,3 @@
 # FAQ
 
-Windows OS (WinAPI)
+[ ] Windows OS (WinAPI)

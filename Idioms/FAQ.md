@@ -1,6 +1,6 @@
 # FAQ
 
-C/C++ language idioms
+[ ] C/C++ language idioms
 
 ## Links
 

@@ -1,6 +1,6 @@
 # FAQ
 
-C language features
+[ ] C language features
 
 ## Junior
 

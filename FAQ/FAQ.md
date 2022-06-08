@@ -1,6 +1,6 @@
-# FAQ [todo]
+# FAQ
 
-FAQs
+[ ] FAQs
 
 ## Links
 

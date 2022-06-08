@@ -1,6 +1,6 @@
 # FAQ
 
-Design pattern
+[ ] Design pattern
 
 ## Courses
 

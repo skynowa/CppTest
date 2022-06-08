@@ -1,6 +1,6 @@
-# [ ] FAQ
+# FAQ
 
-Practice on "paper"
+[ ] Practice on "paper"
 
 ## Junior
 

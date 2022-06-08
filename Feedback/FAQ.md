@@ -1,3 +1,3 @@
 # FAQ
 
-Feedbacks from companies
+[ ] Feedbacks from companies

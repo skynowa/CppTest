@@ -1,6 +1,6 @@
 /**
  * \file  Strftime.cpp
- * \brief format date and time
+ * \brief Format date and time
  */
 
 

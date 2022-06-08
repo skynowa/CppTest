@@ -1,6 +1,6 @@
 # Templates
 
-Template metaprogramming
+[ ] Template metaprogramming
 
 ## FAQ
 

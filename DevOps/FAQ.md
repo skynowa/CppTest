@@ -1,6 +1,6 @@
 # FAQ
 
-DevOps skills
+[ ] DevOps skills
 
 ## Links
 

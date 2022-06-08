@@ -1,6 +1,6 @@
 # FAQ
 
-Unix OS
+[ ] Unix OS
 
 ## Junior
 

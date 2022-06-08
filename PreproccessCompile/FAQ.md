@@ -1,6 +1,6 @@
-# [todo] Preproccess, Compile
+# Preproccess, Compile
 
-Build: Preproccess, Compile
+[ ] Build: Preproccess, Compile
 
 ## Junior
 

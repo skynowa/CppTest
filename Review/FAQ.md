@@ -1,3 +1,3 @@
 # FAQ
 
-C++ best practice
+[ ] C++ best practice

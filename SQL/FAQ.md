@@ -1,3 +1,3 @@
 # FAQ
 
-SQL language skills
+[ ] SQL language skills

@@ -1,3 +1,3 @@
 # FAQ
 
-Python language skills
+[ ] Python language skills
