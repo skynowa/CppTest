@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **08-Jun-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-Jun-2022** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩91% (11)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩94% (175)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩94% (176)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -97,7 +97,7 @@
 
     </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩94% (175)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩94% (176)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Core/ReturnBool.cpp" title="Returm "NO" value (as bool)">✅ `ReturnBool.cpp`</a>
@@ -264,8 +264,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ CtorsDtor 100% (1)</summary>
+    <summary>📁 ✅ CtorsDtor 100% (2)</summary>
 
+    * <a href="/Core/CtorsDtor/CtorDefaultInitMembers.cpp" title="Init members with default values">✅ `CtorDefaultInitMembers.cpp`</a>
     * <a href="/Core/CtorsDtor/ConstructNew.cpp" title="Ctor with operator new">✅ `ConstructNew.cpp`</a>
 
     </details>
