@@ -31,7 +31,6 @@ foreach(IT_SOURCE ${SOURCES})
 	if ("${IT_SOURCE}" MATCHES "Windows/"      OR
 		"${IT_SOURCE}" MATCHES "WinException/" OR
 		"${IT_SOURCE}" MATCHES "Libs/Qt/"      OR
-		"${IT_SOURCE}" MATCHES "Libs/Pcre/"    OR
 		"${IT_SOURCE}" MATCHES "Libs/XLib/"
 	)
 		message(STATUS "Skip: ${IT_SOURCE}")
