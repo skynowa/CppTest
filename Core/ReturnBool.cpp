@@ -1,6 +1,6 @@
 /**
  * \file  ReturnBool.cpp
- * \brief Returm "NO" value (as bool)
+ * \brief Retun NO-value (as bool)
  */
 
 
