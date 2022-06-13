@@ -11,7 +11,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") █████████░ 🚩94% (34)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥84% (19)
+- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "[ ] Design pattern") ████░░░░░░ 41% (29)
@@ -747,7 +747,7 @@
 
     </details>
 
-##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥84% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥83% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -784,13 +784,6 @@
     <summary>📁 ✅ LibUv 100% (1)</summary>
 
     * <a href="/Libs/LibUv/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
-
-    </details>
-
-  * <details close>
-    <summary>📁 ✅ Pcre 100% (1)</summary>
-
-    * <a href="/Libs/Pcre/pcrepp.cpp" title="">🖊 `pcrepp.cpp`</a>
 
     </details>
 
