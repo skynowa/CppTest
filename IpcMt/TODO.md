@@ -1,5 +1,9 @@
 # IPC & MT - Inter Process / Thread Communication
 
+## Java
+
+- [ ] [50+ Java Threads Interview Questions And Answers](https://javaconceptoftheday.com/java-threads-interview-questions-and-answers/)
+
 ## POSIX
 
 - [ ] POSIX primitives
