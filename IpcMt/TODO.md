@@ -1,5 +1,10 @@
 # IPC & MT - Inter Process / Thread Communication
 
+## Intellias
+
+[ ] [Multithreading Fundamentals](https://www.youtube.com/watch?v=gOvrMLEsPhQ)
+[ ] [Examples] https://github.com/vnikolai/cpp_examples/tree/main/multithreading
+
 ## Java
 
 - [ ] [50+ Java Threads Interview Questions And Answers](https://javaconceptoftheday.com/java-threads-interview-questions-and-answers/)
