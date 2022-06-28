@@ -1,5 +1,5 @@
 /**
- * \file  JoinDetachThread.cpp
+ * \file  JoinDetach.cpp
  * \brief
  */
 

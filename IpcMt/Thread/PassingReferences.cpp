@@ -1,5 +1,5 @@
 /**
- * \file  PassingReferencesToThread.cpp
+ * \file  PassingReferences.cpp
  * \brief
  *
  * \todo

@@ -1,5 +1,5 @@
 /**
- * \file  BasicXMLEventHandlingUsingConditionalVariable.cpp
+ * \file  BasicXMLUsingConditionalVariable.cpp
  * \brief
  *
  * \todo

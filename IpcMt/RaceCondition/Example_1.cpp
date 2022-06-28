@@ -1,5 +1,5 @@
 /**
- * \file  RaceCondition_1.cpp
+ * \file  Example_1.cpp
  * \brief
  *
  * \todo

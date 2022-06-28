@@ -1,5 +1,5 @@
 /**
- * \file  RaceCondition_2.cpp
+ * \file  Example_2.cpp
  * \brief Here both the threads are racing for the common resource std::cout
  */
 

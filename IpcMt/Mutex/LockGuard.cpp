@@ -1,5 +1,5 @@
 /**
- * \file  MutexLockGuard.cpp
+ * \file  LockGuard.cpp
  * \brief
  *
  * \todo

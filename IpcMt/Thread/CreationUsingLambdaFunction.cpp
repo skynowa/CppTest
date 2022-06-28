@@ -1,5 +1,5 @@
 /**
- * \file  ThreadCreationUsingLambdaFunction.cpp
+ * \file  CreationUsingLambdaFunction.cpp
  * \brief
  *
  * \todo

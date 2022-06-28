@@ -1,5 +1,5 @@
 /**
- * \file  PassingSimpleArgumentsToThread.cpp
+ * \file  PassingArguments.cpp
  * \brief
  *
  * \todo

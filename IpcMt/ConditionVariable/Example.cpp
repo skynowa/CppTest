@@ -1,5 +1,5 @@
 /**
- * \file  ConditionVariable.cpp
+ * \file  Example.cpp
  * \brief
  *
  * \todo

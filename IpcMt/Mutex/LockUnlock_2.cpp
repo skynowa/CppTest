@@ -1,5 +1,5 @@
 /**
- * \file  MutexLockUnlock2.cpp
+ * \file  LockUnlock_2.cpp
  * \brief
  *
  * \todo

@@ -1,5 +1,5 @@
 /**
- * \file  BasicXMLEventHandling.cpp
+ * \file  BasicXML.cpp
  * \brief
  *
  * \todo

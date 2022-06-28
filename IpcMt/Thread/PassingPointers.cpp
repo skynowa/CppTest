@@ -1,5 +1,5 @@
 /**
- * \file  PassingPointersTThread.cpp
+ * \file  PassingPointers.cpp
  * \brief
  *
  * \todo

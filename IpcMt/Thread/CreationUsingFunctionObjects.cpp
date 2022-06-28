@@ -1,5 +1,5 @@
 /**
- * \file  ThreadCreationUsingFunctionObjects.cpp
+ * \file  CreationUsingFunctionObjects.cpp
  * \brief
  *
  * \todo

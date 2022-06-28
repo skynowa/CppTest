@@ -1,5 +1,5 @@
 /**
- * \file  ThreadHarwareConcurrency.cpp
+ * \file  HarwareConcurrency.cpp
  * \brief
  */
 
