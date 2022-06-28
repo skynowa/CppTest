@@ -713,12 +713,12 @@
 
     * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
     * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
-    * <a href="/IpcMt/Thread/DifferentiatingBetweenThread.cpp" title="">❌ DifferentiatingBetweenThread.cpp</a>
-    * <a href="/IpcMt/Thread/CreationUsingLambdaFunction.cpp" title="">❌ CreationUsingLambdaFunction.cpp</a>
+    * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
+    * <a href="/IpcMt/Thread/CreationByFunctionObjects.cpp" title="">❌ CreationByFunctionObjects.cpp</a>
+    * <a href="/IpcMt/Thread/CreationByLambdaFunction.cpp" title="">❌ CreationByLambdaFunction.cpp</a>
     * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
-    * <a href="/IpcMt/Thread/CreationUsingFunctionObjects.cpp" title="">❌ CreationUsingFunctionObjects.cpp</a>
-    * <a href="/IpcMt/Thread/CreationUsingFunctionPointer.cpp" title="">❌ CreationUsingFunctionPointer.cpp</a>
     * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
+    * <a href="/IpcMt/Thread/CreationByFunctionPointer.cpp" title="">❌ CreationByFunctionPointer.cpp</a>
     * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
 
     </details>
