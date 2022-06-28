@@ -9,7 +9,7 @@
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
-
+//--------------------------------------------------------------------------------------------------
 using namespace std;
 
 class Wallet
@@ -30,7 +30,7 @@ public:
        m1.unlock();
     }
 };
-
+//--------------------------------------------------------------------------------------------------
 int testMultithreadedWallet()
 {
    Wallet walletObject;
@@ -45,7 +45,7 @@ int testMultithreadedWallet()
    }
    return walletObject.getMoney();
 }
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
 
@@ -63,5 +63,7 @@ int main()
 
   if (flag == false)
     cout << "No Race Condition occurred" << endl;
+
   return 0;
 }
+//--------------------------------------------------------------------------------------------------

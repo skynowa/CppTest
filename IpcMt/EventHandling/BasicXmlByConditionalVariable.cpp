@@ -1,22 +1,23 @@
 /**
- * \file  BasicXMLUsingConditionalVariable.cpp
+ * \file  BasicXmlByConditionalVariable.cpp
  * \brief
  *
  * \todo
  */
 
-
-#include <iostream>
-#include <thread>
-#include <functional>
-#include <mutex>
-#include <condition_variable>
+//--------------------------------------------------------------------------------------------------
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 using namespace std::placeholders;
+
 class Application
 {
-    std::mutex m_mutex;
+    std::mutex              m_mutex;
     std::condition_variable m_condVar;
-    bool m_bDataLoaded;
+    bool                    m_bDataLoaded;
+
 public:
     Application()
     {
@@ -54,7 +55,7 @@ public:
         std::cout<<"Do Processing On loaded Data"<<std::endl;
     }
 };
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
    Application app;
@@ -62,5 +63,7 @@ int main()
    std::thread thread_2(&Application::loadData, &app);
    thread_2.join();
    thread_1.join();
+
    return 0;
 }
+//--------------------------------------------------------------------------------------------------

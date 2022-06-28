@@ -6,14 +6,15 @@
  */
 
 
-#include<iostream>
-#include<thread>
-#include<mutex>
-
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 class Application
 {
     std::mutex m_mutex;
-    bool m_bDataLoaded;
+    bool       m_bDataLoaded;
+
 public:
     Application()
     {
@@ -55,9 +56,9 @@ public:
       m_mutex.unlock();
       //Doc processing on loaded Data
       std::cout<<"Do Processing On loaded Data"<<std::endl;
-     }
+    }
 };
-
+//--------------------------------------------------------------------------------------------------
 int main()
 {
     Application app;
@@ -67,5 +68,7 @@ int main()
 
     thread_2.join();
     thread_1.join();
+
     return 0;
 }
+//--------------------------------------------------------------------------------------------------
