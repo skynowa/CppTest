@@ -11,6 +11,8 @@
 int
 main()
 {
+    // error: range expressions in switch statements are non-standard [-Werror=pedantic]
+#if 0
     const int ints[] {-1, 0, 2, 3, 4, 6, 7, 200};
 
     for (const auto it_int : ints) {
@@ -34,6 +36,7 @@ main()
             break;
         }
     }
+#endif
 
     return EXIT_SUCCESS;
 }

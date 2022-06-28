@@ -51,6 +51,8 @@ foreach(IT_SOURCE ${SOURCES})
 	# /Ignores
 
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
+	get_filename_component(CPP_TEST_DIR ${IT_SOURCE} DIRECTORY [CACHE])
+	message(STATUS "CPP_TEST_DIR: ${CPP_TEST_DIR}")
 
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 

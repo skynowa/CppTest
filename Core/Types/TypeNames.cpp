@@ -24,10 +24,10 @@ const char *getTypeName_1();
 struct Foo {};
 class  Bar {};
 
-MAKE_TEMPLATE_NAME(int);
-MAKE_TEMPLATE_NAME(float);
-MAKE_TEMPLATE_NAME(Foo);
-MAKE_TEMPLATE_NAME(Bar);
+MAKE_TEMPLATE_NAME(int)
+MAKE_TEMPLATE_NAME(float)
+MAKE_TEMPLATE_NAME(Foo)
+MAKE_TEMPLATE_NAME(Bar)
 //-------------------------------------------------------------------------------------------------
 
 
