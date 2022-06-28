@@ -11,9 +11,7 @@
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
 void
-worker(
-    const int &x
-)
+worker(const int &x)
 {
     int &y = const_cast<int &>(x);
 

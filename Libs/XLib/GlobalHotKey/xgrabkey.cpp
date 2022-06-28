@@ -64,6 +64,7 @@ qxtX11ErrorHandler(
 
 			///
 		}
+		break;
 	}
 
     exit(1);  // exit the application for all unhandled errors.

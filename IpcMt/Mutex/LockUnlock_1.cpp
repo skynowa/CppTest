@@ -10,15 +10,13 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-using namespace std;
-
 class Wallet
 {
-    int   mMoney {};
-    mutex m1 {};
+    int        mMoney {};
+    std::mutex m1 {};
 
 public:
-    Wallet() :mMoney(0){}
+    Wallet() : mMoney(0){}
     int getMoney() { return mMoney; }
     void addMoney(int money)
     {
@@ -31,7 +29,8 @@ public:
     }
 };
 //--------------------------------------------------------------------------------------------------
-int testMultithreadedWallet()
+int
+testMultithreadedWallet()
 {
    Wallet walletObject;
    std::vector<std::thread> threads;
@@ -62,7 +61,7 @@ int main()
   }
 
   if (flag == false)
-    cout << "No Race Condition occurred" << endl;
+    std::cout << "No Race Condition occurred" << std::endl;
 
   return 0;
 }

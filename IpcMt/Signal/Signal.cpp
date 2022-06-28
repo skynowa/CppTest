@@ -6,12 +6,9 @@
  */
 
 
+#include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <signal.h> // sigaction(), sigsuspend(), sig*()
-#include <unistd.h> // alarm()
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 void handle_signal(int signal);
 void handle_sigalrm(int signal);

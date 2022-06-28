@@ -6,23 +6,22 @@
  */
 
 
-
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-using namespace std;
-
-mutex m1;
+std::mutex m1;
 //--------------------------------------------------------------------------------------------------
-void shared_print(string msg, int id)
+void
+shared_print(std::string msg, int id)
 {
 	m1.lock();
-	cout << msg << " :: " << id << endl;
+	std::cout << msg << " :: " << id << std::endl;
 	m1.unlock();
 }
 //--------------------------------------------------------------------------------------------------
-void function1()
+void
+function1()
 {
     for (int i = 0; i > -10; i--)
         shared_print("From t1", i);
@@ -30,7 +29,7 @@ void function1()
 //--------------------------------------------------------------------------------------------------
 int main()
 {
-    thread t1(function1);
+    std::thread t1(function1);
 
     for (int i = 0; i < 10 ; i++)
         shared_print("From Main", i);

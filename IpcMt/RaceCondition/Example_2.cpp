@@ -8,9 +8,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-//
-void
-func()
+void func()
 {
     for (int i = 0; i > -10; -- i) {
         std::cout << "From std::thread: " << i << std::endl;

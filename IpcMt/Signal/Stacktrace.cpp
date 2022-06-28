@@ -12,21 +12,16 @@
 
 
 //-------------------------------------------------------------------------------------------------
-#include <signal.h>
-#include <stdio.h>
-#include <assert.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include <stdbool.h>
-#include <errno.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 
 #ifdef _WIN32
-  #include <windows.h>
-  #include <imagehlp.h>
+    #include <windows.h>
+    #include <imagehlp.h>
 #else
-  #include <err.h>
-  #include <execinfo.h>
+    #include <err.h>
+    #include <execinfo.h>
 #endif
 //-------------------------------------------------------------------------------------------------
 // void almost_c99_signal_handler(int sig)
@@ -161,7 +156,9 @@ windows_exception_handler(EXCEPTION_POINTERS * ExceptionInfo)
       fputs("Error: EXCEPTION_ILLEGAL_INSTRUCTION\n", stderr);
       break;
     case EXCEPTION_IN_PAGE_ERROR:
-      fputs("Error: EXCEPTION_IN_PAGE_ERROR\n", stderr);
+#include <signal.h>
+#include <iostream>
+#include <cstdlib>tderr);
       break;
     case EXCEPTION_INT_DIVIDE_BY_ZERO:
       fputs("Error: EXCEPTION_INT_DIVIDE_BY_ZERO\n", stderr);

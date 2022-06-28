@@ -8,17 +8,12 @@
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
-
-#include <signal.h>
-#include <iostream>
-#include <cstdlib>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 sig_atomic_t isStop = false;
 //-------------------------------------------------------------------------------------------------
 void
-handler(
-	const int a_signalNum
-)
+handler(const int a_signalNum)
 {
     std::cout << "\n" << STD_TRACE_VAR(a_signalNum) << std::endl;
 

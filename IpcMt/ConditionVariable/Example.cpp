@@ -9,18 +9,15 @@
 // g++ -std=c++11 condition_variable.cpp -o main -lpthread
 
 
-#include <condition_variable>
-#include <mutex>
-#include <future>
-#include <iostream>
-#include <chrono>
-#include <queue>
-
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//-------------------------------------------------------------------------------------------------
 bool                    isReady;
 std::mutex              mutex;
 std::condition_variable condvar;
 std::queue<int>         messageQ;
-
+//-------------------------------------------------------------------------------------------------
 void Producer()
 {
 	std::cout << "::: Producer :::" << std::endl;
@@ -43,7 +40,7 @@ void Producer()
 
 	condvar.notify_one();
 }
-
+//-------------------------------------------------------------------------------------------------
 void Consumer()
 {
 	{
@@ -71,7 +68,7 @@ void Consumer()
 		std::cout << "All messages from producer has been processed" << std::endl;
 	}
 }
-
+//-------------------------------------------------------------------------------------------------
 int main()
 {
 	auto t1 = std::async(std::launch::async, Producer);
@@ -79,4 +76,7 @@ int main()
 
 	t1.get();
 	t2.get();
+
+	return 0;
 }
+//-------------------------------------------------------------------------------------------------
