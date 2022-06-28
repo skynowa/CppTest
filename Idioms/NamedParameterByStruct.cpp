@@ -53,6 +53,8 @@ int main(int, char **)
 
 	// Named Params - Yes
 	{
+		// error: C++ designated initializers only available with -std=c++2a or -std=gnu++2a
+	#if 0
 		const Params params
 		{
 			.xPosition  = p1,
@@ -63,6 +65,7 @@ int main(int, char **)
 		};
 
 		::draw(params);
+	#endif
 	}
 
 	return EXIT_SUCCESS;

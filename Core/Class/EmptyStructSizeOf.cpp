@@ -17,10 +17,15 @@ struct B_1byte :
 {
 };
 //-------------------------------------------------------------------------------------------------
+// error: ISO C++ forbids zero-size array ‘NO_DATA’ [-Werror=pedantic]
+#if 0
+
 class C_0byte
 {
 	int NO_DATA[0];
 };
+
+#endif
 //-------------------------------------------------------------------------------------------------
 class D_1byte
 {
@@ -48,7 +53,7 @@ int main(int, char **)
 	std::cout
 		<< STD_TRACE_VAR(sizeof(A_1byte))  << "\n"
 		<< STD_TRACE_VAR(sizeof(B_1byte))  << "\n"
-		<< STD_TRACE_VAR(sizeof(C_0byte))  << "\n"
+		// << STD_TRACE_VAR(sizeof(C_0byte))  << "\n"
 		<< STD_TRACE_VAR(sizeof(D_1byte))  << "\n"
 		<< STD_TRACE_VAR(sizeof(D_8byte))  << "\n"
 		<< STD_TRACE_VAR(sizeof(E_4byte))  << "\n"
