@@ -82,11 +82,10 @@ public:
 		{
 			return true;
 		}
-		unsigned long hostaddr;
 
 		struct sockaddr_in sin;
 
-		hostaddr = inet_addr(m_strIp.c_str());
+		in_addr_t hostaddr = inet_addr(m_strIp.c_str());
 
 		/* Ultra basic "connect to port 22 on localhost"
 		* Your code is responsible for creating the socket establishing the

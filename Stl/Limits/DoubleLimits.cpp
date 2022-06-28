@@ -18,7 +18,7 @@ int main(int, char **)
 	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::max()) << std::endl;
 	std::cout << STD_TRACE_VAR(std::numeric_limits<float>::infinity()) << std::endl;
 
-	float dRv = strtod("2037362412.80", nullptr);
+	float dRv = strtof("2037362412.80", nullptr);
 
     std::cout << STD_TRACE_VAR(dRv) << std::endl;
 

@@ -30,7 +30,7 @@ containerPushBack(
 
 	end = std::chrono::system_clock::now();
 
-	const int elapsedMSec = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+	const auto elapsedMSec = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
 	// report
 	if      (std::is_same<T, std::vector<std::string>>::value) {

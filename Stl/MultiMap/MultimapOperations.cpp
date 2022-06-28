@@ -61,7 +61,7 @@ int main()
     }
 
     // remove all elements with key = 4
-    int num = gquiz2.erase(4);
+    auto num = gquiz2.erase(4);
     std::cout << "\ngquiz2.erase(4) : ";
     std::cout << num << " removed \n" ;
     std::cout << "\tKEY\tELEMENT\n";

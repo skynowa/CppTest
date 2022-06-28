@@ -67,8 +67,6 @@ foreach(IT_SOURCE ${SOURCES})
 		-Wall
 		-Wextra
 		-pedantic
-		# -Wconversion
-		# -Wsign-conversion
 	)
 
 	target_include_directories(${CPP_TEST} PRIVATE
