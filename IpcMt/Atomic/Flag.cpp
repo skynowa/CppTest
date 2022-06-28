@@ -10,31 +10,32 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-std::atomic_flag lock {ATOMIC_FLAG_INIT};
+std::atomic_flag flag {ATOMIC_FLAG_INIT};
 //-------------------------------------------------------------------------------------------------
-void f(const int n)
+void
+worker(const int a_value)
 {
-    for (int cnt = 0; cnt < 3; ++ cnt) {
-        while (lock.test_and_set(std::memory_order_acquire)) {
+    for (int i = 0; i < 3; ++ i) {
+        while ( ::flag.test_and_set(std::memory_order_acquire) ) {
             ;
         }
 
-        std::cout << "Thread Output - " << STD_TRACE_VAR(n) << std::endl;
+        std::cout << "[Worker] " << STD_TRACE_VAR(a_value) << std::endl;
 
-        lock.clear(std::memory_order_release);
+        ::flag.clear(std::memory_order_release);
     }
 }
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::vector<std::thread> v;
+    std::vector<std::thread> threads;
 
-    for (int n = 0; n < 4; ++ n) {
-        v.emplace_back(f, n);
+    for (int i = 0; i < 4; ++ i) {
+        threads.emplace_back(worker, i);
     }
 
-    for (auto& t : v) {
-        t.join();
+    for (auto &it_thread : threads) {
+        it_thread.join();
     }
 
     return EXIT_SUCCESS;
@@ -44,17 +45,17 @@ int main(int, char **)
 
 #if OUTPUT
 
-Thread Output - n: 0
-Thread Output - n: 0
-Thread Output - n: 2
-Thread Output - n: 1
-Thread Output - n: 0
-Thread Output - n: 1
-Thread Output - n: 2
-Thread Output - n: 1
-Thread Output - n: 2
-Thread Output - n: 3
-Thread Output - n: 3
-Thread Output - n: 3
+[Worker] - i: 0
+[Worker] - i: 0
+[Worker] - i: 2
+[Worker] - i: 1
+[Worker] - i: 0
+[Worker] - i: 1
+[Worker] - i: 2
+[Worker] - i: 1
+[Worker] - i: 2
+[Worker] - i: 3
+[Worker] - i: 3
+[Worker] - i: 3
 
 #endif
