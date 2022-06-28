@@ -21,6 +21,8 @@ set(CMAKE_REQUIRED_QUIET        ON)
 # CONAN
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
+
+find_package(X11 REQUIRED)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
    ${CMAKE_SOURCE_DIR}/*.c
@@ -28,14 +30,25 @@ file(GLOB_RECURSE SOURCES
 #--------------------------------------------------------------------------------------------------
 foreach(IT_SOURCE ${SOURCES})
 	# Ignores
-	if ("${IT_SOURCE}" MATCHES "Windows/"      OR
-		"${IT_SOURCE}" MATCHES "WinException/" OR
-		"${IT_SOURCE}" MATCHES "Libs/Qt/"      OR
-		"${IT_SOURCE}" MATCHES "Libs/XLib/"
-	)
+	if ("${IT_SOURCE}" MATCHES "Libs/Qt/")
 		message(STATUS "Skip: ${IT_SOURCE}")
 		continue()
 	endif()
+
+	if     (WIN32)
+		if ("${IT_SOURCE}" MATCHES "Libs/XLib/")
+			message(STATUS "Skip: ${IT_SOURCE}")
+			continue()
+		endif()
+	elseif (UNIX)
+		if ("${IT_SOURCE}" MATCHES "Windows/" OR
+			"${IT_SOURCE}" MATCHES "WinException/"
+		)
+			message(STATUS "Skip: ${IT_SOURCE}")
+			continue()
+		endif()
+	endif()
+	# /Ignores
 
 	get_filename_component(CPP_TEST ${IT_SOURCE} NAME_WE [CACHE])
 
@@ -51,11 +64,13 @@ foreach(IT_SOURCE ${SOURCES})
 	)
 
 	target_include_directories(${CPP_TEST} PRIVATE
-		${CMAKE_SOURCE_DIR})
+		${CMAKE_SOURCE_DIR}
+		${X11_INCLUDE_DIR})
 
 	target_link_libraries(${CPP_TEST} PRIVATE
 		${CONAN_LIBS}
-		-lstdc++fs)
+		-lstdc++fs
+		${X11_LIBRARIES})
 
 	# Targets - Build and run test
 	add_custom_target(test_${CPP_TEST}

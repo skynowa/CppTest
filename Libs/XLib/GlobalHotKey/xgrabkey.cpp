@@ -73,8 +73,8 @@ qxtX11ErrorHandler(
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    using x11_error_handler_t = std::add_pointer<int(Display *display, XErrorEvent *event)>::type;
-    x11_error_handler_t _errorHandlerLast {};
+    // using x11_error_handler_t = std::add_pointer<int(Display *display, XErrorEvent *event)>::type;
+    // x11_error_handler_t _errorHandlerLast {};
 
 	Display *dpy = XOpenDisplay(0);
 	if (dpy == NULL) {
