@@ -4,9 +4,8 @@
  */
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 //-------------------------------------------------------------------------------------------------
 #define xARRAY_SIZE(a) \
    ( sizeof(a) / sizeof((a)[0]) )

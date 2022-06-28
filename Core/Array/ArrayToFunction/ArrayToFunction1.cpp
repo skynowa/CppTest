@@ -4,9 +4,8 @@
  */
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
 //-------------------------------------------------------------------------------------------------
 typedef int aiIntArray[3][4];
 
