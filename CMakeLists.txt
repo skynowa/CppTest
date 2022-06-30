@@ -58,12 +58,14 @@ foreach(IT_SOURCE ${SOURCES})
 
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 
-	# Extra warnings
+	# EXTRA_WARNINGS
 	if (MSVC)
-		target_compile_options(${CPP_TEST} PRIVATE /W4 /WX)
+		set(EXTRA_WARNINGS /W4 /WX)
 	else()
-		target_compile_options(${CPP_TEST} PRIVATE -Wall -Wextra -pedantic -Werror)
+		set(EXTRA_WARNINGS -Wall -Wextra -pedantic -Werror)
 	endif()
+
+	target_compile_options(${CPP_TEST} PRIVATE ${EXTRA_WARNINGS})
 
 	target_include_directories(${CPP_TEST} PRIVATE
 		${CMAKE_SOURCE_DIR}
