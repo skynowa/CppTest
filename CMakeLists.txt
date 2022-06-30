@@ -30,35 +30,31 @@ file(GLOB_RECURSE SOURCES
 #--------------------------------------------------------------------------------------------------
 foreach(IT_SOURCE ${SOURCES})
 	# Ignores
-	if (1)
-		if ("${IT_SOURCE}" MATCHES "Libs/Qt/")
+	if ("${IT_SOURCE}" MATCHES "Libs/Qt/")
+		message(STATUS "Skip: ${IT_SOURCE}")
+		continue()
+	endif()
+
+	if     (WIN32)
+		if ("${IT_SOURCE}" MATCHES "Libs/XLib/")
 			message(STATUS "Skip: ${IT_SOURCE}")
 			continue()
 		endif()
-
-		if     (WIN32)
-			if ("${IT_SOURCE}" MATCHES "Libs/XLib/")
-				message(STATUS "Skip: ${IT_SOURCE}")
-				continue()
-			endif()
-		elseif (UNIX)
-			if ("${IT_SOURCE}" MATCHES "Windows/" OR
-				"${IT_SOURCE}" MATCHES "WinException/"
-			)
-				message(STATUS "Skip: ${IT_SOURCE}")
-				continue()
-			endif()
+	elseif (UNIX)
+		if ("${IT_SOURCE}" MATCHES "Windows/" OR
+			"${IT_SOURCE}" MATCHES "WinException/"
+		)
+			message(STATUS "Skip: ${IT_SOURCE}")
+			continue()
 		endif()
 	endif()
 
 	# CPP_TEST
-	if (1)
-		get_filename_component(CPP_TEST_DIR_PATH ${IT_SOURCE}         DIRECTORY [CACHE])
-		get_filename_component(CPP_TEST_DIR_NAME ${CPP_TEST_DIR_PATH} NAME      [CACHE])
-		get_filename_component(CPP_TEST_NAME     ${IT_SOURCE}         NAME_WE   [CACHE])
+	get_filename_component(CPP_TEST_DIR_PATH ${IT_SOURCE}         DIRECTORY [CACHE])
+	get_filename_component(CPP_TEST_DIR_NAME ${CPP_TEST_DIR_PATH} NAME      [CACHE])
+	get_filename_component(CPP_TEST_NAME     ${IT_SOURCE}         NAME_WE   [CACHE])
 
-		set(CPP_TEST ${CPP_TEST_DIR_NAME}_${CPP_TEST_NAME})
-	endif()
+	set(CPP_TEST ${CPP_TEST_DIR_NAME}_${CPP_TEST_NAME})
 
 	add_executable(${CPP_TEST} ${IT_SOURCE})
 
