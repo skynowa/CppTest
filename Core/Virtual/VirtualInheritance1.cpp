@@ -39,15 +39,15 @@ public:
     virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //--------------------------------------------------------------------------------------------------
-class CX :
+class CX final :
     public CA,
     public CB
 {
 public:
-             CX() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~CX() { std::cout << __FUNCTION__ << std::endl; };
+     CX() { std::cout << __FUNCTION__ << std::endl; };
+    ~CX() final { std::cout << __FUNCTION__ << std::endl; };
 
-    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    void vFoo() final { std::cout << __FUNCTION__ << std::endl; };
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -199,6 +199,5 @@ vFoo
 ~CB
 ~IInterface
 -------------------------
-
 
 #endif

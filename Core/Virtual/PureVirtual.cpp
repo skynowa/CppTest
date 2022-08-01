@@ -29,7 +29,7 @@ class B:
     public A
 {
 private: /* or public */
-    virtual void foo()
+    void foo() final
     {
         std::cout << __FUNCTION__ << std::endl;
     }

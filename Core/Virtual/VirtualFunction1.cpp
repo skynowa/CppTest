@@ -23,7 +23,7 @@ class Y :
 	public X
 {
 public:
-	char getType()
+	char getType() final
 	{
 		return 'Y';
 	}
