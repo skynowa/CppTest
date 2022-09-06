@@ -36,7 +36,7 @@ RuleOf5::RuleOf5()
 RuleOf5::RuleOf5(
 	const RuleOf5 &a_obj
 ) :
-	i {a_obj.i}
+	i{a_obj.i}
 {
 	STD_TRACE_FUNC
 }
@@ -44,7 +44,7 @@ RuleOf5::RuleOf5(
 RuleOf5::RuleOf5(
 	RuleOf5 &&a_obj
 ) :
-	i( std::move(a_obj.i) )
+	i{ std::move(a_obj.i) }
 {
 	STD_TRACE_FUNC
 }
