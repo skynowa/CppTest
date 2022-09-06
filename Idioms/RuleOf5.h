@@ -1,9 +1,8 @@
 /**
  * \file  RuleOf5.h
- * \brief
+ * \brief The rule of three/five/zero
  *
  * \see   https://en.cppreference.com/w/cpp/language/rule_of_three
- * \todo
  */
 
 
@@ -11,37 +10,22 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class IRuleOf5
+class RuleOf5
 {
 public:
-///\name ctors, dtor
-///\{
-	IRuleOf5() {};
-	IRuleOf5(const IRuleOf5 &) {};
-	IRuleOf5(IRuleOf5 &&) {};
+	std::size_t i {};
 
-	virtual ~IRuleOf5() {};
-///\}
-
-	virtual const IRuleOf5 & operator = (const IRuleOf5 &) = 0;
-	virtual IRuleOf5 &       operator = (IRuleOf5 &&) = 0;
-};
-//--------------------------------------------------------------------------------------------------
-class RuleOf5 final :
-	public IRuleOf5
-{
-public:
 ///\name ctors, dtor
 ///\{
 	RuleOf5();
-	RuleOf5(const RuleOf5 &value);
-	RuleOf5(RuleOf5 &&value);
+	RuleOf5(const RuleOf5 &obj);
+	RuleOf5(RuleOf5 &&obj);
 
-	~RuleOf5() final;
+	~RuleOf5();
 ///\}
 
-	const IRuleOf5 & operator = (const IRuleOf5 &value) final;
-	IRuleOf5 &       operator = (IRuleOf5 &&value) final;
+	RuleOf5 & operator = (const RuleOf5 &obj);
+	RuleOf5 & operator = (RuleOf5 &&obj);
 };
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5()
@@ -50,21 +34,18 @@ RuleOf5::RuleOf5()
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
-	const RuleOf5 &a_value
+	const RuleOf5 &a_obj
 ) :
-	IRuleOf5()
+	i {a_obj.i}
 {
-	STD_UNUSED(a_value);
-
 	STD_TRACE_FUNC
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
-	RuleOf5 &&a_value
-)
+	RuleOf5 &&a_obj
+) :
+	i( std::move(a_obj.i) )
 {
-	STD_UNUSED(a_value);
-
 	STD_TRACE_FUNC
 }
 //--------------------------------------------------------------------------------------------------
@@ -73,31 +54,44 @@ RuleOf5::~RuleOf5() /* final */
 	STD_TRACE_FUNC
 }
 //--------------------------------------------------------------------------------------------------
-const IRuleOf5 &
+RuleOf5 &
 RuleOf5::operator = (
-	const IRuleOf5 &a_value
-) /* final */
+	const RuleOf5 &a_obj
+)
 {
 	STD_TRACE_FUNC
 
-	if (this == &a_value) {
+	if (this == &a_obj) {
 		return *this;
 	}
 
-	return a_value;
+	i = a_obj.i;
+
+	return *this;
 }
 //--------------------------------------------------------------------------------------------------
-IRuleOf5 &
+RuleOf5 &
 RuleOf5::operator = (
-	IRuleOf5 &&a_value
-) /* final */
+	RuleOf5 &&a_obj
+)
 {
 	STD_TRACE_FUNC
 
-	if (this == &a_value) {
+	if (this == &a_obj) {
 		return *this;
 	}
 
-	return a_value;
+	i = std::move(a_obj.i);
+
+	return *this;
 }
 //--------------------------------------------------------------------------------------------------
+inline std::ostream &
+operator << (
+	std::ostream  &out_os,
+	const RuleOf5 &a_obj
+)
+{
+	return out_os << "{" << a_obj.i << "}";
+}
+//-------------------------------------------------------------------------------------------------

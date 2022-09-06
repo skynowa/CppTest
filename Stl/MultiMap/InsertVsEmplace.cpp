@@ -16,6 +16,7 @@ int main(int, char **)
 	std::cout << "::::: Ctor :::::" << std::endl;
 
 	RuleOf5 value;
+	std::cout << STD_TRACE_VAR(value) << std::endl;
 
 	std::multimap<int, RuleOf5> mm;
 
@@ -51,6 +52,7 @@ int main(int, char **)
 
 ::::: Ctor :::::
 	::: RuleOf5 :::
+value: {0}
 
 ::::: Insert :::::
 	::: RuleOf5 :::
