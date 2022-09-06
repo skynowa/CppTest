@@ -13,8 +13,6 @@
 class RuleOf5
 {
 public:
-	std::size_t i {};
-
 ///\name ctors, dtor
 ///\{
 	RuleOf5();
@@ -24,8 +22,16 @@ public:
 	~RuleOf5();
 ///\}
 
+///\name operators
+///\{
 	RuleOf5 & operator = (const RuleOf5 &obj);
 	RuleOf5 & operator = (RuleOf5 &&obj);
+
+	friend std::ostream & operator << (std::ostream &os, const RuleOf5 &obj);
+///\}
+
+private:
+	std::size_t i {};
 };
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5()
