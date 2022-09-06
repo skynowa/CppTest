@@ -30,7 +30,7 @@ public:
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5()
 {
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Ctor] Default :::" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
@@ -38,7 +38,7 @@ RuleOf5::RuleOf5(
 ) :
 	i{a_obj.i}
 {
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Ctor] Copy :::" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
@@ -46,12 +46,12 @@ RuleOf5::RuleOf5(
 ) :
 	i{ std::move(a_obj.i) }
 {
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Ctor] Move :::" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5::~RuleOf5() /* final */
 {
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Dtor] :::" << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 RuleOf5 &
@@ -63,7 +63,7 @@ RuleOf5::operator = (
 		return *this;
 	}
 
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Op] Copy assignment :::" << std::endl;
 
 	i = a_obj.i;
 
@@ -79,7 +79,7 @@ RuleOf5::operator = (
 		return *this;
 	}
 
-	STD_TRACE_FUNC
+	std::cout << "\t::: [Op] Move assignment :::" << std::endl;
 
 	i = std::move(a_obj.i);
 

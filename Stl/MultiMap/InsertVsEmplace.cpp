@@ -16,7 +16,7 @@ int main(int, char **)
 	std::cout << "::::: Ctor :::::" << std::endl;
 
 	RuleOf5 value;
-	std::cout << STD_TRACE_VAR(value) << std::endl;
+	std::cout << "\t" << STD_TRACE_VAR(value) << std::endl;
 
 	std::multimap<int, RuleOf5> mm;
 
@@ -51,24 +51,24 @@ int main(int, char **)
 #if OUTPUT
 
 ::::: Ctor :::::
-	::: RuleOf5 :::
-value: {0}
+	::: [Ctor] Default :::
+	value: {0}
 
 ::::: Insert :::::
-	::: RuleOf5 :::
-	::: RuleOf5 :::
-	::: ~RuleOf5 :::
+	::: [Ctor] Copy :::
+	::: [Ctor] Move :::
+	::: [Dtor] :::
 
 ::::: Emplace :::::
-	::: RuleOf5 :::
+	::: [Ctor] Copy :::
 
 ::::: std::piecewise_construct :::::
-	::: RuleOf5 :::
+	::: [Ctor] Copy :::
 
 ::::: Dtor :::::
-	::: ~RuleOf5 :::
-	::: ~RuleOf5 :::
-	::: ~RuleOf5 :::
-	::: ~RuleOf5 :::
+	::: [Dtor] :::
+	::: [Dtor] :::
+	::: [Dtor] :::
+	::: [Dtor] :::
 
 #endif
