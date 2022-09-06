@@ -9,7 +9,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") █████████░ 🚩91% (35)
+- [Idioms](#idioms "[ ] C/C++ language idioms") █████████░ 🚩94% (35)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -554,7 +554,7 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms █████████░ 🚩91% (35)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms █████████░ 🚩94% (35)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/Raii.cpp" title="RAII - Resource Acquisition Is Initialization">✅ `Raii.cpp`</a>
 * <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
@@ -567,7 +567,7 @@
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/NonCopyableMixin.cpp" title="To prevent objects of a class from being copy-constructed or assigned to each other">✅ `NonCopyableMixin.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
-* <a href="/Idioms/RuleOf5.h" title="">❌ RuleOf5.h</a>
+* <a href="/Idioms/RuleOf5.h" title="The rule of three/five/zero">✅ `RuleOf5.h`</a>
 * <a href="/Idioms/ScopeGuard.cpp" title="To ensure that resources are always released in face of an exception but not while returning normally">✅ `ScopeGuard.cpp`</a>
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
