@@ -59,11 +59,11 @@ RuleOf5::operator = (
 	const RuleOf5 &a_obj
 )
 {
-	STD_TRACE_FUNC
-
 	if (this == &a_obj) {
 		return *this;
 	}
+
+	STD_TRACE_FUNC
 
 	i = a_obj.i;
 
@@ -75,11 +75,11 @@ RuleOf5::operator = (
 	RuleOf5 &&a_obj
 )
 {
-	STD_TRACE_FUNC
-
 	if (this == &a_obj) {
 		return *this;
 	}
+
+	STD_TRACE_FUNC
 
 	i = std::move(a_obj.i);
 
