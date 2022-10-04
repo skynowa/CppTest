@@ -8,7 +8,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-int main()
+int main(int, char **)
 {
     std::multimap <int, int> mm;
 
@@ -83,7 +83,7 @@ int main()
     std::cout << mm.upper_bound(5)->first << '\t';
     std::cout << "\tELEMENT = " << mm.upper_bound(5)->second << std::endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 //--------------------------------------------------------------------------------------------------
 
