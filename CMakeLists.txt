@@ -17,6 +17,10 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 set(CMAKE_COLOR_MAKEFILE        ON)
 set(CMAKE_VERBOSE_MAKEFILE      OFF)
 set(CMAKE_REQUIRED_QUIET        ON)
+
+if (NOT CMAKE_BUILD_TYPE)
+	set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Release - default build type" FORCE)
+endif()
 #--------------------------------------------------------------------------------------------------
 # CONAN
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
