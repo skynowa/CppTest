@@ -3,6 +3,7 @@
  * \brief
  *
  * https://pastebin.com/4Sa57VxB
+ * https://www.youtube.com/watch?v=Z2_bXoqXgHg
  *
  * \todo
  */
@@ -15,28 +16,45 @@
 struct A
 {
     A() = default;
-    A(const std::string& name) : _name(name) {}
-    A(const char* name) : _name(name) {}
+
+    A(const std::string &name) :
+        _name(name)
+    {
+    }
+
+    A(const char *name) :
+        _name(name)
+    {
+    }
+
     A(const A& ref)
     {
-        //std::cout << "A(const A& ref)" << std::endl;
+        // STD_TRACE_FUNC;
+
         _name = ref._name;
     }
+
     A& operator=(const A& ref)
     {
-        //std::cout << "A& operator=(const A& ref)" << std::endl;
+        // STD_TRACE_FUNC;
+
         _name = ref._name;
         return *this;
     }
+
     A(A&& ref) noexcept
     {
-        //std::cout << "A(const A&& ref)" << std::endl;
+        // STD_TRACE_FUNC;
+
         _name = std::move(ref._name);
     }
+
     A& operator=(A&& ref) noexcept
     {
-        //std::cout << "A& operator=( A&& ref)" << std::endl;
+        // STD_TRACE_FUNC;
+
         _name = std::move(ref._name);
+
         return *this;
     }
 
@@ -46,7 +64,7 @@ struct A
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::vector<A> vec =
+    const std::vector<A> vec =
     {
         "k;jzxdxfjndfajk;bvmkl;adklm;dkl;m",
         "pzSJD'kfsngv;adojgn;aojngear;on",
@@ -107,9 +125,8 @@ int main(int, char **)
         "vbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsdddddddddddddddddddddddd",
         "asdfasdfasdfasdfasdfsadfsadfsadfsadfsadfsadfasdfasdfasdfasdfasdfsdfasdfa",
         "gdgdgdgdgdgdgdgdgdgdggdggdgdgdgdgduydgiuaysdfguasdyfguasdfuysadfgasduiyfgsafguysadfasugyf",
-        "gaegarefahfwaiefhaiuoyhfairufhaiufhaeifuhrefiarhfiuhfiuahfiuahgierugheiuheulihafuhvaiuvvvvvvvavavavver",
+        "gaegarefahfwaiefhaiuoyhfairufhaiufhaeifuhrefiarhfiuhfiuahfiuahgierugheiuheulihafuhvaiuvvvvvvvavavavver"
     };
-
 
     std::uint64_t count {};
 
