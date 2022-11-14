@@ -10,8 +10,16 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-using int_unordered_map_less_t    = std::unordered_map<int, int, std::less<int>>;
-using int_unordered_map_greater_t = std::unordered_map<int, int, std::greater<int>>;
+struct Hash
+{
+    std::size_t operator() (const int value) const
+    {
+        return std::hash<int>()(value);
+    }
+};
+
+using int_unordered_map_less_t    = std::unordered_map<int, int, Hash, std::less<int>>;
+using int_unordered_map_greater_t = std::unordered_map<int, int, Hash, std::greater<int>>;
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
