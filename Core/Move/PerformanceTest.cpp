@@ -13,6 +13,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+#define OPTION_MOVE 1
+//--------------------------------------------------------------------------------------------------
 struct A
 {
     A() = default;
@@ -42,6 +44,7 @@ struct A
         return *this;
     }
 
+#if OPTION_MOVE
     A(A&& ref) noexcept
     {
         // STD_TRACE_FUNC;
@@ -57,9 +60,9 @@ struct A
 
         return *this;
     }
+#endif
 
     std::string _name;
-
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -143,7 +146,13 @@ int main(int, char **)
         ++ count;
     }
 
-    std::cout << STD_TRACE_VAR(count) << std::endl;
+#if OPTION_MOVE
+    const std::string label = "Move - ";
+#else
+    const std::string label = "Copy - ";
+#endif
+
+    std::cout << label << STD_TRACE_VAR(count) << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -152,6 +161,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+Copy - count: 7641408
+Move - count: 16027970
 
 #endif
