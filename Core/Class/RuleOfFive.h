@@ -33,20 +33,6 @@ public:
 		_trace("RuleOfFive(const char *)");
 	}
 
-	// copy constructor
-	RuleOfFive(const RuleOfFive &a_other) :
-		RuleOfFive(a_other._buff)
-	{
-		_trace("RuleOfFive(const RuleOfFive &)");
-	}
-
-	// move constructor
-	RuleOfFive(RuleOfFive &&a_other) noexcept :
-		_buff(std::exchange(a_other._buff, nullptr))
-	{
-		_trace("RuleOfFive(RuleOfFive &&a_other)");
-	}
-
 	~RuleOfFive()
 	{
 		delete[] _buff;
@@ -56,9 +42,16 @@ public:
 	}
 ///@}
 
-///@name ops
+///@name Copy
 ///@{
-	// copy assignment
+	// Ctor
+	RuleOfFive(const RuleOfFive &a_other) :
+		RuleOfFive(a_other._buff)
+	{
+		_trace("RuleOfFive(const RuleOfFive &)");
+	}
+
+	// Assignment
 	RuleOfFive &
 	operator = (const RuleOfFive &a_other)
 	{
@@ -68,8 +61,18 @@ public:
 
 		return *this;
 	}
+///@}
 
-	// move assignment
+///@name Move
+///@{
+	// Ctor
+	RuleOfFive(RuleOfFive &&a_other) noexcept :
+		_buff(std::exchange(a_other._buff, nullptr))
+	{
+		_trace("RuleOfFive(RuleOfFive &&a_other)");
+	}
+
+	// Assignment
 	RuleOfFive &
 	operator = (RuleOfFive &&a_other) noexcept
 	{
