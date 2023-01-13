@@ -80,7 +80,7 @@ foreach(IT_SOURCE ${SOURCES})
 		-lstdc++fs
 		${X11_LIBRARIES})
 
-	# Targets - Build and run test
+	# Targets - Build, run single test
 	add_custom_target(test_${CPP_TEST}
 		COMMAND           ${CPP_TEST}
 		DEPENDS           ${CPP_TEST}
