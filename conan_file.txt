@@ -1,6 +1,7 @@
 [requires]
 
 ## Dependencies
+zlib/1.2.13
 openssl/[>1.1.1]
 
 ## Main
