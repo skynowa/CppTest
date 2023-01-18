@@ -26,7 +26,8 @@ struct A
     {
     }
 
-    explicit A(const char *name) :
+    // explicit - n/a
+	A(const char *name) :
         _name(name)
     {
     }
