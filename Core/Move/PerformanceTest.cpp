@@ -13,36 +13,40 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+#define OPTION_COPY 1
 #define OPTION_MOVE 1
 //--------------------------------------------------------------------------------------------------
 struct A
 {
     A() = default;
+    ~A() = default;
 
-    A(const std::string &name) :
+    explicit A(const std::string &name) :
         _name(name)
     {
     }
 
-    A(const char *name) :
+    explicit A(const char *name) :
         _name(name)
     {
     }
 
-    A(const A& ref)
-    {
-        // STD_TRACE_FUNC;
+#if OPTION_COPY
+	A(const A& ref)
+	{
+		// STD_TRACE_FUNC;
 
-        _name = ref._name;
-    }
+		_name = ref._name;
+	}
 
-    A& operator=(const A& ref)
-    {
-        // STD_TRACE_FUNC;
+	A& operator=(const A& ref)
+	{
+		// STD_TRACE_FUNC;
 
-        _name = ref._name;
-        return *this;
-    }
+		_name = ref._name;
+		return *this;
+	}
+#endif
 
 #if OPTION_MOVE
     A(A&& ref) noexcept
