@@ -30,17 +30,8 @@ class RuleOf5
 {
 public:
 	RuleOf5();
-
-	explicit RuleOf5(const std::string &a_value) :
-		_value(a_value)
-	{
-	}
-
-	// explicit - n/a
-	RuleOf5(const char *a_value) :
-		_value(a_value)
-	{
-	}
+	explicit RuleOf5(const std::string &value);
+	RuleOf5(const char *value);	// explicit - n/a
 
 #if RULEOF5_OPTION_COPY
 	RuleOf5(const RuleOf5 &obj) noexcept;
@@ -67,6 +58,27 @@ RuleOf5::RuleOf5()
 #endif
 }
 //-------------------------------------------------------------------------------------------------
+RuleOf5::RuleOf5(
+	const std::string &a_value
+) :
+	_value(a_value)
+{
+#if RULEOF5_OPTION_LOG
+	std::cout << "[Ctor] const std::string &" << std::endl;
+#endif
+}
+//-------------------------------------------------------------------------------------------------
+// explicit - n/a
+RuleOf5::RuleOf5(
+	const char *a_value
+) :
+	_value(a_value)
+{
+#if RULEOF5_OPTION_LOG
+	std::cout << "[Ctor] const char *" << std::endl;
+#endif
+}
+//-------------------------------------------------------------------------------------------------
 
 #if RULEOF5_OPTION_COPY
 //--------------------------------------------------------------------------------------------------
@@ -90,7 +102,7 @@ RuleOf5::operator = (
 	}
 
 #if RULEOF5_OPTION_LOG
-	std::cout << "[Op] Copy assignment" << std::endl;
+	std::cout << "[Op] Copy" << std::endl;
 #endif
 
 	_value = a_obj._value;
@@ -122,7 +134,7 @@ RuleOf5::operator = (
 	}
 
 #if RULEOF5_OPTION_LOG
-	std::cout << "[Op] Move assignment" << std::endl;
+	std::cout << "[Op] Move" << std::endl;
 #endif
 
 	_value = std::move(a_obj._value);

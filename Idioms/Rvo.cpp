@@ -91,24 +91,6 @@ int main(int, char **)
 }
 //--------------------------------------------------------------------------------------------------
 
-
-#if OUTPUT
-
-::::: RVO :::::
-ctor
-dtor
-
-::::: NRVO :::::
-ctor
-dtor
-
-::::: Copy Elision :::::
-ctor
-dtor
-
-#endif
-
-
 #if OUTPUT
 
 ::::: RVO :::::
