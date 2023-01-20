@@ -25,23 +25,32 @@
 
 #include <Idioms/RuleOf5.h>
 //--------------------------------------------------------------------------------------------------
-RuleOf5 exampleRVO()
+class Example
 {
-	return RuleOf5();
-}
-//--------------------------------------------------------------------------------------------------
-RuleOf5 exampleNRVO()
-{
-	RuleOf5 snitch;
-	return snitch;
-}
-//--------------------------------------------------------------------------------------------------
-void exampleCopyElision(RuleOf5 /* obj */)
-{
-}
+public:
+	Example() = default;
+	~Example() = default;
+
+	RuleOf5 RVO()
+	{
+		return RuleOf5();
+	}
+
+	RuleOf5 NRVO()
+	{
+		RuleOf5 snitch;
+		return snitch;
+	}
+
+	void CopyElision(RuleOf5 /* obj */)
+	{
+	}
+};
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+	Example example;
+
    /*
 	* RVO - Return Value Optimization
 	*
@@ -51,7 +60,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("RVO") << std::endl;
 
-		RuleOf5 snitch = exampleRVO();
+		RuleOf5 snitch = example.RVO();
 	}
 
    /**
@@ -62,7 +71,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("NRVO") << std::endl;
 
-		exampleNRVO();
+		example.NRVO();
 	}
 
    /**
@@ -75,7 +84,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("Copy Elision") << std::endl;
 
-		::exampleCopyElision( RuleOf5() );
+		example.CopyElision( RuleOf5() );
 	}
 
 	// When RVO doesn’t / can’t happen
