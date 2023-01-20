@@ -18,46 +18,30 @@
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
+
+#define RULEOF5_OPTION_LOG 1
+#define RULEOF5_OPTION_COPY 1
+#define RULEOF5_OPTION_MOVE 1
+
+#include <Idioms/RuleOf5.h>
 //--------------------------------------------------------------------------------------------------
-struct Snitch
-	/// Note: All methods have side effects
+RuleOf5 exampleRVO()
 {
-	Snitch()  { std::cout << "ctor" << std::endl; }
-	~Snitch() { std::cout << "dtor" << std::endl; }
-
-	Snitch(const Snitch&) { std::cout << "ctor copy" << std::endl; }
-	Snitch(Snitch&&)      { std::cout << "ctor move" << std::endl; }
-
-	Snitch& operator=(const Snitch&)
-	{
-		std::cout << "assignment copy" << std::endl;
-		return *this;
-	}
-
-	Snitch& operator=(Snitch&&)
-	{
-		std::cout << "assignment move" << std::endl;
-		return *this;
-	}
-};
-//--------------------------------------------------------------------------------------------------
-Snitch exampleRVO()
-{
-	return Snitch();
+	return RuleOf5();
 }
 //--------------------------------------------------------------------------------------------------
-Snitch ExampleRVO()
+RuleOf5 ExampleRVO()
 {
-	return Snitch();
+	return RuleOf5();
 }
 //--------------------------------------------------------------------------------------------------
-Snitch exampleNRVO()
+RuleOf5 exampleNRVO()
 {
-	Snitch snitch;
+	RuleOf5 snitch;
 	return snitch;
 }
 //--------------------------------------------------------------------------------------------------
-void exampleCopyElision(Snitch /* s */)
+void exampleCopyElision(RuleOf5 /* s */)
 {
 }
 //--------------------------------------------------------------------------------------------------
@@ -72,9 +56,9 @@ int main(int, char **)
 	* even if they have side effects.
 	*/
 	{
-		std::cout << "\n::::: " << "RVO" << " :::::" << std::endl;
+		std::cout << "::::: " << "RVO" << " :::::" << std::endl;
 
-		Snitch snitch = exampleRVO();
+		RuleOf5 snitch = exampleRVO();
 	}
 
    /**
@@ -83,7 +67,7 @@ int main(int, char **)
 	* Is when an object with a name is returned but is nevertheless not copied
 	*/
 	{
-		std::cout << "\n::::: " << "NRVO" << " :::::" << std::endl;
+		std::cout << "::::: " << "NRVO" << " :::::" << std::endl;
 
 		exampleNRVO();
 	}
@@ -96,9 +80,9 @@ int main(int, char **)
 	* return statements
 	*/
 	{
-		std::cout << "\n::::: " << "Copy Elision" << " :::::" << std::endl;
+		std::cout << "::::: " << "Copy Elision" << " :::::" << std::endl;
 
-		::exampleCopyElision( Snitch() );
+		::exampleCopyElision( RuleOf5() );
 	}
 
 	// When RVO doesn’t / can’t happen
@@ -121,5 +105,22 @@ dtor
 ::::: Copy Elision :::::
 ctor
 dtor
+
+#endif
+
+
+#if OUTPUT
+
+::::: RVO :::::
+[Ctor] Default
+[Dtor]
+
+::::: NRVO :::::
+[Ctor] Default
+[Dtor]
+
+::::: Copy Elision :::::
+[Ctor] Default
+[Dtor]
 
 #endif

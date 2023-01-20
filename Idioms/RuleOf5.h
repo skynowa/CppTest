@@ -14,9 +14,17 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-#define RULEOF5_OPTION_LOG  0
-#define RULEOF5_OPTION_COPY 1
-#define RULEOF5_OPTION_MOVE 1
+#if !defined(RULEOF5_OPTION_LOG)
+	#define RULEOF5_OPTION_LOG 0
+#endif
+
+#if !defined(RULEOF5_OPTION_COPY)
+	#define RULEOF5_OPTION_COPY 1
+#endif
+
+#if !defined(RULEOF5_OPTION_MOVE)
+	#define RULEOF5_OPTION_MOVE 1
+#endif
 //--------------------------------------------------------------------------------------------------
 class RuleOf5
 {
@@ -55,7 +63,7 @@ private:
 RuleOf5::RuleOf5()
 {
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Ctor] Default :::" << std::endl;
+	std::cout << "[Ctor] Default" << std::endl;
 #endif
 }
 //-------------------------------------------------------------------------------------------------
@@ -68,7 +76,7 @@ RuleOf5::RuleOf5(
 	_value{a_obj._value}
 {
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Ctor] Copy :::" << std::endl;
+	std::cout << "[Ctor] Copy" << std::endl;
 #endif
 }
 //--------------------------------------------------------------------------------------------------
@@ -82,7 +90,7 @@ RuleOf5::operator = (
 	}
 
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Op] Copy assignment :::" << std::endl;
+	std::cout << "[Op] Copy assignment" << std::endl;
 #endif
 
 	_value = a_obj._value;
@@ -100,7 +108,7 @@ RuleOf5::RuleOf5(
 	_value{ std::move(a_obj._value) }
 {
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Ctor] Move :::" << std::endl;
+	std::cout << "[Ctor] Move" << std::endl;
 #endif
 }
 //--------------------------------------------------------------------------------------------------
@@ -114,7 +122,7 @@ RuleOf5::operator = (
 	}
 
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Op] Move assignment :::" << std::endl;
+	std::cout << "[Op] Move assignment" << std::endl;
 #endif
 
 	_value = std::move(a_obj._value);
@@ -128,7 +136,8 @@ RuleOf5::operator = (
 RuleOf5::~RuleOf5() /* final */
 {
 #if RULEOF5_OPTION_LOG
-	std::cout << "\t::: [Dtor] :::" << std::endl;
+	std::cout << "[Dtor]" << std::endl;
+	std::cout << std::endl;
 #endif
 }
 //--------------------------------------------------------------------------------------------------
