@@ -42,7 +42,7 @@ public:
 		return snitch;
 	}
 
-	void CopyElision(RuleOf5 /* obj */)
+	void copyElision(RuleOf5 /* obj */)
 	{
 	}
 };
@@ -84,7 +84,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("Copy Elision") << std::endl;
 
-		example.CopyElision( RuleOf5() );
+		example.copyElision( RuleOf5() );
 	}
 
 	// When RVO doesn’t / can’t happen
