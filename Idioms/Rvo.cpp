@@ -49,7 +49,7 @@ int main(int, char **)
 	* even if they have side effects.
 	*/
 	{
-		std::cout << "::::: " << "RVO" << " :::::" << std::endl;
+		std::cout << STD_TITLE_VAR("RVO") << std::endl;
 
 		RuleOf5 snitch = exampleRVO();
 	}
@@ -60,7 +60,7 @@ int main(int, char **)
 	* Is when an object with a name is returned but is nevertheless not copied
 	*/
 	{
-		std::cout << "::::: " << "NRVO" << " :::::" << std::endl;
+		std::cout << STD_TITLE_VAR("NRVO") << std::endl;
 
 		exampleNRVO();
 	}
@@ -73,7 +73,7 @@ int main(int, char **)
 	* return statements
 	*/
 	{
-		std::cout << "::::: " << "Copy Elision" << " :::::" << std::endl;
+		std::cout << STD_TITLE_VAR("Copy Elision") << std::endl;
 
 		::exampleCopyElision( RuleOf5() );
 	}
