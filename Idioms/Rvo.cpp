@@ -42,8 +42,6 @@ void exampleCopyElision(RuleOf5 /* obj */)
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // STD_TRACE_FUNC;
-
    /*
 	* RVO - Return Value Optimization
 	*
