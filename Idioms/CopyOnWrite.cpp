@@ -3,11 +3,13 @@
  * \brief Achieve lazy copy optimization. Like lazy initialization, do the work just when you need
  *        because of efficiency
  *
- * \review
+ * \see   https://shaharmike.com/cpp/std-string/
  *
  * To implement copy-on-write, a smart pointer to the real content is used to encapsulate
  * the object's value, and on each modification an object reference count is checked;
  * if the object is referenced more than once, a copy of the content is created before modification
+ *
+ * \review
  */
 
 
