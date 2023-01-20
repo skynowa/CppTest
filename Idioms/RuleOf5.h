@@ -35,13 +35,13 @@ public:
 	}
 
 #if RULEOF5_OPTION_COPY
-	RuleOf5(const RuleOf5 &obj);
-	RuleOf5 & operator = (const RuleOf5 &obj);
+	RuleOf5(const RuleOf5 &obj) noexcept;
+	RuleOf5 & operator = (const RuleOf5 &obj) noexcept;
 #endif
 
 #if RULEOF5_OPTION_MOVE
-	RuleOf5(RuleOf5 &&obj);
-	RuleOf5 & operator = (RuleOf5 &&obj);
+	RuleOf5(RuleOf5 &&obj) noexcept;
+	RuleOf5 & operator = (RuleOf5 &&obj) noexcept;
 #endif
 
 	~RuleOf5();
@@ -64,7 +64,7 @@ RuleOf5::RuleOf5()
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
 	const RuleOf5 &a_obj
-) :
+) noexcept :
 	_value{a_obj._value}
 {
 #if RULEOF5_OPTION_LOG
@@ -75,7 +75,7 @@ RuleOf5::RuleOf5(
 RuleOf5 &
 RuleOf5::operator = (
 	const RuleOf5 &a_obj
-)
+) noexcept
 {
 	if (this == &a_obj) {
 		return *this;
@@ -96,7 +96,7 @@ RuleOf5::operator = (
 //--------------------------------------------------------------------------------------------------
 RuleOf5::RuleOf5(
 	RuleOf5 &&a_obj
-) :
+) noexcept :
 	_value{ std::move(a_obj._value) }
 {
 #if RULEOF5_OPTION_LOG
@@ -107,7 +107,7 @@ RuleOf5::RuleOf5(
 RuleOf5 &
 RuleOf5::operator = (
 	RuleOf5 &&a_obj
-)
+) noexcept
 {
 	if (this == &a_obj) {
 		return *this;
