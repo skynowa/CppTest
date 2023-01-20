@@ -9,7 +9,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") █████████░ 🚩92% (37)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ██████████ 🚩95% (37)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -557,10 +557,10 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms █████████░ 🚩92% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ██████████ 🚩95% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/SmallObjectOptimization.cpp" title="Small Object Optimization (aka small buffer optimization)">✅ `SmallObjectOptimization.cpp`</a>
-* <a href="/Idioms/Rvo.cpp" title="">❌ Rvo.cpp</a>
+* <a href="/Idioms/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">✅ `Rvo.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
