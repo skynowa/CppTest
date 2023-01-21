@@ -42,7 +42,7 @@ public:
 		return snitch;
 	}
 
-	void copyElision(RuleOf5 /* obj */)
+	void copyElision(RuleOf5 /* a_obj */)
 	{
 	}
 };
