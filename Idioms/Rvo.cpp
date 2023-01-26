@@ -42,8 +42,9 @@ public:
 		return obj;
 	}
 
-	void copyElision(RuleOf5 /* a_obj */)
+	void copyElision(RuleOf5 a_obj)
 	{
+		STD_UNUSED(a_obj);
 	}
 };
 //--------------------------------------------------------------------------------------------------
