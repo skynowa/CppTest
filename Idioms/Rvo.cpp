@@ -38,8 +38,8 @@ public:
 
 	RuleOf5 NRVO()
 	{
-		RuleOf5 snitch;
-		return snitch;
+		RuleOf5 obj;
+		return obj;
 	}
 
 	void copyElision(RuleOf5 /* a_obj */)
