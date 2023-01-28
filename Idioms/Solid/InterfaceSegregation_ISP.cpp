@@ -2,7 +2,7 @@
  * \file  InterfaceSegregation_ISP.cpp
  * \brief Separating the interfaces
  *
- * \review
+ * \todo
  */
 
 

@@ -2,7 +2,7 @@
  * \file  LiskovSubstitution_LSP.cpp
  * \brief Subclasses should be substitutable for their base classes
  *
- * \review
+ * \todo
  */
 
 
