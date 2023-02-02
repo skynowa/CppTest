@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **28-Jan-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-Feb-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -9,7 +9,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥84% (37)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥81% (37)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -557,7 +557,7 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥84% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥81% (37)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/SmallObjectOptimization.cpp" title="Small Object Optimization (aka small buffer optimization)">✅ `SmallObjectOptimization.cpp`</a>
 * <a href="/Idioms/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">✅ `Rvo.cpp`</a>
@@ -635,13 +635,13 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Solid 33% (6)</summary>
+    <summary>📁 ⌛ Solid 17% (6)</summary>
 
     * <a href="/Idioms/Solid/LiskovSubstitution_LSP.cpp" title="Subclasses should be substitutable for their base classes">❌ LiskovSubstitution_LSP.cpp</a>
     * <a href="/Idioms/Solid/Readme.md" title="">🖊 `📝 Readme.md`</a>
     * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">❌ DependencyInversion_DIP.cpp</a>
     * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">❌ SingleResponsibility_SRP.cpp</a>
-    * <a href="/Idioms/Solid/OpenClosed_OCP.cpp" title="Classes should be open for extension and closed to modification">🖊 `OpenClosed_OCP.cpp`</a>
+    * <a href="/Idioms/Solid/OpenClosed_OCP.cpp" title="Classes should be open for extension and closed to modification">❌ OpenClosed_OCP.cpp</a>
     * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">❌ InterfaceSegregation_ISP.cpp</a>
 
     </details>
