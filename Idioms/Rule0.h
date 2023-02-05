@@ -14,8 +14,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-#if !defined(RULE_5_OPTION_LOG)
-	#define RULE_5_OPTION_LOG 0
+#if !defined(RULE_0_OPTION_LOG)
+	#define RULE_0_OPTION_LOG 0
 #endif
 //--------------------------------------------------------------------------------------------------
 class Rule0
@@ -75,7 +75,7 @@ Rule0::_log(
 	const std::string &a_msg
 ) const
 {
-#if RULE_5_OPTION_LOG
+#if RULE_0_OPTION_LOG
 	const std::string title = a_title.empty() ? a_title : ("[" + a_title + "] ");
 
 	std::cout << title << a_msg << std::endl;
