@@ -15,9 +15,9 @@ class File
 public:
     explicit File(const char *filename)
     {
-        _handle = fopen(filename, "r");
+        _handle = std::fopen(filename, "r");
         if (_handle == nullptr) {
-            /// throw std::runtime_error("blah blah blah");
+            throw std::runtime_error("blah blah blah");
         }
 
         std::cout << "File(const char *)" << std::endl;
@@ -33,8 +33,10 @@ public:
         std::cout << "File(File &&)" << std::endl;
     }
 
-    File &
-    operator = (File &&that)
+    // Ops
+    File & operator = (const File &) = delete;
+
+    File & operator = (File &&that)
     {
         std::swap(_handle, that._handle);
 
@@ -43,12 +45,10 @@ public:
         return *this;
     }
 
-    void operator = (const File &) = delete;
-
     ~File()
     {
         if (_handle != nullptr) {
-            fclose(_handle);
+            std::fclose(_handle);
             _handle = nullptr;
         }
 
