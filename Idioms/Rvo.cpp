@@ -23,7 +23,7 @@
 #define RULEOF5_OPTION_COPY 1
 #define RULEOF5_OPTION_MOVE 1
 
-#include <Idioms/RuleOf5.h>
+#include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 class Example
 {
@@ -31,18 +31,18 @@ public:
 	Example() = default;
 	~Example() = default;
 
-	RuleOf5 RVO()
+	Rule5 RVO()
 	{
-		return RuleOf5();
+		return Rule5();
 	}
 
-	RuleOf5 NRVO()
+	Rule5 NRVO()
 	{
-		RuleOf5 obj;
+		Rule5 obj;
 		return obj;
 	}
 
-	void copyElision(RuleOf5 a_obj)
+	void copyElision(Rule5 a_obj)
 	{
 		STD_UNUSED(a_obj);
 	}
@@ -61,7 +61,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("RVO") << std::endl;
 
-		RuleOf5 snitch = example.RVO();
+		Rule5 snitch = example.RVO();
 	}
 
    /**
@@ -85,7 +85,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("Copy Elision") << std::endl;
 
-		example.copyElision( RuleOf5() );
+		example.copyElision( Rule5() );
 	}
 
 	// When RVO doesn’t / can’t happen

@@ -9,16 +9,16 @@
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
-#include <Idioms/RuleOf5.h>
+#include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
 	std::cout << "::::: Ctor :::::" << std::endl;
 
-	RuleOf5 value;
+	Rule5 value;
 	std::cout << "\t" << STD_TRACE_VAR(value) << std::endl;
 
-	std::multimap<int, RuleOf5> mm;
+	std::multimap<int, Rule5> mm;
 
 	// pair's converting move ctor
 	{

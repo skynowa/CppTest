@@ -13,11 +13,11 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
-#include <Idioms/RuleOf5.h>
+#include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	const std::vector<RuleOf5> vec =
+	const std::vector<Rule5> vec =
 	{
 		"k;jzxdxfjndfajk;bvmkl;adklm;dkl;m",
 		"pzSJD'kfsngv;adojgn;aojngear;on",

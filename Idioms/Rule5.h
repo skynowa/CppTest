@@ -1,5 +1,5 @@
 /**
- * \file  RuleOf5.h
+ * \file  Rule5.h
  * \brief The rule of three/five/zero
  *
  * \see   https://en.cppreference.com/w/cpp/language/rule_of_three
@@ -26,39 +26,39 @@
 	#define RULEOF5_OPTION_MOVE 1
 #endif
 //--------------------------------------------------------------------------------------------------
-class RuleOf5
+class Rule5
 {
 public:
-	RuleOf5();
-	explicit RuleOf5(const std::string &value);
-	RuleOf5(const char *value);	// explicit - n/a
+	Rule5();
+	explicit Rule5(const std::string &value);
+	Rule5(const char *value);	// explicit - n/a
 
 #if RULEOF5_OPTION_COPY
-	RuleOf5(const RuleOf5 &obj) noexcept;
-	RuleOf5 & operator = (const RuleOf5 &obj) noexcept;
+	Rule5(const Rule5 &obj) noexcept;
+	Rule5 & operator = (const Rule5 &obj) noexcept;
 #endif
 
 #if RULEOF5_OPTION_MOVE
-	RuleOf5(RuleOf5 &&obj) noexcept;
-	RuleOf5 & operator = (RuleOf5 &&obj) noexcept;
+	Rule5(Rule5 &&obj) noexcept;
+	Rule5 & operator = (Rule5 &&obj) noexcept;
 #endif
 
-	~RuleOf5();
+	~Rule5();
 
-	friend std::ostream & operator << (std::ostream &os, const RuleOf5 &obj);
+	friend std::ostream & operator << (std::ostream &os, const Rule5 &obj);
 
 private:
 	std::string _value {};
 };
 //--------------------------------------------------------------------------------------------------
-RuleOf5::RuleOf5()
+Rule5::Rule5()
 {
 #if RULEOF5_OPTION_LOG
 	std::cout << "[Ctor] Default" << std::endl;
 #endif
 }
 //-------------------------------------------------------------------------------------------------
-RuleOf5::RuleOf5(
+Rule5::Rule5(
 	const std::string &a_value
 ) :
 	_value(a_value)
@@ -69,7 +69,7 @@ RuleOf5::RuleOf5(
 }
 //-------------------------------------------------------------------------------------------------
 // explicit - n/a
-RuleOf5::RuleOf5(
+Rule5::Rule5(
 	const char *a_value
 ) :
 	_value(a_value)
@@ -82,8 +82,8 @@ RuleOf5::RuleOf5(
 
 #if RULEOF5_OPTION_COPY
 //--------------------------------------------------------------------------------------------------
-RuleOf5::RuleOf5(
-	const RuleOf5 &a_obj
+Rule5::Rule5(
+	const Rule5 &a_obj
 ) noexcept :
 	_value{a_obj._value}
 {
@@ -92,9 +92,9 @@ RuleOf5::RuleOf5(
 #endif
 }
 //--------------------------------------------------------------------------------------------------
-RuleOf5 &
-RuleOf5::operator = (
-	const RuleOf5 &a_obj
+Rule5 &
+Rule5::operator = (
+	const Rule5 &a_obj
 ) noexcept
 {
 	if (this == &a_obj) {
@@ -114,8 +114,8 @@ RuleOf5::operator = (
 
 #if RULEOF5_OPTION_MOVE
 //--------------------------------------------------------------------------------------------------
-RuleOf5::RuleOf5(
-	RuleOf5 &&a_obj
+Rule5::Rule5(
+	Rule5 &&a_obj
 ) noexcept :
 	_value{ std::move(a_obj._value) }
 {
@@ -124,9 +124,9 @@ RuleOf5::RuleOf5(
 #endif
 }
 //--------------------------------------------------------------------------------------------------
-RuleOf5 &
-RuleOf5::operator = (
-	RuleOf5 &&a_obj
+Rule5 &
+Rule5::operator = (
+	Rule5 &&a_obj
 ) noexcept
 {
 	if (this == &a_obj) {
@@ -145,7 +145,7 @@ RuleOf5::operator = (
 #endif
 
 //--------------------------------------------------------------------------------------------------
-RuleOf5::~RuleOf5() /* final */
+Rule5::~Rule5() /* final */
 {
 #if RULEOF5_OPTION_LOG
 	std::cout << "[Dtor]" << std::endl;
@@ -156,7 +156,7 @@ RuleOf5::~RuleOf5() /* final */
 inline std::ostream &
 operator << (
 	std::ostream  &out_os,
-	const RuleOf5 &a_obj
+	const Rule5 &a_obj
 )
 {
 	return out_os << "{" << a_obj._value << "}";
