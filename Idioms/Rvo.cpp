@@ -59,7 +59,7 @@ int main(int, char **)
 	{
 		std::cout << STD_TITLE_VAR("RVO") << std::endl;
 
-		Rule5 snitch = example.RVO();
+		Rule5 rv = example.RVO();
 	}
 
    /**
