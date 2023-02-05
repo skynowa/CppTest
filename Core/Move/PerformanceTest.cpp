@@ -13,8 +13,9 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
-#include <Idioms/Rule3Copy.h>
-#include <Idioms/Rule3Move.h>
+#define RULEOF5_OPTION_COPY 1
+#define RULEOF5_OPTION_MOVE 1
+
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -93,7 +94,8 @@ int main(int, char **)
 		auto tmp_vec = vec;
 
 		while ( !tmp_vec.empty() ) {
-			tmp_vec.erase( tmp_vec.cbegin() );
+			auto it = tmp_vec.cbegin();
+			tmp_vec.erase(it);
 		}
 
 		++ count;
