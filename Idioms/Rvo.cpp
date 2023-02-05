@@ -19,9 +19,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
-#define RULEOF5_OPTION_LOG  1
-#define RULEOF5_OPTION_COPY 1
-#define RULEOF5_OPTION_MOVE 1
+#define RULEOF5_OPTION_LOG 1
 
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
