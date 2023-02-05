@@ -100,7 +100,9 @@ Rule3Copy::_log(
 ) const
 {
 #if RULEOF5_OPTION_LOG
-	std::cout << "[" << a_title << "] " << a_msg << std::endl;
+	const std::string title = a_title.empty() ? a_title : ("[" + a_title + "] ");
+
+	std::cout << title << a_msg << std::endl;
 #else
 	STD_UNUSED(a_title);
 	STD_UNUSED(a_msg);

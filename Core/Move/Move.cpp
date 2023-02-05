@@ -9,6 +9,9 @@
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
+
+#define RULEOF5_OPTION_LOG 1
+#include <Idioms/Rule3Move.h>
 //-------------------------------------------------------------------------------------------------
 class File
 {
@@ -62,24 +65,24 @@ private:
 int main(int, char **)
 {
     {
-        std::vector<File> files;
+        std::vector<Rule3Move> files;
 
         {
-            std::cout << "\n::::: files.push_back('data1.txt') :::::" << std::endl;
-            files.push_back( File("data1.txt") );
+            std::cout << "::::: files.push_back('data1.txt') :::::" << std::endl;
+            files.push_back( Rule3Move("data1.txt") );
 
-            std::cout << "\n::::: files.push_back('data2.txt') :::::" << std::endl;
-            files.push_back( File("data2.txt") );
+            std::cout << "::::: files.push_back('data2.txt') :::::" << std::endl;
+            files.push_back( Rule3Move("data2.txt") );
         }
 
         {
-            std::cout << "\n::::: files.erase() :::::" << std::endl;
+            std::cout << "::::: files.erase() :::::" << std::endl;
 
             files.erase( files.cbegin() );
         }
 
         {
-            std::cout << "\n::::: files - dtor :::::" << std::endl;
+            std::cout << "::::: files - dtor :::::" << std::endl;
         }
     }
 
@@ -111,5 +114,28 @@ operator = (File &&)
 ::::: files - dtor :::::
 ~File()
 
+
+#endif
+
+#if OUTPUT
+
+[Ctor] const char *
+[Ctor] Move
+[Dtor]
+
+::::: files.push_back('data2.txt') :::::
+[Ctor] const char *
+[Ctor] Move
+[Ctor] Move
+[Dtor]
+
+[Dtor]
+
+::::: files.erase() :::::
+[Op] Move
+[Dtor]
+
+::::: files - dtor :::::
+[Dtor]
 
 #endif
