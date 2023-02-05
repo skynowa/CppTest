@@ -49,13 +49,13 @@ public:
 
 private:
 	std::string _value {};
+
+	void _log(const std::string &title, const std::string &msg) const;
 };
 //--------------------------------------------------------------------------------------------------
 Rule5::Rule5()
 {
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Ctor] Default" << std::endl;
-#endif
+	_log("Ctor", "Default");
 }
 //-------------------------------------------------------------------------------------------------
 Rule5::Rule5(
@@ -63,9 +63,7 @@ Rule5::Rule5(
 ) :
 	_value(a_value)
 {
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Ctor] const std::string &" << std::endl;
-#endif
+	_log("Ctor", "const std::string &");
 }
 //-------------------------------------------------------------------------------------------------
 // explicit - n/a
@@ -74,9 +72,7 @@ Rule5::Rule5(
 ) :
 	_value(a_value)
 {
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Ctor] const char *" << std::endl;
-#endif
+	_log("Ctor", "const char *");
 }
 //-------------------------------------------------------------------------------------------------
 
@@ -87,9 +83,7 @@ Rule5::Rule5(
 ) noexcept :
 	_value{a_obj._value}
 {
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Ctor] Copy" << std::endl;
-#endif
+	_log("Ctor", "Copy");
 }
 //--------------------------------------------------------------------------------------------------
 Rule5 &
@@ -101,9 +95,7 @@ Rule5::operator = (
 		return *this;
 	}
 
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Op] Copy" << std::endl;
-#endif
+	_log("Op", "Copy");
 
 	_value = a_obj._value;
 
@@ -119,9 +111,7 @@ Rule5::Rule5(
 ) noexcept :
 	_value{ std::move(a_obj._value) }
 {
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Ctor] Move" << std::endl;
-#endif
+	_log("Ctor", "Move");
 }
 //--------------------------------------------------------------------------------------------------
 Rule5 &
@@ -133,9 +123,7 @@ Rule5::operator = (
 		return *this;
 	}
 
-#if RULEOF5_OPTION_LOG
-	std::cout << "[Op] Move" << std::endl;
-#endif
+	_log("Op", "Move");
 
 	_value = std::move(a_obj._value);
 
@@ -147,9 +135,21 @@ Rule5::operator = (
 //--------------------------------------------------------------------------------------------------
 Rule5::~Rule5() /* final */
 {
+	_log("Dtor", "");
+	_log("", "");
+}
+//--------------------------------------------------------------------------------------------------
+void
+Rule5::_log(
+	const std::string &a_title,
+	const std::string &a_msg
+) const
+{
 #if RULEOF5_OPTION_LOG
-	std::cout << "[Dtor]" << std::endl;
-	std::cout << std::endl;
+	std::cout << "[" << a_title << "] " << a_msg << std::endl;
+#else
+	STD_UNUSED(a_title);
+	STD_UNUSED(a_msg);
 #endif
 }
 //--------------------------------------------------------------------------------------------------
