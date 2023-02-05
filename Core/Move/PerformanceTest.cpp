@@ -13,6 +13,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
+#include <Idioms/Rule3Copy.h>
+#include <Idioms/Rule3Move.h>
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
