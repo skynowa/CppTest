@@ -14,8 +14,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-#if !defined(RULEOF5_OPTION_LOG)
-	#define RULEOF5_OPTION_LOG 0
+#if !defined(RULE_5_OPTION_LOG)
+	#define RULE_5_OPTION_LOG 0
 #endif
 //--------------------------------------------------------------------------------------------------
 class Rule3Copy
@@ -99,7 +99,7 @@ Rule3Copy::_log(
 	const std::string &a_msg
 ) const
 {
-#if RULEOF5_OPTION_LOG
+#if RULE_5_OPTION_LOG
 	const std::string title = a_title.empty() ? a_title : ("[" + a_title + "] ");
 
 	std::cout << title << a_msg << std::endl;

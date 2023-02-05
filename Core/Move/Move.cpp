@@ -10,7 +10,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
-#define RULEOF5_OPTION_LOG 1
+#define RULE_5_OPTION_LOG 1
 #include <Idioms/Rule3Move.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)

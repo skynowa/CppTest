@@ -14,16 +14,16 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-#if !defined(RULEOF5_OPTION_LOG)
-	#define RULEOF5_OPTION_LOG 0
+#if !defined(RULE_5_OPTION_LOG)
+	#define RULE_5_OPTION_LOG 0
 #endif
 
-#if !defined(RULEOF5_OPTION_COPY)
-	#define RULEOF5_OPTION_COPY 1
+#if !defined(RULE_5_OPTION_COPY)
+	#define RULE_5_OPTION_COPY 1
 #endif
 
-#if !defined(RULEOF5_OPTION_MOVE)
-	#define RULEOF5_OPTION_MOVE 1
+#if !defined(RULE_5_OPTION_MOVE)
+	#define RULE_5_OPTION_MOVE 1
 #endif
 //--------------------------------------------------------------------------------------------------
 class Rule5
@@ -33,12 +33,12 @@ public:
 	explicit Rule5(const std::string &value);
 	Rule5(const char *value);	// explicit - n/a
 
-#if RULEOF5_OPTION_COPY
+#if RULE_5_OPTION_COPY
 	Rule5(const Rule5 &obj) noexcept;
 	Rule5 & operator = (const Rule5 &obj) noexcept;
 #endif
 
-#if RULEOF5_OPTION_MOVE
+#if RULE_5_OPTION_MOVE
 	Rule5(Rule5 &&obj) noexcept;
 	Rule5 & operator = (Rule5 &&obj) noexcept;
 #endif
@@ -76,7 +76,7 @@ Rule5::Rule5(
 }
 //-------------------------------------------------------------------------------------------------
 
-#if RULEOF5_OPTION_COPY
+#if RULE_5_OPTION_COPY
 //--------------------------------------------------------------------------------------------------
 Rule5::Rule5(
 	const Rule5 &a_obj
@@ -104,7 +104,7 @@ Rule5::operator = (
 //-------------------------------------------------------------------------------------------------
 #endif
 
-#if RULEOF5_OPTION_MOVE
+#if RULE_5_OPTION_MOVE
 //--------------------------------------------------------------------------------------------------
 Rule5::Rule5(
 	Rule5 &&a_obj
@@ -145,7 +145,7 @@ Rule5::_log(
 	const std::string &a_msg
 ) const
 {
-#if RULEOF5_OPTION_LOG
+#if RULE_5_OPTION_LOG
 	const std::string title = a_title.empty() ? a_title : ("[" + a_title + "] ");
 
 	std::cout << title << a_msg << std::endl;

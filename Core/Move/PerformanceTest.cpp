@@ -13,8 +13,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
-#define RULEOF5_OPTION_COPY 1
-#define RULEOF5_OPTION_MOVE 1
+#define RULE_5_OPTION_COPY 1
+#define RULE_5_OPTION_MOVE 1
 
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
@@ -102,14 +102,14 @@ int main(int, char **)
 	}
 
 	const std::string labelCopy =
-	#if RULEOF5_OPTION_COPY
+	#if RULE_5_OPTION_COPY
 		"Copy";
 	#else
 		"";
 	#endif
 
 	const std::string labelMove =
-	#if RULEOF5_OPTION_MOVE
+	#if RULE_5_OPTION_MOVE
 		"Move";
 	#else
 		"";
