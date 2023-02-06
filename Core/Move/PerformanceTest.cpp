@@ -87,10 +87,10 @@ int main(int, char **)
 
 	std::uint64_t count {};
 
-	const auto start_time = std::chrono::high_resolution_clock::now();
+	const auto time_start = std::chrono::high_resolution_clock::now();
 
 	while (std::chrono::duration_cast<
-		std::chrono::seconds>(std::chrono::high_resolution_clock::now() - start_time).count() < 60)
+		std::chrono::seconds>(std::chrono::high_resolution_clock::now() - time_start).count() < 60)
 	{
 		auto tmp_vec = vec;
 
