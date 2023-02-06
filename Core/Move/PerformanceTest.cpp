@@ -17,11 +17,15 @@
 #define RULE_5_OPTION_COPY 1
 #define RULE_5_OPTION_MOVE 0
 
+#include <Idioms/Rule3Copy.h>
+#include <Idioms/Rule3Move.h>
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	const std::vector<Rule5> vec =
+	const std::vector<Rule3Copy> vec =
+	// const std::vector<Rule3Move> vec =
+	// const std::vector<Rule5> vec =
 	{
 		"k;jzxdxfjndfajk;bvmkl;adklm;dkl;m",
 		"pzSJD'kfsngv;adojgn;aojngear;on",
