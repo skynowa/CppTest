@@ -85,21 +85,26 @@ int main(int, char **)
 		"gaegarefahfwaiefhaiuoyhfairufhaiufhaeifuhrefiarhfiuhfiuahfiuahgierugheiuheulihafuhvaiuvvvvvvvavavavver"
 	};
 
-	std::uint64_t count {};
+	std::uint64_t operationsCount {};
 
-	const auto time_start = std::chrono::high_resolution_clock::now();
+	const auto timeStart = std::chrono::high_resolution_clock::now();
 
-	while (std::chrono::duration_cast<
-		std::chrono::seconds>(std::chrono::high_resolution_clock::now() - time_start).count() < 60)
-	{
-		auto tmp_vec = vec;
+	for ( ; ; ) {
+		const auto timeNow = std::chrono::high_resolution_clock::now();
+		const auto diffSec = std::chrono::duration_cast<std::chrono::seconds>(timeNow - timeStart).count();
 
-		while ( !tmp_vec.empty() ) {
-			auto it = tmp_vec.cbegin();
-			tmp_vec.erase(it);
+		if (diffSec >= 60) {
+			break;
 		}
 
-		++ count;
+		auto tmpVec = vec;
+
+		while ( !tmpVec.empty() ) {
+			auto it = tmpVec.cbegin();
+			tmpVec.erase(it);
+		}
+
+		++ operationsCount;
 	}
 
 	const std::string labelCopy =
@@ -118,7 +123,7 @@ int main(int, char **)
 
 	std::cout
 		<< "[" << labelCopy << " / " << labelMove << "] "
-		<< STD_TRACE_VAR(count) << std::endl;
+		<< STD_TRACE_VAR(operationsCount) << std::endl;
 
 	return EXIT_SUCCESS;
 }
