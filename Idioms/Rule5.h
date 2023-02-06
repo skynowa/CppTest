@@ -36,11 +36,17 @@ public:
 #if RULE_5_OPTION_COPY
 	Rule5(const Rule5 &obj) noexcept;
 	Rule5 & operator = (const Rule5 &obj) noexcept;
+#else
+	Rule5(const Rule5 &obj) noexcept = delete;
+	Rule5 & operator = (const Rule5 &obj) noexcept = delete;
 #endif
 
 #if RULE_5_OPTION_MOVE
 	Rule5(Rule5 &&obj) noexcept;
 	Rule5 & operator = (Rule5 &&obj) noexcept;
+#else
+	Rule5(Rule5 &&obj) noexcept = delete;
+	Rule5 & operator = (Rule5 &&obj) noexcept = delete;
 #endif
 
 	~Rule5();
