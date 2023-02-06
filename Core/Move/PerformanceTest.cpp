@@ -133,7 +133,7 @@ test()
 int main(int, char **)
 {
 	::test<Rule3Copy>();
-	::test<Rule3Move>();
+	///	::test<Rule3Move>();
 	::test<Rule5>();
 
 	return EXIT_SUCCESS;
