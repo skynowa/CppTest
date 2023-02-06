@@ -13,8 +13,9 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
+#define RULE_5_OPTION_LOG  0
 #define RULE_5_OPTION_COPY 1
-#define RULE_5_OPTION_MOVE 1
+#define RULE_5_OPTION_MOVE 0
 
 #include <Idioms/Rule5.h>
 //--------------------------------------------------------------------------------------------------
