@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **06-Feb-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **12-Feb-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩91% (11)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (182)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (183)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -97,7 +97,7 @@
 
     </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (182)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (183)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -154,7 +154,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ C++17 88% (24)</summary>
+    <summary>📁 ⌛ C++17 88% (25)</summary>
 
     * <a href="/Core/C++17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/C++17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
@@ -187,11 +187,12 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ Constexpr 100% (3)</summary>
+      <summary>📁 ✅ Constexpr 100% (4)</summary>
 
         * <a href="/Core/C++17/Constexpr/ConstexprLambda.cpp" title="constexpr lambda">✅ `ConstexprLambda.cpp`</a>
         * <a href="/Core/C++17/Constexpr/ConstexprIf.cpp" title="constexpr if">✅ `ConstexprIf.cpp`</a>
         * <a href="/Core/C++17/Constexpr/ConstexprSwitch.cpp" title="">✅ `ConstexprSwitch.cpp`</a>
+        * <a href="/Core/C++17/Constexpr/ReturnConstexpr.cpp" title="">✅ `ReturnConstexpr.cpp`</a>
 
       </details>
 
