@@ -1,5 +1,5 @@
 /**
- * \file  ArrayToFunction1.cpp
+ * \file  ToFunction3.cpp
  * \brief
  */
 
@@ -7,37 +7,32 @@
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 //-------------------------------------------------------------------------------------------------
-typedef int aiIntArray[3][4];
-
-aiIntArray a
-{
-   {4,  6,  8,  10},
-   {14, 16, 18, 20},
-   {24, 26, 28, 30}
-};
+#define xARRAY_SIZE(a) \
+   ( sizeof(a) / sizeof((a)[0]) )
 //-------------------------------------------------------------------------------------------------
 void
-show(
-    const aiIntArray &a,
-    int   m,
-    int   n
+foo(
+   const char *Array,
+   size_t      x,
+   size_t      y
 )
 {
-    for (int i = 0; i < m; ++ i) {
-        for (int j = 0; j < n; ++ j) {
-            int x = *(*(a + i) + j);
+   for (size_t i = 0; i < x; ++ i) {
+      const char *var = &Array[i * y];
 
-            std::cout << x << ", ";
-        }
-
-        std::cout << std::endl;
-    }
+      std::cout << var << ", " << std::endl;
+   }
 }
 //-------------------------------------------------------------------------------------------------
-int main ()
+int main()
 {
-    show(a, 3, 4);
+   const char x[][20]
+   {
+      {"1,  2,  3,  4 "},
+      {"11, 12, 13, 14"},
+      {"21, 22, 23, 24"}
+   };
 
-    return 0;
+   foo((const char *)x, xARRAY_SIZE(x), 20);
 }
 //-------------------------------------------------------------------------------------------------

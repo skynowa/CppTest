@@ -1,5 +1,5 @@
 /**
- * \file  ArrayToFunction3.cpp
+ * \file  ToFunction2.cpp
  * \brief
  */
 
@@ -12,27 +12,31 @@
 //-------------------------------------------------------------------------------------------------
 void
 foo(
-   const char *Array,
-   size_t      x,
-   size_t      y
+   const int *Array,
+   size_t     x,
+   size_t     y
 )
 {
    for (size_t i = 0; i < x; ++ i) {
-      const char *var = &Array[i * y];
+      for (size_t j = 0; j < y; ++ j) {
+            int var = Array[i * y + j];
 
-      std::cout << var << ", " << std::endl;
+            std::cout << var << ", ";
+      }
+
+      std::cout << std::endl;
    }
 }
 //-------------------------------------------------------------------------------------------------
 int main()
 {
-   const char x[][20]
+   const int x[][4]
    {
-      {"1,  2,  3,  4 "},
-      {"11, 12, 13, 14"},
-      {"21, 22, 23, 24"}
+      {1,  2,  3,  4 },
+      {11, 12, 13, 14},
+      {21, 22, 23, 24}
    };
 
-   foo((const char *)x, xARRAY_SIZE(x), 20);
+   foo((const int *)x, xARRAY_SIZE(x), 4);
 }
 //-------------------------------------------------------------------------------------------------

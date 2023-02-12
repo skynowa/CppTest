@@ -110,16 +110,16 @@
   * <details close>
     <summary>📁 ✅ Array 100% (4)</summary>
 
-    * <a href="/Core/Array/ArraySize.cpp" title="Size of array">✅ `ArraySize.cpp`</a>
+    * <a href="/Core/Array/Size.cpp" title="Size of array">✅ `Size.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ ArrayToFunction 100% (3)</summary>
+      <summary>📁 ✅ ToFunction 100% (3)</summary>
 
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction3.cpp" title="">✅ `ArrayToFunction3.cpp`</a>
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction1.cpp" title="">✅ `ArrayToFunction1.cpp`</a>
-        * <a href="/Core/Array/ArrayToFunction/ArrayToFunction2.cpp" title="">✅ `ArrayToFunction2.cpp`</a>
+        * <a href="/Core/Array/ToFunction/ToFunction1.cpp" title="">✅ `ToFunction1.cpp`</a>
+        * <a href="/Core/Array/ToFunction/ToFunction3.cpp" title="">✅ `ToFunction3.cpp`</a>
+        * <a href="/Core/Array/ToFunction/ToFunction2.cpp" title="">✅ `ToFunction2.cpp`</a>
 
       </details>
 

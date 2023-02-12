@@ -1,5 +1,5 @@
 /**
- * \file  ArraySize.cpp
+ * \file  Size.cpp
  * \brief Size of array
  */
 
