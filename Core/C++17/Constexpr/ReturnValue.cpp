@@ -38,6 +38,8 @@ int main(int, char **)
 	{
 		constexpr bool bRv = noexcept( ::factorial(5) ); // true, f() is a constant expression
 		static_assert(bRv);
+
+		std::cout << "noexcept: static_assert = " << bRv << std::endl;
 	}
 
 	// const
@@ -68,6 +70,7 @@ int main(int, char **)
 
 #if OUTPUT
 
+noexcept: static_assert = 1
 noexcept: 1
 uiRv: 120
 uiRv: 120
