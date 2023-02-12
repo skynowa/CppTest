@@ -1,5 +1,5 @@
 /**
- * \file  ConstexprLambda.cpp
+ * \file  Lambda.cpp
  * \brief constexpr lambda
  *
  * Compile-time lambdas using constexpr.
