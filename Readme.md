@@ -128,9 +128,9 @@
 
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
+    * <a href="/Core/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
+    * <a href="/Core/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
     * <a href="/Core/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
-    * <a href="/Core/Bits/BadBitMask.cpp" title="Overflow bit mask">✅ `BadBitMask.cpp`</a>
-    * <a href="/Core/Bits/ShiftBitMask.cpp" title="Shift bit mask">✅ `ShiftBitMask.cpp`</a>
 
     </details>
 

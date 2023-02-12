@@ -1,5 +1,5 @@
 /**
- * \file  ShiftBitMask.cpp
+ * \file  ShiftMask.cpp
  * \brief Shift bit mask
 
  * logical OR: a || b

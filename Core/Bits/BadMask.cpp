@@ -1,5 +1,5 @@
 /**
- * \file  BadBitMask.cpp
+ * \file  BadMask.cpp
  * \brief Overflow bit mask
  */
 
