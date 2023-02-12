@@ -28,9 +28,26 @@ factorial(const std::size_t n)
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+   /**
+	* \note noexcept
+	*
+	* Because the noexcept operator always returns true for a constant expression,
+	* it can be used to check if a particular invocation of a constexpr function
+	* takes the constant expression branch:
+	*/
+	{
+		constexpr bool bRv = noexcept( ::factorial(5) ); // true, f() is a constant expression
+		static_assert(bRv);
+	}
+
 	// const
 	{
-		const std::size_t uiRv = factorial(5);
+		std::cout << "noexcept: " << noexcept( ::factorial(5) ) << std::endl;
+	}
+
+	// const
+	{
+		const std::size_t uiRv = ::factorial(5);
 		static_assert(uiRv == 120);
 
 		std::cout << STD_TRACE_VAR(uiRv) << std::endl;
@@ -38,7 +55,7 @@ int main(int, char **)
 
 	// constexpr
 	{
-		constexpr std::size_t uiRv = factorial(5);
+		constexpr std::size_t uiRv = ::factorial(5);
 		static_assert(uiRv == 120);
 
 		std::cout << STD_TRACE_VAR(uiRv) << std::endl;
@@ -51,6 +68,7 @@ int main(int, char **)
 
 #if OUTPUT
 
+noexcept: 1
 uiRv: 120
 uiRv: 120
 
