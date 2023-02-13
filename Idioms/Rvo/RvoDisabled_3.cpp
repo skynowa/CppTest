@@ -29,7 +29,8 @@ createObj()
 
 // error: moving a local object in a return statement prevents copy elision [-Werror=pessimizing-move]
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Werror"
+// #pragma GCC diagnostic ignored "-Werror"
+#pragma GCC diagnostic error "-Werror"
 
 	return std::move(obj);
 
