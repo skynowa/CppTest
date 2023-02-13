@@ -1,5 +1,5 @@
 /**
- * \file  LambdaMemberVariableCapture.cpp
+ * \file  MemberVariableCapture.cpp
  * \brief
  */
 

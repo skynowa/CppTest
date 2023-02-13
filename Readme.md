@@ -347,35 +347,35 @@
     * <details close>
       <summary>📁 ✅ Function 100% (3)</summary>
 
+        * <a href="/Core/Functor/Function/Inline.cpp" title="">✅ `Inline.cpp`</a>
+        * <a href="/Core/Functor/Function/Native.cpp" title="">✅ `Native.cpp`</a>
         * <a href="/Core/Functor/Function/ReturnSyntax.cpp" title="">✅ `ReturnSyntax.cpp`</a>
-        * <a href="/Core/Functor/Function/InlineFunction.cpp" title="">✅ `InlineFunction.cpp`</a>
-        * <a href="/Core/Functor/Function/NativeFunction.cpp" title="">✅ `NativeFunction.cpp`</a>
 
       </details>
 
     * <details close>
       <summary>📁 ✅ Functor 100% (5)</summary>
 
-        * <a href="/Core/Functor/Functor/StaticFunctor.cpp" title="">✅ `StaticFunctor.cpp`</a>
-        * <a href="/Core/Functor/Functor/Functor.cpp" title="">✅ `Functor.cpp`</a>
-        * <a href="/Core/Functor/Functor/FunctorTarget.cpp" title="function::target example">✅ `FunctorTarget.cpp`</a>
-        * <a href="/Core/Functor/Functor/RegualarFuncFunctor.cpp" title="Regualar function as functor">✅ `RegualarFuncFunctor.cpp`</a>
-        * <a href="/Core/Functor/Functor/OperatorFunctor.cpp" title="operator() as functor">✅ `OperatorFunctor.cpp`</a>
+        * <a href="/Core/Functor/Functor/Operator.cpp" title="operator() as functor">✅ `Operator.cpp`</a>
+        * <a href="/Core/Functor/Functor/Target.cpp" title="function::target example">✅ `Target.cpp`</a>
+        * <a href="/Core/Functor/Functor/Static.cpp" title="">✅ `Static.cpp`</a>
+        * <a href="/Core/Functor/Functor/RegualarFunc.cpp" title="Regualar function as functor">✅ `RegualarFunc.cpp`</a>
+        * <a href="/Core/Functor/Functor/Basic.cpp" title="">✅ `Basic.cpp`</a>
 
       </details>
 
     * <details close>
       <summary>📁 ✅ Lambda 100% (9)</summary>
 
-        * <a href="/Core/Functor/Lambda/LambdaPtrsSizes.cpp" title="">✅ `LambdaPtrsSizes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopes.cpp" title="">✅ `LambdaScopes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByValue.cpp" title="">✅ `LambdaScopesByValue.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaBasic.cpp" title="">✅ `LambdaBasic.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopesByReference.cpp" title="">✅ `LambdaScopesByReference.cpp`</a>
-        * <a href="/Core/Functor/Lambda/GccLambdaLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">✅ `GccLambdaLeaky.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaScopeFaultScenario.cpp" title="">🖊 `LambdaScopeFaultScenario.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambaExamples.cpp" title="">✅ `LambaExamples.cpp`</a>
-        * <a href="/Core/Functor/Lambda/LambdaMemberVariableCapture.cpp" title="">✅ `LambdaMemberVariableCapture.cpp`</a>
+        * <a href="/Core/Functor/Lambda/ScopeFaultScenario.cpp" title="">🖊 `ScopeFaultScenario.cpp`</a>
+        * <a href="/Core/Functor/Lambda/Scopes.cpp" title="">✅ `Scopes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/PtrsSizes.cpp" title="">✅ `PtrsSizes.cpp`</a>
+        * <a href="/Core/Functor/Lambda/ScopesByValue.cpp" title="">✅ `ScopesByValue.cpp`</a>
+        * <a href="/Core/Functor/Lambda/Examples.cpp" title="">✅ `Examples.cpp`</a>
+        * <a href="/Core/Functor/Lambda/Basic.cpp" title="">✅ `Basic.cpp`</a>
+        * <a href="/Core/Functor/Lambda/GccLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">✅ `GccLeaky.cpp`</a>
+        * <a href="/Core/Functor/Lambda/ScopesByReference.cpp" title="">✅ `ScopesByReference.cpp`</a>
+        * <a href="/Core/Functor/Lambda/MemberVariableCapture.cpp" title="">✅ `MemberVariableCapture.cpp`</a>
 
       </details>
 
@@ -406,12 +406,11 @@
   * <details close>
     <summary>📁 ✅ Operators 100% (14)</summary>
 
-    * <a href="/Core/Operators/OperatorIn.cpp" title="">✅ `OperatorIn.cpp`</a>
-    * <a href="/Core/Operators/OperatorsNewDelete.cpp" title="replace operator new and delete to log allocations">✅ `OperatorsNewDelete.cpp`</a>
-    * <a href="/Core/Operators/NamespaceOperator.cpp" title="">🖊 `NamespaceOperator.cpp`</a>
+    * <a href="/Core/Operators/Namespace.cpp" title="">🖊 `Namespace.cpp`</a>
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
     * <a href="/Core/Operators/OverloadingArithmeticOperator.cpp" title="">🖊 `OverloadingArithmeticOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingPrefixIncermentDecrementOperator.cpp" title="">🖊 `OverloadingPrefixIncermentDecrementOperator.cpp`</a>
+    * <a href="/Core/Operators/In.cpp" title="">✅ `In.cpp`</a>
     * <a href="/Core/Operators/OverloadingLogicalOperator.cpp" title="">🖊 `OverloadingLogicalOperator.cpp`</a>
     * <a href="/Core/Operators/OverloadingArithmeticOperatorUsingMemberFunction.cpp" title="this function is a member function!">🖊 `OverloadingArithmeticOperatorUsingMemberFunction.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
@@ -420,6 +419,7 @@
     * <a href="/Core/Operators/OverloadingUnaryOperator.cpp" title="">🖊 `OverloadingUnaryOperator.cpp`</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="Decrement, increment and sequence point">🖊 `DecIncInt.cpp`</a>
     * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">🖊 `PlacementNew.cpp`</a>
+    * <a href="/Core/Operators/NewDelete.cpp" title="replace operator new and delete to log allocations">✅ `NewDelete.cpp`</a>
 
     </details>
 
@@ -501,8 +501,8 @@
   * <details close>
     <summary>📁 ✅ Types 100% (2)</summary>
 
-    * <a href="/Core/Types/TypeNames.cpp" title="">✅ `TypeNames.cpp`</a>
-    * <a href="/Core/Types/TypeSizes.cpp" title="">✅ `TypeSizes.cpp`</a>
+    * <a href="/Core/Types/Sizes.cpp" title="">✅ `Sizes.cpp`</a>
+    * <a href="/Core/Types/Names.cpp" title="">✅ `Names.cpp`</a>
 
     </details>
 

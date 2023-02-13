@@ -1,5 +1,5 @@
 /**
- * \file  NamespaceOperator.cpp
+ * \file  Namespace.cpp
  * \brief
  *
  * \review

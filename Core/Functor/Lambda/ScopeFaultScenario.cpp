@@ -1,5 +1,5 @@
 /**
- * \file  LambdaScopeFaultScenario.cpp
+ * \file  ScopeFaultScenario.cpp
  * \brief
  *
  * \review

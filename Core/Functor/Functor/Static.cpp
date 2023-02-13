@@ -1,5 +1,5 @@
 /**
- * \file  StaticFunctor.cpp
+ * \file  Static.cpp
  * \brief
  */
 

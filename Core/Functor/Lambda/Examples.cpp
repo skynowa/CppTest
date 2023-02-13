@@ -1,5 +1,5 @@
 /**
- * \file  LambaExamples.cpp
+ * \file  Examples.cpp
  * \brief
  */
 

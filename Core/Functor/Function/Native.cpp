@@ -1,5 +1,5 @@
 /**
- * \file  NativeFunction.cpp
+ * \file  Native.cpp
  * \brief
  */
 

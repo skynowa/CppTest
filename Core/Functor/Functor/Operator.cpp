@@ -1,5 +1,5 @@
 /**
- * \file  OperatorFunctor.cpp
+ * \file  Operator.cpp
  * \brief operator() as functor
  */
 

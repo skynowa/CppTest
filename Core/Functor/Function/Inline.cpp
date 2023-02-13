@@ -1,5 +1,5 @@
 /**
- * \file  InlineFunction.cpp
+ * \file  Inline.cpp
  * \brief
  */
 

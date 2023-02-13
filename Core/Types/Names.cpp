@@ -1,5 +1,5 @@
 /**
- * \file  TypeNames.cpp
+ * \file  Names.cpp
  * \brief
  */
 

@@ -1,5 +1,5 @@
 /**
- * \file  LambdaPtrsSizes.cpp
+ * \file  PtrsSizes.cpp
  * \brief
  */
 

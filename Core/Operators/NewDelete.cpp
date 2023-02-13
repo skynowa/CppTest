@@ -1,5 +1,5 @@
 /**
- * \file  OperatorsNewDelete.cpp
+ * \file  NewDelete.cpp
  * \brief replace operator new and delete to log allocations
  */
 

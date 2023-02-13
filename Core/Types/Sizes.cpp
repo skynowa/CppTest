@@ -1,5 +1,5 @@
 /**
- * \file  TypeSizes.cpp
+ * \file  Sizes.cpp
  * \brief
  */
 

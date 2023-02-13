@@ -1,5 +1,5 @@
 /**
- * \file  LambdaScopesByReference.cpp
+ * \file  ScopesByReference.cpp
  * \brief
  */
 

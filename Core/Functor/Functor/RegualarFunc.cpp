@@ -1,5 +1,5 @@
 /**
- * \file  RegualarFuncFunctor.cpp
+ * \file  RegualarFunc.cpp
  * \brief Regualar function as functor
  */
 

@@ -1,5 +1,5 @@
 /**
- * \file  FunctorTarget.cpp
+ * \file  Target.cpp
  * \brief function::target example
  */
 
