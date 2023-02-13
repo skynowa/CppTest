@@ -9,7 +9,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥82% (40)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (41)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -561,7 +561,7 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥82% (40)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥83% (41)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
@@ -572,6 +572,7 @@
 * <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
 * <a href="/Idioms/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">✅ `Rvo.cpp`</a>
 * <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
+* <a href="/Idioms/RvoDisabled.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
