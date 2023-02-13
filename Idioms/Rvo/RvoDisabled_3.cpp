@@ -25,9 +25,14 @@
 Rule5
 createObj()
 {
-  Rule5 obj;
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Werror=pessimizing-move"
 
-  return std::move(obj);
+	Rule5 obj;
+
+	return std::move(obj);
+
+#pragma GCC diagnostic pop
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
