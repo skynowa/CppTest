@@ -1,22 +1,28 @@
 /**
- * \file  OperatorAccess.cpp
+ * \file  Cast.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::map<std::string, std::string> m;
+	{
+	    double     d = -10.15;
+	    signed int i = static_cast<signed int>(d);
 
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
+	    std::cout << STD_TRACE_VAR2(d, i) << std::endl;
+    }
+
+    {
+	    double     d = 20.25;
+	    signed int i = static_cast<signed int>(d);
+
+	    std::cout << STD_TRACE_VAR2(d, i) << std::endl;
+	}
 
     return 0;
 }
@@ -25,7 +31,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-m["test"].empty(): 1
-m["test"].empty(): 1
+d: -10.15, i: -10
+d: 20.25,  i: 20
+
 
 #endif

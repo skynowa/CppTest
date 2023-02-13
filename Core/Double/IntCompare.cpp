@@ -1,22 +1,29 @@
 /**
- * \file  OperatorAccess.cpp
+ * \file  IntCompare.cpp
  * \brief
- *
- * \todo
  */
 
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
-
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::map<std::string, std::string> m;
+	const int    i = 0;
+	const double d = 0.1;
 
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
-    std::cout << STD_TRACE_VAR(m["test"].empty()) << std::endl;
+	if (i < d) {
+		std::cout << i << " < " << d << std::endl;
+	}
+
+	if (i > d) {
+		std::cout << i << " > " << d << std::endl;
+	}
+
+	if (i == d) {
+		std::cout << i << " == " << d << std::endl;
+	}
 
     return 0;
 }
@@ -25,7 +32,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-m["test"].empty(): 1
-m["test"].empty(): 1
+0 < 0.1
 
 #endif
