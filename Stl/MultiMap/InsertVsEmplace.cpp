@@ -9,7 +9,7 @@
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
-#include <Idioms/Rule5.h>
+#include <Idioms/RuleOf/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {

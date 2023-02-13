@@ -11,7 +11,7 @@
 #include <Stl.h>
 
 #define RULE_5_OPTION_LOG 1
-#include <Idioms/Rule3Move.h>
+#include <Idioms/RuleOf/Rule3Move.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {

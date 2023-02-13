@@ -21,7 +21,7 @@
 
 #define RULE_5_OPTION_LOG 1
 
-#include <Idioms/Rule5.h>
+#include <Idioms/RuleOf/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 class Example
 {

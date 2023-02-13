@@ -17,9 +17,9 @@
 #define RULE_5_OPTION_COPY 1
 #define RULE_5_OPTION_MOVE 1
 
-#include <Idioms/Rule3Copy.h>
-#include <Idioms/Rule3Move.h>
-#include <Idioms/Rule5.h>
+#include <Idioms/RuleOf/Rule3Copy.h>
+#include <Idioms/RuleOf/Rule3Move.h>
+#include <Idioms/RuleOf/Rule5.h>
 //--------------------------------------------------------------------------------------------------
 template <typename T>
 void
