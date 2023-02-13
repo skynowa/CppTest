@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-	deque<int> dequeObj;Operations.cpp
+	deque<int> dequeObj;
 
 	dequeObj.push_back(5);
 	dequeObj.push_back(6);
