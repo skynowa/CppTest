@@ -1,7 +1,6 @@
 /**
  * \file  ScopeGuard.cpp
- * \brief To ensure that resources are always released in face of an exception but not while returning normally
- *        To provide basic exception safety guarantee
+ * \brief To ensure that resources are always released in face of an exception
  *
  * Resource Acquisition is Initialization (RAII) idiom allows us to acquire resources
  * in the constructor and release them in the destructor when scope ends successfully or
