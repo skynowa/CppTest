@@ -9,7 +9,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (41)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥84% (45)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -561,14 +561,12 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥83% (41)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥84% (45)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
-* <a href="/Idioms/ScopeGuard.cpp" title="To ensure that resources are always released in face of an exception but not while returning normally">✅ `ScopeGuard.cpp`</a>
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
 * <a href="/Idioms/NonCopyableMixin.cpp" title="To prevent objects of a class from being copy-constructed or assigned to each other">✅ `NonCopyableMixin.cpp`</a>
-* <a href="/Idioms/Raii.cpp" title="RAII - Resource Acquisition Is Initialization">✅ `Raii.cpp`</a>
 * <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
 * <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
@@ -637,6 +635,14 @@
       </details>
 
   * <details close>
+    <summary>📁 ✅ Raii 100% (2)</summary>
+
+    * <a href="/Idioms/Raii/ScopeGuard.cpp" title="To ensure that resources are always released in face of an exception">✅ `ScopeGuard.cpp`</a>
+    * <a href="/Idioms/Raii/Raii.cpp" title="RAII - Resource Acquisition Is Initialization">✅ `Raii.cpp`</a>
+
+    </details>
+
+  * <details close>
     <summary>📁 ✅ RuleOf 100% (4)</summary>
 
     * <a href="/Idioms/RuleOf/Rule5.h" title="The rule of three/five/zero">✅ `Rule5.h`</a>
@@ -647,10 +653,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Rvo 100% (2)</summary>
+    <summary>📁 ✅ Rvo 100% (6)</summary>
 
+    * <a href="/Idioms/Rvo/RvoDisabled_5.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_5.cpp`</a>
+    * <a href="/Idioms/Rvo/RvoDisabled_4.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_4.cpp`</a>
     * <a href="/Idioms/Rvo/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">✅ `Rvo.cpp`</a>
-    * <a href="/Idioms/Rvo/RvoDisabled.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled.cpp`</a>
+    * <a href="/Idioms/Rvo/RvoDisabled_1.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_1.cpp`</a>
+    * <a href="/Idioms/Rvo/RvoDisabled_3.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_3.cpp`</a>
+    * <a href="/Idioms/Rvo/RvoDisabled_2.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_2.cpp`</a>
 
     </details>
 
