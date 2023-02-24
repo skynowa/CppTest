@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-Feb-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **24-Feb-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [C](#c "[ ] C language features") █████████░ 🚩91% (11)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (184)
+- [C](#c "[ ] C language features") █████████░ 🚩92% (12)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (185)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -75,8 +75,9 @@
 
 </details>
 
-##  <a title="[ ] C language features" id="c">C █████████░ 🚩91% (11)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C language features" id="c">C █████████░ 🚩92% (12)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
 * <a href="/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
@@ -97,7 +98,7 @@
 
     </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (184)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (185)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -258,9 +259,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Conditions 100% (1)</summary>
+    <summary>📁 ✅ Conditions 100% (2)</summary>
 
     * <a href="/Core/Conditions/If.cpp" title="">✅ `If.cpp`</a>
+    * <a href="/Core/Conditions/IfDecInc.cpp" title="If with post/pre increment operators">✅ `IfDecInc.cpp`</a>
 
     </details>
 
