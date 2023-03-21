@@ -4,7 +4,7 @@
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩92% (12)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩92% (187)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (187)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -98,7 +98,7 @@
 
     </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩92% (187)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (187)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -523,11 +523,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Virtual 75% (8)</summary>
+    <summary>📁 ⌛ Virtual 88% (8)</summary>
 
     * <a href="/Core/Virtual/Function1.cpp" title="">✅ `Function1.cpp`</a>
     * <a href="/Core/Virtual/PureVirtualCall.cpp" title="">❌ PureVirtualCall.cpp</a>
-    * <a href="/Core/Virtual/DiamondInheritance.cpp" title="">❌ DiamondInheritance.cpp</a>
+    * <a href="/Core/Virtual/DiamondInheritance.cpp" title="">✅ `DiamondInheritance.cpp`</a>
     * <a href="/Core/Virtual/Inheritance2.cpp" title="virtual inheritance">🖊 `Inheritance2.cpp`</a>
     * <a href="/Core/Virtual/Pure.cpp" title="">✅ `Pure.cpp`</a>
     * <a href="/Core/Virtual/Inheritance1.cpp" title="">🖊 `Inheritance1.cpp`</a>
