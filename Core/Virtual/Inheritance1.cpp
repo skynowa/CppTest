@@ -10,40 +10,36 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class IInterface
+struct IInterface
 {
-public:
              IInterface() { STD_TRACE_FUNC; };
     virtual ~IInterface() { STD_TRACE_FUNC; };
 
     virtual void foo() = 0;
 };
 //--------------------------------------------------------------------------------------------------
-class A :
-    public /* virtual */ IInterface
+struct A :
+    /* virtual */ IInterface
 {
-public:
              A() { STD_TRACE_FUNC; };
     virtual ~A() { STD_TRACE_FUNC; };
 
     void foo() override { STD_TRACE_FUNC; };
 };
 //--------------------------------------------------------------------------------------------------
-class B :
-    public /* virtual */ IInterface
+struct B :
+    /* virtual */ IInterface
 {
-public:
              B() { STD_TRACE_FUNC; };
     virtual ~B() { STD_TRACE_FUNC; };
 
     void foo() override { STD_TRACE_FUNC; };
 };
 //--------------------------------------------------------------------------------------------------
-class X final :
-    public A,
-    public B
+struct X final :
+    A,
+    B
 {
-public:
      X() { STD_TRACE_FUNC; };
     ~X() final { STD_TRACE_FUNC; };
 
