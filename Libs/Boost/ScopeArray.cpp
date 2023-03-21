@@ -8,6 +8,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
+#if BOOST_VERSION > 0
+
 #include <boost/scoped_array.hpp>
 //-------------------------------------------------------------------------------------------------
 class Printer
@@ -29,12 +31,18 @@ private:
 
 	int _id {};
 };
+
+#endif
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+#if BOOST_VERSION > 0
 	{
 		boost::scoped_array<Printer> p2(new Printer[5]);
 	}
+#else
+	std::cout << "Boost - not instaled, skip" << std::endl;
+#endif
 
 	return EXIT_SUCCESS;
 }

@@ -8,6 +8,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
+#if BOOST_VERSION > 0
+
 #include <boost/bind/bind.hpp>
 #include <boost/function.hpp>
 //-------------------------------------------------------------------------------------------------
@@ -23,9 +25,12 @@ public:
 	void play() { STD_TRACE_FUNC; };
 	void stop() { STD_TRACE_FUNC; };
 };
+
+#endif
 //-------------------------------------------------------------------------------------------------
 int main(int , char **)
 {
+#if BOOST_VERSION > 0
 	Player player;
 
 	{
@@ -39,6 +44,9 @@ int main(int , char **)
 		btn.onClick = boost::bind(&Player::stop, &player);
 		btn.onClick();
 	}
+#else
+	std::cout << "Boost - not instaled, skip" << std::endl;
+#endif
 
     return EXIT_SUCCESS;
 }

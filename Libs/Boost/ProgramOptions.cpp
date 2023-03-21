@@ -10,6 +10,8 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 
+#if BOOST_VERSION > 0
+
 #include <boost/program_options.hpp>
 //-------------------------------------------------------------------------------------------------
 void
@@ -17,9 +19,12 @@ toCout(const std::vector<std::string> &v)
 {
 	std::copy(v.cbegin(), v.cend(), std::ostream_iterator<std::string>{std::cout, "\n"});
 }
+
+#endif
 //-------------------------------------------------------------------------------------------------
 int main(int argc, const char *argv[])
 {
+#if BOOST_VERSION > 0
 	namespace po = boost::program_options;
 
 	try {
@@ -76,6 +81,12 @@ int main(int argc, const char *argv[])
 	catch (...) {
 		std::cout << "Unknown exception" << std::endl;
 	}
+#else
+	STD_UNUSED(argc);
+	STD_UNUSED(argv);
+
+	std::cout << "Boost - not instaled, skip" << std::endl;
+#endif
 
 	return EXIT_SUCCESS;
 }
