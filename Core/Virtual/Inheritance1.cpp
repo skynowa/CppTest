@@ -19,33 +19,33 @@ public:
     virtual void vFoo() = 0;
 };
 //--------------------------------------------------------------------------------------------------
-class CA :
+class A :
     public /* virtual */ IInterface
 {
 public:
-             CA() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~CA() { std::cout << __FUNCTION__ << std::endl; };
+             A() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~A() { std::cout << __FUNCTION__ << std::endl; };
 
     virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //--------------------------------------------------------------------------------------------------
-class CB :
+class B :
     public /* virtual */ IInterface
 {
 public:
-             CB() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~CB() { std::cout << __FUNCTION__ << std::endl; };
+             B() { std::cout << __FUNCTION__ << std::endl; };
+    virtual ~B() { std::cout << __FUNCTION__ << std::endl; };
 
     virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
 };
 //--------------------------------------------------------------------------------------------------
-class CX final :
-    public CA,
-    public CB
+class X final :
+    public A,
+    public B
 {
 public:
-     CX() { std::cout << __FUNCTION__ << std::endl; };
-    ~CX() final { std::cout << __FUNCTION__ << std::endl; };
+     X() { std::cout << __FUNCTION__ << std::endl; };
+    ~X() final { std::cout << __FUNCTION__ << std::endl; };
 
     void vFoo() final { std::cout << __FUNCTION__ << std::endl; };
 };
@@ -54,21 +54,21 @@ int main(int, char **)
 {
 	//-------------------------------------
 	{
-		CX x;
+		X x;
 	}
 
     #if OUTPUT
 
         // without virtual inheritance
         IInterface::IInterface
-        CA::CA
+        A::A
         IInterface::IInterface
-        CB::CB
-        CX::CX
-        CX::~CX
-        CB::~CB
+        B::B
+        X::X
+        X::~X
+        B::~B
         IInterface::~IInterface
-        CA::~CA
+        A::~A
         IInterface::~IInterface
 
     #endif
@@ -77,12 +77,12 @@ int main(int, char **)
 
         // with virtual inheritance
         IInterface::IInterface
-        CA::CA
-        CB::CB
-        CX::CX
-        CX::~CX
-        CB::~CB
-        CA::~CA
+        A::A
+        B::B
+        X::X
+        X::~X
+        B::~B
+        A::~A
         IInterface::~IInterface
 
     #endif
@@ -91,16 +91,16 @@ int main(int, char **)
 
 	//-------------------------------------
 	{
-		CA *pI = new CA();
+		A *pI = new A();
 		pI->vFoo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
-        CA::CA
-        CA::vFoo
-        CA::~CA
+        A::A
+        A::vFoo
+        A::~A
         IInterface::~IInterface
     #endif
 
@@ -108,16 +108,16 @@ int main(int, char **)
 
 	//-------------------------------------
 	{
-		CB *pI = new CB();
+		B *pI = new B();
 		pI->vFoo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
-        CB::CB
-        CB::vFoo
-        CB::~CB
+        B::B
+        B::vFoo
+        B::~B
         IInterface::~IInterface
     #endif
 
@@ -125,16 +125,16 @@ int main(int, char **)
 
 	//-------------------------------------
 	{
-		IInterface *pI = new CA();
+		IInterface *pI = new A();
 		pI->vFoo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
-        CA::CA
-        CA::vFoo
-        CA::~CA
+        A::A
+        A::vFoo
+        A::~A
         IInterface::~IInterface
     #endif
 
@@ -142,16 +142,16 @@ int main(int, char **)
 
 	//-------------------------------------
 	{
-		IInterface *pI = new CB();
+		IInterface *pI = new B();
 		pI->vFoo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
-        CB::CB
-        CB::vFoo
-        CB::~CB
+        B::B
+        B::vFoo
+        B::~B
         IInterface::~IInterface
     #endif
 
@@ -165,38 +165,38 @@ int main(int, char **)
 #if OUTPUT
 
 IInterface
-CA
+A
 IInterface
-CB
-CX
-~CX
-~CB
+B
+X
+~X
+~B
 ~IInterface
-~CA
-~IInterface
--------------------------
-IInterface
-CA
-vFoo
-~CA
+~A
 ~IInterface
 -------------------------
 IInterface
-CB
+A
 vFoo
-~CB
+~A
 ~IInterface
 -------------------------
 IInterface
-CA
+B
 vFoo
-~CA
+~B
 ~IInterface
 -------------------------
 IInterface
-CB
+A
 vFoo
-~CB
+~A
+~IInterface
+-------------------------
+IInterface
+B
+vFoo
+~B
 ~IInterface
 -------------------------
 
