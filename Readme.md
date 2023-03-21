@@ -523,10 +523,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Virtual 88% (8)</summary>
+    <summary>📁 ✅ Virtual 100% (8)</summary>
 
     * <a href="/Core/Virtual/Function1.cpp" title="">✅ `Function1.cpp`</a>
-    * <a href="/Core/Virtual/PureVirtualCall.cpp" title="">❌ PureVirtualCall.cpp</a>
+    * <a href="/Core/Virtual/PureVirtualCall.cpp" title="">✅ `PureVirtualCall.cpp`</a>
     * <a href="/Core/Virtual/DiamondInheritance.cpp" title="Virtual inheritance">✅ `DiamondInheritance.cpp`</a>
     * <a href="/Core/Virtual/Inheritance2.cpp" title="Virtual inheritance">✅ `Inheritance2.cpp`</a>
     * <a href="/Core/Virtual/Pure.cpp" title="">✅ `Pure.cpp`</a>
