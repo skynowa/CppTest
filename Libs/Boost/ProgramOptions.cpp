@@ -19,8 +19,9 @@ toCout(const std::vector<std::string> &v)
 {
 	std::copy(v.cbegin(), v.cend(), std::ostream_iterator<std::string>{std::cout, "\n"});
 }
-
+//-------------------------------------------------------------------------------------------------
 #endif
+
 //-------------------------------------------------------------------------------------------------
 int main(int argc, const char *argv[])
 {
