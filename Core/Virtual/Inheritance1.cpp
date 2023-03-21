@@ -13,30 +13,30 @@
 class IInterface
 {
 public:
-             IInterface() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~IInterface() { std::cout << __FUNCTION__ << std::endl; };
+             IInterface() { STD_TRACE_FUNC; };
+    virtual ~IInterface() { STD_TRACE_FUNC; };
 
-    virtual void vFoo() = 0;
+    virtual void foo() = 0;
 };
 //--------------------------------------------------------------------------------------------------
 class A :
     public /* virtual */ IInterface
 {
 public:
-             A() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~A() { std::cout << __FUNCTION__ << std::endl; };
+             A() { STD_TRACE_FUNC; };
+    virtual ~A() { STD_TRACE_FUNC; };
 
-    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    void foo() override { STD_TRACE_FUNC; };
 };
 //--------------------------------------------------------------------------------------------------
 class B :
     public /* virtual */ IInterface
 {
 public:
-             B() { std::cout << __FUNCTION__ << std::endl; };
-    virtual ~B() { std::cout << __FUNCTION__ << std::endl; };
+             B() { STD_TRACE_FUNC; };
+    virtual ~B() { STD_TRACE_FUNC; };
 
-    virtual void vFoo() { std::cout << __FUNCTION__ << std::endl; };
+    void foo() override { STD_TRACE_FUNC; };
 };
 //--------------------------------------------------------------------------------------------------
 class X final :
@@ -44,10 +44,10 @@ class X final :
     public B
 {
 public:
-     X() { std::cout << __FUNCTION__ << std::endl; };
-    ~X() final { std::cout << __FUNCTION__ << std::endl; };
+     X() { STD_TRACE_FUNC; };
+    ~X() final { STD_TRACE_FUNC; };
 
-    void vFoo() final { std::cout << __FUNCTION__ << std::endl; };
+    void foo() final { STD_TRACE_FUNC; };
 };
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -92,14 +92,14 @@ int main(int, char **)
 	//-------------------------------------
 	{
 		A *pI = new A();
-		pI->vFoo();
+		pI->foo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
         A::A
-        A::vFoo
+        A::foo
         A::~A
         IInterface::~IInterface
     #endif
@@ -109,14 +109,14 @@ int main(int, char **)
 	//-------------------------------------
 	{
 		B *pI = new B();
-		pI->vFoo();
+		pI->foo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
         B::B
-        B::vFoo
+        B::foo
         B::~B
         IInterface::~IInterface
     #endif
@@ -126,14 +126,14 @@ int main(int, char **)
 	//-------------------------------------
 	{
 		IInterface *pI = new A();
-		pI->vFoo();
+		pI->foo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
         A::A
-        A::vFoo
+        A::foo
         A::~A
         IInterface::~IInterface
     #endif
@@ -143,14 +143,14 @@ int main(int, char **)
 	//-------------------------------------
 	{
 		IInterface *pI = new B();
-		pI->vFoo();
+		pI->foo();
 		delete pI;
 	}
 
     #if OUTPUT
         IInterface::IInterface
         B::B
-        B::vFoo
+        B::foo
         B::~B
         IInterface::~IInterface
     #endif
@@ -177,25 +177,25 @@ X
 -------------------------
 IInterface
 A
-vFoo
+foo
 ~A
 ~IInterface
 -------------------------
 IInterface
 B
-vFoo
+foo
 ~B
 ~IInterface
 -------------------------
 IInterface
 A
-vFoo
+foo
 ~A
 ~IInterface
 -------------------------
 IInterface
 B
-vFoo
+foo
 ~B
 ~IInterface
 -------------------------
