@@ -1,6 +1,6 @@
 /**
- * \file  Pure.cpp
- * \brief
+ * \file  PureVirtualCall1.cpp
+ * \brief WITHOUT PVC exception
  */
 
 
@@ -8,41 +8,46 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class A
+struct A
 {
-public:
-    virtual ~A() = default;
-
-    void bar()
+    A()
     {
+        STD_TRACE_FUNC;
+    }
+
+    virtual ~A()
+    {
+        STD_TRACE_FUNC;
+    }
+
+    void test() const
+    {
+        STD_TRACE_FUNC;
+
         foo();
     }
 
-private: /* or public */
-    virtual void foo()
+    virtual void foo() const
     {
-        std::cout << __FUNCTION__ << std::endl;
+        std::cout << '\t' << "A::foo()" << std::endl;
     }
 };
 //---------------------------------------------------------------------------
-class B:
-    public A
+struct B:
+    A
 {
-private: /* or public */
-    void foo() final
+    void foo() const final
     {
-        std::cout << __FUNCTION__ << std::endl;
+        std::cout << '\t' << "B::foo()" << std::endl;
     }
 };
 //---------------------------------------------------------------------------
 int main(int, char **)
 {
     A *a = new B();
-    a->bar();
+    a->test();
 
     delete a;
-
-    // std::cout << "" << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -51,6 +56,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-B::foo
+	::: A :::
+	::: test :::
+	B::foo()
+	::: ~A :::
 
 #endif

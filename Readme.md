@@ -526,10 +526,10 @@
     <summary>📁 ✅ Virtual 100% (8)</summary>
 
     * <a href="/Core/Virtual/Function1.cpp" title="">✅ `Function1.cpp`</a>
-    * <a href="/Core/Virtual/PureVirtualCall.cpp" title="">✅ `PureVirtualCall.cpp`</a>
+    * <a href="/Core/Virtual/PureVirtualCall1.cpp" title="WITHOUT PVC exception">✅ `PureVirtualCall1.cpp`</a>
     * <a href="/Core/Virtual/DiamondInheritance.cpp" title="Virtual inheritance">✅ `DiamondInheritance.cpp`</a>
+    * <a href="/Core/Virtual/PureVirtualCall2.cpp" title="WITH PVC exception">✅ `PureVirtualCall2.cpp`</a>
     * <a href="/Core/Virtual/Inheritance2.cpp" title="Virtual inheritance">✅ `Inheritance2.cpp`</a>
-    * <a href="/Core/Virtual/Pure.cpp" title="">✅ `Pure.cpp`</a>
     * <a href="/Core/Virtual/Inheritance1.cpp" title="Virtual inheritance">✅ `Inheritance1.cpp`</a>
     * <a href="/Core/Virtual/FAQ.md" title="">✅ `📝 FAQ.md`</a>
     * <a href="/Core/Virtual/Function2.cpp" title="">✅ `Function2.cpp`</a>
