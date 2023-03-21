@@ -1,8 +1,6 @@
 /**
  * \file  Inheritance1.cpp
- * \brief
- *
- * \review
+ * \brief Virtual inheritance
  */
 
 

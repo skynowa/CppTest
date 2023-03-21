@@ -1,6 +1,6 @@
 /**
  * \file  DiamondInheritance.cpp
- * \brief
+ * \brief Virtual inheritance
  *
  * \see   https://www.youtube.com/watch?v=7g8HufwNa0g&t=974s
  */

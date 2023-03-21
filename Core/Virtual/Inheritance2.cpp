@@ -1,8 +1,6 @@
 /**
  * \file  Inheritance2.cpp
- * \brief virtual inheritance
- *
- * \review
+ * \brief Virtual inheritance
  */
 
 
@@ -10,69 +8,65 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-class A
+struct A
 {
-public:
     A ()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 
     virtual ~A()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 };
-//---------------------------------------------------------------------------
-class B1 :
-    public virtual A
+//--------------------------------------------------------------------------------------------------
+struct B1 :
+    virtual A
 {
-public:
     B1()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 };
 
-class B2 :
-    public virtual A
+struct B2 :
+    virtual A
 {
-public:
     B2()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 };
 
-class B3 :
-    public virtual A
+struct B3 :
+    virtual A
 {
-public:
     B3()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 };
-//---------------------------------------------------------------------------
-class C :
-    public virtual B1,
-    public virtual B2,
-    public virtual B3
+//--------------------------------------------------------------------------------------------------
+struct C :
+    virtual B1,
+    virtual B2,
+    virtual B3
 {
 public:
     C()
     {
-        std::cout << __FUNCTION__ << std::endl;
+        STD_TRACE_FUNC;
     }
 };
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    C objC;
+    C c;
 
     return EXIT_SUCCESS;
 }
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 
 
 #if OUTPUT

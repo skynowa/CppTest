@@ -527,10 +527,10 @@
 
     * <a href="/Core/Virtual/Function1.cpp" title="">✅ `Function1.cpp`</a>
     * <a href="/Core/Virtual/PureVirtualCall.cpp" title="">❌ PureVirtualCall.cpp</a>
-    * <a href="/Core/Virtual/DiamondInheritance.cpp" title="">✅ `DiamondInheritance.cpp`</a>
-    * <a href="/Core/Virtual/Inheritance2.cpp" title="virtual inheritance">🖊 `Inheritance2.cpp`</a>
+    * <a href="/Core/Virtual/DiamondInheritance.cpp" title="Virtual inheritance">✅ `DiamondInheritance.cpp`</a>
+    * <a href="/Core/Virtual/Inheritance2.cpp" title="Virtual inheritance">✅ `Inheritance2.cpp`</a>
     * <a href="/Core/Virtual/Pure.cpp" title="">✅ `Pure.cpp`</a>
-    * <a href="/Core/Virtual/Inheritance1.cpp" title="">🖊 `Inheritance1.cpp`</a>
+    * <a href="/Core/Virtual/Inheritance1.cpp" title="Virtual inheritance">✅ `Inheritance1.cpp`</a>
     * <a href="/Core/Virtual/FAQ.md" title="">✅ `📝 FAQ.md`</a>
     * <a href="/Core/Virtual/Function2.cpp" title="">✅ `Function2.cpp`</a>
 
