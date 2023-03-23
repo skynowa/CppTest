@@ -112,8 +112,8 @@ jobs:
         run: >-
             conan install
             "${{github.workspace}}/${{github.event.repository.name}}/${{matrix.config.conan_file}}"
-            --install-folder "${{github.workspace}}/${{github.event.repository.name}}_build"
-            --output-folder  "${{github.workspace}}/${{github.event.repository.name}}_build"
+            --install-folder "${{github.workspace}}/${{github.event.repository.name}}_conan"
+            --output-folder  "${{github.workspace}}/${{github.event.repository.name}}_conan"
             --profile "${{github.workspace}}/${{github.event.repository.name}}/${{matrix.config.conan_profile}}"
             --build=missing
             --update
