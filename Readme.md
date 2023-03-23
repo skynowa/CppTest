@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **21-Mar-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Mar-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -247,7 +247,7 @@
       <summary>📁 ✅ Hierarchy 100% (2)</summary>
 
         * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
-        * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="class hierarchy">✅ `Hierarchy.cpp`</a>
+        * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="Struct hierarchy">✅ `Hierarchy.cpp`</a>
 
       </details>
 

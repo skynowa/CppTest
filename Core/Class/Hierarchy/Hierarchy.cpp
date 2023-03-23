@@ -9,15 +9,21 @@
 #include <Stl.h>
 
 /**************************************************************************************************
-*   Member of class
+*   Members of class
 *
 **************************************************************************************************/
 
 //-------------------------------------------------------------------------------------------------
-struct Value
+struct Value1
 {
-	 Value() { STD_TRACE_FUNC; }
-	~Value() { STD_TRACE_FUNC; }
+	 Value1() { STD_TRACE_FUNC; }
+	~Value1() { STD_TRACE_FUNC; }
+};
+//--------------------------------------------------------------------------------------------------
+struct Value2
+{
+	 Value2() { STD_TRACE_FUNC; }
+	~Value2() { STD_TRACE_FUNC; }
 };
 //--------------------------------------------------------------------------------------------------
 
@@ -82,7 +88,8 @@ struct Final final :
     A3,
     B2
 {
-	Value value;
+	Value1 value1;
+	Value2 value2;
 
 	Final() { STD_TRACE_FUNC; }
    ~Final() { STD_TRACE_FUNC; }
@@ -107,9 +114,11 @@ int main(int, char **)
 ::: C1 :::
 ::: B2 :::
 
-::: Value :::
+::: Value1 :::
+::: Value2 :::
 ::: Final :::
 ::: ~Final :::
-::: ~Value :::
+::: ~Value2 :::
+::: ~Value1 :::
 
 #endif
