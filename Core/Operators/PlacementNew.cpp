@@ -13,7 +13,7 @@
 class A
 {
 public:
-	A(const std::size_t a_x) :
+	explicit A(const std::size_t a_x) :
 		_x{a_x}
 	{
 		STD_TRACE_FUNC;
@@ -34,7 +34,7 @@ int main(int, char **)
 	{
 		const std::size_t n {5};
 
-		A *placementBuff = static_cast<A *>(operator new[] (n * sizeof(A)));
+		auto *placementBuff = static_cast<A *>(operator new[] (n * sizeof(A)));
 
 		for (std::size_t i = 0; i < n; ++ i) {
 			// здесь память для объекта не выделяется, но инициализируется
