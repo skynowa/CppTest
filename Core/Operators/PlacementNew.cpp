@@ -1,8 +1,6 @@
 /**
  * \file  PlacementNew.cpp
  * \brief Placement new allows you to construct an object on memory that's already allocated
- *
- * \review
  */
 
 
@@ -39,8 +37,10 @@ int main(int, char **)
 		auto *buff = static_cast<A *>(operator new[] (n * sizeof(A)));
 
 		for (std::size_t i = 0; i < n; ++ i) {
+			const std::size_t x = std::rand();
+
 			// здесь память для объекта не выделяется, но инициализируется
-			new (buff + i) A(rand());
+			new (buff + i) A(x);
 		}
 
 		// деинициализация памяти
@@ -55,7 +55,7 @@ int main(int, char **)
 
 	// sample 2
 	{
-		std::cout << "Sample #2:" << std::endl;
+		std::cout << "\nSample #2:" << std::endl;
 
 		using T = char;
 
@@ -68,7 +68,8 @@ int main(int, char **)
 		T *ptr = new (buff) T;
 
 		// test
-		strcpy(ptr, "ABCDEF");
+		std::strcpy(ptr, "ABCDEF");
+
 		std::cout << "\t" << STD_TRACE_VAR(ptr) << std::endl;
 
 		// destruct
