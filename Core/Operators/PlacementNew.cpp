@@ -32,22 +32,22 @@ int main(int, char **)
 {
 	// sample 1
 	{
-		const std::size_t n {5};
+		const std::size_t n = 5;
 
-		auto *placementBuff = static_cast<A *>(operator new[] (n * sizeof(A)));
+		auto *buff = static_cast<A *>(operator new[] (n * sizeof(A)));
 
 		for (std::size_t i = 0; i < n; ++ i) {
 			// здесь память для объекта не выделяется, но инициализируется
-			new (placementBuff + i) A(rand());
+			new (buff + i) A(rand());
 		}
 
 		// деинициализация памяти
 		{
 			for (std::size_t i = 0; i < n; ++ i) {
-				placementBuff[i].~A();
+				buff[i].~A();
 			}
 
-			operator delete[] (placementBuff);
+			operator delete[] (buff);
 		}
 	}
 
@@ -55,13 +55,13 @@ int main(int, char **)
 	{
 		using T = char;
 
-		const std::size_t n {7};
+		const std::size_t n = 7;
 
 		// allocate memory
-		T *placementBuff = new T[n * sizeof(T)];
+		T *buff = new T[n * sizeof(T)];
 
 		// construct in allocated storage ("place")
-		T *ptr = new(placementBuff) T;
+		T *ptr = new (buff) T;
 
 		// test
 		strcpy(ptr, "ABCDEF");
@@ -71,7 +71,7 @@ int main(int, char **)
 		ptr->~T();
 
 		// deallocate memory
-		delete [] placementBuff;
+		delete [] buff;
 	}
 
     return EXIT_SUCCESS;
