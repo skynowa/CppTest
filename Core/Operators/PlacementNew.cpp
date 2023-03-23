@@ -32,6 +32,8 @@ int main(int, char **)
 {
 	// sample 1
 	{
+		std::cout << "Sample #1:" << std::endl;
+
 		const std::size_t n = 5;
 
 		auto *buff = static_cast<A *>(operator new[] (n * sizeof(A)));
@@ -53,6 +55,8 @@ int main(int, char **)
 
 	// sample 2
 	{
+		std::cout << "Sample #2:" << std::endl;
+
 		using T = char;
 
 		const std::size_t n = 7;
@@ -65,7 +69,7 @@ int main(int, char **)
 
 		// test
 		strcpy(ptr, "ABCDEF");
-		std::cout << STD_TRACE_VAR(ptr) << std::endl;
+		std::cout << "\t" << STD_TRACE_VAR(ptr) << std::endl;
 
 		// destruct
 		ptr->~T();
@@ -81,6 +85,7 @@ int main(int, char **)
 
 #if OUTPUT
 
+Sample #1:
 	::: A :::
 	::: A :::
 	::: A :::
@@ -91,6 +96,8 @@ int main(int, char **)
 	::: ~A :::
 	::: ~A :::
 	::: ~A :::
-ptr: ABCDEF
+
+Sample #2:
+	ptr: ABCDEF
 
 #endif
