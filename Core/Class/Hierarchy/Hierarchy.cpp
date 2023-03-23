@@ -34,19 +34,13 @@ struct Value2
 **************************************************************************************************/
 
 //--------------------------------------------------------------------------------------------------
-struct A1
+struct A
 {
-    A1() { STD_TRACE_FUNC; }
-};
-
-struct A2 :
-    A1
-{
-    A2() { STD_TRACE_FUNC; }
+    A() { STD_TRACE_FUNC; }
 };
 
 struct A_Impl :
-    A2
+    A
 {
     A_Impl() { STD_TRACE_FUNC; std::cout << std::endl; }
 };
@@ -59,19 +53,19 @@ struct A_Impl :
 **************************************************************************************************/
 
 //--------------------------------------------------------------------------------------------------
-struct B1
+struct B
 {
-    B1() { STD_TRACE_FUNC; }
+    B() { STD_TRACE_FUNC; }
 };
 
-struct C1
+struct C
 {
-    C1() { STD_TRACE_FUNC; }
+    C() { STD_TRACE_FUNC; }
 };
 
 struct B_Impl :
-    B1,
-    C1
+    B,
+    C
 {
 	B_Impl() { STD_TRACE_FUNC; std::cout << std::endl; }
 };
@@ -106,12 +100,11 @@ int main(int, char **)
 
 #if OUTPUT
 
-::: A1 :::
-::: A2 :::
+::: A :::
 ::: A_Impl :::
 
-::: B1 :::
-::: C1 :::
+::: B :::
+::: C :::
 ::: B_Impl :::
 
 ::: Value1 :::
