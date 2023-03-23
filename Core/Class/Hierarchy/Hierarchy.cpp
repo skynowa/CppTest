@@ -45,10 +45,10 @@ struct A2 :
     A2() { STD_TRACE_FUNC; }
 };
 
-struct A3 :
+struct A_Impl :
     A2
 {
-    A3() { STD_TRACE_FUNC; std::cout << std::endl; }
+    A_Impl() { STD_TRACE_FUNC; std::cout << std::endl; }
 };
 //--------------------------------------------------------------------------------------------------
 
@@ -69,11 +69,11 @@ struct C1
     C1() { STD_TRACE_FUNC; }
 };
 
-struct B2 :
+struct B_Impl :
     B1,
     C1
 {
-    B2() { STD_TRACE_FUNC; std::cout << std::endl; }
+	B_Impl() { STD_TRACE_FUNC; std::cout << std::endl; }
 };
 //--------------------------------------------------------------------------------------------------
 
@@ -85,8 +85,8 @@ struct B2 :
 
 //--------------------------------------------------------------------------------------------------
 struct Final final :
-    A3,
-    B2
+	A_Impl,
+	B_Impl
 {
 	Value1 value1;
 	Value2 value2;
@@ -108,11 +108,11 @@ int main(int, char **)
 
 ::: A1 :::
 ::: A2 :::
-::: A3 :::
+::: A_Impl :::
 
 ::: B1 :::
 ::: C1 :::
-::: B2 :::
+::: B_Impl :::
 
 ::: Value1 :::
 ::: Value2 :::
