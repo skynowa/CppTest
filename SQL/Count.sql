@@ -22,7 +22,7 @@ FROM
 #--------------------------------------------------------------------------------------------------
 SELECT
     count(IF(status = 'Cancelled', 1, NULL)) AS 'Cancelled',
-    count(IF(status = 'On Hold',   1, NULL)) AS 'OnHold',
+    count(IF(status = 'OnHold',    1, NULL)) AS 'OnHold',
     count(IF(status = 'Disputed',  1, NULL)) AS 'Disputed'
 FROM
     orders;
