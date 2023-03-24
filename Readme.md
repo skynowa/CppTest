@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Mar-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **24-Mar-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -19,7 +19,7 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (18)
+- [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 23% (84)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
@@ -407,7 +407,7 @@
     * <a href="/Core/Operators/In.cpp" title="">✅ `In.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="Decrement, increment and sequence point">🖊 `DecIncInt.cpp`</a>
-    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">🖊 `PlacementNew.cpp`</a>
+    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">✅ `PlacementNew.cpp`</a>
     * <a href="/Core/Operators/NewDelete.cpp" title="replace operator new and delete to log allocations">✅ `NewDelete.cpp`</a>
 
     </details>
@@ -960,7 +960,7 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🔥89% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🔥89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
@@ -972,6 +972,7 @@
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
 * <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
+* <a href="/SQL/Count.sql" title="COUNT - returns the number of records returned by a select query">✅ `Count.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 
 </details>
