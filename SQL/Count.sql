@@ -21,9 +21,9 @@ FROM
 # 42,       42,        42,       42,       42,       0
 #--------------------------------------------------------------------------------------------------
 SELECT
-    count(IF(status = 'Cancelled', 1, NULL)) 'Cancelled',
-    count(IF(status = 'On Hold',   1, NULL)) 'OnHold',
-    count(IF(status = 'Disputed',  1, NULL)) 'Disputed'
+    count(IF(status = 'Cancelled', 1, NULL)) AS 'Cancelled',
+    count(IF(status = 'On Hold',   1, NULL)) AS 'OnHold',
+    count(IF(status = 'Disputed',  1, NULL)) AS 'Disputed'
 FROM
     orders;
 
