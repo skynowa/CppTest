@@ -1,6 +1,6 @@
  /*
  * \file  Hierarchy.cpp
- * \brief Struct hierarchy
+ * \brief Hierarchy structure
  */
 
 

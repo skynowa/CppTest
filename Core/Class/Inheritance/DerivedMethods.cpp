@@ -1,5 +1,5 @@
 /**
- * \file  InheritanceFunctions.cpp
+ * \file  DerivedMethods.cpp
  * \brief Call derived methods
  */
 

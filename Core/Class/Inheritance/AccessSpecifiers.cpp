@@ -1,6 +1,6 @@
 /**
- * \file  Inheritance.cpp
- * \brief Access level
+ * \file  AccessSpecifiers.cpp
+ * \brief Access specifiers
  */
 
 
@@ -16,8 +16,11 @@ public:
 };
 //--------------------------------------------------------------------------------------------------
 class B :
-	// protected A - error: ‘I’ is an inaccessible base of ‘A’
+#if 0
+	protected A // error: ‘A’ is an inaccessible base of ‘B’
+#else
 	public A
+#endif
 {
 public:
 	B() { STD_TRACE_FUNC; }

@@ -227,7 +227,6 @@
   * <details close>
     <summary>📁 ✅ Class 100% (17)</summary>
 
-    * <a href="/Core/Class/InheritanceFunctions.cpp" title="Call derived methods">✅ `InheritanceFunctions.cpp`</a>
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
     * <a href="/Core/Class/QuotedString.java" title="EO sample">✅ `QuotedString.java`</a>
     * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
@@ -239,16 +238,17 @@
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
-    * <a href="/Core/Class/Inheritance.cpp" title="Access level">✅ `Inheritance.cpp`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Hierarchy 100% (2)</summary>
+      <summary>📁 ✅ Inheritance 100% (4)</summary>
 
-        * <a href="/Core/Class/Hierarchy/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
-        * <a href="/Core/Class/Hierarchy/Hierarchy.cpp" title="Struct hierarchy">✅ `Hierarchy.cpp`</a>
+        * <a href="/Core/Class/Inheritance/AccessSpecifiers.cpp" title="Access specifiers">✅ `AccessSpecifiers.cpp`</a>
+        * <a href="/Core/Class/Inheritance/DerivedMethods.cpp" title="Call derived methods">✅ `DerivedMethods.cpp`</a>
+        * <a href="/Core/Class/Inheritance/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
+        * <a href="/Core/Class/Inheritance/Hierarchy.cpp" title="Hierarchy structure">✅ `Hierarchy.cpp`</a>
 
       </details>
 
