@@ -3,6 +3,7 @@
  * \brief DTO (Data transfer object)
  *
  * \see   https://en.wikipedia.org/wiki/Data_transfer_object
+ *        https://oatpp.io/docs/components/dto/#core-types
  * \todo
  */
 
