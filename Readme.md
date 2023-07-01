@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **06-Jun-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Jul-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -14,7 +14,7 @@
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
-- [Patterns](#patterns "[ ] Design pattern") ████░░░░░░ 41% (29)
+- [Patterns](#patterns "[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)") ████░░░░░░ 40% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
@@ -882,11 +882,18 @@
 
 </details>
 
-##  <a title="[ ] Design pattern" id="patterns">Patterns ████░░░░░░ 41% (29)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)" id="patterns">Patterns ████░░░░░░ 40% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
+
+  * <details close>
+    <summary>📁 ❌ Architectural 0% (1)</summary>
+
+    * <a href="/Patterns/Architectural/DTO.cpp" title="DTO (Data transfer object)">❌ DTO.cpp</a>
+
+    </details>
 
   * <details close>
     <summary>📁 ❌ Behavioral 0% (15)</summary>

@@ -1,14 +1,14 @@
 # FAQ
 
-[ ] Design pattern
+[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)
 
 ## Courses
 
-- [todo] https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns#Factory
-- [todo] https://foxminded.com.ua/grasp-gof-design-patterns-advanced-on-line-course
-- [todo] https://foxminded.com.ua/enterprise-patterns-advanced-course/
+- [ ] https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns#Factory
+- [ ] https://foxminded.com.ua/grasp-gof-design-patterns-advanced-on-line-course
+- [ ] https://foxminded.com.ua/enterprise-patterns-advanced-course/
 
-## [todo] Патерни проєктування
+## [ ] Патерни проєктування
 
 - Навіщо потрібні патерни? Які типи патернів розрізняють?
 - Недоліки патерну Singleton? Коли він доречний?
