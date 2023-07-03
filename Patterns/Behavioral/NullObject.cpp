@@ -17,7 +17,7 @@
 class IRecipient
 {
 public:
-	virtual ~IRecipient() { }
+	virtual ~IRecipient() = default;
 
 	virtual std::string name() const = 0;
 };
