@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Jul-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Jul-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -14,7 +14,7 @@
 - [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
-- [Patterns](#patterns "[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)") ████░░░░░░ 40% (30)
+- [Patterns](#patterns "[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)") ████░░░░░░ 43% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
@@ -882,7 +882,7 @@
 
 </details>
 
-##  <a title="[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)" id="patterns">Patterns ████░░░░░░ 40% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)" id="patterns">Patterns ████░░░░░░ 43% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -896,14 +896,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Behavioral 0% (15)</summary>
+    <summary>📁 ⌛ Behavioral 7% (15)</summary>
 
     * <a href="/Patterns/Behavioral/observer.cpp" title="">❌ observer.cpp</a>
     * <a href="/Patterns/Behavioral/mediator.cpp" title="">❌ mediator.cpp</a>
     * <a href="/Patterns/Behavioral/command.cpp" title="">❌ command.cpp</a>
+    * <a href="/Patterns/Behavioral/NullObject.cpp" title="Object with no referenced value or with defined neutral (null) behavior">✅ `NullObject.cpp`</a>
     * <a href="/Patterns/Behavioral/strategy.cpp" title="">❌ strategy.cpp</a>
     * <a href="/Patterns/Behavioral/template_method.cpp" title="">❌ template_method.cpp</a>
-    * <a href="/Patterns/Behavioral/null_object.cpp" title="">❌ null_object.cpp</a>
     * <a href="/Patterns/Behavioral/observer2.cpp" title="">❌ observer2.cpp</a>
     * <a href="/Patterns/Behavioral/interpreter.cpp" title="">❌ interpreter.cpp</a>
     * <a href="/Patterns/Behavioral/state.cpp" title="">❌ state.cpp</a>
