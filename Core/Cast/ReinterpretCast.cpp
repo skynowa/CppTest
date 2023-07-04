@@ -4,11 +4,9 @@
  */
 
 
-#include <iostream>
-#include <string.h>
-#include <stdio.h>
-#include <vector>
-
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 //---------------------------------------------------------------------------
 void
 func(unsigned char [])
@@ -16,10 +14,11 @@ func(unsigned char [])
 	std::cout << "void func(unsigned char []) << \n";
 }
 //---------------------------------------------------------------------------
-int main(void)
+int main()
 {
-	char* ptr = 0;
-	func(reinterpret_cast<unsigned char*>(ptr));
+	char *ptr {};
+
+	::func(reinterpret_cast<unsigned char *>(ptr));
 
 	return 0;
 }
