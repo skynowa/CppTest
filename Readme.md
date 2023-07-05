@@ -3,7 +3,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [C](#c "[ ] C language features") █████████░ 🚩92% (13)
+- [C](#c "[ ] C language features") █████████░ 🚩93% (14)
 - [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (188)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
@@ -75,7 +75,7 @@
 
 </details>
 
-##  <a title="[ ] C language features" id="c">C █████████░ 🚩92% (13)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C language features" id="c">C █████████░ 🚩93% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
@@ -83,6 +83,7 @@
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
 * <a href="/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
+* <a href="/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
 * <a href="/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
