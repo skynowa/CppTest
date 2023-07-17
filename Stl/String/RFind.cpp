@@ -10,26 +10,61 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-int main(int, char **)
+void
+log(
+    const std::string logTitle,
+    const std::string strOrig,
+    std::string       str,
+    const std::string key,
+    const std::size_t pos
+)
 {
-    const std::size_t size_max = 15;
-    const std::string strOrig  = "aaa|bbb|ccc|ddd";
+    std::cout
+        << "// " << logTitle << ": " << "\n"
+        << "key '" << key << "' at " << STD_TRACE_VAR(pos) << std::endl;
 
-    std::string       str      = strOrig;
-    const std::string key      = "|";
-
-    const std::size_t pos = str.rfind(key, size_max);
     if (pos == std::string::npos) {
-        return EXIT_FAILURE;
+        std::cout << STD_TRACE_VAR(key) << " - Not found" << std::endl;
+        return;
     }
 
-    std::cout << "key '" << key << "' at " << STD_TRACE_VAR(pos) << std::endl;
-
-    str.erase(pos);
+    str.erase(pos, std::string::npos);
 
     std::cout
-        << "Erase: "
-        << STD_TRACE_VAR(strOrig) << " -> " << STD_TRACE_VAR(str) << std::endl;
+        << "Erase:\n"
+        << STD_TRACE_VAR(strOrig) << " -> "
+        << STD_TRACE_VAR(str) << ", "<< STD_TRACE_VAR(str.size()) << "\n"
+        << std::endl;
+}
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
+    const std::string strOrig = "aaa|bbb|ccc|ddd|eee";
+    const std::size_t sizeMax = 15;
+
+    std::string       str     = strOrig;
+    const std::string key     = "|";
+
+    // BookedAvailGdsHotelRoom.xml
+    {
+        const std::size_t pos = str.rfind(key);
+
+        ::log("str.rfind(key)", strOrig, str, key, pos);
+    }
+
+    // BookedAvailGdsHotelRoom.xml
+    {
+        const std::size_t pos = str.rfind(key, sizeMax);
+
+        ::log("str.rfind(key, sizeMax)", strOrig, str, key, pos);
+    }
+
+    // AvailAffiliateHotelRoom.xml
+    {
+        const std::size_t pos = str.find(key, sizeMax);
+
+        ::log("str.find(key, sizeMax)", strOrig, str, key, pos);
+    }
 
     return EXIT_SUCCESS;
 }
@@ -38,14 +73,19 @@ int main(int, char **)
 
 #if OUTPUT
 
-// str.rfind(key);
-key '|' at pos: 11
-Erase: strOrig: aaa|bbb|ccc|ddd -> str: aaa|bbb|ccc
+// str.rfind(key):
+key '|' at pos: 15
+Erase:
+strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
 
+// str.rfind(key, sizeMax):
+key '|' at pos: 15
+Erase:
+strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
 
-// str.rfind(key, size_max);
-key '|' at pos: 11
-Erase: strOrig: aaa|bbb|ccc|ddd -> str: aaa|bbb|ccc
-
+// str.find(key, sizeMax):
+key '|' at pos: 15
+Erase:
+strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
 
 #endif
