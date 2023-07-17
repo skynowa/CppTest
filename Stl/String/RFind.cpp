@@ -12,11 +12,13 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    const std::string strOrig = "aaa|bbb|ccc|ddd";
-    std::string       str     = strOrig;
-    const std::string key     = "|";
+    const std::size_t size_max = 15;
+    const std::string strOrig  = "aaa|bbb|ccc|ddd";
 
-    const std::size_t pos = str.rfind(key);
+    std::string       str      = strOrig;
+    const std::string key      = "|";
+
+    const std::size_t pos = str.rfind(key, size_max);
     if (pos == std::string::npos) {
         return EXIT_FAILURE;
     }
@@ -36,7 +38,14 @@ int main(int, char **)
 
 #if OUTPUT
 
+// str.rfind(key);
 key '|' at pos: 11
 Erase: strOrig: aaa|bbb|ccc|ddd -> str: aaa|bbb|ccc
+
+
+// str.rfind(key, size_max);
+key '|' at pos: 11
+Erase: strOrig: aaa|bbb|ccc|ddd -> str: aaa|bbb|ccc
+
 
 #endif
