@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **05-Jul-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **17-Jul-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -21,7 +21,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 23% (84)
+- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 24% (85)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -1019,7 +1019,7 @@
 
 </details>
 
-##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 23% (84)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 24% (85)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1181,11 +1181,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ String 100% (3)</summary>
+    <summary>📁 ✅ String 100% (4)</summary>
 
     * <a href="/Stl/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
     * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">✅ `CstrNull.cpp`</a>
     * <a href="/Stl/String/StringWithNull.cpp" title="">✅ `StringWithNull.cpp`</a>
+    * <a href="/Stl/String/RFind.cpp" title="Find last occurrence of content in string">✅ `RFind.cpp`</a>
 
     </details>
 
