@@ -4,7 +4,6 @@
  *
  * \see   https://shaharmike.com/cpp/rvo/#when-rvo-doesn-t-can-t-happen
  *
- *
  * Assignment
  *
  * RVO can only happen when an object is created from a returned value.

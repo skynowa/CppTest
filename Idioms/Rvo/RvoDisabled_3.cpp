@@ -4,7 +4,6 @@
  *
  * \see   https://shaharmike.com/cpp/rvo/#when-rvo-doesn-t-can-t-happen
  *
- *
  * Returning by std::move()
  *
  * Returning by calling std::move() on the return value is an anti-pattern.

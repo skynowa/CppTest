@@ -4,7 +4,6 @@
  *
  * \see   https://shaharmike.com/cpp/rvo/#when-rvo-doesn-t-can-t-happen
  *
- *
  * Returning Member
  *
  * In some cases even an unnamed variable can’t RVO:

@@ -4,7 +4,6 @@
  *
  * \see   https://shaharmike.com/cpp/rvo/#when-rvo-doesn-t-can-t-happen
  *
- *
  * Returning a Parameter / Global
  *
  * When returning an object that is not created in the scope of the function

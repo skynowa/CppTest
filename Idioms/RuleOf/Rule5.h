@@ -14,6 +14,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+// Logs
 #if !defined(RULE_5_OPTION_LOG)
 	#define RULE_5_OPTION_LOG 0
 #endif
@@ -54,7 +55,7 @@ public:
 	friend std::ostream & operator << (std::ostream &os, const Rule5 &obj);
 
 private:
-	std::string _value {};
+	std::string _value;
 
 	void _log(const std::string &title, const std::string &msg) const;
 };

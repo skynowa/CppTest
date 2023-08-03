@@ -4,7 +4,6 @@
  *
  * \see   https://shaharmike.com/cpp/rvo/#when-rvo-doesn-t-can-t-happen
  *
- *
  * Deciding on Instance at Runtime
  *
  * When the compiler can’t know from within the function which instance will be returned
