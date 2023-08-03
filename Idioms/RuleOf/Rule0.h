@@ -37,7 +37,7 @@ public:
 	friend std::ostream & operator << (std::ostream &os, const Rule0 &obj);
 
 private:
-	std::string _value {};
+	std::string _value;
 
 	void _log(const std::string &title, const std::string &msg) const;
 };
