@@ -154,8 +154,8 @@ Rule5::_log(
 //--------------------------------------------------------------------------------------------------
 inline std::ostream &
 operator << (
-	std::ostream  &out_os,
-	const Rule5 &a_obj
+	std::ostream &out_os,
+	const Rule5  &a_obj
 )
 {
 	return out_os << "{" << a_obj._value << "}";

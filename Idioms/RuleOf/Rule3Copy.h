@@ -101,7 +101,7 @@ Rule3Copy::_log(
 //--------------------------------------------------------------------------------------------------
 inline std::ostream &
 operator << (
-	std::ostream  &out_os,
+	std::ostream    &out_os,
 	const Rule3Copy &a_obj
 )
 {

@@ -101,7 +101,7 @@ Rule3Move::_log(
 //--------------------------------------------------------------------------------------------------
 inline std::ostream &
 operator << (
-	std::ostream  &out_os,
+	std::ostream    &out_os,
 	const Rule3Move &a_obj
 )
 {
