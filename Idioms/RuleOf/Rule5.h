@@ -32,7 +32,6 @@ class Rule5
 public:
 	Rule5();
 	explicit Rule5(const std::string &value);
-	Rule5(const char *value);	// explicit - n/a
 
 #if RULE_5_OPTION_COPY
 	Rule5(const Rule5 &obj) noexcept;
@@ -71,15 +70,6 @@ Rule5::Rule5(
 	_value(a_value)
 {
 	_log("Ctor", "const std::string &");
-}
-//-------------------------------------------------------------------------------------------------
-// explicit - n/a
-Rule5::Rule5(
-	const char *a_value
-) :
-	_value(a_value)
-{
-	_log("Ctor", "const char *");
 }
 //-------------------------------------------------------------------------------------------------
 
