@@ -23,7 +23,6 @@ class Rule3Copy
 public:
 	Rule3Copy();
 	explicit Rule3Copy(const std::string &value);
-	Rule3Copy(const char *value);	// explicit - n/a
 
 	Rule3Copy(const Rule3Copy &obj) noexcept;
 	Rule3Copy & operator = (const Rule3Copy &obj) noexcept;
@@ -54,15 +53,6 @@ Rule3Copy::Rule3Copy(
 	_log("Ctor", "const std::string &");
 }
 //-------------------------------------------------------------------------------------------------
-// explicit - n/a
-Rule3Copy::Rule3Copy(
-	const char *a_value
-) :
-	_value(a_value)
-{
-	_log("Ctor", "const char *");
-}
-//--------------------------------------------------------------------------------------------------
 Rule3Copy::Rule3Copy(
 	const Rule3Copy &a_obj
 ) noexcept :

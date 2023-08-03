@@ -23,7 +23,6 @@ class Rule0
 public:
 	Rule0();
 	explicit Rule0(const std::string &value);
-	Rule0(const char *value);	// explicit - n/a
 
 	Rule0(const Rule0 &obj) noexcept = delete;
 	Rule0 & operator = (const Rule0 &obj) noexcept = delete;
@@ -54,15 +53,6 @@ Rule0::Rule0(
 	_log("Ctor", "const std::string &");
 }
 //-------------------------------------------------------------------------------------------------
-// explicit - n/a
-Rule0::Rule0(
-	const char *a_value
-) :
-	_value(a_value)
-{
-	_log("Ctor", "const char *");
-}
-//--------------------------------------------------------------------------------------------------
 Rule0::~Rule0() /* final */
 {
 	_log("Dtor", "");

@@ -23,7 +23,6 @@ class Rule3Move
 public:
 	Rule3Move();
 	explicit Rule3Move(const std::string &value);
-	Rule3Move(const char *value);	// explicit - n/a
 
 	Rule3Move(const Rule3Move &obj) noexcept = delete;
 	Rule3Move & operator = (const Rule3Move &obj) noexcept = delete;
@@ -54,15 +53,6 @@ Rule3Move::Rule3Move(
 	_log("Ctor", "const std::string &");
 }
 //-------------------------------------------------------------------------------------------------
-// explicit - n/a
-Rule3Move::Rule3Move(
-	const char *a_value
-) :
-	_value(a_value)
-{
-	_log("Ctor", "const char *");
-}
-//--------------------------------------------------------------------------------------------------
 Rule3Move::Rule3Move(
 	Rule3Move &&a_obj
 ) noexcept :
