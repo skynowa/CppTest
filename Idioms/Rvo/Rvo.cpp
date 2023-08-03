@@ -31,12 +31,12 @@ public:
 
 	Rule5 RVO()
 	{
-		return Rule5();
+		return Rule5("value");
 	}
 
 	Rule5 NRVO()
 	{
-		Rule5 obj;
+		Rule5 obj("value");
 		return obj;
 	}
 
@@ -50,7 +50,7 @@ int main(int, char **)
 {
 	Example example;
 
-   /*
+   /**
 	* RVO - Return Value Optimization
 	*
 	* Means the compiler is allowed to avoid creating temporary objects for return values,
@@ -60,17 +60,33 @@ int main(int, char **)
 		std::cout << STD_TITLE_VAR("RVO") << std::endl;
 
 		Rule5 rv = example.RVO();
+		STD_TEST(!rv.value().empty());
+	}
+
+	{
+		std::cout << STD_TITLE_VAR("RVO by ref") << std::endl;
+
+		const auto &rv = example.RVO().value();
+		STD_TEST(!rv.empty());
 	}
 
    /**
-    * NRVO - Named Return Value Optimization
+	* NRVO - Named Return Value Optimization
 	*
 	* Is when an object with a name is returned but is nevertheless not copied
 	*/
 	{
 		std::cout << STD_TITLE_VAR("NRVO") << std::endl;
 
-		example.NRVO();
+		Rule5 rv = example.NRVO();
+		STD_TEST(!rv.value().empty());
+	}
+
+	{
+		std::cout << STD_TITLE_VAR("NRVO by ref") << std::endl;
+
+		const auto &rv = example.NRVO().value();
+		STD_TEST(!rv.empty());
 	}
 
    /**
@@ -88,18 +104,26 @@ int main(int, char **)
 
 	// When RVO doesn’t / can’t happen
 
-    return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
 //--------------------------------------------------------------------------------------------------
 
 #if OUTPUT
 
 ::::: RVO :::::
-[Ctor] Default
+[Ctor] const std::string &
+[Dtor]
+
+::::: RVO by ref :::::
+[Ctor] const std::string &
 [Dtor]
 
 ::::: NRVO :::::
-[Ctor] Default
+[Ctor] const std::string &
+[Dtor]
+
+::::: NRVO by ref :::::
+[Ctor] const std::string &
 [Dtor]
 
 ::::: Copy Elision :::::

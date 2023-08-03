@@ -32,6 +32,8 @@ public:
 
 	~Rule3Copy();
 
+    const std::string &value() const;
+
 	friend std::ostream & operator << (std::ostream &os, const Rule3Copy &obj);
 
 private:
@@ -81,6 +83,12 @@ Rule3Copy::~Rule3Copy() /* final */
 {
 	_log("Dtor", "");
 	_log("", "");
+}
+//--------------------------------------------------------------------------------------------------
+const std::string &
+Rule3Copy::value() const
+{
+    return _value;
 }
 //--------------------------------------------------------------------------------------------------
 void

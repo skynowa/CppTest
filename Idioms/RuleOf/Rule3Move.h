@@ -32,6 +32,8 @@ public:
 
 	~Rule3Move();
 
+    const std::string &value() const;
+
 	friend std::ostream & operator << (std::ostream &os, const Rule3Move &obj);
 
 private:
@@ -81,6 +83,12 @@ Rule3Move::~Rule3Move() /* final */
 {
 	_log("Dtor", "");
 	_log("", "");
+}
+//--------------------------------------------------------------------------------------------------
+const std::string &
+Rule3Move::value() const
+{
+    return _value;
 }
 //--------------------------------------------------------------------------------------------------
 void

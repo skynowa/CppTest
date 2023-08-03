@@ -51,6 +51,8 @@ public:
 
 	~Rule5();
 
+    const std::string &value() const;
+
 	friend std::ostream & operator << (std::ostream &os, const Rule5 &obj);
 
 private:
@@ -134,6 +136,12 @@ Rule5::~Rule5() /* final */
 {
 	_log("Dtor", "");
 	_log("", "");
+}
+//--------------------------------------------------------------------------------------------------
+const std::string &
+Rule5::value() const
+{
+    return _value;
 }
 //--------------------------------------------------------------------------------------------------
 void

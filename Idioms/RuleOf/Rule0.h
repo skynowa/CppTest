@@ -32,6 +32,8 @@ public:
 
 	~Rule0();
 
+    const std::string &value() const;
+
 	friend std::ostream & operator << (std::ostream &os, const Rule0 &obj);
 
 private:
@@ -57,6 +59,12 @@ Rule0::~Rule0() /* final */
 {
 	_log("Dtor", "");
 	_log("", "");
+}
+//--------------------------------------------------------------------------------------------------
+const std::string &
+Rule0::value() const
+{
+    return _value;
 }
 //--------------------------------------------------------------------------------------------------
 void
