@@ -1,6 +1,6 @@
 /**
- * \file  In.cpp
- * \brief
+ * \file  Insertion.cpp
+ * \brief Output stream insertion (<<) operator for custom types
  */
 
 
@@ -17,26 +17,27 @@ using ustring_t = basic_string<unsigned char, char_traits<unsigned char>, alloca
 //--------------------------------------------------------------------------------------------------
 std::basic_ostringstream<char>&
 operator << (
-   std::basic_ostringstream<char> &osOut,
-   const std::ustring_t           &cusValue
+   std::basic_ostringstream<char> &out_os,
+   const std::ustring_t           &a_value
 )
 {
-    std::string sRv(cusValue.cbegin(), cusValue.cend());
+    const std::string sRv(a_value.cbegin(), a_value.cend());
 
-    osOut << sRv << std::flush;
+    out_os << sRv << std::flush;
 
-    return osOut;
+    return out_os;
 }
 //--------------------------------------------------------------------------------------------------
-int main()
+int main(int, char **)
 {
-    std::ostringstream ossStream;
-    std::ustring_t     sRv1(4, 'a');
-    std::ustring_t     sRv2(4, 'b');
+    const std::ustring_t sRv1(4, 'a');
+    const std::ustring_t sRv2(1, '-');
+    const std::ustring_t sRv3(4, 'b');
 
-    ossStream << sRv1 << sRv2;
+    std::ostringstream oss;
+    oss << sRv1 << sRv2 << sRv3;
 
-    std::cout << ossStream.str() << std::endl;
+    std::cout << oss.str() << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -44,6 +45,6 @@ int main()
 
 #if OUTPUT
 
-aaaabbbb
+aaaa-bbbb
 
 #endif

@@ -408,7 +408,7 @@
     * <a href="/Core/Operators/Namespace.cpp" title="">🖊 `Namespace.cpp`</a>
     * <a href="/Core/Operators/Bool.cpp" title="Conversion operator bool">✅ `Bool.cpp`</a>
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
-    * <a href="/Core/Operators/In.cpp" title="">✅ `In.cpp`</a>
+    * <a href="/Core/Operators/Insertion.cpp" title="Output stream insertion (<<) operator for custom types">✅ `Insertion.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="Decrement, increment and sequence point">🖊 `DecIncInt.cpp`</a>
     * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">✅ `PlacementNew.cpp`</a>
