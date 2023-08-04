@@ -4,14 +4,14 @@
 
 ## FAQ
 
-- [ ] https://en.wikipedia.org/wiki/Template_metaprogramming
-- [ ] https://www.modernescpp.com/index.php/c-core-guidelines-rules-for-template-metaprogramming
-- [ ] [www.geeksforgeeks.org](https://www.geeksforgeeks.org/templates-cpp/)
-- [ ] https://www.youtube.com/watch?v=-PKyagrtIfs
-- [ ] https://www.youtube.com/watch?v=ULX_VTkMvf8
-- [ ] [Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
-- [ ] [Webinar "Variadic templates. Magic & truth behind std::tuple & std::variant"](https://www.youtube.com/watch?v=9rp3MhMHpxI)
-- [ ] [Template Metaprogramming: Practical Application](https://www.youtube.com/watch?v=4YC6_77-iEY)
+- [ ] [Wiki - Template metaprogramming](https://en.wikipedia.org/wiki/Template_metaprogramming)
+- [ ] [C++ Core Guidelines - Rules for Template Metaprogramming](https://www.modernescpp.com/index.php/c-core-guidelines-rules-for-template-metaprogramming)
+- [ ] [www.geeksforgeeks.org - Templates in C++ with Examples](https://www.geeksforgeeks.org/templates-cpp/)
+- [ ] [PVS-Studio - Лекция 9. Метапрограммирование в С++](https://www.youtube.com/watch?v=-PKyagrtIfs)
+- [ ] [CppCon 2017, Nicolai Josuttis - C++ Templates Revised](https://www.youtube.com/watch?v=ULX_VTkMvf8)
+- [ ] [www.linkedin.com, Rainer Grimm - Template Arguments](https://www.linkedin.com/pulse/template-arguments-rainer-grimm/?trackingId=SI5WFEOiON2PvHjhlbAPyA%3D%3D)
+- [ ] [Intellias - Variadic templates. Magic & truth behind std::tuple & std::variant](https://www.youtube.com/watch?v=9rp3MhMHpxI)
+- [ ] [CppCon 2021, Jody Hagins - Template Metaprogramming: Practical Application](https://www.youtube.com/watch?v=4YC6_77-iEY)
 
 ## Classes
 
