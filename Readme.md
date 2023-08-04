@@ -102,7 +102,6 @@
 
 ##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (189)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Core/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="Retun NO-value (as bool)">✅ `ReturnBool.cpp`</a>
@@ -403,9 +402,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Operators 100% (15)</summary>
+    <summary>📁 ✅ Operators 100% (16)</summary>
 
     * <a href="/Core/Operators/Namespace.cpp" title="">🖊 `Namespace.cpp`</a>
+    * <a href="/Core/Operators/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
     * <a href="/Core/Operators/Bool.cpp" title="Conversion operator bool">✅ `Bool.cpp`</a>
     * <a href="/Core/Operators/Exclamanation.cpp" title="">✅ `Exclamanation.cpp`</a>
     * <a href="/Core/Operators/Insertion.cpp" title="Output stream insertion (<<) operator for custom types">✅ `Insertion.cpp`</a>
