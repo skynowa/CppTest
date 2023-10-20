@@ -1,9 +1,6 @@
 /**
  * \file  DescAsc.cpp
- * \brief
- *
- * \see
- * \todo
+ * \brief Sort DESC / ASC order
  */
 
 
