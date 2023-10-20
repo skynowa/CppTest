@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **04-Aug-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **20-Oct-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -21,7 +21,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 24% (85)
+- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 23% (86)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -1020,7 +1020,7 @@
 
 </details>
 
-##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 24% (85)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 23% (86)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1028,7 +1028,7 @@
 </details>
 
   * <details close>
-    <summary>📁 ⌛ Algos 17% (6)</summary>
+    <summary>📁 ⌛ Algos 14% (7)</summary>
 
     * <a href="/Stl/Algos/replace_if.cpp" title="">❌ replace_if.cpp</a>
     * <a href="/Stl/Algos/Transform.cpp" title="">✅ `Transform.cpp`</a>
@@ -1036,6 +1036,7 @@
     * <a href="/Stl/Algos/difference.cpp" title="">❌ difference.cpp</a>
     * <a href="/Stl/Algos/set_symmetric_difference.cpp" title="">❌ set_symmetric_difference.cpp</a>
     * <a href="/Stl/Algos/accumulate.cpp" title="">❌ accumulate.cpp</a>
+    * <a href="/Stl/Algos/DescAsc.cpp" title="">❌ DescAsc.cpp</a>
 
     </details>
 
