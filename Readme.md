@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **20-Oct-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **31-Oct-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -21,7 +21,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 24% (86)
+- [Stl](#stl "[ ] STL - Standard Template Library") ██░░░░░░░░ 25% (87)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -1020,7 +1020,7 @@
 
 </details>
 
-##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 24% (86)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ██░░░░░░░░ 25% (87)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
 * <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1175,8 +1175,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ SmartPtrs 0% (2)</summary>
+    <summary>📁 ⌛ SmartPtrs 33% (3)</summary>
 
+    * <a href="/Stl/SmartPtrs/UniquePtrNull.cpp" title="std::unique_ptr with nullptr">✅ `UniquePtrNull.cpp`</a>
     * <a href="/Stl/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
     * <a href="/Stl/SmartPtrs/SmartPointersInCpp11.md" title="">❌ 📝 SmartPointersInCpp11.md</a>
 
