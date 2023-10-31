@@ -1,6 +1,10 @@
 /**
  * \file  UniquePtrNull.cpp
  * \brief std::unique_ptr with nullptr
+ *
+ * \see https://en.cppreference.com/w/cpp/memory/unique_ptr/operator*
+ *
+ * The behavior is undefined if get() == nullptr.
  */
 
 
