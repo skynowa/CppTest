@@ -24,14 +24,19 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    /// const std::string filePath = "IFstreamTest.txt";
-    const std::string filePath = "test.jpg";
-    const std::string str      = "Test string\n\ntest\r\n";
+    const std::string txtFilePath = "IFstreamTest.txt";
+    const std::string txtStr      = "Test string\n\ntest\r\n";
+    const std::size_t txtFileSize = txtStr.size();
+    const bool        isTxtFile   = (txtFilePath.find(".txt") != std::string::npos);
+
+    // Bin files - std::ios_base::openmode does not affect for field size determination
+    /// const std::string binfilePath = "test.jpg";
+    /// const std::size_t binFileSize = 77480;
 
     // Create temp file
-    {
-	    std::ofstream ofs(filePath);
-        ofs << str;
+    if (isTxtFile) {
+	    std::ofstream ofs(txtFilePath);
+        ofs << txtStr;
     }
 
     const std::ios_base::openmode openModes[]
@@ -41,7 +46,7 @@ int main(int, char **)
 	};
 
 	for (const auto it_openMode : openModes) {
-		std::ifstream ifs(filePath, it_openMode);
+		std::ifstream ifs(txtFilePath, it_openMode);
 		STD_TEST(ifs.is_open());
 		STD_TEST(!ifs.fail());
 
@@ -54,12 +59,12 @@ int main(int, char **)
 			std::cout << STD_TRACE_VAR2(it_openMode, fileSize) << std::endl;
 		}
 
-		STD_TEST(static_cast<size_t>(fileSize) == str.size());
+		STD_TEST(static_cast<size_t>(fileSize) == txtFileSize);
 	} // for (openModes)
 
 	// Delete temp file
-	if (0) {
-		int iRv = std::remove(filePath.c_str());
+	if (isTxtFile) {
+		int iRv = std::remove(txtFilePath.c_str());
 		STD_TEST(iRv == 0);
 	}
 
@@ -70,7 +75,12 @@ int main(int, char **)
 
 #if OUTPUT
 
+// Txt
 it_openMode: 8, fileSize: 11
 it_openMode: 4, fileSize: 11
+
+// Bin
+it_openMode: 8, fileSize: 77480
+it_openMode: 4, fileSize: 77480
 
 #endif
