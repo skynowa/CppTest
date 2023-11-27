@@ -28,3 +28,7 @@
 - Розкажіть про SSL/TLS handshake.
 
 ## Senior
+
+## Etc
+
+- [Как решить проблему 10 000 соединений?](https://habr.com/company/ideco/blog/146340/)

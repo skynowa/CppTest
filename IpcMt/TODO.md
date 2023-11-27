@@ -36,6 +36,7 @@
 
 ## Condition variable
 
+- [ ] Points, pitfalls
 - [ ] Suspisiuos wakeup
 - [ ] notify one/all
 
@@ -50,6 +51,7 @@
 - [ ] race-condition / fix
 - [ ] мьютексом vs семафором
 - [ ] atomic operation
+- [ ] Concurrency - что такое
 
 ## IPC Methods
 
