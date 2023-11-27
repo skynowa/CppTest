@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-Nov-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **27-Nov-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -11,7 +11,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (46)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥83% (18)
+- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥84% (19)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)") ████░░░░░░ 43% (30)
@@ -793,7 +793,7 @@
 
     </details>
 
-##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥83% (18)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥84% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -830,6 +830,13 @@
     <summary>📁 ✅ LibUv 100% (1)</summary>
 
     * <a href="/Libs/LibUv/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Libev 100% (1)</summary>
+
+    * <a href="/Libs/Libev/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
     </details>
 
