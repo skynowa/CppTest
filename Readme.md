@@ -3,8 +3,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (190)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (204)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -75,32 +74,7 @@
 
 </details>
 
-##  <a title="[ ] C language features" id="c">C █████████░ 🚩93% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-* <a href="/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
-* <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
-* <a href="/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
-* <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
-* <a href="/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
-* <a href="/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
-* <a href="/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
-* <a href="/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
-* <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
-* <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
-* <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
-* <a href="/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
-
-</details>
-
-  * <details close>
-    <summary>📁 ✅ Process 100% (2)</summary>
-
-    * <a href="/C/Process/Exit.cpp" title="">✅ `Exit.cpp`</a>
-    * <a href="/C/Process/ExitFunctions.cpp" title="">✅ `ExitFunctions.cpp`</a>
-
-    </details>
-
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (190)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (204)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -140,6 +114,32 @@
       <summary>📁 ✅ IsBot 100% (1)</summary>
 
         * <a href="/Core/Bits/IsBot/IsBot.cpp" title="">🖊 `IsBot.cpp`</a>
+
+      </details>
+
+  * <details close>
+    <summary>📁 ⌛ C 93% (14)</summary>
+
+    * <a href="/Core/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
+    * <a href="/Core/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
+    * <a href="/Core/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
+    * <a href="/Core/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
+    * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
+    * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
+    * <a href="/Core/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
+    * <a href="/Core/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
+    * <a href="/Core/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
+    * <a href="/Core/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
+    * <a href="/Core/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
+    * <a href="/Core/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
+
+    </details>
+
+    * <details close>
+      <summary>📁 ✅ Process 100% (2)</summary>
+
+        * <a href="/Core/C/Process/Exit.cpp" title="">✅ `Exit.cpp`</a>
+        * <a href="/Core/C/Process/ExitFunctions.cpp" title="">✅ `ExitFunctions.cpp`</a>
 
       </details>
 
