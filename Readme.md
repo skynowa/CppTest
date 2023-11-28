@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **27-Nov-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **28-Nov-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (189)
+- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (190)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -100,7 +100,7 @@
 
     </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (189)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (190)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -336,15 +336,16 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Functor 100% (18)</summary>
+    <summary>📁 ✅ Functor 100% (19)</summary>
 
     * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Function 100% (3)</summary>
+      <summary>📁 ✅ Function 100% (4)</summary>
 
+        * <a href="/Core/Functor/Function/Overloading.cpp" title="">✅ `Overloading.cpp`</a>
         * <a href="/Core/Functor/Function/Inline.cpp" title="">✅ `Inline.cpp`</a>
         * <a href="/Core/Functor/Function/Native.cpp" title="">✅ `Native.cpp`</a>
         * <a href="/Core/Functor/Function/ReturnSyntax.cpp" title="">✅ `ReturnSyntax.cpp`</a>
