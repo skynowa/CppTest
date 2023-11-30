@@ -39,3 +39,22 @@
 - Розкажіть про свій улюблений алгоритм пошуку.
 - Що таке lock-free та wait-free алгоритми? У чому їхні відмінності та способи реалізації?
 - Опишіть призначення execution policy для паралельних алгоритмів.
+
+## STL + algorithms
+
+[ ] quick sort
+[ ] binary search + binary sort
+[ ] heap sort
+[ ] Has experience with conatiners (vector, deque, stack, list, set,map, set,
+    unordered_set, unordered_map), can work with their iterators,
+    has understanding of internal implementation each enumerated container.
+[ ] multimap, multiset
+[ ] unordered_multimap, unordered_multiset
+[ ] Work with trees (binary+)
+[ ] Custom graphs (and basics of graphs theory)
+[ ] std::tuples and cases where it's possible to use
+[ ] std::optional
+[ ] std::chrono
+[ ] "Can implememt custom C++ object and it normal inside std::map,
+[ ] std::unordered_map"
+[ ] std::regex

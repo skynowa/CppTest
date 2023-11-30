@@ -1,18 +1,18 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **29-Nov-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Dec-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version") █████████░ 🚩93% (204)
+- [Core](#core "") █████████░ 🚩94% (203)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (46)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥84% (19)
+- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥80% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
-- [OOP](#oop "OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis") ░░░░░░░░░░ 0% (1)
+- [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)") ████░░░░░░ 43% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
@@ -20,7 +20,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "[ ] STL - Standard Template Library") ███░░░░░░░ 26% (88)
+- [Stl](#stl "") ███░░░░░░░ 26% (88)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -74,12 +74,11 @@
 
 </details>
 
-##  <a title="- C++ language features. - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version" id="core">Core █████████░ 🚩93% (204)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩94% (203)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="Retun NO-value (as bool)">✅ `ReturnBool.cpp`</a>
-* <a href="/Core/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
@@ -794,8 +793,9 @@
 
     </details>
 
-##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥84% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥80% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
@@ -887,9 +887,9 @@
 
 </details>
 
-##  <a title="OOP - Object-Oriented Programming. OOD - Object-Oriented Design. OOA - Object-oriented Analysis" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="oop">OOP ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/OOP/FAQ.md" title="">❌ 📝 FAQ.md</a>
+* <a href="/OOP/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
@@ -1028,10 +1028,10 @@
 
 </details>
 
-##  <a title="[ ] STL - Standard Template Library" id="stl">Stl ███░░░░░░░ 26% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 26% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
-* <a href="/Stl/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 

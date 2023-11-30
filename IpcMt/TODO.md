@@ -121,3 +121,21 @@ to achieve what you want.
 - Что делает спецификатор thread_local?
 - Как реализовать синхронизацию в задаче producer-consumer?
 - Як синхронизироваться между различными процессами?
+
+## Multithreading
+
+- [ ] How to escape deadlocks, common rules
+- [ ] Race conditions
+- [ ] Cache theory and all benefits of using them
+- [ ] Understands difference thread and process
+- [ ] Can use basic IPC primitives
+- [ ] std::mutex + RAII обёртки
+- [ ] std::condition_variable
+- [ ] std::thread
+- [ ] std::atomic
+- [ ] std::future
+- [ ] std::unique_ptr
+- [ ] std::shared_ptr
+- [ ] std::weak_ptr
+- [ ] worked with shared memory
+- [ ] Worked with async IO network (poll, epoll, select and etc.)
