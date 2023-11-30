@@ -1,4 +1,4 @@
-# TOOD
+# TODO
 
 - C++ language features
 - [400+ вопросов на собеседовании по С++](https://itvdn.com/ru/blog/article/400-about-cplspls) - RU version
