@@ -201,12 +201,12 @@
 
 - [ ] little-endian vs Big-endian.
 - [ ] size of basic types (int, char, float, double and etc.)
-- [ ] size of empty object
+- [+] size of empty object
 - [ ] how to calculate size of custom C++ class object
 - [ ] structs aligning (where can help, which problems can bring)
 - [ ] difference between method and simple C style function (on a low level)
 - [ ] cdelc, stdcall, fastcall and other convention calls
 - [ ] buffer overflow issues
-- [ ] What can't do static class method, difference beetwen normal class method
+- [+] What can't do static class method, difference beetwen normal class method
 - [ ] Can calculate custom algorithm complexity in a big-O() notation
 - [ ] Has strong understanding of benefits and problems recursive algorithms
