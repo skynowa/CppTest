@@ -71,3 +71,4 @@ OOA - Object-oriented Analysis
 - [ ] Common cache optimization problems (read ahead, volatile key-word)
 - [ ] Understanding of basic spin-lock implementation
 - [ ] C++ template experience
+- [ ] Static / Dynamic polyformism

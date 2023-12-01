@@ -58,3 +58,8 @@
 [ ] "Can implememt custom C++ object and it normal inside std::map,
 [ ] std::unordered_map"
 [ ] std::regex
+
+## Etc
+
+- [How to manage std::list elements as references?](https://stackoverflow.com/questions/44165193/how-to-manage-stdlist-elements-as-references)
+- std::vector references
