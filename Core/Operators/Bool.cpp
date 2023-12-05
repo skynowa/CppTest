@@ -46,6 +46,7 @@ int main(int, char **)
 
 		std::cout << STD_TRACE_VAR(res1) << std::endl;
 		std::cout << STD_TRACE_VAR(res2) << std::endl;
+		std::cout << STD_TRACE_VAR(!!res2) << std::endl;
 		std::cout << std::endl;
 	}
 
@@ -62,6 +63,7 @@ int main(int, char **)
 
 		// std::cout << STD_TRACE_VAR(res1) << std::endl;
 		std::cout << STD_TRACE_VAR(res2) << std::endl;
+		std::cout << STD_TRACE_VAR(!!res2) << std::endl;
 		std::cout << std::endl;
 	}
 
@@ -75,8 +77,10 @@ int main(int, char **)
 a: true
 res1: 1
 res2: 1
+!!res2: 1
 
 b: true
 res2: 1
+!!res2: 1
 
 #endif
