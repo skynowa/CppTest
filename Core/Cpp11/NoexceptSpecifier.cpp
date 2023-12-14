@@ -49,6 +49,10 @@ int main(int, char **)
         std::cout << "noexcept - false" << std::endl;
     }
 
+    const bool is_foo_except = noexcept(::foo());
+    static_assert(is_foo_except); // Compile Time - OK
+    std::cout << STD_TRACE_VAR(is_foo_except) << std::endl;
+
     ::foo(); // Compile Time - OK
 
     return EXIT_SUCCESS;
@@ -60,6 +64,7 @@ int main(int, char **)
 
 noexcept - true
 noexcept - false
+is_foo_except: 1
 	::: foo :::
 a_e.what(): basic_string::at: __n (which is 10) >= this->size() (which is 5)
 
