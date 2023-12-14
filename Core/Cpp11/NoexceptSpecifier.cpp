@@ -34,24 +34,39 @@ void foo() noexcept(true)
 	}
 }
 //--------------------------------------------------------------------------------------------------
+void foo2() noexcept(false)
+{
+    STD_TRACE_FUNC;
+}
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // std::cout << STD_TRACE_VAR("") << std::endl;
-
-    static_assert(noexcept(true));  // Compile Time - OK
-    static_assert(noexcept(false)); // Compile Time - OK
-
-    if ( noexcept(true) ) {
-        std::cout << "noexcept - true" << std::endl;
+    {
+        static_assert(noexcept(true));  // Compile Time - OK
+        static_assert(noexcept(false)); // Compile Time - OK
     }
 
-    if ( noexcept(false) ) {
-        std::cout << "noexcept - false" << std::endl;
+    {
+        if ( noexcept(true) ) {
+            std::cout << "noexcept - true" << std::endl;
+        }
+
+        if ( noexcept(false) ) {
+            std::cout << "noexcept - false" << std::endl;
+        }
+
+        std::cout << std::endl;
     }
 
-    const bool is_foo_except = noexcept(::foo());
-    static_assert(is_foo_except); // Compile Time - OK
-    std::cout << STD_TRACE_VAR(is_foo_except) << std::endl;
+    {
+        const bool is_foo_except = noexcept( ::foo() );
+        static_assert(is_foo_except); // Compile Time - OK
+
+        std::cout << STD_TRACE_VAR(is_foo_except) << std::endl;
+        std::cout << std::endl;
+    }
+
+    // static_assert( noexcept(::foo2()) ); // error: static assertion failed
 
     ::foo(); // Compile Time - OK
 
@@ -64,7 +79,9 @@ int main(int, char **)
 
 noexcept - true
 noexcept - false
+
 is_foo_except: 1
+
 	::: foo :::
 a_e.what(): basic_string::at: __n (which is 10) >= this->size() (which is 5)
 
