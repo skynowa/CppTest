@@ -2,8 +2,7 @@
  * \file  NoexceptSpecifier.cpp
  * \brief noexcept specifier
  *
- * \see
- * \todo
+ * \see   https://en.cppreference.com/w/cpp/language/noexcept
  */
 
 

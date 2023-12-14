@@ -219,9 +219,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Cpp11 0% (2)</summary>
+    <summary>📁 ⌛ Cpp11 50% (2)</summary>
 
-    * <a href="/Core/Cpp11/NoexceptSpecifier.cpp" title="noexcept specifier">❌ NoexceptSpecifier.cpp</a>
+    * <a href="/Core/Cpp11/NoexceptSpecifier.cpp" title="noexcept specifier">✅ `NoexceptSpecifier.cpp`</a>
     * <a href="/Core/Cpp11/NoexceptOp.cpp" title="noexcept operator">❌ NoexceptOp.cpp</a>
 
     </details>
