@@ -17,14 +17,14 @@ void foo() noexcept(true)
 
 	try {
 		std::string str = "xxxxx";
-		str.at(10); // Compiletime - OK
+		str.at(10); // Compile Time - OK
 
-        // static_assert(noexcept(str.at(10)));  // Compiletime - error: static assertion failed
-        static_assert(!noexcept(str.at(0)));     // Compiletime - OK
+        // static_assert(noexcept(str.at(10)));  // Compile Time - error: static assertion failed
+        static_assert(!noexcept(str.at(0)));     // Compile Time - OK
 
 		std::cout << STD_TRACE_VAR(str) << std::endl;
 
-		throw 1; // Compiletime - OK
+		throw 1; // Compile Time - OK
 	}
 	catch (const std::exception &a_e) {
 		std::cout << STD_TRACE_VAR(a_e.what()) << std::endl;
@@ -38,8 +38,8 @@ int main(int, char **)
 {
     // std::cout << STD_TRACE_VAR("") << std::endl;
 
-    static_assert(noexcept(true));  // Compiletime - OK
-    static_assert(noexcept(false)); // Compiletime - OK
+    static_assert(noexcept(true));  // Compile Time - OK
+    static_assert(noexcept(false)); // Compile Time - OK
 
     if ( noexcept(true) ) {
         std::cout << "noexcept - true" << std::endl;
@@ -49,7 +49,7 @@ int main(int, char **)
         std::cout << "noexcept - false" << std::endl;
     }
 
-    ::foo(); // Compiletime - OK
+    ::foo(); // Compile Time - OK
 
     return EXIT_SUCCESS;
 }
