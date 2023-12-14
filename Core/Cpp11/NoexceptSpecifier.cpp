@@ -58,6 +58,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+noexcept - true
+noexcept - false
+	::: foo :::
+a_e.what(): basic_string::at: __n (which is 10) >= this->size() (which is 5)
 
 #endif
