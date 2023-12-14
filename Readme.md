@@ -1,9 +1,10 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a> **14-Dec-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
+- [.github.off](#.github.off "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (204)
+- [Core](#core "") █████████░ 🚩93% (205)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -24,6 +25,17 @@
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
+
+##  <a title="" id=".github.off">.github.off ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+
+</details>
+
+  * <details close>
+    <summary>📁  workflows 0.0% (0)</summary>
+
+
+    </details>
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -74,7 +86,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (204)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩93% (205)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -207,9 +219,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Cpp11 0% (1)</summary>
+    <summary>📁 ❌ Cpp11 0% (2)</summary>
 
     * <a href="/Core/Cpp11/NoexceptSpecifier.cpp" title="">❌ NoexceptSpecifier.cpp</a>
+    * <a href="/Core/Cpp11/NoexceptOp.cpp" title="Noexcept operator">❌ NoexceptOp.cpp</a>
 
     </details>
 

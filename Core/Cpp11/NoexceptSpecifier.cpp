@@ -1,5 +1,5 @@
 /**
- * \file  NoexceptSpecifier.cpp.cpp
+ * \file  NoexceptSpecifier.cpp
  * \brief
  *
  * \see
@@ -11,22 +11,23 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-void foo() noexcept(false)
+void foo() noexcept(true)
 {
+    STD_TRACE_FUNC;
+
 	try {
-		std::string s;
-		s.at(10);
+		std::string str = "xxxxx";
+		str.at(10); // Compiletime - OK
 
-		if (noexcept(s)) {
-			std::cout << "Unknown" << std::endl;
-		}
+        // static_assert(noexcept(str.at(10)));  // Compiletime - error: static assertion failed
+        static_assert(!noexcept(str.at(0)));     // Compiletime - OK
 
-		std::cout << s << std::endl;
+		std::cout << STD_TRACE_VAR(str) << std::endl;
 
-		throw 1;
+		throw 1; // Compiletime - OK
 	}
 	catch (const std::exception &a_e) {
-		std::cout << a_e.what() << std::endl;
+		std::cout << STD_TRACE_VAR(a_e.what()) << std::endl;
 	}
 	catch (...) {
 		std::cout << "Unknown" << std::endl;
@@ -35,11 +36,20 @@ void foo() noexcept(false)
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // STD_TRACE_FUNC;
-
     // std::cout << STD_TRACE_VAR("") << std::endl;
 
-    ::foo();
+    static_assert(noexcept(true));  // Compiletime - OK
+    static_assert(noexcept(false)); // Compiletime - OK
+
+    if ( noexcept(true) ) {
+        std::cout << "noexcept - true" << std::endl;
+    }
+
+    if ( noexcept(false) ) {
+        std::cout << "noexcept - false" << std::endl;
+    }
+
+    ::foo(); // Compiletime - OK
 
     return EXIT_SUCCESS;
 }
