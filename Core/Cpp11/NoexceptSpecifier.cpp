@@ -1,6 +1,6 @@
 /**
  * \file  NoexceptSpecifier.cpp
- * \brief
+ * \brief noexcept specifier
  *
  * \see
  * \todo

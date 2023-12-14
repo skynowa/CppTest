@@ -1,6 +1,6 @@
 /**
  * \file  NoexceptOp.cpp
- * \brief Noexcept operator
+ * \brief noexcept operator
  *
  * \see
  * \todo

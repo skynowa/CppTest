@@ -221,8 +221,8 @@
   * <details close>
     <summary>📁 ❌ Cpp11 0% (2)</summary>
 
-    * <a href="/Core/Cpp11/NoexceptSpecifier.cpp" title="">❌ NoexceptSpecifier.cpp</a>
-    * <a href="/Core/Cpp11/NoexceptOp.cpp" title="Noexcept operator">❌ NoexceptOp.cpp</a>
+    * <a href="/Core/Cpp11/NoexceptSpecifier.cpp" title="noexcept specifier">❌ NoexceptSpecifier.cpp</a>
+    * <a href="/Core/Cpp11/NoexceptOp.cpp" title="noexcept operator">❌ NoexceptOp.cpp</a>
 
     </details>
 
