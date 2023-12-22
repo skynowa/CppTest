@@ -43,9 +43,7 @@
 [ ] quick sort
 [ ] binary search + binary sort
 [ ] heap sort
-[ ] Has experience with conatiners (vector, deque, stack, list, set,map, set,
-    unordered_set, unordered_map), can work with their iterators,
-    has understanding of internal implementation each enumerated container.
+[ ] Has experience with conatiners (vector, deque, stack, list, set,map, set, unordered_set, unordered_map), can work with their iterators, has understanding of internal implementation each enumerated container
 [ ] multimap, multiset
 [ ] unordered_multimap, unordered_multiset
 [ ] Work with trees (binary+)
@@ -53,8 +51,7 @@
 [ ] std::tuples and cases where it's possible to use
 [ ] std::optional
 [ ] std::chrono
-[ ] "Can implememt custom C++ object and it normal inside std::map,
-[ ] std::unordered_map"
+[ ] Can implememt custom C++ object and it normal inside std::map, std::unordered_map
 [ ] std::regex
 
 ## Etc
