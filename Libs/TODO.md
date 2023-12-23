@@ -11,7 +11,7 @@
 - [ ] Basics of cryptography. Difference symmetric and asymmetric encryption algorithms. Security and speed issues. Public, private keys, certificates.
 - [ ] Experience of connection with databases from C++ code (libpq++ and etc.)
 - [ ] kafka, rabbitmq
-- [x] redis
+- [+] redis
 - [+] curl, postman
 - [+] Worked with XML, JSON
 - [+] cmake, MS Build
