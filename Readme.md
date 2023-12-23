@@ -1,6 +1,5 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Dec-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
-- [.github.off](#.github.off "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
@@ -11,7 +10,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "[ ] Third-party libraries") ████████░░ 🔥80% (20)
+- [Libs](#libs "") ████████░░ 🔥85% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
@@ -25,17 +24,6 @@
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
-
-##  <a title="" id=".github.off">.github.off ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-
-</details>
-
-  * <details close>
-    <summary>📁  workflows 0.0% (0)</summary>
-
-
-    </details>
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -809,10 +797,10 @@
 
     </details>
 
-##  <a title="[ ] Third-party libraries" id="libs">Libs ████████░░ 🔥80% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ████████░░ 🔥85% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
+* <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
 
 </details>
 
