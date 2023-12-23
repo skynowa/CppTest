@@ -107,7 +107,7 @@ to achieve what you want.
 - [ ] Чем отличается std::launch::async от std::launch::deferred?
 - [ ] Что такое атомарная операция? std::atomic?
 - [ ] Как работать с std::conditional_variable?
-- [!] Как создать поток с помощью std::thread?
+- [*] Как создать поток с помощью std::thread?
 - [ ] На сколько потоков лучше разбить задачу? От чего это зависит?
 - [ ] Как работать с std::async?
 - [ ] Thread-safe гарантии контейнеров в С++? В чем недостаток интерфейса front() + pop_front()?
