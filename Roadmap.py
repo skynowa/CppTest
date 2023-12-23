@@ -64,7 +64,8 @@ class RoadmapGen:
 	iconTocDone    = '🚩' # '🏁'
 
 	# labels
-	todoLabels     = [r'\\todo', r'\[todo\]', r'\[ \]']
+    # \see VSCode/User/settings.json
+	todoLabels     = [r'\\todo', r'\[todo\]', r'\[ \]', r'\[-\]', r'\[*\]']
 	remarkLabels   = [r'\\remark', r'\[remark\]', r'\\review', r'\[review\]', r'\[\?\]']
 
 	################################################################################################
