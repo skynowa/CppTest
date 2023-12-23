@@ -1,6 +1,7 @@
 # FAQ
 
-[ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)
+- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object)
+- [ ] [Design patterns](https://refactoring.guru/design-patterns)
 
 ## Courses
 
