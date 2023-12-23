@@ -10,7 +10,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ████████░░ 🔥85% (20)
+- [Libs](#libs "") ██████████ 🚩95% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
@@ -797,7 +797,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ████████░░ 🔥85% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩95% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -814,10 +814,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Error 0% (2)</summary>
+    <summary>📁 ✅ Error 100% (2)</summary>
 
-    * <a href="/Libs/Error/Error.cpp" title="">❌ Error.cpp</a>
-    * <a href="/Libs/Error/Error.h" title="">❌ Error.h</a>
+    * <a href="/Libs/Error/Error.cpp" title="">✅ `Error.cpp`</a>
+    * <a href="/Libs/Error/Error.h" title="">✅ `Error.h`</a>
 
     </details>
 

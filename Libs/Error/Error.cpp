@@ -1,8 +1,6 @@
  /*
  * \file  Error.cc
  * \brief
- *
- * \todo
  */
 
 
