@@ -12,7 +12,7 @@ OOA - Object-oriented Analysis
 - [ ] Розкажіть про патерни проєктування.
 - [ ] Що таке Dependency Injection? Наведіть приклад.
 - [ ] Які переваги та недоліки функціонального підходу?
-- [ ] Що таке принцип RAII?
+- [+] Що таке принцип RAII (Resource Acquisition Is Initialization)?
 - [ ] Що таке принцип DRY?
 - [ ] Що таке принцип KISS?
 - [ ] Які переваги композиції перед успадкуванням?
@@ -30,7 +30,7 @@ OOA - Object-oriented Analysis
 ## C++ and OOP idioms
 
 - [ ] Multiple inheritance (know for what, where can help)
-- [ ] RAII idioms
+- [+] RAII idioms
 - [ ] Singleton, abstract fabric, publisher-subscriber and other popular patterns
 - [ ] PIMPL idiom
 - [ ] Virtual destructors (for what, how can help, where need to be careful)
@@ -46,14 +46,13 @@ OOA - Object-oriented Analysis
 - [ ] Order of calling constructors\destructors
 - [ ] limitations of conts methods
 - [ ] Cases of calls copy-constructor
-- [ ] Difference between raw and smart pointers
-- [ ] Difference malloc and new
-- [ ] Using 'delete' operator for zero-pointers
-- [ ] An order of passing function\method arguments
+- [+] Difference between raw and smart pointers
+- [+] Difference malloc and new
+- [+] Using 'delete' operator for zero-pointers
+- [ ] An order of passing function/method arguments
 - [ ] C++ operators overlapping
 - [ ] Familiar with "slicing" C++ objects
-- [ ] "Detailed steps of handling C++ exception and actions applied in case of
-- [ ] exception handler was not found."
+- [ ] Detailed steps of handling C++ exception and actions applied in case of exception handler was not found
 - [ ] Where it is not recommended to use exceptions?
 - [ ] The order of handling C++ exceptions in case blocks
 - [ ] Exceptions in custom constructors
@@ -62,13 +61,9 @@ OOA - Object-oriented Analysis
 - [ ] Details of using different new operators (placement, std::nothrow, new [])
 - [ ] Experience of creating custom C++ polymorph objects
 - [ ] Familliar with details of using pure virtual methods, classes
-- [ ] "Has strong understaning details of using virtual methods,
-- [ ] internals of virtual tables, performance issues and lowel implementation"
-- [ ] "Knows all differences of type casts operators:
-- [ ] dynamic_cast, const_cast, reinterpret_cats, static_cast
-- [ ] and cases when bad_cast exception can arise."
-- [ ] Solid experince with C++ lambdas
+- [ ] Has strong understaning details of using virtual methods, internals of virtual tables, performance issues and lowel implementation
+- [ ] Knows all differences of type casts operators: dynamic_cast, const_cast, reinterpret_cats, static_cast and cases when bad_cast exception can arise
+- [+] Solid experince with C++ lambdas
 - [ ] Common cache optimization problems (read ahead, volatile key-word)
 - [ ] Understanding of basic spin-lock implementation
-- [ ] C++ template experience
-- [ ] Static / Dynamic polyformism
+- [+] Static / Dynamic polyformism
