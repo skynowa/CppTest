@@ -2,9 +2,9 @@
 
 ## LIBs, Tools, Protocols
 
-- [ ] Experince of using PRC frameworks (gRPCm apathe::thrift and etc.)
+- [ ] Experince of using PRC frameworks (gRPC, apathe::thrift, ...)
 - [ ] Crash dumps analysis (GDB, WinDBG, OllyDbg)
-- [+] Using RESTapi libs
+- [+] Using REST api libs
 - [+] HTTP
 - [ ] HTTPS, TLS
 - [+] Berkeley sockets experience (connect, create, accept, listen, send and etc.)
@@ -15,6 +15,6 @@
 - [+] curl, postman
 - [+] Worked with XML, JSON
 - [+] cmake, MS Build
-- [+] gTest
+- [+] GTest
 - [ ] C++ sanitizers
 - [ ] Network protocols (tcp, upd)
