@@ -1,34 +1,34 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a> **23-Dec-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
-- [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
+- [Algos](#algos "Algorithms") ░░░░░░░░░░ 0% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (206)
+- [Core](#core "") ██████░░░░ 🔥59% (206)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ██████████ 🚩95% (20)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ██████░░░░ 🔥55% (47)
+- [IpcMt](#ipcmt "") ██░░░░░░░░ 20% (30)
+- [Libs](#libs "") █████░░░░░ 🔥50% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
-- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
+- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 37% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
+- [SQL](#sql "[ ] SQL language skills") ████████░░ 🔥84% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 26% (88)
-- [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
-- [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
-- [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
+- [Stl](#stl "") █░░░░░░░░░ 11% (88)
+- [Templates](#templates "[ ] Template metaprogramming") ████░░░░░░ 43% (14)
+- [Unix](#unix "[ ] Unix OS") █████░░░░░ 🔥50% (4)
+- [Windows](#windows "[ ] Windows OS (WinAPI)") ███████░░░ 🔥68% (38)
 
-##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Algorithms" id="algos">Algos ░░░░░░░░░░ 0% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
-* <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
+* <a href="/Algos/ReverseString.cpp" title="">❌ ReverseString.cpp</a>
+* <a href="/Algos/BubbleSort.cpp" title="">❌ BubbleSort.cpp</a>
 * <a href="/Algos/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
@@ -74,63 +74,63 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (206)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core ██████░░░░ 🔥59% (206)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
+* <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">❌ SwitchString.cpp</a>
 * <a href="/Core/ReturnBool.cpp" title="Retun NO-value (as bool)">✅ `ReturnBool.cpp`</a>
 
 </details>
 
   * <details close>
-    <summary>📁 ✅ Array 100% (4)</summary>
+    <summary>📁 ❌ Array 0% (4)</summary>
 
-    * <a href="/Core/Array/Size.cpp" title="Size of array">✅ `Size.cpp`</a>
+    * <a href="/Core/Array/Size.cpp" title="Size of array">❌ Size.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ ToFunction 100% (3)</summary>
+      <summary>📁 ❌ ToFunction 0% (3)</summary>
 
-        * <a href="/Core/Array/ToFunction/ToFunction1.cpp" title="">✅ `ToFunction1.cpp`</a>
-        * <a href="/Core/Array/ToFunction/ToFunction3.cpp" title="">✅ `ToFunction3.cpp`</a>
-        * <a href="/Core/Array/ToFunction/ToFunction2.cpp" title="">✅ `ToFunction2.cpp`</a>
+        * <a href="/Core/Array/ToFunction/ToFunction1.cpp" title="">❌ ToFunction1.cpp</a>
+        * <a href="/Core/Array/ToFunction/ToFunction3.cpp" title="">❌ ToFunction3.cpp</a>
+        * <a href="/Core/Array/ToFunction/ToFunction2.cpp" title="">❌ ToFunction2.cpp</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 83% (6)</summary>
+    <summary>📁 ⌛ Bits 33% (6)</summary>
 
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
-    * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
+    * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">❌ BuffToint.cpp</a>
     * <a href="/Core/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
     * <a href="/Core/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
-    * <a href="/Core/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
+    * <a href="/Core/Bits/Bitset.cpp" title="">❌ Bitset.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ IsBot 100% (1)</summary>
+      <summary>📁 ❌ IsBot 0% (1)</summary>
 
-        * <a href="/Core/Bits/IsBot/IsBot.cpp" title="">🖊 `IsBot.cpp`</a>
+        * <a href="/Core/Bits/IsBot/IsBot.cpp" title="">❌ IsBot.cpp</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ⌛ C 93% (14)</summary>
+    <summary>📁 ⌛ C 57% (14)</summary>
 
     * <a href="/Core/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
     * <a href="/Core/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
-    * <a href="/Core/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
-    * <a href="/Core/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
-    * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
-    * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
+    * <a href="/Core/C/ConvertTime.cpp" title="">❌ ConvertTime.cpp</a>
+    * <a href="/Core/C/BuffZero.cpp" title="">❌ BuffZero.cpp</a>
+    * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">❌ IsAlphaRu.cpp</a>
+    * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">❌ Strptime.cpp</a>
     * <a href="/Core/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
     * <a href="/Core/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
     * <a href="/Core/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
     * <a href="/Core/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
-    * <a href="/Core/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
+    * <a href="/Core/C/Strftime.cpp" title="Format date and time">❌ Strftime.cpp</a>
 
     </details>
 
@@ -143,28 +143,28 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Cast 100% (3)</summary>
+    <summary>📁 ⌛ Cast 67% (3)</summary>
 
     * <a href="/Core/Cast/BoolCast.cpp" title="">✅ `BoolCast.cpp`</a>
-    * <a href="/Core/Cast/ReinterpretCast.cpp" title="">✅ `ReinterpretCast.cpp`</a>
+    * <a href="/Core/Cast/ReinterpretCast.cpp" title="">❌ ReinterpretCast.cpp</a>
     * <a href="/Core/Cast/Casts.cpp" title="">✅ `Casts.cpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Char 100% (6)</summary>
+    <summary>📁 ⌛ Char 67% (6)</summary>
 
     * <a href="/Core/Char/UnicodeAnsi.cpp" title="">✅ `UnicodeAnsi.cpp`</a>
     * <a href="/Core/Char/EmptyChar.cpp" title="Empty char">✅ `EmptyChar.cpp`</a>
     * <a href="/Core/Char/SizeofUnicodes.cpp" title="">✅ `SizeofUnicodes.cpp`</a>
     * <a href="/Core/Char/Escape.cpp" title="String escaping">✅ `Escape.cpp`</a>
-    * <a href="/Core/Char/IsAlpha.cpp" title="">✅ `IsAlpha.cpp`</a>
-    * <a href="/Core/Char/IntToChar.cpp" title="">✅ `IntToChar.cpp`</a>
+    * <a href="/Core/Char/IsAlpha.cpp" title="">❌ IsAlpha.cpp</a>
+    * <a href="/Core/Char/IntToChar.cpp" title="">❌ IntToChar.cpp</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Class 100% (17)</summary>
+    <summary>📁 ⌛ Class 82% (17)</summary>
 
     * <a href="/Core/Class/InitConstructor.cpp" title="">✅ `InitConstructor.cpp`</a>
     * <a href="/Core/Class/QuotedString.java" title="EO sample">✅ `QuotedString.java`</a>
@@ -172,21 +172,21 @@
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">✅ `CallMethod.cpp`</a>
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">✅ `FunctionDefinition.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
-    * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
+    * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">❌ RuleOfFive.h</a>
     * <a href="/Core/Class/CopyCtor.cpp" title="Copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
-    * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
+    * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">❌ EmptyStructSizeOf.cpp</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Inheritance 100% (4)</summary>
+      <summary>📁 ⌛ Inheritance 75% (4)</summary>
 
         * <a href="/Core/Class/Inheritance/AccessSpecifiers.cpp" title="Access specifiers">✅ `AccessSpecifiers.cpp`</a>
         * <a href="/Core/Class/Inheritance/DerivedMethods.cpp" title="Call derived methods">✅ `DerivedMethods.cpp`</a>
-        * <a href="/Core/Class/Inheritance/ProxyLayer.cpp" title="">✅ `ProxyLayer.cpp`</a>
+        * <a href="/Core/Class/Inheritance/ProxyLayer.cpp" title="">❌ ProxyLayer.cpp</a>
         * <a href="/Core/Class/Inheritance/Hierarchy.cpp" title="Hierarchy structure">✅ `Hierarchy.cpp`</a>
 
       </details>
@@ -199,10 +199,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Conditions 100% (2)</summary>
+    <summary>📁 ⌛ Conditions 50% (2)</summary>
 
     * <a href="/Core/Conditions/If.cpp" title="">✅ `If.cpp`</a>
-    * <a href="/Core/Conditions/IfDecInc.cpp" title="If with post/pre increment operators">✅ `IfDecInc.cpp`</a>
+    * <a href="/Core/Conditions/IfDecInc.cpp" title="If with post/pre increment operators">❌ IfDecInc.cpp</a>
 
     </details>
 
@@ -221,42 +221,42 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Cpp17 88% (25)</summary>
+    <summary>📁 ⌛ Cpp17 40% (25)</summary>
 
     * <a href="/Core/Cpp17/EnumListInitialization.cpp" title="Direct List Initialization of Enums">✅ `EnumListInitialization.cpp`</a>
     * <a href="/Core/Cpp17/TemplateArgDeduction.cpp" title="Template argument deduction for class templates">✅ `TemplateArgDeduction.cpp`</a>
     * <a href="/Core/Cpp17/Utf8CharLiterals.cpp" title="UTF-8 Character Literals">✅ `Utf8CharLiterals.cpp`</a>
-    * <a href="/Core/Cpp17/InlineVars.cpp" title="Inline variables">✅ `InlineVars.cpp`</a>
+    * <a href="/Core/Cpp17/InlineVars.cpp" title="Inline variables">❌ InlineVars.cpp</a>
     * <a href="/Core/Cpp17/TemplateAutoParam.cpp" title="Declaring non-type template parameters with auto">❌ TemplateAutoParam.cpp</a>
-    * <a href="/Core/Cpp17/LambdaThisByValue.cpp" title="Lambda capture this by value">✅ `LambdaThisByValue.cpp`</a>
+    * <a href="/Core/Cpp17/LambdaThisByValue.cpp" title="Lambda capture this by value">❌ LambdaThisByValue.cpp</a>
     * <a href="/Core/Cpp17/NestedNamespaces.cpp" title="Nested namespaces">✅ `NestedNamespaces.cpp`</a>
-    * <a href="/Core/Cpp17/StructuredBindingsRef.cpp" title="">✅ `StructuredBindingsRef.cpp`</a>
+    * <a href="/Core/Cpp17/StructuredBindingsRef.cpp" title="">❌ StructuredBindingsRef.cpp</a>
     * <a href="/Core/Cpp17/BracedInitList.cpp" title="New rules for auto deduction from braced-init-list">✅ `BracedInitList.cpp`</a>
     * <a href="/Core/Cpp17/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/Cpp17/ClassTemplateArgDeduction_CTAD.cpp" title="CTAD - Class template argument deduction">✅ `ClassTemplateArgDeduction_CTAD.cpp`</a>
-    * <a href="/Core/Cpp17/SelectionVarInitializer.cpp" title="Selection statements with initializer">✅ `SelectionVarInitializer.cpp`</a>
+    * <a href="/Core/Cpp17/SelectionVarInitializer.cpp" title="Selection statements with initializer">❌ SelectionVarInitializer.cpp</a>
     * <a href="/Core/Cpp17/FoldExpressions.cpp" title="Fold expressions">❌ FoldExpressions.cpp</a>
-    * <a href="/Core/Cpp17/StructuredBindings.cpp" title="Structured bindings">✅ `StructuredBindings.cpp`</a>
+    * <a href="/Core/Cpp17/StructuredBindings.cpp" title="Structured bindings">❌ StructuredBindings.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Attributes 100% (7)</summary>
+      <summary>📁 ⌛ Attributes 14% (7)</summary>
 
-        * <a href="/Core/Cpp17/Attributes/Deprecated.cpp" title="">✅ `Deprecated.cpp`</a>
+        * <a href="/Core/Cpp17/Attributes/Deprecated.cpp" title="">❌ Deprecated.cpp</a>
         * <a href="/Core/Cpp17/Attributes/CarriesDependency.cpp" title="">✅ `CarriesDependency.cpp`</a>
-        * <a href="/Core/Cpp17/Attributes/MaybeUnused.cpp" title="[[maybe_unused]]">✅ `MaybeUnused.cpp`</a>
-        * <a href="/Core/Cpp17/Attributes/NoDiscard.cpp" title="[[nodiscard]]">✅ `NoDiscard.cpp`</a>
-        * <a href="/Core/Cpp17/Attributes/NoReturn.cpp" title="Indicates that the function does not return">✅ `NoReturn.cpp`</a>
-        * <a href="/Core/Cpp17/Attributes/FallThrough.cpp" title="[[fallthrough]]">✅ `FallThrough.cpp`</a>
-        * <a href="/Core/Cpp17/Attributes/Sample1.cpp" title="New standard attributes">✅ `Sample1.cpp`</a>
+        * <a href="/Core/Cpp17/Attributes/MaybeUnused.cpp" title="[[maybe_unused]]">❌ MaybeUnused.cpp</a>
+        * <a href="/Core/Cpp17/Attributes/NoDiscard.cpp" title="[[nodiscard]]">❌ NoDiscard.cpp</a>
+        * <a href="/Core/Cpp17/Attributes/NoReturn.cpp" title="Indicates that the function does not return">❌ NoReturn.cpp</a>
+        * <a href="/Core/Cpp17/Attributes/FallThrough.cpp" title="[[fallthrough]]">❌ FallThrough.cpp</a>
+        * <a href="/Core/Cpp17/Attributes/Sample1.cpp" title="New standard attributes">❌ Sample1.cpp</a>
 
       </details>
 
     * <details close>
-      <summary>📁 ✅ Constexpr 100% (4)</summary>
+      <summary>📁 ⌛ Constexpr 75% (4)</summary>
 
-        * <a href="/Core/Cpp17/Constexpr/Lambda.cpp" title="constexpr lambda">✅ `Lambda.cpp`</a>
+        * <a href="/Core/Cpp17/Constexpr/Lambda.cpp" title="constexpr lambda">❌ Lambda.cpp</a>
         * <a href="/Core/Cpp17/Constexpr/ReturnValue.cpp" title="">✅ `ReturnValue.cpp`</a>
         * <a href="/Core/Cpp17/Constexpr/If.cpp" title="constexpr if">✅ `If.cpp`</a>
         * <a href="/Core/Cpp17/Constexpr/Switch.cpp" title="">✅ `Switch.cpp`</a>
@@ -278,9 +278,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Double 83% (6)</summary>
+    <summary>📁 ⌛ Double 67% (6)</summary>
 
-    * <a href="/Core/Double/DivideByZero.cpp" title="">✅ `DivideByZero.cpp`</a>
+    * <a href="/Core/Double/DivideByZero.cpp" title="">❌ DivideByZero.cpp</a>
     * <a href="/Core/Double/Compare.cpp" title="">✅ `Compare.cpp`</a>
     * <a href="/Core/Double/Cast.cpp" title="">✅ `Cast.cpp`</a>
     * <a href="/Core/Double/IsGreater.cpp" title="Returns whether x is greater than y">✅ `IsGreater.cpp`</a>
@@ -290,74 +290,74 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Enum 100% (7)</summary>
+    <summary>📁 ⌛ Enum 29% (7)</summary>
 
-    * <a href="/Core/Enum/For.cpp" title="">🖊 `For.cpp`</a>
-    * <a href="/Core/Enum/CodeStyle.cpp" title="">✅ `CodeStyle.cpp`</a>
-    * <a href="/Core/Enum/TODO.md" title="">✅ `📝 TODO.md`</a>
+    * <a href="/Core/Enum/For.cpp" title="">❌ For.cpp</a>
+    * <a href="/Core/Enum/CodeStyle.cpp" title="">❌ CodeStyle.cpp</a>
+    * <a href="/Core/Enum/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Enum/Reverse.cpp" title="Enum in reverse order">✅ `Reverse.cpp`</a>
     * <a href="/Core/Enum/SizeOf.cpp" title="enum size">✅ `SizeOf.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ EnumIO 100% (2)</summary>
+      <summary>📁 ❌ EnumIO 0% (2)</summary>
 
-        * <a href="/Core/Enum/EnumIO/EnumIO.h" title="">🖊 `EnumIO.h`</a>
-        * <a href="/Core/Enum/EnumIO/EnumIO_test.cpp" title="smart enum">🖊 `EnumIO_test.cpp`</a>
+        * <a href="/Core/Enum/EnumIO/EnumIO.h" title="">❌ EnumIO.h</a>
+        * <a href="/Core/Enum/EnumIO/EnumIO_test.cpp" title="smart enum">❌ EnumIO_test.cpp</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ✅ Exceptions 100% (11)</summary>
+    <summary>📁 ⌛ Exceptions 73% (11)</summary>
 
     * <a href="/Core/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Core/Exceptions/TryCatchMain.cpp" title="Main without braces in try/catch">✅ `TryCatchMain.cpp`</a>
     * <a href="/Core/Exceptions/NonCatched.cpp" title="Non-catched "double" exception">✅ `NonCatched.cpp`</a>
     * <a href="/Core/Exceptions/ThrowDerived.cpp" title="">✅ `ThrowDerived.cpp`</a>
-    * <a href="/Core/Exceptions/SignalsToException.cpp" title="http://www.ibm.com/developerworks/library/l-cppexcep/">🖊 `SignalsToException.cpp`</a>
+    * <a href="/Core/Exceptions/SignalsToException.cpp" title="http://www.ibm.com/developerworks/library/l-cppexcep/">❌ SignalsToException.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ SignalsToException_2 100% (3)</summary>
+      <summary>📁 ⌛ SignalsToException_2 67% (3)</summary>
 
         * <a href="/Core/Exceptions/SignalsToException_2/SignalsToException_2.cpp" title="">🖊 `SignalsToException_2.cpp`</a>
-        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">✅ `SignalHandler.inl`</a>
+        * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.inl" title="">❌ SignalHandler.inl</a>
         * <a href="/Core/Exceptions/SignalsToException_2/SignalHandler.h" title="">✅ `SignalHandler.h`</a>
 
       </details>
 
     * <details close>
-      <summary>📁 ✅ WinException 100% (3)</summary>
+      <summary>📁 ⌛ WinException 67% (3)</summary>
 
         * <a href="/Core/Exceptions/WinException/CxWinException.h" title="">✅ `CxWinException.h`</a>
-        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">✅ `CxWinException.cpp`</a>
+        * <a href="/Core/Exceptions/WinException/CxWinException.cpp" title="">❌ CxWinException.cpp</a>
         * <a href="/Core/Exceptions/WinException/WinException.cpp" title="">✅ `WinException.cpp`</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ✅ Functor 100% (19)</summary>
+    <summary>📁 ⌛ Functor 37% (19)</summary>
 
-    * <a href="/Core/Functor/VariableArguments.cpp" title="">✅ `VariableArguments.cpp`</a>
+    * <a href="/Core/Functor/VariableArguments.cpp" title="">❌ VariableArguments.cpp</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Function 100% (4)</summary>
+      <summary>📁 ⌛ Function 75% (4)</summary>
 
         * <a href="/Core/Functor/Function/Overloading.cpp" title="">✅ `Overloading.cpp`</a>
         * <a href="/Core/Functor/Function/Inline.cpp" title="">✅ `Inline.cpp`</a>
-        * <a href="/Core/Functor/Function/Native.cpp" title="">✅ `Native.cpp`</a>
+        * <a href="/Core/Functor/Function/Native.cpp" title="">❌ Native.cpp</a>
         * <a href="/Core/Functor/Function/ReturnSyntax.cpp" title="">✅ `ReturnSyntax.cpp`</a>
 
       </details>
 
     * <details close>
-      <summary>📁 ✅ Functor 100% (5)</summary>
+      <summary>📁 ⌛ Functor 80% (5)</summary>
 
-        * <a href="/Core/Functor/Functor/Operator.cpp" title="operator() as functor">✅ `Operator.cpp`</a>
+        * <a href="/Core/Functor/Functor/Operator.cpp" title="operator() as functor">❌ Operator.cpp</a>
         * <a href="/Core/Functor/Functor/Target.cpp" title="function::target example">✅ `Target.cpp`</a>
         * <a href="/Core/Functor/Functor/Static.cpp" title="">✅ `Static.cpp`</a>
         * <a href="/Core/Functor/Functor/RegualarFunc.cpp" title="Regualar function as functor">✅ `RegualarFunc.cpp`</a>
@@ -366,46 +366,46 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ Lambda 100% (9)</summary>
+      <summary>📁 ❌ Lambda 0% (9)</summary>
 
-        * <a href="/Core/Functor/Lambda/ScopeFaultScenario.cpp" title="">🖊 `ScopeFaultScenario.cpp`</a>
-        * <a href="/Core/Functor/Lambda/Scopes.cpp" title="">✅ `Scopes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/PtrsSizes.cpp" title="">✅ `PtrsSizes.cpp`</a>
-        * <a href="/Core/Functor/Lambda/ScopesByValue.cpp" title="">✅ `ScopesByValue.cpp`</a>
-        * <a href="/Core/Functor/Lambda/Examples.cpp" title="">✅ `Examples.cpp`</a>
-        * <a href="/Core/Functor/Lambda/Basic.cpp" title="">✅ `Basic.cpp`</a>
-        * <a href="/Core/Functor/Lambda/GccLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">✅ `GccLeaky.cpp`</a>
-        * <a href="/Core/Functor/Lambda/ScopesByReference.cpp" title="">✅ `ScopesByReference.cpp`</a>
-        * <a href="/Core/Functor/Lambda/MemberVariableCapture.cpp" title="">✅ `MemberVariableCapture.cpp`</a>
+        * <a href="/Core/Functor/Lambda/ScopeFaultScenario.cpp" title="">❌ ScopeFaultScenario.cpp</a>
+        * <a href="/Core/Functor/Lambda/Scopes.cpp" title="">❌ Scopes.cpp</a>
+        * <a href="/Core/Functor/Lambda/PtrsSizes.cpp" title="">❌ PtrsSizes.cpp</a>
+        * <a href="/Core/Functor/Lambda/ScopesByValue.cpp" title="">❌ ScopesByValue.cpp</a>
+        * <a href="/Core/Functor/Lambda/Examples.cpp" title="">❌ Examples.cpp</a>
+        * <a href="/Core/Functor/Lambda/Basic.cpp" title="">❌ Basic.cpp</a>
+        * <a href="/Core/Functor/Lambda/GccLeaky.cpp" title="https://www.youtube.com/watch?v=S9_mYmvO4Ow">❌ GccLeaky.cpp</a>
+        * <a href="/Core/Functor/Lambda/ScopesByReference.cpp" title="">❌ ScopesByReference.cpp</a>
+        * <a href="/Core/Functor/Lambda/MemberVariableCapture.cpp" title="">❌ MemberVariableCapture.cpp</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ✅ Loops 100% (6)</summary>
+    <summary>📁 ⌛ Loops 83% (6)</summary>
 
     * <a href="/Core/Loops/For.cpp" title="">✅ `For.cpp`</a>
     * <a href="/Core/Loops/GoToLablel.cpp" title="">✅ `GoToLablel.cpp`</a>
     * <a href="/Core/Loops/ForVoid.cpp" title="">✅ `ForVoid.cpp`</a>
-    * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">✅ `SwitchCase.cpp`</a>
+    * <a href="/Core/Loops/SwitchCase.cpp" title="Modern switch / case">❌ SwitchCase.cpp</a>
     * <a href="/Core/Loops/ForEndCondition.cpp" title="">✅ `ForEndCondition.cpp`</a>
     * <a href="/Core/Loops/ForBreak.cpp" title="">✅ `ForBreak.cpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Move 33% (6)</summary>
+    <summary>📁 ❌ Move 0% (6)</summary>
 
     * <a href="/Core/Move/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Move/LValue.cpp" title="">❌ LValue.cpp</a>
     * <a href="/Core/Move/PerformanceTest.cpp" title="">❌ PerformanceTest.cpp</a>
-    * <a href="/Core/Move/MoveRef.cpp" title="">🖊 `MoveRef.cpp`</a>
+    * <a href="/Core/Move/MoveRef.cpp" title="">❌ MoveRef.cpp</a>
     * <a href="/Core/Move/RValue.cpp" title="">❌ RValue.cpp</a>
-    * <a href="/Core/Move/Move.cpp" title="">🖊 `Move.cpp`</a>
+    * <a href="/Core/Move/Move.cpp" title="">❌ Move.cpp</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Operators 100% (16)</summary>
+    <summary>📁 ⌛ Operators 88% (16)</summary>
 
     * <a href="/Core/Operators/Namespace.cpp" title="">🖊 `Namespace.cpp`</a>
     * <a href="/Core/Operators/Explicit.cpp" title="">✅ `Explicit.cpp`</a>
@@ -414,8 +414,8 @@
     * <a href="/Core/Operators/Insertion.cpp" title="Output stream insertion (<<) operator for custom types">✅ `Insertion.cpp`</a>
     * <a href="/Core/Operators/ZeroDivision.cpp" title="">✅ `ZeroDivision.cpp`</a>
     * <a href="/Core/Operators/DecIncInt.cpp" title="Decrement, increment and sequence point">🖊 `DecIncInt.cpp`</a>
-    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">✅ `PlacementNew.cpp`</a>
-    * <a href="/Core/Operators/NewDelete.cpp" title="replace operator new and delete to log allocations">✅ `NewDelete.cpp`</a>
+    * <a href="/Core/Operators/PlacementNew.cpp" title="Placement new allows you to construct an object on memory that's already allocated">❌ PlacementNew.cpp</a>
+    * <a href="/Core/Operators/NewDelete.cpp" title="replace operator new and delete to log allocations">❌ NewDelete.cpp</a>
 
     </details>
 
@@ -433,31 +433,31 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Pointers 86% (7)</summary>
+    <summary>📁 ⌛ Pointers 71% (7)</summary>
 
     * <a href="/Core/Pointers/PtrDelete.cpp" title="">✅ `PtrDelete.cpp`</a>
     * <a href="/Core/Pointers/AutoPtr.h" title="auto pointer">🖊 `AutoPtr.h`</a>
     * <a href="/Core/Pointers/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Pointers/FunctionPtr.cpp" title="pointer to function">🖊 `FunctionPtr.cpp`</a>
     * <a href="/Core/Pointers/RefCounter.cpp" title="How do I do simple reference counting">🖊 `RefCounter.cpp`</a>
-    * <a href="/Core/Pointers/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+    * <a href="/Core/Pointers/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/Pointers/CatchPtr.hpp" title="">🖊 `CatchPtr.hpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Random 100% (2)</summary>
+    <summary>📁 ⌛ Random 50% (2)</summary>
 
     * <a href="/Core/Random/Rand.cpp" title="Random number generations">✅ `Rand.cpp`</a>
-    * <a href="/Core/Random/RandomShuffle.cpp" title="">✅ `RandomShuffle.cpp`</a>
+    * <a href="/Core/Random/RandomShuffle.cpp" title="">❌ RandomShuffle.cpp</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Static 100% (12)</summary>
+    <summary>📁 ⌛ Static 92% (12)</summary>
 
     * <a href="/Core/Static/StaticHolder.cpp" title="">✅ `StaticHolder.cpp`</a>
-    * <a href="/Core/Static/Data.cpp" title="">✅ `Data.cpp`</a>
+    * <a href="/Core/Static/Data.cpp" title="">❌ Data.cpp</a>
 
     </details>
 
@@ -484,13 +484,13 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ String 100% (13)</summary>
+    <summary>📁 ⌛ String 46% (13)</summary>
 
-    * <a href="/Core/String/BinaryData.cpp" title="std::string can hold binary data. That is, a string with '\0' in any position.">✅ `BinaryData.cpp`</a>
-    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">✅ `StringView.cpp`</a>
+    * <a href="/Core/String/BinaryData.cpp" title="std::string can hold binary data. That is, a string with '\0' in any position.">❌ BinaryData.cpp</a>
+    * <a href="/Core/String/StringView.cpp" title="StringView + Enum">❌ StringView.cpp</a>
     * <a href="/Core/String/CapacityFunction.cpp" title="">✅ `CapacityFunction.cpp`</a>
-    * <a href="/Core/String/CStrData.cpp" title=".c_str() and .data() are the same">✅ `CStrData.cpp`</a>
-    * <a href="/Core/String/ManipulatingFunction.cpp" title="">✅ `ManipulatingFunction.cpp`</a>
+    * <a href="/Core/String/CStrData.cpp" title=".c_str() and .data() are the same">❌ CStrData.cpp</a>
+    * <a href="/Core/String/ManipulatingFunction.cpp" title="">❌ ManipulatingFunction.cpp</a>
     * <a href="/Core/String/InputFunction.cpp" title="">✅ `InputFunction.cpp`</a>
     * <a href="/Core/String/Npos.cpp" title="npos is a static member constant value with the greatest possible value for an element of type size_t">✅ `Npos.cpp`</a>
     * <a href="/Core/String/OtherUsefulFunction.cpp" title="">✅ `OtherUsefulFunction.cpp`</a>
@@ -500,29 +500,29 @@
     </details>
 
     * <details close>
-      <summary>📁 ✅ CString 100% (3)</summary>
+      <summary>📁 ❌ CString 0% (3)</summary>
 
-        * <a href="/Core/String/CString/CString.inl" title="simple string class">✅ `CString.inl`</a>
-        * <a href="/Core/String/CString/CString.h" title="simple string class">🖊 `CString.h`</a>
-        * <a href="/Core/String/CString/main_CString.cpp" title="">✅ `main_CString.cpp`</a>
+        * <a href="/Core/String/CString/CString.inl" title="simple string class">❌ CString.inl</a>
+        * <a href="/Core/String/CString/CString.h" title="simple string class">❌ CString.h</a>
+        * <a href="/Core/String/CString/main_CString.cpp" title="">❌ main_CString.cpp</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ✅ Types 100% (2)</summary>
+    <summary>📁 ⌛ Types 50% (2)</summary>
 
     * <a href="/Core/Types/Sizes.cpp" title="">✅ `Sizes.cpp`</a>
-    * <a href="/Core/Types/Names.cpp" title="">✅ `Names.cpp`</a>
+    * <a href="/Core/Types/Names.cpp" title="">❌ Names.cpp</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Vars 86% (7)</summary>
+    <summary>📁 ⌛ Vars 71% (7)</summary>
 
     * <a href="/Core/Vars/Init.cpp" title="">✅ `Init.cpp`</a>
     * <a href="/Core/Vars/LvalueRvalue.cpp" title="">❌ LvalueRvalue.cpp</a>
     * <a href="/Core/Vars/Global2.cpp" title="">✅ `Global2.cpp`</a>
-    * <a href="/Core/Vars/ValueInitialization.cpp" title="">✅ `ValueInitialization.cpp`</a>
+    * <a href="/Core/Vars/ValueInitialization.cpp" title="">❌ ValueInitialization.cpp</a>
     * <a href="/Core/Vars/InitMembers.cpp" title="">✅ `InitMembers.cpp`</a>
     * <a href="/Core/Vars/Global1.cpp" title="global and local var with the same name">✅ `Global1.cpp`</a>
     * <a href="/Core/Vars/Visibility.cpp" title="var visibility">✅ `Visibility.cpp`</a>
@@ -530,7 +530,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Virtual 100% (8)</summary>
+    <summary>📁 ⌛ Virtual 88% (8)</summary>
 
     * <a href="/Core/Virtual/Function1.cpp" title="">✅ `Function1.cpp`</a>
     * <a href="/Core/Virtual/PureVirtualCall1.cpp" title="WITHOUT PVC exception">✅ `PureVirtualCall1.cpp`</a>
@@ -538,7 +538,7 @@
     * <a href="/Core/Virtual/PureVirtualCall2.cpp" title="WITH PVC exception">✅ `PureVirtualCall2.cpp`</a>
     * <a href="/Core/Virtual/Inheritance2.cpp" title="Virtual inheritance">✅ `Inheritance2.cpp`</a>
     * <a href="/Core/Virtual/Inheritance1.cpp" title="Virtual inheritance">✅ `Inheritance1.cpp`</a>
-    * <a href="/Core/Virtual/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+    * <a href="/Core/Virtual/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/Core/Virtual/Function2.cpp" title="">✅ `Function2.cpp`</a>
 
     </details>
@@ -572,20 +572,20 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥83% (47)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ██████░░░░ 🔥55% (47)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
+* <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">❌ CopyOnWrite.cpp</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
 * <a href="/Idioms/NonCopyableMixin.cpp" title="To prevent objects of a class from being copy-constructed or assigned to each other">✅ `NonCopyableMixin.cpp`</a>
 * <a href="/Idioms/DependencyInversion.cpp" title="">❌ DependencyInversion.cpp</a>
-* <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
-* <a href="/Idioms/IteratorPair.cpp" title="Specify a range of data values without worrying about the underlying data structure">✅ `IteratorPair.cpp`</a>
-* <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
+* <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">❌ EraseRemove.cpp</a>
+* <a href="/Idioms/IteratorPair.cpp" title="Specify a range of data values without worrying about the underlying data structure">❌ IteratorPair.cpp</a>
+* <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">❌ CopyAndSwap.cpp</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
-* <a href="/Idioms/SmallObjectOptimization.cpp" title="Small Object Optimization (aka small buffer optimization)">✅ `SmallObjectOptimization.cpp`</a>
+* <a href="/Idioms/SmallObjectOptimization.cpp" title="Small Object Optimization (aka small buffer optimization)">❌ SmallObjectOptimization.cpp</a>
 * <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
@@ -656,32 +656,32 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ RuleOf 100% (4)</summary>
+    <summary>📁 ❌ RuleOf 0% (4)</summary>
 
-    * <a href="/Idioms/RuleOf/Rule5.h" title="The rule of three/five/zero">✅ `Rule5.h`</a>
-    * <a href="/Idioms/RuleOf/Rule0.h" title="The rule of three/five/zero">✅ `Rule0.h`</a>
-    * <a href="/Idioms/RuleOf/Rule3Copy.h" title="The rule of three/five/zero">✅ `Rule3Copy.h`</a>
-    * <a href="/Idioms/RuleOf/Rule3Move.h" title="The rule of three/five/zero">✅ `Rule3Move.h`</a>
+    * <a href="/Idioms/RuleOf/Rule5.h" title="The rule of three/five/zero">❌ Rule5.h</a>
+    * <a href="/Idioms/RuleOf/Rule0.h" title="The rule of three/five/zero">❌ Rule0.h</a>
+    * <a href="/Idioms/RuleOf/Rule3Copy.h" title="The rule of three/five/zero">❌ Rule3Copy.h</a>
+    * <a href="/Idioms/RuleOf/Rule3Move.h" title="The rule of three/five/zero">❌ Rule3Move.h</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ Rvo 100% (6)</summary>
+    <summary>📁 ⌛ Rvo 67% (6)</summary>
 
     * <a href="/Idioms/Rvo/RvoDisabled_5.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_5.cpp`</a>
     * <a href="/Idioms/Rvo/RvoDisabled_4.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_4.cpp`</a>
-    * <a href="/Idioms/Rvo/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">✅ `Rvo.cpp`</a>
+    * <a href="/Idioms/Rvo/Rvo.cpp" title="Return Value Optimization (RVO), Named RVO (NRVO) and Copy-Elision are in C++ since C++98">❌ Rvo.cpp</a>
     * <a href="/Idioms/Rvo/RvoDisabled_1.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_1.cpp`</a>
-    * <a href="/Idioms/Rvo/RvoDisabled_3.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_3.cpp`</a>
+    * <a href="/Idioms/Rvo/RvoDisabled_3.cpp" title="When RVO doesn’t / can’t happen">❌ RvoDisabled_3.cpp</a>
     * <a href="/Idioms/Rvo/RvoDisabled_2.cpp" title="When RVO doesn’t / can’t happen">✅ `RvoDisabled_2.cpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Solid 17% (6)</summary>
+    <summary>📁 ❌ Solid 0% (6)</summary>
 
     * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">❌ SingleResponsibility_SRP.cpp</a>
-    * <a href="/Idioms/Solid/Readme.md" title="">🖊 `📝 Readme.md`</a>
+    * <a href="/Idioms/Solid/Readme.md" title="">❌ 📝 Readme.md</a>
     * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">❌ InterfaceSegregation_ISP.cpp</a>
     * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">❌ DependencyInversion_DIP.cpp</a>
     * <a href="/Idioms/Solid/LiskovSubstitution_LSP.cpp" title="Subclasses should be substitutable for their base classes">❌ LiskovSubstitution_LSP.cpp</a>
@@ -690,22 +690,22 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Yagni 100% (1)</summary>
+    <summary>📁 ❌ Yagni 0% (1)</summary>
 
-    * <a href="/Idioms/Yagni/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+    * <a href="/Idioms/Yagni/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ██░░░░░░░░ 20% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
 </details>
 
   * <details close>
-    <summary>📁 ✅ Atomic 100% (1)</summary>
+    <summary>📁 ❌ Atomic 0% (1)</summary>
 
-    * <a href="/IpcMt/Atomic/Flag.cpp" title="">🖊 `Flag.cpp`</a>
+    * <a href="/IpcMt/Atomic/Flag.cpp" title="">❌ Flag.cpp</a>
 
     </details>
 
@@ -774,18 +774,18 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Unix 75% (4)</summary>
+    <summary>📁 ⌛ Unix 25% (4)</summary>
 
     * <a href="/IpcMt/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ Proccess 100% (3)</summary>
+      <summary>📁 ⌛ Proccess 33% (3)</summary>
 
         * <a href="/IpcMt/Unix/Proccess/Wait.cpp" title="">✅ `Wait.cpp`</a>
-        * <a href="/IpcMt/Unix/Proccess/ExecuteBinary.cpp" title="">🖊 `ExecuteBinary.cpp`</a>
-        * <a href="/IpcMt/Unix/Proccess/GetStdInOutError.cpp" title="Catch stderr and stdout from external program">🖊 `GetStdInOutError.cpp`</a>
+        * <a href="/IpcMt/Unix/Proccess/ExecuteBinary.cpp" title="">❌ ExecuteBinary.cpp</a>
+        * <a href="/IpcMt/Unix/Proccess/GetStdInOutError.cpp" title="Catch stderr and stdout from external program">❌ GetStdInOutError.cpp</a>
 
       </details>
 
@@ -797,19 +797,19 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩95% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs █████░░░░░ 🔥50% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+* <a href="/Libs/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
 
   * <details close>
-    <summary>📁 ✅ Boost 100% (3)</summary>
+    <summary>📁 ⌛ Boost 33% (3)</summary>
 
-    * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">✅ `ProgramOptions.cpp`</a>
+    * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">❌ ProgramOptions.cpp</a>
     * <a href="/Libs/Boost/Bind.cpp" title="boost::bind">✅ `Bind.cpp`</a>
-    * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">✅ `ScopeArray.cpp`</a>
+    * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">❌ ScopeArray.cpp</a>
 
     </details>
 
@@ -822,19 +822,19 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ LibEvent 100% (4)</summary>
+    <summary>📁 ⌛ LibEvent 25% (4)</summary>
 
-    * <a href="/Libs/LibEvent/AllTest.cpp" title="">🖊 `AllTest.cpp`</a>
-    * <a href="/Libs/LibEvent/TimeTest.cpp" title="">🖊 `TimeTest.cpp`</a>
+    * <a href="/Libs/LibEvent/AllTest.cpp" title="">❌ AllTest.cpp</a>
+    * <a href="/Libs/LibEvent/TimeTest.cpp" title="">❌ TimeTest.cpp</a>
     * <a href="/Libs/LibEvent/SignalTest.cpp" title="">🖊 `SignalTest.cpp`</a>
-    * <a href="/Libs/LibEvent/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
+    * <a href="/Libs/LibEvent/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ LibUv 100% (1)</summary>
+    <summary>📁 ❌ LibUv 0% (1)</summary>
 
-    * <a href="/Libs/LibUv/FAQ.md" title="">🖊 `📝 FAQ.md`</a>
+    * <a href="/Libs/LibUv/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
@@ -862,22 +862,22 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Ssh2 100% (1)</summary>
+    <summary>📁 ❌ Ssh2 0% (1)</summary>
 
-    * <a href="/Libs/Ssh2/Ssh2.cpp" title="lib SSH2">✅ `Ssh2.cpp`</a>
+    * <a href="/Libs/Ssh2/Ssh2.cpp" title="lib SSH2">❌ Ssh2.cpp</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ XLib 100% (2)</summary>
+    <summary>📁 ⌛ XLib 50% (2)</summary>
 
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ GlobalHotKey 100% (2)</summary>
+      <summary>📁 ⌛ GlobalHotKey 50% (2)</summary>
 
-        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.cpp" title="">✅ `xgrabkey.cpp`</a>
+        * <a href="/Libs/XLib/GlobalHotKey/xgrabkey.cpp" title="">❌ xgrabkey.cpp</a>
         * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.cpp" title="">✅ `xgrabkey_2.cpp`</a>
 
       </details>
@@ -897,7 +897,7 @@
 
 </details>
 
-##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns ████░░░░░░ 43% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns ████░░░░░░ 37% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -911,12 +911,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Behavioral 7% (15)</summary>
+    <summary>📁 ❌ Behavioral 0% (15)</summary>
 
     * <a href="/Patterns/Behavioral/observer.cpp" title="">❌ observer.cpp</a>
     * <a href="/Patterns/Behavioral/mediator.cpp" title="">❌ mediator.cpp</a>
     * <a href="/Patterns/Behavioral/command.cpp" title="">❌ command.cpp</a>
-    * <a href="/Patterns/Behavioral/NullObject.cpp" title="Object with no referenced value or with defined neutral (null) behavior">✅ `NullObject.cpp`</a>
+    * <a href="/Patterns/Behavioral/NullObject.cpp" title="Object with no referenced value or with defined neutral (null) behavior">❌ NullObject.cpp</a>
     * <a href="/Patterns/Behavioral/strategy.cpp" title="">❌ strategy.cpp</a>
     * <a href="/Patterns/Behavioral/template_method.cpp" title="">❌ template_method.cpp</a>
     * <a href="/Patterns/Behavioral/observer2.cpp" title="">❌ observer2.cpp</a>
@@ -944,11 +944,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Structural 86% (7)</summary>
+    <summary>📁 ⌛ Structural 71% (7)</summary>
 
     * <a href="/Patterns/Structural/Facade.cpp" title="Wrap / simplify complex behaviour">✅ `Facade.cpp`</a>
     * <a href="/Patterns/Structural/Adapter.cpp" title="Convert one class so that it appears to be another class">❌ Adapter.cpp</a>
-    * <a href="/Patterns/Structural/FlyWeight.cpp" title="Flyweight creates objects as they are needed">✅ `FlyWeight.cpp`</a>
+    * <a href="/Patterns/Structural/FlyWeight.cpp" title="Flyweight creates objects as they are needed">❌ FlyWeight.cpp</a>
     * <a href="/Patterns/Structural/Bridge.cpp" title="Bridge allows two implementations to vary independently">🖊 `Bridge.cpp`</a>
     * <a href="/Patterns/Structural/Composite.cpp" title="Composite combines several classes into a single class.">✅ `Composite.cpp`</a>
     * <a href="/Patterns/Structural/Decorator.cpp" title="Decorator adds / overrides functionality of a class">🖊 `Decorator.cpp`</a>
@@ -984,12 +984,12 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🔥89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL ████████░░ 🔥84% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
-* <a href="/SQL/RandomRow.sql" title="Select random row">✅ `RandomRow.sql`</a>
+* <a href="/SQL/RandomRow.sql" title="Select random row">❌ RandomRow.sql</a>
 * <a href="/SQL/Having.sql" title="HAVING">✅ `Having.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1032,7 +1032,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 26% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl █░░░░░░░░░ 11% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1040,15 +1040,15 @@
 </details>
 
   * <details close>
-    <summary>📁 ⌛ Algos 29% (7)</summary>
+    <summary>📁 ❌ Algos 0% (7)</summary>
 
     * <a href="/Stl/Algos/replace_if.cpp" title="">❌ replace_if.cpp</a>
-    * <a href="/Stl/Algos/Transform.cpp" title="">✅ `Transform.cpp`</a>
+    * <a href="/Stl/Algos/Transform.cpp" title="">❌ Transform.cpp</a>
     * <a href="/Stl/Algos/Sort.md" title="">❌ 📝 Sort.md</a>
     * <a href="/Stl/Algos/difference.cpp" title="">❌ difference.cpp</a>
     * <a href="/Stl/Algos/set_symmetric_difference.cpp" title="">❌ set_symmetric_difference.cpp</a>
     * <a href="/Stl/Algos/accumulate.cpp" title="">❌ accumulate.cpp</a>
-    * <a href="/Stl/Algos/DescAsc.cpp" title="Sort DESC / ASC order">✅ `DescAsc.cpp`</a>
+    * <a href="/Stl/Algos/DescAsc.cpp" title="Sort DESC / ASC order">❌ DescAsc.cpp</a>
 
     </details>
 
@@ -1095,9 +1095,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ FStream 100% (1)</summary>
+    <summary>📁 ❌ FStream 0% (1)</summary>
 
-    * <a href="/Stl/FStream/IFstreamModes.cpp" title="Difference Between Text File and Binary File">✅ `IFstreamModes.cpp`</a>
+    * <a href="/Stl/FStream/IFstreamModes.cpp" title="Difference Between Text File and Binary File">❌ IFstreamModes.cpp</a>
 
     </details>
 
@@ -1111,9 +1111,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Functional 100% (1)</summary>
+    <summary>📁 ❌ Functional 0% (1)</summary>
 
-    * <a href="/Stl/Functional/Ref.cpp" title="">✅ `Ref.cpp`</a>
+    * <a href="/Stl/Functional/Ref.cpp" title="">❌ Ref.cpp</a>
 
     </details>
 
@@ -1133,17 +1133,17 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ List 42% (12)</summary>
+    <summary>📁 ⌛ List 25% (12)</summary>
 
     * <a href="/Stl/List/Operations.cpp" title="">❌ Operations.cpp</a>
     * <a href="/Stl/List/Splice.cpp" title="">❌ Splice.cpp</a>
     * <a href="/Stl/List/InsertInLoop.cpp" title="Inserting into a list">✅ `InsertInLoop.cpp`</a>
     * <a href="/Stl/List/Erase.cpp" title="Removes from the list container either a single element (position) or a range of elements ([first,last)).">✅ `Erase.cpp`</a>
-    * <a href="/Stl/List/RemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">✅ `RemoveIf.cpp`</a>
+    * <a href="/Stl/List/RemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">❌ RemoveIf.cpp</a>
     * <a href="/Stl/List/Insert.cpp" title="Inserting into a list">✅ `Insert.cpp`</a>
     * <a href="/Stl/List/SearchUsingFind.cpp" title="">❌ SearchUsingFind.cpp</a>
     * <a href="/Stl/List/Sort.cpp" title="">❌ Sort.cpp</a>
-    * <a href="/Stl/List/ConditionalErase.cpp" title="List Conditional Erase While Iteration">✅ `ConditionalErase.cpp`</a>
+    * <a href="/Stl/List/ConditionalErase.cpp" title="List Conditional Erase While Iteration">❌ ConditionalErase.cpp</a>
     * <a href="/Stl/List/Basic.cpp" title="">❌ Basic.cpp</a>
     * <a href="/Stl/List/Remove.cpp" title="">❌ Remove.cpp</a>
     * <a href="/Stl/List/SearchUsingGenerate.cpp" title="">❌ SearchUsingGenerate.cpp</a>
@@ -1151,9 +1151,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Map 8% (12)</summary>
+    <summary>📁 ❌ Map 0% (12)</summary>
 
-    * <a href="/Stl/Map/Bool.cpp" title="">✅ `Bool.cpp`</a>
+    * <a href="/Stl/Map/Bool.cpp" title="">❌ Bool.cpp</a>
     * <a href="/Stl/Map/OperatorAccess.cpp" title="">❌ OperatorAccess.cpp</a>
     * <a href="/Stl/Map/Basics.cpp" title="">❌ Basics.cpp</a>
     * <a href="/Stl/Map/Insertion.cpp" title="">❌ Insertion.cpp</a>
@@ -1169,13 +1169,13 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ MultiMap 100% (5)</summary>
+    <summary>📁 ⌛ MultiMap 60% (5)</summary>
 
     * <a href="/Stl/MultiMap/Operations.cpp" title="">✅ `Operations.cpp`</a>
     * <a href="/Stl/MultiMap/Basics.cpp" title="">✅ `Basics.cpp`</a>
-    * <a href="/Stl/MultiMap/InsertVsEmplace.cpp" title="Inserts element(s) into the container">✅ `InsertVsEmplace.cpp`</a>
+    * <a href="/Stl/MultiMap/InsertVsEmplace.cpp" title="Inserts element(s) into the container">❌ InsertVsEmplace.cpp</a>
     * <a href="/Stl/MultiMap/CI.cpp" title="">✅ `CI.cpp`</a>
-    * <a href="/Stl/MultiMap/CompInt.cpp" title="Int comparator">✅ `CompInt.cpp`</a>
+    * <a href="/Stl/MultiMap/CompInt.cpp" title="Int comparator">❌ CompInt.cpp</a>
 
     </details>
 
@@ -1194,20 +1194,20 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ SmartPtrs 33% (3)</summary>
+    <summary>📁 ❌ SmartPtrs 0% (3)</summary>
 
-    * <a href="/Stl/SmartPtrs/UniquePtrNull.cpp" title="std::unique_ptr with nullptr">✅ `UniquePtrNull.cpp`</a>
+    * <a href="/Stl/SmartPtrs/UniquePtrNull.cpp" title="std::unique_ptr with nullptr">❌ UniquePtrNull.cpp</a>
     * <a href="/Stl/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
     * <a href="/Stl/SmartPtrs/SmartPointersInCpp11.md" title="">❌ 📝 SmartPointersInCpp11.md</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ✅ String 100% (4)</summary>
+    <summary>📁 ⌛ String 25% (4)</summary>
 
-    * <a href="/Stl/String/Reverse.cpp" title="">✅ `Reverse.cpp`</a>
-    * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">✅ `CstrNull.cpp`</a>
-    * <a href="/Stl/String/StringWithNull.cpp" title="">✅ `StringWithNull.cpp`</a>
+    * <a href="/Stl/String/Reverse.cpp" title="">❌ Reverse.cpp</a>
+    * <a href="/Stl/String/CstrNull.cpp" title="c_str(), data(), ... of empty std::string">❌ CstrNull.cpp</a>
+    * <a href="/Stl/String/StringWithNull.cpp" title="">❌ StringWithNull.cpp</a>
     * <a href="/Stl/String/RFind.cpp" title="Find last occurrence of content in string">✅ `RFind.cpp`</a>
 
     </details>
@@ -1245,12 +1245,12 @@
 
     </details>
 
-##  <a title="[ ] Template metaprogramming" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Template metaprogramming" id="templates">Templates ████░░░░░░ 43% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Templates/MaximumOfTwoObjects.cpp" title="">🖊 `MaximumOfTwoObjects.cpp`</a>
 * <a href="/Templates/TODO.md" title="">❌ 📝 TODO.md</a>
-* <a href="/Templates/AverageOfValuesInObjects.cpp" title="">🖊 `AverageOfValuesInObjects.cpp`</a>
-* <a href="/Templates/AverageOfAnArray.cpp" title="">🖊 `AverageOfAnArray.cpp`</a>
+* <a href="/Templates/AverageOfValuesInObjects.cpp" title="">❌ AverageOfValuesInObjects.cpp</a>
+* <a href="/Templates/AverageOfAnArray.cpp" title="">❌ AverageOfAnArray.cpp</a>
 * <a href="/Templates/Export.h" title="">✅ `Export.h`</a>
 * <a href="/Templates/MaximumOfTwoValues.cpp" title="">🖊 `MaximumOfTwoValues.cpp`</a>
 * <a href="/Templates/Export.cpp" title="">✅ `Export.cpp`</a>
@@ -1276,7 +1276,7 @@
 
     </details>
 
-##  <a title="[ ] Unix OS" id="unix">Unix ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Unix OS" id="unix">Unix █████░░░░░ 🔥50% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
@@ -1285,29 +1285,29 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Linux 100% (1)</summary>
+    <summary>📁 ❌ Linux 0% (1)</summary>
 
-    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">✅ `Inotify.cpp`</a>
+    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">❌ Inotify.cpp</a>
 
     </details>
 
-##  <a title="[ ] Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩97% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Windows OS (WinAPI)" id="windows">Windows ███████░░░ 🔥68% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
+* <a href="/Windows/GetTokenInformation.cpp" title="">❌ GetTokenInformation.cpp</a>
 * <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
-* <a href="/Windows/MemoryUsage.cpp" title="">✅ `MemoryUsage.cpp`</a>
-* <a href="/Windows/GetUid.cpp" title="">✅ `GetUid.cpp`</a>
+* <a href="/Windows/MemoryUsage.cpp" title="">❌ MemoryUsage.cpp</a>
+* <a href="/Windows/GetUid.cpp" title="">❌ GetUid.cpp</a>
 * <a href="/Windows/CommandLine.cpp" title="">✅ `CommandLine.cpp`</a>
 * <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
 * <a href="/Windows/FAQ.md" title="">❌ 📝 FAQ.md</a>
-* <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">✅ `CxHandle.cpp`</a>
-* <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
-* <a href="/Windows/OsBit.cpp" title="">✅ `OsBit.cpp`</a>
+* <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">❌ CxHandle.cpp</a>
+* <a href="/Windows/AnsiUtf8.cpp" title="">❌ AnsiUtf8.cpp</a>
+* <a href="/Windows/OsBit.cpp" title="">❌ OsBit.cpp</a>
 
 </details>
 
   * <details close>
-    <summary>📁 ✅ RegDLL 100% (28)</summary>
+    <summary>📁 ⌛ RegDLL 82% (28)</summary>
 
 
     </details>
@@ -1329,31 +1329,31 @@
       </details>
 
     * <details close>
-      <summary>📁 ✅ MFCAp 100% (12)</summary>
+      <summary>📁 ⌛ MFCAp 67% (12)</summary>
 
-        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">✅ `MFCApDoc.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">❌ MFCApDoc.cpp</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCAp.h" title="">✅ `MFCAp.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">✅ `MFCAp.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">❌ MFCAp.cpp</a>
         * <a href="/Windows/RegDLL/MFCAp/StdAfx.h" title="">✅ `StdAfx.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.h" title="">✅ `MFCApDoc.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/Resource.h" title="">✅ `Resource.h`</a>
         * <a href="/Windows/RegDLL/MFCAp/MainFrm.h" title="">✅ `MainFrm.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">✅ `MainFrm.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">❌ MainFrm.cpp</a>
         * <a href="/Windows/RegDLL/MFCAp/DLLCode.h" title="">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">✅ `MFCApView.cpp`</a>
+        * <a href="/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">❌ MFCApView.cpp</a>
         * <a href="/Windows/RegDLL/MFCAp/MFCApView.h" title="">✅ `MFCApView.h`</a>
 
       </details>
 
     * <details close>
-      <summary>📁 ✅ RDLLMFC 100% (7)</summary>
+      <summary>📁 ⌛ RDLLMFC 86% (7)</summary>
 
         * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.h" title="">✅ `StdAfx.h`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.h" title="">✅ `RDLLMFC.h`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/Resource.h" title="">✅ `Resource.h`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">✅ `RDLLMFC.cpp`</a>
+        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">❌ RDLLMFC.cpp</a>
         * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
         * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.h" title="">✅ `DLLCode.h`</a>
 
@@ -1386,6 +1386,6 @@
 
 ### Labels
 
-  - `\todo, [todo], [ ]` - Todo
+  - `\todo, [todo], [ ], [-], [*]` - Todo
   - `\remark, [remark], \review, [review], [\?]` - Review
   - Brief comments from `FAQ.md` files used as dir titles
