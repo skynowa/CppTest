@@ -9,5 +9,5 @@
 
 ## Done
 
-- [+] GitHub actions
-- [+] StdTest / StdStream as submodules
+- [x] GitHub actions
+- [x] StdTest / StdStream as submodules

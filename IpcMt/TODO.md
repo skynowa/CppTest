@@ -84,7 +84,7 @@ to achieve what you want.
 - [ ] Что такое race-condition?
 - [ ] Как избежать состояния гонки?
 - [ ] Что такое атомарная операция?
-- [+] Как работать с std::mutex?
+- [x] Как работать с std::mutex?
 
 ## Middle
 

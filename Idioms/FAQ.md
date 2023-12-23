@@ -14,4 +14,4 @@
   - optimization (SOO, EBO)
 
 - [?] Идиомы и паттерны проектирования в современном С++. Федор Г. Пикус
-- [+] [More_Cpp_Idioms.pdf](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms)
+- [x] [More_Cpp_Idioms.pdf](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms)
