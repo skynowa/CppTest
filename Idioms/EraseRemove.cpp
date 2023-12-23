@@ -5,11 +5,14 @@
  * The std::remove algorithm does not eliminate elements from a container; it simply moves the
  * elements not being removed to the front of the container, leaving the contents at the end
  * of the container <b>undefined</b>.
- * This is because std::remove works only using a pair of forward iterators (Iterator Pair idiom),
+ * This is because std::remove works only using a pair of **forward iterators** (Iterator Pair),
  * and the generic concept of forward iterators does not know how to eliminate data elements
  * from an arbitrary data structure.
  * Only container member functions can eliminate container elements, as only members know
  * the details of the internal data structure.
+ *
+ * \see https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Erase-Remove
+ * \see IteratorPair.cpp
  */
 
 
