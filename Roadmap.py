@@ -75,7 +75,7 @@ class RoadmapGen:
 		self.file    = open(self.mdPath, 'w')
 		self.tree    = self._nestedDictDefault(list, 10)
 
-		self.dirsExcludes  = ['.git', '.github', 'StdStream', 'StdTest', 'res']
+		self.dirsExcludes  = ['.git', '.github', '.github.off', 'StdStream', 'StdTest', 'res']
 		self.filesIncludes = [
 			'*.h', '*.inl', '*.hpp', '*.cpp', '*.cxx', '*.cc', '*.c', '*.cpp.off',
 			'*.sql',
