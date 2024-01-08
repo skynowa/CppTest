@@ -37,7 +37,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-	::: Foo::Foo(int, int) :::
-	::: Foo::Foo(std::initializer_list<int>) :::
+::: Foo::Foo(int, int) :::
+::: Foo::Foo(std::initializer_list<int>) :::
 
 #endif
