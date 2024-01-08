@@ -13,7 +13,7 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	// error: not a single element
+	// error: direct-list-initialization of ‘auto’ requires exactly one element
 	{
 		/// auto x1 {1, 2, 3};
 	}
