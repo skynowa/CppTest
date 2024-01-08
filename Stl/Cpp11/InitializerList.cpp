@@ -1,6 +1,6 @@
 /**
  * \file  InitializerList.cpp
- * \brief
+ * \brief lightweight proxy object that provides access to an array of objects of type const T
  *
  * \see   https://www.learncpp.com/cpp-tutorial/stdinitializer_list/
  */
