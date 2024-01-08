@@ -53,7 +53,7 @@ int main(int, char **)
 			int         exprValue2 {-2};
 			std::string exprOp {"="};
 
-			void print()
+			void print() const
 			{
 				std::cout << STD_TRACE_VAR4(filePath, lineNum, funcName, counter) << std::endl;
 				std::cout << STD_TRACE_VAR5(exprVar1, exprValue1, exprVar2, exprValue2, exprOp) << std::endl;
