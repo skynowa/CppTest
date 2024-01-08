@@ -99,5 +99,4 @@ exprVar1: , exprValue1: -1, exprVar2: , exprValue2: -2, exprOp: =
 filePath: file1, lineNum: 111, funcName: func1, counter: 111000
 exprVar1: , exprValue1: -1, exprVar2: , exprValue2: -2, exprOp: =
 
-
 #endif
