@@ -1,47 +1,66 @@
 /**
  * \file  Initialization.cpp
  * \brief
- *
- * \todo
  */
 
 
-#include <iostream>
-#include <unordered_map>
-#include <string>
-
-int main()
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//-------------------------------------------------------------------------------------------------
+int main(int, char **)
 {
 	// Initialize an unordered_map through initializer_list
-	std::unordered_map<std::string, int> wordMap(
-	{
-		{ "First", 1 },
-		{ "Second", 2 },
-		{ "Third", 3 }
-	});
+	const std::unordered_map<std::string, int> wordMap
+    (
+        {
+            {"First",  1},
+            {"Second", 2},
+            {"Third",  3}
+        }
+    );
 
-	// Iterate over an unordered_map and display elements
-	for (std::pair<std::string, int> element : wordMap)
-		std::cout << element.first << " :: " << element.second << std::endl;
+    {
+        std::cout << STD_TRACE_VAR(wordMap) << std::endl;
+        std::cout << "*******************" << std::endl;
+    }
 
-	std::cout << "*******************" << std::endl;
+    {
+        // Initialize an unordered_map through another range of elements of type std::pair
+        const std::unordered_map<std::string, int> wordMap_2(wordMap.cbegin(), wordMap.cend());
 
-	// Initialize an unordered_map through another range of elements of type std::pair
-	std::unordered_map<std::string, int> wordMap_2(wordMap.begin(),
-			wordMap.end());
+        std::cout << STD_TRACE_VAR(wordMap_2) << std::endl;
+        std::cout << "*******************" << std::endl;
+    }
 
-	// Iterate over an unordered_map and display elements
-	for (std::pair<std::string, int> element : wordMap_2)
-		std::cout << element.first << " :: " << element.second << std::endl;
+    {
+        // Initialize an unordered_map through other unordered_map
+        const std::unordered_map<std::string, int> wordMap_3(wordMap);
 
-	std::cout << "*******************" << std::endl;
+        std::cout << STD_TRACE_VAR(wordMap_3) << std::endl;
+        std::cout << "*******************" << std::endl;
+    }
 
-	// Initialize an unordered_map through other unordered_map
-	std::unordered_map<std::string, int> wordMap_3(wordMap);
-
-	// Iterate over an unordered_map and display elements
-	for (std::pair<std::string, int> element : wordMap_3)
-		std::cout << element.first << " :: " << element.second << std::endl;
-
-	return 0;
+	return EXIT_SUCCESS;
 }
+//-------------------------------------------------------------------------------------------------
+
+#if OUTPUT
+
+wordMap: std::unordered_map (size=3): {
+std::pair: {Third,3}
+std::pair: {Second,2}
+std::pair: {First,1}}
+*******************
+wordMap_2: std::unordered_map (size=3): {
+std::pair: {First,1}
+std::pair: {Second,2}
+std::pair: {Third,3}}
+*******************
+wordMap_3: std::unordered_map (size=3): {
+std::pair: {Third,3}
+std::pair: {Second,2}
+std::pair: {First,1}}
+*******************
+
+#endif
