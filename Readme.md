@@ -1055,8 +1055,8 @@
   * <details close>
     <summary>📁 ✅ Cpp11 100% (2)</summary>
 
-    * <a href="/Stl/Cpp11/InitializerList.cpp" title="">✅ `InitializerList.cpp`</a>
-    * <a href="/Stl/Cpp11/InitializerListVsCtor.cpp" title="">✅ `InitializerListVsCtor.cpp`</a>
+    * <a href="/Stl/Cpp11/InitializerList.cpp" title="lightweight proxy object that provides access to an array of objects of type const T">✅ `InitializerList.cpp`</a>
+    * <a href="/Stl/Cpp11/InitializerListVsCtor.cpp" title="lightweight proxy object that provides access to an array of objects of type const T">✅ `InitializerListVsCtor.cpp`</a>
 
     </details>
 
