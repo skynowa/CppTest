@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **24-Dec-2023** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **08-Jan-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -20,7 +20,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 26% (88)
+- [Stl](#stl "") ███░░░░░░░ 27% (88)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -1032,7 +1032,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 26% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 27% (88)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1213,9 +1213,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ UnorderedMap 0% (3)</summary>
+    <summary>📁 ⌛ UnorderedMap 33% (3)</summary>
 
-    * <a href="/Stl/UnorderedMap/Initialization.cpp" title="">❌ Initialization.cpp</a>
+    * <a href="/Stl/UnorderedMap/Initialization.cpp" title="">✅ `Initialization.cpp`</a>
     * <a href="/Stl/UnorderedMap/Basics.cpp" title="">❌ Basics.cpp</a>
     * <a href="/Stl/UnorderedMap/Insertion.cpp" title="">❌ Insertion.cpp</a>
 
