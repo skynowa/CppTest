@@ -20,7 +20,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 31% (90)
+- [Stl](#stl "") ███░░░░░░░ 32% (91)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 - [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
@@ -1032,7 +1032,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 31% (90)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 32% (91)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1135,7 +1135,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ List 50% (12)</summary>
+    <summary>📁 ⌛ List 54% (13)</summary>
 
     * <a href="/Stl/List/Operations.cpp" title="">❌ Operations.cpp</a>
     * <a href="/Stl/List/Splice.cpp" title="">❌ Splice.cpp</a>
@@ -1143,8 +1143,9 @@
     * <a href="/Stl/List/Erase.cpp" title="Removes from the list container either a single element (position) or a range of elements ([first,last)).">✅ `Erase.cpp`</a>
     * <a href="/Stl/List/RemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">✅ `RemoveIf.cpp`</a>
     * <a href="/Stl/List/Insert.cpp" title="Inserting into a list">✅ `Insert.cpp`</a>
+    * <a href="/Stl/List/SortWithAlgo.cpp" title="Sort using std::sort() algo">✅ `SortWithAlgo.cpp`</a>
     * <a href="/Stl/List/SearchUsingFind.cpp" title="">❌ SearchUsingFind.cpp</a>
-    * <a href="/Stl/List/Sort.cpp" title="">✅ `Sort.cpp`</a>
+    * <a href="/Stl/List/Sort.cpp" title="Sort using std::list::sort() method">✅ `Sort.cpp`</a>
     * <a href="/Stl/List/ConditionalErase.cpp" title="List Conditional Erase While Iteration">✅ `ConditionalErase.cpp`</a>
     * <a href="/Stl/List/Basic.cpp" title="">❌ Basic.cpp</a>
     * <a href="/Stl/List/Remove.cpp" title="">❌ Remove.cpp</a>
