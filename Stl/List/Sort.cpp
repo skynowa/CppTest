@@ -1,6 +1,6 @@
 /**
  * \file  Sort.cpp
- * \brief
+ * \brief Sort using std::list::sort() method
  */
 
 
