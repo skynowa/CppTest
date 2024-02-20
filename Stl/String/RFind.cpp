@@ -10,13 +10,12 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-void
-log(
-    const std::string logTitle,
-    const std::string strOrig,
-    std::string       str,
-    const std::string key,
-    const std::size_t pos
+void log(
+    const std::string &logTitle,
+    const std::string &strOrig,
+    std::string       &str,
+    const std::string &key,
+    const std::size_t &pos
 )
 {
     std::cout
@@ -69,23 +68,19 @@ int main(int, char **)
     return EXIT_SUCCESS;
 }
 //--------------------------------------------------------------------------------------------------
-
-
-#if OUTPUT
-
-// str.rfind(key):
-key '|' at pos: 15
-Erase:
-strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
-
-// str.rfind(key, sizeMax):
-key '|' at pos: 15
-Erase:
-strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
-
-// str.find(key, sizeMax):
-key '|' at pos: 15
-Erase:
-strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
-
-#endif
+/**
+ * // str.rfind(key):
+ * key '|' at pos: 15
+ * Erase:
+ * strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
+ *
+ * // str.rfind(key, sizeMax):
+ * key '|' at pos: 15
+ * Erase:
+ * strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
+ *
+ * // str.find(key, sizeMax):
+ * key '|' at pos: 15
+ * Erase:
+ * strOrig: aaa|bbb|ccc|ddd|eee -> str: aaa|bbb|ccc|ddd, str.size(): 15
+ */
