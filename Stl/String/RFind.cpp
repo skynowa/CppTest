@@ -10,12 +10,12 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-void log(
-    const std::string &logTitle,
-    const std::string &strOrig,
-    std::string       &str,
-    const std::string &key,
-    const std::size_t &pos
+void trace(
+    const std::string &logTitle, ///<
+    const std::string &strOrig,  ///<
+    std::string       &str,      ///< [out]
+    const std::string &key,      ///<
+    const std::size_t  pos       ///<
 )
 {
     std::cout
@@ -48,21 +48,21 @@ int main(int, char **)
     {
         const std::size_t pos = str.rfind(key);
 
-        ::log("str.rfind(key)", strOrig, str, key, pos);
+        ::trace("str.rfind(key)", strOrig, str, key, pos);
     }
 
     // BookedAvailGdsHotelRoom.xml
     {
         const std::size_t pos = str.rfind(key, sizeMax);
 
-        ::log("str.rfind(key, sizeMax)", strOrig, str, key, pos);
+        ::trace("str.rfind(key, sizeMax)", strOrig, str, key, pos);
     }
 
     // AvailAffiliateHotelRoom.xml
     {
         const std::size_t pos = str.find(key, sizeMax);
 
-        ::log("str.find(key, sizeMax)", strOrig, str, key, pos);
+        ::trace("str.find(key, sizeMax)", strOrig, str, key, pos);
     }
 
     return EXIT_SUCCESS;

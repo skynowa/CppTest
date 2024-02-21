@@ -8,7 +8,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //---------------------------------------------------------------------------
-int main()
+int main(int, char **)
 {
     char str[] = "12345";
 

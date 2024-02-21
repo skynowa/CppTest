@@ -13,16 +13,16 @@ int main(int, char **)
     const std::string str;
 
     const char *ptr {};
-    assert(ptr == nullptr);
+    STD_TEST(ptr == nullptr);
 
     ptr = str.c_str();
-    assert(ptr != nullptr);
+    STD_TEST_PTR(ptr != nullptr);
 
     ptr = str.data();
-    assert(ptr != nullptr);
+    STD_TEST_PTR(ptr != nullptr);
 
     ptr = &str[0];
-    assert(ptr != nullptr);
+    STD_TEST_PTR(ptr != nullptr);
 
     STD_UNUSED(ptr);
 

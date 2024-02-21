@@ -10,6 +10,7 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
+    // #1
     {
         std::string sFileName;
         sFileName.push_back('x');
@@ -18,7 +19,7 @@ int main(int, char **)
 
         std::string sExceptedChars = "/\0";
 
-        // assert(2 == sExceptedChars.size()); - raise!!!
+        // STD_TEST_PTR(sExceptedChars.size() == 2); - raise!!!
 
         size_t uiPos = sFileName.find_first_of(sExceptedChars);
         if (std::string::npos == uiPos) {
@@ -32,6 +33,7 @@ int main(int, char **)
         #endif
     }
 
+    // #2
     {
         std::string sFileName;
         sFileName.push_back('x');
@@ -42,7 +44,7 @@ int main(int, char **)
         sExceptedChars.push_back('/');
         sExceptedChars.push_back('\0');
 
-        assert(2 == sExceptedChars.size());
+        STD_TEST_PTR(sExceptedChars.size() == 2);
 
         size_t uiPos = sFileName.find_first_of(sExceptedChars);
         if (std::string::npos == uiPos) {
@@ -56,13 +58,14 @@ int main(int, char **)
         #endif
     }
 
+    // #3
     {
         std::string sFileName;
         sFileName.push_back('x');
         sFileName.push_back('\0');
         sFileName.push_back('y');
 
-        char        szExceptedChars[] = {'/', '\0', '\0'};
+        char szExceptedChars[] = {'/', '\0', '\0'};
 
         size_t uiPos = sFileName.find_first_of(szExceptedChars);
         if (std::string::npos == uiPos) {
@@ -76,13 +79,14 @@ int main(int, char **)
         #endif
     }
 
+    // #4
     {
         std::string sFileName;
         sFileName.push_back('x');
         sFileName.push_back('\0');
         sFileName.push_back('y');
 
-        char        chExceptedChars = '\0';
+        char chExceptedChars = '\0';
 
         size_t uiPos = sFileName.find_first_of(chExceptedChars);
         if (std::string::npos == uiPos) {
