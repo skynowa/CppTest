@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **21-Feb-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **19-Mar-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -18,7 +18,7 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🔥89% (19)
+- [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (20)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (91)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
@@ -984,7 +984,7 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🔥89% (19)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🚩90% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
@@ -995,6 +995,7 @@
 * <a href="/SQL/RandomRow.sql" title="Select random row">✅ `RandomRow.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
+* <a href="/SQL/GroupByHours.sql" title="">✅ `GroupByHours.sql`</a>
 * <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
