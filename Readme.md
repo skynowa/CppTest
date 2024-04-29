@@ -1,9 +1,9 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **19-Mar-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **29-Apr-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (206)
+- [Core](#core "") █████████░ 🚩93% (207)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -74,7 +74,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (206)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩93% (207)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -278,10 +278,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Double 83% (6)</summary>
+    <summary>📁 ⌛ Double 86% (7)</summary>
 
     * <a href="/Core/Double/DivideByZero.cpp" title="">✅ `DivideByZero.cpp`</a>
     * <a href="/Core/Double/Compare.cpp" title="">✅ `Compare.cpp`</a>
+    * <a href="/Core/Double/CompareWithEpsilon.cpp" title="">✅ `CompareWithEpsilon.cpp`</a>
     * <a href="/Core/Double/IsGreater.cpp" title="Returns whether x is greater than y">✅ `IsGreater.cpp`</a>
     * <a href="/Core/Double/Cast.cpp" title="">✅ `Cast.cpp`</a>
     * <a href="/Core/Double/IntCompare.cpp" title="">✅ `IntCompare.cpp`</a>
