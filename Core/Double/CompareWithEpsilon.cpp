@@ -11,7 +11,12 @@
 template<
     typename T,
     typename = typename std::enable_if<std::is_floating_point<T>::value, T>::type>
-inline bool isFloatEqual(T a, T b, T epsilon = std::numeric_limits<T>::epsilon()) noexcept
+inline bool
+isFloatEqual(
+    const T a,
+    const T b,
+    const T epsilon = std::numeric_limits<T>::epsilon()
+) noexcept
 {
     return std::abs(a - b) <= epsilon;
 }
