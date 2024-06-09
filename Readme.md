@@ -3,7 +3,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (207)
+- [Core](#core "") █████████░ 🚩93% (208)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -74,7 +74,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (207)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩93% (208)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -164,7 +164,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Class 100% (17)</summary>
+    <summary>📁 ✅ Class 100% (18)</summary>
 
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">✅ `CallMethod.cpp`</a>
@@ -177,6 +177,7 @@
     * <a href="/Core/Class/InitCtor.cpp" title="">✅ `InitCtor.cpp`</a>
     * <a href="/Core/Class/QuotedString.java" title="EO sample">✅ `QuotedString.java`</a>
     * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
+    * <a href="/Core/Class/InitCtor2.cpp" title="">✅ `InitCtor2.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
 
     </details>
