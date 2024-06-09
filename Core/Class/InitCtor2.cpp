@@ -12,7 +12,7 @@ class DataWithCtorDefault
 {
 public:
     int a;
-    int b {};
+    int b {-1};
     int c {3};
 
     DataWithCtorDefault() = default;
@@ -27,7 +27,7 @@ class DataWithCtor
 {
 public:
     int a;
-    int b {};
+    int b {-1};
     int c {3};
 
     DataWithCtor()
@@ -44,7 +44,7 @@ class DataWitoutCtor
 {
 public:
     int a;
-    int b {};
+    int b {-1};
     int c {3};
 
     void print() const
@@ -55,40 +55,34 @@ public:
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::cout << "Ctor default - yes" << std::endl;
-
     {
-        DataWithCtorDefault data;
-        data.print();
+        std::cout << "Ctor default - yes" << std::endl;
+
+        DataWithCtorDefault data1;
+        data1.print();
+
+        DataWithCtorDefault data2 {};
+        data2.print();
     }
 
     {
-        DataWithCtorDefault data {};
-        data.print();
-    }
+        std::cout << "\nCtor - yes" << std::endl;
 
-    std::cout << "\nCtor - yes" << std::endl;
+        DataWithCtor data1;
+        data1.print();
 
-    {
-        DataWithCtor data;
-        data.print();
-    }
-
-    {
-        DataWithCtor data {};
-        data.print();
-    }
-
-    std::cout << "\nCtor - no" << std::endl;
-
-    {
-        DataWitoutCtor data;
-        data.print();
+        DataWithCtor data2 {};
+        data2.print();
     }
 
     {
-        DataWitoutCtor data {};
-        data.print();
+        std::cout << "\nCtor - no" << std::endl;
+
+        DataWitoutCtor data1;
+        data1.print();
+
+        DataWitoutCtor data2 {};
+        data2.print();
     }
 
     return EXIT_SUCCESS;
@@ -99,15 +93,15 @@ int main(int, char **)
 #if OUTPUT
 
 Ctor default - yes
-a: 32765, b: 0, c: 3
-a: 0, b: 0, c: 3
+a: 32764, b: -1, c: 3
+a: 0, b: -1, c: 3
 
 Ctor - yes
-a: 0, b: 0, c: 3
-a: -327400728, b: 0, c: 3
+a: 0, b: -1, c: 3
+a: -910941464, b: -1, c: 3
 
 Ctor - no
-a: 1819242352, b: 0, c: 3
-a: 0, b: 0, c: 3
+a: 1819242352, b: -1, c: 3
+a: 0, b: -1, c: 3
 
 #endif
