@@ -59,30 +59,30 @@ int main(int, char **)
         std::cout << "Ctor default - yes" << std::endl;
 
         DataWithCtorDefault data1;
-        data1.print();
+        std::cout << "() - "; data1.print();
 
         DataWithCtorDefault data2 {};
-        data2.print();
+        std::cout << "{} - "; data2.print();
     }
 
     {
         std::cout << "\nCtor - yes" << std::endl;
 
         DataWithCtor data1;
-        data1.print();
+        std::cout << "() - "; data1.print();
 
         DataWithCtor data2 {};
-        data2.print();
+        std::cout << "{} - "; data2.print();
     }
 
     {
         std::cout << "\nCtor - no" << std::endl;
 
         DataWitoutCtor data1;
-        data1.print();
+        std::cout << "() - "; data1.print();
 
         DataWitoutCtor data2 {};
-        data2.print();
+        std::cout << "{} - "; data2.print();
     }
 
     return EXIT_SUCCESS;
@@ -93,15 +93,15 @@ int main(int, char **)
 #if OUTPUT
 
 Ctor default - yes
-a: 32764, b: -1, c: 3
-a: 0, b: -1, c: 3
+() - a: 32765, b: -1, c: 3
+{} - a: 0, b: -1, c: 3
 
 Ctor - yes
-a: 0, b: -1, c: 3
-a: -910941464, b: -1, c: 3
+() - a: 0, b: -1, c: 3
+{} - a: 1444692712, b: -1, c: 3
 
 Ctor - no
-a: 1819242352, b: -1, c: 3
-a: 0, b: -1, c: 3
+() - a: 1819242352, b: -1, c: 3
+{} - a: 0, b: -1, c: 3
 
 #endif
