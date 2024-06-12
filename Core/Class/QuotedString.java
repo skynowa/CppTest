@@ -28,6 +28,7 @@
  * Copied from Apache Commons Exec: http://commons.apache.org/proper/commons-exec/
  */
 
+
 class QuotedString
 {
     private static final String SINGLE_QUOTE = "\'";
