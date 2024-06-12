@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **09-Jun-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **12-Jun-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -164,23 +164,31 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Class 100% (18)</summary>
+    <summary>📁 ✅ Class 100% (20)</summary>
 
     * <a href="/Core/Class/EmptyStructSizeOf.cpp" title="">✅ `EmptyStructSizeOf.cpp`</a>
     * <a href="/Core/Class/CallMethod.cpp" title="Вызов нестатического метода класса без создания экземпляра в C++">✅ `CallMethod.cpp`</a>
     * <a href="/Core/Class/FunctionDefinition.cpp" title="">✅ `FunctionDefinition.cpp`</a>
-    * <a href="/Core/Class/CopyCtor.cpp" title="Copy constructor">✅ `CopyCtor.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.h" title="Rule of five">✅ `RuleOfFive.h`</a>
     * <a href="/Core/Class/MethodWithoutBody.cpp" title="">✅ `MethodWithoutBody.cpp`</a>
     * <a href="/Core/Class/RuleOfFive.cpp" title="Rule of five">✅ `RuleOfFive.cpp`</a>
     * <a href="/Core/Class/FriendClass.cpp" title="friend class">✅ `FriendClass.cpp`</a>
-    * <a href="/Core/Class/InitCtor.cpp" title="">✅ `InitCtor.cpp`</a>
     * <a href="/Core/Class/QuotedString.java" title="EO sample">✅ `QuotedString.java`</a>
-    * <a href="/Core/Class/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
-    * <a href="/Core/Class/InitCtor2.cpp" title="">✅ `InitCtor2.cpp`</a>
     * <a href="/Core/Class/SizeOfClass.cpp" title="">✅ `SizeOfClass.cpp`</a>
 
     </details>
+
+    * <details close>
+      <summary>📁 ✅ CtorsDtor 100% (6)</summary>
+
+        * <a href="/Core/Class/CtorsDtor/CopyCtor.cpp" title="Copy constructor">✅ `CopyCtor.cpp`</a>
+        * <a href="/Core/Class/CtorsDtor/InitCtor.cpp" title="">✅ `InitCtor.cpp`</a>
+        * <a href="/Core/Class/CtorsDtor/CtorDefaultInitMembers.cpp" title="Init members with default values">✅ `CtorDefaultInitMembers.cpp`</a>
+        * <a href="/Core/Class/CtorsDtor/ConstructOrder.cpp" title="Construct order">✅ `ConstructOrder.cpp`</a>
+        * <a href="/Core/Class/CtorsDtor/InitCtor2.cpp" title="">✅ `InitCtor2.cpp`</a>
+        * <a href="/Core/Class/CtorsDtor/ConstructNew.cpp" title="Ctor with operator new">✅ `ConstructNew.cpp`</a>
+
+      </details>
 
     * <details close>
       <summary>📁 ✅ Inheritance 100% (4)</summary>
@@ -267,14 +275,6 @@
   * <details close>
     <summary>📁  Cpp20 0.0% (0)</summary>
 
-
-    </details>
-
-  * <details close>
-    <summary>📁 ✅ CtorsDtor 100% (2)</summary>
-
-    * <a href="/Core/CtorsDtor/CtorDefaultInitMembers.cpp" title="Init members with default values">✅ `CtorDefaultInitMembers.cpp`</a>
-    * <a href="/Core/CtorsDtor/ConstructNew.cpp" title="Ctor with operator new">✅ `ConstructNew.cpp`</a>
 
     </details>
 
