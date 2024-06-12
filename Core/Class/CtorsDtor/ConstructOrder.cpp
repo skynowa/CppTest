@@ -53,7 +53,7 @@ public:
 	static const inline Field fsi {"f_static_inline"};	///< static as 1-st
 
 	A()	 { STD_TRACE_FUNC; }
-	~A() { STD_TRACE_FUNC; }
+   ~A() { STD_TRACE_FUNC; }
 };
 
 /* static */ const Field A::fs{"f_static"};
