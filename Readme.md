@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **12-Jun-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-Jun-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -22,7 +22,7 @@
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (91)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
-- [Unix](#unix "[ ] Unix OS") ████████░░ 🔥75% (4)
+- [Unix](#unix "[ ] Unix OS") ██████░░░░ 🔥60% (5)
 - [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -1282,9 +1282,10 @@
 
     </details>
 
-##  <a title="[ ] Unix OS" id="unix">Unix ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] Unix OS" id="unix">Unix ██████░░░░ 🔥60% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
+* <a href="/Unix/Backtrace.cpp" title="Bactrace">❌ Backtrace.cpp</a>
 * <a href="/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
 
