@@ -13,6 +13,7 @@
 - [Libs](#libs "") ██████████ 🚩95% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
+- [OS](#os "") █████████░ 🚩93% (43)
 - [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
@@ -22,8 +23,6 @@
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (91)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
-- [Unix](#unix "[ ] Unix OS") ██████░░░░ 🔥60% (5)
-- [Windows](#windows "[ ] Windows OS (WinAPI)") ██████████ 🚩97% (38)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -899,6 +898,108 @@
 
 </details>
 
+##  <a title="" id="os">OS █████████░ 🚩93% (43)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+
+</details>
+
+  * <details close>
+    <summary>📁 ✅ Linux 100% (1)</summary>
+
+    * <a href="/OS/Linux/Inotify.cpp" title="inotify API">✅ `Inotify.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ⌛ Unix 50% (4)</summary>
+
+    * <a href="/OS/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
+    * <a href="/OS/Unix/Backtrace.cpp" title="Bactrace">❌ Backtrace.cpp</a>
+    * <a href="/OS/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
+    * <a href="/OS/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ⌛ Windows 97% (38)</summary>
+
+    * <a href="/OS/Windows/GetUid.cpp" title="">✅ `GetUid.cpp`</a>
+    * <a href="/OS/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
+    * <a href="/OS/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
+    * <a href="/OS/Windows/CommandLine.cpp" title="">✅ `CommandLine.cpp`</a>
+    * <a href="/OS/Windows/OsBit.cpp" title="">✅ `OsBit.cpp`</a>
+    * <a href="/OS/Windows/CxHandle.cpp" title="Defines the entry point for the console application">✅ `CxHandle.cpp`</a>
+    * <a href="/OS/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
+    * <a href="/OS/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
+    * <a href="/OS/Windows/MemoryUsage.cpp" title="">✅ `MemoryUsage.cpp`</a>
+    * <a href="/OS/Windows/FAQ.md" title="">❌ 📝 FAQ.md</a>
+
+    </details>
+
+    * <details close>
+      <summary>📁 ✅ RegDLL 100% (28)</summary>
+
+
+      </details>
+
+      * <details close>
+        <summary>📁 ✅ DLLClient1 100% (2)</summary>
+
+            * <a href="/OS/Windows/RegDLL/DLLClient1/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/DLLClient1/DLLCode.h" title="">✅ `DLLCode.h`</a>
+
+        </details>
+
+      * <details close>
+        <summary>📁 ✅ DLLClient2 100% (2)</summary>
+
+            * <a href="/OS/Windows/RegDLL/DLLClient2/DLLCode.h" title="">✅ `DLLCode.h`</a>
+            * <a href="/OS/Windows/RegDLL/DLLClient2/DLLClient2.cpp" title="">✅ `DLLClient2.cpp`</a>
+
+        </details>
+
+      * <details close>
+        <summary>📁 ✅ MFCAp 100% (12)</summary>
+
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCApView.h" title="">✅ `MFCApView.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">✅ `MFCApView.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">✅ `MFCAp.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCAp.h" title="">✅ `MFCAp.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MainFrm.h" title="">✅ `MainFrm.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/Resource.h" title="">✅ `Resource.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/DLLCode.h" title="">✅ `DLLCode.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">✅ `MainFrm.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/StdAfx.h" title="">✅ `StdAfx.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCApDoc.h" title="">✅ `MFCApDoc.h`</a>
+            * <a href="/OS/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">✅ `MFCApDoc.cpp`</a>
+
+        </details>
+
+      * <details close>
+        <summary>📁 ✅ RDLLMFC 100% (7)</summary>
+
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">✅ `RDLLMFC.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/Resource.h" title="">✅ `Resource.h`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/DLLCode.h" title="">✅ `DLLCode.h`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/RDLLMFC.h" title="">✅ `RDLLMFC.h`</a>
+            * <a href="/OS/Windows/RegDLL/RDLLMFC/StdAfx.h" title="">✅ `StdAfx.h`</a>
+
+        </details>
+
+      * <details close>
+        <summary>📁 ✅ W32DLL 100% (5)</summary>
+
+            * <a href="/OS/Windows/RegDLL/W32DLL/DLLCode.cpp" title="prototypes all of the DLL interface objects">✅ `DLLCode.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/W32DLL/W32DLL.cpp" title="Defines the entry point for the DLL application">✅ `W32DLL.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/W32DLL/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
+            * <a href="/OS/Windows/RegDLL/W32DLL/DLLCode.h" title="prototypes all of the DLL interface objects">✅ `DLLCode.h`</a>
+            * <a href="/OS/Windows/RegDLL/W32DLL/StdAfx.h" title="">✅ `StdAfx.h`</a>
+
+        </details>
+
 ##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns ████░░░░░░ 43% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1281,101 +1382,6 @@
     * <a href="/Templates/Variadic/Templates2.cpp" title="">❌ Templates2.cpp</a>
 
     </details>
-
-##  <a title="[ ] Unix OS" id="unix">Unix ██████░░░░ 🔥60% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-* <a href="/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
-* <a href="/Unix/Backtrace.cpp" title="Bactrace">❌ Backtrace.cpp</a>
-* <a href="/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
-* <a href="/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
-
-</details>
-
-  * <details close>
-    <summary>📁 ✅ Linux 100% (1)</summary>
-
-    * <a href="/Unix/Linux/Inotify.cpp" title="inotify API">✅ `Inotify.cpp`</a>
-
-    </details>
-
-##  <a title="[ ] Windows OS (WinAPI)" id="windows">Windows ██████████ 🚩97% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
-
-* <a href="/Windows/GetUid.cpp" title="">✅ `GetUid.cpp`</a>
-* <a href="/Windows/GetTokenInformation.cpp" title="">✅ `GetTokenInformation.cpp`</a>
-* <a href="/Windows/AnsiUtf8.cpp" title="">✅ `AnsiUtf8.cpp`</a>
-* <a href="/Windows/CommandLine.cpp" title="">✅ `CommandLine.cpp`</a>
-* <a href="/Windows/OsBit.cpp" title="">✅ `OsBit.cpp`</a>
-* <a href="/Windows/CxHandle.cpp" title="Defines the entry point for the console application">✅ `CxHandle.cpp`</a>
-* <a href="/Windows/OsBit.md" title="">✅ `📝 OsBit.md`</a>
-* <a href="/Windows/Battery.cpp" title="">✅ `Battery.cpp`</a>
-* <a href="/Windows/MemoryUsage.cpp" title="">✅ `MemoryUsage.cpp`</a>
-* <a href="/Windows/FAQ.md" title="">❌ 📝 FAQ.md</a>
-
-</details>
-
-  * <details close>
-    <summary>📁 ✅ RegDLL 100% (28)</summary>
-
-
-    </details>
-
-    * <details close>
-      <summary>📁 ✅ DLLClient1 100% (2)</summary>
-
-        * <a href="/Windows/RegDLL/DLLClient1/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
-        * <a href="/Windows/RegDLL/DLLClient1/DLLCode.h" title="">✅ `DLLCode.h`</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ✅ DLLClient2 100% (2)</summary>
-
-        * <a href="/Windows/RegDLL/DLLClient2/DLLCode.h" title="">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/DLLClient2/DLLClient2.cpp" title="">✅ `DLLClient2.cpp`</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ✅ MFCAp 100% (12)</summary>
-
-        * <a href="/Windows/RegDLL/MFCAp/MFCApView.h" title="">✅ `MFCApView.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCApView.cpp" title="">✅ `MFCApView.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCAp.cpp" title="">✅ `MFCAp.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCAp.h" title="">✅ `MFCAp.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MainFrm.h" title="">✅ `MainFrm.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/Resource.h" title="">✅ `Resource.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/DLLCode.h" title="">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MainFrm.cpp" title="">✅ `MainFrm.cpp`</a>
-        * <a href="/Windows/RegDLL/MFCAp/StdAfx.h" title="">✅ `StdAfx.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.h" title="">✅ `MFCApDoc.h`</a>
-        * <a href="/Windows/RegDLL/MFCAp/MFCApDoc.cpp" title="">✅ `MFCApDoc.cpp`</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ✅ RDLLMFC 100% (7)</summary>
-
-        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.cpp" title="">✅ `RDLLMFC.cpp`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.cpp" title="">✅ `DLLCode.cpp`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/Resource.h" title="">✅ `Resource.h`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/DLLCode.h" title="">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/RDLLMFC.h" title="">✅ `RDLLMFC.h`</a>
-        * <a href="/Windows/RegDLL/RDLLMFC/StdAfx.h" title="">✅ `StdAfx.h`</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ✅ W32DLL 100% (5)</summary>
-
-        * <a href="/Windows/RegDLL/W32DLL/DLLCode.cpp" title="prototypes all of the DLL interface objects">✅ `DLLCode.cpp`</a>
-        * <a href="/Windows/RegDLL/W32DLL/W32DLL.cpp" title="Defines the entry point for the DLL application">✅ `W32DLL.cpp`</a>
-        * <a href="/Windows/RegDLL/W32DLL/StdAfx.cpp" title="">✅ `StdAfx.cpp`</a>
-        * <a href="/Windows/RegDLL/W32DLL/DLLCode.h" title="prototypes all of the DLL interface objects">✅ `DLLCode.h`</a>
-        * <a href="/Windows/RegDLL/W32DLL/StdAfx.h" title="">✅ `StdAfx.h`</a>
-
-      </details>
 
 ---
 ## FAQ
