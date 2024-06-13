@@ -23,8 +23,8 @@
 #include <stdlib.h>
 
 void  print_stack();
-void* parse_symbol_offset(char* frame);
-char* addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer);
+void* parse_symbol_offset(char *frame);
+char* addr2line_format(void *addr, char *symbol, char *buffer, int nn_buffer);
 
 const char* program = nullptr;
 //-------------------------------------------------------------------------------------------------
@@ -54,8 +54,8 @@ print_stack()
     printf("\nframes:\n");
 
     for (int i = 0; i < nn_addresses; ++ i) {
-        void *frame = parse_symbol_offset(symbols[i]);
-        char *fmt   = addr2line_format(frame, symbols[i], buffer, sizeof(buffer));
+        void *frame = ::parse_symbol_offset(symbols[i]);
+        char *fmt   = ::addr2line_format(frame, symbols[i], buffer, sizeof(buffer));
 
         int parsed = (fmt == buffer);
         printf("%p %d %s\n", frame, parsed, fmt);
@@ -69,65 +69,79 @@ parse_symbol_offset(
 	char *frame
 )
 {
-    char* p = nullptr;
-    char* p_symbol = nullptr;
-    std::size_t nn_symbol = 0;
-    char* p_offset = nullptr;
-    std::size_t nn_offset = 0;
+    char        *p {};
+    char        *p_symbol {};
+    std::size_t  nn_symbol {};
+    char        *p_offset {};
+    std::size_t  nn_offset {};
 
     // Read symbol and offset, for example:
     //      /tools/backtrace(foo+0x1820) [0x555555555820]
-    for (p = frame; *p; p++) {
+    for (p = frame; *p; ++ p) {
         if (*p == '(') {
             p_symbol = p + 1;
-        } else if (*p == '+') {
-            if (p_symbol) nn_symbol = p - p_symbol;
+        }
+        else if (*p == '+') {
+            if (p_symbol) {
+            	nn_symbol = p - p_symbol;
+            }
+
             p_offset = p + 1;
-        } else if (*p == ')') {
-            if (p_offset) nn_offset = p - p_offset;
+        }
+        else if (*p == ')') {
+            if (p_offset) {
+            	nn_offset = p - p_offset;
+            }
         }
     }
-    if (!nn_symbol && !nn_offset) {
+
+    if (!nn_symbol &&
+    	!nn_offset)
+    {
         return nullptr;
     }
 
     // Convert offset(0x1820) to pointer, such as 0x1820.
-    char tmp[128];
-    if (!nn_offset || nn_offset >= sizeof(tmp)) {
+    char tmp[128] {};
+    if (!nn_offset ||
+    	nn_offset >= sizeof(tmp))
+    {
         return nullptr;
     }
 
     int r0 = EOF;
-    void* offset = nullptr;
+    void* offset {};
     tmp[nn_offset] = 0;
     if ((r0 = sscanf(strncpy(tmp, p_offset, nn_offset), "%p", &offset)) == EOF) {
         return nullptr;
     }
 
     // Covert symbol(foo) to offset, such as 0x2fba.
-    if (!nn_symbol || nn_symbol >= sizeof(tmp)) {
+    if (!nn_symbol ||
+    	nn_symbol >= sizeof(tmp))
+    {
         return offset;
     }
 
-    void* object_file;
-    if ((object_file = dlopen(nullptr, RTLD_LAZY)) == nullptr) {
+    void *object_file {};
+    if ((object_file = ::dlopen(nullptr, RTLD_LAZY)) == nullptr) {
         return offset;
     }
 
-    void* address;
+    void *address {};
     tmp[nn_symbol] = 0;
-    if ((address = dlsym(object_file, strncpy(tmp, p_symbol, nn_symbol))) == nullptr) {
-        dlclose(object_file);
+    if ((address = ::dlsym(object_file, strncpy(tmp, p_symbol, nn_symbol))) == nullptr) {
+        ::dlclose(object_file);
         return offset;
     }
 
-    Dl_info symbol_info;
-    if ((r0 = dladdr(address, &symbol_info)) == 0) {
-        dlclose(object_file);
+    Dl_info symbol_info {};
+    if ((r0 = ::dladdr(address, &symbol_info)) == 0) {
+        ::dlclose(object_file);
         return offset;
     }
 
-    dlclose(object_file);
+    ::dlclose(object_file);
 
     return (std::size_t)symbol_info.dli_saddr - (std::size_t)symbol_info.dli_fbase + (std::size_t)offset;
 }
@@ -140,27 +154,42 @@ addr2line_format(
 	int   nn_buffer
 )
 {
-    char cmd[512] = {0};
+    char cmd[512] {};
     int r0 = snprintf(cmd, sizeof(cmd), "addr2line -C -p -s -f -a -e %s %p", ::program, addr);
-    if (r0 < 0 || r0 >= static_cast<int>(sizeof(cmd))) return symbol;
+    if (r0 < 0 || r0 >= static_cast<int>(sizeof(cmd))) {
+    	return symbol;
+    }
 
     FILE* fp = popen(cmd, "r");
-    if (!fp) return symbol;
+    if (!fp) {
+    	return symbol;
+    }
 
     char* p = fgets(buffer, nn_buffer, fp);
     pclose(fp);
 
-    if (p == nullptr) return symbol;
-    if ((r0 = strlen(p)) == 0) return symbol;
+    if (p == nullptr) {
+    	return symbol;
+    }
+
+    if ((r0 = strlen(p)) == 0) {
+    	return symbol;
+    }
 
     // Trait the last newline if exists.
-    if (p[r0 - 1] == '\n') p[r0 - 1] = '\0';
+    if (p[r0 - 1] == '\n') {
+    	p[r0 - 1] = '\0';
+    }
 
     // Find symbol not match by addr2line, like
     //      0x0000000000021c87: ?? ??:0
     //      0x0000000000002ffa: _start at ??:?
-    for (p = buffer; p < buffer + r0 - 1; p++) {
-        if (p[0] == '?' && p[1] == '?') return symbol;
+    for (p = buffer; p < buffer + r0 - 1; ++ p) {
+        if (p[0] == '?' &&
+        	p[1] == '?')
+        {
+        	return symbol;
+        }
     }
 
     return buffer;
