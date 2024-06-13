@@ -69,7 +69,6 @@ parse_symbol_offset(
 	char *frame
 )
 {
-    char        *p {};
     char        *p_symbol {};
     std::size_t  nn_symbol {};
     char        *p_offset {};
@@ -77,7 +76,7 @@ parse_symbol_offset(
 
     // Read symbol and offset, for example:
     //      /tools/backtrace(foo+0x1820) [0x555555555820]
-    for (p = frame; *p; ++ p) {
+    for (char *p = frame; *p; ++ p) {
         if (*p == '(') {
             p_symbol = p + 1;
         }
