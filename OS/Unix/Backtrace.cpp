@@ -10,9 +10,11 @@
  */
 
 
-#include <StdStream/StdStream.h>
-#include <StdTest/StdTest.h>
-#include <Stl.h>
+#if 0
+	#include <StdStream/StdStream.h>
+	#include <StdTest/StdTest.h>
+	#include <Stl.h>
+#endif
 
 #include <dlfcn.h>
 #include <stdio.h>
@@ -20,42 +22,41 @@
 #include <execinfo.h>
 #include <stdlib.h>
 
-extern void  print_stack();
-extern void* parse_symbol_offset(char* frame);
-extern char* addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer);
+void  print_stack();
+void* parse_symbol_offset(char* frame);
+char* addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer);
 
-const char* program = NULL;
-//-------------------------------------------------------------------------------------------------
-int
-main(int, char** argv)
-{
-    ::program = argv[0];
-    print_stack();
-
-    return EXIT_SUCCESS;
-}
+const char* program = nullptr;
 //-------------------------------------------------------------------------------------------------
 void
 print_stack()
 {
-    void* addresses[64];
-    int nn_addresses = backtrace(addresses, sizeof(addresses) / sizeof(void*));
+    void *addresses[64] {};
+
+    const int nn_addresses = ::backtrace(addresses, sizeof(addresses) / sizeof(void *));
+
     printf("%s addresses:\n", ::program);
+
     for (int i = 0; i < nn_addresses; i++) {
         printf("%p\n", addresses[i]);
     }
 
-    char** symbols = backtrace_symbols(addresses, nn_addresses);
+    char **symbols = ::backtrace_symbols(addresses, nn_addresses);
+
     printf("\nsymbols:\n");
-    for (int i = 0; i < nn_addresses; i++) {
+
+    for (int i = 0; i < nn_addresses; ++ i) {
         printf("%s\n", symbols[i]);
     }
 
-    char buffer[128];
+    char buffer[128] {};
+
     printf("\nframes:\n");
-    for (int i = 0; i < nn_addresses; i++) {
-        void* frame = parse_symbol_offset(symbols[i]);
-        char* fmt = addr2line_format(frame, symbols[i], buffer, sizeof(buffer));
+
+    for (int i = 0; i < nn_addresses; ++ i) {
+        void *frame = parse_symbol_offset(symbols[i]);
+        char *fmt   = addr2line_format(frame, symbols[i], buffer, sizeof(buffer));
+
         int parsed = (fmt == buffer);
         printf("%p %d %s\n", frame, parsed, fmt);
     }
@@ -64,12 +65,14 @@ print_stack()
 }
 //-------------------------------------------------------------------------------------------------
 void *
-parse_symbol_offset(char* frame)
+parse_symbol_offset(
+	char *frame
+)
 {
-    char* p = NULL;
-    char* p_symbol = NULL;
+    char* p = nullptr;
+    char* p_symbol = nullptr;
     std::size_t nn_symbol = 0;
-    char* p_offset = NULL;
+    char* p_offset = nullptr;
     std::size_t nn_offset = 0;
 
     // Read symbol and offset, for example:
@@ -85,20 +88,20 @@ parse_symbol_offset(char* frame)
         }
     }
     if (!nn_symbol && !nn_offset) {
-        return NULL;
+        return nullptr;
     }
 
     // Convert offset(0x1820) to pointer, such as 0x1820.
     char tmp[128];
     if (!nn_offset || nn_offset >= sizeof(tmp)) {
-        return NULL;
+        return nullptr;
     }
 
     int r0 = EOF;
-    void* offset = NULL;
+    void* offset = nullptr;
     tmp[nn_offset] = 0;
     if ((r0 = sscanf(strncpy(tmp, p_offset, nn_offset), "%p", &offset)) == EOF) {
-        return NULL;
+        return nullptr;
     }
 
     // Covert symbol(foo) to offset, such as 0x2fba.
@@ -107,13 +110,13 @@ parse_symbol_offset(char* frame)
     }
 
     void* object_file;
-    if ((object_file = dlopen(NULL, RTLD_LAZY)) == NULL) {
+    if ((object_file = dlopen(nullptr, RTLD_LAZY)) == nullptr) {
         return offset;
     }
 
     void* address;
     tmp[nn_symbol] = 0;
-    if ((address = dlsym(object_file, strncpy(tmp, p_symbol, nn_symbol))) == NULL) {
+    if ((address = dlsym(object_file, strncpy(tmp, p_symbol, nn_symbol))) == nullptr) {
         dlclose(object_file);
         return offset;
     }
@@ -130,7 +133,12 @@ parse_symbol_offset(char* frame)
 }
 //-------------------------------------------------------------------------------------------------
 char *
-addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer)
+addr2line_format(
+	void *addr,
+	char *symbol,
+	char *buffer,
+	int   nn_buffer
+)
 {
     char cmd[512] = {0};
     int r0 = snprintf(cmd, sizeof(cmd), "addr2line -C -p -s -f -a -e %s %p", ::program, addr);
@@ -142,7 +150,7 @@ addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer)
     char* p = fgets(buffer, nn_buffer, fp);
     pclose(fp);
 
-    if (p == NULL) return symbol;
+    if (p == nullptr) return symbol;
     if ((r0 = strlen(p)) == 0) return symbol;
 
     // Trait the last newline if exists.
@@ -158,4 +166,12 @@ addr2line_format(void* addr, char* symbol, char* buffer, int nn_buffer)
     return buffer;
 }
 //-------------------------------------------------------------------------------------------------
+int
+main(int, char** argv)
+{
+    ::program = argv[0];
+    print_stack();
 
+    return EXIT_SUCCESS;
+}
+//-------------------------------------------------------------------------------------------------
