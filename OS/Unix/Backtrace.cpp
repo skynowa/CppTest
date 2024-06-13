@@ -13,15 +13,15 @@
 #include <cstring>
 #include <dlfcn.h>
 #include <execinfo.h>
-
-void  print_stack();
-void* parse_symbol_offset(char *frame);
-char* addr2line_format(void *addr, char *symbol, char *buffer, int nn_buffer);
-
+//-------------------------------------------------------------------------------------------------
 const char* program = nullptr;
+
+void  printStack();
+void* parseSymbolOffset(char *frame);
+char* addr2lineFormat(void *addr, char *symbol, char *buffer, int nn_buffer);
 //-------------------------------------------------------------------------------------------------
 void
-print_stack()
+printStack()
 {
     void *addresses[64] {};
 
@@ -46,8 +46,8 @@ print_stack()
     printf("\nframes:\n");
 
     for (int i = 0; i < nn_addresses; ++ i) {
-        void *frame = ::parse_symbol_offset(symbols[i]);
-        char *fmt   = ::addr2line_format(frame, symbols[i], buffer, sizeof(buffer));
+        void *frame = ::parseSymbolOffset(symbols[i]);
+        char *fmt   = ::addr2lineFormat(frame, symbols[i], buffer, sizeof(buffer));
 
         int parsed = (fmt == buffer);
         printf("%p %d %s\n", frame, parsed, fmt);
@@ -57,7 +57,7 @@ print_stack()
 }
 //-------------------------------------------------------------------------------------------------
 void *
-parse_symbol_offset(
+parseSymbolOffset(
 	char *frame
 )
 {
@@ -138,7 +138,7 @@ parse_symbol_offset(
 }
 //-------------------------------------------------------------------------------------------------
 char *
-addr2line_format(
+addr2lineFormat(
 	void *addr,
 	char *symbol,
 	char *buffer,
@@ -190,7 +190,7 @@ int
 main(int, char** argv)
 {
     ::program = argv[0];
-    print_stack();
+    printStack();
 
     return EXIT_SUCCESS;
 }

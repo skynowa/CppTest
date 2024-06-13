@@ -13,7 +13,7 @@
 - [Libs](#libs "") ██████████ 🚩95% (20)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
-- [OS](#os "") █████████░ 🚩93% (43)
+- [OS](#os "") ██████████ 🚩95% (43)
 - [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
@@ -898,7 +898,7 @@
 
 </details>
 
-##  <a title="" id="os">OS █████████░ 🚩93% (43)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="os">OS ██████████ 🚩95% (43)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 
 </details>
@@ -911,10 +911,10 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Unix 50% (4)</summary>
+    <summary>📁 ⌛ Unix 75% (4)</summary>
 
     * <a href="/OS/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
-    * <a href="/OS/Unix/Backtrace.cpp" title="Bactrace">❌ Backtrace.cpp</a>
+    * <a href="/OS/Unix/Backtrace.cpp" title="Bactrace">✅ `Backtrace.cpp`</a>
     * <a href="/OS/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/OS/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
 
