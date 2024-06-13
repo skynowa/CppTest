@@ -5,12 +5,37 @@
  * c++ -g -O0 ./Backtrace.cpp -rdynamic -ldl -fpermissive -o ./Backtrace
  *
  * \see https://stackoverflow.com/questions/55450932/how-ro-resolve-cpp-symbols-from-backtrace-symbols-in-the-offset-during-runtime
+ *
+ * \code{.console}
+ * ./Backtrace.exe addresses:
+ * 0x59bf68ac8392
+ * 0x59bf68ac8c3d
+ * 0x730430829d90
+ * 0x730430829e40
+ * 0x59bf68ac8285
+ *
+ * symbols:
+ * ./Backtrace.exe(_Z10printStackv+0x49) [0x59bf68ac8392]
+ * ./Backtrace.exe(main+0x26) [0x59bf68ac8c3d]
+ * /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x730430829d90]
+ * /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x730430829e40]
+ * ./Backtrace.exe(_start+0x25) [0x59bf68ac8285]
+ *
+ * frames:
+ * 0x1392 1 0x0000000000001392: printStack() at Backtrace.cpp:28
+ * 0x1c3d 1 0x0000000000001c3d: main at Backtrace.cpp:195
+ * 0x29d90 0 /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x730430829d90]
+ * 0x29e40 0 /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x730430829e40]
+ * 0x1285 0 ./Backtrace.exe(_start+0x25) [0x59bf68ac8285]
+ * \endcode
  */
+
 
 
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
+#include <cstdint>
 #include <dlfcn.h>
 #include <execinfo.h>
 //-------------------------------------------------------------------------------------------------
@@ -134,7 +159,12 @@ parseSymbolOffset(
 
     ::dlclose(object_file);
 
-    return (std::size_t)symbol_info.dli_saddr - (std::size_t)symbol_info.dli_fbase + (std::size_t)offset;
+	return
+		reinterpret_cast<void*>(
+			reinterpret_cast<std::uintptr_t>(symbol_info.dli_saddr) -
+			reinterpret_cast<std::uintptr_t>(symbol_info.dli_fbase) +
+			reinterpret_cast<std::uintptr_t>(offset)
+		);
 }
 //-------------------------------------------------------------------------------------------------
 char *
