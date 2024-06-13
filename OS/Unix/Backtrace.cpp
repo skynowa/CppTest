@@ -5,22 +5,14 @@
  * c++ -g -O0 ./Backtrace.cpp -rdynamic -ldl -fpermissive -o ./Backtrace
  *
  * \see https://stackoverflow.com/questions/55450932/how-ro-resolve-cpp-symbols-from-backtrace-symbols-in-the-offset-during-runtime
- *
- * \todo
  */
 
 
-#if 0
-	#include <StdStream/StdStream.h>
-	#include <StdTest/StdTest.h>
-	#include <Stl.h>
-#endif
-
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 #include <dlfcn.h>
-#include <stdio.h>
-#include <string.h>
 #include <execinfo.h>
-#include <stdlib.h>
 
 void  print_stack();
 void* parse_symbol_offset(char *frame);
