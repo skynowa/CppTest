@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-Jun-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **04-Jul-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -21,7 +21,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (20)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 32% (91)
+- [Stl](#stl "") ███░░░░░░░ 32% (92)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -1136,7 +1136,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 32% (91)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 32% (92)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1227,6 +1227,13 @@
     <summary>📁 ✅ IOStream 100% (1)</summary>
 
     * <a href="/Stl/IOStream/OperatorOutput.cpp" title="">✅ `OperatorOutput.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ❌ InitializerList 0% (1)</summary>
+
+    * <a href="/Stl/InitializerList/Ctor.cpp" title="">❌ Ctor.cpp</a>
 
     </details>
 
@@ -1322,7 +1329,7 @@
   * <details close>
     <summary>📁 ⌛ UnorderedMap 67% (3)</summary>
 
-    * <a href="/Stl/UnorderedMap/Basics.cpp" title="">❌ Basics.cpp</a>
+    * <a href="/Stl/UnorderedMap/WithPred.cpp" title="">❌ WithPred.cpp</a>
     * <a href="/Stl/UnorderedMap/Insertion.cpp" title="">✅ `Insertion.cpp`</a>
     * <a href="/Stl/UnorderedMap/Initialization.cpp" title="">✅ `Initialization.cpp`</a>
 
