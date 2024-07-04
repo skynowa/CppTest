@@ -13,9 +13,9 @@
 //--------------------------------------------------------------------------------------------------
 struct Data
 {
-    std::size_t num;
+    std::size_t                         num;
     std::initializer_list<const char *> json_ptrs;
-    bool expected;
+    bool                                expected;
 };
 
 const std::vector<Data> datas
@@ -53,6 +53,13 @@ datas.size(): 3
 it_data.num: 1
 it_data.json_ptrs.size(): 2
 
-it_json_ptr: p3��rx�3��r�p�h�a����rx  ���rx����rxP���rx`���rx�>\i�a0?\i�a0?\i�a
+it_json_ptr: ��X �
+it_json_ptr: ��X �
+
+it_data.num: 2
+it_data.json_ptrs.size(): 2
+
+it_json_ptr: ��X �
+/home/skynowa/Projects/Scripts/Shell/cpp_compile.sh: line 33: 41719 Segmentation fault      (core dumped) "$OUTPUT"
 
 #endif
