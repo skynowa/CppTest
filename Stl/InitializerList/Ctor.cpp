@@ -18,7 +18,7 @@ struct Data
     bool expected;
 };
 
-const vector<Data> datas
+const std::vector<Data> datas
 {
     {1, {"/object", "/invalid_node0"}, true},
     {2, {"/array", "/invalid_node1"}, true},
@@ -35,8 +35,8 @@ int main(int, char **)
         std::cout << STD_TRACE_VAR(it_data.json_ptrs.size()) << std::endl;
         std::cout << std::endl;
 
-        for (const string &it_json_ptr : it_data.json_ptrs) {
-            cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
+        for (const std::string &it_json_ptr : it_data.json_ptrs) {
+            std::cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
         }
     }
 
@@ -46,6 +46,11 @@ int main(int, char **)
 
 #if OUTPUT
 
+datas.size(): 3
 
+it_data.num: 1
+it_data.json_ptrs.size(): 2
+
+it_json_ptr: p3��rx�3��r�p�h�a����rx  ���rx����rxP���rx`���rx�>\i�a0?\i�a0?\i�a
 
 #endif
