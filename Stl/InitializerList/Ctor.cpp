@@ -36,7 +36,7 @@ int main(int, char **)
         std::cout << std::endl;
 
         for (const std::string &it_json_ptr : it_data.json_ptrs) {
-            std::cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
+            /// std::cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
         }
     }
 
