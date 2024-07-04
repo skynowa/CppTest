@@ -3,7 +3,7 @@
  * \brief
  *
  * \see
- * \todo  Leak
+ * \todo  Leak (core dumped)
  */
 
 
@@ -14,7 +14,7 @@
 struct Data
 {
     std::size_t num;
-    std::initializer_list<std::string> json_ptrs;
+    std::initializer_list<const char *> json_ptrs;
     bool expected;
 };
 
@@ -35,9 +35,11 @@ int main(int, char **)
         std::cout << STD_TRACE_VAR(it_data.json_ptrs.size()) << std::endl;
         std::cout << std::endl;
 
-        for (const std::string &it_json_ptr : it_data.json_ptrs) {
-            /// std::cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
+        for (const auto &it_json_ptr : it_data.json_ptrs) {
+            std::cout << STD_TRACE_VAR(it_json_ptr) << std::endl;
         }
+
+        std::cout << std::endl;
     }
 
     return EXIT_SUCCESS;
