@@ -12,14 +12,14 @@
 	#include <boost/version.hpp>
 #endif
 
-#if defined(BOOST_VERSION)
+#if (BOOST_VERSION > 0)
 	#define BOOST_STACKTRACE_USE_ADDR2LINE 1
 	#include <boost/stacktrace.hpp>
 #endif
 //-------------------------------------------------------------------------------------------------
 int main(int , char **)
 {
-#if defined(BOOST_VERSION)
+#if (BOOST_VERSION > 0)
     const auto &aRv = boost::stacktrace::stacktrace();
 
     std::cout << aRv.as_vector() << std::endl;
