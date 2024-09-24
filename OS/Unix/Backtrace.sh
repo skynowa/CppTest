@@ -1,4 +1,7 @@
 #!/bin/bash
 
-c++ -g -O0 ./Backtrace.cpp -rdynamic -ldl -fpermissive -o ./Backtrace.exe
-./Backtrace.exe
+
+CPP_BASE_NAME="./Backtrace"
+
+c++ -g -O0 ./${CPP_BASE_NAME}.cpp -rdynamic -ldl -fpermissive -o ./${CPP_BASE_NAME}.exe
+./${CPP_BASE_NAME}.exe
