@@ -81,7 +81,7 @@ printStackTrace()
 		if (status        == 0 &&
 			demangledName != nullptr)
 		{
-			std::printf("%-3d %p: %s (+%ld) [%s]\n",
+			std::printf("%-3d %p: %s (+%ld) [%s]",
 				i,
 				frame,
 				demangledName,
@@ -91,9 +91,10 @@ printStackTrace()
 			std::free(demangledName);
 			demangledName = nullptr;
 		} else {
-			std::printf("%-3d %p: ?? [%s]\n",
+			std::printf("%-3d %p: %s [%s]",
 							i,
 							frame,
+							"[n/a]",
 							info.dli_fname);
 		}
 
