@@ -76,33 +76,26 @@ printStackTrace()
             continue;
         }
 
-        if (info.dli_sname) {
-            int status {-1};
-            char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
-            if (status        == 0 &&
-                demangledName != nullptr)
-            {
-                std::printf("%-3d %p: %s (+%ld) [%s]\n",
-                    i,
-                    frame,
-                    demangledName,
-                    (char *)frame - (char *)info.dli_saddr,
-                    info.dli_fname);
+		int status {-1};
+		char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
+		if (status        == 0 &&
+			demangledName != nullptr)
+		{
+			std::printf("%-3d %p: %s (+%ld) [%s]\n",
+				i,
+				frame,
+				demangledName,
+				(char *)frame - (char *)info.dli_saddr,
+				info.dli_fname);
 
-                std::free(demangledName);
-                demangledName = nullptr;
-            } else {
-            	std::printf("%-3d %p: ?? [%s]\n",
-            	                i,
-            	                frame,
-            	                info.dli_fname);
-            }
-        } else {
-            std::printf("%-3d %p: ?? [%s]\n",
-                i,
-                frame,
-                info.dli_fname);
-        }
+			std::free(demangledName);
+			demangledName = nullptr;
+		} else {
+			std::printf("%-3d %p: ?? [%s]\n",
+							i,
+							frame,
+							info.dli_fname);
+		}
 
         // Get file and line information from addr2line
         const std::string &fileLine = ::getFileLine(frame);
