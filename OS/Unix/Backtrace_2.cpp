@@ -20,10 +20,12 @@
 //-------------------------------------------------------------------------------------------------
 // Function to execute addr2line and get file and line number
 std::string
-getFileLine(void* addr)
+getFileLine(
+	const void *a_frame
+)
 {
     char addrStr[20] = {0};
-    sprintf(addrStr, "%p", addr);
+    sprintf(addrStr, "%p", a_frame);
 
     // Prepare the command: addr2line -e <executable> <address>
     std::string command = "/usr/bin/addr2line -e /proc/self/exe -f -p ";
@@ -57,10 +59,10 @@ printStackTrace()
     }
 
     for (int i = 0; i < addr_size; ++i) {
-    	const auto frame = frames[i];
+    	const void *frame = frames[i];
 
     	Dl_info info {};
-    	int iRv = dladdr(frame, &info);
+    	int iRv = ::dladdr(frame, &info);
         if (iRv == 0) {
             std::printf("%-3d %p: [no symbol]\n", i, frame);
             continue;
@@ -92,7 +94,7 @@ printStackTrace()
 		}
 
 		// Get file and line information from addr2line
-		const std::string &file_line = getFileLine(frame);
+		const std::string &file_line = ::getFileLine(frame);
 
 		std::cout << "    " << file_line;
     }
