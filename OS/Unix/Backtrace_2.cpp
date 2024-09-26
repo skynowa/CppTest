@@ -37,9 +37,7 @@ getFileLine(
 
     // Run addr2line command to get file and line number
     FILE *pipe = ::popen(cmd.c_str(), "r");
-    if (pipe == nullptr) {
-        return "??";
-    }
+    STD_TEST_PTR(pipe);
 
     std::string result;
 
@@ -92,10 +90,10 @@ printStackTrace()
 			demangledName = nullptr;
 		} else {
 			std::printf("%-3d %p: %s [%s]",
-							i,
-							frame,
-							"[n/a]",
-							info.dli_fname);
+				i,
+				frame,
+				"[n/a]",
+				info.dli_fname);
 		}
 
         // Get file and line information from addr2line
