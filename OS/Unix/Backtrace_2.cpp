@@ -32,9 +32,9 @@ getFileLine(
 
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
-    	// "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
-    	// "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
-    	"addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
+        // "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
+        // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
+        "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
@@ -78,27 +78,27 @@ printStackTrace()
             continue;
         }
 
-		int status {-1};
-		char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
-		if (status        == 0 &&
-			demangledName != nullptr)
-		{
-			std::printf("%-3d %p: %s (+%ld) [%s]",
-				i,
-				frame,
-				demangledName,
-				(char *)frame - (char *)info.dli_saddr,
-				info.dli_fname);
+        int status {-1};
+        char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
+        if (status        == 0 &&
+            demangledName != nullptr)
+        {
+            std::printf("%-3d %p: %s (+%ld) [%s]",
+                i,
+                frame,
+                demangledName,
+                (char *)frame - (char *)info.dli_saddr,
+                info.dli_fname);
 
-			std::free(demangledName);
-			demangledName = nullptr;
-		} else {
-			std::printf("%-3d %p: %s [%s]",
-				i,
-				frame,
-				"[n/a]",
-				info.dli_fname);
-		}
+            std::free(demangledName);
+            demangledName = nullptr;
+        } else {
+            std::printf("%-3d %p: %s [%s]",
+                i,
+                frame,
+                "[n/a]",
+                info.dli_fname);
+        }
 
         // Get file and line information from addr2line
         const std::string &fileLine = ::getFileLine(frame);
@@ -122,7 +122,7 @@ testFunction()
 int
 main(int, char** argv)
 {
-	std::cout << STD_TRACE_VAR(argv[0]) << std::endl;
+    std::cout << STD_TRACE_VAR(argv[0]) << std::endl;
 
     ::testFunction();
 
