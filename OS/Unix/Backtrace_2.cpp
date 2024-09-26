@@ -123,3 +123,34 @@ main(int, char** argv)
     return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
+
+
+#if OUTPUT
+
+argv[0]: ././Backtrace_2.exe
+
+0   0x6118eab11ce9: printStackTrace() (+138) [././Backtrace_2.exe]
+fileLine: ??
+??:0
+
+1   0x6118eab11f9f: testFunction() (+13) [././Backtrace_2.exe]
+fileLine: ??
+??:0
+
+2   0x6118eab11ffa: [n/a] [././Backtrace_2.exe]
+fileLine: ??
+??:0
+
+3   0x738d46229d90: [n/a] [/lib/x86_64-linux-gnu/libc.so.6]
+fileLine: ??
+??:0
+
+4   0x738d46229e40: [n/a] [/lib/x86_64-linux-gnu/libc.so.6]
+fileLine: ??
+??:0
+
+5   0x6118eab11805: [n/a] [././Backtrace_2.exe]
+fileLine: ??
+??:0
+
+#endif
