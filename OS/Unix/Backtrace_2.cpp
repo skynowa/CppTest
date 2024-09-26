@@ -33,13 +33,17 @@ getFileLine(
 
     // Run addr2line command to get file and line number
     FILE* fp = popen(command.c_str(), "r");
-    if (!fp) return "??";
+    if (!fp) {
+        return "??";
+    }
 
-    char buffer[256];
-    std::string result = "";
+    std::string result;
+
+    char buffer[256] {};
     while (fgets(buffer, sizeof(buffer), fp) != nullptr) {
         result += buffer;
     }
+
     pclose(fp);
 
     return result;
@@ -78,17 +82,7 @@ printStackTrace()
 							(char*)frame - (char*)info.dli_saddr, info.dli_fname);
 				std::free((void*)demangled_name);
 			}
-		}
-
-		if (status == 0 && demangled_name) {
-			std::printf("%-3d %p: %s (+%ld) [%s]\n", i, frame, demangled_name,
-						(char*)frame - (char*)info.dli_saddr, info.dli_fname);
-		}
-        else if (info.dli_sname) {
-			std::printf("%-3d %p: %s (+%ld) [%s]\n", i, frame, info.dli_sname,
-						(char*)frame - (char*)info.dli_saddr, info.dli_fname);
-		}
-        else {
+		} else {
 			std::printf("%-3d %p: ?? [%s]\n", i, frame, info.dli_fname);
 		}
 
