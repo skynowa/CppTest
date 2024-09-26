@@ -34,7 +34,7 @@ getFileLine(
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
     	// "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
-    	"addr2line -e Backtrace_2.exe -f -C " + std::string(addrStr);
+    	"addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
@@ -67,6 +67,8 @@ printStackTrace()
     }
 
     for (int i = 0; i < addr_size; ++i) {
+        std::cout << "\n";
+
         const void *frame = frames[i];
 
         Dl_info info {};
@@ -100,7 +102,7 @@ printStackTrace()
 
         // Get file and line information from addr2line
         const std::string &fileLine = ::getFileLine(frame);
-        std::cout << "    " << STD_TRACE_VAR(fileLine);
+        std::cout << "\n" << STD_TRACE_VAR(fileLine);
     }
 }
 //-------------------------------------------------------------------------------------------------
