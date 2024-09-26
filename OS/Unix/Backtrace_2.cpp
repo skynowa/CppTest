@@ -83,7 +83,6 @@ printStackTrace()
 		if (status == 0 && demangled_name) {
 			std::printf("%-3d %p: %s (+%ld) [%s]\n", i, frame, demangled_name,
 						(char*)frame - (char*)info.dli_saddr, info.dli_fname);
-			std::free((void*)demangled_name);
 		}
         else if (info.dli_sname) {
 			std::printf("%-3d %p: %s (+%ld) [%s]\n", i, frame, info.dli_sname,
