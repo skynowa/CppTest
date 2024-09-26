@@ -4,11 +4,15 @@
  *
  * \code{.console}
 
- * \endcode
- */
+* \endcode
+*/
 
 
 //-------------------------------------------------------------------------------------------------
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+//#include <Stl.h>
+
 #include <iostream>
 #include <dlfcn.h>
 #include <execinfo.h>
@@ -21,15 +25,17 @@
 // Function to execute addr2line and get file and line number
 std::string
 getFileLine(
-	const void *a_frame
+    const void *a_frame
 )
 {
     char addrStr[20] = {0};
     sprintf(addrStr, "%p", a_frame);
 
     // Prepare the command: addr2line -e <executable> <address>
-    std::string command = "/usr/bin/addr2line -e /proc/self/exe -f -p ";
+    std::string command = "/usr/bin/addr2line -e Backtrace_2.exe -f -p ";
     command += addrStr;
+
+    // std::cout << STD_TRACE_VAR(command) << std::endl;
 
     // Run addr2line command to get file and line number
     FILE* fp = popen(command.c_str(), "r");
@@ -63,33 +69,42 @@ printStackTrace()
     }
 
     for (int i = 0; i < addr_size; ++i) {
-    	const void *frame = frames[i];
+        const void *frame = frames[i];
 
-    	Dl_info info {};
-    	int iRv = ::dladdr(frame, &info);
+        Dl_info info {};
+        int iRv = ::dladdr(frame, &info);
         if (iRv == 0) {
             std::printf("%-3d %p: [no symbol]\n", i, frame);
             continue;
         }
 
-		const char* demangled_name = nullptr;
-		int status = -1;
+        if (info.dli_sname) {
+            int status {-1};
 
-		if (info.dli_sname) {
-			demangled_name = abi::__cxa_demangle(info.dli_sname, nullptr, 0, &status);
-			if (status == 0 && demangled_name) {
-				std::printf("%-3d %p: %s (+%ld) [%s]\n", i, frame, demangled_name,
-							(char*)frame - (char*)info.dli_saddr, info.dli_fname);
-				std::free((void*)demangled_name);
-			}
-		} else {
-			std::printf("%-3d %p: ?? [%s]\n", i, frame, info.dli_fname);
-		}
+            char *demangled_name = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
+            if (status == 0 &&
+                demangled_name != nullptr)
+            {
+                std::printf("%-3d %p: %s (+%ld) [%s]\n",
+                    i,
+                    frame,
+                    demangled_name,
+                    (char*)frame - (char*)info.dli_saddr,
+                    info.dli_fname);
 
-		// Get file and line information from addr2line
-		const std::string &file_line = ::getFileLine(frame);
+                std::free(demangled_name);
+                demangled_name = nullptr;
+            }
+        } else {
+            std::printf("%-3d %p: ?? [%s]\n",
+                i,
+                frame,
+                info.dli_fname);
+        }
 
-		std::cout << "    " << file_line;
+        // Get file and line information from addr2line
+        const std::string &fileLine = ::getFileLine(frame);
+        std::cout << "    " << STD_TRACE_VAR(fileLine);
     }
 }
 //-------------------------------------------------------------------------------------------------
