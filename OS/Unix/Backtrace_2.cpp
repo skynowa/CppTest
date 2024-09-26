@@ -13,14 +13,13 @@
 #include <StdTest/StdTest.h>
 //#include <Stl.h>
 
-#include <iostream>
-#include <dlfcn.h>
-#include <execinfo.h>
-#include <cxxabi.h>
-#include <cstdio>
-#include <cstdlib>
-#include <string>
-#include <unistd.h>
+#if __cpp_lib_stacktrace
+    #include <stacktrace>
+#else
+    #include <dlfcn.h>
+    #include <execinfo.h>
+    #include <cxxabi.h>
+#endif
 //-------------------------------------------------------------------------------------------------
 // Function to execute addr2line and get file and line number
 std::string
@@ -110,7 +109,14 @@ printStackTrace()
 void
 testFunction()
 {
+#if __cpp_lib_stacktrace
+    #warning "__cpp_lib_stacktrace - defined"
+
+    auto trace = std::stacktrace::current();
+    std::cout << std::to_string(trace) << std::endl;
+#else
     ::printStackTrace();
+#endif
 }
 //-------------------------------------------------------------------------------------------------
 int
