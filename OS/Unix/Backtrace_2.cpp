@@ -91,6 +91,11 @@ printStackTrace()
 
                 std::free(demangledName);
                 demangledName = nullptr;
+            } else {
+            	std::printf("%-3d %p: ?? [%s]\n",
+            	                i,
+            	                frame,
+            	                info.dli_fname);
             }
         } else {
             std::printf("%-3d %p: ?? [%s]\n",
