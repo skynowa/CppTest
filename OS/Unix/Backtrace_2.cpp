@@ -32,7 +32,9 @@ getFileLine(
     std::sprintf(addrStr, "%p", a_frame);
 
     // Prepare the command: addr2line -e <executable> <address>
-    const std::string cmd = "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
+    const std::string cmd =
+    	// "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
+    	"addr2line -e Backtrace_2.exe -f -C " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
