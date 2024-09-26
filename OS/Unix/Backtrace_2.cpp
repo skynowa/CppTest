@@ -56,6 +56,12 @@ getFileLine(
 void
 printStackTrace()
 {
+#if __cpp_lib_stacktrace
+    #warning "__cpp_lib_stacktrace - defined"
+
+    auto trace = std::stacktrace::current();
+    std::cout << std::to_string(trace) << std::endl;
+#else
     const int  frames_max = 10;
     void      *frames[frames_max] {};
 
@@ -104,19 +110,13 @@ printStackTrace()
         const std::string &fileLine = ::getFileLine(frame);
         std::cout << "\n" << STD_TRACE_VAR(fileLine);
     }
+#endif
 }
 //-------------------------------------------------------------------------------------------------
 void
 testFunction()
 {
-#if __cpp_lib_stacktrace
-    #warning "__cpp_lib_stacktrace - defined"
-
-    auto trace = std::stacktrace::current();
-    std::cout << std::to_string(trace) << std::endl;
-#else
     ::printStackTrace();
-#endif
 }
 //-------------------------------------------------------------------------------------------------
 int
