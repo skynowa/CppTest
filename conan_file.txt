@@ -11,7 +11,7 @@ libssh2/[>1.0.0]
 libevent/[>1.0.0]
 
 [generators]
-cmake
+CMakeDeps
 
 [options]
 

@@ -39,8 +39,13 @@ int main(int, char **)
     }
 
     {
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wvexing-parse"
+
         // function definition (not constructor, not operator())
         A a();
+
+    #pragma GCC diagnostic pop
     }
 
     return 0;
@@ -50,7 +55,8 @@ int main(int, char **)
 
 #if OUTPUT
 
-A - ctor
+error: empty parentheses were disambiguated as a function declaration [-Werror=vexing-parse]
 
+A - ctor
 
 #endif

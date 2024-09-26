@@ -10,31 +10,36 @@
 //-------------------------------------------------------------------------------------------------
 struct Point
 {
-	signed char  x;
-	unsigned int y;
+    signed char  x;
+    unsigned int y;
 
-	void print() const
-	{
-	    std::cout << STD_TRACE_VAR2(x, y) << std::endl;
-	}
+    void print() const
+    {
+        std::cout << STD_TRACE_VAR2(x, y) << std::endl;
+    }
 };
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	{
-		Point p;
-		p.print();
-	}
+    {
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
 
-	{
-		Point p {};
-		p.print();
-	}
+        Point p;
+        p.print();
 
-	{
-		Point p = {126, 40};
-		p.print();
-	}
+    #pragma GCC diagnostic pop
+    }
+
+    {
+        Point p {};
+        p.print();
+    }
+
+    {
+        Point p = {126, 40};
+        p.print();
+    }
 
     return EXIT_SUCCESS;
 }

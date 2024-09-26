@@ -105,7 +105,7 @@ int main(int, char **)
         CString s("operator char * ()");
 
         char *p = s;
-        STD_TEST(p == s);
+        STD_TEST(p == (char *)s);
     }
 
     // operator const char * ()
