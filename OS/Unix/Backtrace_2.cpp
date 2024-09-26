@@ -109,8 +109,10 @@ testFunction()
 }
 //-------------------------------------------------------------------------------------------------
 int
-main(int, char**)
+main(int, char** argv)
 {
+	std::cout << STD_TRACE_VAR(argv[0]) << std::endl;
+
     ::testFunction();
 
     return EXIT_SUCCESS;
