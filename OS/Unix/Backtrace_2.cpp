@@ -28,29 +28,27 @@ getFileLine(
     const void *a_frame
 )
 {
-    char addrStr[20] = {0};
-    sprintf(addrStr, "%p", a_frame);
+    char addrStr[20 + 1] {};
+    std::sprintf(addrStr, "%p", a_frame);
 
     // Prepare the command: addr2line -e <executable> <address>
-    std::string command = "/usr/bin/addr2line -e Backtrace_2.exe -f -p ";
-    command += addrStr;
-
-    // std::cout << STD_TRACE_VAR(command) << std::endl;
+    const std::string cmd = "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
+    // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
-    FILE* fp = popen(command.c_str(), "r");
-    if (!fp) {
+    FILE *pipe = ::popen(cmd.c_str(), "r");
+    if (pipe == nullptr) {
         return "??";
     }
 
     std::string result;
 
     char buffer[256] {};
-    while (fgets(buffer, sizeof(buffer), fp) != nullptr) {
+    while (std::fgets(buffer, sizeof(buffer), pipe) != nullptr) {
         result += buffer;
     }
 
-    pclose(fp);
+    ::pclose(pipe);
 
     return result;
 }
@@ -80,20 +78,19 @@ printStackTrace()
 
         if (info.dli_sname) {
             int status {-1};
-
-            char *demangled_name = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
-            if (status == 0 &&
-                demangled_name != nullptr)
+            char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
+            if (status        == 0 &&
+                demangledName != nullptr)
             {
                 std::printf("%-3d %p: %s (+%ld) [%s]\n",
                     i,
                     frame,
-                    demangled_name,
-                    (char*)frame - (char*)info.dli_saddr,
+                    demangledName,
+                    (char *)frame - (char *)info.dli_saddr,
                     info.dli_fname);
 
-                std::free(demangled_name);
-                demangled_name = nullptr;
+                std::free(demangledName);
+                demangledName = nullptr;
             }
         } else {
             std::printf("%-3d %p: ?? [%s]\n",
