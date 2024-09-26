@@ -328,7 +328,8 @@ posix_signal_handler(int sig, siginfo_t *siginfo, void *context)
   _Exit(1);
 }
 //-------------------------------------------------------------------------------------------------
-static uint8_t alternate_stack[SIGSTKSZ];
+constexpr std::size_t CUSTOM_SIGSTKSZ = 8192; // as SIGSTKSZ
+static uint8_t alternate_stack[CUSTOM_SIGSTKSZ];
 //-------------------------------------------------------------------------------------------------
 void
 set_signal_handler()
@@ -338,8 +339,8 @@ set_signal_handler()
     stack_t ss = {};
     /* malloc is usually used here, I'm not 100% sure my static allocation
         is valid but it seems to work just fine. */
-    ss.ss_sp = (void*)alternate_stack;
-    ss.ss_size = SIGSTKSZ;
+    ss.ss_sp    = (void*)alternate_stack;
+    ss.ss_size  = CUSTOM_SIGSTKSZ;
     ss.ss_flags = 0;
 
     if (sigaltstack(&ss, NULL) != 0) { err(1, "sigaltstack"); }

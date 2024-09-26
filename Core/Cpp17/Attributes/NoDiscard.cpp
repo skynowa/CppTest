@@ -33,11 +33,13 @@ int main(int, char **)
 {
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-result"
+
     // Compiler/analyzer warning will be issued
     Sum(5, 6);
 
     // Compiler/analyzer warning will be issued
     Func();
+
 #pragma GCC diagnostic pop
 
     return EXIT_SUCCESS;
@@ -47,7 +49,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-warning: ignoring return value of ‘int Sum(int, int)’, declared with attribute nodiscard [-Wunused-result]
-warning: ignoring returned value of type ‘NoDiscardType’, declared with attribute nodiscard [-Wunused-result]
+warning: ignoring return value of "int Sum(int, int)", declared with attribute nodiscard [-Wunused-result]
+warning: ignoring returned value of type "NoDiscardType", declared with attribute nodiscard [-Wunused-result]
 
 #endif

@@ -22,11 +22,11 @@ if (NOT CMAKE_BUILD_TYPE)
 	set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Release - default build type" FORCE)
 endif()
 #--------------------------------------------------------------------------------------------------
-# CONAN
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
-
-find_package(X11 REQUIRED)
+find_package(X11      REQUIRED)
+# find_package(Libssh2  REQUIRED)
+# find_package(Libevent REQUIRED)
+# find_package(OpenSSL  REQUIRED)
+# find_package(ZLIB     REQUIRED)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
    ${CMAKE_SOURCE_DIR}/*.c
@@ -76,9 +76,13 @@ foreach(IT_SOURCE ${SOURCES})
 		${X11_INCLUDE_DIR})
 
 	target_link_libraries(${CPP_TEST} PRIVATE
-		${CONAN_LIBS}
 		-lstdc++fs
-		${X11_LIBRARIES})
+		${X11_LIBRARIES}
+        # Libssh2::libssh2
+        # libevent::libevent
+        # openssl::openssl
+        # ZLIB::ZLIB
+        )
 
 	# Targets - Build, run single test
 	add_custom_target(test_${CPP_TEST}
