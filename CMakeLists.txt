@@ -23,10 +23,10 @@ if (NOT CMAKE_BUILD_TYPE)
 endif()
 #--------------------------------------------------------------------------------------------------
 find_package(X11      REQUIRED)
-# find_package(Libssh2  REQUIRED)
+find_package(Libssh2  REQUIRED)
 # find_package(Libevent REQUIRED)
-# find_package(OpenSSL  REQUIRED)
-# find_package(ZLIB     REQUIRED)
+find_package(OpenSSL  REQUIRED)
+find_package(ZLIB     REQUIRED)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
    ${CMAKE_SOURCE_DIR}/*.c
