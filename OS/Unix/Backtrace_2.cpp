@@ -130,9 +130,10 @@ getFileLine(
 	std::sprintf(addrStr, "%p", a_frame);
 
 	const std::string cmd =
-		"addr2line --exe=./Backtrace_2.exe "
-		"--functions --demangle --inlines --pretty-print " +
-		std::string(addrStr);
+		"addr2line "
+		"--exe=./Backtrace_2.exe "
+		// "--functions --demangle --inlines --pretty-print "
+		+ std::string(addrStr);
 
 	FILE *pipe = ::popen(cmd.c_str(), "r");
 	STD_TEST_PTR(pipe);
