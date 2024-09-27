@@ -82,6 +82,10 @@ foreach(IT_SOURCE ${SOURCES})
         # libevent::libevent
         # openssl::openssl
         # ZLIB::ZLIB
+        backtrace
+        ssh2
+        unwind
+        event
         )
 
 	# Targets - Build, run single test
