@@ -33,8 +33,8 @@ public:
 ///\name ctors, dtor
 ///\{
 	MappingEntry() = default;
-	MappingEntry(const std::string startStr, const std::string endStr,
-		const std::string offsetFromBaseStr);
+	MappingEntry(const std::string &startStr, const std::string &endStr,
+		const std::string &offsetFromBaseStr);
 	~MappingEntry() = default;
 ///\}
 
@@ -50,9 +50,9 @@ private:
 };
 //-------------------------------------------------------------------------------------------------
 MappingEntry::MappingEntry(
-	const std::string a_startStr,
-	const std::string a_endStr,
-	const std::string a_offsetFromBaseStr
+	const std::string &a_startStr,
+	const std::string &a_endStr,
+	const std::string &a_offsetFromBaseStr
 ) :
 	_start          { _hexStrToInt(a_startStr) },
 	_end            { _hexStrToInt(a_endStr) },
@@ -204,7 +204,7 @@ Mappings::_parse_proc_maps_line(
 	try {
 		MappingEntry mapping(mapping_start_str, mapping_end_str, offset_from_base_str);
 
-		return std::move(mapping);
+		return mapping;
 	}
 	catch (const std::invalid_argument &e) {
 		return {};
@@ -326,7 +326,7 @@ printStackTrace()
 					i,
 					frame,
 					demangledName,
-					(char *)frame - (char *)info.dli_saddr,
+					reinterpret_cast<std::uintptr_t>(frame) - reinterpret_cast<std::uintptr_t>(info.dli_saddr),
 					info.dli_fname);
 
 				std::free(demangledName);
