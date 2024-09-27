@@ -60,9 +60,11 @@ parse_proc_maps_line(
 	const std::string &line
 )
 {
-    std::string mapping_range_str, permissions_str, offset_from_base_str;
-    std::istringstream line_stream(line);
+    std::string mapping_range_str;
+    std::string permissions_str;
+    std::string offset_from_base_str;
 
+    std::istringstream line_stream(line);
     if (!std::getline(line_stream, mapping_range_str, ' ') ||
         !std::getline(line_stream, permissions_str, ' ') ||
         !std::getline(line_stream, offset_from_base_str, ' '))
@@ -70,9 +72,10 @@ parse_proc_maps_line(
         return {};
     }
 
-    std::string mapping_start_str, mapping_end_str;
-    std::istringstream mapping_range_stream(mapping_range_str);
+    std::string mapping_start_str;
+    std::string mapping_end_str;
 
+    std::istringstream mapping_range_stream(mapping_range_str);
     if (!std::getline(mapping_range_stream, mapping_start_str, '-') ||
         !std::getline(mapping_range_stream, mapping_end_str))
     {
