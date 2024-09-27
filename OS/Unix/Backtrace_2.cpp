@@ -39,7 +39,7 @@ hex_str_to_int(
 	const std::string &a_str
 )
 {
-	uintptr_t out;
+	uintptr_t out {};
 
 	std::stringstream ss;
 	ss << std::hex << a_str;
