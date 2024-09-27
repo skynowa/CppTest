@@ -111,7 +111,8 @@ getFileLine(
         // "/usr/bin/addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
         // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
         // "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
-        "/usr/bin/addr2line -e ./Backtrace_2.exe -C -p " + std::string(addrStr);
+        // "/usr/bin/addr2line -e ./Backtrace_2.exe -C -p " + std::string(addrStr);
+        "/usr/bin/addr2line --exe=./Backtrace_2.exe --functions --demangle --inlines --pretty-print " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
@@ -126,6 +127,11 @@ getFileLine(
     }
 
     ::pclose(pipe);
+
+    // Trimming
+    while (!result.empty() && (result[result.size() - 1] == '\n' || result[result.size() - 1] == '\r')) {
+    	result.erase(result.size() - 1);
+    }
 
     return result;
 }
@@ -177,8 +183,6 @@ printStackTrace()
     }
 
     for (int i = 0; i < addr_size; ++i) {
-        std::cout << "\n";
-
         const void *frame = frames[i];
 
         Dl_info info {};
@@ -250,31 +254,5 @@ main(int, char** argv)
 
 
 #if OUTPUT
-
-argv[0]: ././Backtrace_2.exe
-
-0   0x6118eab11ce9: printStackTrace() (+138) [././Backtrace_2.exe]
-fileLine: ??
-??:0
-
-1   0x6118eab11f9f: testFunction() (+13) [././Backtrace_2.exe]
-fileLine: ??
-??:0
-
-2   0x6118eab11ffa: [n/a] [././Backtrace_2.exe]
-fileLine: ??
-??:0
-
-3   0x738d46229d90: [n/a] [/lib/x86_64-linux-gnu/libc.so.6]
-fileLine: ??
-??:0
-
-4   0x738d46229e40: [n/a] [/lib/x86_64-linux-gnu/libc.so.6]
-fileLine: ??
-??:0
-
-5   0x6118eab11805: [n/a] [././Backtrace_2.exe]
-fileLine: ??
-??:0
 
 #endif
