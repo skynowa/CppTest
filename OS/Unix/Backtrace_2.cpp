@@ -29,7 +29,8 @@ struct mapping_entry_t
     bool contains_addr(const void* addr) const
     {
         const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(addr);
-        return addr_uint >= start && addr_uint < end;
+
+        return (addr_uint >= start && addr_uint < end);
     }
 };
 //-------------------------------------------------------------------------------------------------
@@ -81,9 +82,9 @@ parse_proc_maps_line(
     mapping_entry_t mapping {};
 
     try {
-        mapping.start            = hex_str_to_int(mapping_start_str);
-        mapping.end              = hex_str_to_int(mapping_end_str);
-        mapping.offset_from_base = hex_str_to_int(offset_from_base_str);
+        mapping.start            = ::hex_str_to_int(mapping_start_str);
+        mapping.end              = ::hex_str_to_int(mapping_end_str);
+        mapping.offset_from_base = ::hex_str_to_int(offset_from_base_str);
 
         return mapping;
     }
@@ -101,7 +102,7 @@ get_own_proc_addr_base(
     STD_TEST(maps_file.is_open());
 
     for (std::string line; std::getline(maps_file, line); ) {
-        const mapping_entry_t mapping = parse_proc_maps_line(line);
+        const mapping_entry_t mapping = ::parse_proc_maps_line(line);
         if ( mapping.contains_addr(addr) ) {
             return mapping.start - mapping.offset_from_base;
         }
