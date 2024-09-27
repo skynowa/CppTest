@@ -48,11 +48,14 @@ hex_str_to_int(
     ss << std::hex << str;
     ss >> out;
 
-    if (ss.eof() && !ss.fail()) { // whole stream read, with no errors
+    // whole stream read, with no errors
+    if (ss.eof() &&
+    	!ss.fail())
+    {
         return out;
-    } else {
-        throw std::invalid_argument(std::string("can't convert '") + str + "' to hex");
     }
+
+    throw std::invalid_argument(std::string("can't convert '") + str + "' to hex");
 }
 //-------------------------------------------------------------------------------------------------
 mapping_entry_t
@@ -63,18 +66,20 @@ parse_proc_maps_line(
     std::string mapping_range_str, permissions_str, offset_from_base_str;
     std::istringstream line_stream(line);
 
-    if(!std::getline(line_stream, mapping_range_str, ' ') ||
+    if (!std::getline(line_stream, mapping_range_str, ' ') ||
         !std::getline(line_stream, permissions_str, ' ') ||
-        !std::getline(line_stream, offset_from_base_str, ' ')) {
-        return mapping_entry_t{};
+        !std::getline(line_stream, offset_from_base_str, ' '))
+    {
+        return {};
     }
 
     std::string mapping_start_str, mapping_end_str;
     std::istringstream mapping_range_stream(mapping_range_str);
 
-    if(!std::getline(mapping_range_stream, mapping_start_str, '-') ||
-        !std::getline(mapping_range_stream, mapping_end_str)) {
-        return mapping_entry_t{};
+    if (!std::getline(mapping_range_stream, mapping_start_str, '-') ||
+        !std::getline(mapping_range_stream, mapping_end_str))
+    {
+        return {};
     }
 
     mapping_entry_t mapping {};
@@ -86,7 +91,7 @@ parse_proc_maps_line(
 
         return mapping;
     }
-    catch (const std::invalid_argument& e) {
+    catch (const std::invalid_argument &e) {
         return {};
     }
 }
@@ -141,7 +146,11 @@ getFileLine(
     ::pclose(pipe);
 
     // Trimming
-    while (!result.empty() && (result[result.size() - 1] == '\n' || result[result.size() - 1] == '\r')) {
+    while (
+    	!result.empty() &&
+    	(result[result.size() - 1] == '\n' || result[result.size() - 1] == '\r')
+    )
+    {
     	result.erase(result.size() - 1);
     }
 
@@ -160,7 +169,7 @@ source_location(
         addr_base = ::get_own_proc_addr_base(addr);
     }
 
-    const void* offset = reinterpret_cast<void*>(reinterpret_cast<uintptr_t>(addr) - addr_base);
+    const auto offset = reinterpret_cast<void *>(reinterpret_cast<uintptr_t>(addr) - addr_base);
 
 #if 0
 	std::string source_line = boost::stacktrace::detail::addr2line("-Cpe", reinterpret_cast<const void*>(offset));
@@ -170,8 +179,10 @@ source_location(
 
     return source_line;
 #else
-    const std::string source_line = ::getFileLine(offset);
-	if (source_line.empty() || source_line[0] == '?') {
+	const std::string source_line = ::getFileLine(offset);
+	if (source_line.empty() ||
+		source_line[0] == '?')
+	{
 		return {};
 	}
 
@@ -260,8 +271,6 @@ testFunction()
 int
 main(int, char** argv)
 {
-    std::cout << STD_TRACE_VAR(argv[0]) << std::endl;
-
     ::testFunction();
 
     return EXIT_SUCCESS;
