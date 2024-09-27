@@ -102,6 +102,8 @@ getFileLine(
     const void *a_frame
 )
 {
+    std::string result;
+
     char addrStr[20 + 1] {};
     std::sprintf(addrStr, "%p", a_frame);
 	// std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
@@ -115,8 +117,6 @@ getFileLine(
 
     FILE *pipe = ::popen(cmd.c_str(), "r");
     STD_TEST_PTR(pipe);
-
-    std::string result;
 
     char buffer[256] {};
     while (std::fgets(buffer, sizeof(buffer), pipe) != nullptr) {
