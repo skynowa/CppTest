@@ -26,59 +26,74 @@
 //-------------------------------------------------------------------------------------------------
 struct mapping_entry_t
 {
-    uintptr_t start = 0;
-    uintptr_t end = 0;
-    uintptr_t offset_from_base = 0;
+    uintptr_t start {};
+    uintptr_t end {};
+    uintptr_t offset_from_base {};
 
-    inline bool contains_addr(const void* addr) const
+    bool contains_addr(const void* addr) const
     {
-        uintptr_t addr_uint = reinterpret_cast<uintptr_t>(addr);
+        const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(addr);
         return addr_uint >= start && addr_uint < end;
     }
 };
 //-------------------------------------------------------------------------------------------------
-inline uintptr_t hex_str_to_int(const std::string& str)
+uintptr_t
+hex_str_to_int(
+	const std::string &str
+)
 {
     uintptr_t out;
+
     std::stringstream ss;
     ss << std::hex << str;
     ss >> out;
-    if(ss.eof() && !ss.fail()) { // whole stream read, with no errors
+
+    if (ss.eof() && !ss.fail()) { // whole stream read, with no errors
         return out;
     } else {
         throw std::invalid_argument(std::string("can't convert '") + str + "' to hex");
     }
 }
 //-------------------------------------------------------------------------------------------------
-inline mapping_entry_t parse_proc_maps_line(const std::string& line)
+mapping_entry_t
+parse_proc_maps_line(
+	const std::string &line
+)
 {
     std::string mapping_range_str, permissions_str, offset_from_base_str;
     std::istringstream line_stream(line);
+
     if(!std::getline(line_stream, mapping_range_str, ' ') ||
         !std::getline(line_stream, permissions_str, ' ') ||
         !std::getline(line_stream, offset_from_base_str, ' ')) {
         return mapping_entry_t{};
     }
+
     std::string mapping_start_str, mapping_end_str;
     std::istringstream mapping_range_stream(mapping_range_str);
+
     if(!std::getline(mapping_range_stream, mapping_start_str, '-') ||
         !std::getline(mapping_range_stream, mapping_end_str)) {
         return mapping_entry_t{};
     }
-    mapping_entry_t mapping{};
+
+    mapping_entry_t mapping {};
+
     try {
-        mapping.start = hex_str_to_int(mapping_start_str);
-        mapping.end = hex_str_to_int(mapping_end_str);
+        mapping.start            = hex_str_to_int(mapping_start_str);
+        mapping.end              = hex_str_to_int(mapping_end_str);
         mapping.offset_from_base = hex_str_to_int(offset_from_base_str);
+
         return mapping;
-    } catch(std::invalid_argument& e) {
-        return mapping_entry_t{};
+    }
+    catch (const std::invalid_argument& e) {
+        return {};
     }
 }
 //-------------------------------------------------------------------------------------------------
 std::uintptr_t
 get_own_proc_addr_base(
-	const void* addr
+	const void *addr
 )
 {
     std::ifstream maps_file("/proc/self/maps");
@@ -86,7 +101,7 @@ get_own_proc_addr_base(
 
     for (std::string line; std::getline(maps_file, line); ) {
         const mapping_entry_t mapping = parse_proc_maps_line(line);
-        if (mapping.contains_addr(addr)) {
+        if ( mapping.contains_addr(addr) ) {
             return mapping.start - mapping.offset_from_base;
         }
     }
@@ -134,14 +149,18 @@ getFileLine(
 }
 //-------------------------------------------------------------------------------------------------
 std::string
-source_location(const void* addr, bool position_independent)
+source_location(
+	const void *addr,
+	const bool  position_independent
+)
 {
-    uintptr_t addr_base = 0;
+    uintptr_t addr_base {};
+
     if (position_independent) {
         addr_base = ::get_own_proc_addr_base(addr);
     }
-    const void* offset = reinterpret_cast<void*>(reinterpret_cast<uintptr_t>(addr) - addr_base);
 
+    const void* offset = reinterpret_cast<void*>(reinterpret_cast<uintptr_t>(addr) - addr_base);
 
 #if 0
 	std::string source_line = boost::stacktrace::detail::addr2line("-Cpe", reinterpret_cast<const void*>(offset));
@@ -151,9 +170,9 @@ source_location(const void* addr, bool position_independent)
 
     return source_line;
 #else
-    std::string source_line = ::getFileLine(offset);
+    const std::string source_line = ::getFileLine(offset);
 	if (source_line.empty() || source_line[0] == '?') {
-		return "";
+		return {};
 	}
 
 	return source_line;
