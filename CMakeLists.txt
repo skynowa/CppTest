@@ -82,7 +82,7 @@ foreach(IT_SOURCE ${SOURCES})
         # libevent::libevent
         # openssl::openssl
         # ZLIB::ZLIB
-        backtrace
+        backtrace # https://github.com/ianlancetaylor/libbacktrace
         ssh2
         unwind
         event
