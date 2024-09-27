@@ -110,7 +110,7 @@ getFileLine(
 
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
-        "addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
+        "/usr/bin/addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
         // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
         // "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
