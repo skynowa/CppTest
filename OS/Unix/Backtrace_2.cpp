@@ -32,6 +32,11 @@ struct mapping_entry_t
 
 		return (addr_uint >= start && addr_uint < end);
 	}
+
+	uintptr_t addr() const
+	{
+		return (start - offset_from_base);
+	}
 };
 //-------------------------------------------------------------------------------------------------
 uintptr_t
@@ -108,7 +113,7 @@ get_own_proc_addr_base(
 	for (std::string line; std::getline(maps_file, line); ) {
 		const mapping_entry_t mapping = ::parse_proc_maps_line(line);
 		if ( mapping.contains_addr(a_addr) ) {
-			return (mapping.start - mapping.offset_from_base);
+			return mapping.addr();
 		}
 	}
 
