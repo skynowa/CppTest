@@ -3,6 +3,7 @@
  * \brief boost::stacktrace
  *
  * \see   https://github.com/ianlancetaylor/libbacktrace
+ *        sudo apt-get install libbacktrace-dev
  *
  * g++ -DBOOST_STACKTRACE_USE_ADDR2LINE  -ggdb -rdynamic Stacktrace.cpp -o bb -lboost_stacktrace_addr2line -ldl -O0 -fno-omit-frame-pointer -lboost_stacktrace_addr2line && ./bb
  */
