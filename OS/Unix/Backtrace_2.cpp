@@ -109,7 +109,7 @@ get_own_proc_addr_base(
 	for (std::string line; std::getline(maps_file, line); ) {
 		const mapping_entry_t mapping = ::parse_proc_maps_line(line);
 		if ( mapping.contains_addr(a_addr) ) {
-			return mapping.start - mapping.offset_from_base;
+			return (mapping.start - mapping.offset_from_base);
 		}
 	}
 
@@ -128,14 +128,11 @@ getFileLine(
 
 	char addrStr[20 + 1] {};
 	std::sprintf(addrStr, "%p", a_frame);
-	// std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
 
-	// Prepare the command: addr2line -e <executable> <address>
 	const std::string cmd =
 		"addr2line --exe=./Backtrace_2.exe "
 		"--functions --demangle --inlines --pretty-print " +
 		std::string(addrStr);
-	// std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
 	FILE *pipe = ::popen(cmd.c_str(), "r");
 	STD_TEST_PTR(pipe);
@@ -161,17 +158,17 @@ getFileLine(
 //-------------------------------------------------------------------------------------------------
 std::string
 source_location(
-	const void *addr,
-	const bool  position_independent
+	const void *a_addr,
+	const bool  a_position_independent
 )
 {
 	uintptr_t addr_base {};
 
-	if (position_independent) {
-		addr_base = ::get_own_proc_addr_base(addr);
+	if (a_position_independent) {
+		addr_base = ::get_own_proc_addr_base(a_addr);
 	}
 
-	const auto offset = reinterpret_cast<void *>(reinterpret_cast<uintptr_t>(addr) - addr_base);
+	const auto offset = reinterpret_cast<void *>(reinterpret_cast<uintptr_t>(a_addr) - addr_base);
 
 #if 0
 	std::string source_line = boost::stacktrace::detail::addr2line("-Cpe", reinterpret_cast<const void*>(offset));
@@ -264,7 +261,7 @@ testFunction()
 }
 //-------------------------------------------------------------------------------------------------
 int
-main(int, char** argv)
+main(int, char**)
 {
 	::testFunction();
 
