@@ -26,13 +26,13 @@ int main(int , char **)
     const auto &stackTrace = boost::stacktrace::stacktrace();
 
 	for (const auto &it_frame : stackTrace.as_vector()) {
+		std::cout << STD_TRACE_VAR(it_frame) << '\n' << std::endl;
+
 		std::cout <<
 			STD_TRACE_VAR(it_frame.name()) << "\n"
 			STD_TRACE_VAR(it_frame.address()) << "\n"
 			STD_TRACE_VAR(it_frame.source_file()) << "\n"
 			STD_TRACE_VAR(it_frame.source_line()) << std::endl;
-
-		std::cout << STD_TRACE_VAR(it_frame) << '\n' << std::endl;
 	}
 #else
 	std::cout << "Boost - not instaled, skip" << std::endl;
