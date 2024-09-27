@@ -20,12 +20,14 @@
 #include <execinfo.h>
 #include <cxxabi.h>
 //-------------------------------------------------------------------------------------------------
-struct mapping_entry_t
+class mapping_entry_t
 {
+public:
 	uintptr_t start {};
 	uintptr_t end {};
 	uintptr_t offset_from_base {};
 
+public:
 	bool contains_addr(const void *a_addr) const
 	{
 		const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(a_addr);
