@@ -108,11 +108,9 @@ getFileLine(
 
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
-        // "/usr/bin/addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
-        // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
-        // "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
-        // "/usr/bin/addr2line -e ./Backtrace_2.exe -C -p " + std::string(addrStr);
-        "/usr/bin/addr2line --exe=./Backtrace_2.exe --functions --demangle --inlines --pretty-print " + std::string(addrStr);
+    	"addr2line --exe=./Backtrace_2.exe "
+    	"--functions --demangle --inlines --pretty-print " +
+    	std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
