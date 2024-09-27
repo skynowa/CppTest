@@ -131,7 +131,7 @@ getFileLine(
 
 	const std::string cmd =
 		"addr2line "
-		"--exe=./Backtrace_2.exe "
+		"--exe=Backtrace_2.exe "
 		// "--functions --demangle --inlines --pretty-print "
 		+ std::string(addrStr);
 
