@@ -13,7 +13,8 @@
 //-------------------------------------------------------------------------------------------------
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
-//#include <Stl.h>
+// #include <Stl.h>
+#include <fstream>
 
 #if __cpp_lib_stacktrace
     #include <stacktrace>
@@ -23,20 +24,95 @@
     #include <cxxabi.h>
 #endif
 //-------------------------------------------------------------------------------------------------
+struct mapping_entry_t
+{
+    uintptr_t start = 0;
+    uintptr_t end = 0;
+    uintptr_t offset_from_base = 0;
+
+    inline bool contains_addr(const void* addr) const
+    {
+        uintptr_t addr_uint = reinterpret_cast<uintptr_t>(addr);
+        return addr_uint >= start && addr_uint < end;
+    }
+};
+//-------------------------------------------------------------------------------------------------
+inline uintptr_t hex_str_to_int(const std::string& str)
+{
+    uintptr_t out;
+    std::stringstream ss;
+    ss << std::hex << str;
+    ss >> out;
+    if(ss.eof() && !ss.fail()) { // whole stream read, with no errors
+        return out;
+    } else {
+        throw std::invalid_argument(std::string("can't convert '") + str + "' to hex");
+    }
+}
+//-------------------------------------------------------------------------------------------------
+inline mapping_entry_t parse_proc_maps_line(const std::string& line)
+{
+    std::string mapping_range_str, permissions_str, offset_from_base_str;
+    std::istringstream line_stream(line);
+    if(!std::getline(line_stream, mapping_range_str, ' ') ||
+        !std::getline(line_stream, permissions_str, ' ') ||
+        !std::getline(line_stream, offset_from_base_str, ' ')) {
+        return mapping_entry_t{};
+    }
+    std::string mapping_start_str, mapping_end_str;
+    std::istringstream mapping_range_stream(mapping_range_str);
+    if(!std::getline(mapping_range_stream, mapping_start_str, '-') ||
+        !std::getline(mapping_range_stream, mapping_end_str)) {
+        return mapping_entry_t{};
+    }
+    mapping_entry_t mapping{};
+    try {
+        mapping.start = hex_str_to_int(mapping_start_str);
+        mapping.end = hex_str_to_int(mapping_end_str);
+        mapping.offset_from_base = hex_str_to_int(offset_from_base_str);
+        return mapping;
+    } catch(std::invalid_argument& e) {
+        return mapping_entry_t{};
+    }
+}
+//-------------------------------------------------------------------------------------------------
+std::uintptr_t
+get_own_proc_addr_base(
+	const void* addr
+)
+{
+    std::ifstream maps_file("/proc/self/maps");
+    STD_TEST(maps_file.is_open());
+
+    for (std::string line; std::getline(maps_file, line); ) {
+        const mapping_entry_t mapping = parse_proc_maps_line(line);
+        if (mapping.contains_addr(addr)) {
+            return mapping.start - mapping.offset_from_base;
+        }
+    }
+
+    STD_TEST(false);
+
+    return {};
+}
+//-------------------------------------------------------------------------------------------------
 // Function to execute addr2line and get file and line number
 std::string
 getFileLine(
     const void *a_frame
 )
 {
+	const std::uintptr_t frame = ::get_own_proc_addr_base(a_frame);
+
     char addrStr[20 + 1] {};
-    std::sprintf(addrStr, "%p", a_frame);
+    std::sprintf(addrStr, "%p", reinterpret_cast<void *>(frame));
+	std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
 
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
-        // "addr2line -e Backtrace_2.exe -f -p " + std::string(addrStr);
+        "addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
         // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
-        "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
+        // "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
@@ -86,31 +162,36 @@ printStackTrace()
             continue;
         }
 
-        int status {-1};
-        char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
-        if (status        == 0 &&
-            demangledName != nullptr)
-        {
-            std::printf("%-3d %p: %s (+%ld) [%s]",
-                i,
-                frame,
-                demangledName,
-                (char *)frame - (char *)info.dli_saddr,
-                info.dli_fname);
+        // Func name
+		{
+			int status {-1};
+			char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
+			if (status        == 0 &&
+				demangledName != nullptr)
+			{
+				std::printf("%-3d %p: %s (+%ld) [%s]",
+					i,
+					frame,
+					demangledName,
+					(char *)frame - (char *)info.dli_saddr,
+					info.dli_fname);
 
-            std::free(demangledName);
-            demangledName = nullptr;
-        } else {
-            std::printf("%-3d %p: %s [%s]",
-                i,
-                frame,
-                "[n/a]",
-                info.dli_fname);
-        }
+				std::free(demangledName);
+				demangledName = nullptr;
+			} else {
+				std::printf("%-3d %p: %s [%s]",
+					i,
+					frame,
+					"[n/a]",
+					info.dli_fname);
+			}
+		}
 
         // Get file and line information from addr2line
-        const std::string &fileLine = ::getFileLine(frame);
-        std::cout << "\n" << STD_TRACE_VAR(fileLine);
+		{
+			const std::string &fileLine = ::getFileLine(frame);
+			std::cout << "\t" << STD_TRACE_VAR(fileLine);
+		}
     }
 #endif
 }
