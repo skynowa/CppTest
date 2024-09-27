@@ -58,12 +58,13 @@ int main(int , char **)
 		if (0) {
 			std::cout << STD_TRACE_VAR(it_frame) << '\n' << std::endl;
 		} else {
-			std::cout <<
-				"module: " << ::executableName(it_frame) << "\n"
-				STD_TRACE_VAR(it_frame.name()) << "\n"
-				STD_TRACE_VAR(it_frame.address()) << "\n"
-				STD_TRACE_VAR(it_frame.source_file()) << "\n"
-				STD_TRACE_VAR(it_frame.source_line()) << std::endl;
+			std::cout
+				<< "module: " << ::executableName(it_frame) << "\n"
+				<< "\n"
+				<< STD_TRACE_VAR(it_frame.name()) << "\n"
+				<< STD_TRACE_VAR(it_frame.address()) << "\n"
+				<< STD_TRACE_VAR(it_frame.source_file()) << "\n"
+				<< STD_TRACE_VAR(it_frame.source_line()) << std::endl;
 		}
 	}
 #else
