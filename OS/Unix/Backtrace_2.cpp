@@ -113,7 +113,6 @@ getFileLine(
     	std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
-    // Run addr2line command to get file and line number
     FILE *pipe = ::popen(cmd.c_str(), "r");
     STD_TEST_PTR(pipe);
 
