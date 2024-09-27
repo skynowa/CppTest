@@ -22,16 +22,16 @@
 //-------------------------------------------------------------------------------------------------
 struct mapping_entry_t
 {
-    uintptr_t start {};
-    uintptr_t end {};
-    uintptr_t offset_from_base {};
+	uintptr_t start {};
+	uintptr_t end {};
+	uintptr_t offset_from_base {};
 
-    bool contains_addr(const void *a_addr) const
-    {
-        const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(a_addr);
+	bool contains_addr(const void *a_addr) const
+	{
+		const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(a_addr);
 
-        return (addr_uint >= start && addr_uint < end);
-    }
+		return (addr_uint >= start && addr_uint < end);
+	}
 };
 //-------------------------------------------------------------------------------------------------
 uintptr_t
@@ -39,20 +39,20 @@ hex_str_to_int(
 	const std::string &a_str
 )
 {
-    uintptr_t out;
+	uintptr_t out;
 
-    std::stringstream ss;
-    ss << std::hex << a_str;
-    ss >> out;
+	std::stringstream ss;
+	ss << std::hex << a_str;
+	ss >> out;
 
-    // whole stream read, with no errors
-    if (ss.eof() &&
-    	!ss.fail())
-    {
-        return out;
-    }
+	// whole stream read, with no errors
+	if (ss.eof() &&
+		!ss.fail())
+	{
+		return out;
+	}
 
-    throw std::invalid_argument(std::string("can't convert '") + a_str + "' to hex");
+	throw std::invalid_argument(std::string("can't convert '") + a_str + "' to hex");
 }
 //-------------------------------------------------------------------------------------------------
 mapping_entry_t
@@ -60,40 +60,42 @@ parse_proc_maps_line(
 	const std::string &a_line
 )
 {
-    std::string mapping_range_str;
-    std::string permissions_str;
-    std::string offset_from_base_str;
+	std::string mapping_range_str;
+	std::string permissions_str;
+	std::string offset_from_base_str;
+	{
+		std::istringstream line_stream(a_line);
+		if (!std::getline(line_stream, mapping_range_str, ' ') ||
+			!std::getline(line_stream, permissions_str, ' ') ||
+			!std::getline(line_stream, offset_from_base_str, ' '))
+		{
+			return {};
+		}
+	}
 
-    std::istringstream line_stream(a_line);
-    if (!std::getline(line_stream, mapping_range_str, ' ') ||
-        !std::getline(line_stream, permissions_str, ' ') ||
-        !std::getline(line_stream, offset_from_base_str, ' '))
-    {
-        return {};
-    }
+	std::string mapping_start_str;
+	std::string mapping_end_str;
+	{
+		std::istringstream mapping_range_stream(mapping_range_str);
+		if (!std::getline(mapping_range_stream, mapping_start_str, '-') ||
+			!std::getline(mapping_range_stream, mapping_end_str))
+		{
+			return {};
+		}
+	}
 
-    std::string mapping_start_str;
-    std::string mapping_end_str;
+	mapping_entry_t mapping {};
 
-    std::istringstream mapping_range_stream(mapping_range_str);
-    if (!std::getline(mapping_range_stream, mapping_start_str, '-') ||
-        !std::getline(mapping_range_stream, mapping_end_str))
-    {
-        return {};
-    }
+	try {
+		mapping.start            = ::hex_str_to_int(mapping_start_str);
+		mapping.end              = ::hex_str_to_int(mapping_end_str);
+		mapping.offset_from_base = ::hex_str_to_int(offset_from_base_str);
 
-    mapping_entry_t mapping {};
-
-    try {
-        mapping.start            = ::hex_str_to_int(mapping_start_str);
-        mapping.end              = ::hex_str_to_int(mapping_end_str);
-        mapping.offset_from_base = ::hex_str_to_int(offset_from_base_str);
-
-        return mapping;
-    }
-    catch (const std::invalid_argument &e) {
-        return {};
-    }
+		return mapping;
+	}
+	catch (const std::invalid_argument &e) {
+		return {};
+	}
 }
 //-------------------------------------------------------------------------------------------------
 std::uintptr_t
@@ -101,60 +103,60 @@ get_own_proc_addr_base(
 	const void *a_addr
 )
 {
-    std::ifstream maps_file("/proc/self/maps");
-    STD_TEST(maps_file.is_open());
+	std::ifstream maps_file("/proc/self/maps");
+	STD_TEST(maps_file.is_open());
 
-    for (std::string line; std::getline(maps_file, line); ) {
-        const mapping_entry_t mapping = ::parse_proc_maps_line(line);
-        if ( mapping.contains_addr(a_addr) ) {
-            return mapping.start - mapping.offset_from_base;
-        }
-    }
+	for (std::string line; std::getline(maps_file, line); ) {
+		const mapping_entry_t mapping = ::parse_proc_maps_line(line);
+		if ( mapping.contains_addr(a_addr) ) {
+			return mapping.start - mapping.offset_from_base;
+		}
+	}
 
-    STD_TEST(false);
+	STD_TEST(false);
 
-    return {};
+	return {};
 }
 //-------------------------------------------------------------------------------------------------
 // Function to execute addr2line and get file and line number
 std::string
 getFileLine(
-    const void *a_frame
+	const void *a_frame
 )
 {
-    std::string result;
+	std::string result;
 
-    char addrStr[20 + 1] {};
-    std::sprintf(addrStr, "%p", a_frame);
+	char addrStr[20 + 1] {};
+	std::sprintf(addrStr, "%p", a_frame);
 	// std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
 
-    // Prepare the command: addr2line -e <executable> <address>
-    const std::string cmd =
-    	"addr2line --exe=./Backtrace_2.exe "
-    	"--functions --demangle --inlines --pretty-print " +
-    	std::string(addrStr);
-    // std::cout << STD_TRACE_VAR(cmd) << std::endl;
+	// Prepare the command: addr2line -e <executable> <address>
+	const std::string cmd =
+		"addr2line --exe=./Backtrace_2.exe "
+		"--functions --demangle --inlines --pretty-print " +
+		std::string(addrStr);
+	// std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
-    FILE *pipe = ::popen(cmd.c_str(), "r");
-    STD_TEST_PTR(pipe);
+	FILE *pipe = ::popen(cmd.c_str(), "r");
+	STD_TEST_PTR(pipe);
 
-    char buffer[256] {};
-    while (std::fgets(buffer, sizeof(buffer), pipe) != nullptr) {
-        result += buffer;
-    }
+	char buffer[256] {};
+	while (std::fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+		result += buffer;
+	}
 
-    ::pclose(pipe);
+	::pclose(pipe);
 
-    // Trimming
-    while (
-    	!result.empty() &&
-    	(result[result.size() - 1] == '\n' || result[result.size() - 1] == '\r')
-    )
-    {
-    	result.erase(result.size() - 1);
-    }
+	// Trimming
+	while (
+		!result.empty() &&
+		(result[result.size() - 1] == '\n' || result[result.size() - 1] == '\r')
+	)
+	{
+		result.erase(result.size() - 1);
+	}
 
-    return result;
+	return result;
 }
 //-------------------------------------------------------------------------------------------------
 std::string
@@ -163,13 +165,13 @@ source_location(
 	const bool  position_independent
 )
 {
-    uintptr_t addr_base {};
+	uintptr_t addr_base {};
 
-    if (position_independent) {
-        addr_base = ::get_own_proc_addr_base(addr);
-    }
+	if (position_independent) {
+		addr_base = ::get_own_proc_addr_base(addr);
+	}
 
-    const auto offset = reinterpret_cast<void *>(reinterpret_cast<uintptr_t>(addr) - addr_base);
+	const auto offset = reinterpret_cast<void *>(reinterpret_cast<uintptr_t>(addr) - addr_base);
 
 #if 0
 	std::string source_line = boost::stacktrace::detail::addr2line("-Cpe", reinterpret_cast<const void*>(offset));
@@ -177,7 +179,7 @@ source_location(
 		return "";
 	}
 
-    return source_line;
+	return source_line;
 #else
 	const std::string source_line = ::getFileLine(offset);
 	if (source_line.empty() ||
@@ -193,27 +195,27 @@ source_location(
 void
 printStackTrace()
 {
-    const int  frames_max = 10;
-    void      *frames[frames_max] {};
+	const int  frames_max = 10;
+	void      *frames[frames_max] {};
 
-    // Capture the stack trace
-    int addr_size = ::backtrace(frames, frames_max);
-    if (addr_size == 0) {
-        std::cerr << "No stack trace available" << std::endl;
-        return;
-    }
+	// Capture the stack trace
+	int addr_size = ::backtrace(frames, frames_max);
+	if (addr_size == 0) {
+		std::cerr << "No stack trace available" << std::endl;
+		return;
+	}
 
-    for (int i = 0; i < addr_size; ++i) {
-        const void *frame = frames[i];
+	for (int i = 0; i < addr_size; ++i) {
+		const void *frame = frames[i];
 
-        Dl_info info {};
-        int iRv = ::dladdr(frame, &info);
-        if (iRv == 0) {
-            std::printf("%-3d %p: [no symbol]\n", i, frame);
-            continue;
-        }
+		Dl_info info {};
+		int iRv = ::dladdr(frame, &info);
+		if (iRv == 0) {
+			std::printf("%-3d %p: [no symbol]\n", i, frame);
+			continue;
+		}
 
-        // Func name
+		// Func name
 		{
 			int status {-1};
 			char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
@@ -238,7 +240,7 @@ printStackTrace()
 			}
 		}
 
-        // Get file and line information from addr2line
+		// Get file and line information from addr2line
 		{
 			// const std::string &fileLine = ::getFileLine(frame);
 			std::string fileLine = ::source_location(frame, false);
@@ -252,21 +254,21 @@ printStackTrace()
 
 			std::cout << "\t" << STD_TRACE_VAR(fileLine) << std::endl;
 		}
-    }
+	}
 }
 //-------------------------------------------------------------------------------------------------
 void
 testFunction()
 {
-    ::printStackTrace();
+	::printStackTrace();
 }
 //-------------------------------------------------------------------------------------------------
 int
 main(int, char** argv)
 {
-    ::testFunction();
+	::testFunction();
 
-    return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
 //-------------------------------------------------------------------------------------------------
 
