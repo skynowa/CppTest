@@ -322,21 +322,21 @@ printStackTrace()
 			if (status        == 0 &&
 				demangledName != nullptr)
 			{
-				std::printf("%-3d %p: %s (+%ld) [%s]",
+				std::printf("%-3d [%s] %p: %s (+%ld)",
 					i,
+					info.dli_fname,
 					frame,
 					demangledName,
-					reinterpret_cast<std::uintptr_t>(frame) - reinterpret_cast<std::uintptr_t>(info.dli_saddr),
-					info.dli_fname);
+					reinterpret_cast<std::uintptr_t>(frame) - reinterpret_cast<std::uintptr_t>(info.dli_saddr));
 
 				std::free(demangledName);
 				demangledName = nullptr;
 			} else {
-				std::printf("%-3d %p: %s [%s]",
+				std::printf("%-3d [%s] %p: %s",
 					i,
+					info.dli_fname,
 					frame,
-					"[n/a]",
-					info.dli_fname);
+					"[n/a]");
 			}
 		}
 
@@ -351,7 +351,7 @@ printStackTrace()
 				fileLine = "[n/a]";
 			}
 
-			std::cout << "\t" << "at " << fileLine << std::endl;
+			std::cout << " " << "at " << fileLine << std::endl;
 		}
 	}
 }
