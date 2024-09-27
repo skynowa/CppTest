@@ -315,7 +315,7 @@ printStackTrace()
 			continue;
 		}
 
-		// Func name
+		// SourceInfoOption::funcName
 		{
 			int status {-1};
 			char *demangledName = abi::__cxa_demangle(info.dli_sname, nullptr, nullptr, &status);
@@ -340,7 +340,7 @@ printStackTrace()
 			}
 		}
 
-		// Get file and line information from addr2line
+		// SourceInfoOption::filePath, SourceInfoOption::lineNum
 		{
 			std::string fileLine = ::getFileLine(frame, false);
 			if ( fileLine.empty() ) {
