@@ -236,7 +236,7 @@ getAddr2line(
 
 		cmd =
 			"addr2line "
-			"--exe=Backtrace_2.exe "
+			"--exe=Backtrace_addr2line.exe "
 			// "--functions --demangle --inlines --pretty-print "
 			+ std::string(addrStr);
 	}

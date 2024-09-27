@@ -1,13 +1,13 @@
 #!/bin/bash
 #
-# \file  Backtrace_2.sh
+# \file  Backtrace_addr2line.sh
 # \brief Compile
 #
 
 
 #--------------------------------------------------------------------------------------------------
 # vars
-CPP_BASE_NAME="./Backtrace_2"
+CPP_BASE_NAME="Backtrace_addr2line"
 
 CPP_STANDART="c++20"
 INCLUDE_DIR="/home/skynowa/Projects/CppTest"
