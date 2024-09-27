@@ -16,13 +16,9 @@
 // #include <Stl.h>
 #include <fstream>
 
-#if __cpp_lib_stacktrace
-    #include <stacktrace>
-#else
-    #include <dlfcn.h>
-    #include <execinfo.h>
-    #include <cxxabi.h>
-#endif
+#include <dlfcn.h>
+#include <execinfo.h>
+#include <cxxabi.h>
 //-------------------------------------------------------------------------------------------------
 struct mapping_entry_t
 {
@@ -193,12 +189,6 @@ source_location(
 void
 printStackTrace()
 {
-#if __cpp_lib_stacktrace
-    #warning "__cpp_lib_stacktrace - defined"
-
-    auto trace = std::stacktrace::current();
-    std::cout << std::to_string(trace) << std::endl;
-#else
     const int  frames_max = 10;
     void      *frames[frames_max] {};
 
@@ -259,7 +249,6 @@ printStackTrace()
 			std::cout << "\t" << STD_TRACE_VAR(fileLine) << std::endl;
 		}
     }
-#endif
 }
 //-------------------------------------------------------------------------------------------------
 void
