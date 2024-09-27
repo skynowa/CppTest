@@ -26,9 +26,9 @@ struct mapping_entry_t
     uintptr_t end {};
     uintptr_t offset_from_base {};
 
-    bool contains_addr(const void* addr) const
+    bool contains_addr(const void *a_addr) const
     {
-        const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(addr);
+        const uintptr_t addr_uint = reinterpret_cast<uintptr_t>(a_addr);
 
         return (addr_uint >= start && addr_uint < end);
     }
@@ -36,13 +36,13 @@ struct mapping_entry_t
 //-------------------------------------------------------------------------------------------------
 uintptr_t
 hex_str_to_int(
-	const std::string &str
+	const std::string &a_str
 )
 {
     uintptr_t out;
 
     std::stringstream ss;
-    ss << std::hex << str;
+    ss << std::hex << a_str;
     ss >> out;
 
     // whole stream read, with no errors
@@ -52,19 +52,19 @@ hex_str_to_int(
         return out;
     }
 
-    throw std::invalid_argument(std::string("can't convert '") + str + "' to hex");
+    throw std::invalid_argument(std::string("can't convert '") + a_str + "' to hex");
 }
 //-------------------------------------------------------------------------------------------------
 mapping_entry_t
 parse_proc_maps_line(
-	const std::string &line
+	const std::string &a_line
 )
 {
     std::string mapping_range_str;
     std::string permissions_str;
     std::string offset_from_base_str;
 
-    std::istringstream line_stream(line);
+    std::istringstream line_stream(a_line);
     if (!std::getline(line_stream, mapping_range_str, ' ') ||
         !std::getline(line_stream, permissions_str, ' ') ||
         !std::getline(line_stream, offset_from_base_str, ' '))
@@ -98,7 +98,7 @@ parse_proc_maps_line(
 //-------------------------------------------------------------------------------------------------
 std::uintptr_t
 get_own_proc_addr_base(
-	const void *addr
+	const void *a_addr
 )
 {
     std::ifstream maps_file("/proc/self/maps");
@@ -106,7 +106,7 @@ get_own_proc_addr_base(
 
     for (std::string line; std::getline(maps_file, line); ) {
         const mapping_entry_t mapping = ::parse_proc_maps_line(line);
-        if ( mapping.contains_addr(addr) ) {
+        if ( mapping.contains_addr(a_addr) ) {
             return mapping.start - mapping.offset_from_base;
         }
     }
