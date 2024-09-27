@@ -102,17 +102,16 @@ getFileLine(
     const void *a_frame
 )
 {
-	const std::uintptr_t frame = ::get_own_proc_addr_base(a_frame);
-
     char addrStr[20 + 1] {};
-    std::sprintf(addrStr, "%p", reinterpret_cast<void *>(frame));
-	std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
+    std::sprintf(addrStr, "%p", a_frame);
+	// std::cout << "\t" << STD_TRACE_VAR(addrStr) << std::endl;
 
     // Prepare the command: addr2line -e <executable> <address>
     const std::string cmd =
-        "/usr/bin/addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
+        // "/usr/bin/addr2line -e ./Backtrace_2.exe -f -p " + std::string(addrStr);
         // "addr2line -e ./Backtrace_2.exe -f -C " + std::string(addrStr);
         // "addr2line -f -e ./Backtrace_2.exe " + std::string(addrStr);
+        "/usr/bin/addr2line -e ./Backtrace_2.exe -C -p " + std::string(addrStr);
     // std::cout << STD_TRACE_VAR(cmd) << std::endl;
 
     // Run addr2line command to get file and line number
@@ -129,6 +128,33 @@ getFileLine(
     ::pclose(pipe);
 
     return result;
+}
+//-------------------------------------------------------------------------------------------------
+std::string
+source_location(const void* addr, bool position_independent)
+{
+    uintptr_t addr_base = 0;
+    if (position_independent) {
+        addr_base = ::get_own_proc_addr_base(addr);
+    }
+    const void* offset = reinterpret_cast<void*>(reinterpret_cast<uintptr_t>(addr) - addr_base);
+
+
+#if 0
+	std::string source_line = boost::stacktrace::detail::addr2line("-Cpe", reinterpret_cast<const void*>(offset));
+	if (source_line.empty() || source_line[0] == '?') {
+		return "";
+	}
+
+    return source_line;
+#else
+    std::string source_line = ::getFileLine(offset);
+	if (source_line.empty() || source_line[0] == '?') {
+		return "";
+	}
+
+	return source_line;
+#endif
 }
 //-------------------------------------------------------------------------------------------------
 void
@@ -189,8 +215,17 @@ printStackTrace()
 
         // Get file and line information from addr2line
 		{
-			const std::string &fileLine = ::getFileLine(frame);
-			std::cout << "\t" << STD_TRACE_VAR(fileLine);
+			// const std::string &fileLine = ::getFileLine(frame);
+			std::string fileLine = ::source_location(frame, false);
+			if ( fileLine.empty() ) {
+				fileLine = ::source_location(frame, true);
+			}
+
+			if (fileLine.empty()) {
+				fileLine = "[0]";
+			}
+
+			std::cout << "\t" << STD_TRACE_VAR(fileLine) << std::endl;
 		}
     }
 #endif
