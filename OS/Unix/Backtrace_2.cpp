@@ -84,9 +84,8 @@ parse_proc_maps_line(
 		}
 	}
 
-	mapping_entry_t mapping {};
-
 	try {
+		mapping_entry_t mapping {};
 		mapping.start            = ::hex_str_to_int(mapping_start_str);
 		mapping.end              = ::hex_str_to_int(mapping_end_str);
 		mapping.offset_from_base = ::hex_str_to_int(offset_from_base_str);
