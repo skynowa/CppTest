@@ -40,7 +40,7 @@ executableName(
 		return {};
 	}
 
-	if (info.dli_fname != nullptr) {
+	if (info.dli_fname == nullptr) {
 		return {};
 	}
 
