@@ -33,7 +33,7 @@ int main(int , char **)
 			STD_TRACE_VAR(it_frame.source_line()) << std::endl;
 
 		std::cout << STD_TRACE_VAR(it_frame) << '\n' << std::endl;
-	} // for (vars)
+	}
 #else
 	std::cout << "Boost - not instaled, skip" << std::endl;
 #endif
