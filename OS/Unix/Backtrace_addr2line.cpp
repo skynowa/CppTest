@@ -114,7 +114,7 @@ public:
 ///\name ctors, dtor
 ///\{
 	Mappings() = delete;
-	Mappings(const std::uintptr_t addr, const bool position_independent);
+	Mappings(const std::uintptr_t addr, const bool positionIndependent);
 	~Mappings() = default;
 ///\}
 
@@ -122,18 +122,18 @@ public:
 
 private:
 	const std::uintptr_t _addr {};
-	const bool           _position_independent {};
+	const bool           _positionIndependent {};
 
-	std::uintptr_t _get_own_proc_addr_base(const std::uintptr_t addr) const;
-	MappingEntry   _parse_proc_maps_line(const std::string &map_entry) const;
+	std::uintptr_t _getOwnProcAddrBase(const std::uintptr_t addr) const;
+	MappingEntry   _parseProcMapsLine(const std::string &map_entry) const;
 };
 //-------------------------------------------------------------------------------------------------
 Mappings::Mappings(
 	const std::uintptr_t a_addr,
-	const bool           a_position_independent
+	const bool           a_positionIndependent
 ) :
-	_addr                 {a_addr},
-	_position_independent {a_position_independent}
+	_addr                {a_addr},
+	_positionIndependent {a_positionIndependent}
 {
 	STD_TEST(a_addr != 0);
 }
@@ -143,8 +143,8 @@ Mappings::offset() const
 {
 	std::uintptr_t addr_base {};
 
-	if (_position_independent) {
-		addr_base = _get_own_proc_addr_base(_addr);
+	if (_positionIndependent) {
+		addr_base = _getOwnProcAddrBase(_addr);
 	}
 
 	const uintptr_t offset = _addr - addr_base;
@@ -153,7 +153,7 @@ Mappings::offset() const
 }
 //-------------------------------------------------------------------------------------------------
 std::uintptr_t
-Mappings::_get_own_proc_addr_base(
+Mappings::_getOwnProcAddrBase(
 	const std::uintptr_t a_addr
 ) const
 {
@@ -161,7 +161,7 @@ Mappings::_get_own_proc_addr_base(
 	STD_TEST(maps_file.is_open());
 
 	for (std::string map_entry; std::getline(maps_file, map_entry); ) {
-		MappingEntry mapping = _parse_proc_maps_line(map_entry);
+		MappingEntry mapping = _parseProcMapsLine(map_entry);
 		if ( mapping.containsAddr(a_addr) ) {
 			return mapping.addr();
 		}
@@ -173,7 +173,7 @@ Mappings::_get_own_proc_addr_base(
 }
 //-------------------------------------------------------------------------------------------------
 MappingEntry
-Mappings::_parse_proc_maps_line(
+Mappings::_parseProcMapsLine(
 	const std::string &a_map_entry
 ) const
 {
@@ -268,12 +268,12 @@ getAddr2line(
 std::string
 getFileLine(
 	const void *a_addr,
-	const bool  a_position_independent
+	const bool  a_positionIndependent
 )
 {
 	STD_TEST_PTR(a_addr);
 
-	Mappings mappings(reinterpret_cast<std::uintptr_t>(a_addr), a_position_independent);
+	Mappings mappings(reinterpret_cast<std::uintptr_t>(a_addr), a_positionIndependent);
 
 	const std::string sRv = ::getAddr2line( reinterpret_cast<void *>(mappings.offset()) );
 	if (sRv.empty() ||
@@ -285,6 +285,7 @@ getFileLine(
 	return sRv;
 }
 //-------------------------------------------------------------------------------------------------
+
 
 /**************************************************************************************************
 *   Test
