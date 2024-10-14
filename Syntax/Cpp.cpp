@@ -16,6 +16,13 @@
 #define PP_VAR      "pp_test"
 #define PP_VAR_2(x) PP_VAR "_" x
 //--------------------------------------------------------------------------------------------------
+namespace my
+{
+int varNamespace {5};
+}
+
+using namespace my;
+
 bool globalVar {false};
 //--------------------------------------------------------------------------------------------------
 class SyntaxCpp
@@ -30,7 +37,7 @@ public:
     SyntaxCpp() = default;
     ~SyntaxCpp() = default;
 
-    void fooMethod(const bool isDebug) const;
+    bool fooMethod(const bool isDebug) const;
 
     static int fooMethodStatic(bool &isDebug);
 
@@ -43,16 +50,12 @@ private:
 //--------------------------------------------------------------------------------------------------
 int SyntaxCpp::_memberStatic {-1};
 //--------------------------------------------------------------------------------------------------
-void
+bool
 SyntaxCpp::fooMethod(
     const bool a_isDebug ///< [in]
 ) const
 {
-    if (a_isDebug) {
-        return;
-    }
-
-    /// TODO: impl
+    return a_isDebug ? false : true;
 }
 //--------------------------------------------------------------------------------------------------
 /* static */
@@ -82,6 +85,7 @@ int main(int, char **)
 		std::cout << STD_TRACE_VAR(str) << std::endl;
 	}
 
+    std::cout << STD_TRACE_VAR(my::varNamespace) << std::endl;
 	std::cout << STD_TRACE_VAR(::globalVar) << std::endl;
 
     SyntaxCpp syntax;
