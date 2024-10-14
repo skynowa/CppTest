@@ -32,7 +32,7 @@ public:
 
     void fooMethod(const bool isDebug) const;
 
-    static void fooMethodStatic(bool &isDebug);
+    static int fooMethodStatic(bool &isDebug);
 
 private:
     Type _type   {Type::No};
@@ -56,14 +56,15 @@ SyntaxCpp::fooMethod(
 }
 //--------------------------------------------------------------------------------------------------
 /* static */
-void
+int
 SyntaxCpp::fooMethodStatic(
     bool &out_isDebug   ///< [out]
 )
 {
+    // [out]
     out_isDebug = false;
 
-    /// TODO: impl
+    return out_isDebug ? 0 : _memberStatic;
 }
 //--------------------------------------------------------------------------------------------------
 
