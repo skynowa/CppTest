@@ -72,14 +72,17 @@ SyntaxCpp::fooMethodStatic(
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    STD_TRACE_FUNC;
+	// PP
+	{
+		STD_TRACE_FUNC;
 
-    std::cout << STD_TRACE_VAR(PP_VAR) << std::endl;
+		std::cout << STD_TRACE_VAR(PP_VAR) << std::endl;
 
-    std::string str = PP_VAR_2("2");
-    std::cout << STD_TRACE_VAR(str) << std::endl;
+		std::string str = PP_VAR_2("2");
+		std::cout << STD_TRACE_VAR(str) << std::endl;
+	}
 
-    std::cout << STD_TRACE_VAR(::globalVar) << std::endl;
+	std::cout << STD_TRACE_VAR(::globalVar) << std::endl;
 
     SyntaxCpp syntax;
     syntax.fooMethod(::globalVar);
