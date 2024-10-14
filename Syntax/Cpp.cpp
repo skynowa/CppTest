@@ -14,7 +14,7 @@
 //--------------------------------------------------------------------------------------------------
 // PP
 #define PP_VAR      "pp_test"
-#define PP_VAR_2(x) "pp_test"##x
+#define PP_VAR_2(x) PP_VAR x
 //--------------------------------------------------------------------------------------------------
 bool globalVar {false};
 //--------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ private:
     Type _type   {Type::No};
     int  _member {0};
 
-    static int _memberStatic {};
+    static int _memberStatic;
 };
 //--------------------------------------------------------------------------------------------------
 int SyntaxCpp::_memberStatic {-1};
@@ -75,7 +75,10 @@ int main(int, char **)
     STD_TRACE_FUNC;
 
     std::cout << STD_TRACE_VAR(PP_VAR) << std::endl;
-    std::cout << STD_TRACE_VAR(PP_VAR_2("2")) << std::endl;
+
+    std::string str = PP_VAR_2("2");
+    std::cout << STD_TRACE_VAR(str) << std::endl;
+
     std::cout << STD_TRACE_VAR(::globalVar) << std::endl;
 
     SyntaxCpp syntax;
