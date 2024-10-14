@@ -120,7 +120,7 @@ int main(int, char **)
     syntax.fooMethod(::globalVar);
     syntax.fooMethodStatic(::globalVar);
 
-    std::cout << syntax << std::endl;
+    std::cout << "SyntaxCpp: " << syntax << std::endl;
 
     return EXIT_SUCCESS;
 }
