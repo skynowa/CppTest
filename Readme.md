@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **27-Sep-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **14-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -22,6 +22,7 @@
 - [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (20)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (92)
+- [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
@@ -1361,6 +1362,12 @@
     * <a href="/Stl/Vector/RemoveAllOccurrencesOfAnElement2.cpp" title="">❌ RemoveAllOccurrencesOfAnElement2.cpp</a>
 
     </details>
+
+##  <a title="" id="syntax">Syntax ░░░░░░░░░░ 0% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Syntax/Cpp.cpp" title="Test C++ syntax for IDEs">❌ Cpp.cpp</a>
+
+</details>
 
 ##  <a title="[ ] Template metaprogramming" id="templates">Templates ██████░░░░ 🔥57% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
