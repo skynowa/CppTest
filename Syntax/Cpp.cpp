@@ -28,7 +28,9 @@ using namespace std::literals::string_view_literals; // Enables the sv suffix
 
 namespace my
 {
+
 int varNamespace {5};
+
 }
 
 using namespace my;
