@@ -23,6 +23,8 @@
 
 #define PP_VAR      "pp_test"
 #define PP_VAR_2(x) PP_VAR "_" x
+
+#define PP_OPERATOR_SS(x) 0;
 //--------------------------------------------------------------------------------------------------
 using namespace std::literals::string_view_literals; // Enables the sv suffix
 
@@ -45,6 +47,8 @@ public:
         No  = 0,
         Yes = 1
     };
+
+    PP_OPERATOR_SS(Type);
 
     SyntaxCpp() = default;
     ~SyntaxCpp() = default;
