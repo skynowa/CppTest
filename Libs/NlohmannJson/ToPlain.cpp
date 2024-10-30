@@ -68,7 +68,14 @@ int main(int, char **)
                 "<ul> <li>Fee for buffet breakfast: approximately EUR 23 for adults and EUR 11.5 for children<\/li><li>Self parking fee: EUR 22 per day<\/li><li>Nearby parking fee: EUR 13 per day (328 ft away)<\/li><li>Pet fee: EUR 20 per pet, per stay<\/li><li>Service animals are exempt from fees<\/li><\/ul>",
                 "<p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. <\/p>"
             ]
-        }
+        },
+        "formsOfPayment": [
+            "American Express",
+            "Diners Club",
+            "JCB International",
+            "Mastercard",
+            "Visa"
+        ]
     })";
 
     std::cout << jsonString << "\n" << std::endl;
