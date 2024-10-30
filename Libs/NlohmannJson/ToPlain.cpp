@@ -22,23 +22,23 @@ jsonToPlainText(
     const std::string nl = "\n";
 
     // If the current element is an object, iterate over its key-value pairs
-    if      (a_json.is_object()) {
-        for (auto it = a_json.begin(); it != a_json.end(); ++ it) {
-            result += a_indent + it.key() + ":" + nl;
-            result += jsonToPlainText(it.value(), a_indent + "  ");
+    if      ( a_json.is_object() ) {
+        for (auto it_node = a_json.begin(); it_node != a_json.end(); ++ it_node) {
+            result += a_indent + it_node.key() + ":" + nl;
+            result += jsonToPlainText(it_node.value(), a_indent + "  ");
         }
     }
     // If the current element is an array, iterate over its elements
-    else if (a_json.is_array()) {
-        for (const auto &item : a_json) {
-            if (item.is_object() || item.is_array()) {
-                result += jsonToPlainText(item, a_indent + "  ");
+    else if ( a_json.is_array() ) {
+        for (const auto &it_node : a_json) {
+            if (it_node.is_object() || it_node.is_array()) {
+                result += jsonToPlainText(it_node, a_indent + "  ");
             }
-            else if ( item.is_string() ) {
-                result += a_indent + "  - " + item.get<std::string>() + nl;
+            else if ( it_node.is_string() ) {
+                result += a_indent + "  - " + it_node.get<std::string>() + nl;
             }
             else {
-                result += a_indent + "  - " + item.dump() + nl;
+                result += a_indent + "  - " + it_node.dump() + nl;
             }
         }
     }
@@ -56,7 +56,8 @@ jsonToPlainText(
 int main(int, char **)
 {
     // JSON data as a string
-    const std::string jsonString = R"({
+    const std::string jsonString = R"(
+    {
         "paymentPolicy": {
             "localCurrency": "EUR",
             "propertyFees": [
@@ -78,12 +79,10 @@ int main(int, char **)
         ]
     })";
 
-    std::cout << jsonString << "\n" << std::endl;
+    std::cout << jsonString << "\n----------" << std::endl;
 
-    // Parse JSON data
     nlohmann::json jsonData = nlohmann::json::parse(jsonString);
 
-    // Convert JSON to plain text and print the result
     std::string plainText = jsonToPlainText(jsonData);
     std::cout << plainText << std::endl;
 
