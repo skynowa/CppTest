@@ -19,33 +19,35 @@ jsonToPlainText(
 {
     std::string result;
 
+    const std::string nl = "\n";
+
     // If the current element is an object, iterate over its key-value pairs
     if      (a_json.is_object()) {
         for (auto it = a_json.begin(); it != a_json.end(); ++ it) {
-            result += a_indent + it.key() + ":\n";
+            result += a_indent + it.key() + ":" + nl;
             result += jsonToPlainText(it.value(), a_indent + "  ");
         }
     }
     // If the current element is an array, iterate over its elements
     else if (a_json.is_array()) {
-        for (const auto& item : a_json) {
+        for (const auto &item : a_json) {
             if (item.is_object() || item.is_array()) {
                 result += jsonToPlainText(item, a_indent + "  ");
             }
             else if ( item.is_string() ) {
-                result += a_indent + "  - " + item.get<std::string>() + "\n";
+                result += a_indent + "  - " + item.get<std::string>() + nl;
             }
             else {
-                result += a_indent + "  - " + item.dump() + "\n";
+                result += a_indent + "  - " + item.dump() + nl;
             }
         }
     }
     // If the current element is a string, number, or boolean, print it directly
     else if (a_json.is_string()) {
-        result += a_indent + a_json.get<std::string>() + "\n";
+        result += a_indent + a_json.get<std::string>() + nl;
     }
     else {
-        result += a_indent + a_json.dump() + "\n";  // For numbers and booleans
+        result += a_indent + a_json.dump() + nl;  // For numbers and booleans
     }
 
     return result;
