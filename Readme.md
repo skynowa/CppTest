@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **28-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **30-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
@@ -11,7 +11,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ██████████ 🚩95% (21)
+- [Libs](#libs "") ██████████ 🚩96% (23)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -805,7 +805,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩96% (23)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -851,6 +851,14 @@
     <summary>📁 ✅ Libev 100% (1)</summary>
 
     * <a href="/Libs/Libev/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ NlohmannJson 100% (2)</summary>
+
+    * <a href="/Libs/NlohmannJson/RecursiveIterate.cpp" title="nlohmann::json">✅ `RecursiveIterate.cpp`</a>
+    * <a href="/Libs/NlohmannJson/ToPlain.cpp" title="nlohmann::json">✅ `ToPlain.cpp`</a>
 
     </details>
 
