@@ -1,5 +1,6 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **14-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **30-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
+- [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
@@ -10,7 +11,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ██████████ 🚩95% (21)
+- [Libs](#libs "") ██████████ 🚩96% (23)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -19,11 +20,16 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (20)
+- [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (92)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
+
+##  <a title="" id=".vscode">.vscode ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+
+</details>
 
 ##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -799,7 +805,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩96% (23)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -845,6 +851,14 @@
     <summary>📁 ✅ Libev 100% (1)</summary>
 
     * <a href="/Libs/Libev/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ NlohmannJson 100% (2)</summary>
+
+    * <a href="/Libs/NlohmannJson/RecursiveIterate.cpp" title="nlohmann::json">✅ `RecursiveIterate.cpp`</a>
+    * <a href="/Libs/NlohmannJson/ToPlain.cpp" title="nlohmann::json">✅ `ToPlain.cpp`</a>
 
     </details>
 
@@ -916,8 +930,8 @@
     <summary>📁 ⌛ Unix 50% (6)</summary>
 
     * <a href="/OS/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
+    * <a href="/OS/Unix/Backtrace_addr2line.cpp" title="Bactrace by addr2line">❌ Backtrace_addr2line.cpp</a>
     * <a href="/OS/Unix/Backtrace.cpp" title="Bactrace">✅ `Backtrace.cpp`</a>
-    * <a href="/OS/Unix/Backtrace_2.cpp" title="Bactrace">❌ Backtrace_2.cpp</a>
     * <a href="/OS/Unix/Backtrace_libunwind.cpp" title="Bactrace with libunwind">❌ Backtrace_libunwind.cpp</a>
     * <a href="/OS/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/OS/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
@@ -1091,7 +1105,7 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🚩90% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🚩90% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
@@ -1103,6 +1117,7 @@
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/GroupByHours.sql" title="">✅ `GroupByHours.sql`</a>
+* <a href="/SQL/DbInfo.sql" title="DB Information">✅ `DbInfo.sql`</a>
 * <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
