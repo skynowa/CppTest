@@ -18,8 +18,7 @@ int main(int, char **)
         sFileName.push_back('y');
 
         std::string sExceptedChars = "/\0";
-
-        // STD_TEST_PTR(sExceptedChars.size() == 2); - raise!!!
+        STD_TEST(sExceptedChars.size() == 1);
 
         size_t uiPos = sFileName.find_first_of(sExceptedChars);
         if (std::string::npos == uiPos) {
@@ -27,6 +26,8 @@ int main(int, char **)
         } else {
             std::cout << "Found" << std::endl;
         }
+
+        STD_TEST(std::string::npos == uiPos);
 
         #if OUTPUT
             Not found
@@ -44,7 +45,7 @@ int main(int, char **)
         sExceptedChars.push_back('/');
         sExceptedChars.push_back('\0');
 
-        STD_TEST_PTR(sExceptedChars.size() == 2);
+        STD_TEST(sExceptedChars.size() == 2);
 
         size_t uiPos = sFileName.find_first_of(sExceptedChars);
         if (std::string::npos == uiPos) {
@@ -52,6 +53,8 @@ int main(int, char **)
         } else {
             std::cout << "Found" << std::endl;
         }
+
+        STD_TEST(std::string::npos != uiPos)
 
         #if OUTPUT
             Found
@@ -74,6 +77,8 @@ int main(int, char **)
             std::cout << "Found" << std::endl;
         }
 
+        STD_TEST(std::string::npos == uiPos);
+
         #if OUTPUT
             Not found
         #endif
@@ -94,6 +99,8 @@ int main(int, char **)
         } else {
             std::cout << "Found" << std::endl;
         }
+
+        STD_TEST(std::string::npos != uiPos);
 
         #if OUTPUT
             Found

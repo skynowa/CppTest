@@ -16,13 +16,13 @@ int main(int, char **)
     STD_TEST(ptr == nullptr);
 
     ptr = str.c_str();
-    STD_TEST_PTR(ptr != nullptr);
+    STD_TEST_PTR(ptr);
 
     ptr = str.data();
-    STD_TEST_PTR(ptr != nullptr);
+    STD_TEST_PTR(ptr);
 
     ptr = &str[0];
-    STD_TEST_PTR(ptr != nullptr);
+    STD_TEST_PTR(ptr);
 
     STD_UNUSED(ptr);
 
