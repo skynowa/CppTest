@@ -29,7 +29,9 @@ int main(int, char **)
 	// mov dword ptr [rbp - 8], eax
 	// .L_ZZ4mainE2x2: .long 123
 	S s2 = S{123};
-    std::cout << STD_TRACE_VAR(s2.x) << std::endl;
+    std::cout
+        << STD_TRACE_VAR(s2.x)
+        << std::endl;
 
     return EXIT_SUCCESS;
 }
