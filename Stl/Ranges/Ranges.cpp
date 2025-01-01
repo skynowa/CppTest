@@ -1,3 +1,12 @@
+/**
+ * \file  Ranges.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <iostream>
 #include <chrono>
 
@@ -11,20 +20,24 @@
 #include <range/v3/view/sliding.hpp>
 
 #include <boost/range/irange.hpp>
-
+//--------------------------------------------------------------------------------------------------
 static inline double wtime(void)
 {
     using t = std::chrono::high_resolution_clock;
+
     auto c = t::now().time_since_epoch().count();
     auto n = t::period::num;
     auto d = t::period::den;
-    double r = static_cast<double>(c)/static_cast<double>(d)*static_cast<double>(n);
+
+    const auto r = static_cast<double>(c) / static_cast<double>(d) * static_cast<double>(n);
+
     return r;
 }
-
+//--------------------------------------------------------------------------------------------------
 int main(int argc, char* argv[])
 {
-    int n = (argc>1) ? std::atoi(argv[1]) : 10;
+    const int n = (argc>1) ? std::atoi(argv[1]) : 10;
+
     {
         std::cout << "standard\n";
         double k(0);
@@ -34,6 +47,7 @@ int main(int argc, char* argv[])
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
     }
+
     {
         auto rvi = boost::irange(0,n);
 
@@ -49,6 +63,7 @@ int main(int argc, char* argv[])
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
     }
+
     {
         auto rvi = ranges::view::iota(0,n);
 
@@ -64,6 +79,7 @@ int main(int argc, char* argv[])
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
     }
+
     {
         auto rvi = ranges::view::iota(0) | ranges::view::slice(0,n);
 
@@ -82,3 +98,4 @@ int main(int argc, char* argv[])
 
     return 0;
 }
+//--------------------------------------------------------------------------------------------------
