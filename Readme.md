@@ -4,7 +4,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🔥86% (227)
+- [Core](#core "") █████████░ 🚩92% (213)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -80,7 +80,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🔥86% (227)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩92% (213)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -126,7 +126,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ C 43% (30)</summary>
+    <summary>📁 ⌛ C 81% (16)</summary>
 
     * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
     * <a href="/Core/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
@@ -138,7 +138,6 @@
     * <a href="/Core/C/register.c" title="">❌ register.c</a>
     * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
     * <a href="/Core/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
-    * <a href="/Core/C/warn-stack.c" title="">❌ warn-stack.c</a>
     * <a href="/Core/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
     * <a href="/Core/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
     * <a href="/Core/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
@@ -151,37 +150,6 @@
 
         * <a href="/Core/C/Process/ExitFunctions.cpp" title="">✅ `ExitFunctions.cpp`</a>
         * <a href="/Core/C/Process/Exit.cpp" title="">✅ `Exit.cpp`</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ❌ arrays 0% (6)</summary>
-
-        * <a href="/Core/C/arrays/array2d.c" title="">❌ array2d.c</a>
-        * <a href="/Core/C/arrays/alias2d.c" title="">❌ alias2d.c</a>
-        * <a href="/Core/C/arrays/array-restrict.c" title="">❌ array-restrict.c</a>
-        * <a href="/Core/C/arrays/sizeof.c" title="">❌ sizeof.c</a>
-        * <a href="/Core/C/arrays/array3d.c" title="">❌ array3d.c</a>
-        * <a href="/Core/C/arrays/loop2d.c" title="">❌ loop2d.c</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ❌ c11 0% (6)</summary>
-
-        * <a href="/Core/C/c11/tls.c" title="">❌ tls.c</a>
-        * <a href="/Core/C/c11/atomics.c" title="">❌ atomics.c</a>
-        * <a href="/Core/C/c11/alloc.c" title="">❌ alloc.c</a>
-        * <a href="/Core/C/c11/ieee.c" title="">❌ ieee.c</a>
-        * <a href="/Core/C/c11/threads.c" title="">❌ threads.c</a>
-        * <a href="/Core/C/c11/moreatomics.c" title="">❌ moreatomics.c</a>
-
-      </details>
-
-    * <details close>
-      <summary>📁 ❌ stack 0% (1)</summary>
-
-        * <a href="/Core/C/stack/frame.c" title="">❌ frame.c</a>
 
       </details>
 
