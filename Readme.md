@@ -739,7 +739,7 @@
   * <details close>
     <summary>📁 ✅ Future 100% (1)</summary>
 
-    * <a href="/IpcMt/Future/Future.cpp" title="">✅ `Future.cpp`</a>
+    * <a href="/IpcMt/Future/Future.cpp" title="">🖊 `Future.cpp`</a>
 
     </details>
 
