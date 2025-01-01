@@ -4,9 +4,9 @@
  */
 
 
-#include <iostream>
-#include <vector>
-#include <thread>
+ #include <StdStream/StdStream.h>
+ #include <StdTest/StdTest.h>
+ #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
 void fnoarg(int t)
 {
