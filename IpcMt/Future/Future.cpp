@@ -1,18 +1,16 @@
 /**
- * \file  main.cpp
+ * \file  Future.cpp
  * \brief
  *
- * \see
- * \todo
+ * \see   http://en.cppreference.com/w/cpp/thread/future
  */
 
 
-/* The code below was derived from http://en.cppreference.com/w/cpp/thread/future */
-
-#include <iostream>
-#include <future>
-#include <thread>
-
+//--------------------------------------------------------------------------------------------------
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+//--------------------------------------------------------------------------------------------------
 int main(int argc, char * argv[])
 {
     // future from a packaged_task
@@ -37,3 +35,4 @@ int main(int argc, char * argv[])
 
     return 0;
 }
+//--------------------------------------------------------------------------------------------------
