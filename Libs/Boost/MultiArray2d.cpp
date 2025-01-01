@@ -1,5 +1,5 @@
 /**
- * \file  Array2d.cxx
+ * \file  MultiArray2d.cpp
  * \brief
  */
 

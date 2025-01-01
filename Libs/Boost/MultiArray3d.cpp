@@ -1,5 +1,5 @@
 /**
- * \file  Array3d.cxx
+ * \file  MultiArray3d.cpp
  * \brief
  */
 
