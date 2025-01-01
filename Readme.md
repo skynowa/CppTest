@@ -4,14 +4,14 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🔥86% (229)
+- [Core](#core "") █████████░ 🔥86% (227)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ██░░░░░░░░ 23% (39)
-- [Libs](#libs "") ██████████ 🚩96% (23)
+- [Libs](#libs "") ██████████ 🚩96% (25)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -80,7 +80,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🔥86% (229)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🔥86% (227)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -90,10 +90,8 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Array 100% (6)</summary>
+    <summary>📁 ✅ Array 100% (4)</summary>
 
-    * <a href="/Core/Array/Array3d.cxx" title="">✅ `Array3d.cxx`</a>
-    * <a href="/Core/Array/Array2d.cxx" title="">✅ `Array2d.cxx`</a>
     * <a href="/Core/Array/Size.cpp" title="Size of array">✅ `Size.cpp`</a>
 
     </details>
@@ -877,7 +875,7 @@
 
       </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩96% (23)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩96% (25)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -885,11 +883,13 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Boost 100% (4)</summary>
+    <summary>📁 ✅ Boost 100% (6)</summary>
 
     * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">✅ `ScopeArray.cpp`</a>
     * <a href="/Libs/Boost/Stacktrace.cpp" title="boost::stacktrace">✅ `Stacktrace.cpp`</a>
+    * <a href="/Libs/Boost/MultiArray3d.cpp" title="">✅ `MultiArray3d.cpp`</a>
     * <a href="/Libs/Boost/Bind.cpp" title="boost::bind">✅ `Bind.cpp`</a>
+    * <a href="/Libs/Boost/MultiArray2d.cpp" title="">✅ `MultiArray2d.cpp`</a>
     * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">✅ `ProgramOptions.cpp`</a>
 
     </details>
