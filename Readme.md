@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 12% (16)
@@ -22,7 +22,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") ██████████ 🚩95% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 31% (101)
+- [Stl](#stl "") ███░░░░░░░ 31% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
@@ -1229,17 +1229,10 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 31% (101)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 31% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Stl/ranges.h" title="">❌ ranges.h</a>
-* <a href="/Stl/sycl_for.cc" title="">❌ sycl_for.cc</a>
-* <a href="/Stl/usm_sycl_for.cc" title="">❌ usm_sycl_for.cc</a>
-* <a href="/Stl/stl_for.cc" title="">❌ stl_for.cc</a>
-* <a href="/Stl/stl_for_each.cc" title="">❌ stl_for_each.cc</a>
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
-* <a href="/Stl/stl_for_each_pstl.cc" title="">❌ stl_for_each_pstl.cc</a>
-* <a href="/Stl/stl_for_each_tbb.cc" title="">❌ stl_for_each_tbb.cc</a>
 
 </details>
 
@@ -1394,6 +1387,13 @@
     </details>
 
   * <details close>
+    <summary>📁 ❌ Ranges 0% (1)</summary>
+
+    * <a href="/Stl/Ranges/Ranges.cpp" title="">❌ Ranges.cpp</a>
+
+    </details>
+
+  * <details close>
     <summary>📁 ❌ Set 0% (8)</summary>
 
     * <a href="/Stl/Set/Find.cpp" title="">❌ Find.cpp</a>
@@ -1456,14 +1456,6 @@
     * <a href="/Stl/Vector/Operations2.cpp" title="">❌ Operations2.cpp</a>
     * <a href="/Stl/Vector/Initialization.cpp" title="">❌ Initialization.cpp</a>
     * <a href="/Stl/Vector/RemoveAllOccurrencesOfAnElement2.cpp" title="">❌ RemoveAllOccurrencesOfAnElement2.cpp</a>
-
-    </details>
-
-  * <details close>
-    <summary>📁 ✅ ranges 100% (2)</summary>
-
-    * <a href="/Stl/ranges/ranges.cc" title="">✅ `ranges.cc`</a>
-    * <a href="/Stl/ranges/stride.cc" title="">✅ `stride.cc`</a>
 
     </details>
 
