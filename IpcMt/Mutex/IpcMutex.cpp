@@ -11,8 +11,8 @@
 int main(int, char **)
 {
     int err {};
-    pthread_mutexattr_t attr {};
 
+    pthread_mutexattr_t attr {};
     err = pthread_mutexattr_init(&attr); if (err) return err;
     err = pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_SHARED); if (err) return err;
 
