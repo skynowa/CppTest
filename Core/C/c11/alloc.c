@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,5 +27,3 @@ int main(void)
 #else
 #error You need C11 compiler.
 #endif
-
-

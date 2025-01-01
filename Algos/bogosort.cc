@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <iostream>
 #include <chrono>
 #include <random>
@@ -5,7 +14,7 @@
 #include <iterator>
 #include <vector>
 #include <cmath>
- 
+
 template <typename T>
 void print(std::vector<T> v)
 {

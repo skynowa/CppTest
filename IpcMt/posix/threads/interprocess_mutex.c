@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <pthread.h>
 
 pthread_mutex_t shm_mutex;

@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 // this has to be above stdio.h for sched_getaffinity to be declared
 #define _GNU_SOURCE
 

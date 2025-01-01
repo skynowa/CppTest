@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 /* The code below was derived from http://en.cppreference.com/w/cpp/thread/future */
 
 #include <iostream>

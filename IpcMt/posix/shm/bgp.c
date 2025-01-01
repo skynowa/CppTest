@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -35,7 +44,7 @@ int main(int argc, char* argv[])
     int ranks_per_node = -1;
     MPI_Comm IntraNodeComm;
 
-    int node_shmem_bytes; 
+    int node_shmem_bytes;
 
     MPI_Init(&argc,&argv);
     mpi_result = MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
@@ -145,7 +154,7 @@ int main(int argc, char* argv[])
     {
         if (node_shmem_bytes>pers.Kernel_Config.SharedMemMB)
         {
-            printf("node_shmem_bytes (%d) greater than pers.Kernel_Config.SharedMemMB (%d) - allocating the latter \n", 
+            printf("node_shmem_bytes (%d) greater than pers.Kernel_Config.SharedMemMB (%d) - allocating the latter \n",
                    node_shmem_bytes, pers.Kernel_Config.SharedMemMB );
             node_shmem_bytes = pers.Kernel_Config.SharedMemMB;
         }

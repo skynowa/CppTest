@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <math.h>
 
 #ifdef __STDC_IEC_559__
@@ -7,4 +16,3 @@
 #endif
 
 int main(void) { return 0; }
-

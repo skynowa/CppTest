@@ -1,16 +1,17 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **14-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **01-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
-- [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
+- [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
+- [Algos](#algos "Algorithms") ██░░░░░░░░ 25% (16)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (208)
+- [Core](#core "") █████████░ 🚩94% (236)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ██████████ 🚩95% (21)
+- [IpcMt](#ipcmt "") █████░░░░░ 48% (40)
+- [Libs](#libs "") ██████████ 🚩96% (23)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -19,14 +20,21 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (20)
+- [SQL](#sql "[ ] SQL language skills") ██████████ 🚩95% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 32% (92)
+- [Stl](#stl "") ████░░░░░░ 38% (101)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
-##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id=".vscode">.vscode ░░░░░░░░░░ 0.0% (0)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+
+</details>
+
+##  <a title="Algorithms" id="algos">Algos ██░░░░░░░░ 25% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+* <a href="/Algos/bogosort.cc" title="">✅ `bogosort.cc`</a>
+* <a href="/Algos/stl.cxx" title="">✅ `stl.cxx`</a>
 * <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
 * <a href="/Algos/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -74,8 +82,9 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (208)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩94% (236)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Core/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="Retun NO-value (as bool)">✅ `ReturnBool.cpp`</a>
@@ -83,29 +92,35 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Array 100% (4)</summary>
+    <summary>📁 ✅ Array 100% (8)</summary>
 
+    * <a href="/Core/Array/array2d.cxx" title="">✅ `array2d.cxx`</a>
+    * <a href="/Core/Array/array3d.cxx" title="">✅ `array3d.cxx`</a>
     * <a href="/Core/Array/Size.cpp" title="Size of array">✅ `Size.cpp`</a>
 
     </details>
 
     * <details close>
-      <summary>📁 ✅ ToFunction 100% (3)</summary>
+      <summary>📁 ✅ ToFunction 100% (5)</summary>
 
+        * <a href="/Core/Array/ToFunction/array2d.cxx" title="">✅ `array2d.cxx`</a>
         * <a href="/Core/Array/ToFunction/ToFunction2.cpp" title="">✅ `ToFunction2.cpp`</a>
+        * <a href="/Core/Array/ToFunction/array3d.cxx" title="">✅ `array3d.cxx`</a>
         * <a href="/Core/Array/ToFunction/ToFunction3.cpp" title="">✅ `ToFunction3.cpp`</a>
         * <a href="/Core/Array/ToFunction/ToFunction1.cpp" title="">✅ `ToFunction1.cpp`</a>
 
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 83% (6)</summary>
+    <summary>📁 ⌛ Bits 88% (8)</summary>
 
     * <a href="/Core/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
     * <a href="/Core/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
+    * <a href="/Core/Bits/ActiveGdss.cpp" title="Active bits">✅ `ActiveGdss.cpp`</a>
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
+    * <a href="/Core/Bits/PackInt.cpp" title="">🖊 `PackInt.cpp`</a>
 
     </details>
 
@@ -117,19 +132,27 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ C 93% (14)</summary>
+    <summary>📁 ⌛ C 97% (35)</summary>
 
     * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
     * <a href="/Core/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
+    * <a href="/Core/C/joseph.c" title="">✅ `joseph.c`</a>
     * <a href="/Core/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
+    * <a href="/Core/C/overflow.c" title="">✅ `overflow.c`</a>
+    * <a href="/Core/C/star26b.c" title="">✅ `star26b.c`</a>
     * <a href="/Core/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
     * <a href="/Core/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
     * <a href="/Core/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
+    * <a href="/Core/C/star26.c" title="">✅ `star26.c`</a>
+    * <a href="/Core/C/enum.c" title="">✅ `enum.c`</a>
+    * <a href="/Core/C/register.c" title="">✅ `register.c`</a>
     * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
     * <a href="/Core/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
+    * <a href="/Core/C/warn-stack.c" title="">✅ `warn-stack.c`</a>
     * <a href="/Core/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
     * <a href="/Core/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
     * <a href="/Core/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
+    * <a href="/Core/C/joseph2.c" title="">✅ `joseph2.c`</a>
     * <a href="/Core/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
@@ -139,6 +162,37 @@
 
         * <a href="/Core/C/Process/ExitFunctions.cpp" title="">✅ `ExitFunctions.cpp`</a>
         * <a href="/Core/C/Process/Exit.cpp" title="">✅ `Exit.cpp`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ arrays 100% (6)</summary>
+
+        * <a href="/Core/C/arrays/array2d.c" title="">✅ `array2d.c`</a>
+        * <a href="/Core/C/arrays/alias2d.c" title="">✅ `alias2d.c`</a>
+        * <a href="/Core/C/arrays/array-restrict.c" title="">✅ `array-restrict.c`</a>
+        * <a href="/Core/C/arrays/sizeof.c" title="">✅ `sizeof.c`</a>
+        * <a href="/Core/C/arrays/array3d.c" title="">✅ `array3d.c`</a>
+        * <a href="/Core/C/arrays/loop2d.c" title="">✅ `loop2d.c`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ c11 100% (6)</summary>
+
+        * <a href="/Core/C/c11/tls.c" title="">✅ `tls.c`</a>
+        * <a href="/Core/C/c11/atomics.c" title="">✅ `atomics.c`</a>
+        * <a href="/Core/C/c11/alloc.c" title="">✅ `alloc.c`</a>
+        * <a href="/Core/C/c11/ieee.c" title="">✅ `ieee.c`</a>
+        * <a href="/Core/C/c11/threads.c" title="">✅ `threads.c`</a>
+        * <a href="/Core/C/c11/moreatomics.c" title="">✅ `moreatomics.c`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ stack 100% (1)</summary>
+
+        * <a href="/Core/C/stack/frame.c" title="">✅ `frame.c`</a>
 
       </details>
 
@@ -698,9 +752,13 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt █████░░░░░ 48% (40)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/IpcMt/future.cxx" title="">✅ `future.cxx`</a>
+* <a href="/IpcMt/lambda.cxx" title="">✅ `lambda.cxx`</a>
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
+* <a href="/IpcMt/packaged_task.cxx" title="">✅ `packaged_task.cxx`</a>
+* <a href="/IpcMt/threads.cxx" title="">✅ `threads.cxx`</a>
 
 </details>
 
@@ -799,7 +857,37 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+  * <details close>
+    <summary>📁 ✅ posix 100% (6)</summary>
+
+
+    </details>
+
+    * <details close>
+      <summary>📁 ✅ affinity 100% (1)</summary>
+
+        * <a href="/IpcMt/posix/affinity/mask.c" title="">✅ `mask.c`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ shm 100% (2)</summary>
+
+        * <a href="/IpcMt/posix/shm/bgp.c" title="">✅ `bgp.c`</a>
+        * <a href="/IpcMt/posix/shm/shm.c" title="">✅ `shm.c`</a>
+
+      </details>
+
+    * <details close>
+      <summary>📁 ✅ threads 100% (3)</summary>
+
+        * <a href="/IpcMt/posix/threads/interprocess_mutex_mpi.c" title="">✅ `interprocess_mutex_mpi.c`</a>
+        * <a href="/IpcMt/posix/threads/interprocess_mutex.c" title="">✅ `interprocess_mutex.c`</a>
+        * <a href="/IpcMt/posix/threads/README.md" title="">✅ `📝 README.md`</a>
+
+      </details>
+
+##  <a title="" id="libs">Libs ██████████ 🚩96% (23)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -845,6 +933,14 @@
     <summary>📁 ✅ Libev 100% (1)</summary>
 
     * <a href="/Libs/Libev/FAQ.md" title="">✅ `📝 FAQ.md`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ NlohmannJson 100% (2)</summary>
+
+    * <a href="/Libs/NlohmannJson/RecursiveIterate.cpp" title="nlohmann::json">✅ `RecursiveIterate.cpp`</a>
+    * <a href="/Libs/NlohmannJson/ToPlain.cpp" title="nlohmann::json">✅ `ToPlain.cpp`</a>
 
     </details>
 
@@ -1091,9 +1187,9 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🚩90% (20)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
+* <a href="/SQL/MysqlCheatSheet.md" title="">✅ `📝 MysqlCheatSheet.md`</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 * <a href="/SQL/Count.sql" title="COUNT - returns the number of records returned by a select query">✅ `Count.sql`</a>
@@ -1103,6 +1199,7 @@
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/GroupByHours.sql" title="">✅ `GroupByHours.sql`</a>
+* <a href="/SQL/DbInfo.sql" title="DB Information">✅ `DbInfo.sql`</a>
 * <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
@@ -1140,10 +1237,17 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 32% (92)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ████░░░░░░ 38% (101)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Stl/ranges.h" title="">✅ `ranges.h`</a>
+* <a href="/Stl/sycl_for.cc" title="">✅ `sycl_for.cc`</a>
+* <a href="/Stl/usm_sycl_for.cc" title="">✅ `usm_sycl_for.cc`</a>
+* <a href="/Stl/stl_for.cc" title="">✅ `stl_for.cc`</a>
+* <a href="/Stl/stl_for_each.cc" title="">✅ `stl_for_each.cc`</a>
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
+* <a href="/Stl/stl_for_each_pstl.cc" title="">✅ `stl_for_each_pstl.cc`</a>
+* <a href="/Stl/stl_for_each_tbb.cc" title="">✅ `stl_for_each_tbb.cc`</a>
 
 </details>
 
@@ -1360,6 +1464,14 @@
     * <a href="/Stl/Vector/Operations2.cpp" title="">❌ Operations2.cpp</a>
     * <a href="/Stl/Vector/Initialization.cpp" title="">❌ Initialization.cpp</a>
     * <a href="/Stl/Vector/RemoveAllOccurrencesOfAnElement2.cpp" title="">❌ RemoveAllOccurrencesOfAnElement2.cpp</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ ranges 100% (2)</summary>
+
+    * <a href="/Stl/ranges/ranges.cc" title="">✅ `ranges.cc`</a>
+    * <a href="/Stl/ranges/stride.cc" title="">✅ `stride.cc`</a>
 
     </details>
 

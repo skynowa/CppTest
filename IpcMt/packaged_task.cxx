@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 /* The code below was derived from http://en.cppreference.com/w/cpp/thread/packaged_task */
 
 #include <iostream>
@@ -33,7 +42,7 @@ void task_thread()
 {
     /* the following does not work */
     //std::packaged_task<int(int,int)> task(f);
- 
+
     std::packaged_task<int(int,int)> task([](int a, int b) { return f(a,b); });
     std::future<int> result = task.get_future();
 

@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 // https://nullprogram.com/blog/2019/10/27/
 
 #include <stdio.h>
@@ -17,5 +26,5 @@ int main(int argc, char * argv[])
             }
         }
     }
-    return z[argc][argc];    
+    return z[argc][argc];
 }

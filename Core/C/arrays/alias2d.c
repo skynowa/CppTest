@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #define ALIGN_BYTES 32
 #define ASSUME_ALIGNED(x) x = __builtin_assume_aligned(x, ALIGN_BYTES)
 

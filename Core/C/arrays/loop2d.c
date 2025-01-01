@@ -1,3 +1,12 @@
+/**
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -37,7 +46,7 @@ int main(int argc, char * argv[])
             }
         }
     }
-    t1 = omp_get_wtime(); 
+    t1 = omp_get_wtime();
     printf("2D dt=%lf\n",t1-t0);
 
     const int nn = n*n;
@@ -54,7 +63,7 @@ int main(int argc, char * argv[])
             z += i/exp(j);
         }
     }
-    t1 = omp_get_wtime(); 
+    t1 = omp_get_wtime();
     printf("1D dt=%lf\n",t1-t0);
 
     return 0;
