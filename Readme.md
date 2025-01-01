@@ -1,17 +1,17 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **30-Oct-2024** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩93% (208)
+- [Core](#core "") █████████░ 🚩93% (211)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ███░░░░░░░ 30% (30)
-- [Libs](#libs "") ██████████ 🚩96% (23)
+- [IpcMt](#ipcmt "") ████░░░░░░ 38% (34)
+- [Libs](#libs "") ██████████ 🚩96% (25)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -20,9 +20,9 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") █████████░ 🚩90% (21)
+- [SQL](#sql "[ ] SQL language skills") ██████████ 🚩95% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 32% (92)
+- [Stl](#stl "") ███░░░░░░░ 32% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
@@ -80,8 +80,9 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩93% (208)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩93% (211)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Core/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Core/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
 * <a href="/Core/ReturnBool.cpp" title="Retun NO-value (as bool)">✅ `ReturnBool.cpp`</a>
@@ -105,13 +106,15 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 83% (6)</summary>
+    <summary>📁 ⌛ Bits 88% (8)</summary>
 
     * <a href="/Core/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
     * <a href="/Core/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
+    * <a href="/Core/Bits/ActiveGdss.cpp" title="Active bits">✅ `ActiveGdss.cpp`</a>
     * <a href="/Core/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Core/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
     * <a href="/Core/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
+    * <a href="/Core/Bits/PackInt.cpp" title="">🖊 `PackInt.cpp`</a>
 
     </details>
 
@@ -704,7 +707,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ███░░░░░░░ 30% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ████░░░░░░ 38% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -734,19 +737,33 @@
     </details>
 
   * <details close>
-    <summary>📁  Future 0.0% (0)</summary>
+    <summary>📁 ✅ Future 100% (1)</summary>
 
+    * <a href="/IpcMt/Future/Future.cpp" title="">🖊 `Future.cpp`</a>
 
     </details>
 
   * <details close>
-    <summary>📁 ❌ Mutex 0% (3)</summary>
+    <summary>📁 ⌛ Mutex 25% (4)</summary>
 
     * <a href="/IpcMt/Mutex/LockGuard.cpp" title="">❌ LockGuard.cpp</a>
+    * <a href="/IpcMt/Mutex/IpcMutex.cpp" title="">✅ `IpcMutex.cpp`</a>
     * <a href="/IpcMt/Mutex/LockUnlock_1.cpp" title="">❌ LockUnlock_1.cpp</a>
     * <a href="/IpcMt/Mutex/LockUnlock_2.cpp" title="">❌ LockUnlock_2.cpp</a>
 
     </details>
+
+  * <details close>
+    <summary>📁  Posix 0.0% (0)</summary>
+
+
+    </details>
+
+    * <details close>
+      <summary>📁  threads 0.0% (0)</summary>
+
+
+      </details>
 
   * <details close>
     <summary>📁 ⌛ RaceCondition 50% (2)</summary>
@@ -767,16 +784,18 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Thread 22% (9)</summary>
+    <summary>📁 ⌛ Thread 36% (11)</summary>
 
     * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
     * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
+    * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
     * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
     * <a href="/IpcMt/Thread/CreationByFunctionObjects.cpp" title="">❌ CreationByFunctionObjects.cpp</a>
     * <a href="/IpcMt/Thread/CreationByFunctionPointer.cpp" title="">❌ CreationByFunctionPointer.cpp</a>
     * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
     * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
+    * <a href="/IpcMt/Thread/Threads.cpp" title="">✅ `Threads.cpp`</a>
     * <a href="/IpcMt/Thread/CreationByLambdaFunction.cpp" title="">❌ CreationByLambdaFunction.cpp</a>
 
     </details>
@@ -805,7 +824,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩96% (23)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩96% (25)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -813,11 +832,13 @@
 </details>
 
   * <details close>
-    <summary>📁 ✅ Boost 100% (4)</summary>
+    <summary>📁 ✅ Boost 100% (6)</summary>
 
     * <a href="/Libs/Boost/ScopeArray.cpp" title="boost::scoped_array">✅ `ScopeArray.cpp`</a>
     * <a href="/Libs/Boost/Stacktrace.cpp" title="boost::stacktrace">✅ `Stacktrace.cpp`</a>
+    * <a href="/Libs/Boost/MultiArray3d.cpp" title="">✅ `MultiArray3d.cpp`</a>
     * <a href="/Libs/Boost/Bind.cpp" title="boost::bind">✅ `Bind.cpp`</a>
+    * <a href="/Libs/Boost/MultiArray2d.cpp" title="">✅ `MultiArray2d.cpp`</a>
     * <a href="/Libs/Boost/ProgramOptions.cpp" title="boost::program_options">✅ `ProgramOptions.cpp`</a>
 
     </details>
@@ -930,8 +951,8 @@
     <summary>📁 ⌛ Unix 50% (6)</summary>
 
     * <a href="/OS/Unix/Umask.cpp" title="https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/umask.htm">🖊 `Umask.cpp`</a>
-    * <a href="/OS/Unix/Backtrace_addr2line.cpp" title="Bactrace by addr2line">❌ Backtrace_addr2line.cpp</a>
     * <a href="/OS/Unix/Backtrace.cpp" title="Bactrace">✅ `Backtrace.cpp`</a>
+    * <a href="/OS/Unix/Backtrace_2.cpp" title="Bactrace">❌ Backtrace_2.cpp</a>
     * <a href="/OS/Unix/Backtrace_libunwind.cpp" title="Bactrace with libunwind">❌ Backtrace_libunwind.cpp</a>
     * <a href="/OS/Unix/FAQ.md" title="">❌ 📝 FAQ.md</a>
     * <a href="/OS/Unix/Fork.cpp" title="Fork process">🖊 `Fork.cpp`</a>
@@ -1105,9 +1126,9 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL █████████░ 🚩90% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] SQL language skills" id="sql">SQL ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/SQL/MysqlCheatSheet.md" title="">❌ 📝 MysqlCheatSheet.md</a>
+* <a href="/SQL/MysqlCheatSheet.md" title="">✅ `📝 MysqlCheatSheet.md`</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 * <a href="/SQL/Count.sql" title="COUNT - returns the number of records returned by a select query">✅ `Count.sql`</a>
@@ -1155,7 +1176,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 32% (92)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 32% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1309,6 +1330,13 @@
     * <a href="/Stl/MultiMap/CI.cpp" title="">✅ `CI.cpp`</a>
     * <a href="/Stl/MultiMap/InsertVsEmplace.cpp" title="Inserts element(s) into the container">✅ `InsertVsEmplace.cpp`</a>
     * <a href="/Stl/MultiMap/Operations.cpp" title="">✅ `Operations.cpp`</a>
+
+    </details>
+
+  * <details close>
+    <summary>📁 ✅ Ranges 100% (1)</summary>
+
+    * <a href="/Stl/Ranges/Ranges.cpp" title="">🖊 `Ranges.cpp`</a>
 
     </details>
 
