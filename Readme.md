@@ -22,7 +22,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "[ ] SQL language skills") ██████████ 🚩95% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 31% (93)
+- [Stl](#stl "") ███░░░░░░░ 32% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
@@ -788,7 +788,7 @@
 
     * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
     * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
-    * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">✅ `PackagedTask.cpp`</a>
+    * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
     * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
     * <a href="/IpcMt/Thread/CreationByFunctionObjects.cpp" title="">❌ CreationByFunctionObjects.cpp</a>
@@ -1176,7 +1176,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 31% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 32% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1334,9 +1334,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ❌ Ranges 0% (1)</summary>
+    <summary>📁 ✅ Ranges 100% (1)</summary>
 
-    * <a href="/Stl/Ranges/Ranges.cpp" title="">❌ Ranges.cpp</a>
+    * <a href="/Stl/Ranges/Ranges.cpp" title="">🖊 `Ranges.cpp`</a>
 
     </details>
 

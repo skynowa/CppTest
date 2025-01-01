@@ -10,13 +10,13 @@
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    int err;
-    pthread_mutexattr_t attr;
+    int err {};
+    pthread_mutexattr_t attr {};
 
     err = pthread_mutexattr_init(&attr); if (err) return err;
     err = pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_SHARED); if (err) return err;
 
-    pthread_mutex_t shm_mutex;
+    pthread_mutex_t shm_mutex {};
     err = pthread_mutex_init(&shm_mutex, &attr); if (err) return err;
     err = pthread_mutexattr_destroy(&attr); if (err) return err;
     err = pthread_mutex_lock(&shm_mutex); if (err) return err;
