@@ -90,10 +90,10 @@
 </details>
 
   * <details close>
-    <summary>📁 ⌛ Array 67% (6)</summary>
+    <summary>📁 ✅ Array 100% (6)</summary>
 
-    * <a href="/Core/Array/array2d.cxx" title="">❌ array2d.cxx</a>
-    * <a href="/Core/Array/array3d.cxx" title="">❌ array3d.cxx</a>
+    * <a href="/Core/Array/Array3d.cxx" title="">✅ `Array3d.cxx`</a>
+    * <a href="/Core/Array/Array2d.cxx" title="">✅ `Array2d.cxx`</a>
     * <a href="/Core/Array/Size.cpp" title="Size of array">✅ `Size.cpp`</a>
 
     </details>
