@@ -4,7 +4,7 @@
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
-- [Core](#core "") █████████░ 🚩92% (213)
+- [Core](#core "") █████████░ 🚩93% (211)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -80,7 +80,7 @@
 
 </details>
 
-##  <a title="" id="core">Core █████████░ 🚩92% (213)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="core">Core █████████░ 🚩93% (211)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Core/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Core/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -126,7 +126,7 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ C 81% (16)</summary>
+    <summary>📁 ⌛ C 93% (14)</summary>
 
     * <a href="/Core/C/Strptime.cpp" title="Convert (parse) a string representation of time to a time tm structure">✅ `Strptime.cpp`</a>
     * <a href="/Core/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
@@ -134,8 +134,6 @@
     * <a href="/Core/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
     * <a href="/Core/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
     * <a href="/Core/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
-    * <a href="/Core/C/enum.c" title="">❌ enum.c</a>
-    * <a href="/Core/C/register.c" title="">❌ register.c</a>
     * <a href="/Core/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
     * <a href="/Core/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
     * <a href="/Core/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
