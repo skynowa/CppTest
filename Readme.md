@@ -1,7 +1,7 @@
 # <a id="cpp-roadmap" title="">C++ Roadmap</a> **02-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [.vscode](#.vscode "") ░░░░░░░░░░ 0.0% (0)
-- [Algos](#algos "Algorithms") █░░░░░░░░░ 12% (16)
+- [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [Core](#core "") █████████░ 🔥86% (229)
@@ -31,10 +31,8 @@
 
 </details>
 
-##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 12% (16)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="Algorithms" id="algos">Algos █░░░░░░░░░ 14% (14)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Algos/bogosort.cc" title="">❌ bogosort.cc</a>
-* <a href="/Algos/stl.cxx" title="">❌ stl.cxx</a>
 * <a href="/Algos/BubbleSort.cpp" title="">🖊 `BubbleSort.cpp`</a>
 * <a href="/Algos/ReverseString.cpp" title="">✅ `ReverseString.cpp`</a>
 * <a href="/Algos/FAQ.md" title="">❌ 📝 FAQ.md</a>

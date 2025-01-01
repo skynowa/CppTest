@@ -1,18 +1,19 @@
 /**
- * \file  main.cpp
+ * \file  Array3d.cxx
  * \brief
- *
- * \see
- * \todo
  */
 
 
-#include <boost/multi_array.hpp>
-#include <iostream>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 
+#include <boost/multi_array.hpp>
+//--------------------------------------------------------------------------------------------------
 // safety: array dimensions and data tied into one, can't mix them up!
 // also: type safety.
-void print(const boost::multi_array<double, 3>& array)
+void
+print(const boost::multi_array<double, 3>& array)
 {
     for(int i=0; i<array.shape()[0]; i++) {
         for(int j=0; j<array.shape()[1]; j++) {
@@ -24,8 +25,7 @@ void print(const boost::multi_array<double, 3>& array)
         std::cout << "\n";
     }
 }
-
-
+//--------------------------------------------------------------------------------------------------
 int main(int argc, char **argv)
 {
     int m = (argc>1) ? atoi(argv[1]) : 4;
@@ -53,3 +53,4 @@ int main(int argc, char **argv)
     // RAII: no manual free, no memory leaks
     return 0;
 }
+//--------------------------------------------------------------------------------------------------
