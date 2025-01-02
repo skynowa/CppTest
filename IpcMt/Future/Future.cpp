@@ -12,7 +12,7 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
-int main(int argc, char * argv[])
+int main(int, char **)
 {
     // future from a packaged_task
     std::packaged_task<int()> task([](){ return 7; }); // wrap the function

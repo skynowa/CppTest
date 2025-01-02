@@ -14,7 +14,7 @@ void fnoarg(int t)
     std::cout << "fnoarg running on thread " << std::this_thread::get_id() << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
-int main(int argc, char* argv[])
+int main(int, char **)
 {
     int nthreads = std::thread::hardware_concurrency();
     std::cout << "nthreads = " << nthreads << std::endl;
