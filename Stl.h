@@ -103,11 +103,11 @@
     #include <unordered_set>
 
     // MT / IPC
-    #include <thread>
     #include <atomic>
     #include <condition_variable>
-    #include <mutex>
     #include <future>
+    #include <mutex>
+    #include <thread>
 #endif
 
 #if (__cplusplus >= 201402L) // xLANG_CPP14
@@ -136,4 +136,15 @@
         #include <range/v3/view/reverse.hpp>
         #include <range/v3/view/sliding.hpp>
     #endif
+
+    #include <bit>
+    #include <compare>
+    #include <concepts>
+    #include <coroutine>
+    #include <numbers>
+    #include <ranges>
+    #include <span>
+    #include <stop_token>
+    #include <syncstream>
+    #include <version>
 #endif
