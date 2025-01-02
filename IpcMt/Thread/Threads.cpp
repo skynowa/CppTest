@@ -16,7 +16,7 @@ void fnoarg(int t)
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    int nthreads = std::thread::hardware_concurrency();
+    const int nthreads = std::thread::hardware_concurrency();
     std::cout << "nthreads = " << nthreads << std::endl;
 
     std::vector<std::thread> pool;
@@ -25,7 +25,7 @@ int main(int, char **)
         pool.push_back( std::thread(fnoarg,i) );
     }
 
-    for(auto& t : pool){
+    for (auto& t : pool){
         t.join();
     }
 
