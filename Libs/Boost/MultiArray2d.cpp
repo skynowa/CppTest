@@ -15,8 +15,8 @@
 void
 print(const boost::multi_array<double, 2>& array)
 {
-    for(int i=0; i<array.shape()[0]; i++) {
-        for(int j=0; j<array.shape()[1]; j++) {
+    for (std::size_t i=0; i<array.shape()[0]; i++) {
+        for (std::size_t j=0; j<array.shape()[1]; j++) {
             std::cout << array[i][j] << " ";
         }
         std::cout << "\n";
