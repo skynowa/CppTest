@@ -6,9 +6,9 @@
  */
 
 
- #include <StdStream/StdStream.h>
- #include <StdTest/StdTest.h>
- #include <Stl.h>
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 
 #include <boost/range/irange.hpp>
 //--------------------------------------------------------------------------------------------------
@@ -49,14 +49,18 @@ int main(int argc, char* argv[])
         std::cout << "boost::irange\n";
         double k(0);
         auto t0 = wtime();
-        for (auto const & i : rvi) k+=1.0;
+        for (auto const & i : rvi) {
+            (void)i;
+
+            k+=1.0;
+        }
         auto t1 = wtime();
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
     }
 
     {
-        auto rvi = ranges::view::iota(0,n);
+        auto rvi = std::ranges::view::iota(0,n);
 
         //std::cout << "ranges::view::iota(0,n) = ";
         //for (auto const & i : rvi) std::cout << i << ",";
@@ -65,14 +69,18 @@ int main(int argc, char* argv[])
         std::cout << "ranges::view::iota\n";
         double k(0);
         auto t0 = wtime();
-        for (auto const & i : rvi) k+=1.0;
+        for (auto const & i : rvi) {
+            (void)i;
+
+            k+=1.0;
+        }
         auto t1 = wtime();
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
     }
 
     {
-        auto rvi = ranges::view::iota(0) | ranges::view::slice(0,n);
+        auto rvi = std::ranges::view::iota(0) | std::ranges::view::slice(0,n);
 
         //std::cout << "ranges::view::iota(0) | ranges::view::slice(0,n) = ";
         //for (auto const & i : rvi) std::cout << i << ",";
@@ -81,7 +89,11 @@ int main(int argc, char* argv[])
         std::cout << "ranges::view::iota | ranges::view::slice\n";
         double k(0);
         auto t0 = wtime();
-        for (auto const & i : rvi) k+=1.0;
+        for (auto const & i : rvi) {
+            (void)i;
+
+            k+=1.0;
+        }
         auto t1 = wtime();
         std::cout << "dt = " << t1-t0 << "\n";
         std::cout << "k = " << k << "\n";
