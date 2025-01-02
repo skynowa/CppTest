@@ -33,12 +33,14 @@ int main(int argc, char **argv)
     boost::multi_array<double, 2> A(boost::extents[n][m]);
 
     for (std::size_t i = 0; i < n; i++)
-        for (std::size_t j = 0; j < m; j++) A[i][j] = i * m + j;
+        for (std::size_t j = 0; j < m; j++)
+            A[i][j] = i * m + j;
 
     boost::multi_array<double, 2> B(boost::extents[n][m]);
 
     for (std::size_t i = 0; i < n; i++)
-        for (std::size_t j = 0; j < m; j++) B[i][j] = i * m + j + 0.5;
+        for (std::size_t j = 0; j < m; j++)
+            B[i][j] = i * m + j + 0.5;
 
     print(A);
     print(B);
