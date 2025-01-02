@@ -13,10 +13,10 @@
 // safety: array dimensions and data tied into one, can't mix them up!
 // also: type safety.
 void
-print(const boost::multi_array<double, 2>& array)
+print(const boost::multi_array<double, 2> &array)
 {
-    for(int i=0; i<array.shape()[0]; i++) {
-        for(int j=0; j<array.shape()[1]; j++) {
+    for (std::size_t i = 0; i < array.shape()[0]; i++) {
+        for (std::size_t j = 0; j < array.shape()[1]; j++) {
             std::cout << array[i][j] << " ";
         }
         std::cout << "\n";
@@ -27,18 +27,19 @@ print(const boost::multi_array<double, 2>& array)
 //--------------------------------------------------------------------------------------------------
 int main(int argc, char **argv)
 {
-    int m = (argc>1) ? atoi(argv[1]) : 4;
-    int n = (argc>2) ? atoi(argv[2]) : 5;
+    const std::size_t m = (argc > 1) ? atoi(argv[1]) : 4;
+    const std::size_t n = (argc > 2) ? atoi(argv[2]) : 5;
 
     boost::multi_array<double, 2> A(boost::extents[n][m]);
-    for(int i=0; i<n; i++)
-        for(int j=0; j<m; j++)
-                A[i][j] = i * m + j;
+
+    for (std::size_t i = 0; i < n; i++)
+        for (std::size_t j = 0; j < m; j++) A[i][j] = i * m + j;
 
     boost::multi_array<double, 2> B(boost::extents[n][m]);
-    for(int i=0; i<n; i++)
-        for(int j=0; j<m; j++)
-                B[i][j] = i * m + j + 0.5;
+
+    for (std::size_t i = 0; i < n; i++)
+        for (std::size_t j = 0; j < m; j++) B[i][j] = i * m + j + 0.5;
+
     print(A);
     print(B);
 
