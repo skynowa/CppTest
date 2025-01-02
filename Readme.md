@@ -87,7 +87,7 @@
 * <a href="/C/BuffZero.cpp" title="">✅ `BuffZero.cpp`</a>
 * <a href="/C/TimeFormat.cpp" title="">✅ `TimeFormat.cpp`</a>
 * <a href="/C/ConvertTime.cpp" title="">✅ `ConvertTime.cpp`</a>
-* <a href="/C/Strtol.cpp" title="Convert "string" values to long int">✅ `Strtol.cpp`</a>
+* <a href="/C/Strtol.cpp" title="Convert string values to long int">✅ `Strtol.cpp`</a>
 * <a href="/C/Strftime.cpp" title="Format date and time">✅ `Strftime.cpp`</a>
 * <a href="/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
 * <a href="/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
