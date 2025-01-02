@@ -5,7 +5,7 @@
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (198)
+- [Cpp](#cpp "") █████████░ 🚩93% (197)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -106,9 +106,8 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (198)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩93% (197)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Cpp/TaxesSummUp.cpp" title="">❌ TaxesSummUp.cpp</a>
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Cpp/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
