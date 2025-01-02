@@ -36,13 +36,15 @@ int main(int argc, char **argv)
 
     for (std::size_t i = 0; i < o; i++)
         for (std::size_t j = 0; j < n; j++)
-            for (std::size_t k = 0; k < m; k++) A[i][j][k] = i * m * n + j * m + k;
+            for (std::size_t k = 0; k < m; k++)
+                A[i][j][k] = i * m * n + j * m + k;
 
     boost::multi_array<double, 3> B(boost::extents[o][n][m]);
 
     for (std::size_t i = 0; i < o; i++)
         for (std::size_t j = 0; j < n; j++)
-            for (std::size_t k = 0; k < m; k++) B[i][j][k] = i * m * n + j * m + k + 0.5;
+            for (std::size_t k = 0; k < m; k++)
+                B[i][j][k] = i * m * n + j * m + k + 0.5;
 
     print(A);
     print(B);
