@@ -1,6 +1,6 @@
 /**
  * \file  Strtol.cpp
- * \brief Convert "string" values to long int
+ * \brief Convert string values to long int
  */
 
 
