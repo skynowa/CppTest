@@ -5,7 +5,7 @@
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩93% (197)
+- [Cpp](#cpp "") █████████░ 🚩92% (198)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
@@ -106,7 +106,7 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩93% (197)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (198)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -282,8 +282,9 @@
       </details>
 
   * <details close>
-    <summary>📁  Cpp20 0.0% (0)</summary>
+    <summary>📁 ❌ Cpp20 0% (1)</summary>
 
+    * <a href="/Cpp/Cpp20/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
     </details>
 
