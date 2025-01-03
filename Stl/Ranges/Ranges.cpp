@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
     {
         auto rvi = std::ranges::views::iota(0) | std::ranges::views::take(n - 0);
 
-        //std::cout << "ranges::views::iota(0) | ranges::views::take(0,n) = ";
+        //std::cout << "ranges::views::iota(0) | ranges::views::take(n - 0) = ";
         //for (auto const & i : rvi) std::cout << i << ",";
         //std::cout << "\n";
 
