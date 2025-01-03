@@ -1192,12 +1192,21 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Cpp11 100% (2)</summary>
+    <summary>📁 ⌛ Cpp11 60% (5)</summary>
 
     * <a href="/Stl/Cpp11/InitializerListVsCtor.cpp" title="lightweight proxy object that provides access to an array of objects of type const T">✅ `InitializerListVsCtor.cpp`</a>
     * <a href="/Stl/Cpp11/InitializerList.cpp" title="lightweight proxy object that provides access to an array of objects of type const T">✅ `InitializerList.cpp`</a>
 
     </details>
+
+    * <details close>
+      <summary>📁 ⌛ SmartPtrs 33% (3)</summary>
+
+        * <a href="/Stl/Cpp11/SmartPtrs/SmartPointersInCpp11.md" title="">❌ 📝 SmartPointersInCpp11.md</a>
+        * <a href="/Stl/Cpp11/SmartPtrs/UniquePtrNull.cpp" title="std::unique_ptr with nullptr">✅ `UniquePtrNull.cpp`</a>
+        * <a href="/Stl/Cpp11/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
+
+      </details>
 
   * <details close>
     <summary>📁  Cpp14 0.0% (0)</summary>
@@ -1222,10 +1231,17 @@
     </details>
 
   * <details close>
-    <summary>📁  Cpp20 0.0% (0)</summary>
+    <summary>📁 ✅ Cpp20 100% (1)</summary>
 
 
     </details>
+
+    * <details close>
+      <summary>📁 ✅ Ranges 100% (1)</summary>
+
+        * <a href="/Stl/Cpp20/Ranges/Ranges.cpp" title="">🖊 `Ranges.cpp`</a>
+
+      </details>
 
   * <details close>
     <summary>📁 ❌ Deque 0% (2)</summary>
@@ -1329,13 +1345,6 @@
     </details>
 
   * <details close>
-    <summary>📁 ✅ Ranges 100% (1)</summary>
-
-    * <a href="/Stl/Ranges/Ranges.cpp" title="">🖊 `Ranges.cpp`</a>
-
-    </details>
-
-  * <details close>
     <summary>📁 ❌ Set 0% (8)</summary>
 
     * <a href="/Stl/Set/Find.cpp" title="">❌ Find.cpp</a>
@@ -1346,15 +1355,6 @@
     * <a href="/Stl/Set/Insert.cpp" title="">❌ Insert.cpp</a>
     * <a href="/Stl/Set/Erase.cpp" title="">❌ Erase.cpp</a>
     * <a href="/Stl/Set/WithUserDefinedClasses.cpp" title="">❌ WithUserDefinedClasses.cpp</a>
-
-    </details>
-
-  * <details close>
-    <summary>📁 ⌛ SmartPtrs 33% (3)</summary>
-
-    * <a href="/Stl/SmartPtrs/SmartPointersInCpp11.md" title="">❌ 📝 SmartPointersInCpp11.md</a>
-    * <a href="/Stl/SmartPtrs/UniquePtrNull.cpp" title="std::unique_ptr with nullptr">✅ `UniquePtrNull.cpp`</a>
-    * <a href="/Stl/SmartPtrs/AutoPtrVSUniquePtr.cpp" title="">❌ AutoPtrVSUniquePtr.cpp</a>
 
     </details>
 
