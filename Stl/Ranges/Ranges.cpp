@@ -60,13 +60,13 @@ int main(int argc, char* argv[])
     }
 
     {
-        auto rvi = std::ranges::view::iota(0,n);
+        auto rvi = std::ranges::views::iota(0,n);
 
-        //std::cout << "ranges::view::iota(0,n) = ";
+        //std::cout << "ranges::views::iota(0,n) = ";
         //for (auto const & i : rvi) std::cout << i << ",";
         //std::cout << "\n";
 
-        std::cout << "ranges::view::iota\n";
+        std::cout << "ranges::views::iota\n";
         double k(0);
         auto t0 = wtime();
         for (auto const & i : rvi) {
@@ -80,13 +80,13 @@ int main(int argc, char* argv[])
     }
 
     {
-        auto rvi = std::ranges::view::iota(0) | std::ranges::view::slice(0,n);
+        auto rvi = std::ranges::views::iota(0) | std::ranges::views::take(n - 0);
 
-        //std::cout << "ranges::view::iota(0) | ranges::view::slice(0,n) = ";
+        //std::cout << "ranges::views::iota(0) | ranges::views::take(0,n) = ";
         //for (auto const & i : rvi) std::cout << i << ",";
         //std::cout << "\n";
 
-        std::cout << "ranges::view::iota | ranges::view::slice\n";
+        std::cout << "ranges::views::iota | ranges::views::take\n";
         double k(0);
         auto t0 = wtime();
         for (auto const & i : rvi) {
