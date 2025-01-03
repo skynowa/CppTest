@@ -19,33 +19,35 @@ jsonToPlainText(
 {
     std::string result;
 
+    const std::string nl = "\n";
+
     // If the current element is an object, iterate over its key-value pairs
-    if      (a_json.is_object()) {
-        for (auto it = a_json.begin(); it != a_json.end(); ++ it) {
-            result += a_indent + it.key() + ":\n";
-            result += jsonToPlainText(it.value(), a_indent + "  ");
+    if      ( a_json.is_object() ) {
+        for (auto it_node = a_json.begin(); it_node != a_json.end(); ++ it_node) {
+            result += a_indent + it_node.key() + ":" + nl;
+            result += jsonToPlainText(it_node.value(), a_indent + "  ");
         }
     }
     // If the current element is an array, iterate over its elements
-    else if (a_json.is_array()) {
-        for (const auto& item : a_json) {
-            if (item.is_object() || item.is_array()) {
-                result += jsonToPlainText(item, a_indent + "  ");
+    else if ( a_json.is_array() ) {
+        for (const auto &it_node : a_json) {
+            if (it_node.is_object() || it_node.is_array()) {
+                result += jsonToPlainText(it_node, a_indent + "  ");
             }
-            else if ( item.is_string() ) {
-                result += a_indent + "  - " + item.get<std::string>() + "\n";
+            else if ( it_node.is_string() ) {
+                result += a_indent + "  - " + it_node.get<std::string>() + nl;
             }
             else {
-                result += a_indent + "  - " + item.dump() + "\n";
+                result += a_indent + "  - " + it_node.dump() + nl;
             }
         }
     }
     // If the current element is a string, number, or boolean, print it directly
     else if (a_json.is_string()) {
-        result += a_indent + a_json.get<std::string>() + "\n";
+        result += a_indent + a_json.get<std::string>() + nl;
     }
     else {
-        result += a_indent + a_json.dump() + "\n";  // For numbers and booleans
+        result += a_indent + a_json.dump() + nl;  // For numbers and booleans
     }
 
     return result;
@@ -54,7 +56,8 @@ jsonToPlainText(
 int main(int, char **)
 {
     // JSON data as a string
-    const std::string jsonString = R"({
+    const std::string jsonString = R"(
+    {
         "paymentPolicy": {
             "localCurrency": "EUR",
             "propertyFees": [
@@ -66,15 +69,20 @@ int main(int, char **)
                 "<ul> <li>Fee for buffet breakfast: approximately EUR 23 for adults and EUR 11.5 for children<\/li><li>Self parking fee: EUR 22 per day<\/li><li>Nearby parking fee: EUR 13 per day (328 ft away)<\/li><li>Pet fee: EUR 20 per pet, per stay<\/li><li>Service animals are exempt from fees<\/li><\/ul>",
                 "<p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. <\/p>"
             ]
-        }
+        },
+        "formsOfPayment": [
+            "American Express",
+            "Diners Club",
+            "JCB International",
+            "Mastercard",
+            "Visa"
+        ]
     })";
 
-    std::cout << jsonString << "\n" << std::endl;
+    std::cout << jsonString << "\n----------" << std::endl;
 
-    // Parse JSON data
     nlohmann::json jsonData = nlohmann::json::parse(jsonString);
 
-    // Convert JSON to plain text and print the result
     std::string plainText = jsonToPlainText(jsonData);
     std::cout << plainText << std::endl;
 
