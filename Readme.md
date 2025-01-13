@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **13-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -11,7 +11,7 @@
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ████░░░░░░ 38% (34)
-- [Libs](#libs "") ██████████ 🚩96% (25)
+- [Libs](#libs "") ██████████ 🚩96% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
@@ -819,7 +819,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩96% (25)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs ██████████ 🚩96% (28)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -914,6 +914,15 @@
         * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.cpp" title="">✅ `xgrabkey_2.cpp`</a>
 
       </details>
+
+  * <details close>
+    <summary>📁 ✅ Xsd 100% (3)</summary>
+
+    * <a href="/Libs/Xsd/Readme.md" title="">✅ `📝 Readme.md`</a>
+    * <a href="/Libs/Xsd/person.cxx" title="">✅ `person.cxx`</a>
+    * <a href="/Libs/Xsd/main.cpp" title="">✅ `main.cpp`</a>
+
+    </details>
 
 ##  <a title="[ ] Network" id="network">Network ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 

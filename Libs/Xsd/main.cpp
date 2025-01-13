@@ -1,8 +1,23 @@
+/**
+ * \file  main.cpp
+ * \brief XSD - XML Data Binding for C++
+ *
+ * \see   https://codesynthesis.com/products/xsd/
+ * \todo
+ */
+
+
+
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
+
 #include <fstream>
 #include <iostream>
 #include "person.hxx"
-
-int main() {
+//--------------------------------------------------------------------------------------------------
+int main(int, char **)
+{
     try {
         // Parse the XML file to create a person object
         auto p = person::person_("person.xml");
@@ -32,5 +47,6 @@ int main() {
         return 1;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
+//--------------------------------------------------------------------------------------------------
