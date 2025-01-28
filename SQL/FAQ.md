@@ -1,3 +1,0 @@
-# FAQ
-
-[ ] SQL language skills
