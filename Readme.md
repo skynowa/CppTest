@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **28-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **10-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (198)
+- [Cpp](#cpp "") █████████░ 🚩92% (199)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
@@ -16,7 +16,7 @@
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
-- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 45% (31)
+- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") █████░░░░░ 48% (31)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
@@ -101,7 +101,7 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (198)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (199)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -220,8 +220,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Cpp11 50% (2)</summary>
+    <summary>📁 ⌛ Cpp11 33% (3)</summary>
 
+    * <a href="/Cpp/Cpp11/Regex.cpp" title="">❌ Regex.cpp</a>
     * <a href="/Cpp/Cpp11/NoexceptSpecifier.cpp" title="noexcept specifier">✅ `NoexceptSpecifier.cpp`</a>
     * <a href="/Cpp/Cpp11/NoexceptOp.cpp" title="noexcept operator">❌ NoexceptOp.cpp</a>
 
@@ -1056,7 +1057,7 @@
 
         </details>
 
-##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns ████░░░░░░ 45% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns █████░░░░░ 48% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Patterns/AntiPatterns.md" title="">✅ `📝 AntiPatterns.md`</a>
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
@@ -1071,10 +1072,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Behavioral 7% (15)</summary>
+    <summary>📁 ⌛ Behavioral 13% (15)</summary>
 
     * <a href="/Patterns/Behavioral/command.cpp" title="">❌ command.cpp</a>
-    * <a href="/Patterns/Behavioral/template_method.cpp" title="">❌ template_method.cpp</a>
     * <a href="/Patterns/Behavioral/interpreter.cpp" title="">❌ interpreter.cpp</a>
     * <a href="/Patterns/Behavioral/state.cpp" title="">❌ state.cpp</a>
     * <a href="/Patterns/Behavioral/memento.cpp" title="">❌ memento.cpp</a>
@@ -1088,6 +1088,7 @@
     * <a href="/Patterns/Behavioral/observer2.cpp" title="">❌ observer2.cpp</a>
     * <a href="/Patterns/Behavioral/chain_of_responsibility.cpp" title="">❌ chain_of_responsibility.cpp</a>
     * <a href="/Patterns/Behavioral/visitor2.cpp" title="">❌ visitor2.cpp</a>
+    * <a href="/Patterns/Behavioral/TemplateMethod.cpp" title="Template method provides an implementation in a derived class, to be used by the base class">✅ `TemplateMethod.cpp`</a>
 
     </details>
 
