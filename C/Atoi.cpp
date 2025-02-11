@@ -27,6 +27,12 @@ int main(int, char **)
 	std::cout << d << std::endl;
 #endif
 
+   /**
+    * Need for fix:
+    *
+    * - Remove  - "$"
+    * - Replace - "," -> "."
+    */
     double e = std::strtod("$27,41", nullptr);
     std::cout << STD_TRACE_VAR(e) << std::endl;
 
