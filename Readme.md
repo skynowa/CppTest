@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **10-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **11-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -87,7 +87,7 @@
 * <a href="/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
 * <a href="/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
-* <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
+* <a href="/C/Atoi.cpp" title="Convert Non-number values to int, double">✅ `Atoi.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
