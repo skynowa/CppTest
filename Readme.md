@@ -795,17 +795,17 @@
   * <details close>
     <summary>📁 ⌛ Thread 36% (11)</summary>
 
+    * <a href="/IpcMt/Thread/CtorByLambdaFunction.cpp" title="">❌ CtorByLambdaFunction.cpp</a>
     * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
     * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
     * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
     * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
+    * <a href="/IpcMt/Thread/CtorByFunctionObjects.cpp" title="">❌ CtorByFunctionObjects.cpp</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
-    * <a href="/IpcMt/Thread/CreationByFunctionObjects.cpp" title="">❌ CreationByFunctionObjects.cpp</a>
-    * <a href="/IpcMt/Thread/CreationByFunctionPointer.cpp" title="">❌ CreationByFunctionPointer.cpp</a>
+    * <a href="/IpcMt/Thread/CtorByFunctionPointer.cpp" title="">❌ CtorByFunctionPointer.cpp</a>
     * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
     * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
     * <a href="/IpcMt/Thread/Threads.cpp" title="">✅ `Threads.cpp`</a>
-    * <a href="/IpcMt/Thread/CreationByLambdaFunction.cpp" title="">❌ CreationByLambdaFunction.cpp</a>
 
     </details>
 
