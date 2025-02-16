@@ -1,8 +1,6 @@
 /**
  * \file  PassingArgs.cpp
- * \brief
- *
- * \todo
+ * \brief Pass function ptr with args
  */
 
 

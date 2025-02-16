@@ -1,8 +1,6 @@
 /**
  * \file  PassingPtr.cpp
- * \brief
- *
- * \todo
+ * \brief Pass function pointer with param by pointer
  */
 
 

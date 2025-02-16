@@ -1,8 +1,6 @@
 /**
  * \file  CtorByLambda.cpp
- * \brief
- *
- * \todo
+ * \brief Ctor - pass lambda
  */
 
 
@@ -24,12 +22,12 @@ int main(int, char **)
     std::thread t(worker);
 
     for (int i = 0; i < ::threadsNum; ++ i) {
-    	std::cout << "[Main] - " << i <<std::endl;
+    	std::cout << "[Main] - " << i << std::endl;
     }
 
     t.join();
 
-    std::cout << "[Main] - Exiting" <<std::endl;
+    std::cout << "[Main] - Exiting" << std::endl;
 
     return EXIT_SUCCESS;
 }

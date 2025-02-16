@@ -1,6 +1,6 @@
 /**
  * \file  Threads.cpp
- * \brief
+ * \brief Create std::vector of threads
  */
 
 
@@ -25,11 +25,11 @@ int main(int, char **)
     std::vector<std::thread> pool;
 
     for (int i = 0; i < threadsNum; ++ i) {
-        pool.push_back( std::thread(worker, i) );
+        pool.emplace_back( std::thread(worker, i) );
     }
 
-    for (auto &t : pool){
-        t.join();
+    for (auto &it_t : pool){
+        it_t.join();
     }
 
     return EXIT_SUCCESS;

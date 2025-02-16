@@ -1,8 +1,6 @@
 /**
  * \file  PassingRef.cpp
- * \brief
- *
- * \todo
+ * \brief Pass variable by std::ref
  */
 
 
