@@ -1,6 +1,6 @@
 /**
  * \file  HarwareConcurrency.cpp
- * \brief
+ * \brief Supported concurrent threads by CPU
  */
 
 

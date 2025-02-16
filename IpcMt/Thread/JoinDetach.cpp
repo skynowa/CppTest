@@ -1,6 +1,6 @@
 /**
  * \file  JoinDetach.cpp
- * \brief
+ * \brief Join detachable threads
  */
 
 
@@ -33,7 +33,7 @@ int main(int, char **)
     // Call join() function on each of the std::thread object
     std::for_each(threads.begin(), threads.end(), std::mem_fn(&std::thread::join));
 
-    std::cout << "\nExiting from Main Thread" << std::endl;
+    std::cout << "\nExiting" << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -49,7 +49,7 @@ Wait for all the worker thread to finish...
 [Worker] Thread ID: 135508105627200
 [Worker] Thread ID: 135508095141440
 
-Exiting from Main Thread
+Exiting
 ---------------------------------------------
 
 #endif
