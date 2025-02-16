@@ -1,8 +1,6 @@
 /**
  * \file  DiffIDs.cpp
- * \brief
- *
- * \todo
+ * \brief Main thread ID diffs with worker ID
  */
 
 
@@ -12,7 +10,7 @@
 //--------------------------------------------------------------------------------------------------
 void worker()
 {
-    std::cout << "[worker] Thread: ID  = " << std::this_thread::get_id() << std::endl;
+    std::cout << "[worker] Thread ID = " << std::this_thread::get_id() << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -24,8 +22,8 @@ int main(int, char **)
         std::cout << "Both Threads have different IDs" << std::endl;
     }
 
-    std::cout << "Main: ID of Thread 1 = " << t1.get_id() << std::endl;
-    std::cout << "Main: ID of Thread 2 = " << t2.get_id() << std::endl;
+    std::cout << "ID of Thread 1 = " << t1.get_id() << std::endl;
+    std::cout << "ID of Thread 2 = " << t2.get_id() << std::endl;
 
     t1.join();
     t2.join();
@@ -39,10 +37,10 @@ int main(int, char **)
 
 ---------------------------------------------
 Both Threads have different IDs
-Main: ID of Thread 1 = 140103492044352
-Main: ID of Thread 2 = 140103481558592
-[worker] Thread: ID  = 140103492044352
-[worker] Thread: ID  = 140103481558592
+ID of Thread 1 = 140103492044352
+ID of Thread 2 = 140103481558592
+[worker] Thread ID  = 140103492044352
+[worker] Thread ID  = 140103481558592
 ---------------------------------------------
 
 #endif
