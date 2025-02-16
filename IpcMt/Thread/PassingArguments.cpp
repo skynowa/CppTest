@@ -25,9 +25,8 @@ int main(int, char **)
     const int         x   = 10;
     const std::string str = "Sample String";
 
-    std::thread threadObj(worker, x, str);
-
-    threadObj.join();
+    std::thread t(worker, x, str);
+    t.join();
 
     return EXIT_SUCCESS;
 }

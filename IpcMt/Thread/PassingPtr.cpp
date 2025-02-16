@@ -1,5 +1,5 @@
 /**
- * \file  PassingPointers.cpp
+ * \file  PassingPtr.cpp
  * \brief
  *
  * \todo

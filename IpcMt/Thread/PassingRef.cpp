@@ -1,5 +1,5 @@
 /**
- * \file  PassingReferences.cpp
+ * \file  PassingRef.cpp
  * \brief
  *
  * \todo
@@ -26,9 +26,8 @@ int main(int, char **)
 
     std::cout << "In Main Thread : Before Thread Start x = " << x << std::endl;
 
-    std::thread threadObj(::worker, std::ref(x));
-
-    threadObj.join();
+    std::thread t(::worker, std::ref(x));
+    t.join();
 
     std::cout << "In Main Thread : After Thread Joins x = " << x << std::endl;
 
