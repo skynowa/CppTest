@@ -8,13 +8,13 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //-------------------------------------------------------------------------------------------------
-class WorkerThread
+class Worker
 {
 public:
     void operator() () const
     {
         std::stringstream msg;
-        msg << "Thread ID: " << std::this_thread::get_id() << std::endl;
+        msg << "[Worker] Thread ID: " << std::this_thread::get_id() << std::endl;
 
         std::cout << msg.str();
     }
@@ -25,7 +25,7 @@ int main(int, char **)
     std::vector<std::thread> threads;
 
     for (int i = 0; i < 3; ++ i) {
-        threads.push_back( std::thread( WorkerThread() ) );
+        threads.push_back( std::thread( Worker() ) );
     }
 
     std::cout << "Wait for all the worker thread to finish...\n" << std::endl;
@@ -42,12 +42,14 @@ int main(int, char **)
 
 #if OUTPUT
 
+---------------------------------------------
 Wait for all the worker thread to finish...
 
-Thread ID: 140114755426048
-Thread ID: 140114772211456
-Thread ID: 140114763818752
+[Worker] Thread ID: 135508116112960
+[Worker] Thread ID: 135508105627200
+[Worker] Thread ID: 135508095141440
 
 Exiting from Main Thread
+---------------------------------------------
 
 #endif

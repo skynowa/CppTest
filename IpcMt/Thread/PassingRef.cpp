@@ -17,7 +17,7 @@ worker(const int &x)
 
     ++ y;
 
-    std::cout << "worker x = " << x << std::endl;
+    std::cout << "[worker] x = " << x << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -38,8 +38,10 @@ int main(int, char **)
 
 #if OUTPUT
 
+---------------------------------------------
 In Main Thread : Before Thread Start x = 9
-worker x = 10
+[worker] x = 10
 In Main Thread : After Thread Joins x = 10
+---------------------------------------------
 
 #endif

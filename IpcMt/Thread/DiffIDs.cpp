@@ -12,7 +12,7 @@
 //--------------------------------------------------------------------------------------------------
 void worker()
 {
-    std::cout << "Thread: ID  = " << std::this_thread::get_id() << std::endl;
+    std::cout << "[worker] Thread: ID  = " << std::this_thread::get_id() << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -37,12 +37,12 @@ int main(int, char **)
 
 #if OUTPUT
 
-Thread: ID  = 140613060937472
-Thread: ID  = 140613052544768
-
+---------------------------------------------
 Both Threads have different IDs
-
-Main: ID of Thread 1 = 140613060937472
-Main: ID of Thread 2 = 140613052544768
+Main: ID of Thread 1 = 140103492044352
+Main: ID of Thread 2 = 140103481558592
+[worker] Thread: ID  = 140103492044352
+[worker] Thread: ID  = 140103481558592
+---------------------------------------------
 
 #endif

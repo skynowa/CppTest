@@ -1,5 +1,5 @@
 /**
- * \file  PassingArguments.cpp
+ * \file  PassingArgs.cpp
  * \brief
  *
  * \todo
@@ -16,8 +16,8 @@ worker(
     const std::string str
 )
 {
-    std::cout << "Passed Number = " << x   << std::endl;
-    std::cout << "Passed String = " << str << std::endl;
+    std::cout << "[worker] Passed Number = " << x   << std::endl;
+    std::cout << "[worker] Passed String = " << str << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -35,7 +35,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-Passed Number = 10
-Passed String = Sample String
+---------------------------------------------
+[worker] Passed Number = 10
+[worker] Passed String = Sample String
+---------------------------------------------
 
 #endif
