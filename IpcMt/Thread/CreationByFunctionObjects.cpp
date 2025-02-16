@@ -13,6 +13,9 @@
 class Worker
 {
 public:
+    Worker() = default;
+   ~Worker() = default;
+
     void operator() ()
     {
         for (int i = 0; i < 10; ++ i) {
@@ -23,7 +26,7 @@ public:
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::thread t { Worker() };
+    std::thread t{ Worker() };
 
     for (int i = 0; i < 10; ++ i) {
         std::cout << "Display From Main Thread - " << i <<std::endl;
