@@ -11,7 +11,7 @@
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ████░░░░░░ 38% (34)
+- [IpcMt](#ipcmt "") ████░░░░░░ 37% (35)
 - [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
@@ -716,7 +716,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ████░░░░░░ 38% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ████░░░░░░ 37% (35)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -793,7 +793,7 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Thread 36% (11)</summary>
+    <summary>📁 ⌛ Thread 33% (12)</summary>
 
     * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
     * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
@@ -801,11 +801,12 @@
     * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
     * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncObjectRef.cpp" title="">❌ CtorByFuncObjectRef.cpp</a>
     * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
     * <a href="/IpcMt/Thread/CtorByLambda.cpp" title="">❌ CtorByLambda.cpp</a>
     * <a href="/IpcMt/Thread/CtorByFuncObject.cpp" title="">❌ CtorByFuncObject.cpp</a>
     * <a href="/IpcMt/Thread/Threads.cpp" title="">✅ `Threads.cpp`</a>
-    * <a href="/IpcMt/Thread/CtorByFuncPointer.cpp" title="">❌ CtorByFuncPointer.cpp</a>
+    * <a href="/IpcMt/Thread/CtorByFuncPtr.cpp" title="">❌ CtorByFuncPtr.cpp</a>
 
     </details>
 
