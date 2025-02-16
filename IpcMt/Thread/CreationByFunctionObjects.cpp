@@ -10,15 +10,17 @@
 #include <StdTest/StdTest.h>
 #include <Stl.h>
 //--------------------------------------------------------------------------------------------------
+const int threadsNum {3};
+//--------------------------------------------------------------------------------------------------
 class Worker
 {
 public:
     Worker() = default;
    ~Worker() = default;
 
-    void operator() ()
+    void operator() () const
     {
-        for (int i = 0; i < 10; ++ i) {
+        for (int i = 0; i < ::threadsNum; ++ i) {
             std::cout << "Worker Executing - " << i << std::endl;
         }
     }
@@ -28,7 +30,7 @@ int main(int, char **)
 {
     std::thread t{ Worker() };
 
-    for (int i = 0; i < 10; ++ i) {
+    for (int i = 0; i < ::threadsNum; ++ i) {
         std::cout << "Display From Main Thread - " << i <<std::endl;
     }
 
@@ -45,28 +47,15 @@ int main(int, char **)
 
 #if OUTPUT
 
-Display From Main Thread - Worker Executing - 00
+---------------------------------------------
+Display From Main Thread - 0
 Display From Main Thread - 1
-
+Display From Main Thread - 2
+Waiting For Thread to complete
+Worker Executing - 0
 Worker Executing - 1
 Worker Executing - 2
-Worker Executing - 3
-Worker Executing - 4
-Worker Executing - 5
-Worker Executing - 6
-Worker Executing - 7
-Worker Executing - 8
-Worker Executing - 9
-Display From Main Thread - 2
-Display From Main Thread - 3
-Display From Main Thread - 4
-Display From Main Thread - 5
-Display From Main Thread - 6
-Display From Main Thread - 7
-Display From Main Thread - 8
-Display From Main Thread - 9
-Waiting For Thread to complete
 Exiting from Main Thread
-
+---------------------------------------------
 
 #endif
