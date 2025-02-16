@@ -12,15 +12,15 @@
 //--------------------------------------------------------------------------------------------------
 const int threadsNum {3};
 //--------------------------------------------------------------------------------------------------
+auto worker = []() -> void
+{
+	for (int i = 0; i < ::threadsNum; ++ i) {
+		std::cout << "Worker Executing - " << i << std::endl;
+	}
+};
+//-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    auto worker = []() -> void
-    {
-        for (int i = 0; i < ::threadsNum; ++ i) {
-            std::cout << "Worker Executing - " << i << std::endl;
-        }
-    };
-
     std::thread t(worker);
 
     for (int i = 0; i < ::threadsNum; ++ i) {
