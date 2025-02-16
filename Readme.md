@@ -1,26 +1,27 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Jan-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **11-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (198)
+- [Cpp](#cpp "") █████████░ 🚩92% (199)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
+- [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
 - [IpcMt](#ipcmt "") ████░░░░░░ 38% (34)
-- [Libs](#libs "") ██████████ 🚩96% (25)
+- [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
 - [OS](#os "") █████████░ 🚩91% (45)
-- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") ████░░░░░░ 43% (30)
+- [Patterns](#patterns "- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)") █████░░░░░ 48% (31)
 - [Practice](#practice "[ ] Practice on paper") ░░░░░░░░░░ 0% (1)
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "[ ] SQL language skills") ██████████ 🚩95% (21)
+- [SQL](#sql "") ██████████ 🚩95% (21)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
 - [Stl](#stl "") ███░░░░░░░ 32% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
@@ -86,7 +87,7 @@
 * <a href="/C/IsAlphaRu.cpp" title="std::isalpha for russian (ru) text">✅ `IsAlphaRu.cpp`</a>
 * <a href="/C/IsAlphaLocale.cpp" title="std::isalpha with locale">✅ `IsAlphaLocale.cpp`</a>
 * <a href="/C/Printf.cpp" title="">✅ `Printf.cpp`</a>
-* <a href="/C/Atoi.cpp" title="">✅ `Atoi.cpp`</a>
+* <a href="/C/Atoi.cpp" title="Convert Non-number values to int, double">✅ `Atoi.cpp`</a>
 * <a href="/C/VSnprintf.cpp" title="vsnprintf, detect buffer">✅ `VSnprintf.cpp`</a>
 * <a href="/C/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
@@ -100,7 +101,7 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (198)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (199)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -219,8 +220,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Cpp11 50% (2)</summary>
+    <summary>📁 ⌛ Cpp11 33% (3)</summary>
 
+    * <a href="/Cpp/Cpp11/Regex.cpp" title="">❌ Regex.cpp</a>
     * <a href="/Cpp/Cpp11/NoexceptSpecifier.cpp" title="noexcept specifier">✅ `NoexceptSpecifier.cpp`</a>
     * <a href="/Cpp/Cpp11/NoexceptOp.cpp" title="noexcept operator">❌ NoexceptOp.cpp</a>
 
@@ -555,6 +557,18 @@
 
 </details>
 
+##  <a title="" id="docs">Docs ██████████ 🚩100% (1)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+
+
+</details>
+
+  * <details close>
+    <summary>📁 ✅ ClangDocWarning 100% (1)</summary>
+
+    * <a href="/Docs/ClangDocWarning/ClangDocWarning.cpp" title="Clang - warn about incorrect Doxygen documentation">✅ `ClangDocWarning.cpp`</a>
+
+    </details>
+
 ##  <a title="[ ] FAQs" id="faq">FAQ ░░░░░░░░░░ 0% (5)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/FAQ/CppInterview400_dou.ua.md" title="">❌ 📝 CppInterview400_dou.ua.md</a>
@@ -819,7 +833,7 @@
 
     </details>
 
-##  <a title="" id="libs">Libs ██████████ 🚩96% (25)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="libs">Libs █████████░ 🚩93% (28)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Libs/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Libs/FAQ.md" title="">✅ `📝 FAQ.md`</a>
@@ -914,6 +928,15 @@
         * <a href="/Libs/XLib/GlobalHotKey/xgrabkey_2.cpp" title="">✅ `xgrabkey_2.cpp`</a>
 
       </details>
+
+  * <details close>
+    <summary>📁 ⌛ Xsd 67% (3)</summary>
+
+    * <a href="/Libs/Xsd/Readme.md" title="">✅ `📝 Readme.md`</a>
+    * <a href="/Libs/Xsd/person.cxx" title="">✅ `person.cxx`</a>
+    * <a href="/Libs/Xsd/main.cpp" title="XSD - XML Data Binding for C++">❌ main.cpp</a>
+
+    </details>
 
 ##  <a title="[ ] Network" id="network">Network ████████░░ 🔥75% (4)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
@@ -1034,8 +1057,9 @@
 
         </details>
 
-##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns ████░░░░░░ 43% (30)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="- [ ] [Design patterns](https://en.wikipedia.org/wiki/Data_transfer_object). - [ ] [Design patterns](https://refactoring.guru/design-patterns)" id="patterns">Patterns █████░░░░░ 48% (31)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Patterns/AntiPatterns.md" title="">✅ `📝 AntiPatterns.md`</a>
 * <a href="/Patterns/FAQ.md" title="">❌ 📝 FAQ.md</a>
 
 </details>
@@ -1048,10 +1072,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Behavioral 7% (15)</summary>
+    <summary>📁 ⌛ Behavioral 13% (15)</summary>
 
     * <a href="/Patterns/Behavioral/command.cpp" title="">❌ command.cpp</a>
-    * <a href="/Patterns/Behavioral/template_method.cpp" title="">❌ template_method.cpp</a>
     * <a href="/Patterns/Behavioral/interpreter.cpp" title="">❌ interpreter.cpp</a>
     * <a href="/Patterns/Behavioral/state.cpp" title="">❌ state.cpp</a>
     * <a href="/Patterns/Behavioral/memento.cpp" title="">❌ memento.cpp</a>
@@ -1065,6 +1088,7 @@
     * <a href="/Patterns/Behavioral/observer2.cpp" title="">❌ observer2.cpp</a>
     * <a href="/Patterns/Behavioral/chain_of_responsibility.cpp" title="">❌ chain_of_responsibility.cpp</a>
     * <a href="/Patterns/Behavioral/visitor2.cpp" title="">❌ visitor2.cpp</a>
+    * <a href="/Patterns/Behavioral/TemplateMethod.cpp" title="Template method provides an implementation in a derived class, to be used by the base class">✅ `TemplateMethod.cpp`</a>
 
     </details>
 
@@ -1121,7 +1145,7 @@
 
 </details>
 
-##  <a title="[ ] SQL language skills" id="sql">SQL ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="sql">SQL ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/MysqlCheatSheet.md" title="">✅ `📝 MysqlCheatSheet.md`</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
@@ -1129,12 +1153,12 @@
 * <a href="/SQL/Count.sql" title="COUNT - returns the number of records returned by a select query">✅ `Count.sql`</a>
 * <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
 * <a href="/SQL/Having.sql" title="HAVING">✅ `Having.sql`</a>
+* <a href="/SQL/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/SQL/RandomRow.sql" title="Select random row">✅ `RandomRow.sql`</a>
 * <a href="/SQL/Increment.sql" title="">✅ `Increment.sql`</a>
 * <a href="/SQL/LastRecords.sql" title="">✅ `LastRecords.sql`</a>
 * <a href="/SQL/GroupByHours.sql" title="">✅ `GroupByHours.sql`</a>
 * <a href="/SQL/DbInfo.sql" title="DB Information">✅ `DbInfo.sql`</a>
-* <a href="/SQL/FAQ.md" title="">❌ 📝 FAQ.md</a>
 * <a href="/SQL/Duplicates.sql" title="">✅ `Duplicates.sql`</a>
 * <a href="/SQL/GroupBy.sql" title="GROUP BY">✅ `GroupBy.sql`</a>
 

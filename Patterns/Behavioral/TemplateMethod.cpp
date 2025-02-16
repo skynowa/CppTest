@@ -1,23 +1,17 @@
 /**
- * \file
- * \brief
- *
- * \todo
+ * \file  TemplateMethod.cpp
+ * \brief Template method provides an implementation in a derived class, to be used by the base class
  */
 
-/*
-Template method provides an implementation in a derived class,
-to be used by the base class.
-*/
 
-#include <string>
-#include <iostream>
-
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 class IHelloWorld
 {
 public:
-	virtual ~IHelloWorld() { }
+	virtual ~IHelloWorld() = default;
 
 	void output()
 	{
@@ -29,21 +23,22 @@ public:
 	virtual void writeEndl() = 0;
 };
 //-------------------------------------------------------------------------------------------------
-class HelloWorld_Impl : public IHelloWorld
+class HelloWorld_Impl :
+    public IHelloWorld
 {
 public:
-	virtual void writeString(const std::string &str)
+	void writeString(const std::string &str) final
 	{
-		std::cout << str;
+		std::cout << STD_TRACE_VAR(str);
 	}
 
-	virtual void writeEndl()
+	void writeEndl() final
 	{
 		std::cout << std::endl;
 	}
 };
 //-------------------------------------------------------------------------------------------------
-int main()
+int main(int, char **)
 {
 	HelloWorld_Impl hw;
 	hw.output();
@@ -51,3 +46,10 @@ int main()
 	return 0;
 }
 //-------------------------------------------------------------------------------------------------
+
+
+#if 0
+
+str: Hello world!
+
+#endif
