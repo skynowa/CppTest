@@ -1,5 +1,5 @@
 /**
- * \file  CtorByFunctionPointer.cpp
+ * \file  CtorByFuncPointer.cpp
  * \brief
  *
  * \todo
