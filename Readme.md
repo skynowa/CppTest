@@ -763,18 +763,6 @@
     </details>
 
   * <details close>
-    <summary>📁  Posix 0.0% (0)</summary>
-
-
-    </details>
-
-    * <details close>
-      <summary>📁  threads 0.0% (0)</summary>
-
-
-      </details>
-
-  * <details close>
     <summary>📁 ⌛ RaceCondition 50% (2)</summary>
 
     * <a href="/IpcMt/RaceCondition/Example_1.cpp" title="">❌ Example_1.cpp</a>
