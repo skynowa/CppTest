@@ -1,5 +1,5 @@
 /**
- * \file  CtorByFuncObjects.cpp
+ * \file  CtorByFuncObject.cpp
  * \brief
  *
  * \todo
