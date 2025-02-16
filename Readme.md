@@ -798,9 +798,9 @@
     * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
     * <a href="/IpcMt/Thread/PassingRef.cpp" title="">❌ PassingRef.cpp</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="Main thread ID diffs with worker ID">✅ `DiffIDs.cpp`</a>
-    * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
+    * <a href="/IpcMt/Thread/JoinDetach.cpp" title="Join detachable threads">✅ `JoinDetach.cpp`</a>
     * <a href="/IpcMt/Thread/CtorByFuncObjectRef.cpp" title="Pass by Reference (std::ref) - Use when A must exist outside the thread">❌ CtorByFuncObjectRef.cpp</a>
-    * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
+    * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="Supported concurrent threads by CPU">✅ `HarwareConcurrency.cpp`</a>
     * <a href="/IpcMt/Thread/CtorByLambda.cpp" title="">❌ CtorByLambda.cpp</a>
     * <a href="/IpcMt/Thread/CtorByFuncObject.cpp" title="">❌ CtorByFuncObject.cpp</a>
     * <a href="/IpcMt/Thread/PassingPtr.cpp" title="">❌ PassingPtr.cpp</a>
