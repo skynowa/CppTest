@@ -33,12 +33,12 @@ int main(int, char **)
     std::thread t( std::ref(worker) );
 
     for (int i = 0; i < ::threadsNum; ++ i) {
-        std::cout << "[Main Thread] - " << i <<std::endl;
+        std::cout << "[Main] - " << i <<std::endl;
     }
 
     t.join();
 
-    std::cout << "[Main Thread] - Exiting" <<std::endl;
+    std::cout << "[Main] - Exiting" <<std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -48,14 +48,14 @@ int main(int, char **)
 #if OUTPUT
 
 ---------------------------------------------
-[Main Thread] - 0
-[Main Thread] - 1
-[Main Thread] - 2
-[Main Thread] - Waiting thread to complete
+[Main] - 0
+[Main] - 1
+[Main] - 2
+[Main] - Waiting thread to complete
 [Worker] 0
 [Worker] 1
 [Worker] 2
-[Main Thread] - Exiting
+[Main] - Exiting
 ---------------------------------------------
 
 #endif
