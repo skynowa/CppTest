@@ -10,8 +10,8 @@
 //--------------------------------------------------------------------------------------------------
 void
 worker(
-    const int         x,
-    const std::string str
+    const int          x,
+    const std::string &str
 )
 {
     std::cout << "[worker] Passed Number = " << x   << std::endl;
