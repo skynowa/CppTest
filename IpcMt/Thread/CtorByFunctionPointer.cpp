@@ -1,5 +1,5 @@
 /**
- * \file  CreationByFunctionPointer.cpp
+ * \file  CtorByFunctionPointer.cpp
  * \brief
  *
  * \todo
