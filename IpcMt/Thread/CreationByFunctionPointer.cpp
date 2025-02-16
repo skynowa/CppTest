@@ -19,13 +19,13 @@ void worker()
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::thread threadObj(worker);
+    std::thread t(worker);
 
     for (int i = 0; i < 10; ++ i) {
         std::cout << "Display From MainThread" << std::endl;
     }
 
-    threadObj.join();
+    t.join();
 
     std::cout << "Exit of Main function" << std::endl;
 

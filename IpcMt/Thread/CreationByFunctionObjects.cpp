@@ -23,7 +23,7 @@ public:
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::thread threadObj( (Worker()) );
+    std::thread t { Worker() };
 
     for (int i = 0; i < 10; ++ i) {
         std::cout << "Display From Main Thread - " << i <<std::endl;
@@ -31,7 +31,7 @@ int main(int, char **)
 
     std::cout << "Waiting For Thread to complete" << std::endl;
 
-    threadObj.join();
+    t.join();
 
     std::cout << "Exiting from Main Thread" <<std::endl;
 
