@@ -1,6 +1,6 @@
 /**
  * \file  CtorByFuncObjectRef.cpp
- * \brief
+ * \brief Pass by Reference (std::ref) - Use when A must exist outside the thread
  *
  * \todo
  */
