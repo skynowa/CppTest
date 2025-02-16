@@ -21,7 +21,7 @@ public:
     void operator() () const
     {
         for (int i = 0; i < ::threadsNum; ++ i) {
-            std::cout << "Worker Executing - " << i << std::endl;
+        	std::cout << "[Worker] " << i << std::endl;
         }
     }
 };
@@ -31,14 +31,12 @@ int main(int, char **)
     std::thread t{ Worker() };
 
     for (int i = 0; i < ::threadsNum; ++ i) {
-        std::cout << "Display From Main Thread - " << i <<std::endl;
+    	std::cout << "[Main Thread] - " << i <<std::endl;
     }
-
-    std::cout << "Waiting For Thread to complete" << std::endl;
 
     t.join();
 
-    std::cout << "Exiting from Main Thread" <<std::endl;
+    std::cout << "[Main Thread] - Exiting" <<std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -48,14 +46,13 @@ int main(int, char **)
 #if OUTPUT
 
 ---------------------------------------------
-Display From Main Thread - 0
-Display From Main Thread - 1
-Display From Main Thread - 2
-Waiting For Thread to complete
-Worker Executing - 0
-Worker Executing - 1
-Worker Executing - 2
-Exiting from Main Thread
+[Main Thread] - 0
+[Main Thread] - 1
+[Main Thread] - 2
+[Worker] 0
+[Worker] 1
+[Worker] 2
+[Main Thread] - Exiting
 ---------------------------------------------
 
 #endif

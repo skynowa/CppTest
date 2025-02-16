@@ -1,5 +1,5 @@
 /**
- * \file  CtorByLambda.cpp
+ * \file  CtorByFuncObjectRef.cpp
  * \brief
  *
  * \todo
@@ -12,19 +12,28 @@
 //--------------------------------------------------------------------------------------------------
 const int threadsNum {3};
 //--------------------------------------------------------------------------------------------------
-auto worker = []() -> void
+class Worker
 {
-	for (int i = 0; i < ::threadsNum; ++ i) {
-		std::cout << "[Worker] " << i << std::endl;
-	}
+public:
+    Worker() = default;
+   ~Worker() = default;
+
+    void operator() () const
+    {
+        for (int i = 0; i < ::threadsNum; ++ i) {
+            std::cout << "[Worker] " << i << std::endl;
+        }
+    }
 };
-//-------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    std::thread t(worker);
+    Worker worker;
+
+    std::thread t( std::ref(worker) );
 
     for (int i = 0; i < ::threadsNum; ++ i) {
-    	std::cout << "[Main Thread] - " << i <<std::endl;
+        std::cout << "[Main Thread] - " << i <<std::endl;
     }
 
     t.join();
@@ -42,6 +51,7 @@ int main(int, char **)
 [Main Thread] - 0
 [Main Thread] - 1
 [Main Thread] - 2
+[Main Thread] - Waiting thread to complete
 [Worker] 0
 [Worker] 1
 [Worker] 2

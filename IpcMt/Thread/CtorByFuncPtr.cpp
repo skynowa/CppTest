@@ -1,5 +1,5 @@
 /**
- * \file  CtorByFuncPointer.cpp
+ * \file  CtorByFuncPtr.cpp
  * \brief
  *
  * \todo
@@ -15,7 +15,7 @@ const int threadsNum {3};
 void worker()
 {
     for (int i = 0; i < ::threadsNum; ++ i) {
-        std::cout << "worker Executing - " << i << std::endl;
+    	std::cout << "[Worker] " << i << std::endl;
     }
 }
 //--------------------------------------------------------------------------------------------------
@@ -24,12 +24,12 @@ int main(int, char **)
     std::thread t(worker);
 
     for (int i = 0; i < ::threadsNum; ++ i) {
-        std::cout << "Display From MainThread" << std::endl;
+    	std::cout << "[Main Thread] - " << i <<std::endl;
     }
 
     t.join();
 
-    std::cout << "Exit of Main function" << std::endl;
+    std::cout << "[Main Thread] - Exiting" <<std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -39,13 +39,13 @@ int main(int, char **)
 #if OUTPUT
 
 ---------------------------------------------
-Display From MainThread
-Display From MainThread
-Display From MainThread
-worker Executing - 0
-worker Executing - 1
-worker Executing - 2
-Exit of Main function
+[Main Thread] - 0
+[Main Thread] - 1
+[Main Thread] - 2
+[Worker] 0
+[Worker] 1
+[Worker] 2
+[Main Thread] - Exiting
 ---------------------------------------------
 
 #endif
