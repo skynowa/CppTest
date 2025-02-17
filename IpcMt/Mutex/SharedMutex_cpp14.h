@@ -16,16 +16,9 @@
 //-------------------------------------------------------------------------------------------------
 class my_shared_mutex
 {
-	std::mutex              mut_;
-	std::condition_variable gate1_;
-	std::condition_variable gate2_;
-	unsigned                state_;
-
-	static const unsigned write_entered_ = 1U << (sizeof(unsigned)*CHAR_BIT - 1);
-	static const unsigned n_readers_     = ~write_entered_;
-
 public:
-	my_shared_mutex() : state_(0) {}
+	my_shared_mutex() = default;
+   ~my_shared_mutex() = default;
 
 ///\name Exclusive ownership
 ///\{
@@ -42,5 +35,14 @@ public:
 	bool timed_lock_shared(std::chrono::nanoseconds rel_time);
 	void unlock_shared();
 ///\}
+
+private:
+	static constexpr unsigned write_entered_ = 1U << (sizeof(unsigned) * CHAR_BIT - 1);
+	static constexpr unsigned n_readers_     = ~write_entered_;
+
+	std::mutex              mut_;
+	std::condition_variable gate1_;
+	std::condition_variable gate2_;
+	unsigned                state_ {};
 };
 //-------------------------------------------------------------------------------------------------
