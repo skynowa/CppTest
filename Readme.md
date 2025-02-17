@@ -11,7 +11,7 @@
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ██████░░░░ 🔥63% (38)
+- [IpcMt](#ipcmt "") ██████░░░░ 🔥61% (38)
 - [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
@@ -716,7 +716,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ██████░░░░ 🔥63% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ██████░░░░ 🔥61% (38)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -753,12 +753,12 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Mutex 50% (6)</summary>
+    <summary>📁 ⌛ Mutex 33% (6)</summary>
 
     * <a href="/IpcMt/Mutex/LockGuard.cpp" title="">❌ LockGuard.cpp</a>
     * <a href="/IpcMt/Mutex/IpcMutex.cpp" title="">✅ `IpcMutex.cpp`</a>
     * <a href="/IpcMt/Mutex/LockUnlock_1.cpp" title="">❌ LockUnlock_1.cpp</a>
-    * <a href="/IpcMt/Mutex/SharedMutex_cpp14.h" title="">✅ `SharedMutex_cpp14.h`</a>
+    * <a href="/IpcMt/Mutex/SharedMutex_cpp14.h" title="Shared / Unique Ownership Mutexes and Locks">❌ SharedMutex_cpp14.h</a>
     * <a href="/IpcMt/Mutex/SharedMutex_cpp14.cc" title="">✅ `SharedMutex_cpp14.cc`</a>
     * <a href="/IpcMt/Mutex/LockUnlock_2.cpp" title="">❌ LockUnlock_2.cpp</a>
 
