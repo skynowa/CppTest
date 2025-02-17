@@ -1,6 +1,6 @@
 /**
  * \file  CtorByMethodPtr.cpp
- * \brief Ctor - pass by method / static method pointer
+ * \brief Ctor - pass by non-static / static method pointer
  */
 
 
@@ -16,6 +16,7 @@ public:
     Worker() = default;
    ~Worker() = default;
 
+    // non-static
     void foo() const
     {
         for (int i = 0; i < ::threadsNum; ++ i) {
@@ -23,6 +24,7 @@ public:
         }
     }
 
+    // static
     static void staticFoo()
     {
         for (int i = 0; i < ::threadsNum; ++ i) {
@@ -33,7 +35,7 @@ public:
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    // by method pointer
+    // by non-static method pointer
     {
         Worker worker;
 
