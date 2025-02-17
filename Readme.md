@@ -786,7 +786,7 @@
   * <details close>
     <summary>📁 ✅ Thread 100% (13)</summary>
 
-    * <a href="/IpcMt/Thread/CtorByMethodPtr.cpp" title="Ctor - pass by method / static method pointer">✅ `CtorByMethodPtr.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByMethodPtr.cpp" title="Ctor - pass by non-static / static method pointer">✅ `CtorByMethodPtr.cpp`</a>
     * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
     * <a href="/IpcMt/Thread/PassingRef.cpp" title="Pass variable by std::ref">✅ `PassingRef.cpp`</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="Main thread ID diffs with worker ID">✅ `DiffIDs.cpp`</a>
