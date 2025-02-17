@@ -7,6 +7,9 @@
 #include "SharedMutex_cpp14.h"
 
 
+namespace my
+{
+
 /**************************************************************************************************
 *   Exclusive ownership
 *
@@ -14,7 +17,7 @@
 
 //-------------------------------------------------------------------------------------------------
 void
-my_shared_mutex::lock()
+shared_mutex::lock()
 {
 	// std::this_thread::disable_interruption _;
 	std::unique_lock<std::mutex> lk(mut_);
@@ -31,7 +34,7 @@ my_shared_mutex::lock()
 }
 //-------------------------------------------------------------------------------------------------
 bool
-my_shared_mutex::try_lock()
+shared_mutex::try_lock()
 {
 	std::unique_lock<std::mutex> lk(mut_, std::try_to_lock);
 	if (lk.owns_lock() &&
@@ -45,7 +48,7 @@ my_shared_mutex::try_lock()
 }
 //-------------------------------------------------------------------------------------------------
 void
-my_shared_mutex::unlock()
+shared_mutex::unlock()
 {
 	{
 		std::lock_guard<std::mutex> _(mut_);
@@ -64,7 +67,7 @@ my_shared_mutex::unlock()
 
 //-------------------------------------------------------------------------------------------------
 void
-my_shared_mutex::lock_shared()
+shared_mutex::lock_shared()
 {
 	// std::this_thread::disable_interruption _;
 	std::unique_lock<std::mutex> lk(mut_);
@@ -75,22 +78,25 @@ my_shared_mutex::lock_shared()
 		gate1_.wait(lk);
 	}
 
-	unsigned num_readers = (state_ & n_readers_) + 1;
+	const unsigned num_readers = (state_ & n_readers_) + 1;
+
 	state_ &= ~n_readers_;
 	state_ |= num_readers;
 }
 //-------------------------------------------------------------------------------------------------
 bool
-my_shared_mutex::try_lock_shared()
+shared_mutex::try_lock_shared()
 {
 	std::unique_lock<std::mutex> lk(mut_, std::try_to_lock);
 
-	unsigned num_readers = state_ & n_readers_;
+	const unsigned num_readers = state_ & n_readers_;
+
 	if (lk.owns_lock() &&
 		!(state_ & write_entered_) &&
 		num_readers != n_readers_)
 	{
 		++ num_readers;
+
 		state_ &= ~n_readers_;
 		state_ |= num_readers;
 
@@ -101,11 +107,12 @@ my_shared_mutex::try_lock_shared()
 }
 //-------------------------------------------------------------------------------------------------
 void
-my_shared_mutex::unlock_shared()
+shared_mutex::unlock_shared()
 {
 	std::lock_guard<std::mutex> _(mut_);
 
-	unsigned num_readers = (state_ & n_readers_) - 1;
+	const unsigned num_readers = (state_ & n_readers_) - 1;
+
 	state_ &= ~n_readers_;
 	state_ |= num_readers;
 
@@ -120,3 +127,5 @@ my_shared_mutex::unlock_shared()
 	}
 }
 //-------------------------------------------------------------------------------------------------
+
+} // namespace my

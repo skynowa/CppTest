@@ -14,11 +14,17 @@
 #include <condition_variable>
 #include <limits.h>	// CHAR_BIT
 //-------------------------------------------------------------------------------------------------
-class my_shared_mutex
+namespace my
+{
+
+class shared_mutex
 {
 public:
-	my_shared_mutex() = default;
-   ~my_shared_mutex() = default;
+///\name ctors, dtor
+///\{
+	shared_mutex() = default;
+   ~shared_mutex() = default;
+///\}
 
 ///\name Exclusive ownership
 ///\{
@@ -44,5 +50,7 @@ private:
 	std::condition_variable gate1_;
 	std::condition_variable gate2_;
 	unsigned                state_ {};
-};
+};	///<
+
+} // namespace my
 //-------------------------------------------------------------------------------------------------
