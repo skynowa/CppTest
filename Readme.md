@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **11-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Mar-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -11,7 +11,7 @@
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ████░░░░░░ 38% (34)
+- [IpcMt](#ipcmt "") ██████░░░░ 🔥59% (39)
 - [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
@@ -716,7 +716,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ████░░░░░░ 38% (34)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ██████░░░░ 🔥59% (39)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -753,26 +753,17 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Mutex 25% (4)</summary>
+    <summary>📁 ⌛ Mutex 29% (7)</summary>
 
     * <a href="/IpcMt/Mutex/LockGuard.cpp" title="">❌ LockGuard.cpp</a>
+    * <a href="/IpcMt/Mutex/SharedMutexTest_cpp14.cpp" title="">❌ SharedMutexTest_cpp14.cpp</a>
     * <a href="/IpcMt/Mutex/IpcMutex.cpp" title="">✅ `IpcMutex.cpp`</a>
     * <a href="/IpcMt/Mutex/LockUnlock_1.cpp" title="">❌ LockUnlock_1.cpp</a>
+    * <a href="/IpcMt/Mutex/SharedMutex_cpp14.h" title="Shared / Unique Ownership Mutexes and Locks">❌ SharedMutex_cpp14.h</a>
+    * <a href="/IpcMt/Mutex/SharedMutex_cpp14.cc" title="">✅ `SharedMutex_cpp14.cc`</a>
     * <a href="/IpcMt/Mutex/LockUnlock_2.cpp" title="">❌ LockUnlock_2.cpp</a>
 
     </details>
-
-  * <details close>
-    <summary>📁  Posix 0.0% (0)</summary>
-
-
-    </details>
-
-    * <details close>
-      <summary>📁  threads 0.0% (0)</summary>
-
-
-      </details>
 
   * <details close>
     <summary>📁 ⌛ RaceCondition 50% (2)</summary>
@@ -793,19 +784,21 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Thread 36% (11)</summary>
+    <summary>📁 ✅ Thread 100% (13)</summary>
 
-    * <a href="/IpcMt/Thread/PassingArguments.cpp" title="">❌ PassingArguments.cpp</a>
-    * <a href="/IpcMt/Thread/PassingReferences.cpp" title="">❌ PassingReferences.cpp</a>
+    * <a href="/IpcMt/Thread/CtorByMethodPtr.cpp" title="Ctor - pass by non-static / static method pointer">✅ `CtorByMethodPtr.cpp`</a>
     * <a href="/IpcMt/Thread/PackagedTask.cpp" title="">🖊 `PackagedTask.cpp`</a>
-    * <a href="/IpcMt/Thread/PassingPointers.cpp" title="">❌ PassingPointers.cpp</a>
-    * <a href="/IpcMt/Thread/DiffIDs.cpp" title="">❌ DiffIDs.cpp</a>
-    * <a href="/IpcMt/Thread/CreationByFunctionObjects.cpp" title="">❌ CreationByFunctionObjects.cpp</a>
-    * <a href="/IpcMt/Thread/CreationByFunctionPointer.cpp" title="">❌ CreationByFunctionPointer.cpp</a>
-    * <a href="/IpcMt/Thread/JoinDetach.cpp" title="">✅ `JoinDetach.cpp`</a>
-    * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="">✅ `HarwareConcurrency.cpp`</a>
-    * <a href="/IpcMt/Thread/Threads.cpp" title="">✅ `Threads.cpp`</a>
-    * <a href="/IpcMt/Thread/CreationByLambdaFunction.cpp" title="">❌ CreationByLambdaFunction.cpp</a>
+    * <a href="/IpcMt/Thread/PassingRef.cpp" title="Pass variable by std::ref">✅ `PassingRef.cpp`</a>
+    * <a href="/IpcMt/Thread/DiffIDs.cpp" title="Main thread ID diffs with worker ID">✅ `DiffIDs.cpp`</a>
+    * <a href="/IpcMt/Thread/JoinDetach.cpp" title="Join detachable threads">✅ `JoinDetach.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncObjectRef.cpp" title="Ctor - pass by std::ref (functor)">✅ `CtorByFuncObjectRef.cpp`</a>
+    * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="Supported concurrent threads by CPU">✅ `HarwareConcurrency.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByLambda.cpp" title="Ctor - pass lambda">✅ `CtorByLambda.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncObject.cpp" title="Ctor - pass function object (functor)">✅ `CtorByFuncObject.cpp`</a>
+    * <a href="/IpcMt/Thread/PassingPtr.cpp" title="Pass function pointer with param by pointer">✅ `PassingPtr.cpp`</a>
+    * <a href="/IpcMt/Thread/Threads.cpp" title="Create std::vector of threads">✅ `Threads.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncPtr.cpp" title="Ctor - pass by pointer">✅ `CtorByFuncPtr.cpp`</a>
+    * <a href="/IpcMt/Thread/PassingArgs.cpp" title="Pass function ptr with args">✅ `PassingArgs.cpp`</a>
 
     </details>
 

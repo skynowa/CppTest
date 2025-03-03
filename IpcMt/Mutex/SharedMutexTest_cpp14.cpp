@@ -1,18 +1,23 @@
 /**
- * \file  HarwareConcurrency.cpp
- * \brief Supported concurrent threads by CPU
+ * \file  main.cpp
+ * \brief
+ *
+ * \see
+ * \todo
  */
 
 
 #include <StdStream/StdStream.h>
 #include <StdTest/StdTest.h>
 #include <Stl.h>
+
+#include "SharedMutex_cpp14.h"
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-    const unsigned int threads_num = std::thread::hardware_concurrency();
+    // STD_TRACE_FUNC;
 
-    std::cout << STD_TRACE_VAR(threads_num) << " concurrent threads are supported" << std::endl;
+    // std::cout << STD_TRACE_VAR("") << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -21,6 +26,6 @@ int main(int, char **)
 
 #if OUTPUT
 
-threads_num: 20 concurrent threads are supported
+
 
 #endif

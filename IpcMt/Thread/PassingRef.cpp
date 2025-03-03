@@ -1,8 +1,6 @@
 /**
- * \file  PassingReferences.cpp
- * \brief
- *
- * \todo
+ * \file  PassingRef.cpp
+ * \brief Pass variable by std::ref
  */
 
 
@@ -17,7 +15,7 @@ worker(const int &x)
 
     ++ y;
 
-    std::cout << "worker x = " << x << std::endl;
+    std::cout << "[worker] x = " << x << std::endl;
 }
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
@@ -26,9 +24,8 @@ int main(int, char **)
 
     std::cout << "In Main Thread : Before Thread Start x = " << x << std::endl;
 
-    std::thread threadObj(::worker, std::ref(x));
-
-    threadObj.join();
+    std::thread t(::worker, std::ref(x));
+    t.join();
 
     std::cout << "In Main Thread : After Thread Joins x = " << x << std::endl;
 
@@ -39,8 +36,10 @@ int main(int, char **)
 
 #if OUTPUT
 
+---------------------------------------------
 In Main Thread : Before Thread Start x = 9
-worker x = 10
+[worker] x = 10
 In Main Thread : After Thread Joins x = 10
+---------------------------------------------
 
 #endif
