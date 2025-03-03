@@ -23,10 +23,10 @@ if (NOT CMAKE_BUILD_TYPE)
 endif()
 #--------------------------------------------------------------------------------------------------
 find_package(X11      REQUIRED)
-# find_package(Libssh2  REQUIRED)
+find_package(Libssh2  REQUIRED)
 # find_package(Libevent REQUIRED)
-# find_package(OpenSSL  REQUIRED)
-# find_package(ZLIB     REQUIRED)
+find_package(OpenSSL  REQUIRED)
+find_package(ZLIB     REQUIRED)
 #--------------------------------------------------------------------------------------------------
 file(GLOB_RECURSE SOURCES
    ${CMAKE_SOURCE_DIR}/*.c
@@ -82,6 +82,10 @@ foreach(IT_SOURCE ${SOURCES})
         # libevent::libevent
         # openssl::openssl
         # ZLIB::ZLIB
+        backtrace # https://github.com/ianlancetaylor/libbacktrace - for boost::stacktrace
+        ssh2
+        unwind
+        event
         )
 
 	# Targets - Build, run single test
