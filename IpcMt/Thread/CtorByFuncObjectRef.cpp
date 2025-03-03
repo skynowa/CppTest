@@ -1,6 +1,6 @@
 /**
  * \file  CtorByFuncObjectRef.cpp
- * \brief Ctor - pass by std::ref
+ * \brief Ctor - pass by std::ref (functor)
  */
 
 

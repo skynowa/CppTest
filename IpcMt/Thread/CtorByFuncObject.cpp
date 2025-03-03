@@ -1,6 +1,6 @@
 /**
  * \file  CtorByFuncObject.cpp
- * \brief Ctor - pass function object
+ * \brief Ctor - pass function object (functor)
  */
 
 

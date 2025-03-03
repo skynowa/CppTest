@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **17-Feb-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Mar-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -791,10 +791,10 @@
     * <a href="/IpcMt/Thread/PassingRef.cpp" title="Pass variable by std::ref">✅ `PassingRef.cpp`</a>
     * <a href="/IpcMt/Thread/DiffIDs.cpp" title="Main thread ID diffs with worker ID">✅ `DiffIDs.cpp`</a>
     * <a href="/IpcMt/Thread/JoinDetach.cpp" title="Join detachable threads">✅ `JoinDetach.cpp`</a>
-    * <a href="/IpcMt/Thread/CtorByFuncObjectRef.cpp" title="Ctor - pass by std::ref">✅ `CtorByFuncObjectRef.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncObjectRef.cpp" title="Ctor - pass by std::ref (functor)">✅ `CtorByFuncObjectRef.cpp`</a>
     * <a href="/IpcMt/Thread/HarwareConcurrency.cpp" title="Supported concurrent threads by CPU">✅ `HarwareConcurrency.cpp`</a>
     * <a href="/IpcMt/Thread/CtorByLambda.cpp" title="Ctor - pass lambda">✅ `CtorByLambda.cpp`</a>
-    * <a href="/IpcMt/Thread/CtorByFuncObject.cpp" title="Ctor - pass function object">✅ `CtorByFuncObject.cpp`</a>
+    * <a href="/IpcMt/Thread/CtorByFuncObject.cpp" title="Ctor - pass function object (functor)">✅ `CtorByFuncObject.cpp`</a>
     * <a href="/IpcMt/Thread/PassingPtr.cpp" title="Pass function pointer with param by pointer">✅ `PassingPtr.cpp`</a>
     * <a href="/IpcMt/Thread/Threads.cpp" title="Create std::vector of threads">✅ `Threads.cpp`</a>
     * <a href="/IpcMt/Thread/CtorByFuncPtr.cpp" title="Ctor - pass by pointer">✅ `CtorByFuncPtr.cpp`</a>
