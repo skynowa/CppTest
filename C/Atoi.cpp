@@ -13,7 +13,7 @@ int main(int, char **)
 {
 	const char *strInts []
 	{
-		"", "NULL", "ta", "13ta", "a31", "$27,41"
+		"", "NULL", "ta", "13ta", "a31", "$27,41", "27,41"
 	};
 
 	for (const auto it_strInt : strInts) {
@@ -57,6 +57,7 @@ it_strInt: ta, a: 0
 it_strInt: 13ta, a: 13
 it_strInt: a31, a: 0
 it_strInt: $27,41, a: 0
+it_strInt: 27,41, a: 27
 strDouble: $27,41 , a: 0
 ---------------------------------------------
 
