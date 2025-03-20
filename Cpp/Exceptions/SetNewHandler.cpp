@@ -37,6 +37,8 @@ int main(int, char **)
 
 #if OUTPUT
 
+onOutOfMemory - not called
+
 ---------------------------------------------
 Killed
 ---------------------------------------------
