@@ -1,17 +1,17 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **03-Mar-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **20-Mar-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (199)
+- [Cpp](#cpp "") █████████░ 🚩92% (200)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
 - [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
-- [IpcMt](#ipcmt "") ██████░░░░ 🔥59% (39)
+- [IpcMt](#ipcmt "") ██████░░░░ 🔥58% (40)
 - [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
 - [OOP](#oop "") ░░░░░░░░░░ 0% (1)
@@ -101,7 +101,7 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (199)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (200)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -317,9 +317,10 @@
       </details>
 
   * <details close>
-    <summary>📁 ✅ Exceptions 100% (11)</summary>
+    <summary>📁 ✅ Exceptions 100% (12)</summary>
 
     * <a href="/Cpp/Exceptions/ThrowDerived.cpp" title="">✅ `ThrowDerived.cpp`</a>
+    * <a href="/Cpp/Exceptions/SetNewHandler.cpp" title="Set new handler function">✅ `SetNewHandler.cpp`</a>
     * <a href="/Cpp/Exceptions/TryCatch.cpp" title="">✅ `TryCatch.cpp`</a>
     * <a href="/Cpp/Exceptions/NonCatched.cpp" title="Non-catched "double" exception">✅ `NonCatched.cpp`</a>
     * <a href="/Cpp/Exceptions/TryCatchMain.cpp" title="Main without braces in try/catch">✅ `TryCatchMain.cpp`</a>
@@ -716,7 +717,7 @@
 
     </details>
 
-##  <a title="" id="ipcmt">IpcMt ██████░░░░ 🔥59% (39)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="ipcmt">IpcMt ██████░░░░ 🔥58% (40)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/IpcMt/TODO.md" title="">❌ 📝 TODO.md</a>
 
@@ -753,8 +754,9 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Mutex 29% (7)</summary>
+    <summary>📁 ⌛ Mutex 25% (8)</summary>
 
+    * <a href="/IpcMt/Mutex/SharedMutex.cpp" title="std::shared_mutex">❌ SharedMutex.cpp</a>
     * <a href="/IpcMt/Mutex/LockGuard.cpp" title="">❌ LockGuard.cpp</a>
     * <a href="/IpcMt/Mutex/SharedMutexTest_cpp14.cpp" title="">❌ SharedMutexTest_cpp14.cpp</a>
     * <a href="/IpcMt/Mutex/IpcMutex.cpp" title="">✅ `IpcMutex.cpp`</a>
