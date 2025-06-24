@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **10-Jun-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **24-Jun-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (201)
+- [Cpp](#cpp "") █████████░ 🚩92% (202)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
@@ -101,8 +101,9 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (201)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (202)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Cpp/ConstKeywords.md" title="">✅ `📝 ConstKeywords.md`</a>
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Cpp/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
