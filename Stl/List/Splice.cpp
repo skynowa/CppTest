@@ -1,8 +1,9 @@
 /**
  * \file  Splice.cpp
- * \brief
+ * \brief Transfer elements from one list to another
  *
- * \todo
+ * This function just reassigns the internal pointers of each node to the new position without
+ * copying or moving the data.
  */
 
 
@@ -12,20 +13,13 @@
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-	std::list<int> a {1, 2, 3, 4, 5, 6, 7, 8};
-	std::list<int> b {5, 6, 7, 8};
+	std::list<int> a {1, 2, 3};
+	std::list<int> b {10, 11, 12};
 
 	a.splice(a.end(), b);
 
-	std::cout << "a contains:";
-	for (auto &it : a )
-		std::cout << ' ' << it;
-	std::cout << '\n';
-
-	std::cout << "b contains:";
-	for (auto &it : b)
-		std::cout << ' ' << it;
-	std::cout << '\n';
+	std::cout << STD_TRACE_VAR(a) << std::endl;
+	std::cout << STD_TRACE_VAR(b) << std::endl;
 
 	return 0;
 }
@@ -34,7 +28,7 @@ int main(int, char **)
 
 #if OUTPUT
 
-a contains: 1 2 3 4 5 6 7 8 5 6 7 8
-b contains:
+a: std::list (size=6): {1,2,3,10,11,12}
+b: std::list (size=0): {}
 
 #endif
