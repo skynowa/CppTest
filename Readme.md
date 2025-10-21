@@ -23,7 +23,7 @@
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
 - [SQL](#sql "") ██████████ 🚩95% (22)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 32% (93)
+- [Stl](#stl "") ███░░░░░░░ 33% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
@@ -1193,7 +1193,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 32% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 33% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1319,14 +1319,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ List 54% (13)</summary>
+    <summary>📁 ⌛ List 62% (13)</summary>
 
     * <a href="/Stl/List/Basic.cpp" title="">❌ Basic.cpp</a>
     * <a href="/Stl/List/SearchUsingFind.cpp" title="">❌ SearchUsingFind.cpp</a>
     * <a href="/Stl/List/ConditionalErase.cpp" title="List Conditional Erase While Iteration">✅ `ConditionalErase.cpp`</a>
     * <a href="/Stl/List/InsertInLoop.cpp" title="Inserting into a list">✅ `InsertInLoop.cpp`</a>
     * <a href="/Stl/List/SortWithAlgo.cpp" title="Sort using std::sort() algo">✅ `SortWithAlgo.cpp`</a>
-    * <a href="/Stl/List/Splice.cpp" title="">❌ Splice.cpp</a>
+    * <a href="/Stl/List/Splice.cpp" title="Transfer elements from one list to another">✅ `Splice.cpp`</a>
     * <a href="/Stl/List/RemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">✅ `RemoveIf.cpp`</a>
     * <a href="/Stl/List/Insert.cpp" title="Inserting into a list">✅ `Insert.cpp`</a>
     * <a href="/Stl/List/Remove.cpp" title="">❌ Remove.cpp</a>
