@@ -6,14 +6,9 @@
  */
 
 
-#include <string>
-#include <iostream>
-#include <list>
-#include <assert.h>
-
-//-------------------------------------------------------------------------------------------------
-#define STD_TRACE_VAR(v) \
-    #v ": " << (v)
+#include <StdStream/StdStream.h>
+#include <StdTest/StdTest.h>
+#include <Stl.h>
 //-------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
