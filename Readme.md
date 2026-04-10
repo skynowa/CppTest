@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **15-Jan-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **10-Apr-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (202)
+- [Cpp](#cpp "") █████████░ 🚩92% (203)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
@@ -101,7 +101,7 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (202)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (203)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Cpp/ConstKeywords.md" title="">✅ `📝 ConstKeywords.md`</a>
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
@@ -128,13 +128,14 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 88% (8)</summary>
+    <summary>📁 ⌛ Bits 89% (9)</summary>
 
     * <a href="/Cpp/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
     * <a href="/Cpp/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
     * <a href="/Cpp/Bits/ActiveGdss.cpp" title="Active bits">✅ `ActiveGdss.cpp`</a>
     * <a href="/Cpp/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Cpp/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
+    * <a href="/Cpp/Bits/BitMask.cpp" title="">✅ `BitMask.cpp`</a>
     * <a href="/Cpp/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
     * <a href="/Cpp/Bits/PackInt.cpp" title="">🖊 `PackInt.cpp`</a>
 
