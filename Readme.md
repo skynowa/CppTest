@@ -1,10 +1,10 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **20-Mar-2025** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **10-Apr-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
 - [Build](#build "") ░░░░░░░░░░ 0.0% (0)
 - [C](#c "[ ] C language features") █████████░ 🚩93% (14)
-- [Cpp](#cpp "") █████████░ 🚩92% (200)
+- [Cpp](#cpp "") █████████░ 🚩92% (203)
 - [DevOps](#devops "[ ] DevOps skills") ░░░░░░░░░░ 0% (1)
 - [Docs](#docs "") ██████████ 🚩100% (1)
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
@@ -21,9 +21,9 @@
 - [PreproccessCompile](#preproccesscompile "[ ] Build: Preproccess, Compile") ░░░░░░░░░░ 0% (1)
 - [Python](#python "[ ] Python language skills") ████████░░ 🔥75% (4)
 - [Review](#review "[ ] C++ best practice") ░░░░░░░░░░ 0% (2)
-- [SQL](#sql "") ██████████ 🚩95% (21)
+- [SQL](#sql "") ██████████ 🚩95% (22)
 - [ScmCiCd](#scmcicd "SCM - Software configuration management. CI - Continuous Integration. CD - Continuous Delivery") ░░░░░░░░░░ 0% (1)
-- [Stl](#stl "") ███░░░░░░░ 32% (93)
+- [Stl](#stl "") ███░░░░░░░ 33% (93)
 - [Syntax](#syntax "") ░░░░░░░░░░ 0% (1)
 - [Templates](#templates "[ ] Template metaprogramming") ██████░░░░ 🔥57% (14)
 
@@ -101,8 +101,9 @@
 
     </details>
 
-##  <a title="" id="cpp">Cpp █████████░ 🚩92% (200)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="cpp">Cpp █████████░ 🚩92% (203)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
+* <a href="/Cpp/ConstKeywords.md" title="">✅ `📝 ConstKeywords.md`</a>
 * <a href="/Cpp/Malloc.md" title="">✅ `📝 Malloc.md`</a>
 * <a href="/Cpp/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Cpp/SwitchString.cpp" title="Compile-time switch for C-string">✅ `SwitchString.cpp`</a>
@@ -127,13 +128,14 @@
       </details>
 
   * <details close>
-    <summary>📁 ⌛ Bits 88% (8)</summary>
+    <summary>📁 ⌛ Bits 89% (9)</summary>
 
     * <a href="/Cpp/Bits/Bitset.cpp" title="">✅ `Bitset.cpp`</a>
     * <a href="/Cpp/Bits/BadMask.cpp" title="Overflow bit mask">✅ `BadMask.cpp`</a>
     * <a href="/Cpp/Bits/ActiveGdss.cpp" title="Active bits">✅ `ActiveGdss.cpp`</a>
     * <a href="/Cpp/Bits/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Cpp/Bits/ShiftMask.cpp" title="Shift bit mask">✅ `ShiftMask.cpp`</a>
+    * <a href="/Cpp/Bits/BitMask.cpp" title="">✅ `BitMask.cpp`</a>
     * <a href="/Cpp/Bits/BuffToint.cpp" title="buffer (memory) convert to int">✅ `BuffToint.cpp`</a>
     * <a href="/Cpp/Bits/PackInt.cpp" title="">🖊 `PackInt.cpp`</a>
 
@@ -402,10 +404,11 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Move 33% (6)</summary>
+    <summary>📁 ⌛ Move 43% (7)</summary>
 
     * <a href="/Cpp/Move/PerformanceTest.cpp" title="">❌ PerformanceTest.cpp</a>
     * <a href="/Cpp/Move/RValue.cpp" title="">❌ RValue.cpp</a>
+    * <a href="/Cpp/Move/RefVsMove.cpp" title="Overload functions - by referencre (value) / by std::move">✅ `RefVsMove.cpp`</a>
     * <a href="/Cpp/Move/LValue.cpp" title="">❌ LValue.cpp</a>
     * <a href="/Cpp/Move/TODO.md" title="">❌ 📝 TODO.md</a>
     * <a href="/Cpp/Move/MoveRef.cpp" title="">🖊 `MoveRef.cpp`</a>
@@ -1140,12 +1143,13 @@
 
 </details>
 
-##  <a title="" id="sql">SQL ██████████ 🚩95% (21)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="sql">SQL ██████████ 🚩95% (22)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/SQL/MysqlCheatSheet.md" title="">✅ `📝 MysqlCheatSheet.md`</a>
 * <a href="/SQL/AnyAll.sql" title="ANY and ALL">✅ `AnyAll.sql`</a>
 * <a href="/SQL/Case.sql" title="CASE">✅ `Case.sql`</a>
 * <a href="/SQL/Count.sql" title="COUNT - returns the number of records returned by a select query">✅ `Count.sql`</a>
+* <a href="/SQL/SelectIF.sql" title="Select columns with IF (using aliases)">✅ `SelectIF.sql`</a>
 * <a href="/SQL/Exists.sql" title="EXISTS">✅ `Exists.sql`</a>
 * <a href="/SQL/Having.sql" title="HAVING">✅ `Having.sql`</a>
 * <a href="/SQL/TODO.md" title="">❌ 📝 TODO.md</a>
@@ -1190,7 +1194,7 @@
 
 </details>
 
-##  <a title="" id="stl">Stl ███░░░░░░░ 32% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="" id="stl">Stl ███░░░░░░░ 33% (93)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
 * <a href="/Stl/TODO.md" title="">❌ 📝 TODO.md</a>
 * <a href="/Stl/StlFeatures.md" title="">✅ `📝 StlFeatures.md`</a>
@@ -1316,14 +1320,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ List 54% (13)</summary>
+    <summary>📁 ⌛ List 62% (13)</summary>
 
     * <a href="/Stl/List/Basic.cpp" title="">❌ Basic.cpp</a>
     * <a href="/Stl/List/SearchUsingFind.cpp" title="">❌ SearchUsingFind.cpp</a>
     * <a href="/Stl/List/ConditionalErase.cpp" title="List Conditional Erase While Iteration">✅ `ConditionalErase.cpp`</a>
     * <a href="/Stl/List/InsertInLoop.cpp" title="Inserting into a list">✅ `InsertInLoop.cpp`</a>
     * <a href="/Stl/List/SortWithAlgo.cpp" title="Sort using std::sort() algo">✅ `SortWithAlgo.cpp`</a>
-    * <a href="/Stl/List/Splice.cpp" title="">❌ Splice.cpp</a>
+    * <a href="/Stl/List/Splice.cpp" title="Transfer elements from one list to another">✅ `Splice.cpp`</a>
     * <a href="/Stl/List/RemoveIf.cpp" title="Removes from the container all the elements for which Predicate pred returns true">✅ `RemoveIf.cpp`</a>
     * <a href="/Stl/List/Insert.cpp" title="Inserting into a list">✅ `Insert.cpp`</a>
     * <a href="/Stl/List/Remove.cpp" title="">❌ Remove.cpp</a>
