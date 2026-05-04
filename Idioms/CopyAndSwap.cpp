@@ -2,8 +2,6 @@
  * \file  CopyAndSwap.cpp
  * \brief To create an exception safe implementation of overloaded assignment operator
  *
- * \review
- *
  * There are at least 3 types of exception safety levels: basic, strong, and no-throw.
  * The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong
  * exception safety
@@ -22,6 +20,11 @@ public:
 	{
 	}
 
+	String(const String &a_str) :
+		_buff{a_str._buff}
+	{
+	}
+
 ///@name  ops =
 ///@brief Old resources released when destructor of temp is called
 ///@{
@@ -29,15 +32,10 @@ public:
 	String &
 	operator = (const String &a_str)
     {
-		// TODO: [-Werror=deprecated-copy]
-	#if 0
 		// Copy-constructor - RAII
 		String temp(a_str);
 		// Non-throwing swap
 		temp.swap(*this);
-	#else
-		STD_UNUSED(a_str);
-	#endif
 
         return *this;
     }
@@ -47,13 +45,8 @@ public:
 	operatorEqV2 /* operator = */ (const String &a_str)
     {
         if (this != &a_str) {
-            // TODO: [-Werror=deprecated-copy]
-		#if 0
 			// Copy-constructor and non-throwing swap
 			String(a_str).swap(*this);
-		#else
-			STD_UNUSED(a_str);
-		#endif
         }
 
         return *this;
