@@ -2,8 +2,6 @@
  * \file  DependencyInjection.cpp
  * \brief An object receives dependencies from outside instead of creating them itself
  *
- * Demonstrates passing a service dependency through a constructor.
- *
  * \see   https://github.com/boost-ext/di
  */
 

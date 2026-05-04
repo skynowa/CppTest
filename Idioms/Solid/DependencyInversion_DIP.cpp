@@ -1,8 +1,6 @@
 /**
  * \file  DependencyInversion_DIP.cpp
  * \brief Classes should depend upon interfaces instead of concrete classes and functions
- *
- * Demonstrates sending notifications through an abstract message sender.
  */
 
 

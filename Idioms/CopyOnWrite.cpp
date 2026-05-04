@@ -3,8 +3,6 @@
  * \brief Achieve lazy copy optimization. Like lazy initialization, do the work just when you need
  *        because of efficiency
  *
- * Demonstrates sharing state until a write operation needs a private copy.
- *
  * \see   https://shaharmike.com/cpp/std-string/
  *
  * To implement copy-on-write, a smart pointer to the real content is used to encapsulate

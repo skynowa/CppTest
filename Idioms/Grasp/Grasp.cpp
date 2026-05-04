@@ -1,8 +1,6 @@
 /**
  * \file  Grasp.cpp
  * \brief GRASP (object-oriented design) - General Responsibility Assignment Software Patterns (or Principles)
- *
- * Demonstrates assigning order calculations to the objects that own the data.
  */
 
 

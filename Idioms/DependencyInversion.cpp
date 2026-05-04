@@ -1,8 +1,6 @@
 /**
  * \file  DependencyInversion.cpp
  * \brief High level code depends on an abstraction, not on a concrete device
- *
- * Demonstrates controlling a device through a small abstract interface.
  */
 
 

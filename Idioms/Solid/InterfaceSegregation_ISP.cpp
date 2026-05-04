@@ -1,8 +1,6 @@
 /**
  * \file  InterfaceSegregation_ISP.cpp
  * \brief Separating the interfaces
- *
- * Demonstrates splitting printer and scanner capabilities into focused interfaces.
  */
 
 
