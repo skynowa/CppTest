@@ -1,6 +1,8 @@
 /**
  * \file  Dry.cpp
  * \brief DRY - Don't repeat yourself
+ *
+ * Demonstrates extracting repeated price calculation into a single function.
  */
 
 

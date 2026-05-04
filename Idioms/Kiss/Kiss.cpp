@@ -1,6 +1,8 @@
 /**
  * \file  Kiss.cpp
  * \brief keep it simple stupid
+ *
+ * Demonstrates solving a small predicate with direct, readable code.
  */
 
 

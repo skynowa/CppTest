@@ -1,6 +1,8 @@
 /**
  * \file  SingleResponsibility_SRP.cpp
  * \brief class should do one thing
+ *
+ * Demonstrates separating report formatting from console output.
  */
 
 

@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **16-Apr-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **04-May-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -10,7 +10,7 @@
 - [FAQ](#faq "[ ] FAQs") ░░░░░░░░░░ 0% (5)
 - [Feedback](#feedback "[ ] Feedbacks from companies") ░░░░░░░░░░ 0% (2)
 - [Front](#front "[ ] Frontend skills") ░░░░░░░░░░ 0% (1)
-- [Idioms](#idioms "[ ] C/C++ language idioms") ████████░░ 🔥83% (47)
+- [Idioms](#idioms "[ ] C/C++ language idioms") ██████████ 🚩98% (47)
 - [IpcMt](#ipcmt "") ██████░░░░ 🔥58% (40)
 - [Libs](#libs "") █████████░ 🚩93% (28)
 - [Network](#network "[ ] Network") ████████░░ 🔥75% (4)
@@ -596,45 +596,45 @@
 
 </details>
 
-##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ████████░░ 🔥83% (47)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
+##  <a title="[ ] C/C++ language idioms" id="idioms">Idioms ██████████ 🚩98% (47)</a> <a href="#cpp-roadmap" title="Back to top">⇧</a>
 
-* <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">🖊 `CopyAndSwap.cpp`</a>
+* <a href="/Idioms/CopyAndSwap.cpp" title="To create an exception safe implementation of overloaded assignment operator">✅ `CopyAndSwap.cpp`</a>
 * <a href="/Idioms/VirtualFriendFunction.cpp" title="Simulate a virtual friend function">✅ `VirtualFriendFunction.cpp`</a>
-* <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">🖊 `CopyOnWrite.cpp`</a>
+* <a href="/Idioms/CopyOnWrite.cpp" title="Achieve lazy copy optimization. Like lazy initialization, do the work just when you need">✅ `CopyOnWrite.cpp`</a>
 * <a href="/Idioms/NonThrowingSwap.cpp" title="To implement an exception safe and efficient swap operation">✅ `NonThrowingSwap.cpp`</a>
 * <a href="/Idioms/EraseRemove.cpp" title="To eliminate elements from a STL container to reduce the size of it">✅ `EraseRemove.cpp`</a>
 * <a href="/Idioms/SmallObjectOptimization.cpp" title="Small Object Optimization (aka small buffer optimization)">✅ `SmallObjectOptimization.cpp`</a>
 * <a href="/Idioms/NamedConstructor.cpp" title="Public static methods that construct and return an object">✅ `NamedConstructor.cpp`</a>
 * <a href="/Idioms/GoTo.cpp" title="Go to idiom">✅ `GoTo.cpp`</a>
-* <a href="/Idioms/DependencyInversion.cpp" title="">❌ DependencyInversion.cpp</a>
+* <a href="/Idioms/DependencyInversion.cpp" title="High level code depends on an abstraction, not on a concrete device">✅ `DependencyInversion.cpp`</a>
 * <a href="/Idioms/NamedParameterByStruct.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByStruct.cpp`</a>
 * <a href="/Idioms/IteratorPair.cpp" title="Specify a range of data values without worrying about the underlying data structure">✅ `IteratorPair.cpp`</a>
 * <a href="/Idioms/ShrinkToFit.cpp" title="Minimize the capacity of a container just enough to hold existing range.">✅ `ShrinkToFit.cpp`</a>
 * <a href="/Idioms/NamedParameterByThis.cpp" title="Solve order of the parameters problem">✅ `NamedParameterByThis.cpp`</a>
 * <a href="/Idioms/NonCopyableMixin.cpp" title="To prevent objects of a class from being copy-constructed or assigned to each other">✅ `NonCopyableMixin.cpp`</a>
 * <a href="/Idioms/FAQ.md" title="">❌ 📝 FAQ.md</a>
-* <a href="/Idioms/DependencyInjection.cpp" title="">❌ DependencyInjection.cpp</a>
+* <a href="/Idioms/DependencyInjection.cpp" title="An object receives dependencies from outside instead of creating them itself">✅ `DependencyInjection.cpp`</a>
 
 </details>
 
   * <details close>
     <summary>📁 ✅ Dry 100% (1)</summary>
 
-    * <a href="/Idioms/Dry/Dry.cpp" title="DRY - Don't repeat yourself">🖊 `Dry.cpp`</a>
+    * <a href="/Idioms/Dry/Dry.cpp" title="DRY - Don't repeat yourself">✅ `Dry.cpp`</a>
 
     </details>
 
   * <details close>
     <summary>📁 ✅ Grasp 100% (1)</summary>
 
-    * <a href="/Idioms/Grasp/Grasp.cpp" title="GRASP (object-oriented design) - General Responsibility Assignment Software Patterns (or Principles)">🖊 `Grasp.cpp`</a>
+    * <a href="/Idioms/Grasp/Grasp.cpp" title="GRASP (object-oriented design) - General Responsibility Assignment Software Patterns (or Principles)">✅ `Grasp.cpp`</a>
 
     </details>
 
   * <details close>
     <summary>📁 ✅ Kiss 100% (1)</summary>
 
-    * <a href="/Idioms/Kiss/Kiss.cpp" title="keep it simple stupid">🖊 `Kiss.cpp`</a>
+    * <a href="/Idioms/Kiss/Kiss.cpp" title="keep it simple stupid">✅ `Kiss.cpp`</a>
 
     </details>
 
@@ -702,14 +702,14 @@
     </details>
 
   * <details close>
-    <summary>📁 ⌛ Solid 17% (6)</summary>
+    <summary>📁 ✅ Solid 100% (6)</summary>
 
-    * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">❌ InterfaceSegregation_ISP.cpp</a>
+    * <a href="/Idioms/Solid/InterfaceSegregation_ISP.cpp" title="Separating the interfaces">✅ `InterfaceSegregation_ISP.cpp`</a>
     * <a href="/Idioms/Solid/Readme.md" title="">🖊 `📝 Readme.md`</a>
-    * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">❌ DependencyInversion_DIP.cpp</a>
-    * <a href="/Idioms/Solid/OpenClosed_OCP.cpp" title="Classes should be open for extension and closed to modification">❌ OpenClosed_OCP.cpp</a>
-    * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">❌ SingleResponsibility_SRP.cpp</a>
-    * <a href="/Idioms/Solid/LiskovSubstitution_LSP.cpp" title="Subclasses should be substitutable for their base classes">❌ LiskovSubstitution_LSP.cpp</a>
+    * <a href="/Idioms/Solid/DependencyInversion_DIP.cpp" title="Classes should depend upon interfaces instead of concrete classes and functions">✅ `DependencyInversion_DIP.cpp`</a>
+    * <a href="/Idioms/Solid/OpenClosed_OCP.cpp" title="Classes should be open for extension and closed to modification">✅ `OpenClosed_OCP.cpp`</a>
+    * <a href="/Idioms/Solid/SingleResponsibility_SRP.cpp" title="class should do one thing">✅ `SingleResponsibility_SRP.cpp`</a>
+    * <a href="/Idioms/Solid/LiskovSubstitution_LSP.cpp" title="Subclasses should be substitutable for their base classes">✅ `LiskovSubstitution_LSP.cpp`</a>
 
     </details>
 

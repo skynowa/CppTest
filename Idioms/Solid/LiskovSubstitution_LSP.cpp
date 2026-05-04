@@ -1,6 +1,8 @@
 /**
  * \file  LiskovSubstitution_LSP.cpp
  * \brief Subclasses should be substitutable for their base classes
+ *
+ * Demonstrates using derived objects through a base abstraction without special cases.
  */
 
 

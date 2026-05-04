@@ -1,6 +1,8 @@
 /**
  * \file  OpenClosed_OCP.cpp
  * \brief Classes should be open for extension and closed to modification
+ *
+ * Demonstrates extending price calculation by adding new discount implementations.
  */
 
 

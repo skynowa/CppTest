@@ -2,6 +2,8 @@
  * \file  CopyAndSwap.cpp
  * \brief To create an exception safe implementation of overloaded assignment operator
  *
+ * Demonstrates assignment by copying into a temporary object and swapping state.
+ *
  * There are at least 3 types of exception safety levels: basic, strong, and no-throw.
  * The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong
  * exception safety

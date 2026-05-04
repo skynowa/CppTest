@@ -2,6 +2,8 @@
  * \file  Rule3Copy.h
  * \brief The rule of three/five/zero
  *
+ * Shows how explicitly declared special member functions affect copy and move semantics.
+ *
  * \see   https://en.cppreference.com/w/cpp/language/rule_of_three
  *
  * Because the presence of a user-defined destructor, copy-constructor, or copy-assignment operator
