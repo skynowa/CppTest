@@ -1,4 +1,4 @@
-# <a id="cpp-roadmap" title="">C++ Roadmap</a> **16-Apr-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
+# <a id="cpp-roadmap" title="">C++ Roadmap</a> **04-May-2026** ![GitHub Watchers](https://img.shields.io/github/watchers/skynowa/CppTest) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/skynowa/CppTest/CI)
 
 - [Algos](#algos "Algorithms") █░░░░░░░░░ 14% (14)
 - [Backend](#backend "[ ] Backend skills") ░░░░░░░░░░ 0% (2)
@@ -620,7 +620,7 @@
   * <details close>
     <summary>📁 ✅ Dry 100% (1)</summary>
 
-    * <a href="/Idioms/Dry/Dry.cpp" title="DRY - Don't repeat yourself">🖊 `Dry.cpp`</a>
+    * <a href="/Idioms/Dry/Dry.cpp" title="DRY - Don't repeat yourself">✅ `Dry.cpp`</a>
 
     </details>
 
@@ -634,7 +634,7 @@
   * <details close>
     <summary>📁 ✅ Kiss 100% (1)</summary>
 
-    * <a href="/Idioms/Kiss/Kiss.cpp" title="keep it simple stupid">🖊 `Kiss.cpp`</a>
+    * <a href="/Idioms/Kiss/Kiss.cpp" title="keep it simple stupid">✅ `Kiss.cpp`</a>
 
     </details>
 
