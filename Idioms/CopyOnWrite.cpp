@@ -8,8 +8,6 @@
  * To implement copy-on-write, a smart pointer to the real content is used to encapsulate
  * the object's value, and on each modification an object reference count is checked;
  * if the object is referenced more than once, a copy of the content is created before modification
- *
- * \review
  */
 
 
@@ -74,16 +72,18 @@ private:
 //--------------------------------------------------------------------------------------------------
 int main(int, char **)
 {
-#if 0
-	CowPtr<String> s1 = "Hello";
-
-	// Non-const detachment does nothing here
-	char &c = s1->operator[](4);
+	CowPtr<std::string> s1(new std::string("Hello"));
+	CowPtr<std::string> s2(s1);
 
 	// Lazy-copy, shared state
-	CowPtr<String> s2(s1);
-	c = '!'; // Uh-oh
-#endif
+	std::cout << STD_TRACE_VAR(*s1) << std::endl;
+	std::cout << STD_TRACE_VAR(*s2) << std::endl;
+
+	// Non-const access detaches s1 before modification
+	(*s1)[4] = '!';
+
+	std::cout << STD_TRACE_VAR(*s1) << std::endl;
+	std::cout << STD_TRACE_VAR(*s2) << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -92,6 +92,9 @@ int main(int, char **)
 
 #if OUTPUT
 
-
+*s1: Hello
+*s2: Hello
+*s1: Hell!
+*s2: Hello
 
 #endif
